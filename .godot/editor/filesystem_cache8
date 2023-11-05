@@ -1,3 +1,6 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1699047622
+::res://::1699185207
 icon.svg::CompressedTexture2D::5509376449077580047::1699047618::1699047622::1::::<><>::
+Sprite_Instances.tscn::PackedScene::1029286614121467748::1699185207::0::1::::<><>::uid://cwxx6u16tppmj::::res://sprite_2D.tscn
+Sprite2D.gd::GDScript::-1::1699184925::0::1::::<>Sprite2D<>::
+sprite_2D.tscn::PackedScene::6365929558277383397::1699185207::0::1::::<><>::uid://ckq1viylag4tf::::res://icon.svg<>res://Sprite2D.gd
