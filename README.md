@@ -1,10 +1,10 @@
 # Card-Wars
-Card Wars in Godot.
-This project is in very early development.
+Card Wars in Godot. \
+This project is in very early development. 
 
-Goal:
-  Playable Card Wars
+Goal: \
+  -Playable Card Wars 
 
-Planned Features:
-  Deck Building
-  Multiplayer
+Planned Features: \
+  -Deck Building \
+  -Multiplayer
