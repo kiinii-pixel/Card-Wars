@@ -2,9 +2,9 @@
 Card Wars in Godot. \
 This project is in very early development. 
 
-Goal: \
+# Goal: 
   -Playable Card Wars 
 
-Planned Features: \
+# Planned Features: 
   -Deck Building \
   -Multiplayer
