@@ -1,4 +1,3 @@
-res://sprite_2D.tscn
-res://Sprite2D.gd
-res://Sprite_Instances.tscn
+res://Card.tscn
+res://Card.gd
 res://Main.tscn

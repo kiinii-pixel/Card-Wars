@@ -1,7 +1,11 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1699261510
-icon.svg::CompressedTexture2D::5509376449077580047::1699259996::1699261359::1::::<><>::
-Main.tscn::PackedScene::1029286614121467748::1699259996::0::1::::<><>::uid://cwxx6u16tppmj::::res://sprite_2D.tscn
-README.md::TextFile::-1::1699259996::0::1::::<><>::
-Sprite2D.gd::GDScript::-1::1699259996::0::1::::<>Sprite2D<>::
-sprite_2D.tscn::PackedScene::6365929558277383397::1699259996::0::1::::<><>::uid://ckq1viylag4tf::::res://icon.svg<>res://Sprite2D.gd
+::res://::1699375887
+Card.gd::GDScript::-1::1699375854::0::1::::<>Node2D<>::
+Card.tscn::PackedScene::8002230120319189470::1699375854::0::1::::<><>::res://Card.gd
+icon.svg::CompressedTexture2D::5509376449077580047::1699047618::1699292196::1::::<><>::
+Main.tscn::PackedScene::1029286614121467748::1699292202::0::1::::<><>::uid://cwxx6u16tppmj
+README.md::TextFile::-1::1699292182::0::1::::<><>::
+Sprite2D.gd::GDScript::-1::1699292180::0::1::::<>Sprite2D<>::
+sprite_2D.tscn::PackedScene::6365929558277383397::1699292202::0::1::::<><>::uid://ckq1viylag4tf
+::res://assets/::1699375887
+CardBorder.png::CompressedTexture2D::7704802509299117785::1699375885::1699375888::1::::<><>::

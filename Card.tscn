@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3 uid="uid://dmaltcph6qdjq"]
+
+[ext_resource type="Script" path="res://Card.gd" id="1_d5eeg"]
+[ext_resource type="Texture2D" uid="uid://dh1i8bho0oef6" path="res://assets/CardBorder.png" id="2_chsro"]
+
+[node name="Card" type="Node2D"]
+script = ExtResource("1_d5eeg")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.58, 0.58)
+texture = ExtResource("2_chsro")
+
+[node name="Attack_Label" type="Label" parent="Sprite2D"]
+offset_left = -180.0
+offset_top = 134.0
+offset_right = -80.0
+offset_bottom = 261.0
+theme_override_font_sizes/font_size = 90
+text = "A"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Defense_Label" type="Label" parent="Sprite2D"]
+offset_left = 84.4828
+offset_top = 132.759
+offset_right = 184.483
+offset_bottom = 259.759
+theme_override_font_sizes/font_size = 90
+text = "D"
+horizontal_alignment = 1
+vertical_alignment = 1

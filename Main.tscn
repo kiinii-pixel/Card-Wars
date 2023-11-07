@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://owug2m35obl1"]
+[gd_scene load_steps=3 format=3 uid="uid://owug2m35obl1"]
 
 [ext_resource type="PackedScene" uid="uid://cwxx6u16tppmj" path="res://sprite_2D.tscn" id="1_sq1yv"]
+[ext_resource type="PackedScene" uid="uid://dmaltcph6qdjq" path="res://Card.tscn" id="2_sfiwt"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -16,5 +17,8 @@ offset_top = 55.0
 offset_right = 232.0
 offset_bottom = 140.0
 text = "Toggle Motion"
+
+[node name="Card" parent="." instance=ExtResource("2_sfiwt")]
+position = Vector2(703, 287)
 
 [connection signal="pressed" from="Button" to="Sprite2D" method="_on_button_pressed"]
