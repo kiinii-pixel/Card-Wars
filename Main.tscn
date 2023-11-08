@@ -1,8 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://owug2m35obl1"]
-
-[ext_resource type="PackedScene" uid="uid://dmaltcph6qdjq" path="res://Card.tscn" id="2_sfiwt"]
-
-[node name="Node2D" type="Node2D"]
-
-[node name="Card" parent="." instance=ExtResource("2_sfiwt")]
-position = Vector2(326, 314)

@@ -11,9 +11,16 @@ config_version=5
 [application]
 
 config/name="Card Wars"
-run/main_scene="res://Main.tscn"
+config/description="Adventure Time: Card Wars made in Godot engine.
+Card Wars is a casual deckbuilding card game in the land of Ooo."
+run/main_scene="res://Scenes/Main.tscn"
 config/features=PackedStringArray("4.1", "GL Compatibility")
-config/icon="res://old.svg"
+boot_splash/image="res://assets/Images/Icons/logo.png"
+config/icon="res://assets/Images/Icons/icon.png"
+
+[autoload]
+
+StaticData="*res://Data/StaticData.gd"
 
 [rendering]
 
