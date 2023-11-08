@@ -1,12 +1,53 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1699386381
-Card.gd::GDScript::-1::1699382679::0::1::::<>Node2D<>::
-Card.tscn::PackedScene::8002230120319189470::1699382176::0::1::::<><>::res://Card.gd<>uid://dh1i8bho0oef6
+::res://::1699459928
+Card.gd::GDScript::-1::1699459812::0::1::::<>Node2D<>::
+Card.tscn::PackedScene::8002230120319189470::1699459928::0::1::::<><>::res://Card.gd<>uid://dh1i8bho0oef6::::res://assets/CardImages/CardBorder.png<>uid://bdyhhj3j3u1ps::::res://assets/CardImages/Rainbow/Creature/The Pig.png<>uid://ca0g1l1k6v1sf::::res://assets/Fonts/Pendlefont Heavy.TTF
 icon.png::CompressedTexture2D::58413552021638117::1699386246::1699386247::1::::<><>::
-Main.tscn::PackedScene::1029286614121467748::1699386258::0::1::::<><>::uid://cwxx6u16tppmj::::res://sprite_2D.tscn<>uid://dmaltcph6qdjq::::res://Card.tscn
+Main.tscn::PackedScene::1029286614121467748::1699459551::0::1::::<><>::uid://cwxx6u16tppmj::::res://sprite_2D.tscn<>uid://dmaltcph6qdjq::::res://Card.tscn
 old.svg::CompressedTexture2D::5509376449077580047::1699047618::1699386381::1::::<><>::
-README.md::TextFile::-1::1699292182::0::1::::<><>::
+README.md::TextFile::-1::1699431235::0::1::::<><>::
 Sprite2D.gd::GDScript::-1::1699378307::0::1::::<>Sprite2D<>::
-sprite_2D.tscn::PackedScene::6365929558277383397::1699386381::0::1::::<><>::uid://ckq1viylag4tf::::res://old.svg<>res://Sprite2D.gd
-::res://assets/::1699375888
-CardBorder.png::CompressedTexture2D::7704802509299117785::1699375885::1699375888::1::::<><>::
+sprite_2D.tscn::PackedScene::6365929558277383397::1699386381::0::1::::<><>::uid://ckq1viylag4tf
+::res://assets/::1699459928
+::res://assets/CardImages/::1699459928
+allcards.json::JSON::-1::1699459875::0::1::::<><>::
+CardBorder.png::CompressedTexture2D::7704802509299117785::1699375885::1699459929::1::::<><>::
+::res://assets/CardImages/Blue Plains/::1699459508
+::res://assets/CardImages/Blue Plains/Building/::1699459915
+Schoolhouse.png::CompressedTexture2D::6671832426732261382::1699459508::1699459915::1::::<><>::
+Woad Mobile Home.png::CompressedTexture2D::7631512440836703012::1699459508::1699459915::1::::<><>::
+::res://assets/CardImages/Blue Plains/Creature/::1699459915
+Ancient Scholar.png::CompressedTexture2D::6692513061385782490::1699459508::1699459915::1::::<><>::
+Cool Dog.png::CompressedTexture2D::4454607114820891669::1699459508::1699459915::1::::<><>::
+Dragon Claw.png::CompressedTexture2D::2141625960932393811::1699459508::1699459915::1::::<><>::
+Embarrassing Bard.png::CompressedTexture2D::6628219838685191324::1699459508::1699459915::1::::<><>::
+Heavenly Gazer.png::CompressedTexture2D::8677431512641100471::1699459508::1699459915::1::::<><>::
+Psionic Architect.png::CompressedTexture2D::1024784892606568945::1699459508::1699459915::1::::<><>::
+Punk Cat.png::CompressedTexture2D::8618933747658722737::1699459508::1699459915::1::::<><>::
+Struzmann Jinn.png::CompressedTexture2D::2908099491084867863::1699459508::1699459915::1::::<><>::
+Uni-Knight.png::CompressedTexture2D::7413551704431915479::1699459508::1699459915::1::::<><>::
+Woadic Chief.png::CompressedTexture2D::7839070588685398806::1699459508::1699459915::1::::<><>::
+Woadic Marauder.png::CompressedTexture2D::6805320645607853237::1699459508::1699459915::1::::<><>::
+X-Large Spirit Soldier.png::CompressedTexture2D::190274503997914348::1699459508::1699459915::1::::<><>::
+::res://assets/CardImages/Blue Plains/Spell/::1699459915
+Gnome Snot.png::CompressedTexture2D::544367217343488754::1699459508::1699459915::1::::<><>::
+::res://assets/CardImages/Cardback/::1699459915
+alt_back.jpg::CompressedTexture2D::6585688249393880218::1699459508::1699459915::1::::<><>::
+back.png::CompressedTexture2D::5738403160802776475::1699459508::1699459915::1::::<><>::
+::res://assets/CardImages/Rainbow/::1699459508
+::res://assets/CardImages/Rainbow/Building/::1699459915
+Blood Fortress.png::CompressedTexture2D::7956529834575258881::1699459508::1699459915::1::::<><>::
+Celestial Castle.png::CompressedTexture2D::5277541376751679057::1699459508::1699459915::1::::<><>::
+::res://assets/CardImages/Rainbow/Creature/::1699459915
+allcards.json::JSON::-1::1699459865::0::1::::<><>::
+Nice Ice Baby.png::CompressedTexture2D::8361884923412496834::1699459508::1699459915::1::::<><>::
+The Pig.png::CompressedTexture2D::2646970316623160184::1699459508::1699459915::1::::<><>::
+::res://assets/CardImages/Rainbow/Spell/::1699459915
+Cerebral Bloodstorm.png::CompressedTexture2D::6873199061070721025::1699459508::1699459915::1::::<><>::
+Teleport.png::CompressedTexture2D::6340815927792292153::1699459508::1699459915::1::::<><>::
+Woad Blood.png::CompressedTexture2D::2718833919124416612::1699459508::1699459915::1::::<><>::
+Woad Talisman.png::CompressedTexture2D::8945635498483521712::1699459508::1699459915::1::::<><>::
+::res://assets/Data/::1699459890
+::res://assets/Fonts/::1699457348
+Pendlefont Heavy.TTF::FontFile::4824862162254225705::1699457348::1699457348::1::::<><>::
+PENDLEFONT MEDIUM.TTF::FontFile::1479064385286271056::1699457124::1699457142::1::::<><>::

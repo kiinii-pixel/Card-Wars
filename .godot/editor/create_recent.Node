@@ -1,6 +1,11 @@
+Control
+Container
+CenterContainer
+MarginContainer
+Sprite2D
+HBoxContainer
 Tree
 Label
-Sprite2D
 Timer
 Button
 Node2D
