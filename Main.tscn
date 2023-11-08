@@ -6,7 +6,7 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="Sprite2D" parent="." instance=ExtResource("1_sq1yv")]
-position = Vector2(374, 284)
+position = Vector2(156, 427)
 
 [node name="Timer" type="Timer" parent="Sprite2D"]
 autostart = true
@@ -20,5 +20,6 @@ text = "Toggle Motion"
 
 [node name="Card" parent="." instance=ExtResource("2_sfiwt")]
 position = Vector2(703, 287)
+cost = 3
 
 [connection signal="pressed" from="Button" to="Sprite2D" method="_on_button_pressed"]

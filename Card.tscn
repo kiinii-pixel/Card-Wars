@@ -29,3 +29,13 @@ theme_override_font_sizes/font_size = 90
 text = "D"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Cost_Label" type="Label" parent="Sprite2D"]
+offset_left = 84.4828
+offset_top = -255.172
+offset_right = 184.483
+offset_bottom = -128.172
+theme_override_font_sizes/font_size = 90
+text = "C"
+horizontal_alignment = 1
+vertical_alignment = 1
