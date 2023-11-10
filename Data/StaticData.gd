@@ -6,9 +6,9 @@ extends Node
 func _ready():
 	pass
 	
-#	ASK GODOT:
+	#ASK GODOT:
 #	var file = new()
-#	file.open("res://Data/StaticData.gd", file.READ)
+#	file.open("res://Data/StaticData.json")
 #	var text = file.get_as_text()
 #	dict.parse_json(text)
 #	file.close()
@@ -17,9 +17,11 @@ func _ready():
 
 	
 	#CHAT GPT:
-#	var json_text = preload("res://Data/allcards.json").get_text()
-#	var json_data = JSONParser.new()
-#	var result = json_data.open_buffer(json_text)
+	print("working")
+	var json_text = preload("res://Data/allcards.json").get_parsed_text()
+	var json_data = new()
+	#var result = json_data.open_buffer(json_text)
+	print(json_text)
 #	if result == OK:
 #		var json_dict = json_data.get_data()
 #	else:

@@ -1,7 +1,3 @@
-res://Card.tscn
-res://assets/Data/allcards.json
-res://Card.gd
 res://Scenes/Card.tscn
-res://Scenes/Main.tscn
-res://Scripts/Card.gd
 res://Data/StaticData.gd
+res://Scenes/Main.tscn
