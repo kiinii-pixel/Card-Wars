@@ -17,10 +17,10 @@ func _ready():
 
 	
 	#CHAT GPT:
-	print("working")
 	var json_text = preload("res://Data/allcards.json").get_parsed_text()
-	var json_data = new()
-	#var result = json_data.open_buffer(json_text)
+	var json_text2 = preload("res://Data/allcards.json")
+	json_text2.get_parsed_text()
+	var result = json_text.json_escape()
 	print(json_text)
 #	if result == OK:
 #		var json_dict = json_data.get_data()
