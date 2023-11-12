@@ -1,3 +1,5 @@
 res://Scenes/Card.tscn
+res://Scripts/Card.gd
 res://Data/StaticData.gd
 res://Scenes/Main.tscn
+res://Data/all_cards.json
