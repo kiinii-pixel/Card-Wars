@@ -7,6 +7,7 @@ This project is in very early development.
 
 # Already working:
   -Data can be read from JSON file containing the stats, description, etc. of every card.
+  -Drag and drop system
 
 # Planned Features: 
   -Deck Building \
