@@ -7,12 +7,13 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="Landscape" parent="." instance=ExtResource("2_lwsnh")]
-position = Vector2(463, 199)
-scale = Vector2(0.75, 0.75)
+position = Vector2(587, 266)
+scale = Vector2(0.5, 0.5)
 
 [node name="Card" parent="." instance=ExtResource("1_itkyv")]
-position = Vector2(246, 321)
-scale = Vector2(0.75, 0.75)
+position = Vector2(276, 266)
+scale = Vector2(0.5, 0.5)
 
 [node name="CardTest" parent="." instance=ExtResource("3_0ry7n")]
-position = Vector2(1005, 472)
+position = Vector2(901, 266)
+scale = Vector2(0.5, 0.5)

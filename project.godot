@@ -20,6 +20,7 @@ config/icon="res://assets/Images/Icons/icon.png"
 [autoload]
 
 StaticData="*res://Data/StaticData.gd"
+Global="*res://Scripts/Global.gd"
 
 [input]
 
