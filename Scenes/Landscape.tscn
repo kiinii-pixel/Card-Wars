@@ -6,16 +6,17 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1lp4w"]
 size = Vector2(362.667, 508)
 
-[node name="Landscape" type="Node2D"]
-
-[node name="StaticBody2D" type="StaticBody2D" parent="." groups=["droppable"]]
+[node name="Landscape" type="StaticBody2D" groups=["droppable"]]
 script = ExtResource("1_1ni75")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 2)
 shape = SubResource("RectangleShape2D_1lp4w")
 
-[node name="ColorRect" type="ColorRect" parent="StaticBody2D"]
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_s8k3c")
+
+[node name="ColorRect" type="ColorRect" parent="."]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -27,6 +28,4 @@ offset_right = 185.0
 offset_bottom = 258.0
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_s8k3c")
+metadata/_edit_use_anchors_ = true

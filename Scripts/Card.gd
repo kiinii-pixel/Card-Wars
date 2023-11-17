@@ -13,6 +13,7 @@ var selected = false
 var draggable = false
 var is_inside = false
 var body_ref
+var initial_pos : Vector2
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -25,8 +26,19 @@ func _ready():
 
 func _process(_delta):
 	#if player is clicking, set the card to mouse position
-	if Input.is_action_pressed("left_click") and selected and draggable: #selected is true if click occured in objects area2D
-		position = get_global_mouse_position()
+	if draggable:
+		if Input.is_action_pressed("left_click") and selected: #selected is true if click occured in objects area2D
+			position = get_global_mouse_position()
+		if Input.is_action_just_pressed("left_click"):
+			Global.is_dragging = true
+			initial_pos = global_position
+		elif Input.is_action_just_released("left_click"):
+			Global.is_dragging = false
+			var tween = get_tree().create_tween()
+			if is_inside:
+				tween.tween_property(self, "position", body_ref.position, 0.2).set_ease(Tween.EASE_OUT)
+			else:
+				tween.tween_property(self, "position", initial_pos, 0.2).set_ease(Tween.EASE_IN)
 
 #this is how they did in in the tutorial, although i don't see why you cant set the position in the process function,
 #instead of calling this function. Maybe i will see why and make this function active again
@@ -42,8 +54,7 @@ func _on_area_2d_input_event(_viewport, event, _shape_idx):
 			Global.is_dragging = true #export var so other objects can still see the variable.
 			scale = Vector2(0.6, 0.6)
 		else:
-			print("123")
-			selected = false  #i wonder why this works. does releasing the mouse button trigger another event?
+			selected = false  #when buttin is release, reverse everything
 			Global.is_dragging = false 
 			scale = Vector2(0.5, 0.5)
 
@@ -62,6 +73,9 @@ func _on_area_2d_body_entered(body:StaticBody2D): #when the card enters a static
 		is_inside = true #if they overlap
 		body.modulate = Color(Color.GREEN_YELLOW, 1) #change rect color of static body
 		body_ref = body #current body
+		print(body_ref)
+		#Landscape:<StaticBody2D#25820136601> #working
+#		StaticBody2D:<StaticBody2D#25836913819>
 
 func _on_area_2d_body_exited(body): #when card leaves current body
 	if body.is_in_group('droppable'):
