@@ -1,8 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://owug2m35obl1"]
+[gd_scene load_steps=3 format=3 uid="uid://owug2m35obl1"]
 
 [ext_resource type="PackedScene" uid="uid://dmaltcph6qdjq" path="res://Scenes/Card.tscn" id="1_itkyv"]
 [ext_resource type="PackedScene" uid="uid://c52dn3mymvxw0" path="res://Scenes/Landscape.tscn" id="2_lwsnh"]
-[ext_resource type="PackedScene" uid="uid://doq3k4detg5ti" path="res://Scenes/card_test.tscn" id="3_0ry7n"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -14,6 +13,6 @@ scale = Vector2(0.5, 0.5)
 position = Vector2(276, 266)
 scale = Vector2(0.5, 0.5)
 
-[node name="CardTest" parent="." instance=ExtResource("3_0ry7n")]
-position = Vector2(901, 266)
+[node name="Card2" parent="." instance=ExtResource("1_itkyv")]
+position = Vector2(930, 264)
 scale = Vector2(0.5, 0.5)

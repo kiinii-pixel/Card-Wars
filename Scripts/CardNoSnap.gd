@@ -1,5 +1,6 @@
 extends Node2D
 
+#how the code would be if card snap wasnt wanted anymore (card snapping its center ot mouse pos)
 
 var selected = false
 var mouse_offset = Vector2(0, 0)
