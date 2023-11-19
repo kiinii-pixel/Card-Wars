@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://bvvufyyr3o2v0"]
+
+[ext_resource type="Texture2D" uid="uid://buupdrqappake" path="res://assets/Images/siteresource/forumpost1.jpg" id="1_iwvbc"]
+[ext_resource type="FontFile" uid="uid://ca0g1l1k6v1sf" path="res://assets/Fonts/Pendlefont Heavy.TTF" id="2_ihilg"]
+
+[node name="Board" type="CanvasLayer"]
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="."]
+z_index = 1
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_fonts/font = ExtResource("2_ihilg")
+theme_override_font_sizes/font_size = 80
+text = "HP: "
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_iwvbc")

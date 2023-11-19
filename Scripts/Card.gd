@@ -40,7 +40,7 @@ func _process(_delta):
 			var tween = get_tree().create_tween()
 
 			if Global.is_inside:
-				tween.tween_property(self, "position", body_ref.position, 0.2).set_ease(Tween.EASE_OUT)
+				tween.tween_property(self, "position", body_ref.position, 0.2).set_ease(Tween.EASE_OUT) # CRASHES HERE BECAUSE position is NIL for some reason
 				played = true
 				scale = Vector2(0.5, 0.5)
 			else:
