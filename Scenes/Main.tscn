@@ -2,20 +2,40 @@
 
 [ext_resource type="PackedScene" uid="uid://dmaltcph6qdjq" path="res://Scenes/Card.tscn" id="1_itkyv"]
 [ext_resource type="PackedScene" uid="uid://c52dn3mymvxw0" path="res://Scenes/Landscape.tscn" id="2_lwsnh"]
-[ext_resource type="PackedScene" uid="uid://bvvufyyr3o2v0" path="res://Scenes/board.tscn" id="3_hg0cv"]
+[ext_resource type="PackedScene" uid="uid://bbqy7snyor216" path="res://Scenes/board.tscn" id="3_hg0cv"]
 
 [node name="Game" type="Node2D"]
 
-[node name="Landscape" parent="." instance=ExtResource("2_lwsnh")]
-position = Vector2(939, 335)
+[node name="Landscapes" type="Node2D" parent="."]
+
+[node name="Landscape" parent="Landscapes" instance=ExtResource("2_lwsnh")]
+position = Vector2(604, 591)
 scale = Vector2(0.5, 0.5)
 
-[node name="Card" parent="." instance=ExtResource("1_itkyv")]
-position = Vector2(557, 1056)
+[node name="Landscape2" parent="Landscapes" instance=ExtResource("2_lwsnh")]
+position = Vector2(859, 591)
 scale = Vector2(0.5, 0.5)
 
-[node name="Card2" parent="." instance=ExtResource("1_itkyv")]
-position = Vector2(1757, 884)
+[node name="Landscape3" parent="Landscapes" instance=ExtResource("2_lwsnh")]
+position = Vector2(1116, 591)
+scale = Vector2(0.5, 0.5)
+
+[node name="Landscape4" parent="Landscapes" instance=ExtResource("2_lwsnh")]
+position = Vector2(1373, 591)
+scale = Vector2(0.5, 0.5)
+
+[node name="Cards" type="Node2D" parent="."]
+
+[node name="Card" parent="Cards" instance=ExtResource("1_itkyv")]
+position = Vector2(859, 978)
+scale = Vector2(0.5, 0.5)
+
+[node name="Card2" parent="Cards" instance=ExtResource("1_itkyv")]
+position = Vector2(984, 978)
+scale = Vector2(0.5, 0.5)
+
+[node name="Card3" parent="Cards" instance=ExtResource("1_itkyv")]
+position = Vector2(1116, 978)
 scale = Vector2(0.5, 0.5)
 
 [node name="Control" parent="." instance=ExtResource("3_hg0cv")]

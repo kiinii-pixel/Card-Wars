@@ -23,7 +23,6 @@ func _ready():
 	$CardImage/CCDefense/DefenseLabel.text = String.num_int64(defense)
 	$CardImage/CCCost/CostLabel.text = String.num_int64(cost)
 
-
 func _process(_delta):
 	#if player is clicking, set the card to mouse position
 	if draggable:
@@ -46,7 +45,6 @@ func _process(_delta):
 			else:
 				tween.tween_property(self, "position", initial_pos, 0.2).set_ease(Tween.EASE_IN)
 
-#When a click occurs on the are 2D, selected is set to true.
 func _on_area_2d_input_event(_viewport, event, _shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
 
