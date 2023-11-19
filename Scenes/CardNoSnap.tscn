@@ -7,7 +7,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dkqsb"]
 size = Vector2(370, 516)
 
-[node name="CardTest" type="Node2D"]
+[node name="CardNoDrag" type="Node2D"]
 scale = Vector2(0.75, 0.75)
 script = ExtResource("1_vpoad")
 

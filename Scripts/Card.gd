@@ -9,9 +9,9 @@ var landscape
 
 #keeps track of whether a card is selected (being dragged)
 var selected = false
+var mouse_offset = Vector2(0, 0)
 
 var draggable = false
-var is_inside = false
 var body_ref
 var initial_pos : Vector2
 
@@ -28,14 +28,14 @@ func _process(_delta):
 	#if player is clicking, set the card to mouse position
 	if draggable:
 		if Input.is_action_pressed("left_click") and selected: #selected is true if click occured in objects area2D
-			position = get_global_mouse_position()
+			position = get_global_mouse_position() + mouse_offset
 		if Input.is_action_just_pressed("left_click"):
 			Global.is_dragging = true
 			initial_pos = global_position
 		elif Input.is_action_just_released("left_click"):
 			Global.is_dragging = false
 			var tween = get_tree().create_tween()
-			if is_inside:
+			if Global.is_inside:
 				tween.tween_property(self, "position", body_ref.position, 0.2).set_ease(Tween.EASE_OUT)
 			else:
 				tween.tween_property(self, "position", initial_pos, 0.2).set_ease(Tween.EASE_IN)
@@ -50,6 +50,7 @@ func _process(_delta):
 func _on_area_2d_input_event(_viewport, event, _shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
 		if event.pressed:
+			mouse_offset = position - get_global_mouse_position() #save the mouse offset
 			selected = true           #these 2 kinda do the same thing, maybe i can make selected an
 			Global.is_dragging = true #export var so other objects can still see the variable.
 			scale = Vector2(0.6, 0.6)
@@ -70,14 +71,9 @@ func _on_area_2d_mouse_exited(): #reverses everything from above
 
 func _on_area_2d_body_entered(body:StaticBody2D): #when the card enters a static body
 	if body.is_in_group('droppable'):
-		is_inside = true #if they overlap
-		body.modulate = Color(Color.GREEN_YELLOW, 1) #change rect color of static body
+		Global.is_inside = true #if they overlap
 		body_ref = body #current body
-		print(body_ref)
-		#Landscape:<StaticBody2D#25820136601> #working
-#		StaticBody2D:<StaticBody2D#25836913819>
 
 func _on_area_2d_body_exited(body): #when card leaves current body
 	if body.is_in_group('droppable'):
-		is_inside = false
-		body.modulate = Color(Color.MEDIUM_SEA_GREEN, 0.7) #change color back
+		Global.is_inside = false
