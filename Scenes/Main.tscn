@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://dmaltcph6qdjq" path="res://Scenes/Card.tscn" id="1_itkyv"]
 [ext_resource type="PackedScene" uid="uid://c52dn3mymvxw0" path="res://Scenes/Landscape.tscn" id="2_lwsnh"]
 
-[node name="Node2D" type="Node2D"]
+[node name="Game" type="Node2D"]
 
 [node name="Landscape" parent="." instance=ExtResource("2_lwsnh")]
 position = Vector2(587, 266)
