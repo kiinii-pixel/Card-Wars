@@ -22,6 +22,13 @@ config/icon="res://assets/Images/Icons/icon.png"
 StaticData="*res://Data/StaticData.gd"
 Global="*res://Scripts/Global.gd"
 
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
 [input]
 
 left_click={

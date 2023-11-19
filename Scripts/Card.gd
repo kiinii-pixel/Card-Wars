@@ -36,7 +36,7 @@ func _process(_delta):
 			Global.is_dragging = false
 			var tween = get_tree().create_tween()
 			if Global.is_inside:
-				tween.tween_property(self, "position", body_ref.position, 0.2).set_ease(Tween.EASE_OUT)
+				tween.tween_property(self, "position", body_ref.position, 0.2).set_ease(Tween.EASE_OUT) # CRASHES HERE BECAUSE position is NIL for some reason
 			else:
 				tween.tween_property(self, "position", initial_pos, 0.2).set_ease(Tween.EASE_IN)
 
