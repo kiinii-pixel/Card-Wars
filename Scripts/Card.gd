@@ -39,11 +39,11 @@ func _process(_delta):
 			var tween = create_tween() #why get_tree()?  before: var tween = get_tree().create_tween()
 
 			if Global.is_inside:
-				tween.tween_property(self, "position", body_ref.position, 0.2).set_ease(Tween.EASE_OUT) # CRASHES HERE BECAUSE position is NIL for some reason
+				tween.tween_property(self, "global_position", body_ref.global_position, 0.2).set_ease(Tween.EASE_OUT) # CRASHES HERE BECAUSE position is NIL for some reason
 				played = true
 				scale = Vector2(0.5, 0.5)
 			else:
-				tween.tween_property(self, "position", initial_pos, 0.2).set_ease(Tween.EASE_IN)
+				tween.tween_property(self, "global_position", initial_pos, 0.2).set_ease(Tween.EASE_IN)
 
 func _on_area_2d_input_event(_viewport, event, _shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
