@@ -12,7 +12,7 @@ var selected = false #true after click occcured on card
 var mouse_offset = Vector2(0, 0)
 var played = false #true when put on landscape
 var draggable = false #true is mouse is hovering over card
-var body_ref #reference to landscape
+var body_ref
 var initial_pos : Vector2
 
 # Called when the node enters the scene tree for the first time.
@@ -36,7 +36,7 @@ func _process(_delta):
 
 		elif Input.is_action_just_released("left_click"):
 			Global.is_dragging = false
-			var tween = get_tree().create_tween()
+			var tween = create_tween() #why get_tree()?  before: var tween = get_tree().create_tween()
 
 			if Global.is_inside:
 				tween.tween_property(self, "position", body_ref.position, 0.2).set_ease(Tween.EASE_OUT) # CRASHES HERE BECAUSE position is NIL for some reason
@@ -66,7 +66,9 @@ func _on_area_2d_mouse_entered(): #when you hover over the card
 		z_index += 1
 
 		if not played:
-			scale = Vector2(0.6, 0.6) #scale it up a little (visual effect)
+			#scale up (card zoom)
+			var tween = create_tween()
+			tween.tween_property(self, "scale", Vector2(0.6, 0.6), 0.1).set_ease(Tween.EASE_IN)
 
 func _on_area_2d_mouse_exited(): #reverses everything from above
 
@@ -75,7 +77,9 @@ func _on_area_2d_mouse_exited(): #reverses everything from above
 		z_index -= 1
 
 		if not played:
-			scale = Vector2(0.5, 0.5)
+			#scale down
+			var tween = create_tween()
+			tween.tween_property(self, "scale", Vector2(0.5, 0.5), 0.1).set_ease(Tween.EASE_OUT)
 
 func _on_area_2d_body_entered(body:StaticBody2D): #when the card enters a static body
 

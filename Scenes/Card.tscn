@@ -1,18 +1,18 @@
-[gd_scene load_steps=5 format=3 uid="uid://dmaltcph6qdjq"]
+[gd_scene load_steps=5 format=3 uid="uid://bco1m6ixdmiil"]
 
-[ext_resource type="Script" path="res://Scripts/Card.gd" id="1_xffmv"]
-[ext_resource type="Texture2D" uid="uid://bdyhhj3j3u1ps" path="res://assets/Images/CardImages/Rainbow/Creature/The Pig.png" id="2_vvst3"]
-[ext_resource type="FontFile" uid="uid://ca0g1l1k6v1sf" path="res://assets/Fonts/Pendlefont Heavy.TTF" id="4_uao1k"]
+[ext_resource type="Script" path="res://scripts/card.gd" id="1_xodya"]
+[ext_resource type="Texture2D" uid="uid://bdyhhj3j3u1ps" path="res://assets/Images/CardImages/Rainbow/Creature/The Pig.png" id="2_xh482"]
+[ext_resource type="FontFile" uid="uid://ca0g1l1k6v1sf" path="res://assets/Fonts/Pendlefont Heavy.TTF" id="3_8dgt2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4b713"]
 size = Vector2(370, 516)
 
 [node name="Card" type="Node2D"]
 scale = Vector2(0.75, 0.75)
-script = ExtResource("1_xffmv")
+script = ExtResource("1_xodya")
 
 [node name="CardImage" type="Sprite2D" parent="."]
-texture = ExtResource("2_vvst3")
+texture = ExtResource("2_xh482")
 
 [node name="CCCost" type="CenterContainer" parent="CardImage"]
 offset_left = -185.0
@@ -25,7 +25,7 @@ layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("4_uao1k")
+theme_override_fonts/font = ExtResource("3_8dgt2")
 theme_override_font_sizes/font_size = 50
 text = "C"
 horizontal_alignment = 1
@@ -42,7 +42,7 @@ layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 8
 theme_override_colors/font_color = Color(0.0784314, 0.0784314, 0.0784314, 1)
-theme_override_fonts/font = ExtResource("4_uao1k")
+theme_override_fonts/font = ExtResource("3_8dgt2")
 theme_override_font_sizes/font_size = 40
 text = "A"
 horizontal_alignment = 1
@@ -59,7 +59,7 @@ layout_mode = 2
 size_flags_horizontal = 8
 size_flags_vertical = 8
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("4_uao1k")
+theme_override_fonts/font = ExtResource("3_8dgt2")
 theme_override_font_sizes/font_size = 40
 text = "D"
 horizontal_alignment = 1

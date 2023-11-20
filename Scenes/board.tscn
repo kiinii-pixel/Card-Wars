@@ -1,8 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://bbqy7snyor216"]
+[gd_scene load_steps=5 format=3 uid="uid://clyo1ca2sglx8"]
 
-[ext_resource type="Texture2D" uid="uid://buupdrqappake" path="res://assets/Images/siteresource/forumpost1.jpg" id="1_iwvbc"]
-[ext_resource type="FontFile" uid="uid://ca0g1l1k6v1sf" path="res://assets/Fonts/Pendlefont Heavy.TTF" id="2_ihilg"]
-[ext_resource type="Script" path="res://Scripts/Quit.gd" id="3_8sjek"]
+[ext_resource type="Texture2D" uid="uid://buupdrqappake" path="res://assets/Images/siteresource/forumpost1.jpg" id="1_cmgiy"]
+[ext_resource type="FontFile" uid="uid://ca0g1l1k6v1sf" path="res://assets/Fonts/Pendlefont Heavy.TTF" id="2_j3jh8"]
+[ext_resource type="Script" path="res://scripts/quit.gd" id="3_m43to"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_52cgp"]
 
@@ -15,12 +15,12 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_iwvbc")
+texture = ExtResource("1_cmgiy")
 
 [node name="Label" type="Label" parent="."]
 offset_right = 200.0
 offset_bottom = 144.0
-theme_override_fonts/font = ExtResource("2_ihilg")
+theme_override_fonts/font = ExtResource("2_j3jh8")
 theme_override_font_sizes/font_size = 80
 text = " HP: "
 
@@ -35,7 +35,7 @@ size_flags_horizontal = 4
 theme_override_colors/font_color = Color(1, 0.2, 0.2, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/outline_size = 25
-theme_override_fonts/font = ExtResource("2_ihilg")
+theme_override_fonts/font = ExtResource("2_j3jh8")
 theme_override_font_sizes/font_size = 80
 theme_override_styles/normal = SubResource("StyleBoxEmpty_52cgp")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_52cgp")
@@ -43,4 +43,4 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_52cgp")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_52cgp")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_52cgp")
 text = "X"
-script = ExtResource("3_8sjek")
+script = ExtResource("3_m43to")

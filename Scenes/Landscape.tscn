@@ -1,19 +1,19 @@
-[gd_scene load_steps=4 format=3 uid="uid://c52dn3mymvxw0"]
+[gd_scene load_steps=4 format=3 uid="uid://b5oih1txnoxfo"]
 
-[ext_resource type="Script" path="res://Scripts/Landscape.gd" id="1_1ni75"]
-[ext_resource type="Texture2D" uid="uid://dh1i8bho0oef6" path="res://assets/Images/CardImages/CardBorder.png" id="1_s8k3c"]
+[ext_resource type="Script" path="res://scripts/landscape.gd" id="1_ke2ls"]
+[ext_resource type="Texture2D" uid="uid://dh1i8bho0oef6" path="res://assets/Images/CardImages/CardBorder.png" id="2_swvfu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1lp4w"]
 size = Vector2(362.667, 508)
 
 [node name="Landscape" type="StaticBody2D" groups=["droppable"]]
-script = ExtResource("1_1ni75")
+script = ExtResource("1_ke2ls")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_1lp4w")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_s8k3c")
+texture = ExtResource("2_swvfu")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 anchors_preset = 8
