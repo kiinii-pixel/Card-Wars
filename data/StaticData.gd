@@ -1,11 +1,11 @@
 extends Node
 
 
-var CardData = {}
+var card_data = {}
 var data_file_path = "res://Data/all_cards.json"
 
 func _ready():
-	CardData = load_json_file(data_file_path)
+	card_data = load_json_file(data_file_path)
 
 func load_json_file(filePath : String):
 	if FileAccess.file_exists(filePath):
@@ -18,3 +18,6 @@ func load_json_file(filePath : String):
 			print("error reading file")
 	else:
 		print("doesnt exist")
+
+func return_data():
+	return card_data

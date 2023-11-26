@@ -23,7 +23,6 @@ func _on_child_order_changed():
 	
 	for card in hand.get_children():
 		hand_ratio = 0.5
-		var current = get_index()
 
 		if get_child_count() > 1:
 			hand_ratio = float(card.get_index()) / float(hand.get_child_count() - 1)
@@ -35,5 +34,3 @@ func _on_child_order_changed():
 		destination.origin.x += spread_curve.sample(hand_ratio) * hand_width
 		
 		card.global_position.x = destination.origin.x
-#		get_child(current).position.x = destination.origin.x
-#		current += 1
