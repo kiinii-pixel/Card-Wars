@@ -1,20 +1,17 @@
 class_name Card extends Node2D
 
-signal landscape_entered(landscape: Landscape)
-
 var selected = false # true after click occcured on card
 var mouse_offset = Vector2(0, 0)
 var played = false # true when put on landscape
 var body_ref
 var initial_pos : Vector2
 var is_inside = false
-var card_id = 7
+@export var card_id = 7
 
 var hovered_cards : Array = []
 
 func _ready():
-#	load_image()
-	pass
+	load_image()
 
 func _process(_delta):
 	if selected:
@@ -100,5 +97,5 @@ func load_image():
 	$CardImage/CCDefense/DefenseLabel.text = String.num(card_data[card_id].get("def"))
 	$CardImage/CCCost/CostLabel.text = String.num(card_data[card_id].get("cost"))
 
-func _init(id):
-	card_id = id
+#func _init(id):
+#	card_id = id
