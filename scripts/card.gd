@@ -1,28 +1,22 @@
-extends Node2D
-
-class_name Card
+class_name Card extends Node2D
 
 signal landscape_entered(landscape: Landscape)
 
 var selected = false # true after click occcured on card
 var mouse_offset = Vector2(0, 0)
 var played = false # true when put on landscape
-#var draggable = false # true is mouse is hovering over card
 var body_ref
 var initial_pos : Vector2
 var is_inside = false
+var card_id = 7
+
+var hovered_cards : Array = []
 
 func _ready():
-	var card_id = 0
-
-	var card_data = StaticData.return_data()
-	
-	$CardImage/CCAttack/AttackLabel.text = String.num(card_data[card_id].get("atk"))
-	$CardImage/CCDefense/DefenseLabel.text = String.num(card_data[card_id].get("def"))
-	$CardImage/CCCost/CostLabel.text = String.num(card_data[card_id].get("cost"))
+#	load_image()
+	pass
 
 func _process(_delta):
-
 	if selected:
 		
 		if Input.is_action_pressed("left_click") and not played:
@@ -53,36 +47,58 @@ func _on_area_2d_input_event(_viewport, event, _shape_idx):
 			Global.is_dragging = true
 
 		else:
-			Global.is_dragging = false 
+			Global.is_dragging = false
 
 func _on_area_2d_mouse_entered(): # when you hover over the card
 
-#	if not Global.is_dragging: #if no other card is being dragged:
+	if not Global.is_dragging: #if no other card is being dragged:
 		selected = true
 		z_index += 1
 
 		if not played:
-			#scale up (card zoom)
-			var tween = create_tween()
-			tween.tween_property(self, "scale", Vector2(0.6, 0.6), 0.1).set_ease(Tween.EASE_IN)
+			if hovered_cards.find(self) == -1:
+				hovered_cards.append(self)
+			
+			if hovered_cards.size() > 0 and hovered_cards[hovered_cards.size() - 1] == self:
+				#scale up (card zoom)
+				var tween = create_tween()
+				tween.tween_property(self, "scale", Vector2(0.6, 0.6), 0.1).set_ease(Tween.EASE_IN)
 
 func _on_area_2d_mouse_exited(): # reverses everything from above
 
 	selected = false
 	z_index -= 1
+	hovered_cards.erase(self)
 
 	if not played:
-		#scale down
-		var tween = create_tween()
-		tween.tween_property(self, "scale", Vector2(0.5, 0.5), 0.1).set_ease(Tween.EASE_OUT)
+		if hovered_cards.find(self) == -1:
+			#scale down
+			var tween = create_tween()
+			tween.tween_property(self, "scale", Vector2(0.5, 0.5), 0.1).set_ease(Tween.EASE_OUT)
 
-func _on_area_2d_body_entered(landscape: Landscape): # when the card enters a static body
+func _on_area_2d_body_entered(landscape: Landscape): # when the card enters a landscape
 
-#	if landscape.is_in_group('droppable'):
-	emit_signal("landscape_entered", landscape)
 	body_ref = landscape # current body
 	is_inside = true # if they overlap
 
 func _on_area_2d_body_exited(_landscape): # when card leaves current body
-
 		is_inside = false
+
+func load_image():
+	var card_data = StaticData.return_data()
+	
+	var landscape = card_data[card_id].get("landscape")
+	var card_type = card_data[card_id].get("card_type")
+	
+	var jpg_card_name = card_data[card_id].get("image_name")
+	var card_name = jpg_card_name.left(jpg_card_name.length() - 4)
+	
+	var image_path = "res://assets/images/cards/modular_cards/" + landscape + "/" + card_type + "/" + card_name + ".png"
+	
+	$CardImage.texture = load(image_path)
+	$CardImage/CCAttack/AttackLabel.text = String.num(card_data[card_id].get("atk"))
+	$CardImage/CCDefense/DefenseLabel.text = String.num(card_data[card_id].get("def"))
+	$CardImage/CCCost/CostLabel.text = String.num(card_data[card_id].get("cost"))
+
+func _init(id):
+	card_id = id

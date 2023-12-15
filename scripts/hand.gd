@@ -1,7 +1,5 @@
 extends Node2D
 
-const CARD = preload("res://scenes/card.tscn")
-
 @export var spread_curve: Curve
 var hand = self
 var hand_ratio
@@ -11,8 +9,9 @@ func _ready():
 	add_cards(6)
 
 func add_cards(amount) -> void:
-	for _x in amount:
-		var card = CARD.instantiate()
+	for _x in range(amount):
+		var card = Card.new(7)
+#		card.load_image()
 		add_child(card)
 		card.scale = Vector2(0.5, 0.5)
 

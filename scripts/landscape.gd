@@ -1,9 +1,6 @@
-extends Node2D
-
-class_name Landscape
+class_name Landscape extends Node2D
 
 func _ready():
-	
 	$ColorRect.modulate = Color(Color.MEDIUM_SEA_GREEN, 0.7)
 
 func _process(_delta):
@@ -12,5 +9,10 @@ func _process(_delta):
 	else:
 		$ColorRect.visible = false #remove highlight
 
-func _on_landscape_entered(landscape):
+func _on_area_2d_area_entered(_area):
+	#print("Another object entered:", area.name)
 	$ColorRect.modulate = Color(Color.GREEN_YELLOW, 1) #change highlight color
+
+func _on_area_2d_area_exited(_area):
+	#print("Another object exited:", area.name)
+	$ColorRect.modulate = Color(Color.MEDIUM_SEA_GREEN, 0.7)

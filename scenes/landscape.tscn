@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://b5oih1txnoxfo"]
 
 [ext_resource type="Script" path="res://scripts/landscape.gd" id="1_ke2ls"]
-[ext_resource type="Texture2D" uid="uid://dh1i8bho0oef6" path="res://assets/Images/CardImages/CardBorder.png" id="2_swvfu"]
+[ext_resource type="Texture2D" uid="uid://dh1i8bho0oef6" path="res://assets/images/cards/card_border.png" id="2_73dag"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1lp4w"]
 size = Vector2(362.667, 508)
@@ -13,7 +13,7 @@ script = ExtResource("1_ke2ls")
 shape = SubResource("RectangleShape2D_1lp4w")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_swvfu")
+texture = ExtResource("2_73dag")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 anchors_preset = 8
@@ -28,3 +28,13 @@ offset_bottom = 258.0
 grow_horizontal = 2
 grow_vertical = 2
 metadata/_edit_use_anchors_ = true
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_1lp4w")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="area_exited" from="Area2D" to="." method="_on_area_2d_area_exited"]
