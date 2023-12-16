@@ -18,7 +18,7 @@ texture = ExtResource("2_ek3rv")
 offset_left = -185.0
 offset_top = -258.0
 offset_right = -70.0
-offset_bottom = -149.0
+offset_bottom = -140.0
 
 [node name="CostLabel" type="Label" parent="CardImage/CCCost"]
 layout_mode = 2
@@ -26,7 +26,7 @@ size_flags_horizontal = 0
 size_flags_vertical = 0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_4fvhp")
-theme_override_font_sizes/font_size = 50
+theme_override_font_sizes/font_size = 55
 text = "C"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -49,9 +49,9 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="CCDefense" type="CenterContainer" parent="CardImage"]
-offset_left = 128.0
+offset_left = 120.0
 offset_top = 188.0
-offset_right = 168.0
+offset_right = 167.0
 offset_bottom = 262.0
 
 [node name="DefenseLabel" type="Label" parent="CardImage/CCDefense"]

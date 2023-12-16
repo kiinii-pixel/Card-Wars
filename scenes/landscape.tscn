@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/landscape.gd" id="1_ke2ls"]
 [ext_resource type="Texture2D" uid="uid://dh1i8bho0oef6" path="res://assets/images/cards/card_border.png" id="2_73dag"]
-[ext_resource type="Texture2D" uid="uid://cvxhnr43qvyeb" path="res://assets/images/landscapes/blueplains1.jpg" id="3_jhgjx"]
+[ext_resource type="Texture2D" uid="uid://5y38acorv2wy" path="res://assets/images/landscapes/blueplains1.png" id="2_swo5x"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1lp4w"]
 size = Vector2(362.667, 508)
@@ -12,15 +12,17 @@ script = ExtResource("1_ke2ls")
 
 [node name="Landscape_Image" type="Sprite2D" parent="."]
 position = Vector2(0, 75)
-texture = ExtResource("3_jhgjx")
+texture = ExtResource("2_swo5x")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_1lp4w")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
 texture = ExtResource("2_73dag")
 
 [node name="ColorRect" type="ColorRect" parent="."]
+visible = false
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5

@@ -58,8 +58,9 @@ func _on_area_2d_mouse_entered(): # when you hover over the card
 			
 			if hovered_cards.size() > 0 and hovered_cards[hovered_cards.size() - 1] == self:
 				#scale up (card zoom)
-				var tween = create_tween()
+				var tween = create_tween().set_parallel(true)
 				tween.tween_property(self, "scale", Vector2(0.6, 0.6), 0.1).set_ease(Tween.EASE_IN)
+				tween.tween_property(self, "position", position + Vector2(0, -50), 0.1).set_ease(Tween.EASE_IN)
 
 func _on_area_2d_mouse_exited(): # reverses everything from above
 
@@ -70,8 +71,9 @@ func _on_area_2d_mouse_exited(): # reverses everything from above
 	if not played:
 		if hovered_cards.find(self) == -1:
 			#scale down
-			var tween = create_tween()
+			var tween = create_tween().set_parallel(true)
 			tween.tween_property(self, "scale", Vector2(0.5, 0.5), 0.1).set_ease(Tween.EASE_OUT)
+			tween.tween_property(self, "position", position + Vector2(0, 50), 0.1).set_ease(Tween.EASE_OUT)
 
 func _on_area_2d_body_entered(landscape: Landscape): # when the card enters a landscape
 

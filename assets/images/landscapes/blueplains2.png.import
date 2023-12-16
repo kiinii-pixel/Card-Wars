@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://df8h42hto5t2r"
-path="res://.godot/imported/blueplains4.jpg-9498c665241dc2dadc37bb4d14f1c03a.ctex"
+uid="uid://bgr8rxllk44oj"
+path="res://.godot/imported/blueplains2.png-127b7d1ff8f1194b16642e3d15fb43b5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/landscapes/blueplains4.jpg"
-dest_files=["res://.godot/imported/blueplains4.jpg-9498c665241dc2dadc37bb4d14f1c03a.ctex"]
+source_file="res://assets/images/landscapes/blueplains2.png"
+dest_files=["res://.godot/imported/blueplains2.png-127b7d1ff8f1194b16642e3d15fb43b5.ctex"]
 
 [params]
 

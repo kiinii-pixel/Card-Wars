@@ -6,15 +6,18 @@
 
 [node name="Game" type="Node2D"]
 
+[node name="Interface" parent="." instance=ExtResource("3_82cvq")]
+layer = -1
+
 [node name="Landscapes" type="Node2D" parent="."]
 position = Vector2(995, 500)
 
 [node name="Landscape" parent="Landscapes" instance=ExtResource("1_r6f6m")]
-position = Vector2(-381, 0)
+position = Vector2(-393, 0)
 scale = Vector2(0.5, 0.5)
 
 [node name="Landscape2" parent="Landscapes" instance=ExtResource("1_r6f6m")]
-position = Vector2(-126, 0)
+position = Vector2(-131, 0)
 scale = Vector2(0.5, 0.5)
 
 [node name="Landscape3" parent="Landscapes" instance=ExtResource("1_r6f6m")]
@@ -22,11 +25,8 @@ position = Vector2(131, 0)
 scale = Vector2(0.5, 0.5)
 
 [node name="Landscape4" parent="Landscapes" instance=ExtResource("1_r6f6m")]
-position = Vector2(388, 0)
+position = Vector2(393, 0)
 scale = Vector2(0.5, 0.5)
 
-[node name="Interface" parent="." instance=ExtResource("3_82cvq")]
-layer = -1
-
 [node name="Hand" parent="." instance=ExtResource("4_v11k8")]
-position = Vector2(995, 980)
+position = Vector2(995, 970)
