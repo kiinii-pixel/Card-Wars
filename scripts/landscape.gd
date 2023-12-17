@@ -1,7 +1,7 @@
 class_name Landscape extends Node2D
 
 var type = 'blueplains'
-var art_variant = 3
+@export var art_variant = 3
 
 func _ready():
 	$ColorRect.modulate = Color(Color.MEDIUM_SEA_GREEN, 0.7)

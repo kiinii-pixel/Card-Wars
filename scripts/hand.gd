@@ -5,7 +5,8 @@ const CARD = preload("res://scenes/card.tscn")
 @export var spread_curve: Curve
 var hand = self
 var hand_ratio
-var hand_width = 60
+const HAND_WIDTH = 300
+#var MAX_HAND_WIDTH = 600
 
 func _ready():
 #	add_cards(6)
@@ -29,7 +30,6 @@ func add_specific_card(id):
 	add_child(card)
 	card.scale = Vector2(0.5, 0.5)
 
-
 func _on_child_order_changed():
 	hand = self
 	#var current = 0
@@ -40,14 +40,11 @@ func _on_child_order_changed():
 		if get_child_count() > 1:
 			hand_ratio = float(card.get_index()) / float(hand.get_child_count() - 1)
 
-#		if get_child_count() > 5:
-#			hand_width = 500
-#
-		hand_width = get_child_count() * 40
-		if hand_width > 600:
-			hand_width = 600
+#		hand_width = get_child_count() * 40
+#		if hand_width > MAX_HAND_WIDTH:
+#			hand_width = MAX_HAND_WIDTH
 		
 		var destination = hand.global_transform
-		destination.origin.x += spread_curve.sample(hand_ratio) * hand_width
+		destination.origin.x += spread_curve.sample(hand_ratio) * HAND_WIDTH
 		
 		card.global_position.x = destination.origin.x

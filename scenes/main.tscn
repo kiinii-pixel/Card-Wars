@@ -1,32 +1,69 @@
-[gd_scene load_steps=4 format=3 uid="uid://owug2m35obl1"]
+[gd_scene load_steps=8 format=3 uid="uid://owug2m35obl1"]
 
 [ext_resource type="PackedScene" uid="uid://b5oih1txnoxfo" path="res://scenes/landscape.tscn" id="1_r6f6m"]
-[ext_resource type="PackedScene" uid="uid://clyo1ca2sglx8" path="res://scenes/board.tscn" id="3_82cvq"]
+[ext_resource type="PackedScene" uid="uid://clyo1ca2sglx8" path="res://scenes/interface.tscn" id="3_82cvq"]
 [ext_resource type="PackedScene" uid="uid://cqkl8l2uevwon" path="res://scenes/hand.tscn" id="4_v11k8"]
+[ext_resource type="FontFile" uid="uid://ca0g1l1k6v1sf" path="res://assets/fonts/Pendlefont Heavy.TTF" id="4_wuvrs"]
+[ext_resource type="Script" path="res://scripts/draw_card.gd" id="5_xxrii"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1ntns"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pejhu"]
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
 
 [node name="Game" type="Node2D"]
 
 [node name="Interface" parent="." instance=ExtResource("3_82cvq")]
 layer = -1
 
-[node name="Landscapes" type="Node2D" parent="."]
+[node name="Landscapes" type="Node2D" parent="Interface"]
 position = Vector2(995, 500)
 
-[node name="Landscape" parent="Landscapes" instance=ExtResource("1_r6f6m")]
+[node name="Landscape" parent="Interface/Landscapes" instance=ExtResource("1_r6f6m")]
 position = Vector2(-393, 0)
 scale = Vector2(0.5, 0.5)
+art_variant = 2
 
-[node name="Landscape2" parent="Landscapes" instance=ExtResource("1_r6f6m")]
+[node name="Landscape2" parent="Interface/Landscapes" instance=ExtResource("1_r6f6m")]
 position = Vector2(-131, 0)
 scale = Vector2(0.5, 0.5)
+art_variant = 1
 
-[node name="Landscape3" parent="Landscapes" instance=ExtResource("1_r6f6m")]
+[node name="Landscape3" parent="Interface/Landscapes" instance=ExtResource("1_r6f6m")]
 position = Vector2(131, 0)
 scale = Vector2(0.5, 0.5)
 
-[node name="Landscape4" parent="Landscapes" instance=ExtResource("1_r6f6m")]
+[node name="Landscape4" parent="Interface/Landscapes" instance=ExtResource("1_r6f6m")]
 position = Vector2(393, 0)
 scale = Vector2(0.5, 0.5)
+art_variant = 4
 
-[node name="Hand" parent="." instance=ExtResource("4_v11k8")]
+[node name="Hand" parent="Interface" instance=ExtResource("4_v11k8")]
 position = Vector2(995, 970)
+
+[node name="Draw Card" type="Button" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = 32.0
+offset_top = 942.0
+offset_right = 424.0
+offset_bottom = 1052.0
+grow_horizontal = 0
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.121569, 0.121569, 0.121569, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 25
+theme_override_fonts/font = ExtResource("4_wuvrs")
+theme_override_font_sizes/font_size = 55
+theme_override_styles/normal = SubResource("StyleBoxEmpty_1ntns")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_1ntns")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_pejhu")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_1ntns")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_1ntns")
+action_mode = 0
+text = "Draw Card"
+script = ExtResource("5_xxrii")

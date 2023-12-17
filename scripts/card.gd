@@ -8,30 +8,26 @@ var initial_pos : Vector2
 var is_inside = false
 @export var card_id = 7
 
-var hovered_cards : Array = []
-
 func _ready():
 	load_image()
 
 func _process(_delta):
 	if selected:
-		
+		# When the mouse button is pressend and the card hasn't been played already
 		if Input.is_action_pressed("left_click") and not played:
-			position = get_global_mouse_position() + mouse_offset #keep card on mouse pos
-
+			position = get_global_mouse_position() + mouse_offset # Keep card on mouse pos
+		# Right when the click occurs
 		if Input.is_action_just_pressed("left_click"):
 			Global.is_dragging = true
-			initial_pos = global_position
-
+			initial_pos = global_position # Safe the cards initial position
+		# Right when the mouse button is rleased
 		elif Input.is_action_just_released("left_click"):
 			Global.is_dragging = false
-			var tween = create_tween() # why get_tree()?  before: var tween = get_tree().create_tween()
-
+			var tween = create_tween()
 			if is_inside:
 				tween.tween_property(self, "global_position", body_ref.global_position, 0.2).set_ease(Tween.EASE_OUT) # CRASHES HERE BECAUSE position is NIL for some reason
 				played = true
 				scale = Vector2(0.5, 0.5)
-
 			else:
 				tween.tween_property(self, "global_position", initial_pos, 0.2).set_ease(Tween.EASE_IN)
 
@@ -53,27 +49,20 @@ func _on_area_2d_mouse_entered(): # when you hover over the card
 		z_index += 1
 
 		if not played:
-			if hovered_cards.find(self) == -1:
-				hovered_cards.append(self)
-			
-			if hovered_cards.size() > 0 and hovered_cards[hovered_cards.size() - 1] == self:
-				#scale up (card zoom)
-				var tween = create_tween().set_parallel(true)
-				tween.tween_property(self, "scale", Vector2(0.6, 0.6), 0.1).set_ease(Tween.EASE_IN)
-				tween.tween_property(self, "position", position + Vector2(0, -50), 0.1).set_ease(Tween.EASE_IN)
+			# Scale up (card zoom)
+			var tween = create_tween().set_parallel(true)
+			tween.tween_property(self, "scale", Vector2(0.6, 0.6), 0.1).set_ease(Tween.EASE_IN)
+			#tween.tween_property(self, "position", position + Vector2(0, -50), 0.1).set_ease(Tween.EASE_IN)
 
 func _on_area_2d_mouse_exited(): # reverses everything from above
 
 	selected = false
 	z_index -= 1
-	hovered_cards.erase(self)
 
-	if not played:
-		if hovered_cards.find(self) == -1:
-			#scale down
-			var tween = create_tween().set_parallel(true)
-			tween.tween_property(self, "scale", Vector2(0.5, 0.5), 0.1).set_ease(Tween.EASE_OUT)
-			tween.tween_property(self, "position", position + Vector2(0, 50), 0.1).set_ease(Tween.EASE_OUT)
+	# Scale down
+	var tween = create_tween().set_parallel(true)
+	tween.tween_property(self, "scale", Vector2(0.5, 0.5), 0.1).set_ease(Tween.EASE_OUT)
+	#tween.tween_property(self, "position", position + Vector2(0, 50), 0.1).set_ease(Tween.EASE_OUT)
 
 func _on_area_2d_body_entered(landscape: Landscape): # when the card enters a landscape
 
@@ -98,6 +87,3 @@ func load_image():
 	$CardImage/CCAttack/AttackLabel.text = String.num(card_data[card_id].get("atk"))
 	$CardImage/CCDefense/DefenseLabel.text = String.num(card_data[card_id].get("def"))
 	$CardImage/CCCost/CostLabel.text = String.num(card_data[card_id].get("cost"))
-
-#func _init(id):
-#	card_id = id
