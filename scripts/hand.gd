@@ -1,12 +1,14 @@
 extends Node2D
 
+signal card_played
 const CARD = preload("res://scenes/card.tscn")
 
 @export var spread_curve: Curve
 @export var height_curve: Curve
+@export var rotation_curve: Curve
 var hand = self
-const HAND_WIDTH = 300
-const HAND_HEIGHT = 50
+const HAND_WIDTH = 300 # Maximum hand width
+const HAND_HEIGHT = 50 # Maximum hand height
 #var MAX_HAND_WIDTH = 600
 
 func _ready():
@@ -43,7 +45,12 @@ func _on_child_order_changed():
 #		if hand_width > MAX_HAND_WIDTH:
 #			hand_width = MAX_HAND_WIDTH
 
-		var destination = hand.global_transform
+		var destination = hand.global_transform #set destination to hand position
+		#change the x position of the current card, based on its index
 		destination.origin.x += spread_curve.sample(hand_ratio) * HAND_WIDTH
-		destination.origin.y -= height_curve.sample(hand_ratio) * HAND_HEIGHT#Vector2.AXIS_Y
+		destination.origin.y -= height_curve.sample(hand_ratio) * HAND_HEIGHT
 		card.global_position = destination.origin
+
+func _on_card_played():
+	#remove played card as child and add it as a child to the landscape it was played on
+	pass

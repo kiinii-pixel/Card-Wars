@@ -21,31 +21,6 @@ script = ExtResource("1_tjqn0")
 [node name="Interface" parent="." instance=ExtResource("3_82cvq")]
 layer = -1
 
-[node name="Landscapes" type="Node2D" parent="Interface"]
-position = Vector2(995, 500)
-
-[node name="Landscape" parent="Interface/Landscapes" instance=ExtResource("1_r6f6m")]
-position = Vector2(-393, 0)
-scale = Vector2(0.5, 0.5)
-art_variant = 2
-
-[node name="Landscape2" parent="Interface/Landscapes" instance=ExtResource("1_r6f6m")]
-position = Vector2(-131, 0)
-scale = Vector2(0.5, 0.5)
-art_variant = 1
-
-[node name="Landscape3" parent="Interface/Landscapes" instance=ExtResource("1_r6f6m")]
-position = Vector2(131, 0)
-scale = Vector2(0.5, 0.5)
-
-[node name="Landscape4" parent="Interface/Landscapes" instance=ExtResource("1_r6f6m")]
-position = Vector2(393, 0)
-scale = Vector2(0.5, 0.5)
-art_variant = 4
-
-[node name="Hand" parent="Interface" instance=ExtResource("4_v11k8")]
-position = Vector2(995, 970)
-
 [node name="Draw Card" type="Button" parent="."]
 anchors_preset = 1
 anchor_left = 1.0
@@ -69,5 +44,30 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_1ntns")
 action_mode = 0
 text = "Draw Card"
 script = ExtResource("5_xxrii")
+
+[node name="Landscapes" type="Node2D" parent="."]
+position = Vector2(995, 500)
+
+[node name="Landscape" parent="Landscapes" instance=ExtResource("1_r6f6m")]
+position = Vector2(-393, 0)
+scale = Vector2(0.5, 0.5)
+art_variant = 2
+
+[node name="Landscape2" parent="Landscapes" instance=ExtResource("1_r6f6m")]
+position = Vector2(-131, 0)
+scale = Vector2(0.5, 0.5)
+art_variant = 1
+
+[node name="Landscape3" parent="Landscapes" instance=ExtResource("1_r6f6m")]
+position = Vector2(131, 0)
+scale = Vector2(0.5, 0.5)
+
+[node name="Landscape4" parent="Landscapes" instance=ExtResource("1_r6f6m")]
+position = Vector2(393, 0)
+scale = Vector2(0.5, 0.5)
+art_variant = 4
+
+[node name="Hand" parent="." instance=ExtResource("4_v11k8")]
+position = Vector2(995, 970)
 
 [connection signal="add_card" from="Draw Card" to="." method="_on_draw_card_add_card"]

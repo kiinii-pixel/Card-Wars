@@ -13,21 +13,25 @@ func _ready():
 
 func _process(_delta):
 	if selected:
-		# When the mouse button is pressend and the card hasn't been played already
-		if Input.is_action_pressed("left_click") and not played:
-			position = get_global_mouse_position() + mouse_offset # Keep card on mouse pos
-		# Right when the click occurs
-		if Input.is_action_just_pressed("left_click"):
+		if Input.is_action_just_pressed("left_click"): # Right when the click occurs
 			Global.is_dragging = true
 			initial_pos = global_position # Safe the cards initial position
-		# Right when the mouse button is rleased
+		if Input.is_action_pressed("left_click") and not played:
+			position = get_global_mouse_position() + mouse_offset # Keep card on mouse pos
+			
 		elif Input.is_action_just_released("left_click"):
 			Global.is_dragging = false
 			var tween = create_tween()
 			if is_inside:
 				tween.tween_property(self, "global_position", body_ref.global_position, 0.2).set_ease(Tween.EASE_OUT) # CRASHES HERE BECAUSE position is NIL for some reason
 				played = true
-				scale = Vector2(0.5, 0.5)
+				await tween.finished
+				scale = Vector2(1, 1)
+				get_parent().card_played.emit()
+				get_parent().remove_child(self)
+				body_ref.add_child(self)
+				position = Vector2(0, 0)
+				#played = true
 			else:
 				tween.tween_property(self, "global_position", initial_pos, 0.2).set_ease(Tween.EASE_IN)
 
@@ -59,10 +63,11 @@ func _on_area_2d_mouse_exited(): # reverses everything from above
 	selected = false
 	z_index -= 1
 
-	# Scale down
-	var tween = create_tween().set_parallel(true)
-	tween.tween_property(self, "scale", Vector2(0.5, 0.5), 0.1).set_ease(Tween.EASE_OUT)
-	#tween.tween_property(self, "position", position + Vector2(0, 50), 0.1).set_ease(Tween.EASE_OUT)
+	if played == false:
+		# Scale down
+		var tween = create_tween().set_parallel(true)
+		tween.tween_property(self, "scale", Vector2(0.5, 0.5), 0.1).set_ease(Tween.EASE_OUT)
+		#tween.tween_property(self, "position", position + Vector2(0, 50), 0.1).set_ease(Tween.EASE_OUT)
 
 func _on_area_2d_body_entered(landscape: Landscape): # when the card enters a landscape
 
