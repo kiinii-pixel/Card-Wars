@@ -21,9 +21,10 @@ func _process(_delta):
 			
 		elif Input.is_action_just_released("left_click"):
 			Global.is_dragging = false
-			var tween = create_tween()
+			var tween = create_tween().set_parallel()
 			if is_inside:
-				tween.tween_property(self, "global_position", body_ref.global_position, 0.2).set_ease(Tween.EASE_OUT) # CRASHES HERE BECAUSE position is NIL for some reason
+				tween.tween_property(self, "global_position", body_ref.global_position, 0.2).set_ease(Tween.EASE_OUT)
+				tween.tween_property(self, "scale", Vector2(0.5, 0.5), 0.2).set_ease(Tween.EASE_OUT)
 				played = true
 				await tween.finished
 				scale = Vector2(1, 1)
