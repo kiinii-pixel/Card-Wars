@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://bco1m6ixdmiil"]
+[gd_scene load_steps=6 format=3 uid="uid://bco1m6ixdmiil"]
 
 [ext_resource type="Script" path="res://scripts/card.gd" id="1_xodya"]
-[ext_resource type="Texture2D" uid="uid://bdyhhj3j3u1ps" path="res://assets/images/cards/modular_cards/Rainbow/Creature/The Pig.png" id="2_ek3rv"]
+[ext_resource type="Texture2D" uid="uid://ct5331atokkqs" path="res://assets/images/cards/art/Rainbow/Rainbow_Creature.png" id="2_uehw2"]
 [ext_resource type="FontFile" uid="uid://ca0g1l1k6v1sf" path="res://assets/fonts/Pendlefont Heavy.TTF" id="3_4fvhp"]
+[ext_resource type="Texture2D" uid="uid://b3xeo685h6h7v" path="res://assets/images/cards/art/Rainbow/Creature/The Pig.png" id="4_0v5ny"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4b713"]
 size = Vector2(370, 516)
@@ -11,64 +12,73 @@ size = Vector2(370, 516)
 scale = Vector2(0.75, 0.75)
 script = ExtResource("1_xodya")
 
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_4b713")
+
 [node name="CardImage" type="Sprite2D" parent="."]
-texture = ExtResource("2_ek3rv")
+position = Vector2(-0.5, -96.9997)
+scale = Vector2(1.006, 1)
+texture = ExtResource("4_0v5ny")
 
-[node name="CCCost" type="CenterContainer" parent="CardImage"]
-offset_left = -185.0
-offset_top = -258.0
-offset_right = -70.0
-offset_bottom = -140.0
+[node name="CardFrame" type="Sprite2D" parent="."]
+position = Vector2(2.38419e-07, 0)
+scale = Vector2(0.53, 0.53)
+texture = ExtResource("2_uehw2")
 
-[node name="CostLabel" type="Label" parent="CardImage/CCCost"]
-layout_mode = 2
-size_flags_horizontal = 0
-size_flags_vertical = 0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_4fvhp")
-theme_override_font_sizes/font_size = 55
-text = "C"
-horizontal_alignment = 1
-vertical_alignment = 1
+[node name="CCAttack" type="CenterContainer" parent="CardFrame"]
+offset_left = -322.0
+offset_top = 345.0
+offset_right = -234.0
+offset_bottom = 514.0
+metadata/_edit_group_ = true
 
-[node name="CCAttack" type="CenterContainer" parent="CardImage"]
-offset_left = -165.0
-offset_top = 188.0
-offset_right = -125.0
-offset_bottom = 262.0
-
-[node name="AttackLabel" type="Label" parent="CardImage/CCAttack"]
+[node name="AttackLabel" type="Label" parent="CardFrame/CCAttack"]
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 8
 theme_override_colors/font_color = Color(0.0784314, 0.0784314, 0.0784314, 1)
 theme_override_fonts/font = ExtResource("3_4fvhp")
-theme_override_font_sizes/font_size = 40
+theme_override_font_sizes/font_size = 78
 text = "A"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="CCDefense" type="CenterContainer" parent="CardImage"]
-offset_left = 120.0
-offset_top = 188.0
-offset_right = 167.0
-offset_bottom = 262.0
+[node name="CCDefense" type="CenterContainer" parent="CardFrame"]
+offset_left = 226.415
+offset_top = 345.0
+offset_right = 314.415
+offset_bottom = 514.0
+metadata/_edit_group_ = true
 
-[node name="DefenseLabel" type="Label" parent="CardImage/CCDefense"]
+[node name="DefenseLabel" type="Label" parent="CardFrame/CCDefense"]
 layout_mode = 2
 size_flags_horizontal = 8
 size_flags_vertical = 8
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_4fvhp")
-theme_override_font_sizes/font_size = 40
+theme_override_font_sizes/font_size = 78
 text = "D"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Area2D" type="Area2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-shape = SubResource("RectangleShape2D_4b713")
+[node name="CostLabel" type="Label" parent="CardFrame"]
+clip_contents = true
+custom_minimum_size = Vector2(120, 0)
+offset_left = -301.484
+offset_top = -478.0
+offset_right = -181.484
+offset_bottom = -288.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_4fvhp")
+theme_override_font_sizes/font_size = 106
+text = "C"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://owug2m35obl1"]
 
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_mh3fo"]
 [ext_resource type="PackedScene" uid="uid://b5oih1txnoxfo" path="res://scenes/landscape.tscn" id="1_r6f6m"]
-[ext_resource type="Script" path="res://scenes/main.gd" id="1_tjqn0"]
 [ext_resource type="PackedScene" uid="uid://clyo1ca2sglx8" path="res://scenes/interface.tscn" id="3_82cvq"]
 [ext_resource type="PackedScene" uid="uid://cqkl8l2uevwon" path="res://scenes/hand.tscn" id="4_v11k8"]
 [ext_resource type="FontFile" uid="uid://ca0g1l1k6v1sf" path="res://assets/fonts/Pendlefont Heavy.TTF" id="4_wuvrs"]
@@ -16,7 +16,7 @@ corner_radius_bottom_right = 25
 corner_radius_bottom_left = 25
 
 [node name="Game" type="Node2D"]
-script = ExtResource("1_tjqn0")
+script = ExtResource("1_mh3fo")
 
 [node name="Interface" parent="." instance=ExtResource("3_82cvq")]
 layer = -1

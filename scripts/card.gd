@@ -9,7 +9,7 @@ var is_inside = false
 @export var card_id = 7
 
 func _ready():
-	load_image()
+	load_card()
 
 func _process(_delta):
 	if selected:
@@ -78,7 +78,7 @@ func _on_area_2d_body_entered(landscape: Landscape): # when the card enters a la
 func _on_area_2d_body_exited(_landscape): # when card leaves current body
 		is_inside = false
 
-func load_image():
+func load_card():
 	var card_data = StaticData.return_data()
 	
 	var landscape = card_data[card_id].get("landscape")
@@ -86,10 +86,20 @@ func load_image():
 	
 	var jpg_card_name = card_data[card_id].get("image_name")
 	var card_name = jpg_card_name.left(jpg_card_name.length() - 4)
+	var frame_path = "res://assets/images/cards/art/" + landscape + "/" + landscape + ".png"
+	var card_image_path = "res://assets/images/cards/art/" + landscape + "/" + card_type + "/" + card_name + ".png"
 	
-	var image_path = "res://assets/images/cards/modular_cards/" + landscape + "/" + card_type + "/" + card_name + ".png"
-	
-	$CardImage.texture = load(image_path)
-	$CardImage/CCAttack/AttackLabel.text = String.num(card_data[card_id].get("atk"))
-	$CardImage/CCDefense/DefenseLabel.text = String.num(card_data[card_id].get("def"))
-	$CardImage/CCCost/CostLabel.text = String.num(card_data[card_id].get("cost"))
+	if card_type == "Creature":
+		frame_path = "res://assets/images/cards/art/" + landscape + "/" + landscape + "_Creature.png"
+
+	var attack_value = String.num(card_data[card_id].get("atk"))
+	var defense_value = String.num(card_data[card_id].get("def"))
+	var cost_value = String.num(card_data[card_id].get("cost"))
+
+	$CardFrame.texture = load(frame_path)
+	$CardImage.texture = load(card_image_path)
+	$CardFrame/CCAttack/AttackLabel.text = attack_value
+	if defense_value.length() > 1:
+		$CardFrame/CCDefense/DefenseLabel.add_theme_font_size_override("font_size", 50)
+	$CardFrame/CCDefense/DefenseLabel.text = defense_value
+	$CardFrame/CostLabel.text = cost_value
