@@ -53,7 +53,10 @@ func _on_area_2d_mouse_entered(): # when you hover over the card
 
 	if not Global.is_dragging: #if no other card is being dragged:
 		selected = true
-		z_index += 1
+		# reduce z index of all cards to 0
+		for child in get_parent().get_children():
+			child.z_index = 0
+		z_index += 1 # raise z index of this card
 
 		if not played:
 			# Scale up (card zoom)

@@ -7,9 +7,9 @@ const CARD = preload("res://scenes/card.tscn")
 @export var height_curve: Curve
 @export var rotation_curve: Curve
 var hand = self
-const HAND_WIDTH = 300 # Maximum hand width
+var hand_width = 300 # Maximum hand width
 const HAND_HEIGHT = 50 # Maximum hand height
-#var MAX_HAND_WIDTH = 600
+const MAX_HAND_WIDTH = 600
 
 func _ready():
 #	add_cards(1)
@@ -47,7 +47,7 @@ func _on_child_order_changed():
 
 		var destination = hand.global_transform #set destination to hand position
 		#change the x position of the current card, based on its index
-		destination.origin.x += spread_curve.sample(hand_ratio) * HAND_WIDTH
+		destination.origin.x += spread_curve.sample(hand_ratio) * hand_width
 		destination.origin.y -= height_curve.sample(hand_ratio) * HAND_HEIGHT
 		card.global_position = destination.origin
 
