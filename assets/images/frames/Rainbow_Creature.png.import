@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cyf18beqot05"
-path="res://.godot/imported/X-Large Spirit Soldier.png-0a10a6e443f1b2f282aae378f6e422d0.ctex"
+uid="uid://ct5331atokkqs"
+path="res://.godot/imported/Rainbow_Creature.png-b1adb1cf89bb81315188848f6623925b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/cards/modular_cards/Blue Plains/Creature/X-Large Spirit Soldier.png"
-dest_files=["res://.godot/imported/X-Large Spirit Soldier.png-0a10a6e443f1b2f282aae378f6e422d0.ctex"]
+source_file="res://assets/images/frames/Rainbow_Creature.png"
+dest_files=["res://.godot/imported/Rainbow_Creature.png-b1adb1cf89bb81315188848f6623925b.ctex"]
 
 [params]
 

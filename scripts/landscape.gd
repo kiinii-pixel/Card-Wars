@@ -1,6 +1,6 @@
 class_name Landscape extends Node2D
 
-var type = 'blueplains'
+var landscape_type = 'blueplains'
 @export var art_variant = 3
 
 func _ready():
@@ -24,8 +24,8 @@ func _on_area_2d_area_exited(_area):
 	pass
 
 func load_image():
-	var image_path = "res://assets/images/landscapes/" + type + String.num(art_variant) + ".png"
-	$Landscape_Image.texture = load(image_path)
+	var image_path = "res://assets/images/landscapes/" + landscape_type + String.num(art_variant) + ".png"
+	$LandscapeImage.texture = load(image_path)
 
 #func _init(landscape, variant):
 #	type = landscape

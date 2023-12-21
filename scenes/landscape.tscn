@@ -9,7 +9,7 @@ size = Vector2(362.667, 508)
 [node name="Landscape" type="StaticBody2D" groups=["droppable"]]
 script = ExtResource("1_ke2ls")
 
-[node name="Landscape_Image" type="Sprite2D" parent="."]
+[node name="LandscapeImage" type="Sprite2D" parent="."]
 position = Vector2(0, 75)
 texture = ExtResource("2_swo5x")
 
@@ -36,6 +36,6 @@ metadata/_edit_use_anchors_ = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("RectangleShape2D_1lp4w")
 
-[connection signal="property_list_changed" from="Landscape_Image" to="." method="_on_landscape_image_property_list_changed"]
+[connection signal="property_list_changed" from="LandscapeImage" to="." method="_on_landscape_image_property_list_changed"]
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
 [connection signal="area_exited" from="Area2D" to="." method="_on_area_2d_area_exited"]

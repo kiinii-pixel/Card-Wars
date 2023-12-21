@@ -1,12 +1,14 @@
 class_name Card extends Node2D
 
-var selected = false # true after click occcured on card
-var mouse_offset = Vector2(0, 0)
-var played = false # true when put on landscape
-var body_ref
-var initial_pos : Vector2
-var is_inside = false
-@export var card_id = 7
+@export var card_id = 7 # change to id of card you want
+# VARIABLES FOR DRAGGING
+var selected = false # true after mouse hovered over card
+var mouse_offset = Vector2(0, 0) # save where the mouse clicked on the card
+var played = false # true when dragged into play
+var body_ref : Object # reference to object that was hovered over (e.g. landscape)
+var initial_pos : Vector2 # save the cards initial position
+var is_inside = false # true if card is inside a landscape
+# 
 
 func _ready():
 	load_card()
@@ -79,18 +81,18 @@ func _on_area_2d_body_exited(_landscape): # when card leaves current body
 		is_inside = false
 
 func load_card():
-	var card_data = StaticData.return_data()
+	#LOAD CARD DATA
+	var card_data = StaticData.return_data() # all data
+	var landscape = card_data[card_id].get("landscape") # landscape (e.g. 'Blue Plains')
+	var card_type = card_data[card_id].get("card_type") # card type (e.g. 'Creature')
+	var jpg = card_data[card_id].get("image_name") # original name (.jpg)
+	var card_name = jpg.left(jpg.length() - 4) # card name without file extension
 	
-	var landscape = card_data[card_id].get("landscape")
-	var card_type = card_data[card_id].get("card_type")
-	
-	var jpg_card_name = card_data[card_id].get("image_name")
-	var card_name = jpg_card_name.left(jpg_card_name.length() - 4)
-	var frame_path = "res://assets/images/cards/art/" + landscape + "/" + landscape + ".png"
 	var card_image_path = "res://assets/images/cards/art/" + landscape + "/" + card_type + "/" + card_name + ".png"
+	var frame_path = "res://assets/images/frames" + landscape + ".png"
 	
 	if card_type == "Creature":
-		frame_path = "res://assets/images/cards/art/" + landscape + "/" + landscape + "_Creature.png"
+		frame_path = "res://assets/images/frames/" + landscape + "_Creature.png"
 
 	var attack_value = String.num(card_data[card_id].get("atk"))
 	var defense_value = String.num(card_data[card_id].get("def"))
@@ -100,6 +102,6 @@ func load_card():
 	$CardImage.texture = load(card_image_path)
 	$CardFrame/CCAttack/AttackLabel.text = attack_value
 	if defense_value.length() > 1:
-		$CardFrame/CCDefense/DefenseLabel.add_theme_font_size_override("font_size", 50)
+		$CardFrame/CCDefense/DefenseLabel.add_theme_font_size_override("font_size", 56)
 	$CardFrame/CCDefense/DefenseLabel.text = defense_value
 	$CardFrame/CostLabel.text = cost_value

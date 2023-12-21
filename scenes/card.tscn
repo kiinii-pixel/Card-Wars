@@ -1,12 +1,12 @@
 [gd_scene load_steps=6 format=3 uid="uid://bco1m6ixdmiil"]
 
 [ext_resource type="Script" path="res://scripts/card.gd" id="1_xodya"]
-[ext_resource type="Texture2D" uid="uid://ct5331atokkqs" path="res://assets/images/cards/art/Rainbow/Rainbow_Creature.png" id="2_uehw2"]
-[ext_resource type="FontFile" uid="uid://ca0g1l1k6v1sf" path="res://assets/fonts/Pendlefont Heavy.TTF" id="3_4fvhp"]
+[ext_resource type="Texture2D" uid="uid://ct5331atokkqs" path="res://assets/images/frames/Rainbow_Creature.png" id="3_mw3bc"]
 [ext_resource type="Texture2D" uid="uid://b3xeo685h6h7v" path="res://assets/images/cards/art/Rainbow/Creature/The Pig.png" id="4_0v5ny"]
+[ext_resource type="Theme" uid="uid://dix7igpfd4hop" path="res://assets/themes/default_theme.tres" id="4_y078l"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4b713"]
-size = Vector2(370, 516)
+size = Vector2(367.667, 518.667)
 
 [node name="Card" type="Node2D"]
 scale = Vector2(0.75, 0.75)
@@ -15,17 +15,18 @@ script = ExtResource("1_xodya")
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-1.16666, -0.666656)
 shape = SubResource("RectangleShape2D_4b713")
 
 [node name="CardImage" type="Sprite2D" parent="."]
-position = Vector2(-0.5, -96.9997)
-scale = Vector2(1.006, 1)
+position = Vector2(-0.949318, -90.0385)
+scale = Vector2(1.32592, 1.31801)
 texture = ExtResource("4_0v5ny")
 
 [node name="CardFrame" type="Sprite2D" parent="."]
 position = Vector2(2.38419e-07, 0)
 scale = Vector2(0.53, 0.53)
-texture = ExtResource("2_uehw2")
+texture = ExtResource("3_mw3bc")
 
 [node name="CCAttack" type="CenterContainer" parent="CardFrame"]
 offset_left = -322.0
@@ -38,17 +39,16 @@ metadata/_edit_group_ = true
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 8
-theme_override_colors/font_color = Color(0.0784314, 0.0784314, 0.0784314, 1)
-theme_override_fonts/font = ExtResource("3_4fvhp")
+theme = ExtResource("4_y078l")
 theme_override_font_sizes/font_size = 78
 text = "A"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="CCDefense" type="CenterContainer" parent="CardFrame"]
-offset_left = 226.415
+offset_left = 233.962
 offset_top = 345.0
-offset_right = 314.415
+offset_right = 321.962
 offset_bottom = 514.0
 metadata/_edit_group_ = true
 
@@ -56,8 +56,7 @@ metadata/_edit_group_ = true
 layout_mode = 2
 size_flags_horizontal = 8
 size_flags_vertical = 8
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_4fvhp")
+theme = ExtResource("4_y078l")
 theme_override_font_sizes/font_size = 78
 text = "D"
 horizontal_alignment = 1
@@ -72,13 +71,29 @@ offset_right = -181.484
 offset_bottom = -288.0
 size_flags_horizontal = 0
 size_flags_vertical = 0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_4fvhp")
+theme = ExtResource("4_y078l")
 theme_override_font_sizes/font_size = 106
 text = "C"
 horizontal_alignment = 1
 vertical_alignment = 1
 clip_text = true
+
+[node name="CardName" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -84.0
+offset_top = -248.667
+offset_right = 114.0
+offset_bottom = -200.667
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("4_y078l")
+text = "Card Name"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

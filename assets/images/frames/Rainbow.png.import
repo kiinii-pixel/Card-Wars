@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d0plkr858jqay"
-path="res://.godot/imported/Woad Talisman.png-2b5c19613703e017b193ca3158245b54.ctex"
+uid="uid://tqpubod46faw"
+path="res://.godot/imported/Rainbow.png-59baa74b7d5312f7555fbbe8ef2ef334.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/cards/modular_cards/Rainbow/Spell/Woad Talisman.png"
-dest_files=["res://.godot/imported/Woad Talisman.png-2b5c19613703e017b193ca3158245b54.ctex"]
+source_file="res://assets/images/frames/Rainbow.png"
+dest_files=["res://.godot/imported/Rainbow.png-59baa74b7d5312f7555fbbe8ef2ef334.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c1o02vcsaxllc"
-path="res://.godot/imported/Embarrassing Bard.png-c72cf47e5915d2e2b2bf8c522e784569.ctex"
+uid="uid://dsc27f0tj5057"
+path="res://.godot/imported/Blue Plains_Creature.png-d40058e3dab581a85d44eeaf75d8c41d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/cards/modular_cards/Blue Plains/Creature/Embarrassing Bard.png"
-dest_files=["res://.godot/imported/Embarrassing Bard.png-c72cf47e5915d2e2b2bf8c522e784569.ctex"]
+source_file="res://assets/images/frames/Blue Plains_Creature.png"
+dest_files=["res://.godot/imported/Blue Plains_Creature.png-d40058e3dab581a85d44eeaf75d8c41d.ctex"]
 
 [params]
 

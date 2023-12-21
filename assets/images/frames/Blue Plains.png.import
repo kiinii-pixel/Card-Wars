@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ct5331atokkqs"
-path="res://.godot/imported/Rainbow_Creature.png-3fd53b3950db6c904d1eab28d7f3b56d.ctex"
+uid="uid://cw77k6fibr8dl"
+path="res://.godot/imported/Blue Plains.png-206cfe04d0d5754d67e9b77feab22e11.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/cards/art/Rainbow/Rainbow_Creature.png"
-dest_files=["res://.godot/imported/Rainbow_Creature.png-3fd53b3950db6c904d1eab28d7f3b56d.ctex"]
+source_file="res://assets/images/frames/Blue Plains.png"
+dest_files=["res://.godot/imported/Blue Plains.png-206cfe04d0d5754d67e9b77feab22e11.ctex"]
 
 [params]
 
