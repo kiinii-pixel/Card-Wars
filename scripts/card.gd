@@ -81,8 +81,10 @@ func _on_area_2d_body_entered(landscape: Landscape): # when the card enters a la
 	body_ref = landscape # current body
 	is_inside = true # if they overlap
 
-func _on_area_2d_body_exited(_landscape): # when card leaves current body
+func _on_area_2d_body_exited(landscape): # when card leaves current body
+	if body_ref == Landscape:
 		is_inside = false
+		#if body ref = body exited
 
 func load_card():
 	#LOAD CARD DATA
