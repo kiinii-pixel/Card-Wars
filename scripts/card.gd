@@ -14,7 +14,7 @@ func _ready():
 	load_card()
 
 func _process(_delta):
-	if selected:
+	if selected and not played:
 		if Input.is_action_just_pressed("left_click"): # Right when the click occurs
 			Global.is_dragging = true
 			initial_pos = global_position # Safe the cards initial position
@@ -66,6 +66,7 @@ func _on_area_2d_mouse_entered(): # when you hover over the card
 
 func _on_area_2d_mouse_exited(): # reverses everything from above
 
+	Global.is_dragging = false
 	selected = false
 	z_index -= 1
 
