@@ -5,7 +5,7 @@ class_name Card extends Node2D
 var selected = false # true after mouse hovered over card
 var mouse_offset = Vector2(0, 0) # save where the mouse clicked on the card
 var played = false # true when dragged into play
-var body_ref : Object # reference to object that was hovered over (e.g. landscape)
+var body_ref : Landscape # reference to object that was hovered over (e.g. landscape) // : Object if other zones are implemented
 var initial_pos : Vector2 # save the cards initial position
 var is_inside = false # true if card is inside a landscape
 # 
@@ -18,7 +18,7 @@ func _process(_delta):
 		if Input.is_action_just_pressed("left_click"): # Right when the click occurs
 			Global.is_dragging = true
 			initial_pos = global_position # Safe the cards initial position
-		if Input.is_action_pressed("left_click") and not played:
+		if Input.is_action_pressed("left_click"):
 			position = get_global_mouse_position() + mouse_offset # Keep card on mouse pos
 			
 		elif Input.is_action_just_released("left_click"):
@@ -38,6 +38,10 @@ func _process(_delta):
 			else:
 				tween.tween_property(self, "global_position", initial_pos, 0.2).set_ease(Tween.EASE_IN)
 
+func follow_mouse():
+	Global.is_dragging = true
+	initial_pos = global_position # Safe the cards initial position
+
 func _on_area_2d_input_event(_viewport, event, _shape_idx):
 
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
@@ -52,10 +56,15 @@ func _on_area_2d_input_event(_viewport, event, _shape_idx):
 func _on_area_2d_mouse_entered(): # when you hover over the card
 
 	if not Global.is_dragging: #if no other card is being dragged:
-		selected = true
 		# reduce z index of all cards to 0
 		for child in get_parent().get_children():
-			child.z_index = 0
+			if child.z_index == 1:
+				child.z_index -= 1
+			var tween = create_tween()
+			tween.tween_property(child, "scale", Vector2(0.5, 0.5), 0.1).set_ease(Tween.EASE_OUT)
+			child.selected = false
+
+		selected = true
 		z_index += 1 # raise z index of this card
 
 		if not played:
@@ -81,8 +90,8 @@ func _on_area_2d_body_entered(landscape: Landscape): # when the card enters a la
 	body_ref = landscape # current body
 	is_inside = true # if they overlap
 
-func _on_area_2d_body_exited(landscape): # when card leaves current body
-	if body_ref == Landscape:
+func _on_area_2d_body_exited(landscape: Landscape): # when card leaves current body
+	if body_ref == landscape:
 		is_inside = false
 		#if body ref = body exited
 
