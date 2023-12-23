@@ -1,8 +1,8 @@
 [gd_resource type="Theme" load_steps=2 format=3 uid="uid://dix7igpfd4hop"]
 
-[ext_resource type="FontFile" uid="uid://ca0g1l1k6v1sf" path="res://assets/fonts/Pendlefont Heavy.TTF" id="1_gjkak"]
+[ext_resource type="FontFile" uid="uid://ca0g1l1k6v1sf" path="res://assets/fonts/Pendlefont Heavy.TTF" id="1_c1ent"]
 
 [resource]
-default_font = ExtResource("1_gjkak")
+default_font = ExtResource("1_c1ent")
 Label/colors/font_color = Color(0.129412, 0.141176, 0.160784, 1)
 Label/font_sizes/font_size = 25

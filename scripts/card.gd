@@ -57,12 +57,13 @@ func _on_area_2d_mouse_entered(): # when you hover over the card
 
 	if not Global.is_dragging: #if no other card is being dragged:
 		# reduce z index of all cards to 0
-		for child in get_parent().get_children():
-			if child.z_index == 1:
-				child.z_index -= 1
-			var tween = create_tween()
-			tween.tween_property(child, "scale", Vector2(0.5, 0.5), 0.1).set_ease(Tween.EASE_OUT)
-			child.selected = false
+		if get_parent().get_child_count() > 0:
+			for child in get_parent().get_children():
+				if child.z_index == 1:
+					child.z_index -= 1
+				var tween = create_tween()
+				tween.tween_property(child, "scale", Vector2(0.5, 0.5), 0.1).set_ease(Tween.EASE_OUT)
+				child.selected = false
 
 		selected = true
 		z_index += 1 # raise z index of this card
@@ -100,6 +101,8 @@ func load_card():
 	var card_data = StaticData.return_data() # all data
 	var landscape = card_data[card_id].get("landscape") # landscape (e.g. 'Blue Plains')
 	var card_type = card_data[card_id].get("card_type") # card type (e.g. 'Creature')
+	var card_description = card_data[card_id].get("description")
+
 	var jpg = card_data[card_id].get("image_name") # original name (.jpg)
 	var card_name = jpg.left(jpg.length() - 4) # card name without file extension
 	
@@ -115,8 +118,12 @@ func load_card():
 
 	$CardFrame.texture = load(frame_path)
 	$CardImage.texture = load(card_image_path)
+
 	$CardFrame/CCAttack/AttackLabel.text = attack_value
 	if defense_value.length() > 1:
 		$CardFrame/CCDefense/DefenseLabel.add_theme_font_size_override("font_size", 56)
 	$CardFrame/CCDefense/DefenseLabel.text = defense_value
 	$CardFrame/CostLabel.text = cost_value
+	$CardName.text = card_name
+	$LandscapeCardType.text = landscape + card_type
+	$Description.text = card_description

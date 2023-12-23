@@ -1,12 +1,18 @@
-[gd_scene load_steps=6 format=3 uid="uid://bco1m6ixdmiil"]
+[gd_scene load_steps=8 format=3 uid="uid://bco1m6ixdmiil"]
 
 [ext_resource type="Script" path="res://scripts/card.gd" id="1_xodya"]
 [ext_resource type="Texture2D" uid="uid://ct5331atokkqs" path="res://assets/images/frames/Rainbow_Creature.png" id="3_mw3bc"]
 [ext_resource type="Texture2D" uid="uid://b3xeo685h6h7v" path="res://assets/images/cards/art/Rainbow/Creature/The Pig.png" id="4_0v5ny"]
-[ext_resource type="Theme" uid="uid://dix7igpfd4hop" path="res://assets/themes/default_theme.tres" id="4_y078l"]
+[ext_resource type="Theme" uid="uid://cbg740i6iql4" path="res://assets/themes/pendlefont_medium.tres" id="4_ibhnl"]
+[ext_resource type="FontFile" uid="uid://ca0g1l1k6v1sf" path="res://assets/fonts/Pendlefont Heavy.TTF" id="5_bysvj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4b713"]
 size = Vector2(367.667, 518.667)
+
+[sub_resource type="Theme" id="Theme_rcflo"]
+default_font = ExtResource("5_bysvj")
+Label/colors/font_color = Color(0.129412, 0.141176, 0.160784, 1)
+Label/font_sizes/font_size = 25
 
 [node name="Card" type="Node2D"]
 scale = Vector2(0.75, 0.75)
@@ -39,7 +45,7 @@ metadata/_edit_group_ = true
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 8
-theme = ExtResource("4_y078l")
+theme = SubResource("Theme_rcflo")
 theme_override_font_sizes/font_size = 78
 text = "A"
 horizontal_alignment = 1
@@ -56,7 +62,7 @@ metadata/_edit_group_ = true
 layout_mode = 2
 size_flags_horizontal = 8
 size_flags_vertical = 8
-theme = ExtResource("4_y078l")
+theme = SubResource("Theme_rcflo")
 theme_override_font_sizes/font_size = 78
 text = "D"
 horizontal_alignment = 1
@@ -71,7 +77,7 @@ offset_right = -181.484
 offset_bottom = -288.0
 size_flags_horizontal = 0
 size_flags_vertical = 0
-theme = ExtResource("4_y078l")
+theme = SubResource("Theme_rcflo")
 theme_override_font_sizes/font_size = 106
 text = "C"
 horizontal_alignment = 1
@@ -90,10 +96,34 @@ offset_right = 114.0
 offset_bottom = -200.667
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("4_y078l")
+theme = SubResource("Theme_rcflo")
 text = "Card Name"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="LandscapeCardType" type="Label" parent="."]
+offset_left = -170.667
+offset_top = 44.0
+offset_right = 169.333
+offset_bottom = 92.0
+theme = SubResource("Theme_rcflo")
+theme_override_fonts/font = ExtResource("5_bysvj")
+text = "Landscape / Card Type"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Description" type="Label" parent="."]
+offset_left = -153.0
+offset_top = 93.3333
+offset_right = 150.0
+offset_bottom = 201.333
+theme = ExtResource("4_ibhnl")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0)
+theme_override_constants/outline_size = 0
+theme_override_font_sizes/font_size = 17
+text = "FLOOP >>> In this space, find the card's description and effects."
+horizontal_alignment = 1
+autowrap_mode = 2
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
