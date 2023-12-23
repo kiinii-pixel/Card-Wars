@@ -11,6 +11,7 @@ var hand_width = 60
 const MAX_HAND_WIDTH = 300 #Maximum hand width
 var hand_height = 10
 const MAX_HAND_HEIGHT = 100 # Maximum hand height
+# MOVE is_dragging HERE?
 
 func _ready():
 #	add_cards(1)

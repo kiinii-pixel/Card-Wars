@@ -1,0 +1,3 @@
+- Add card_id to data json file
+- Replace global is_dragging with local var in hand scene
+- Clean up Card script

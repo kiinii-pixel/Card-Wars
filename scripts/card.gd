@@ -8,18 +8,19 @@ var played = false # true when dragged into play
 var body_ref : Landscape # reference to object that was hovered over (e.g. landscape) // : Object if other zones are implemented
 var initial_pos : Vector2 # save the cards initial position
 var is_inside = false # true if card is inside a landscape
-# 
 
 func _ready():
 	load_card()
+	z_index = 4
 
 func _process(_delta):
 	if selected and not played:
 		if Input.is_action_just_pressed("left_click"): # Right when the click occurs
 			Global.is_dragging = true
 			initial_pos = global_position # Safe the cards initial position
+
 		if Input.is_action_pressed("left_click"):
-			position = get_global_mouse_position() + mouse_offset # Keep card on mouse pos
+			follow_mouse() # Keep card on mouse pos
 			
 		elif Input.is_action_just_released("left_click"):
 			Global.is_dragging = false
@@ -39,8 +40,8 @@ func _process(_delta):
 				tween.tween_property(self, "global_position", initial_pos, 0.2).set_ease(Tween.EASE_IN)
 
 func follow_mouse():
-	Global.is_dragging = true
-	initial_pos = global_position # Safe the cards initial position
+	if z_index == 5:
+		position = get_global_mouse_position() + mouse_offset
 
 func _on_area_2d_input_event(_viewport, event, _shape_idx):
 
@@ -55,18 +56,17 @@ func _on_area_2d_input_event(_viewport, event, _shape_idx):
 
 func _on_area_2d_mouse_entered(): # when you hover over the card
 
-	if not Global.is_dragging: #if no other card is being dragged:
-		# reduce z index of all cards to 0
-		if get_parent().get_child_count() > 0:
-			for child in get_parent().get_children():
-				if child.z_index == 1:
-					child.z_index -= 1
-				var tween = create_tween()
-				tween.tween_property(child, "scale", Vector2(0.5, 0.5), 0.1).set_ease(Tween.EASE_OUT)
-				child.selected = false
+	if not Global.is_dragging and not played: #if no other card is being dragged:
+		#if get_parent().get_child_count() > 0:
+		for child in get_parent().get_children():
+			if child.z_index == 5:
+				child.z_index = 4
+			var tween = create_tween()
+			tween.tween_property(child, "scale", Vector2(0.5, 0.5), 0.1).set_ease(Tween.EASE_OUT)
+			selected = false
 
 		selected = true
-		z_index += 1 # raise z index of this card
+		z_index = 5 # raise z index of this card
 
 		if not played:
 			# Scale up (card zoom)
@@ -78,7 +78,7 @@ func _on_area_2d_mouse_exited(): # reverses everything from above
 
 	Global.is_dragging = false
 	selected = false
-	z_index -= 1
+	z_index = 4
 
 	if played == false:
 		# Scale down
@@ -89,7 +89,8 @@ func _on_area_2d_mouse_exited(): # reverses everything from above
 func _on_area_2d_body_entered(landscape: Landscape): # when the card enters a landscape
 
 	body_ref = landscape # current body
-	is_inside = true # if they overlap
+	if landscape.get_child_count() == 4:
+		is_inside = true # if they overlap
 
 func _on_area_2d_body_exited(landscape: Landscape): # when card leaves current body
 	if body_ref == landscape:
