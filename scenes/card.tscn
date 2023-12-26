@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://ct5331atokkqs" path="res://assets/images/frames/Rainbow_Creature.png" id="3_mw3bc"]
 [ext_resource type="Texture2D" uid="uid://b3xeo685h6h7v" path="res://assets/images/cards/art/Rainbow/Creature/The Pig.png" id="4_0v5ny"]
 [ext_resource type="Theme" uid="uid://cbg740i6iql4" path="res://assets/themes/pendlefont_medium.tres" id="4_ibhnl"]
-[ext_resource type="FontFile" uid="uid://ca0g1l1k6v1sf" path="res://assets/fonts/Pendlefont Heavy.TTF" id="5_bysvj"]
+[ext_resource type="FontFile" uid="uid://ca0g1l1k6v1sf" path="res://assets/Fonts/Pendlefont Heavy.TTF" id="5_bysvj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4b713"]
 size = Vector2(367.667, 518.667)
@@ -84,16 +84,23 @@ horizontal_alignment = 1
 vertical_alignment = 1
 clip_text = true
 
-[node name="CardName" type="Label" parent="."]
+[node name="Labels" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CardName" type="Label" parent="Labels"]
+layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -84.0
-offset_top = -248.667
-offset_right = 114.0
-offset_bottom = -200.667
+offset_left = -104.0
+offset_top = -268.667
+offset_right = 94.0
+offset_bottom = -220.667
 grow_horizontal = 2
 grow_vertical = 2
 theme = SubResource("Theme_rcflo")
@@ -101,7 +108,8 @@ text = "Card Name"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="LandscapeCardType" type="Label" parent="."]
+[node name="LandscapeCardType" type="Label" parent="Labels"]
+layout_mode = 0
 offset_left = -170.667
 offset_top = 44.0
 offset_right = 169.333
@@ -112,7 +120,8 @@ text = "Landscape / Card Type"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Description" type="Label" parent="."]
+[node name="Description" type="Label" parent="Labels"]
+layout_mode = 0
 offset_left = -153.0
 offset_top = 93.3333
 offset_right = 150.0

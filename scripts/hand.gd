@@ -14,6 +14,8 @@ const MAX_HAND_HEIGHT = 100 # Maximum hand height
 # MOVE is_dragging HERE?
 
 func _ready():
+	position.x = get_viewport().get_visible_rect().size.x / 2
+	position.y = get_viewport().get_visible_rect().size.y - 100
 #	add_cards(1)
 	add_specific_card(7)
 	add_specific_card(501)

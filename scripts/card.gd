@@ -87,7 +87,6 @@ func _on_area_2d_mouse_exited(): # reverses everything from above
 		#tween.tween_property(self, "position", position + Vector2(0, 50), 0.1).set_ease(Tween.EASE_OUT)
 
 func _on_area_2d_body_entered(landscape: Landscape): # when the card enters a landscape
-
 	body_ref = landscape # current body
 	if landscape.get_child_count() == 4:
 		is_inside = true # if they overlap
@@ -125,6 +124,13 @@ func load_card():
 		$CardFrame/CCDefense/DefenseLabel.add_theme_font_size_override("font_size", 56)
 	$CardFrame/CCDefense/DefenseLabel.text = defense_value
 	$CardFrame/CostLabel.text = cost_value
-	$CardName.text = card_name
-	$LandscapeCardType.text = landscape + card_type
-	$Description.text = card_description
+	$Labels/CardName.text = card_name
+	var max_characters = 12
+	var font_size = 20
+	while card_name.length() > max_characters:
+				$Labels/CardName.add_theme_font_size_override("font_size", font_size)
+				max_characters += 4
+				font_size -= 1
+	
+	$Labels/LandscapeCardType.text = landscape + card_type
+	$Labels/Description.text = card_description

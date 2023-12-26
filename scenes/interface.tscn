@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://clyo1ca2sglx8"]
 
 [ext_resource type="Texture2D" uid="uid://bjsk5ehgiwas3" path="res://assets/images/other/background.jpg" id="1_xwtwo"]
-[ext_resource type="FontFile" uid="uid://ca0g1l1k6v1sf" path="res://assets/fonts/Pendlefont Heavy.TTF" id="2_6mtkl"]
+[ext_resource type="FontFile" uid="uid://ca0g1l1k6v1sf" path="res://assets/Fonts/Pendlefont Heavy.TTF" id="2_6mtkl"]
 [ext_resource type="Texture2D" uid="uid://ri0om34afyvm" path="res://assets/images/ui/X.png" id="3_1lmhm"]
 [ext_resource type="Script" path="res://scripts/quit.gd" id="3_m43to"]
 [ext_resource type="Texture2D" uid="uid://cvbxwtbtu0hvg" path="res://assets/images/ui/X2.png" id="3_ok1t5"]
