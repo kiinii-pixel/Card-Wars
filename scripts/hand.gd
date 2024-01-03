@@ -18,10 +18,10 @@ func _ready():
 	position.y = get_viewport().get_visible_rect().size.y - 100
 #	add_cards(1)
 	add_specific_card(7)
-	add_specific_card(501)
 	add_specific_card(505)
 	add_specific_card(460)
 	add_specific_card(499)
+	add_specific_card(81)
 
 func add_cards(amount) -> void:
 	for _x in range(amount):
