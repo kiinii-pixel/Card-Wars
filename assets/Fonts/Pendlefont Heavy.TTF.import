@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://ca0g1l1k6v1sf"
-path="res://.godot/imported/Pendlefont Heavy.TTF-57ff75d6eab57133c00306fd791b4957.fontdata"
+path="res://.godot/imported/Pendlefont Heavy.TTF-08b42661453965653b454046092d251d.fontdata"
 
 [deps]
 
-source_file="res://assets/Fonts/Pendlefont Heavy.TTF"
-dest_files=["res://.godot/imported/Pendlefont Heavy.TTF-57ff75d6eab57133c00306fd791b4957.fontdata"]
+source_file="res://assets/fonts/Pendlefont Heavy.TTF"
+dest_files=["res://.godot/imported/Pendlefont Heavy.TTF-08b42661453965653b454046092d251d.fontdata"]
 
 [params]
 

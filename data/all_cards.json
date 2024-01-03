@@ -9,7 +9,8 @@
 	"def": 2,
 	"ability": "Continuous",
 	"deck_info": "Ice King's IcyLands Deck (CP4) - 2",
-	"image_name": "Abdominal Snowman.jpg"
+	"image_name": "Abdominal Snowman.jpg",
+	"card_id": 0
   },
   {
 	"name": "Abraca Amadeus",
@@ -21,7 +22,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "BMO's Useless Swamp Deck (CP2) - 1",
-	"image_name": "Abraca Amadeus.jpg"
+	"image_name": "Abraca Amadeus.jpg",
+	"card_id": 1
   },
   {
 	"name": "Abracadaniel",
@@ -33,7 +35,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Hero Pack #1 (HP1) - 1",
-	"image_name": "Abracadaniel.jpg"
+	"image_name": "Abracadaniel.jpg",
+	"card_id": 2
   },
   {
 	"name": "Adorabunny",
@@ -45,7 +48,8 @@
 	"def": 8,
 	"ability": "",
 	"deck_info": "Jake's Cornfield/NiceLands Deck\n (2v2) - 1 : Charlie's Blue Plains/NiceLands Deck (2v2) - 2",
-	"image_name": "Adorabunny.jpg"
+	"image_name": "Adorabunny.jpg",
+	"card_id": 3
   },
   {
 	"name": "Aeromancer",
@@ -57,7 +61,8 @@
 	"def": 5,
 	"ability": "Entering Play",
 	"deck_info": "Charlie's Blue Plains/NiceLands Deck (2v2) - 1",
-	"image_name": "Aeromancer.jpg"
+	"image_name": "Aeromancer.jpg",
+	"card_id": 4
   },
   {
 	"name": "Albino Eyebat",
@@ -69,7 +74,8 @@
 	"def": 7,
 	"ability": "Continuous",
 	"deck_info": "Princess Bubblegum's NiceLands Deck (CP3) - 2",
-	"image_name": "Albino Eyebat.jpg"
+	"image_name": "Albino Eyebat.jpg",
+	"card_id": 5
   },
   {
 	"name": "Amaizing Avalanche",
@@ -81,7 +87,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Lemongrab's Cornfield/SandyLands Deck (CP5) - 1",
-	"image_name": "Amaizing Avalanche.jpg"
+	"image_name": "Amaizing Avalanche.jpg",
+	"card_id": 6
   },
   {
 	"name": "Ancient Scholar",
@@ -93,7 +100,8 @@
 	"def": 7,
 	"ability": "FLOOP",
 	"deck_info": "Finn's Blue Plains Deck (CP1) - 2",
-	"image_name": "Ancient Scholar.jpg"
+	"image_name": "Ancient Scholar.jpg",
+	"card_id": 7
   },
   {
 	"name": "Angel Heart",
@@ -105,7 +113,8 @@
 	"def": 7,
 	"ability": "Continuous",
 	"deck_info": "Princess Bubblegum's NiceLands Deck (CP3) - 2",
-	"image_name": "Angel Heart.jpg"
+	"image_name": "Angel Heart.jpg",
+	"card_id": 8
   },
   {
 	"name": "Angel of Chocolate",
@@ -117,7 +126,8 @@
 	"def": 7,
 	"ability": "Ignition",
 	"deck_info": "Princess Bubblegum's NiceLands Deck (CP3) - 1",
-	"image_name": "Angel of Chocolate.jpg"
+	"image_name": "Angel of Chocolate.jpg",
+	"card_id": 9
   },
   {
 	"name": "Angel of Vanilla",
@@ -129,7 +139,8 @@
 	"def": 6,
 	"ability": "Ignition",
 	"deck_info": "Princess Bubblegum's NiceLands Deck (CP3) - 2",
-	"image_name": "Angel of Vanilla.jpg"
+	"image_name": "Angel of Vanilla.jpg",
+	"card_id": 10
   },
   {
 	"name": "Apple Bully",
@@ -141,7 +152,8 @@
 	"def": 8,
 	"ability": "Continuous",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Rare",
-	"image_name": "Apple Bully.jpg"
+	"image_name": "Apple Bully.jpg",
+	"card_id": 11
   },
   {
 	"name": "Apple Pieclops",
@@ -153,7 +165,8 @@
 	"def": 7,
 	"ability": "Trigger",
 	"deck_info": "Princess Bubblegum's NiceLands Deck (CP3) - 2",
-	"image_name": "Apple Pieclops.jpg"
+	"image_name": "Apple Pieclops.jpg",
+	"card_id": 12
   },
   {
 	"name": "Archer Dan",
@@ -165,7 +178,8 @@
 	"def": 6,
 	"ability": "FLOOP",
 	"deck_info": "Jake's Cornfield Deck (CP1) - 1 : For the Glory! Booster Pack (FTG) - Rare",
-	"image_name": "Archer Dan.jpg"
+	"image_name": "Archer Dan.jpg",
+	"card_id": 13
   },
   {
 	"name": "Archer Danica",
@@ -177,7 +191,8 @@
 	"def": 6,
 	"ability": "FLOOP",
 	"deck_info": "Cake's Cornfield Deck (CP6) - 1",
-	"image_name": "Archer Danica.jpg"
+	"image_name": "Archer Danica.jpg",
+	"card_id": 14
   },
   {
 	"name": "Assistance",
@@ -189,7 +204,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Grand Prix's SandyLands/IcyLands Deck (2v2) - 1",
-	"image_name": "Assistance.jpg"
+	"image_name": "Assistance.jpg",
+	"card_id": 15
   },
   {
 	"name": "Auto-Plucker",
@@ -201,7 +217,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Marceline's NiceLands/Useless Swamp Deck (CP4) - 1",
-	"image_name": "Auto-Plucker.jpg"
+	"image_name": "Auto-Plucker.jpg",
+	"card_id": 16
   },
   {
 	"name": "Bail Out",
@@ -213,7 +230,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Grand Prix's SandyLands/IcyLands Deck (2v2) - 1",
-	"image_name": "Bail Out.jpg"
+	"image_name": "Bail Out.jpg",
+	"card_id": 17
   },
   {
 	"name": "Bale Out",
@@ -225,7 +243,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Jake's Cornfield/NiceLands Deck\n (2v2) - 1",
-	"image_name": "Bale Out.jpg"
+	"image_name": "Bale Out.jpg",
+	"card_id": 18
   },
   {
 	"name": "Ban-She Princess",
@@ -237,7 +256,8 @@
 	"def": 7,
 	"ability": "Entering Play",
 	"deck_info": "Marceline's NiceLands/Useless Swamp Deck (CP4) - 2",
-	"image_name": "Ban-She Princess.jpg"
+	"image_name": "Ban-She Princess.jpg",
+	"card_id": 19
   },
   {
 	"name": "Ban-She Queen",
@@ -249,7 +269,8 @@
 	"def": 9,
 	"ability": "Entering Play",
 	"deck_info": "Marceline's NiceLands/Useless Swamp Deck (CP4) - 1",
-	"image_name": "Ban-She Queen.jpg"
+	"image_name": "Ban-She Queen.jpg",
+	"card_id": 20
   },
   {
 	"name": "Bayou Fountain",
@@ -261,7 +282,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Moniker's Useless Swamp/IcyLands Deck (2v2) - 2",
-	"image_name": "Bayou Fountain.jpg"
+	"image_name": "Bayou Fountain.jpg",
+	"card_id": 21
   },
   {
 	"name": "Beach Blast",
@@ -273,7 +295,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Grand Prix's SandyLands/IcyLands Deck (2v2) - 1",
-	"image_name": "Beach Blast.jpg"
+	"image_name": "Beach Blast.jpg",
+	"card_id": 22
   },
   {
 	"name": "Beach Mummy",
@@ -285,7 +308,8 @@
 	"def": 6,
 	"ability": "FLOOP",
 	"deck_info": "Lady Rainicorn's SandyLand Deck (CP2) - 2 : For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Beach Mummy.jpg"
+	"image_name": "Beach Mummy.jpg",
+	"card_id": 23
   },
   {
 	"name": "Bean Ball Bomba",
@@ -297,7 +321,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Charlie's Blue Plains/NiceLands Deck (2v2) - 1",
-	"image_name": "Bean Ball Bomba.jpg"
+	"image_name": "Bean Ball Bomba.jpg",
+	"card_id": 24
   },
   {
 	"name": "Big Foot",
@@ -309,7 +334,8 @@
 	"def": 4,
 	"ability": "FLOOP",
 	"deck_info": "Jake's Cornfield Deck (CP1) - 2",
-	"image_name": "Big Foot.jpg"
+	"image_name": "Big Foot.jpg",
+	"card_id": 25
   },
   {
 	"name": "Billy",
@@ -321,7 +347,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Hero Pack #1 (HP1) - 1",
-	"image_name": "Billy.jpg"
+	"image_name": "Billy.jpg",
+	"card_id": 26
   },
   {
 	"name": "Biomancer",
@@ -333,7 +360,8 @@
 	"def": 8,
 	"ability": "Trigger",
 	"deck_info": "Charlie's Blue Plains/NiceLands Deck (2v2) - 2",
-	"image_name": "Biomancer.jpg"
+	"image_name": "Biomancer.jpg",
+	"card_id": 27
   },
   {
 	"name": "Black Hole Pendant",
@@ -345,7 +373,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Marceline's NiceLands/Useless Swamp Deck (CP4) - 2",
-	"image_name": "Black Hole Pendant.jpg"
+	"image_name": "Black Hole Pendant.jpg",
+	"card_id": 28
   },
   {
 	"name": "Black Paladin",
@@ -357,7 +386,8 @@
 	"def": 7,
 	"ability": "Continuous",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Uncommon",
-	"image_name": "Black Paladin.jpg"
+	"image_name": "Black Paladin.jpg",
+	"card_id": 29
   },
   {
 	"name": "Blonde MerWitch",
@@ -369,7 +399,8 @@
 	"def": 9,
 	"ability": "None",
 	"deck_info": "BMO's Useless Swamp Deck (CP2) - 1",
-	"image_name": "Blonde MerWitch.jpg"
+	"image_name": "Blonde MerWitch.jpg",
+	"card_id": 30
   },
   {
 	"name": "Blood Bath",
@@ -381,7 +412,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Marceline's NiceLands/Useless Swamp Deck (CP4) - 2",
-	"image_name": "Blood Bath.jpg"
+	"image_name": "Blood Bath.jpg",
+	"card_id": 31
   },
   {
 	"name": "Blood Castle",
@@ -393,7 +425,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Cake's Cornfield Deck (CP6) - 2",
-	"image_name": "Blood Castle.jpg"
+	"image_name": "Blood Castle.jpg",
+	"card_id": 32
   },
   {
 	"name": "Blood Fortress",
@@ -405,7 +438,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Jake's Cornfield Deck (CP1) - 2 : Finn's Blue Plains Deck (CP1) - 1 : BMO's Useless Swamp Deck (CP2) - 2 : Lady Rainicorns's SandyLands Deck (CP2) - 2 : Princess Bubblegum's NiceLands Deck (CP3) - 1 : Lumpy Space Princess' Blue Plains/Useless Swamp Deck (Totally Rad Deck) (CP3) - 1",
-	"image_name": "Blood Fortress.jpg"
+	"image_name": "Blood Fortress.jpg",
+	"card_id": 33
   },
   {
 	"name": "Blood Transfusion",
@@ -417,7 +451,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Marceline's NiceLands/Useless Swamp Deck (CP4) - 1",
-	"image_name": "Blood Transfusion.jpg"
+	"image_name": "Blood Transfusion.jpg",
+	"card_id": 34
   },
   {
 	"name": "Blue Candy",
@@ -429,7 +464,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Princess Bubblegum's NiceLands Deck (CP3) - 2",
-	"image_name": "Blue Candy.jpg"
+	"image_name": "Blue Candy.jpg",
+	"card_id": 35
   },
   {
 	"name": "Blue Gnome",
@@ -441,7 +477,8 @@
 	"def": 6,
 	"ability": "FLOOP",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Uncommon",
-	"image_name": "Blue Gnome.jpg"
+	"image_name": "Blue Gnome.jpg",
+	"card_id": 36
   },
   {
 	"name": "Blue Merlock",
@@ -453,7 +490,8 @@
 	"def": 5,
 	"ability": "FLOOP",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Blue Merlock.jpg"
+	"image_name": "Blue Merlock.jpg",
+	"card_id": 37
   },
   {
 	"name": "Blue Ogre",
@@ -465,7 +503,8 @@
 	"def": 5,
 	"ability": "Trigger",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Rare",
-	"image_name": "Blue Ogre.jpg"
+	"image_name": "Blue Ogre.jpg",
+	"card_id": 38
   },
   {
 	"name": "Blue Slimey",
@@ -477,7 +516,8 @@
 	"def": 6,
 	"ability": "Entering Play",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Uncommon",
-	"image_name": "Blue Slimey.jpg"
+	"image_name": "Blue Slimey.jpg",
+	"card_id": 39
   },
   {
 	"name": "Blueberry Djini",
@@ -489,7 +529,8 @@
 	"def": 6,
 	"ability": "Entering Play",
 	"deck_info": "Lumpy Space Princess' Blue Plains/Useless Swamp Deck (Totally Rad Deck) (CP3) - 2",
-	"image_name": "Blueberry Djini.jpg"
+	"image_name": "Blueberry Djini.jpg",
+	"card_id": 40
   },
   {
 	"name": "Blueberry Pieclops",
@@ -501,7 +542,8 @@
 	"def": 6,
 	"ability": "Continuous",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Uncommon",
-	"image_name": "Blueberry Pieclops.jpg"
+	"image_name": "Blueberry Pieclops.jpg",
+	"card_id": 41
   },
   {
 	"name": "BMO",
@@ -513,7 +555,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Hero Pack #1 (HP1) - 1",
-	"image_name": "BMO.jpg"
+	"image_name": "BMO.jpg",
+	"card_id": 42
   },
   {
 	"name": "Boarder Collie",
@@ -525,7 +568,8 @@
 	"def": 7,
 	"ability": "FLOOP",
 	"deck_info": "Ice King's IcyLands Deck (CP4) - 1",
-	"image_name": "Boarder Collie.jpg"
+	"image_name": "Boarder Collie.jpg",
+	"card_id": 43
   },
   {
 	"name": "Bog Ban-She Angel",
@@ -537,7 +581,8 @@
 	"def": 7,
 	"ability": "Ignition",
 	"deck_info": "Marceline's NiceLands/Useless Swamp Deck (CP4) - 1",
-	"image_name": "Bog Ban-She Angel.jpg"
+	"image_name": "Bog Ban-She Angel.jpg",
+	"card_id": 44
   },
   {
 	"name": "Bog Bum",
@@ -549,7 +594,8 @@
 	"def": 6,
 	"ability": "Leaving Play",
 	"deck_info": "Marceline's NiceLands/Useless Swamp Deck (CP4) - 2",
-	"image_name": "Bog Bum.jpg"
+	"image_name": "Bog Bum.jpg",
+	"card_id": 45
   },
   {
 	"name": "Bog Frog Bomb",
@@ -561,7 +607,8 @@
 	"def": 8,
 	"ability": "Leaving Play",
 	"deck_info": "Marceline's NiceLands/Useless Swamp Deck (CP4) - 1",
-	"image_name": "Bog Frog Bomb.jpg"
+	"image_name": "Bog Frog Bomb.jpg",
+	"card_id": 46
   },
   {
 	"name": "Bog Palace",
@@ -573,7 +620,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Moniker's Useless Swamp/IcyLands Deck (2v2) - 1",
-	"image_name": "Bog Palace.jpg"
+	"image_name": "Bog Palace.jpg",
+	"card_id": 47
   },
   {
 	"name": "Bomb Pop",
@@ -585,7 +633,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Moniker's Useless Swamp/IcyLands Deck (2v2) - 1",
-	"image_name": "Bomb Pop.jpg"
+	"image_name": "Bomb Pop.jpg",
+	"card_id": 48
   },
   {
 	"name": "Bone Wand",
@@ -597,7 +646,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "BMO's Useless Swamp Deck (CP2) - 2",
-	"image_name": "Bone Wand.jpg"
+	"image_name": "Bone Wand.jpg",
+	"card_id": 49
   },
   {
 	"name": "Bouncing Zebracorn",
@@ -609,7 +659,8 @@
 	"def": 9,
 	"ability": "Continuous",
 	"deck_info": "Lemongrab's Cornfield/SandyLands Deck (CP5) - 1",
-	"image_name": "Bouncing Zebracorn.jpg"
+	"image_name": "Bouncing Zebracorn.jpg",
+	"card_id": 50
   },
   {
 	"name": "Brain Gooey",
@@ -621,7 +672,8 @@
 	"def": 7,
 	"ability": "Entering Play",
 	"deck_info": "Lumpy Space Princess' Blue Plains/Useless Swamp Deck (Totally Rad Deck) (CP3) - 2",
-	"image_name": "Brain Gooey.jpg"
+	"image_name": "Brain Gooey.jpg",
+	"card_id": 51
   },
   {
 	"name": "Brief Power",
@@ -633,7 +685,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Lumpy Space Princess' Blue Plains/Useless Swamp Deck (Totally Rad Deck) (CP3) - 2",
-	"image_name": "Brief Power.jpg"
+	"image_name": "Brief Power.jpg",
+	"card_id": 52
   },
   {
 	"name": "Brigadier Banana Split",
@@ -645,7 +698,8 @@
 	"def": 9,
 	"ability": "",
 	"deck_info": "Moniker's Useless Swamp/IcyLands Deck (2v2) - 1",
-	"image_name": "Brigadier Banana Split.jpg"
+	"image_name": "Brigadier Banana Split.jpg",
+	"card_id": 53
   },
   {
 	"name": "Bums Away!",
@@ -657,7 +711,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Marceline's NiceLands/Useless Swamp Deck (CP4) - 2",
-	"image_name": "Bums Away!.jpg"
+	"image_name": "Bums Away!.jpg",
+	"card_id": 54
   },
   {
 	"name": "Burly Lumberjack",
@@ -669,7 +724,8 @@
 	"def": 9,
 	"ability": "Continuous",
 	"deck_info": "Cake's Cornfield Deck (CP6) - 2",
-	"image_name": "Burly Lumberjack.jpg"
+	"image_name": "Burly Lumberjack.jpg",
+	"card_id": 55
   },
   {
 	"name": "Business Dog",
@@ -681,7 +737,8 @@
 	"def": 6,
 	"ability": "",
 	"deck_info": "Fionna's Blue Plains Deck (CP6) - 1",
-	"image_name": "Business Dog.jpg"
+	"image_name": "Business Dog.jpg",
+	"card_id": 56
   },
   {
 	"name": "Cabin of Many Woods",
@@ -693,7 +750,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Cake's Cornfield Deck (CP6) - 1",
-	"image_name": "Cabin of Many Woods.jpg"
+	"image_name": "Cabin of Many Woods.jpg",
+	"card_id": 57
   },
   {
 	"name": "Cactus Thug",
@@ -705,7 +763,8 @@
 	"def": 7,
 	"ability": "Continuous",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Cactus Thug.jpg"
+	"image_name": "Cactus Thug.jpg",
+	"card_id": 58
   },
   {
 	"name": "Cake",
@@ -717,7 +776,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Cake's Cornfield Deck (CP6) - 1",
-	"image_name": "Cake.jpg"
+	"image_name": "Cake.jpg",
+	"card_id": 59
   },
   {
 	"name": "Camaraderie",
@@ -729,7 +789,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Grand Prix's SandyLands/IcyLands Deck (2v2) - 1",
-	"image_name": "Camaraderie.jpg"
+	"image_name": "Camaraderie.jpg",
+	"card_id": 60
   },
   {
 	"name": "Captain Taco",
@@ -741,7 +802,8 @@
 	"def": 1,
 	"ability": "Entering Play",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Captain Taco.jpg"
+	"image_name": "Captain Taco.jpg",
+	"card_id": 61
   },
   {
 	"name": "Cardboard Mansion",
@@ -753,7 +815,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Marceline's NiceLands/Useless Swamp Deck (CP4) - 1",
-	"image_name": "Cardboard Mansion.jpg"
+	"image_name": "Cardboard Mansion.jpg",
+	"card_id": 62
   },
   {
 	"name": "Carmel Camel",
@@ -765,7 +828,8 @@
 	"def": 4,
 	"ability": "Trigger",
 	"deck_info": "Lemongrab's Cornfield/SandyLands Deck (CP5) - 1",
-	"image_name": "Carmel Camel.jpg"
+	"image_name": "Carmel Camel.jpg",
+	"card_id": 63
   },
   {
 	"name": "Cave of Solitude",
@@ -777,7 +841,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Princess Bubblegum's NiceLands Deck (CP3) - 1",
-	"image_name": "Cave of Solitude.jpg"
+	"image_name": "Cave of Solitude.jpg",
+	"card_id": 64
   },
   {
 	"name": "Celestial Castle",
@@ -789,7 +854,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Jake's Cornfield Deck (CP1) - 1 : Finn's Blue Plains Deck (CP1) - 2 : BMO's Useless Swamp Deck (CP2) - 1 : Lady Rainicorns's SandyLands Deck (CP2) - 1 : Princess Bubblegum's NiceLands Deck (CP3) - 1 : Ice King's IcyLands Deck (CP4) - 1",
-	"image_name": "Celestial Castle.jpg"
+	"image_name": "Celestial Castle.jpg",
+	"card_id": 65
   },
   {
 	"name": "Celestial Fortress",
@@ -801,7 +867,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Cake's Cornfield Deck (CP6) - 2",
-	"image_name": "Celestial Fortress.jpg"
+	"image_name": "Celestial Fortress.jpg",
+	"card_id": 66
   },
   {
 	"name": "Cerebral Bloodstorm",
@@ -813,7 +880,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Finn's Blue Plains Deck (CP1) - 2 : Lady Rainicorn's SandyLand Deck (CP2) - 2",
-	"image_name": "Cerebral Bloodstorm.jpg"
+	"image_name": "Cerebral Bloodstorm.jpg",
+	"card_id": 67
   },
   {
 	"name": "Charlie",
@@ -825,7 +893,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Doubles Tournament (2v2) - 1",
-	"image_name": "Charlie.jpg"
+	"image_name": "Charlie.jpg",
+	"card_id": 68
   },
   {
 	"name": "Charming City",
@@ -837,7 +906,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Fionna's Blue Plains Deck (CP6) - 1",
-	"image_name": "Charming City.jpg"
+	"image_name": "Charming City.jpg",
+	"card_id": 69
   },
   {
 	"name": "Chest Burster",
@@ -849,7 +919,8 @@
 	"def": 10,
 	"ability": "Continuous",
 	"deck_info": "BMO's Useless Swamp Deck (CP2) - 2",
-	"image_name": "Chest Burster.jpg"
+	"image_name": "Chest Burster.jpg",
+	"card_id": 70
   },
   {
 	"name": "Chocolate TaCody",
@@ -861,7 +932,8 @@
 	"def": 7,
 	"ability": "",
 	"deck_info": "Grand Prix's SandyLands/IcyLands Deck (2v2) - 1 : Moniker's Useless Swamp/IcyLands Deck (2v2) - 1",
-	"image_name": "Chocolate TaCody.jpg"
+	"image_name": "Chocolate TaCody.jpg",
+	"card_id": 71
   },
   {
 	"name": "Chronomancer",
@@ -873,7 +945,8 @@
 	"def": 6,
 	"ability": "Trigger",
 	"deck_info": "Charlie's Blue Plains/NiceLands Deck (2v2) - 1",
-	"image_name": "Chronomancer.jpg"
+	"image_name": "Chronomancer.jpg",
+	"card_id": 72
   },
   {
 	"name": "Clone",
@@ -885,7 +958,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Jake's Cornfield/NiceLands Deck\n (2v2) - 1 : Moniker's Useless Swamp/IcyLands Deck (2v2) - 1",
-	"image_name": "Clone.jpg"
+	"image_name": "Clone.jpg",
+	"card_id": 73
   },
   {
 	"name": "Cloud Tower",
@@ -897,7 +971,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Charlie's Blue Plains/NiceLands Deck (2v2) - 1",
-	"image_name": "Cloud Tower.jpg"
+	"image_name": "Cloud Tower.jpg",
+	"card_id": 74
   },
   {
 	"name": "Cold Soldier",
@@ -909,7 +984,8 @@
 	"def": 4,
 	"ability": "Continuous",
 	"deck_info": "Ice King's IcyLands Deck (CP4) - 2",
-	"image_name": "Cold Soldier.jpg"
+	"image_name": "Cold Soldier.jpg",
+	"card_id": 75
   },
   {
 	"name": "Collaboration",
@@ -921,7 +997,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Jake's Cornfield/NiceLands Deck\n (2v2) - 1 : Grand Prix's SandyLands/IcyLands Deck (2v2) - 1",
-	"image_name": "Collaboration.jpg"
+	"image_name": "Collaboration.jpg",
+	"card_id": 76
   },
   {
 	"name": "Communication",
@@ -933,7 +1010,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Charlie's Blue Plains/NiceLands Deck (2v2) - 1 : Moniker's Useless Swamp/IcyLands Deck (2v2) - 1",
-	"image_name": "Communication.jpg"
+	"image_name": "Communication.jpg",
+	"card_id": 77
   },
   {
 	"name": "Confectionary Ring",
@@ -945,7 +1023,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Confectionary Ring.jpg"
+	"image_name": "Confectionary Ring.jpg",
+	"card_id": 78
   },
   {
 	"name": "Contribution",
@@ -957,7 +1036,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Charlie's Blue Plains/NiceLands Deck (2v2) - 1",
-	"image_name": "Contribution.jpg"
+	"image_name": "Contribution.jpg",
+	"card_id": 79
   },
   {
 	"name": "Convey Wisdom",
@@ -969,7 +1049,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Charlie's Blue Plains/NiceLands Deck (2v2) - 1",
-	"image_name": "Convey Wisdom.jpg"
+	"image_name": "Convey Wisdom.jpg",
+	"card_id": 80
   },
   {
 	"name": "Cool Dog",
@@ -981,7 +1062,8 @@
 	"def": 7,
 	"ability": "Continuous",
 	"deck_info": "Finn's Blue Plains Deck (CP1) - 2",
-	"image_name": "Cool Dog.jpg"
+	"image_name": "Cool Dog.jpg",
+	"card_id": 81
   },
   {
 	"name": "Cooperation",
@@ -993,7 +1075,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Jake's Cornfield/NiceLands Deck\n (2v2) - 1",
-	"image_name": "Cooperation.jpg"
+	"image_name": "Cooperation.jpg",
+	"card_id": 82
   },
   {
 	"name": "Coordination",
@@ -1005,7 +1088,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Moniker's Useless Swamp/IcyLands Deck (2v2) - 1",
-	"image_name": "Coordination.jpg"
+	"image_name": "Coordination.jpg",
+	"card_id": 83
   },
   {
 	"name": "Corn Bat",
@@ -1017,7 +1101,8 @@
 	"def": 7,
 	"ability": "Ignition",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Rare",
-	"image_name": "Corn Bat.jpg"
+	"image_name": "Corn Bat.jpg",
+	"card_id": 84
   },
   {
 	"name": "Corn Dog",
@@ -1029,7 +1114,8 @@
 	"def": 12,
 	"ability": "Continuous",
 	"deck_info": "Jake's Cornfield Deck (CP1) - 1",
-	"image_name": "Corn Dog.jpg"
+	"image_name": "Corn Dog.jpg",
+	"card_id": 85
   },
   {
 	"name": "Corn Lord",
@@ -1041,7 +1127,8 @@
 	"def": 7,
 	"ability": "Continuous",
 	"deck_info": "Jake's Cornfield Deck (CP1) - 1",
-	"image_name": "Corn Lord.jpg"
+	"image_name": "Corn Lord.jpg",
+	"card_id": 86
   },
   {
 	"name": "Corn Ronin",
@@ -1053,7 +1140,8 @@
 	"def": 6,
 	"ability": "Continuous",
 	"deck_info": "Jake's Cornfield Deck (CP1) - 2",
-	"image_name": "Corn Ronin.jpg"
+	"image_name": "Corn Ronin.jpg",
+	"card_id": 87
   },
   {
 	"name": "Corn Scepter",
@@ -1065,7 +1153,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Jake's Cornfield Deck (CP1) - 2",
-	"image_name": "Corn Scepter.jpg"
+	"image_name": "Corn Scepter.jpg",
+	"card_id": 88
   },
   {
 	"name": "Cornataur",
@@ -1077,7 +1166,8 @@
 	"def": 10,
 	"ability": "Entering Play",
 	"deck_info": "Jake's Cornfield Deck (CP1) - 2",
-	"image_name": "Cornataur.jpg"
+	"image_name": "Cornataur.jpg",
+	"card_id": 89
   },
   {
 	"name": "Corns Templar",
@@ -1089,7 +1179,8 @@
 	"def": 7,
 	"ability": "FLOOP",
 	"deck_info": "Cake's Cornfield Deck (CP6) - 2",
-	"image_name": "Corns Templar.jpg"
+	"image_name": "Corns Templar.jpg",
+	"card_id": 90
   },
   {
 	"name": "Cosmic Owl",
@@ -1101,7 +1192,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Hero Pack #1 (HP1) - 1",
-	"image_name": "Cosmic Owl.jpg"
+	"image_name": "Cosmic Owl.jpg",
+	"card_id": 91
   },
   {
 	"name": "Cotton Devil",
@@ -1113,7 +1205,8 @@
 	"def": 1,
 	"ability": "Continuous",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Cotton Devil.jpg"
+	"image_name": "Cotton Devil.jpg",
+	"card_id": 92
   },
   {
 	"name": "Cotton Eyebat",
@@ -1125,7 +1218,8 @@
 	"def": 8,
 	"ability": "Continuous",
 	"deck_info": "Princess Bubblegum's NiceLands Deck (CP3) - 2",
-	"image_name": "Cotton Eyebat.jpg"
+	"image_name": "Cotton Eyebat.jpg",
+	"card_id": 93
   },
   {
 	"name": "Cottonpult",
@@ -1137,7 +1231,8 @@
 	"def": 8,
 	"ability": "FLOOP",
 	"deck_info": "Marceline's NiceLands/Useless Swamp Deck (CP4) - 2",
-	"image_name": "Cottonpult.jpg"
+	"image_name": "Cottonpult.jpg",
+	"card_id": 94
   },
   {
 	"name": "Cow",
@@ -1149,7 +1244,8 @@
 	"def": 5,
 	"ability": "None",
 	"deck_info": "Princess Bubblegum's NiceLands Deck (CP3) - 2",
-	"image_name": "Cow.jpg"
+	"image_name": "Cow.jpg",
+	"card_id": 95
   },
   {
 	"name": "Cowsper",
@@ -1161,7 +1257,8 @@
 	"def": 8,
 	"ability": "Continuous",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Uncommon",
-	"image_name": "Cowsper.jpg"
+	"image_name": "Cowsper.jpg",
+	"card_id": 96
   },
   {
 	"name": "Crab Skull Island",
@@ -1173,7 +1270,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Grand Prix's SandyLands/IcyLands Deck (2v2) - 1",
-	"image_name": "Crab Skull Island.jpg"
+	"image_name": "Crab Skull Island.jpg",
+	"card_id": 97
   },
   {
 	"name": "Crazy Cat Lady",
@@ -1185,7 +1283,8 @@
 	"def": 10,
 	"ability": "",
 	"deck_info": "Fionna's Blue Plains Deck (CP6) - 2",
-	"image_name": "Crazy Cat Lady.jpg"
+	"image_name": "Crazy Cat Lady.jpg",
+	"card_id": 98
   },
   {
 	"name": "Cross Pollination",
@@ -1197,7 +1296,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Jake's Cornfield Deck (CP1) - 1",
-	"image_name": "Cross Pollination.jpg"
+	"image_name": "Cross Pollination.jpg",
+	"card_id": 99
   },
   {
 	"name": "Crystal Palace",
@@ -1209,7 +1309,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Ice King's IcyLands Deck (CP4) - 1",
-	"image_name": "Crystal Palace.jpg"
+	"image_name": "Crystal Palace.jpg",
+	"card_id": 100
   },
   {
 	"name": "Cuddle Puddle",
@@ -1221,7 +1322,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Jake's Cornfield/NiceLands Deck\n (2v2) - 1",
-	"image_name": "Cuddle Puddle.jpg"
+	"image_name": "Cuddle Puddle.jpg",
+	"card_id": 101
   },
   {
 	"name": "Cute Overload",
@@ -1233,7 +1335,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Gunter's Blue Plains/IcyLands Deck (CP5) - 1",
-	"image_name": "Cute Overload.jpg"
+	"image_name": "Cute Overload.jpg",
+	"card_id": 102
   },
   {
 	"name": "Cutie",
@@ -1245,7 +1348,8 @@
 	"def": 6,
 	"ability": "FLOOP",
 	"deck_info": "Princess Bubblegum's NiceLands Deck (CP3) - 2",
-	"image_name": "Cutie Koala.jpg"
+	"image_name": "Cutie Koala.jpg",
+	"card_id": 103
   },
   {
 	"name": "Cutie Koala",
@@ -1257,7 +1361,8 @@
 	"def": 8,
 	"ability": "",
 	"deck_info": "Jake's Cornfield/NiceLands Deck\n (2v2) - 2",
-	"image_name": "Cutie.jpg"
+	"image_name": "Cutie.jpg",
+	"card_id": 104
   },
   {
 	"name": "Dark Angel",
@@ -1269,7 +1374,8 @@
 	"def": 5,
 	"ability": "Continuous",
 	"deck_info": "BMO's Useless Swamp Deck (CP2) - 1",
-	"image_name": "Dark Angel.jpg"
+	"image_name": "Dark Angel.jpg",
+	"card_id": 105
   },
   {
 	"name": "Davey Bones",
@@ -1281,7 +1387,8 @@
 	"def": 4,
 	"ability": "Continuous",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Davey Bones.jpg"
+	"image_name": "Davey Bones.jpg",
+	"card_id": 106
   },
   {
 	"name": "Deforestation",
@@ -1293,7 +1400,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Cake's Cornfield Deck (CP6) - 1",
-	"image_name": "Deforestation.jpg"
+	"image_name": "Deforestation.jpg",
+	"card_id": 107
   },
   {
 	"name": "Diamond Dan",
@@ -1305,7 +1413,8 @@
 	"def": 2,
 	"ability": "Leaving Play",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Diamond Dan.jpg"
+	"image_name": "Diamond Dan.jpg",
+	"card_id": 108
   },
   {
 	"name": "Djini Ghost",
@@ -1317,7 +1426,8 @@
 	"def": 6,
 	"ability": "FLOOP",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Rare",
-	"image_name": "Djini Ghost.jpg"
+	"image_name": "Djini Ghost.jpg",
+	"card_id": 109
   },
   {
 	"name": "Dogboy",
@@ -1329,7 +1439,8 @@
 	"def": 5,
 	"ability": "Ignition",
 	"deck_info": "Lumpy Space Princess' Blue Plains/Useless Swamp Deck (Totally Rad Deck) (CP3) - 2",
-	"image_name": "Dogboy.jpg"
+	"image_name": "Dogboy.jpg",
+	"card_id": 110
   },
   {
 	"name": "Domed Stronghold",
@@ -1341,7 +1452,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Charlie's Blue Plains/NiceLands Deck (2v2) - 2",
-	"image_name": "Domed Stronghold.jpg"
+	"image_name": "Domed Stronghold.jpg",
+	"card_id": 111
   },
   {
 	"name": "Dr. Death",
@@ -1353,7 +1465,8 @@
 	"def": 7,
 	"ability": "FLOOP",
 	"deck_info": "BMO's Useless Swamp Deck (CP2) - 1",
-	"image_name": "Dr. Death.jpg"
+	"image_name": "Dr. Death.jpg",
+	"card_id": 112
   },
   {
 	"name": "Dr. Stuffenstein",
@@ -1365,7 +1478,8 @@
 	"def": 9,
 	"ability": "FLOOP",
 	"deck_info": "Marceline's NiceLands/Useless Swamp Deck (CP4) - 2",
-	"image_name": "Dr. Stuffenstein.jpg"
+	"image_name": "Dr. Stuffenstein.jpg",
+	"card_id": 113
   },
   {
 	"name": "Dragon Claw",
@@ -1377,7 +1491,8 @@
 	"def": 8,
 	"ability": "FLOOP",
 	"deck_info": "Finn's Blue Plains Deck (CP1) - 2",
-	"image_name": "Dragon Claw.jpg"
+	"image_name": "Dragon Claw.jpg",
+	"card_id": 114
   },
   {
 	"name": "Dragon Foot",
@@ -1389,7 +1504,8 @@
 	"def": 5,
 	"ability": "Ignition",
 	"deck_info": "Lumpy Space Princess' Blue Plains/Useless Swamp Deck (Totally Rad Deck) (CP3) - 2",
-	"image_name": "Dragon Foot.jpg"
+	"image_name": "Dragon Foot.jpg",
+	"card_id": 115
   },
   {
 	"name": "Dragoon Parrotrooper",
@@ -1401,7 +1517,8 @@
 	"def": 8,
 	"ability": "Entering Play",
 	"deck_info": "Lemongrab's Cornfield/SandyLands Deck (CP5) - 1",
-	"image_name": "Dragoon Parrotrooper.jpg"
+	"image_name": "Dragoon Parrotrooper.jpg",
+	"card_id": 116
   },
   {
 	"name": "Drained Cleric",
@@ -1413,7 +1530,8 @@
 	"def": 5,
 	"ability": "Trigger",
 	"deck_info": "Gunter's Blue Plains/IcyLands Deck (CP5) - 2",
-	"image_name": "Drained Cleric.jpg"
+	"image_name": "Drained Cleric.jpg",
+	"card_id": 117
   },
   {
 	"name": "Drooling Dude",
@@ -1425,7 +1543,8 @@
 	"def": 9,
 	"ability": "None",
 	"deck_info": "Jake's Cornfield Deck (CP1) - 1",
-	"image_name": "Drooling Dude.jpg"
+	"image_name": "Drooling Dude.jpg",
+	"card_id": 118
   },
   {
 	"name": "Drop Zone",
@@ -1437,7 +1556,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Lemongrab's Cornfield/SandyLands Deck (CP5) - 2",
-	"image_name": "Drop Zone.jpg"
+	"image_name": "Drop Zone.jpg",
+	"card_id": 119
   },
   {
 	"name": "Druid of the Cob",
@@ -1449,7 +1569,8 @@
 	"def": 8,
 	"ability": "Continuous",
 	"deck_info": "Cake's Cornfield Deck (CP6) - 2",
-	"image_name": "Druid of the Cob.jpg"
+	"image_name": "Druid of the Cob.jpg",
+	"card_id": 120
   },
   {
 	"name": "Duet",
@@ -1461,7 +1582,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Grand Prix's SandyLands/IcyLands Deck (2v2) - 1",
-	"image_name": "Duet.jpg"
+	"image_name": "Duet.jpg",
+	"card_id": 121
   },
   {
 	"name": "Earth Mover",
@@ -1473,7 +1595,8 @@
 	"def": 10,
 	"ability": "Continuous",
 	"deck_info": "Lemongrab's Cornfield/SandyLands Deck (CP5) - 1",
-	"image_name": "Earth Mover.jpg"
+	"image_name": "Earth Mover.jpg",
+	"card_id": 122
   },
   {
 	"name": "Elf Hut",
@@ -1485,7 +1608,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Elf Hut.jpg"
+	"image_name": "Elf Hut.jpg",
+	"card_id": 123
   },
   {
 	"name": "Embarrassing Bard",
@@ -1497,7 +1621,8 @@
 	"def": 5,
 	"ability": "FLOOP",
 	"deck_info": "Finn's Blue Plains Deck (CP1) - 2",
-	"image_name": "Embarrassing Bard.jpg"
+	"image_name": "Embarrassing Bard.jpg",
+	"card_id": 124
   },
   {
 	"name": "Emboldened Retriever",
@@ -1509,7 +1634,8 @@
 	"def": 7,
 	"ability": "",
 	"deck_info": "Fionna's Blue Plains Deck (CP6) - 2",
-	"image_name": "Emboldened Retriever.jpg"
+	"image_name": "Emboldened Retriever.jpg",
+	"card_id": 125
   },
   {
 	"name": "Emperor Penguin",
@@ -1521,7 +1647,8 @@
 	"def": 8,
 	"ability": "Continuous",
 	"deck_info": "Ice King's IcyLands Deck (CP4) - 2",
-	"image_name": "Emperor Penguin.jpg"
+	"image_name": "Emperor Penguin.jpg",
+	"card_id": 126
   },
   {
 	"name": "Enchanted Celebration",
@@ -1533,7 +1660,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Charlie's Blue Plains/NiceLands Deck (2v2) - 1",
-	"image_name": "Enchanted Celebration.jpg"
+	"image_name": "Enchanted Celebration.jpg",
+	"card_id": 127
   },
   {
 	"name": "Endearing Elephant",
@@ -1545,7 +1673,8 @@
 	"def": 4,
 	"ability": "",
 	"deck_info": "Jake's Cornfield/NiceLands Deck (2v2) - 1 : Charlie's Blue Plains/NiceLands Deck (2v2) - 1",
-	"image_name": "Endearing Elephant.jpg"
+	"image_name": "Endearing Elephant.jpg",
+	"card_id": 128
   },
   {
 	"name": "Ethan Allfire",
@@ -1557,7 +1686,8 @@
 	"def": 4,
 	"ability": "Leaving Play",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Rare",
-	"image_name": "Ethan Allfire.jpg"
+	"image_name": "Ethan Allfire.jpg",
+	"card_id": 129
   },
   {
 	"name": "Evil Eye",
@@ -1569,7 +1699,8 @@
 	"def": 5,
 	"ability": "None",
 	"deck_info": "Jake's Cornfield Deck (CP1) - 1",
-	"image_name": "Evil Eye.jpg"
+	"image_name": "Evil Eye.jpg",
+	"card_id": 130
   },
   {
 	"name": "Extraordinary Spider",
@@ -1581,7 +1712,8 @@
 	"def": 7,
 	"ability": "Continuous",
 	"deck_info": "BMO's Useless Swamp Deck (CP2) - 2",
-	"image_name": "Extraordinary Spider.jpg"
+	"image_name": "Extraordinary Spider.jpg",
+	"card_id": 131
   },
   {
 	"name": "Extreme High Five",
@@ -1593,7 +1725,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Jake's Cornfield/NiceLands Deck\n (2v2) - 1 : Grand Prix's SandyLands/IcyLands Deck (2v2) - 1",
-	"image_name": "Extreme High Five.jpg"
+	"image_name": "Extreme High Five.jpg",
+	"card_id": 132
   },
   {
 	"name": "Eye Guy",
@@ -1605,7 +1738,8 @@
 	"def": 8,
 	"ability": "Continuous",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Uncommon",
-	"image_name": "Eye Guy.jpg"
+	"image_name": "Eye Guy.jpg",
+	"card_id": 133
   },
   {
 	"name": "Fairy Shepard",
@@ -1617,7 +1751,8 @@
 	"def": 9,
 	"ability": "Continuous",
 	"deck_info": "Princess Bubblegum's NiceLands Deck (CP3) - 1",
-	"image_name": "Fairy Shepard.jpg"
+	"image_name": "Fairy Shepard.jpg",
+	"card_id": 134
   },
   {
 	"name": "Falling Star",
@@ -1629,7 +1764,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Princess Bubblegum's NiceLands Deck (CP3) - 1",
-	"image_name": "Falling Star.jpg"
+	"image_name": "Falling Star.jpg",
+	"card_id": 135
   },
   {
 	"name": "Family Gathering",
@@ -1641,7 +1777,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Jake's Cornfield/NiceLands Deck\n (2v2) - 1",
-	"image_name": "Family Gathering.jpg"
+	"image_name": "Family Gathering.jpg",
+	"card_id": 136
   },
   {
 	"name": "Fancy Pants Gnome",
@@ -1653,7 +1790,8 @@
 	"def": 6,
 	"ability": "FLOOP",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Uncommon",
-	"image_name": "Fancy Pants Gnome.jpg"
+	"image_name": "Fancy Pants Gnome.jpg",
+	"card_id": 137
   },
   {
 	"name": "Fancy Spa",
@@ -1665,7 +1803,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Gunter's Blue Plains/IcyLands Deck (CP5) - 1",
-	"image_name": "Fancy Spa.jpg"
+	"image_name": "Fancy Spa.jpg",
+	"card_id": 138
   },
   {
 	"name": "Fancy Zebracorn",
@@ -1677,7 +1816,8 @@
 	"def": 4,
 	"ability": "Continuous",
 	"deck_info": "Lemongrab's Cornfield/SandyLands Deck (CP5) - 2",
-	"image_name": "Fancy Zebracorn.jpg"
+	"image_name": "Fancy Zebracorn.jpg",
+	"card_id": 139
   },
   {
 	"name": "Farmhouse",
@@ -1689,7 +1829,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Cake's Cornfield Deck (CP6) - 1",
-	"image_name": "Farmhouse.jpg"
+	"image_name": "Farmhouse.jpg",
+	"card_id": 140
   },
   {
 	"name": "Fatapillar",
@@ -1701,7 +1842,8 @@
 	"def": 3,
 	"ability": "Continuous",
 	"deck_info": "Lumpy Space Princess' Blue Plains/Useless Swamp Deck (Totally Rad Deck) (CP3) - 2",
-	"image_name": "Fatapillar.jpg"
+	"image_name": "Fatapillar.jpg",
+	"card_id": 141
   },
   {
 	"name": "Fatigued Librarian",
@@ -1713,7 +1855,8 @@
 	"def": 4,
 	"ability": "Trigger",
 	"deck_info": "Gunter's Blue Plains/IcyLands Deck (CP5) - 2",
-	"image_name": "Fatigued Librarian.jpg"
+	"image_name": "Fatigued Librarian.jpg",
+	"card_id": 142
   },
   {
 	"name": "Feedman",
@@ -1725,7 +1868,8 @@
 	"def": 8,
 	"ability": "",
 	"deck_info": "Jake's Cornfield/NiceLands Deck\n (2v2) - 2",
-	"image_name": "Feedman.jpg"
+	"image_name": "Feedman.jpg",
+	"card_id": 143
   },
   {
 	"name": "Fellowship",
@@ -1737,7 +1881,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Charlie's Blue Plains/NiceLands Deck (2v2) - 1",
-	"image_name": "Fellowship.jpg"
+	"image_name": "Fellowship.jpg",
+	"card_id": 144
   },
   {
 	"name": "Fiddling Ferret",
@@ -1749,7 +1894,8 @@
 	"def": 6,
 	"ability": "FLOOP",
 	"deck_info": "Fionna's Blue Plains Deck (CP6) - 1",
-	"image_name": "Fiddling Ferret.jpg"
+	"image_name": "Fiddling Ferret.jpg",
+	"card_id": 145
   },
   {
 	"name": "Field of Nightmares",
@@ -1761,7 +1907,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Jake's Cornfield Deck (CP1) - 2",
-	"image_name": "Field of Nightmares.jpg"
+	"image_name": "Field of Nightmares.jpg",
+	"card_id": 146
   },
   {
 	"name": "Field Reaper",
@@ -1773,7 +1920,8 @@
 	"def": 4,
 	"ability": "Entering Play",
 	"deck_info": "Jake's Cornfield Deck (CP1) - 1",
-	"image_name": "Field Reaper.jpg"
+	"image_name": "Field Reaper.jpg",
+	"card_id": 147
   },
   {
 	"name": "Field Stalker",
@@ -1785,7 +1933,8 @@
 	"def": 10,
 	"ability": "Continuous",
 	"deck_info": "Jake's Cornfield Deck (CP1) - 2",
-	"image_name": "Field Stalker.jpg"
+	"image_name": "Field Stalker.jpg",
+	"card_id": 148
   },
   {
 	"name": "Finn",
@@ -1797,7 +1946,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Hero Pack #1 (HP1) - 1",
-	"image_name": "Finn.jpg"
+	"image_name": "Finn.jpg",
+	"card_id": 149
   },
   {
 	"name": "Fionna",
@@ -1809,7 +1959,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Fionna's Blue Plains Deck (CP6) - 1",
-	"image_name": "Fionna.jpg"
+	"image_name": "Fionna.jpg",
+	"card_id": 150
   },
   {
 	"name": "Firm Handshake",
@@ -1821,7 +1972,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Charlie's Blue Plains/NiceLands Deck (2v2) - 1 : Moniker's Useless Swamp/IcyLands Deck (2v2) - 1",
-	"image_name": "Firm Handshake.jpg"
+	"image_name": "Firm Handshake.jpg",
+	"card_id": 151
   },
   {
 	"name": "Fisher Fish",
@@ -1833,7 +1985,8 @@
 	"def": 6,
 	"ability": "Entering Play",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Fisher Fish.jpg"
+	"image_name": "Fisher Fish.jpg",
+	"card_id": 152
   },
   {
 	"name": "Floating Ice Palace",
@@ -1845,7 +1998,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Gunter's Blue Plains/IcyLands Deck (CP5) - 1",
-	"image_name": "Floating Ice Palace.jpg"
+	"image_name": "Floating Ice Palace.jpg",
+	"card_id": 153
   },
   {
 	"name": "Fluffy Fox",
@@ -1857,7 +2011,8 @@
 	"def": 6,
 	"ability": "",
 	"deck_info": "Charlie's Blue Plains/NiceLands Deck (2v2) - 2",
-	"image_name": "Fluffy Fox.jpg"
+	"image_name": "Fluffy Fox.jpg",
+	"card_id": 154
   },
   {
 	"name": "Fly Swatter",
@@ -1869,7 +2024,8 @@
 	"def": 6,
 	"ability": "FLOOP",
 	"deck_info": "Marceline's NiceLands/Useless Swamp Deck (CP4) - 2",
-	"image_name": "Fly Swatter.jpg"
+	"image_name": "Fly Swatter.jpg",
+	"card_id": 155
   },
   {
 	"name": "Fountain of Tears",
@@ -1881,7 +2037,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Rare",
-	"image_name": "Fountain of Tears.jpg"
+	"image_name": "Fountain of Tears.jpg",
+	"card_id": 156
   },
   {
 	"name": "Four Star Fudge",
@@ -1893,7 +2050,8 @@
 	"def": 9,
 	"ability": "",
 	"deck_info": "Moniker's Useless Swamp/IcyLands Deck (2v2) - 1",
-	"image_name": "Four Star Fudge.jpg"
+	"image_name": "Four Star Fudge.jpg",
+	"card_id": 157
   },
   {
 	"name": "Free Fall",
@@ -1905,7 +2063,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Lemongrab's Cornfield/SandyLands Deck (CP5) - 2",
-	"image_name": "Free Fall.jpg"
+	"image_name": "Free Fall.jpg",
+	"card_id": 158
   },
   {
 	"name": "Freeze Ray",
@@ -1917,7 +2076,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Ice King's IcyLands Deck (CP4) - 2",
-	"image_name": "Freeze Ray.jpg"
+	"image_name": "Freeze Ray.jpg",
+	"card_id": 159
   },
   {
 	"name": "Freezing Point",
@@ -1929,7 +2089,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Ice King's IcyLands Deck (CP4) - 2",
-	"image_name": "Freezing Point.jpg"
+	"image_name": "Freezing Point.jpg",
+	"card_id": 160
   },
   {
 	"name": "Friendship Bracelet",
@@ -1941,7 +2102,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Fionna's Blue Plains Deck (CP6) - 2",
-	"image_name": "Friendship Bracelet.jpg"
+	"image_name": "Friendship Bracelet.jpg",
+	"card_id": 161
   },
   {
 	"name": "Fright Tower",
@@ -1953,7 +2115,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Fright Tower.jpg"
+	"image_name": "Fright Tower.jpg",
+	"card_id": 162
   },
   {
 	"name": "Frost Dragon",
@@ -1965,7 +2128,8 @@
 	"def": 10,
 	"ability": "Ignition",
 	"deck_info": "Ice King's IcyLands Deck (CP4) - 2",
-	"image_name": "Frost Dragon.jpg"
+	"image_name": "Frost Dragon.jpg",
+	"card_id": 163
   },
   {
 	"name": "Frosted Deanimator",
@@ -1977,7 +2141,8 @@
 	"def": 6,
 	"ability": "Entering Play",
 	"deck_info": "Gunter's Blue Plains/IcyLands Deck (CP5) - 2",
-	"image_name": "Frosted Deanimator.jpg"
+	"image_name": "Frosted Deanimator.jpg",
+	"card_id": 164
   },
   {
 	"name": "Frosted Snowwoman",
@@ -1989,7 +2154,8 @@
 	"def": 5,
 	"ability": "Entering Play",
 	"deck_info": "Gunter's Blue Plains/IcyLands Deck (CP5) - 1",
-	"image_name": "Frosted Snowwoman.jpg"
+	"image_name": "Frosted Snowwoman.jpg",
+	"card_id": 165
   },
   {
 	"name": "Frosty Frolic",
@@ -2001,7 +2167,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Ice King's IcyLands Deck (CP4) - 2",
-	"image_name": "Frosty Frolic.jpg"
+	"image_name": "Frosty Frolic.jpg",
+	"card_id": 166
   },
   {
 	"name": "Frozen BanaNancy",
@@ -2013,7 +2180,8 @@
 	"def": 7,
 	"ability": "",
 	"deck_info": "Grand Prix's SandyLands/IcyLands Deck (2v2) - 1",
-	"image_name": "Frozen BanaNancy.jpg"
+	"image_name": "Frozen BanaNancy.jpg",
+	"card_id": 167
   },
   {
 	"name": "Frozen Fish",
@@ -2025,7 +2193,8 @@
 	"def": 8,
 	"ability": "Trigger",
 	"deck_info": "Ice King's IcyLands Deck (CP4) - 2",
-	"image_name": "Frozen Fish.jpg"
+	"image_name": "Frozen Fish.jpg",
+	"card_id": 168
   },
   {
 	"name": "Frozen Heart",
@@ -2037,7 +2206,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Ice King's IcyLands Deck (CP4) - 2",
-	"image_name": "Frozen Heart.jpg"
+	"image_name": "Frozen Heart.jpg",
+	"card_id": 169
   },
   {
 	"name": "Frozen Lemon Aid",
@@ -2049,7 +2219,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Grand Prix's SandyLands/IcyLands Deck (2v2) - 1",
-	"image_name": "Frozen Lemon Aid.jpg"
+	"image_name": "Frozen Lemon Aid.jpg",
+	"card_id": 170
   },
   {
 	"name": "Full Metal Racket",
@@ -2061,7 +2232,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Uncommon",
-	"image_name": "Full Metal Racket.jpg"
+	"image_name": "Full Metal Racket.jpg",
+	"card_id": 171
   },
   {
 	"name": "FumiGator",
@@ -2073,7 +2245,8 @@
 	"def": 6,
 	"ability": "",
 	"deck_info": "Moniker's Useless Swamp/IcyLands Deck (2v2) - 2",
-	"image_name": "FumiGator.jpg"
+	"image_name": "FumiGator.jpg",
+	"card_id": 172
   },
   {
 	"name": "Fummy",
@@ -2085,7 +2258,8 @@
 	"def": 7,
 	"ability": "FLOOP",
 	"deck_info": "Lady Rainicorn's SandyLand Deck (CP2) - 1",
-	"image_name": "Fummy.jpg"
+	"image_name": "Fummy.jpg",
+	"card_id": 173
   },
   {
 	"name": "Funeral Home",
@@ -2097,7 +2271,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Marceline's NiceLands/Useless Swamp Deck (CP4) - 1",
-	"image_name": "Funeral Home.jpg"
+	"image_name": "Funeral Home.jpg",
+	"card_id": 174
   },
   {
 	"name": "Furious Chick",
@@ -2109,7 +2284,8 @@
 	"def": 5,
 	"ability": "Continuous",
 	"deck_info": "Marceline's NiceLands/Useless Swamp Deck (CP4) - 2",
-	"image_name": "Furious Chick.jpg"
+	"image_name": "Furious Chick.jpg",
+	"card_id": 175
   },
   {
 	"name": "Furious Furor",
@@ -2121,7 +2297,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Cake's Cornfield Deck (CP6) - 2",
-	"image_name": "Furious Furor.jpg"
+	"image_name": "Furious Furor.jpg",
+	"card_id": 176
   },
   {
 	"name": "Furious Hen",
@@ -2133,7 +2310,8 @@
 	"def": 10,
 	"ability": "Continuous",
 	"deck_info": "Marceline's NiceLands/Useless Swamp Deck (CP4) - 2",
-	"image_name": "Furious Hen.jpg"
+	"image_name": "Furious Hen.jpg",
+	"card_id": 177
   },
   {
 	"name": "Furious Rooster",
@@ -2145,7 +2323,8 @@
 	"def": 8,
 	"ability": "Continuous",
 	"deck_info": "Marceline's NiceLands/Useless Swamp Deck (CP4) - 2",
-	"image_name": "Furious Rooster.jpg"
+	"image_name": "Furious Rooster.jpg",
+	"card_id": 178
   },
   {
 	"name": "Future Scholar",
@@ -2157,7 +2336,8 @@
 	"def": 8,
 	"ability": "Entering Play",
 	"deck_info": "Lumpy Space Princess' Blue Plains/Useless Swamp Deck (Totally Rad Deck) (CP3) - 2",
-	"image_name": "Future Scholar.jpg"
+	"image_name": "Future Scholar.jpg",
+	"card_id": 179
   },
   {
 	"name": "Geomancer",
@@ -2169,7 +2349,8 @@
 	"def": 6,
 	"ability": "",
 	"deck_info": "Charlie's Blue Plains/NiceLands Deck (2v2) - 2",
-	"image_name": "Geomancer.jpg"
+	"image_name": "Geomancer.jpg",
+	"card_id": 180
   },
   {
 	"name": "Ghost",
@@ -2181,7 +2362,8 @@
 	"def": 4,
 	"ability": "Continuous",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Ghost Chest Burster.jpg"
+	"image_name": "Ghost Chest Burster.jpg",
+	"card_id": 181
   },
   {
 	"name": "Ghost Chest Burster",
@@ -2193,7 +2375,8 @@
 	"def": 9,
 	"ability": "Leaving Play",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Ghost Hag.jpg"
+	"image_name": "Ghost Hag.jpg",
+	"card_id": 182
   },
   {
 	"name": "Ghost Hag",
@@ -2205,7 +2388,8 @@
 	"def": 4,
 	"ability": "Continuous",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Ghost Ninja.jpg"
+	"image_name": "Ghost Ninja.jpg",
+	"card_id": 183
   },
   {
 	"name": "Ghost Ninja",
@@ -2217,7 +2401,8 @@
 	"def": 7,
 	"ability": "Continuous",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Uncommon",
-	"image_name": "Ghost Tree.jpg"
+	"image_name": "Ghost Tree.jpg",
+	"card_id": 184
   },
   {
 	"name": "Ghost Tree",
@@ -2229,7 +2414,8 @@
 	"def": 4,
 	"ability": "Continuous",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Ghost.jpg"
+	"image_name": "Ghost.jpg",
+	"card_id": 185
   },
   {
 	"name": "Giant Mummy Hand",
@@ -2241,7 +2427,8 @@
 	"def": 7,
 	"ability": "FLOOP",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Uncommon",
-	"image_name": "Giant Mummy Hand.jpg"
+	"image_name": "Giant Mummy Hand.jpg",
+	"card_id": 186
   },
   {
 	"name": "Giddy Giraffe",
@@ -2253,7 +2440,8 @@
 	"def": 8,
 	"ability": "",
 	"deck_info": "Jake's Cornfield/NiceLands Deck\n (2v2) - 2 : Charlie's Blue Plains/NiceLands Deck (2v2) - 2",
-	"image_name": "Giddy Giraffe.jpg"
+	"image_name": "Giddy Giraffe.jpg",
+	"card_id": 187
   },
   {
 	"name": "Glacier Racer",
@@ -2265,7 +2453,8 @@
 	"def": 6,
 	"ability": "Continuous",
 	"deck_info": "Gunter's Blue Plains/IcyLands Deck (CP5) - 1",
-	"image_name": "Glacier Racer.jpg"
+	"image_name": "Glacier Racer.jpg",
+	"card_id": 188
   },
   {
 	"name": "Glorious Gramophone",
@@ -2277,7 +2466,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Fionna's Blue Plains Deck (CP6) - 2",
-	"image_name": "Glorious Gramophone.jpg"
+	"image_name": "Glorious Gramophone.jpg",
+	"card_id": 189
   },
   {
 	"name": "Gnome Snot",
@@ -2289,7 +2479,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Finn's Blue Plains Deck (CP1) - 2",
-	"image_name": "Gnome Snot.jpg"
+	"image_name": "Gnome Snot.jpg",
+	"card_id": 190
   },
   {
 	"name": "Goat",
@@ -2301,7 +2492,8 @@
 	"def": 4,
 	"ability": "Entering Play",
 	"deck_info": "Lumpy Space Princess' Blue Plains/Useless Swamp Deck (Totally Rad Deck) (CP3) - 2",
-	"image_name": "Goat.jpg"
+	"image_name": "Goat.jpg",
+	"card_id": 191
   },
   {
 	"name": "Gold Ninja",
@@ -2313,7 +2505,8 @@
 	"def": 2,
 	"ability": "Entering Play",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Gold Ninja.jpg"
+	"image_name": "Gold Ninja.jpg",
+	"card_id": 192
   },
   {
 	"name": "Golden Axe Stump",
@@ -2325,7 +2518,8 @@
 	"def": 7,
 	"ability": "Continuous",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Rare",
-	"image_name": "Golden Axe Stump.jpg"
+	"image_name": "Golden Axe Stump.jpg",
+	"card_id": 193
   },
   {
 	"name": "Golden Jackal",
@@ -2337,7 +2531,8 @@
 	"def": 4,
 	"ability": "FLOOP",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Golden Jackal.jpg"
+	"image_name": "Golden Jackal.jpg",
+	"card_id": 194
   },
   {
 	"name": "Granary Weevil",
@@ -2349,7 +2544,8 @@
 	"def": 6,
 	"ability": "",
 	"deck_info": "Moniker's Useless Swamp/IcyLands Deck (2v2) - 1",
-	"image_name": "Granary Weevil.jpg"
+	"image_name": "Granary Weevil.jpg",
+	"card_id": 195
   },
   {
 	"name": "Grand Mummy",
@@ -2361,7 +2557,8 @@
 	"def": 3,
 	"ability": "Trigger",
 	"deck_info": "Lemongrab's Cornfield/SandyLands Deck (CP5) - 1",
-	"image_name": "Grand Mummy.jpg"
+	"image_name": "Grand Mummy.jpg",
+	"card_id": 196
   },
   {
 	"name": "Grand Prix",
@@ -2373,7 +2570,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Doubles Tournament (2v2) - 1",
-	"image_name": "Grand Prix.jpg"
+	"image_name": "Grand Prix.jpg",
+	"card_id": 197
   },
   {
 	"name": "Grape Butt",
@@ -2385,7 +2583,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Rare",
-	"image_name": "Grape Butt.jpg"
+	"image_name": "Grape Butt.jpg",
+	"card_id": 198
   },
   {
 	"name": "Grape Djini",
@@ -2397,7 +2596,8 @@
 	"def": 6,
 	"ability": "Entering Play",
 	"deck_info": "Lumpy Space Princess' Blue Plains/Useless Swamp Deck (Totally Rad Deck) (CP3) - 2",
-	"image_name": "Grape Djini.jpg"
+	"image_name": "Grape Djini.jpg",
+	"card_id": 199
   },
   {
 	"name": "Gray Eyebat",
@@ -2409,7 +2609,8 @@
 	"def": 7,
 	"ability": "Ignition",
 	"deck_info": "BMO's Useless Swamp Deck (CP2) - 2",
-	"image_name": "Gray Eyebat.jpg"
+	"image_name": "Gray Eyebat.jpg",
+	"card_id": 200
   },
   {
 	"name": "Green Cactiball",
@@ -2421,7 +2622,8 @@
 	"def": 4,
 	"ability": "Continuous",
 	"deck_info": "Lady Rainicorn's SandyLand Deck (CP2) - 2",
-	"image_name": "Green Cactiball.jpg"
+	"image_name": "Green Cactiball.jpg",
+	"card_id": 201
   },
   {
 	"name": "Green Candy",
@@ -2433,7 +2635,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Princess Bubblegum's NiceLands Deck (CP3) - 2",
-	"image_name": "Green Candy.jpg"
+	"image_name": "Green Candy.jpg",
+	"card_id": 202
   },
   {
 	"name": "Green Gnome",
@@ -2445,7 +2648,8 @@
 	"def": 6,
 	"ability": "FLOOP",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Uncommon",
-	"image_name": "Green Gnome.jpg"
+	"image_name": "Green Gnome.jpg",
+	"card_id": 203
   },
   {
 	"name": "Green Mermaid",
@@ -2457,7 +2661,8 @@
 	"def": 9,
 	"ability": "Ignition",
 	"deck_info": "BMO's Useless Swamp Deck (CP2) - 2",
-	"image_name": "Green Mermaid.jpg"
+	"image_name": "Green Mermaid.jpg",
+	"card_id": 204
   },
   {
 	"name": "Green Merman",
@@ -2469,7 +2674,8 @@
 	"def": 6,
 	"ability": "FLOOP",
 	"deck_info": "BMO's Useless Swamp Deck (CP2) - 1",
-	"image_name": "Green Merman.jpg"
+	"image_name": "Green Merman.jpg",
+	"card_id": 205
   },
   {
 	"name": "Green Party Ogre",
@@ -2481,7 +2687,8 @@
 	"def": 8,
 	"ability": "Continuous",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Green Party Ogre.jpg"
+	"image_name": "Green Party Ogre.jpg",
+	"card_id": 206
   },
   {
 	"name": "Green Snakey",
@@ -2493,7 +2700,8 @@
 	"def": 6,
 	"ability": "Leaving Play",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Green Snakey.jpg"
+	"image_name": "Green Snakey.jpg",
+	"card_id": 207
   },
   {
 	"name": "Green ZebraCorn",
@@ -2505,7 +2713,8 @@
 	"def": 6,
 	"ability": "",
 	"deck_info": "Jake's Cornfield/NiceLands Deck\n (2v2) - 2",
-	"image_name": "Green ZebraCorn.jpg"
+	"image_name": "Green ZebraCorn.jpg",
+	"card_id": 208
   },
   {
 	"name": "Grizzled ZebraCorn",
@@ -2517,7 +2726,8 @@
 	"def": 8,
 	"ability": "",
 	"deck_info": "Jake's Cornfield/NiceLands Deck\n (2v2) - 1",
-	"image_name": "Grizzled ZebraCorn.jpg"
+	"image_name": "Grizzled ZebraCorn.jpg",
+	"card_id": 209
   },
   {
 	"name": "Gunter",
@@ -2529,7 +2739,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Gunter's Blue Plains/IcyLands Deck (CP5) - 1",
-	"image_name": "Gunter.jpg"
+	"image_name": "Gunter.jpg",
+	"card_id": 210
   },
   {
 	"name": "Ham Fist",
@@ -2541,7 +2752,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Lemongrab's Cornfield/SandyLands Deck (CP5) - 1",
-	"image_name": "Ham Fist.jpg"
+	"image_name": "Ham Fist.jpg",
+	"card_id": 211
   },
   {
 	"name": "Harvest Moon",
@@ -2553,7 +2765,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Cake's Cornfield Deck (CP6) - 1",
-	"image_name": "Harvest Moon.jpg"
+	"image_name": "Harvest Moon.jpg",
+	"card_id": 212
   },
   {
 	"name": "Haybarn",
@@ -2565,7 +2778,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Jake's Cornfield/NiceLands Deck\n (2v2) - 2",
-	"image_name": "Haybarn.jpg"
+	"image_name": "Haybarn.jpg",
+	"card_id": 213
   },
   {
 	"name": "Headphone Jerk",
@@ -2577,7 +2791,8 @@
 	"def": 7,
 	"ability": "Entering Play",
 	"deck_info": "Lumpy Space Princess' Blue Plains/Useless Swamp Deck (Totally Rad Deck) (CP3) - 1",
-	"image_name": "Headphone Jerk.jpg"
+	"image_name": "Headphone Jerk.jpg",
+	"card_id": 214
   },
   {
 	"name": "Heavenly Gazer",
@@ -2589,7 +2804,8 @@
 	"def": 5,
 	"ability": "FLOOP",
 	"deck_info": "Finn's Blue Plains Deck (CP1) - 1",
-	"image_name": "Heavenly Gazer.jpg"
+	"image_name": "Heavenly Gazer.jpg",
+	"card_id": 215
   },
   {
 	"name": "Helping Hand",
@@ -2601,7 +2817,8 @@
 	"def": 4,
 	"ability": "FLOOP",
 	"deck_info": "Cake's Cornfield Deck (CP6) - 2",
-	"image_name": "Helping Hand.jpg"
+	"image_name": "Helping Hand.jpg",
+	"card_id": 216
   },
   {
 	"name": "Herculeye",
@@ -2613,7 +2830,8 @@
 	"def": 6,
 	"ability": "Ignition",
 	"deck_info": "Lumpy Space Princess' Blue Plains/Useless Swamp Deck (Totally Rad Deck) (CP3) - 2",
-	"image_name": "Herculeye.jpg"
+	"image_name": "Herculeye.jpg",
+	"card_id": 217
   },
   {
 	"name": "Hot Eyebat",
@@ -2625,7 +2843,8 @@
 	"def": 4,
 	"ability": "Continuous",
 	"deck_info": "BMO's Useless Swamp Deck (CP2) - 2",
-	"image_name": "Hot Eyebat.jpg"
+	"image_name": "Hot Eyebat.jpg",
+	"card_id": 218
   },
   {
 	"name": "Hug It Out",
@@ -2637,7 +2856,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Charlie's Blue Plains/NiceLands Deck (2v2) - 1",
-	"image_name": "Hug It Out.jpg"
+	"image_name": "Hug It Out.jpg",
+	"card_id": 219
   },
   {
 	"name": "Huggable Hedgehog",
@@ -2649,7 +2869,8 @@
 	"def": 8,
 	"ability": "",
 	"deck_info": "Jake's Cornfield/NiceLands Deck\n (2v2) - 2",
-	"image_name": "Huggable Hedgehog.jpg"
+	"image_name": "Huggable Hedgehog.jpg",
+	"card_id": 220
   },
   {
 	"name": "Hunkclops",
@@ -2661,7 +2882,8 @@
 	"def": 3,
 	"ability": "",
 	"deck_info": "Cake's Cornfield Deck (CP6) - 2",
-	"image_name": "Hunkclops.jpg"
+	"image_name": "Hunkclops.jpg",
+	"card_id": 221
   },
   {
 	"name": "Huntress Wizard",
@@ -2673,7 +2895,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Hero Pack #1 (HP1) - 1",
-	"image_name": "Huntress Wizard.jpg"
+	"image_name": "Huntress Wizard.jpg",
+	"card_id": 222
   },
   {
 	"name": "Husker Amulet",
@@ -2685,7 +2908,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Husker Amulet.jpg"
+	"image_name": "Husker Amulet.jpg",
+	"card_id": 223
   },
   {
 	"name": "Husker Champion",
@@ -2697,7 +2921,8 @@
 	"def": 4,
 	"ability": "Continuous",
 	"deck_info": "Cake's Cornfield Deck (CP6) - 2",
-	"image_name": "Husker Champion.jpg"
+	"image_name": "Husker Champion.jpg",
+	"card_id": 224
   },
   {
 	"name": "Husker Garrison",
@@ -2709,7 +2934,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Jake's Cornfield/NiceLands Deck\n (2v2) - 1",
-	"image_name": "Husker Garrison.jpg"
+	"image_name": "Husker Garrison.jpg",
+	"card_id": 225
   },
   {
 	"name": "Husker Knight",
@@ -2721,7 +2947,8 @@
 	"def": "X",
 	"ability": "Continuous",
 	"deck_info": "Jake's Cornfield Deck (CP1) - 2 : For the Glory! Booster Pack (FTG) - Uncommon",
-	"image_name": "Husker Knight.jpg"
+	"image_name": "Husker Knight.jpg",
+	"card_id": 226
   },
   {
 	"name": "Husker Valkyrie",
@@ -2733,7 +2960,8 @@
 	"def": 6,
 	"ability": "Continuous",
 	"deck_info": "Cake's Cornfield Deck (CP6) - 2",
-	"image_name": "Husker Valkyrie.jpg"
+	"image_name": "Husker Valkyrie.jpg",
+	"card_id": 227
   },
   {
 	"name": "Husker Worm",
@@ -2745,7 +2973,8 @@
 	"def": 4,
 	"ability": "Entering Play",
 	"deck_info": "Jake's Cornfield Deck (CP1) - 2",
-	"image_name": "Husker Worm.jpg"
+	"image_name": "Husker Worm.jpg",
+	"card_id": 228
   },
   {
 	"name": "Husky Parrotrooper",
@@ -2757,7 +2986,8 @@
 	"def": 4,
 	"ability": "Entering Play",
 	"deck_info": "Lemongrab's Cornfield/SandyLands Deck (CP5) - 1",
-	"image_name": "Husky Parrotrooper.jpg"
+	"image_name": "Husky Parrotrooper.jpg",
+	"card_id": 229
   },
   {
 	"name": "Hydromancer",
@@ -2769,7 +2999,8 @@
 	"def": 6,
 	"ability": "Entering Play",
 	"deck_info": "Charlie's Blue Plains/NiceLands Deck (2v2) - 1",
-	"image_name": "Hydromancer.jpg"
+	"image_name": "Hydromancer.jpg",
+	"card_id": 230
   },
   {
 	"name": "Ice Base",
@@ -2781,7 +3012,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Moniker's Useless Swamp/IcyLands Deck (2v2) - 1",
-	"image_name": "Ice Base.jpg"
+	"image_name": "Ice Base.jpg",
+	"card_id": 231
   },
   {
 	"name": "Ice Cream Captain",
@@ -2793,7 +3025,8 @@
 	"def": 8,
 	"ability": "",
 	"deck_info": "Moniker's Useless Swamp/IcyLands Deck (2v2) - 1",
-	"image_name": "Ice Cream Captain.jpg"
+	"image_name": "Ice Cream Captain.jpg",
+	"card_id": 232
   },
   {
 	"name": "Ice Cream Sammy",
@@ -2805,7 +3038,8 @@
 	"def": 7,
 	"ability": "",
 	"deck_info": "Grand Prix's SandyLands/IcyLands Deck (2v2) - 1 : Moniker's Useless Swamp/IcyLands Deck (2v2) - 2",
-	"image_name": "Ice Cream Sammy.jpg"
+	"image_name": "Ice Cream Sammy.jpg",
+	"card_id": 233
   },
   {
 	"name": "Ice King",
@@ -2817,7 +3051,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Ice King's IcyLands Deck (CP4) - 1",
-	"image_name": "Ice King.jpg"
+	"image_name": "Ice King.jpg",
+	"card_id": 234
   },
   {
 	"name": "Ice Sing",
@@ -2829,7 +3064,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Grand Prix's SandyLands/IcyLands Deck (2v2) - 1",
-	"image_name": "Ice Sing.jpg"
+	"image_name": "Ice Sing.jpg",
+	"card_id": 235
   },
   {
 	"name": "Icemeister",
@@ -2841,7 +3077,8 @@
 	"def": 10,
 	"ability": "Continuous",
 	"deck_info": "Ice King's IcyLands Deck (CP4) - 2",
-	"image_name": "Icemeister.jpg"
+	"image_name": "Icemeister.jpg",
+	"card_id": 236
   },
   {
 	"name": "Ice-olation Cell",
@@ -2853,7 +3090,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Ice King's IcyLands Deck (CP4) - 1",
-	"image_name": "Ice-olation Cell.jpg"
+	"image_name": "Ice-olation Cell.jpg",
+	"card_id": 237
   },
   {
 	"name": "Icy Commando",
@@ -2865,7 +3103,8 @@
 	"def": 7,
 	"ability": "Continuous",
 	"deck_info": "Gunter's Blue Plains/IcyLands Deck (CP5) - 2",
-	"image_name": "Icy Commando.jpg"
+	"image_name": "Icy Commando.jpg",
+	"card_id": 238
   },
   {
 	"name": "Icy Infiltrator",
@@ -2877,7 +3116,8 @@
 	"def": 5,
 	"ability": "Entering Play",
 	"deck_info": "Gunter's Blue Plains/IcyLands Deck (CP5) - 2 : Grand Prix's SandyLands/IcyLands Deck (2v2) - 1 : Moniker's Useless Swamp/IcyLands Deck (2v2) - 2",
-	"image_name": "Icy Infiltrator.jpg"
+	"image_name": "Icy Infiltrator.jpg",
+	"card_id": 239
   },
   {
 	"name": "Icy Intruder",
@@ -2889,7 +3129,8 @@
 	"def": 8,
 	"ability": "FLOOP",
 	"deck_info": "Gunter's Blue Plains/IcyLands Deck (CP5) - 2",
-	"image_name": "Icy Intruder.jpg"
+	"image_name": "Icy Intruder.jpg",
+	"card_id": 240
   },
   {
 	"name": "Igloo of Sanctuary",
@@ -2901,7 +3142,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Igloo of Sanctuary.jpg"
+	"image_name": "Igloo of Sanctuary.jpg",
+	"card_id": 241
   },
   {
 	"name": "Immortal Maize Walker",
@@ -2913,7 +3155,8 @@
 	"def": 8,
 	"ability": "Continuous",
 	"deck_info": "BMO's Useless Swamp Deck (CP2) - 2 : For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Immortal Maize Walker.jpg"
+	"image_name": "Immortal Maize Walker.jpg",
+	"card_id": 242
   },
   {
 	"name": "Impossible Possum",
@@ -2925,7 +3168,8 @@
 	"def": 8,
 	"ability": "",
 	"deck_info": "Fionna's Blue Plains Deck (CP6) - 2",
-	"image_name": "Impossible Possum.jpg"
+	"image_name": "Impossible Possum.jpg",
+	"card_id": 243
   },
   {
 	"name": "Incredible Egg",
@@ -2937,7 +3181,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Incredible Egg.jpg"
+	"image_name": "Incredible Egg.jpg",
+	"card_id": 244
   },
   {
 	"name": "Industrial Assassin",
@@ -2949,7 +3194,8 @@
 	"def": 6,
 	"ability": "FLOOP",
 	"deck_info": "Gunter's Blue Plains/IcyLands Deck (CP5) - 2",
-	"image_name": "Industrial Assassin.jpg"
+	"image_name": "Industrial Assassin.jpg",
+	"card_id": 245
   },
   {
 	"name": "Infant Scholar",
@@ -2961,7 +3207,8 @@
 	"def": 6,
 	"ability": "",
 	"deck_info": "Fionna's Blue Plains Deck (CP6) - 2",
-	"image_name": "Infant Scholar.jpg"
+	"image_name": "Infant Scholar.jpg",
+	"card_id": 246
   },
   {
 	"name": "Infinite Figure",
@@ -2973,7 +3220,8 @@
 	"def": 6,
 	"ability": "Ignition",
 	"deck_info": "Lumpy Space Princess' Blue Plains/Useless Swamp Deck (Totally Rad Deck) (CP3) - 2",
-	"image_name": "Infinite Figure.jpg"
+	"image_name": "Infinite Figure.jpg",
+	"card_id": 247
   },
   {
 	"name": "Infinite Haymaker",
@@ -2985,7 +3233,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Jake's Cornfield/NiceLands Deck\n (2v2) - 1",
-	"image_name": "Infinite Haymaker.jpg"
+	"image_name": "Infinite Haymaker.jpg",
+	"card_id": 248
   },
   {
 	"name": "InstiGator",
@@ -2997,7 +3246,8 @@
 	"def": 3,
 	"ability": "",
 	"deck_info": "Moniker's Useless Swamp/IcyLands Deck (2v2) - 1",
-	"image_name": "InstiGator.jpg"
+	"image_name": "InstiGator.jpg",
+	"card_id": 249
   },
   {
 	"name": "InvestiGator",
@@ -3009,7 +3259,8 @@
 	"def": 8,
 	"ability": "",
 	"deck_info": "Moniker's Useless Swamp/IcyLands Deck (2v2) - 1",
-	"image_name": "InvestiGator.jpg"
+	"image_name": "InvestiGator.jpg",
+	"card_id": 250
   },
   {
 	"name": "IrriGator",
@@ -3021,7 +3272,8 @@
 	"def": 5,
 	"ability": "",
 	"deck_info": "Moniker's Useless Swamp/IcyLands Deck (2v2) - 2",
-	"image_name": "IrriGator.jpg"
+	"image_name": "IrriGator.jpg",
+	"card_id": 251
   },
   {
 	"name": "Jake",
@@ -3033,7 +3285,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Hero Pack #1 (HP1) - 1",
-	"image_name": "Jake.jpg"
+	"image_name": "Jake.jpg",
+	"card_id": 252
   },
   {
 	"name": "Jake [Doubles Tournament]",
@@ -3045,7 +3298,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Doubles Tournament (2v2) - 1",
-	"image_name": "Jake [Doubles Tournament].jpg"
+	"image_name": "Jake [Doubles Tournament].jpg",
+	"card_id": 253
   },
   {
 	"name": "Jinx",
@@ -3057,7 +3311,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Moniker's Useless Swamp/IcyLands Deck (2v2) - 1",
-	"image_name": "Jinx.jpg"
+	"image_name": "Jinx.jpg",
+	"card_id": 254
   },
   {
 	"name": "Jinxed Parrotrooper",
@@ -3069,7 +3324,8 @@
 	"def": 5,
 	"ability": "Entering Play",
 	"deck_info": "Lemongrab's Cornfield/SandyLands Deck (CP5) - 2",
-	"image_name": "Jinxed Parrotrooper.jpg"
+	"image_name": "Jinxed Parrotrooper.jpg",
+	"card_id": 255
   },
   {
 	"name": "Kernel Queen",
@@ -3081,7 +3337,8 @@
 	"def": 6,
 	"ability": "Continuous",
 	"deck_info": "Cake's Cornfield Deck (CP6) - 1",
-	"image_name": "Kernel Queen.jpg"
+	"image_name": "Kernel Queen.jpg",
+	"card_id": 256
   },
   {
 	"name": "King Baby",
@@ -3093,7 +3350,8 @@
 	"def": 7,
 	"ability": "",
 	"deck_info": "Jake's Cornfield/NiceLands Deck\n (2v2) - 1",
-	"image_name": "King Baby.jpg"
+	"image_name": "King Baby.jpg",
+	"card_id": 257
   },
   {
 	"name": "Knit Kitty",
@@ -3105,7 +3363,8 @@
 	"def": 7,
 	"ability": "",
 	"deck_info": "Charlie's Blue Plains/NiceLands Deck (2v2) - 1",
-	"image_name": "Knit Kitty.jpg"
+	"image_name": "Knit Kitty.jpg",
+	"card_id": 258
   },
   {
 	"name": "Kung Fu Power",
@@ -3117,7 +3376,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Rare",
-	"image_name": "Kung Fu Power.jpg"
+	"image_name": "Kung Fu Power.jpg",
+	"card_id": 259
   },
   {
 	"name": "Lady Beetle",
@@ -3129,7 +3389,8 @@
 	"def": 9,
 	"ability": "Trigger",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Rare",
-	"image_name": "Lady Beetle.jpg"
+	"image_name": "Lady Beetle.jpg",
+	"card_id": 260
   },
   {
 	"name": "Lady Rainicorn",
@@ -3141,7 +3402,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Hero Pack #1 (HP1) - 1",
-	"image_name": "Lady Rainicorn.jpg"
+	"image_name": "Lady Rainicorn.jpg",
+	"card_id": 261
   },
   {
 	"name": "Learning Center",
@@ -3153,7 +3415,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Fionna's Blue Plains Deck (CP6) - 1",
-	"image_name": "Learning Center.jpg"
+	"image_name": "Learning Center.jpg",
+	"card_id": 262
   },
   {
 	"name": "Legion of Earlings",
@@ -3165,7 +3428,8 @@
 	"def": 8,
 	"ability": "Entering Play",
 	"deck_info": "Jake's Cornfield Deck (CP1) - 2",
-	"image_name": "Legion of Earlings.jpg"
+	"image_name": "Legion of Earlings.jpg",
+	"card_id": 263
   },
   {
 	"name": "Lemongrab",
@@ -3177,7 +3441,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Lemongrab's Cornfield/SandyLands Deck (CP5) - 1",
-	"image_name": "Lemongrab.jpg"
+	"image_name": "Lemongrab.jpg",
+	"card_id": 264
   },
   {
 	"name": "Life Beater Gnome",
@@ -3189,7 +3454,8 @@
 	"def": 6,
 	"ability": "FLOOP",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Uncommon",
-	"image_name": "Life Beater Gnome.jpg"
+	"image_name": "Life Beater Gnome.jpg",
+	"card_id": 265
   },
   {
 	"name": "Lifeguard Lobster",
@@ -3201,7 +3467,8 @@
 	"def": 9,
 	"ability": "",
 	"deck_info": "Grand Prix's SandyLands/IcyLands Deck (2v2) - 2",
-	"image_name": "Lifeguard Lobster.jpg"
+	"image_name": "Lifeguard Lobster.jpg",
+	"card_id": 266
   },
   {
 	"name": "Lime Slimey",
@@ -3213,7 +3480,8 @@
 	"def": 6,
 	"ability": "Entering Play",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Uncommon",
-	"image_name": "Lime Slimey.jpg"
+	"image_name": "Lime Slimey.jpg",
+	"card_id": 267
   },
   {
 	"name": "Little Freezy",
@@ -3225,7 +3493,8 @@
 	"def": 1,
 	"ability": "Continuous",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Little Freezy.jpg"
+	"image_name": "Little Freezy.jpg",
+	"card_id": 268
   },
   {
 	"name": "Log Knight",
@@ -3237,7 +3506,8 @@
 	"def": 2,
 	"ability": "FLOOP",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Uncommon",
-	"image_name": "Log Knight.jpg"
+	"image_name": "Log Knight.jpg",
+	"card_id": 269
   },
   {
 	"name": "Log Rhythm",
@@ -3249,7 +3519,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Cake's Cornfield Deck (CP6) - 2",
-	"image_name": "Log Rhythm.jpg"
+	"image_name": "Log Rhythm.jpg",
+	"card_id": 270
   },
   {
 	"name": "Lonely Panda",
@@ -3261,7 +3532,8 @@
 	"def": 8,
 	"ability": "",
 	"deck_info": "Fionna's Blue Plains Deck (CP6) - 2",
-	"image_name": "Lonely Panda.jpg"
+	"image_name": "Lonely Panda.jpg",
+	"card_id": 271
   },
   {
 	"name": "Longboard Lobster",
@@ -3273,7 +3545,8 @@
 	"def": 7,
 	"ability": "",
 	"deck_info": "Grand Prix's SandyLands/IcyLands Deck (2v2) - 1",
-	"image_name": "Longboard Lobster.jpg"
+	"image_name": "Longboard Lobster.jpg",
+	"card_id": 272
   },
   {
 	"name": "Lost Golem",
@@ -3285,7 +3558,8 @@
 	"def": 6,
 	"ability": "Continuous",
 	"deck_info": "Lady Rainicorn's SandyLand Deck (CP2) - 1",
-	"image_name": "Lost Golem.jpg"
+	"image_name": "Lost Golem.jpg",
+	"card_id": 273
   },
   {
 	"name": "Loveable Lamb",
@@ -3297,7 +3571,8 @@
 	"def": 7,
 	"ability": "",
 	"deck_info": "Jake's Cornfield/NiceLands Deck\n (2v2) - 2 : Charlie's Blue Plains/NiceLands Deck (2v2) - 1",
-	"image_name": "Loveable Lamb.jpg"
+	"image_name": "Loveable Lamb.jpg",
+	"card_id": 274
   },
   {
 	"name": "Lt. Mushroom",
@@ -3309,7 +3584,8 @@
 	"def": 3,
 	"ability": "Leaving Play",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Rare",
-	"image_name": "Lt. Mushroom.jpg"
+	"image_name": "Lt. Mushroom.jpg",
+	"card_id": 275
   },
   {
 	"name": "Lucky Penny",
@@ -3321,7 +3597,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Lucky Penny.jpg"
+	"image_name": "Lucky Penny.jpg",
+	"card_id": 276
   },
   {
 	"name": "Lumbercaddy",
@@ -3333,7 +3610,8 @@
 	"def": 6,
 	"ability": "FLOOP",
 	"deck_info": "Cake's Cornfield Deck (CP6) - 2",
-	"image_name": "Lumbercaddy.jpg"
+	"image_name": "Lumbercaddy.jpg",
+	"card_id": 277
   },
   {
 	"name": "Lumpy Space Princess",
@@ -3345,7 +3623,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Hero Pack #1 (HP1) - 1",
-	"image_name": "Lumpy Space Princess.jpg"
+	"image_name": "Lumpy Space Princess.jpg",
+	"card_id": 278
   },
   {
 	"name": "Lunchpad",
@@ -3357,7 +3636,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Lemongrab's Cornfield/SandyLands Deck (CP5) - 1",
-	"image_name": "Lunchpad.jpg"
+	"image_name": "Lunchpad.jpg",
+	"card_id": 279
   },
   {
 	"name": "Mace Stump",
@@ -3369,7 +3649,8 @@
 	"def": 3,
 	"ability": "Ignition",
 	"deck_info": "BMO's Useless Swamp Deck (CP2) - 2",
-	"image_name": "Mace Stump.jpg"
+	"image_name": "Mace Stump.jpg",
+	"card_id": 280
   },
   {
 	"name": "Magenapping",
@@ -3381,7 +3662,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Gunter's Blue Plains/IcyLands Deck (CP5) - 1",
-	"image_name": "Magenapping.jpg"
+	"image_name": "Magenapping.jpg",
+	"card_id": 281
   },
   {
 	"name": "Magic Lamp",
@@ -3393,7 +3675,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Magic Lamp.jpg"
+	"image_name": "Magic Lamp.jpg",
+	"card_id": 282
   },
   {
 	"name": "Magic Man",
@@ -3405,7 +3688,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Hero Pack #1 (HP1) - 1",
-	"image_name": "Magic Man.jpg"
+	"image_name": "Magic Man.jpg",
+	"card_id": 283
   },
   {
 	"name": "Magic Ring Ding",
@@ -3417,7 +3701,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "BMO's Useless Swamp Deck (CP2) - 2",
-	"image_name": "Magic Ring Ding.jpg"
+	"image_name": "Magic Ring Ding.jpg",
+	"card_id": 284
   },
   {
 	"name": "Mantle Masher",
@@ -3429,7 +3714,8 @@
 	"def": 6,
 	"ability": "Entering Play",
 	"deck_info": "Lemongrab's Cornfield/SandyLands Deck (CP5) - 2",
-	"image_name": "Mantle Masher.jpg"
+	"image_name": "Mantle Masher.jpg",
+	"card_id": 285
   },
   {
 	"name": "Man-Witch",
@@ -3441,7 +3727,8 @@
 	"def": 11,
 	"ability": "Continuous",
 	"deck_info": "Marceline's NiceLands/Useless Swamp Deck (CP4) - 2",
-	"image_name": "Man-Witch.jpg"
+	"image_name": "Man-Witch.jpg",
+	"card_id": 286
   },
   {
 	"name": "Marceline",
@@ -3453,7 +3740,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Marceline's NiceLands/Useless Swamp Deck (CP4) - 1",
-	"image_name": "Marceline.jpg"
+	"image_name": "Marceline.jpg",
+	"card_id": 287
   },
   {
 	"name": "Master of Disguise",
@@ -3465,7 +3753,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Master of Disguise.jpg"
+	"image_name": "Master of Disguise.jpg",
+	"card_id": 288
   },
   {
 	"name": "Matchy Matchy",
@@ -3477,7 +3766,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Moniker's Useless Swamp/IcyLands Deck (2v2) - 1",
-	"image_name": "Matchy Matchy.jpg"
+	"image_name": "Matchy Matchy.jpg",
+	"card_id": 289
   },
   {
 	"name": "Mausoleum",
@@ -3489,7 +3779,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Lumpy Space Princess' Blue Plains/Useless Swamp Deck (Totally Rad Deck) (CP3) - 1",
-	"image_name": "Mausoleum.jpg"
+	"image_name": "Mausoleum.jpg",
+	"card_id": 290
   },
   {
 	"name": "Mint Chocouflage",
@@ -3501,7 +3792,8 @@
 	"def": 3,
 	"ability": "",
 	"deck_info": "Grand Prix's SandyLands/IcyLands Deck (2v2) - 2",
-	"image_name": "Mint Chocouflage.jpg"
+	"image_name": "Mint Chocouflage.jpg",
+	"card_id": 291
   },
   {
 	"name": "Mocha Launcher",
@@ -3513,7 +3805,8 @@
 	"def": 4,
 	"ability": "",
 	"deck_info": "Grand Prix's SandyLands/IcyLands Deck (2v2) - 1 : Moniker's Useless Swamp/IcyLands Deck (2v2) - 1",
-	"image_name": "Mocha Launcher.jpg"
+	"image_name": "Mocha Launcher.jpg",
+	"card_id": 292
   },
   {
 	"name": "Moniker",
@@ -3525,7 +3818,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Doubles Tournament (2v2) - 1",
-	"image_name": "Moniker.jpg"
+	"image_name": "Moniker.jpg",
+	"card_id": 293
   },
   {
 	"name": "Mouthball",
@@ -3537,7 +3831,8 @@
 	"def": 4,
 	"ability": "Continuous",
 	"deck_info": "BMO's Useless Swamp Deck (CP2) - 2",
-	"image_name": "Mouthball.jpg"
+	"image_name": "Mouthball.jpg",
+	"card_id": 294
   },
   {
 	"name": "Ms. Fluff",
@@ -3549,7 +3844,8 @@
 	"def": 10,
 	"ability": "Continuous",
 	"deck_info": "Princess Bubblegum's NiceLands Deck (CP3) - 1",
-	"image_name": "Ms. Fluff.jpg"
+	"image_name": "Ms. Fluff.jpg",
+	"card_id": 295
   },
   {
 	"name": "Ms. Mummy",
@@ -3561,7 +3857,8 @@
 	"def": 4,
 	"ability": "Trigger",
 	"deck_info": "Lady Rainicorn's SandyLand Deck (CP2) - 1 : For the Glory! Booster Pack (FTG) - Uncommon",
-	"image_name": "Ms. Mummy.jpg"
+	"image_name": "Ms. Mummy.jpg",
+	"card_id": 296
   },
   {
 	"name": "Music Mallard",
@@ -3573,7 +3870,8 @@
 	"def": 9,
 	"ability": "FLOOP",
 	"deck_info": "Marceline's NiceLands/Useless Swamp Deck (CP4) - 2",
-	"image_name": "Music Mallard.jpg"
+	"image_name": "Music Mallard.jpg",
+	"card_id": 297
   },
   {
 	"name": "Musical Chair",
@@ -3585,7 +3883,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Uncommon",
-	"image_name": "Musical Chair.jpg"
+	"image_name": "Musical Chair.jpg",
+	"card_id": 298
   },
   {
 	"name": "NaviGator",
@@ -3597,7 +3896,8 @@
 	"def": 6,
 	"ability": "",
 	"deck_info": "Moniker's Useless Swamp/IcyLands Deck (2v2) - 2",
-	"image_name": "NaviGator.jpg"
+	"image_name": "NaviGator.jpg",
+	"card_id": 299
   },
   {
 	"name": "Necromancer",
@@ -3609,7 +3909,8 @@
 	"def": 8,
 	"ability": "Trigger",
 	"deck_info": "Charlie's Blue Plains/NiceLands Deck (2v2) - 2",
-	"image_name": "Necromancer.jpg"
+	"image_name": "Necromancer.jpg",
+	"card_id": 300
   },
   {
 	"name": "Nice Ice Baby",
@@ -3621,7 +3922,8 @@
 	"def": 2,
 	"ability": "Continuous",
 	"deck_info": "Finn's Blue Plains Deck (CP1) - 2 : Ice King's IcyLands Deck (CP4) - 2",
-	"image_name": "Nice Ice Baby.jpg"
+	"image_name": "Nice Ice Baby.jpg",
+	"card_id": 301
   },
   {
 	"name": "Nice Windmill",
@@ -3633,7 +3935,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Uncommon",
-	"image_name": "Nice Windmill.jpg"
+	"image_name": "Nice Windmill.jpg",
+	"card_id": 302
   },
   {
 	"name": "Niceasaurus Rex",
@@ -3645,7 +3948,8 @@
 	"def": 7,
 	"ability": "Continuous",
 	"deck_info": "Princess Bubblegum's NiceLands Deck (CP3) - 2",
-	"image_name": "Niceasaurus Rex.jpg"
+	"image_name": "Niceasaurus Rex.jpg",
+	"card_id": 303
   },
   {
 	"name": "Night Tower",
@@ -3657,7 +3961,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Lumpy Space Princess' Blue Plains/Useless Swamp Deck (Totally Rad Deck) (CP3) - 1",
-	"image_name": "Night Tower.jpg"
+	"image_name": "Night Tower.jpg",
+	"card_id": 304
   },
   {
 	"name": "Ogre Braces",
@@ -3669,7 +3974,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Ogre Braces.jpg"
+	"image_name": "Ogre Braces.jpg",
+	"card_id": 305
   },
   {
 	"name": "Ogre Gas",
@@ -3681,7 +3987,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "BMO's Useless Swamp Deck (CP2) - 2",
-	"image_name": "Ogre Gas.jpg"
+	"image_name": "Ogre Gas.jpg",
+	"card_id": 306
   },
   {
 	"name": "Oil Refinery",
@@ -3693,7 +4000,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Fionna's Blue Plains Deck (CP6) - 2",
-	"image_name": "Oil Refinery.jpg"
+	"image_name": "Oil Refinery.jpg",
+	"card_id": 307
   },
   {
 	"name": "Ol' Corn Eye",
@@ -3705,7 +4013,8 @@
 	"def": 1,
 	"ability": "Continuous",
 	"deck_info": "Lemongrab's Cornfield/SandyLands Deck (CP5) - 1 : For the Glory! Booster Pack (FTG) - Rare",
-	"image_name": "Ol' Corn Eye.jpg"
+	"image_name": "Ol' Corn Eye.jpg",
+	"card_id": 308
   },
   {
 	"name": "Orange Slimey",
@@ -3717,7 +4026,8 @@
 	"def": 6,
 	"ability": "Entering Play",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Uncommon",
-	"image_name": "Orange Slimey.jpg"
+	"image_name": "Orange Slimey.jpg",
+	"card_id": 309
   },
   {
 	"name": "Overstuffed Orangutan",
@@ -3729,7 +4039,8 @@
 	"def": 8,
 	"ability": "",
 	"deck_info": "Charlie's Blue Plains/NiceLands Deck (2v2) - 1",
-	"image_name": "Overstuffed Orangutan.jpg"
+	"image_name": "Overstuffed Orangutan.jpg",
+	"card_id": 310
   },
   {
 	"name": "Palace of Bone",
@@ -3741,7 +4052,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "BMO's Useless Swamp Deck (CP2) - 1",
-	"image_name": "Palace of Bone.jpg"
+	"image_name": "Palace of Bone.jpg",
+	"card_id": 311
   },
   {
 	"name": "Paladim",
@@ -3753,7 +4065,8 @@
 	"def": 7,
 	"ability": "Continuous",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Paladim.jpg"
+	"image_name": "Paladim.jpg",
+	"card_id": 312
   },
   {
 	"name": "Pants of Awesome",
@@ -3765,7 +4078,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Lumpy Space Princess' Blue Plains/Useless Swamp Deck (Totally Rad Deck) (CP3) - 1",
-	"image_name": "Pants of Awesome.jpg"
+	"image_name": "Pants of Awesome.jpg",
+	"card_id": 313
   },
   {
 	"name": "Papercut Tiger",
@@ -3777,7 +4091,8 @@
 	"def": 9,
 	"ability": "Continuous",
 	"deck_info": "Marceline's NiceLands/Useless Swamp Deck (CP4) - 2",
-	"image_name": "Papercut Tiger.jpg"
+	"image_name": "Papercut Tiger.jpg",
+	"card_id": 314
   },
   {
 	"name": "Parrotmilitary Outpost",
@@ -3789,7 +4104,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Lemongrab's Cornfield/SandyLands Deck (CP5) - 1",
-	"image_name": "Parrotmilitary Outpost.jpg"
+	"image_name": "Parrotmilitary Outpost.jpg",
+	"card_id": 315
   },
   {
 	"name": "Patched Puppy",
@@ -3801,7 +4117,8 @@
 	"def": 8,
 	"ability": "",
 	"deck_info": "Jake's Cornfield/NiceLands Deck\n (2v2) - 1",
-	"image_name": "Patched Puppy.jpg"
+	"image_name": "Patched Puppy.jpg",
+	"card_id": 316
   },
   {
 	"name": "Patchwork",
@@ -3813,7 +4130,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Jake's Cornfield/NiceLands Deck\n (2v2) - 1",
-	"image_name": "Patchwork.jpg"
+	"image_name": "Patchwork.jpg",
+	"card_id": 317
   },
   {
 	"name": "Patchy the Pumpkin",
@@ -3825,7 +4143,8 @@
 	"def": 5,
 	"ability": "FLOOP",
 	"deck_info": "Jake's Cornfield Deck (CP1) - 2",
-	"image_name": "Patchy the Pumpkin.jpg"
+	"image_name": "Patchy the Pumpkin.jpg",
+	"card_id": 318
   },
   {
 	"name": "Patriot Popsicle",
@@ -3837,7 +4156,8 @@
 	"def": 6,
 	"ability": "",
 	"deck_info": "Grand Prix's SandyLands/IcyLands Deck (2v2) - 2 : Moniker's Useless Swamp/IcyLands Deck (2v2) - 2",
-	"image_name": "Patriot Popsicle.jpg"
+	"image_name": "Patriot Popsicle.jpg",
+	"card_id": 319
   },
   {
 	"name": "Peach Djinni",
@@ -3849,7 +4169,8 @@
 	"def": 6,
 	"ability": "Trigger",
 	"deck_info": "Lady Rainicorn's SandyLand Deck (CP2) - 2",
-	"image_name": "Peach Djinni.jpg"
+	"image_name": "Peach Djinni.jpg",
+	"card_id": 320
   },
   {
 	"name": "Pentacutie",
@@ -3861,7 +4182,8 @@
 	"def": 8,
 	"ability": "Continuous",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Rare",
-	"image_name": "Pentacutie.jpg"
+	"image_name": "Pentacutie.jpg",
+	"card_id": 321
   },
   {
 	"name": "Pentaid",
@@ -3873,7 +4195,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Marceline's NiceLands/Useless Swamp Deck (CP4) - 2",
-	"image_name": "Pentaid.jpg"
+	"image_name": "Pentaid.jpg",
+	"card_id": 322
   },
   {
 	"name": "Phyllis",
@@ -3885,7 +4208,8 @@
 	"def": 7,
 	"ability": "None",
 	"deck_info": "Jake's Cornfield Deck (CP1) - 1",
-	"image_name": "Phyllis.jpg"
+	"image_name": "Phyllis.jpg",
+	"card_id": 323
   },
   {
 	"name": "Pickler",
@@ -3897,7 +4221,8 @@
 	"def": 9,
 	"ability": "Ignition",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Uncommon",
-	"image_name": "Pickler.jpg"
+	"image_name": "Pickler.jpg",
+	"card_id": 324
   },
   {
 	"name": "Pieclops",
@@ -3909,7 +4234,8 @@
 	"def": 7,
 	"ability": "Entering Play",
 	"deck_info": "Princess Bubblegum's NiceLands Deck (CP3) - 2",
-	"image_name": "Pieclops.jpg"
+	"image_name": "Pieclops.jpg",
+	"card_id": 325
   },
   {
 	"name": "Pied Piper",
@@ -3921,7 +4247,8 @@
 	"def": 9,
 	"ability": "",
 	"deck_info": "Cake's Cornfield Deck (CP6) - 2",
-	"image_name": "Pied Piper.jpg"
+	"image_name": "Pied Piper.jpg",
+	"card_id": 326
   },
   {
 	"name": "Piestorm",
@@ -3933,7 +4260,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Princess Bubblegum's NiceLands Deck (CP3) - 2",
-	"image_name": "Piestorm.jpg"
+	"image_name": "Piestorm.jpg",
+	"card_id": 327
   },
   {
 	"name": "Pillow Fortress",
@@ -3945,7 +4273,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Jake's Cornfield/NiceLands Deck\n (2v2) - 1",
-	"image_name": "Pillow Fortress.jpg"
+	"image_name": "Pillow Fortress.jpg",
+	"card_id": 328
   },
   {
 	"name": "Pink Candy",
@@ -3957,7 +4286,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Pink Candy.jpg"
+	"image_name": "Pink Candy.jpg",
+	"card_id": 329
   },
   {
 	"name": "Pink Merwitch",
@@ -3969,7 +4299,8 @@
 	"def": 8,
 	"ability": "Ignition",
 	"deck_info": "Lumpy Space Princess' Blue Plains/Useless Swamp Deck (Totally Rad Deck) (CP3) - 1",
-	"image_name": "Pink Merwitch.jpg"
+	"image_name": "Pink Merwitch.jpg",
+	"card_id": 330
   },
   {
 	"name": "Pirate Bear",
@@ -3981,7 +4312,8 @@
 	"def": 3,
 	"ability": "Continuous",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Pirate Bear.jpg"
+	"image_name": "Pirate Bear.jpg",
+	"card_id": 331
   },
   {
 	"name": "Polterclops",
@@ -3993,7 +4325,8 @@
 	"def": 1,
 	"ability": "Continuous",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Polterclops.jpg"
+	"image_name": "Polterclops.jpg",
+	"card_id": 332
   },
   {
 	"name": "Pony",
@@ -4005,7 +4338,8 @@
 	"def": 5,
 	"ability": "",
 	"deck_info": "Fionna's Blue Plains Deck (CP6) - 2",
-	"image_name": "Pony.jpg"
+	"image_name": "Pony.jpg",
+	"card_id": 333
   },
   {
 	"name": "Popcorn Butteredfly",
@@ -4017,7 +4351,8 @@
 	"def": 5,
 	"ability": "FLOOP",
 	"deck_info": "Cake's Cornfield Deck (CP6) - 2",
-	"image_name": "Popcorn Butteredfly.jpg"
+	"image_name": "Popcorn Butteredfly.jpg",
+	"card_id": 334
   },
   {
 	"name": "Popcorn Power",
@@ -4029,7 +4364,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Popcorn Power.jpg"
+	"image_name": "Popcorn Power.jpg",
+	"card_id": 335
   },
   {
 	"name": "Portal of Unsummoning",
@@ -4041,7 +4377,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Rare",
-	"image_name": "Portal of Unsummoning.jpg"
+	"image_name": "Portal of Unsummoning.jpg",
+	"card_id": 336
   },
   {
 	"name": "Portal to Nowhere",
@@ -4053,7 +4390,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Portal to Nowhere.jpg"
+	"image_name": "Portal to Nowhere.jpg",
+	"card_id": 337
   },
   {
 	"name": "Princess Bubblegum",
@@ -4065,7 +4403,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Hero Pack #1 (HP1) - 1",
-	"image_name": "Princess Bubblegum.jpg"
+	"image_name": "Princess Bubblegum.jpg",
+	"card_id": 338
   },
   {
 	"name": "Prismo",
@@ -4077,7 +4416,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Hero Pack #1 (HP1) - 1",
-	"image_name": "Prismo.jpg"
+	"image_name": "Prismo.jpg",
+	"card_id": 339
   },
   {
 	"name": "Psionic Architect",
@@ -4089,7 +4429,8 @@
 	"def": 6,
 	"ability": "Entering Play",
 	"deck_info": "Finn's Blue Plains Deck (CP1) - 2",
-	"image_name": "Psionic Architect.jpg"
+	"image_name": "Psionic Architect.jpg",
+	"card_id": 340
   },
   {
 	"name": "Psionic Swashbuckler",
@@ -4101,7 +4442,8 @@
 	"def": 6,
 	"ability": "",
 	"deck_info": "Fionna's Blue Plains Deck (CP6) - 2",
-	"image_name": "Psionic Swashbuckler.jpg"
+	"image_name": "Psionic Swashbuckler.jpg",
+	"card_id": 341
   },
   {
 	"name": "Psychic Tempest",
@@ -4113,7 +4455,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Rare",
-	"image_name": "Psychic Tempest.jpg"
+	"image_name": "Psychic Tempest.jpg",
+	"card_id": 342
   },
   {
 	"name": "Puma Paw",
@@ -4125,7 +4468,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Puma Paw.jpg"
+	"image_name": "Puma Paw.jpg",
+	"card_id": 343
   },
   {
 	"name": "Punk Cat",
@@ -4137,7 +4481,8 @@
 	"def": 6,
 	"ability": "Continuous",
 	"deck_info": "Finn's Blue Plains Deck (CP1) - 2",
-	"image_name": "Punk Cat.jpg"
+	"image_name": "Punk Cat.jpg",
+	"card_id": 344
   },
   {
 	"name": "Puppy Parade",
@@ -4149,7 +4494,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Fionna's Blue Plains Deck (CP6) - 1",
-	"image_name": "Puppy Parade.jpg"
+	"image_name": "Puppy Parade.jpg",
+	"card_id": 345
   },
   {
 	"name": "Pyramidia",
@@ -4161,7 +4507,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Lumpy Space Princess' Blue Plains/Useless Swamp Deck (Totally Rad Deck) (CP3) - 1",
-	"image_name": "Pyramidia.jpg"
+	"image_name": "Pyramidia.jpg",
+	"card_id": 346
   },
   {
 	"name": "Pyromancer",
@@ -4173,7 +4520,8 @@
 	"def": 8,
 	"ability": "Trigger",
 	"deck_info": "Charlie's Blue Plains/NiceLands Deck (2v2) - 2",
-	"image_name": "Pyromancer.jpg"
+	"image_name": "Pyromancer.jpg",
+	"card_id": 347
   },
   {
 	"name": "Quadurai",
@@ -4185,7 +4533,8 @@
 	"def": 6,
 	"ability": "Continuous",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Rare",
-	"image_name": "Quadurai.jpg"
+	"image_name": "Quadurai.jpg",
+	"card_id": 348
   },
   {
 	"name": "Quake Maker",
@@ -4197,7 +4546,8 @@
 	"def": 7,
 	"ability": "Continuous",
 	"deck_info": "Lemongrab's Cornfield/SandyLands Deck (CP5) - 2",
-	"image_name": "Quake Maker.jpg"
+	"image_name": "Quake Maker.jpg",
+	"card_id": 349
   },
   {
 	"name": "Quick Pick Me Up",
@@ -4209,7 +4559,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Lemongrab's Cornfield/SandyLands Deck (CP5) - 1",
-	"image_name": "Quick Pick Me Up.jpg"
+	"image_name": "Quick Pick Me Up.jpg",
+	"card_id": 350
   },
   {
 	"name": "Rainbow Eyebat",
@@ -4221,7 +4572,8 @@
 	"def": 4,
 	"ability": "Continuous",
 	"deck_info": "Princess Bubblegum's NiceLands Deck (CP3) - 2",
-	"image_name": "Rainbow Eyebat.jpg"
+	"image_name": "Rainbow Eyebat.jpg",
+	"card_id": 351
   },
   {
 	"name": "Raise the Dead",
@@ -4233,7 +4585,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Rare",
-	"image_name": "Raise the Dead.jpg"
+	"image_name": "Raise the Dead.jpg",
+	"card_id": 352
   },
   {
 	"name": "Rebounding Zebracorn",
@@ -4245,7 +4598,8 @@
 	"def": 6,
 	"ability": "Continuous",
 	"deck_info": "Lemongrab's Cornfield/SandyLands Deck (CP5) - 2",
-	"image_name": "Rebounding Zebracorn.jpg"
+	"image_name": "Rebounding Zebracorn.jpg",
+	"card_id": 353
   },
   {
 	"name": "Reclaim Landscape",
@@ -4257,7 +4611,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Jake's Cornfield Deck (CP1) - 2",
-	"image_name": "Reclaim Landscape.jpg"
+	"image_name": "Reclaim Landscape.jpg",
+	"card_id": 354
   },
   {
 	"name": "Red Eyeling",
@@ -4269,7 +4624,8 @@
 	"def": 6,
 	"ability": "FLOOP",
 	"deck_info": "BMO's Useless Swamp Deck (CP2) - 2",
-	"image_name": "Red Eyeling.jpg"
+	"image_name": "Red Eyeling.jpg",
+	"card_id": 355
   },
   {
 	"name": "Redirect Danger",
@@ -4281,7 +4637,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Charlie's Blue Plains/NiceLands Deck (2v2) - 1",
-	"image_name": "Redirect Danger.jpg"
+	"image_name": "Redirect Danger.jpg",
+	"card_id": 356
   },
   {
 	"name": "Reign Deer",
@@ -4293,7 +4650,8 @@
 	"def": 4,
 	"ability": "FLOOP",
 	"deck_info": "Ice King's IcyLands Deck (CP4) - 2",
-	"image_name": "Reign Deer.jpg"
+	"image_name": "Reign Deer.jpg",
+	"card_id": 357
   },
   {
 	"name": "Repelling Rock Crab",
@@ -4305,7 +4663,8 @@
 	"def": 5,
 	"ability": "",
 	"deck_info": "Grand Prix's SandyLands/IcyLands Deck (2v2) - 2",
-	"image_name": "Repelling Rock Crab.jpg"
+	"image_name": "Repelling Rock Crab.jpg",
+	"card_id": 358
   },
   {
 	"name": "Ricardio",
@@ -4317,7 +4676,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Hero Pack #1 (HP1) - 1",
-	"image_name": "Ricardio.jpg"
+	"image_name": "Ricardio.jpg",
+	"card_id": 359
   },
   {
 	"name": "Ring of Damage",
@@ -4329,7 +4689,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Ring of Damage.jpg"
+	"image_name": "Ring of Damage.jpg",
+	"card_id": 360
   },
   {
 	"name": "Ring of Fluffy",
@@ -4341,7 +4702,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Princess Bubblegum's NiceLands Deck (CP3) - 2",
-	"image_name": "Ring of Fluffy.jpg"
+	"image_name": "Ring of Fluffy.jpg",
+	"card_id": 361
   },
   {
 	"name": "Ring of Third Eye",
@@ -4353,7 +4715,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Ring of Third Eye.jpg"
+	"image_name": "Ring of Third Eye.jpg",
+	"card_id": 362
   },
   {
 	"name": "River of Swords",
@@ -4365,7 +4728,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Fionna's Blue Plains Deck (CP6) - 1",
-	"image_name": "River of Swords.jpg"
+	"image_name": "River of Swords.jpg",
+	"card_id": 363
   },
   {
 	"name": "Robomancer",
@@ -4377,7 +4741,8 @@
 	"def": 7,
 	"ability": "Continuous",
 	"deck_info": "Charlie's Blue Plains/NiceLands Deck (2v2) - 2",
-	"image_name": "Robomancer.jpg"
+	"image_name": "Robomancer.jpg",
+	"card_id": 364
   },
   {
 	"name": "Rock 'n Roller",
@@ -4389,7 +4754,8 @@
 	"def": 8,
 	"ability": "Entering Play",
 	"deck_info": "Lemongrab's Cornfield/SandyLands Deck (CP5) - 2",
-	"image_name": "Rock 'n Roller.jpg"
+	"image_name": "Rock 'n Roller.jpg",
+	"card_id": 365
   },
   {
 	"name": "Rock Out!",
@@ -4401,7 +4767,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Lemongrab's Cornfield/SandyLands Deck (CP5) - 2",
-	"image_name": "Rock Out!.jpg"
+	"image_name": "Rock Out!.jpg",
+	"card_id": 366
   },
   {
 	"name": "Rocktopus",
@@ -4413,7 +4780,8 @@
 	"def": 6,
 	"ability": "Continuous",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Rocktopus.jpg"
+	"image_name": "Rocktopus.jpg",
+	"card_id": 367
   },
   {
 	"name": "Routing Rock Crab",
@@ -4425,7 +4793,8 @@
 	"def": 10,
 	"ability": "",
 	"deck_info": "Grand Prix's SandyLands/IcyLands Deck (2v2) - 1",
-	"image_name": "Routing Rock Crab.jpg"
+	"image_name": "Routing Rock Crab.jpg",
+	"card_id": 368
   },
   {
 	"name": "Royal Revelry",
@@ -4437,7 +4806,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Jake's Cornfield/NiceLands Deck\n (2v2) - 1",
-	"image_name": "Royal Revelry.jpg"
+	"image_name": "Royal Revelry.jpg",
+	"card_id": 369
   },
   {
 	"name": "Sack of Pain",
@@ -4449,7 +4819,8 @@
 	"def": 10,
 	"ability": "Continuous",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Rare",
-	"image_name": "Sack of Pain.jpg"
+	"image_name": "Sack of Pain.jpg",
+	"card_id": 370
   },
   {
 	"name": "Sailing Sand Crab",
@@ -4461,7 +4832,8 @@
 	"def": 6,
 	"ability": "",
 	"deck_info": "Grand Prix's SandyLands/IcyLands Deck (2v2) - 2",
-	"image_name": "Sailing Sand Crab.jpg"
+	"image_name": "Sailing Sand Crab.jpg",
+	"card_id": 371
   },
   {
 	"name": "Sand Angel",
@@ -4473,7 +4845,8 @@
 	"def": 5,
 	"ability": "None",
 	"deck_info": "Lady Rainicorn's SandyLand Deck (CP2) - 2",
-	"image_name": "Sand Angel.jpg"
+	"image_name": "Sand Angel.jpg",
+	"card_id": 372
   },
   {
 	"name": "Sand Castle",
@@ -4485,7 +4858,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Grand Prix's SandyLands/IcyLands Deck (2v2) - 2",
-	"image_name": "Sand Castle.jpg"
+	"image_name": "Sand Castle.jpg",
+	"card_id": 373
   },
   {
 	"name": "Sand Eyebat",
@@ -4497,7 +4871,8 @@
 	"def": 10,
 	"ability": "Trigger",
 	"deck_info": "Lady Rainicorn's SandyLand Deck (CP2) - 2",
-	"image_name": "Sand Eyebat.jpg"
+	"image_name": "Sand Eyebat.jpg",
+	"card_id": 374
   },
   {
 	"name": "Sand Jackal",
@@ -4509,7 +4884,8 @@
 	"def": 3,
 	"ability": "Continuous",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Sand Jackal.jpg"
+	"image_name": "Sand Jackal.jpg",
+	"card_id": 375
   },
   {
 	"name": "Sand Knights",
@@ -4521,7 +4897,8 @@
 	"def": 8,
 	"ability": "Continuous",
 	"deck_info": "Lady Rainicorn's SandyLand Deck (CP2) - 1",
-	"image_name": "Sand Knights.jpg"
+	"image_name": "Sand Knights.jpg",
+	"card_id": 376
   },
   {
 	"name": "Sand Pyramid",
@@ -4533,7 +4910,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Uncommon",
-	"image_name": "Sand Pyramid.jpg"
+	"image_name": "Sand Pyramid.jpg",
+	"card_id": 377
   },
   {
 	"name": "Sand Sphinx",
@@ -4545,7 +4923,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Lady Rainicorn's SandyLand Deck (CP2) - 2",
-	"image_name": "Sand Sphinx.jpg"
+	"image_name": "Sand Sphinx.jpg",
+	"card_id": 378
   },
   {
 	"name": "Sandasaurus Rex",
@@ -4557,7 +4936,8 @@
 	"def": 9,
 	"ability": "Continuous",
 	"deck_info": "Lemongrab's Cornfield/SandyLands Deck (CP5) - 1 : For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Sandasaurus Rex.jpg"
+	"image_name": "Sandasaurus Rex.jpg",
+	"card_id": 379
   },
   {
 	"name": "Sandhorn Devil",
@@ -4569,7 +4949,8 @@
 	"def": 6,
 	"ability": "Entering Play",
 	"deck_info": "Lady Rainicorn's SandyLand Deck (CP2) - 2",
-	"image_name": "Sandhorn Devil.jpg"
+	"image_name": "Sandhorn Devil.jpg",
+	"card_id": 380
   },
   {
 	"name": "Sandmagus",
@@ -4581,7 +4962,8 @@
 	"def": 4,
 	"ability": "Trigger",
 	"deck_info": "Lemongrab's Cornfield/SandyLands Deck (CP5) - 1",
-	"image_name": "Sandmagus.jpg"
+	"image_name": "Sandmagus.jpg",
+	"card_id": 381
   },
   {
 	"name": "Sandsnake",
@@ -4593,7 +4975,8 @@
 	"def": 9,
 	"ability": "Entering Play",
 	"deck_info": "Lady Rainicorn's SandyLand Deck (CP2) - 2",
-	"image_name": "Sandsnake.jpg"
+	"image_name": "Sandsnake.jpg",
+	"card_id": 382
   },
   {
 	"name": "SandWitch",
@@ -4605,7 +4988,8 @@
 	"def": 12,
 	"ability": "Continuous",
 	"deck_info": "Lady Rainicorn's SandyLand Deck (CP2) - 2",
-	"image_name": "SandWitch.jpg"
+	"image_name": "SandWitch.jpg",
+	"card_id": 383
   },
   {
 	"name": "Schoolhouse",
@@ -4617,7 +5001,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Finn's Blue Plains Deck (CP1) - 1 : For the Glory! Booster Pack (FTG) - Uncommon",
-	"image_name": "Schoolhouse.jpg"
+	"image_name": "Schoolhouse.jpg",
+	"card_id": 384
   },
   {
 	"name": "Scorching Serve",
@@ -4629,7 +5014,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Grand Prix's SandyLands/IcyLands Deck (2v2) - 1",
-	"image_name": "Scorching Serve.jpg"
+	"image_name": "Scorching Serve.jpg",
+	"card_id": 385
   },
   {
 	"name": "Scroll of Bad Breath",
@@ -4641,7 +5027,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Scroll of Bad Breath.jpg"
+	"image_name": "Scroll of Bad Breath.jpg",
+	"card_id": 386
   },
   {
 	"name": "Scroll of Fresh Breath",
@@ -4653,7 +5040,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Scroll of Fresh Breath.jpg"
+	"image_name": "Scroll of Fresh Breath.jpg",
+	"card_id": 387
   },
   {
 	"name": "Sea Hag",
@@ -4665,7 +5053,8 @@
 	"def": 6,
 	"ability": "Continuous",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Sea Hag.jpg"
+	"image_name": "Sea Hag.jpg",
+	"card_id": 388
   },
   {
 	"name": "Sewn Sloth",
@@ -4677,7 +5066,8 @@
 	"def": 8,
 	"ability": "",
 	"deck_info": "Charlie's Blue Plains/NiceLands Deck (2v2) - 2",
-	"image_name": "Sewn Sloth.jpg"
+	"image_name": "Sewn Sloth.jpg",
+	"card_id": 389
   },
   {
 	"name": "Shadowy Pyramid",
@@ -4689,7 +5079,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Shadowy Pyramid.jpg"
+	"image_name": "Shadowy Pyramid.jpg",
+	"card_id": 390
   },
   {
 	"name": "Shark",
@@ -4701,7 +5092,8 @@
 	"def": 10,
 	"ability": "Continuous",
 	"deck_info": "Lady Rainicorn's SandyLand Deck (CP2) - 2",
-	"image_name": "Shark.jpg"
+	"image_name": "Shark.jpg",
+	"card_id": 391
   },
   {
 	"name": "Sharp Guy",
@@ -4713,7 +5105,8 @@
 	"def": 5,
 	"ability": "FLOOP",
 	"deck_info": "Cake's Cornfield Deck (CP6) - 1",
-	"image_name": "Sharp Guy.jpg"
+	"image_name": "Sharp Guy.jpg",
+	"card_id": 392
   },
   {
 	"name": "Sheep",
@@ -4725,7 +5118,8 @@
 	"def": 3,
 	"ability": "",
 	"deck_info": "Jake's Cornfield/NiceLands Deck\n (2v2) - 1",
-	"image_name": "Sheep.jpg"
+	"image_name": "Sheep.jpg",
+	"card_id": 393
   },
   {
 	"name": "Shielded ZebraCorn",
@@ -4737,7 +5131,8 @@
 	"def": 6,
 	"ability": "",
 	"deck_info": "Jake's Cornfield/NiceLands Deck\n (2v2) - 2",
-	"image_name": "Shielded ZebraCorn.jpg"
+	"image_name": "Shielded ZebraCorn.jpg",
+	"card_id": 394
   },
   {
 	"name": "Shifty Sand Crab",
@@ -4749,7 +5144,8 @@
 	"def": 7,
 	"ability": "",
 	"deck_info": "Grand Prix's SandyLands/IcyLands Deck (2v2) - 2",
-	"image_name": "Shifty Sand Crab.jpg"
+	"image_name": "Shifty Sand Crab.jpg",
+	"card_id": 395
   },
   {
 	"name": "Silo of Freedom",
@@ -4761,7 +5157,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Lemongrab's Cornfield/SandyLands Deck (CP5) - 1",
-	"image_name": "Silo of Freedom.jpg"
+	"image_name": "Silo of Freedom.jpg",
+	"card_id": 396
   },
   {
 	"name": "Silo of Justice",
@@ -4773,7 +5170,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Uncommon",
-	"image_name": "Silo of Justice.jpg"
+	"image_name": "Silo of Justice.jpg",
+	"card_id": 397
   },
   {
 	"name": "Silo of Truth",
@@ -4785,7 +5183,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Jake's Cornfield Deck (CP1) - 1",
-	"image_name": "Silo of Truth.jpg"
+	"image_name": "Silo of Truth.jpg",
+	"card_id": 398
   },
   {
 	"name": "Singing Sword",
@@ -4797,7 +5196,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Fionna's Blue Plains Deck (CP6) - 2",
-	"image_name": "Singing Sword.jpg"
+	"image_name": "Singing Sword.jpg",
+	"card_id": 399
   },
   {
 	"name": "Sinkhole",
@@ -4809,7 +5209,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Lemongrab's Cornfield/SandyLands Deck (CP5) - 1",
-	"image_name": "Sinkhole.jpg"
+	"image_name": "Sinkhole.jpg",
+	"card_id": 400
   },
   {
 	"name": "Ska-pion",
@@ -4821,7 +5222,8 @@
 	"def": 3,
 	"ability": "Continuous",
 	"deck_info": "Lemongrab's Cornfield/SandyLands Deck (CP5) - 2",
-	"image_name": "Ska-pion.jpg"
+	"image_name": "Ska-pion.jpg",
+	"card_id": 401
   },
   {
 	"name": "Skeletal Hand",
@@ -4833,7 +5235,8 @@
 	"def": 6,
 	"ability": "FLOOP",
 	"deck_info": "Lumpy Space Princess' Blue Plains/Useless Swamp Deck (Totally Rad Deck) (CP3) - 1",
-	"image_name": "Skeletal Hand.jpg"
+	"image_name": "Skeletal Hand.jpg",
+	"card_id": 402
   },
   {
 	"name": "Slashy Sand Crab",
@@ -4845,7 +5248,8 @@
 	"def": 8,
 	"ability": "",
 	"deck_info": "Grand Prix's SandyLands/IcyLands Deck (2v2) - 1",
-	"image_name": "Slashy Sand Crab.jpg"
+	"image_name": "Slashy Sand Crab.jpg",
+	"card_id": 403
   },
   {
 	"name": "Slay Rider",
@@ -4857,7 +5261,8 @@
 	"def": 5,
 	"ability": "FLOOP",
 	"deck_info": "Ice King's IcyLands Deck (CP4) - 2",
-	"image_name": "Slay Rider.jpg"
+	"image_name": "Slay Rider.jpg",
+	"card_id": 404
   },
   {
 	"name": "Slushie Salvo",
@@ -4869,7 +5274,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Moniker's Useless Swamp/IcyLands Deck (2v2) - 1",
-	"image_name": "Slushie Salvo.jpg"
+	"image_name": "Slushie Salvo.jpg",
+	"card_id": 405
   },
   {
 	"name": "Smoldering Elder",
@@ -4881,7 +5287,8 @@
 	"def": 8,
 	"ability": "Entering Play",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Rare",
-	"image_name": "Smoldering Elder.jpg"
+	"image_name": "Smoldering Elder.jpg",
+	"card_id": 406
   },
   {
 	"name": "Smooth Eli",
@@ -4893,7 +5300,8 @@
 	"def": 6,
 	"ability": "",
 	"deck_info": "Grand Prix's SandyLands/IcyLands Deck (2v2) - 2 : Moniker's Useless Swamp/IcyLands Deck (2v2) - 1",
-	"image_name": "Smooth Eli.jpg"
+	"image_name": "Smooth Eli.jpg",
+	"card_id": 407
   },
   {
 	"name": "Snake Eye Ring",
@@ -4905,7 +5313,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "BMO's Useless Swamp Deck (CP2) - 2",
-	"image_name": "Snake Eye Ring.jpg"
+	"image_name": "Snake Eye Ring.jpg",
+	"card_id": 408
   },
   {
 	"name": "Snake Eyes",
@@ -4917,7 +5326,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Snake Eyes.jpg"
+	"image_name": "Snake Eyes.jpg",
+	"card_id": 409
   },
   {
 	"name": "Snakemint",
@@ -4929,7 +5339,8 @@
 	"def": 7,
 	"ability": "Trigger",
 	"deck_info": "Princess Bubblegum's NiceLands Deck (CP3) - 2",
-	"image_name": "Snakemint.jpg"
+	"image_name": "Snakemint.jpg",
+	"card_id": 410
   },
   {
 	"name": "Snow Angel",
@@ -4941,7 +5352,8 @@
 	"def": 7,
 	"ability": "FLOOP",
 	"deck_info": "Ice King's IcyLands Deck (CP4) - 1",
-	"image_name": "Snow Angel.jpg"
+	"image_name": "Snow Angel.jpg",
+	"card_id": 411
   },
   {
 	"name": "Snow Baller",
@@ -4953,7 +5365,8 @@
 	"def": 7,
 	"ability": "Ignition",
 	"deck_info": "Gunter's Blue Plains/IcyLands Deck (CP5) - 2",
-	"image_name": "Snow Baller.jpg"
+	"image_name": "Snow Baller.jpg",
+	"card_id": 412
   },
   {
 	"name": "Snow Bank",
@@ -4965,7 +5378,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Grand Prix's SandyLands/IcyLands Deck (2v2) - 1",
-	"image_name": "Snow Bank.jpg"
+	"image_name": "Snow Bank.jpg",
+	"card_id": 413
   },
   {
 	"name": "Snow Bunny",
@@ -4977,7 +5391,8 @@
 	"def": 3,
 	"ability": "Ignition",
 	"deck_info": "Ice King's IcyLands Deck (CP4) - 2",
-	"image_name": "Snow Bunny.jpg"
+	"image_name": "Snow Bunny.jpg",
+	"card_id": 414
   },
   {
 	"name": "Snow Business",
@@ -4989,7 +5404,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Ice King's IcyLands Deck (CP4) - 1",
-	"image_name": "Snow Business.jpg"
+	"image_name": "Snow Business.jpg",
+	"card_id": 415
   },
   {
 	"name": "Snow Dog",
@@ -5001,7 +5417,8 @@
 	"def": 7,
 	"ability": "FLOOP",
 	"deck_info": "Ice King's IcyLands Deck (CP4) - 2",
-	"image_name": "Snow Dog.jpg"
+	"image_name": "Snow Dog.jpg",
+	"card_id": 416
   },
   {
 	"name": "Snow Training Camp",
@@ -5013,7 +5430,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Gunter's Blue Plains/IcyLands Deck (CP5) - 1",
-	"image_name": "Snow Training Camp.jpg"
+	"image_name": "Snow Training Camp.jpg",
+	"card_id": 417
   },
   {
 	"name": "Snow Way",
@@ -5025,7 +5443,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Ice King's IcyLands Deck (CP4) - 1",
-	"image_name": "Snow Way.jpg"
+	"image_name": "Snow Way.jpg",
+	"card_id": 418
   },
   {
 	"name": "Snowblower",
@@ -5037,7 +5456,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Gunter's Blue Plains/IcyLands Deck (CP5) - 2",
-	"image_name": "Snowblower.jpg"
+	"image_name": "Snowblower.jpg",
+	"card_id": 419
   },
   {
 	"name": "Snowvalanche",
@@ -5049,7 +5469,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Gunter's Blue Plains/IcyLands Deck (CP5) - 2",
-	"image_name": "Snowvalanche.jpg"
+	"image_name": "Snowvalanche.jpg",
+	"card_id": 420
   },
   {
 	"name": "Socks of Fortitude",
@@ -5061,7 +5482,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Socks of Fortitude.jpg"
+	"image_name": "Socks of Fortitude.jpg",
+	"card_id": 421
   },
   {
 	"name": "Softie Recruit",
@@ -5073,7 +5495,8 @@
 	"def": 5,
 	"ability": "",
 	"deck_info": "Grand Prix's SandyLands/IcyLands Deck (2v2) - 1 : Moniker's Useless Swamp/IcyLands Deck (2v2) - 2",
-	"image_name": "Softie Recruit.jpg"
+	"image_name": "Softie Recruit.jpg",
+	"card_id": 422
   },
   {
 	"name": "Solidarity",
@@ -5085,7 +5508,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Jake's Cornfield/NiceLands Deck\n (2v2) - 1",
-	"image_name": "Solidarity.jpg"
+	"image_name": "Solidarity.jpg",
+	"card_id": 423
   },
   {
 	"name": "Spazzy Cola",
@@ -5097,7 +5521,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Gunter's Blue Plains/IcyLands Deck (CP5) - 2",
-	"image_name": "Spazzy Cola.jpg"
+	"image_name": "Spazzy Cola.jpg",
+	"card_id": 424
   },
   {
 	"name": "Spell Warp",
@@ -5109,7 +5534,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Spell Warp.jpg"
+	"image_name": "Spell Warp.jpg",
+	"card_id": 425
   },
   {
 	"name": "Spike Icicle",
@@ -5121,7 +5547,8 @@
 	"def": 1,
 	"ability": "None",
 	"deck_info": "Ice King's IcyLands Deck (CP4) - 2",
-	"image_name": "Spike Icicle.jpg"
+	"image_name": "Spike Icicle.jpg",
+	"card_id": 426
   },
   {
 	"name": "Spiked ZebraCorn",
@@ -5133,7 +5560,8 @@
 	"def": 7,
 	"ability": "",
 	"deck_info": "Jake's Cornfield/NiceLands Deck\n (2v2) - 1",
-	"image_name": "Spiked ZebraCorn.jpg"
+	"image_name": "Spiked ZebraCorn.jpg",
+	"card_id": 427
   },
   {
 	"name": "Spirit Tower",
@@ -5145,7 +5573,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "BMO's Useless Swamp Deck (CP2) - 1 : For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Spirit Tower.jpg"
+	"image_name": "Spirit Tower.jpg",
+	"card_id": 428
   },
   {
 	"name": "Sprucy Lucy",
@@ -5157,7 +5586,8 @@
 	"def": 9,
 	"ability": "Continuous",
 	"deck_info": "Ice King's IcyLands Deck (CP4) - 1",
-	"image_name": "Sprucy Lucy.jpg"
+	"image_name": "Sprucy Lucy.jpg",
+	"card_id": 429
   },
   {
 	"name": "Squatting Bald Man",
@@ -5169,7 +5599,8 @@
 	"def": 7,
 	"ability": "Ignition",
 	"deck_info": "Lumpy Space Princess' Blue Plains/Useless Swamp Deck (Totally Rad Deck) (CP3) - 2",
-	"image_name": "Squatting Bald Man.jpg"
+	"image_name": "Squatting Bald Man.jpg",
+	"card_id": 430
   },
   {
 	"name": "Staff of Frailty",
@@ -5181,7 +5612,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Moniker's Useless Swamp/IcyLands Deck (2v2) - 1",
-	"image_name": "Staff of Frailty.jpg"
+	"image_name": "Staff of Frailty.jpg",
+	"card_id": 431
   },
   {
 	"name": "Static Parrotrooper",
@@ -5193,7 +5625,8 @@
 	"def": 6,
 	"ability": "Entering Play",
 	"deck_info": "Lemongrab's Cornfield/SandyLands Deck (CP5) - 2",
-	"image_name": "Static Parrotrooper.jpg"
+	"image_name": "Static Parrotrooper.jpg",
+	"card_id": 432
   },
   {
 	"name": "Steakchop",
@@ -5205,7 +5638,8 @@
 	"def": 4,
 	"ability": "Continuous",
 	"deck_info": "Lumpy Space Princess' Blue Plains/Useless Swamp Deck (Totally Rad Deck) (CP3) - 2",
-	"image_name": "Steakchop.jpg"
+	"image_name": "Steakchop.jpg",
+	"card_id": 433
   },
   {
 	"name": "Stitched Squirrel",
@@ -5217,7 +5651,8 @@
 	"def": 8,
 	"ability": "",
 	"deck_info": "Jake's Cornfield/NiceLands Deck\n (2v2) - 1",
-	"image_name": "Stitched Squirrel.jpg"
+	"image_name": "Stitched Squirrel.jpg",
+	"card_id": 434
   },
   {
 	"name": "Strawberry Slimey",
@@ -5229,7 +5664,8 @@
 	"def": 6,
 	"ability": "Continuous",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Uncommon",
-	"image_name": "Strawberry Slimey.jpg"
+	"image_name": "Strawberry Slimey.jpg",
+	"card_id": 435
   },
   {
 	"name": "Strength Crystal",
@@ -5241,7 +5677,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Lumpy Space Princess' Blue Plains/Useless Swamp Deck (Totally Rad Deck) (CP3) - 1",
-	"image_name": "Strength Crystal.jpg"
+	"image_name": "Strength Crystal.jpg",
+	"card_id": 436
   },
   {
 	"name": "Struzann Jinn",
@@ -5253,7 +5690,8 @@
 	"def": 11,
 	"ability": "Continuous",
 	"deck_info": "Finn's Blue Plains Deck (CP1) - 2",
-	"image_name": "Struzann Jinn.jpg"
+	"image_name": "Struzann Jinn.jpg",
+	"card_id": 437
   },
   {
 	"name": "Stuffed",
@@ -5265,7 +5703,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Charlie's Blue Plains/NiceLands Deck (2v2) - 1",
-	"image_name": "Stuffed.jpg"
+	"image_name": "Stuffed.jpg",
+	"card_id": 438
   },
   {
 	"name": "SubjuGator",
@@ -5277,7 +5716,8 @@
 	"def": 7,
 	"ability": "",
 	"deck_info": "Moniker's Useless Swamp/IcyLands Deck (2v2) - 1",
-	"image_name": "SubjuGator.jpg"
+	"image_name": "SubjuGator.jpg",
+	"card_id": 439
   },
   {
 	"name": "Subliminal Strength",
@@ -5289,7 +5729,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Lumpy Space Princess' Blue Plains/Useless Swamp Deck (Totally Rad Deck) (CP3) - 2",
-	"image_name": "Subliminal Strength.jpg"
+	"image_name": "Subliminal Strength.jpg",
+	"card_id": 440
   },
   {
 	"name": "Sun King",
@@ -5301,7 +5742,8 @@
 	"def": 8,
 	"ability": "Continuous",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Rare",
-	"image_name": "Sun King.jpg"
+	"image_name": "Sun King.jpg",
+	"card_id": 441
   },
   {
 	"name": "Sundae School",
@@ -5313,7 +5755,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Boom! Comics Adventure Time with Fionna and Cake: Card Wars Issue #1 (PROMO) - Ultra Rare",
-	"image_name": "Sundae School.jpg"
+	"image_name": "Sundae School.jpg",
+	"card_id": 442
   },
   {
 	"name": "Susan Strong",
@@ -5325,7 +5768,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Hero Pack #1 (HP1) - 1",
-	"image_name": "Susan Strong.jpg"
+	"image_name": "Susan Strong.jpg",
+	"card_id": 443
   },
   {
 	"name": "Swamp Horn",
@@ -5337,7 +5781,8 @@
 	"def": 1,
 	"ability": "Continuous",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Swamp Horn.jpg"
+	"image_name": "Swamp Horn.jpg",
+	"card_id": 444
   },
   {
 	"name": "Sword Bouquet",
@@ -5349,7 +5794,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Fionna's Blue Plains Deck (CP6) - 2",
-	"image_name": "Sword Bouquet.jpg"
+	"image_name": "Sword Bouquet.jpg",
+	"card_id": 445
   },
   {
 	"name": "Synchronization",
@@ -5361,7 +5807,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Moniker's Useless Swamp/IcyLands Deck (2v2) - 1",
-	"image_name": "Synchronization.jpg"
+	"image_name": "Synchronization.jpg",
+	"card_id": 446
   },
   {
 	"name": "TailGator",
@@ -5373,7 +5820,8 @@
 	"def": 6,
 	"ability": "",
 	"deck_info": "Moniker's Useless Swamp/IcyLands Deck (2v2) - 2",
-	"image_name": "TailGator.jpg"
+	"image_name": "TailGator.jpg",
+	"card_id": 447
   },
   {
 	"name": "Tandem Bike",
@@ -5385,7 +5833,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Charlie's Blue Plains/NiceLands Deck (2v2) - 1",
-	"image_name": "Tandem Bike.jpg"
+	"image_name": "Tandem Bike.jpg",
+	"card_id": 448
   },
   {
 	"name": "Tapped Out",
@@ -5397,7 +5846,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Gunter's Blue Plains/IcyLands Deck (CP5) - 2",
-	"image_name": "Tapped Out.jpg"
+	"image_name": "Tapped Out.jpg",
+	"card_id": 449
   },
   {
 	"name": "Tax Reduction",
@@ -5409,7 +5859,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Uncommon",
-	"image_name": "Tax Reduction.jpg"
+	"image_name": "Tax Reduction.jpg",
+	"card_id": 450
   },
   {
 	"name": "Teeth Leaf",
@@ -5421,7 +5872,8 @@
 	"def": 10,
 	"ability": "Continuous",
 	"deck_info": "BMO's Useless Swamp Deck (CP2) - 1",
-	"image_name": "Teeth Leaf.jpg"
+	"image_name": "Teeth Leaf.jpg",
+	"card_id": 451
   },
   {
 	"name": "Teleport",
@@ -5433,7 +5885,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Jake's Cornfield Deck (CP1) - 2 : Finn's Blue Plains Deck (CP1) - 2 : Lady Rainicorn's SandyLand Deck (CP2) - 2",
-	"image_name": "Teleport.jpg"
+	"image_name": "Teleport.jpg",
+	"card_id": 452
   },
   {
 	"name": "Temple of the Sun",
@@ -5445,7 +5898,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Uncommon",
-	"image_name": "Temple of the Sun.jpg"
+	"image_name": "Temple of the Sun.jpg",
+	"card_id": 453
   },
   {
 	"name": "The Barrel",
@@ -5457,7 +5911,8 @@
 	"def": 5,
 	"ability": "Continuous",
 	"deck_info": "Charlie's Blue Plains/NiceLands Deck (2v2) - 1",
-	"image_name": "The Barrel.jpg"
+	"image_name": "The Barrel.jpg",
+	"card_id": 454
   },
   {
 	"name": "The Big Hen House",
@@ -5469,7 +5924,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Marceline's NiceLands/Useless Swamp Deck (CP4) - 1",
-	"image_name": "The Big Hen House.jpg"
+	"image_name": "The Big Hen House.jpg",
+	"card_id": 455
   },
   {
 	"name": "The Cooler",
@@ -5481,7 +5937,8 @@
 	"def": 7,
 	"ability": "Leaving Play",
 	"deck_info": "Gunter's Blue Plains/IcyLands Deck (CP5) - 1",
-	"image_name": "The Cooler.jpg"
+	"image_name": "The Cooler.jpg",
+	"card_id": 456
   },
   {
 	"name": "The Cooper",
@@ -5493,7 +5950,8 @@
 	"def": 8,
 	"ability": "",
 	"deck_info": "Grand Prix's SandyLands/IcyLands Deck (2v2) - 1",
-	"image_name": "The Cooper.jpg"
+	"image_name": "The Cooper.jpg",
+	"card_id": 457
   },
   {
 	"name": "The Dog",
@@ -5505,7 +5963,8 @@
 	"def": 7,
 	"ability": "",
 	"deck_info": "Fionna's Blue Plains Deck (CP6) - 2",
-	"image_name": "The Dog.jpg"
+	"image_name": "The Dog.jpg",
+	"card_id": 458
   },
   {
 	"name": "The Mariachi",
@@ -5517,7 +5976,8 @@
 	"def": 9,
 	"ability": "FLOOP",
 	"deck_info": "Lady Rainicorn's SandyLand Deck (CP2) - 2",
-	"image_name": "The Mariachi.jpg"
+	"image_name": "The Mariachi.jpg",
+	"card_id": 459
   },
   {
 	"name": "The Pig",
@@ -5529,7 +5989,8 @@
 	"def": 4,
 	"ability": "FLOOP",
 	"deck_info": "Finn's Blue Plains Deck (CP1) - 2",
-	"image_name": "The Pig.jpg"
+	"image_name": "The Pig.jpg",
+	"card_id": 460
   },
   {
 	"name": "The Sludger",
@@ -5541,7 +6002,8 @@
 	"def": 8,
 	"ability": "FLOOP",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Rare",
-	"image_name": "The Sludger.jpg"
+	"image_name": "The Sludger.jpg",
+	"card_id": 461
   },
   {
 	"name": "Timmy Magic Eyes",
@@ -5553,7 +6015,8 @@
 	"def": 6,
 	"ability": "Continuous",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Timmy Magic Eyes.jpg"
+	"image_name": "Timmy Magic Eyes.jpg",
+	"card_id": 462
   },
   {
 	"name": "Tiny Elephant",
@@ -5565,7 +6028,8 @@
 	"def": 6,
 	"ability": "",
 	"deck_info": "Fionna's Blue Plains Deck (CP6) - 2",
-	"image_name": "Tiny Elephant.jpg"
+	"image_name": "Tiny Elephant.jpg",
+	"card_id": 463
   },
   {
 	"name": "Tired Wombat",
@@ -5577,7 +6041,8 @@
 	"def": 5,
 	"ability": "Trigger",
 	"deck_info": "Gunter's Blue Plains/IcyLands Deck (CP5) - 2",
-	"image_name": "Tired Wombat.jpg"
+	"image_name": "Tired Wombat.jpg",
+	"card_id": 464
   },
   {
 	"name": "TNTimmy",
@@ -5589,7 +6054,8 @@
 	"def": 5,
 	"ability": "Leaving Play",
 	"deck_info": "Lemongrab's Cornfield/SandyLands Deck (CP5) - 2",
-	"image_name": "TNTimmy.jpg"
+	"image_name": "TNTimmy.jpg",
+	"card_id": 465
   },
   {
 	"name": "Toilet of Doom",
@@ -5601,7 +6067,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Lumpy Space Princess' Blue Plains/Useless Swamp Deck (Totally Rad Deck) (CP3) - 1 : For the Glory! Booster Pack (FTG) - Rare",
-	"image_name": "Toilet of Doom.jpg"
+	"image_name": "Toilet of Doom.jpg",
+	"card_id": 466
   },
   {
 	"name": "Tome of Ankhs",
@@ -5613,7 +6080,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Lady Rainicorn's SandyLand Deck (CP2) - 1",
-	"image_name": "Tome of Ankhs.jpg"
+	"image_name": "Tome of Ankhs.jpg",
+	"card_id": 467
   },
   {
 	"name": "Tornado Wall Of Fire",
@@ -5625,7 +6093,8 @@
 	"def": 10,
 	"ability": "",
 	"deck_info": "Cake's Cornfield Deck (CP6) - 2",
-	"image_name": "Tornado Wall Of Fire.jpg"
+	"image_name": "Tornado Wall Of Fire.jpg",
+	"card_id": 468
   },
   {
 	"name": "Tough Lumberjill",
@@ -5637,7 +6106,8 @@
 	"def": 6,
 	"ability": "Entering Play",
 	"deck_info": "Cake's Cornfield Deck (CP6) - 2",
-	"image_name": "Tough Lumberjill.jpg"
+	"image_name": "Tough Lumberjill.jpg",
+	"card_id": 469
   },
   {
 	"name": "Trained ZebraCorn Husker",
@@ -5649,7 +6119,8 @@
 	"def": 7,
 	"ability": "",
 	"deck_info": "Jake's Cornfield/NiceLands Deck\n (2v2) - 1",
-	"image_name": "Trained ZebraCorn Husker.jpg"
+	"image_name": "Trained ZebraCorn Husker.jpg",
+	"card_id": 470
   },
   {
 	"name": "Travelin' Farmer",
@@ -5661,7 +6132,8 @@
 	"def": 12,
 	"ability": "Leaving Play",
 	"deck_info": "Jake's Cornfield Deck (CP1) - 2",
-	"image_name": "Travelin' Farmer.jpg"
+	"image_name": "Travelin' Farmer.jpg",
+	"card_id": 471
   },
   {
 	"name": "Travelin' Skeleton",
@@ -5673,7 +6145,8 @@
 	"def": 8,
 	"ability": "FLOOP",
 	"deck_info": "Lumpy Space Princess' Blue Plains/Useless Swamp Deck (Totally Rad Deck) (CP3) - 1",
-	"image_name": "Travelin' Skeleton.jpg"
+	"image_name": "Travelin' Skeleton.jpg",
+	"card_id": 472
   },
   {
 	"name": "Travelin' Wizard",
@@ -5685,7 +6158,8 @@
 	"def": 3,
 	"ability": "Entering Play",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Rare",
-	"image_name": "Travelin' Wizard.jpg"
+	"image_name": "Travelin' Wizard.jpg",
+	"card_id": 473
   },
   {
 	"name": "Tree of Undeath",
@@ -5697,7 +6171,8 @@
 	"def": 6,
 	"ability": "FLOOP",
 	"deck_info": "BMO's Useless Swamp Deck (CP2) - 1",
-	"image_name": "Tree of Undeath.jpg"
+	"image_name": "Tree of Undeath.jpg",
+	"card_id": 474
   },
   {
 	"name": "Tree Trunks",
@@ -5709,7 +6184,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Hero Pack #1 (HP1) - 1",
-	"image_name": "Tree Trunks.jpg"
+	"image_name": "Tree Trunks.jpg",
+	"card_id": 475
   },
   {
 	"name": "Twinsies",
@@ -5721,7 +6197,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Grand Prix's SandyLands/IcyLands Deck (2v2) - 1",
-	"image_name": "Twinsies.jpg"
+	"image_name": "Twinsies.jpg",
+	"card_id": 476
   },
   {
 	"name": "Ultra Dog",
@@ -5733,7 +6210,8 @@
 	"def": 6,
 	"ability": "",
 	"deck_info": "Grand Prix's SandyLands/IcyLands Deck (2v2) - 1",
-	"image_name": "Ultra Dog.jpg"
+	"image_name": "Ultra Dog.jpg",
+	"card_id": 477
   },
   {
 	"name": "Unempty Coffin",
@@ -5745,7 +6223,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Lady Rainicorn's SandyLand Deck (CP2) - 2",
-	"image_name": "Unempty Coffin.jpg"
+	"image_name": "Unempty Coffin.jpg",
+	"card_id": 478
   },
   {
 	"name": "Unicyclops",
@@ -5757,7 +6236,8 @@
 	"def": 10,
 	"ability": "Continuous",
 	"deck_info": "Marceline's NiceLands/Useless Swamp Deck (CP4) - 2",
-	"image_name": "Unicyclops.jpg"
+	"image_name": "Unicyclops.jpg",
+	"card_id": 479
   },
   {
 	"name": "Uni-Knight",
@@ -5769,7 +6249,8 @@
 	"def": 4,
 	"ability": "Ignition",
 	"deck_info": "Finn's Blue Plains Deck (CP1) - 1 : For the Glory! Booster Pack (FTG) - Uncommon",
-	"image_name": "Uni-Knight.jpg"
+	"image_name": "Uni-Knight.jpg",
+	"card_id": 480
   },
   {
 	"name": "Vampire Lord",
@@ -5781,7 +6262,8 @@
 	"def": 8,
 	"ability": "",
 	"deck_info": "Fionna's Blue Plains Deck (CP6) - 1",
-	"image_name": "Vampire Lord.jpg"
+	"image_name": "Vampire Lord.jpg",
+	"card_id": 481
   },
   {
 	"name": "Void Thimble",
@@ -5793,7 +6275,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Cake's Cornfield Deck (CP6) - 1",
-	"image_name": "Void Thimble.jpg"
+	"image_name": "Void Thimble.jpg",
+	"card_id": 482
   },
   {
 	"name": "Volcano",
@@ -5805,7 +6288,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Lumpy Space Princess' Blue Plains/Useless Swamp Deck (Totally Rad Deck) (CP3) - 1",
-	"image_name": "Volcano.jpg"
+	"image_name": "Volcano.jpg",
+	"card_id": 483
   },
   {
 	"name": "Wake Up Call",
@@ -5817,7 +6301,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Gunter's Blue Plains/IcyLands Deck (CP5) - 1",
-	"image_name": "Wake Up Call.jpg"
+	"image_name": "Wake Up Call.jpg",
+	"card_id": 484
   },
   {
 	"name": "Wall of Chocolate",
@@ -5829,7 +6314,8 @@
 	"def": 9,
 	"ability": "Continuous",
 	"deck_info": "Princess Bubblegum's NiceLands Deck (CP3) - 2",
-	"image_name": "Wall of Chocolate.jpg"
+	"image_name": "Wall of Chocolate.jpg",
+	"card_id": 485
   },
   {
 	"name": "Wall of Ears",
@@ -5841,7 +6327,8 @@
 	"def": 4,
 	"ability": "Continuous",
 	"deck_info": "Jake's Cornfield Deck (CP1) - 2",
-	"image_name": "Wall of Ears.jpg"
+	"image_name": "Wall of Ears.jpg",
+	"card_id": 486
   },
   {
 	"name": "Wall of Sand",
@@ -5853,7 +6340,8 @@
 	"def": 12,
 	"ability": "Continuous",
 	"deck_info": "Lady Rainicorn's SandyLand Deck (CP2) - 2",
-	"image_name": "Wall of Sand.jpg"
+	"image_name": "Wall of Sand.jpg",
+	"card_id": 487
   },
   {
 	"name": "Wandering Bald Man",
@@ -5865,7 +6353,8 @@
 	"def": 10,
 	"ability": "Continuous",
 	"deck_info": "BMO's Useless Swamp Deck (CP2) - 2",
-	"image_name": "Wandering Bald Man.jpg"
+	"image_name": "Wandering Bald Man.jpg",
+	"card_id": 488
   },
   {
 	"name": "Water Logged",
@@ -5877,7 +6366,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Moniker's Useless Swamp/IcyLands Deck (2v2) - 1",
-	"image_name": "Water Logged.jpg"
+	"image_name": "Water Logged.jpg",
+	"card_id": 489
   },
   {
 	"name": "Weakened Warrior",
@@ -5889,7 +6379,8 @@
 	"def": 6,
 	"ability": "Trigger",
 	"deck_info": "Gunter's Blue Plains/IcyLands Deck (CP5) - 2",
-	"image_name": "Weakened Warrior.jpg"
+	"image_name": "Weakened Warrior.jpg",
+	"card_id": 490
   },
   {
 	"name": "Weary Trading Post",
@@ -5901,7 +6392,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Gunter's Blue Plains/IcyLands Deck (CP5) - 1",
-	"image_name": "Weary Trading Post.jpg"
+	"image_name": "Weary Trading Post.jpg",
+	"card_id": 491
   },
   {
 	"name": "Well-Dressed Wolf",
@@ -5913,7 +6405,8 @@
 	"def": 6,
 	"ability": "Continuous",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Well-Dressed Wolf.jpg"
+	"image_name": "Well-Dressed Wolf.jpg",
+	"card_id": 492
   },
   {
 	"name": "Windmill of Health",
@@ -5925,7 +6418,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Princess Bubblegum's NiceLands Deck (CP3) - 1",
-	"image_name": "Windmill of Health.jpg"
+	"image_name": "Windmill of Health.jpg",
+	"card_id": 493
   },
   {
 	"name": "Witch Slap",
@@ -5937,7 +6431,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Rare",
-	"image_name": "Witch Slap.jpg"
+	"image_name": "Witch Slap.jpg",
+	"card_id": 494
   },
   {
 	"name": "Witch Way",
@@ -5949,7 +6444,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Witch Way.jpg"
+	"image_name": "Witch Way.jpg",
+	"card_id": 495
   },
   {
 	"name": "Woad Blood",
@@ -5961,7 +6457,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Finn's Blue Plains Deck (CP1) - 1",
-	"image_name": "Woad Blood.jpg"
+	"image_name": "Woad Blood.jpg",
+	"card_id": 496
   },
   {
 	"name": "Woad Mobile Home",
@@ -5973,7 +6470,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Finn's Blue Plains Deck (CP1) - 2",
-	"image_name": "Woad Mobile Home.jpg"
+	"image_name": "Woad Mobile Home.jpg",
+	"card_id": 497
   },
   {
 	"name": "Woad Talisman",
@@ -5985,7 +6483,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Finn's Blue Plains Deck (CP1) - 2",
-	"image_name": "Woad Talisman.jpg"
+	"image_name": "Woad Talisman.jpg",
+	"card_id": 498
   },
   {
 	"name": "Woadic Chief",
@@ -5997,7 +6496,8 @@
 	"def": 10,
 	"ability": "Trigger",
 	"deck_info": "Finn's Blue Plains Deck (CP1) - 1",
-	"image_name": "Woadic Chief.jpg"
+	"image_name": "Woadic Chief.jpg",
+	"card_id": 499
   },
   {
 	"name": "Woadic Enchantress",
@@ -6009,7 +6509,8 @@
 	"def": 10,
 	"ability": "",
 	"deck_info": "Fionna's Blue Plains Deck (CP6) - 2",
-	"image_name": "Woadic Enchantress.jpg"
+	"image_name": "Woadic Enchantress.jpg",
+	"card_id": 500
   },
   {
 	"name": "Woadic Marauder",
@@ -6021,7 +6522,8 @@
 	"def": 9,
 	"ability": "Trigger",
 	"deck_info": "Finn's Blue Plains Deck (CP1) - 2",
-	"image_name": "Woadic Marauder.jpg"
+	"image_name": "Woadic Marauder.jpg",
+	"card_id": 501
   },
   {
 	"name": "Woadic Matriarch",
@@ -6033,7 +6535,8 @@
 	"def": 7,
 	"ability": "",
 	"deck_info": "Fionna's Blue Plains Deck (CP6) - 1",
-	"image_name": "Woadic Matriarch.jpg"
+	"image_name": "Woadic Matriarch.jpg",
+	"card_id": 502
   },
   {
 	"name": "Woadic Ring Leader",
@@ -6045,7 +6548,8 @@
 	"def": 4,
 	"ability": "Trigger",
 	"deck_info": "Gunter's Blue Plains/IcyLands Deck (CP5) - 2",
-	"image_name": "Woadic Ring Leader.jpg"
+	"image_name": "Woadic Ring Leader.jpg",
+	"card_id": 503
   },
   {
 	"name": "Woadic Weirdo",
@@ -6057,7 +6561,8 @@
 	"def": 7,
 	"ability": "",
 	"deck_info": "Fionna's Blue Plains Deck (CP6) - 2",
-	"image_name": "Woadic Weirdo.jpg"
+	"image_name": "Woadic Weirdo.jpg",
+	"card_id": 504
   },
   {
 	"name": "X-Large Spirit Soldier",
@@ -6069,7 +6574,8 @@
 	"def": 9,
 	"ability": "Continuous",
 	"deck_info": "Finn's Blue Plains Deck (CP1) - 2",
-	"image_name": "X-Large Spirit Soldier.jpg"
+	"image_name": "X-Large Spirit Soldier.jpg",
+	"card_id": 505
   },
   {
 	"name": "Yellow Gnome",
@@ -6081,7 +6587,8 @@
 	"def": 6,
 	"ability": "FLOOP",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Uncommon",
-	"image_name": "Yellow Gnome.jpg"
+	"image_name": "Yellow Gnome.jpg",
+	"card_id": 506
   },
   {
 	"name": "Yellow Lighthouse",
@@ -6093,7 +6600,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Common",
-	"image_name": "Yellow Lighthouse.jpg"
+	"image_name": "Yellow Lighthouse.jpg",
+	"card_id": 507
   },
   {
 	"name": "Yellow Slimey",
@@ -6105,7 +6613,8 @@
 	"def": 6,
 	"ability": "Continuous",
 	"deck_info": "For the Glory! Booster Pack (FTG) - Uncommon",
-	"image_name": "Yellow Slimey.jpg"
+	"image_name": "Yellow Slimey.jpg",
+	"card_id": 508
   },
   {
 	"name": "Young ZebraCorn Husker",
@@ -6117,7 +6626,8 @@
 	"def": 5,
 	"ability": "",
 	"deck_info": "Jake's Cornfield/NiceLands Deck\n (2v2) - 2",
-	"image_name": "Young ZebraCorn Husker.jpg"
+	"image_name": "Young ZebraCorn Husker.jpg",
+	"card_id": 509
   },
   {
 	"name": "ZaZo's Magic Seeds",
@@ -6129,7 +6639,8 @@
 	"def": "",
 	"ability": "",
 	"deck_info": "Lady Rainicorn's SandyLand Deck (CP2) - 2",
-	"image_name": "ZaZo's Magic Seeds.jpg"
+	"image_name": "ZaZo's Magic Seeds.jpg",
+	"card_id": 510
   },
   {
 	"name": "Cyclops",
@@ -6141,6 +6652,7 @@
 	"def": 1,
 	"ability": "",
 	"deck_info": "Adventure Time: Card Wars DVD",
-	"image_name": "Cyclops.jpg"
+	"image_name": "Cyclops.jpg",
+	"card_id": 511
   }
 ]
