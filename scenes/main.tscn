@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://owug2m35obl1"]
+[gd_scene load_steps=11 format=3 uid="uid://owug2m35obl1"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_mh3fo"]
 [ext_resource type="PackedScene" uid="uid://b5oih1txnoxfo" path="res://scenes/landscape.tscn" id="1_r6f6m"]
@@ -7,13 +7,17 @@
 [ext_resource type="FontFile" uid="uid://ca0g1l1k6v1sf" path="res://assets/fonts/Pendlefont Heavy.TTF" id="4_wuvrs"]
 [ext_resource type="Script" path="res://scripts/draw_card.gd" id="5_xxrii"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1ntns"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_p8yj1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ke7rg"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pejhu"]
 corner_radius_top_left = 25
 corner_radius_top_right = 25
 corner_radius_bottom_right = 25
 corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1ntns"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_mh3fo")
@@ -36,8 +40,8 @@ theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/outline_size = 25
 theme_override_fonts/font = ExtResource("4_wuvrs")
 theme_override_font_sizes/font_size = 55
-theme_override_styles/normal = SubResource("StyleBoxEmpty_1ntns")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_1ntns")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_p8yj1")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ke7rg")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_pejhu")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_1ntns")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_1ntns")
