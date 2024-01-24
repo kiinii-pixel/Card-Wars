@@ -15,18 +15,18 @@ func _ready():
 
 func _process(_delta):
 	if selected and not played:
-		if Input.is_action_just_pressed("left_click"): # Right when the click occurs
+		if Input.is_action_just_pressed("action_key"): # Right when the click occurs
 			Global.is_dragging = true
 			initial_pos = global_position # Safe the cards initial position
 			var tween = create_tween()
 			tween.tween_property(self, "global_position", get_global_mouse_position(), 0.05).set_ease(Tween.EASE_OUT)
 			await tween.finished
 
-		if Input.is_action_pressed("left_click"):
+		if Input.is_action_pressed("action_key"):
 			if z_index == 5:
 				global_position = get_global_mouse_position() #+ mouse_offset # Keep card on mouse pos
 			
-		elif Input.is_action_just_released("left_click"):
+		elif Input.is_action_just_released("action_key"):
 			Global.is_dragging = false
 			var tween = create_tween().set_parallel()
 			if is_inside:
@@ -102,10 +102,12 @@ func load_card():
 	var card_name = jpg.left(jpg.length() - 4) # card name without file extension
 	
 	var card_image_path = "res://assets/images/cards/art/" + landscape + "/" + card_type + "/" + card_name + ".png"
-	var frame_path = "res://assets/images/frames" + landscape + ".png"
 	
+	var frame_path
 	if card_type == "Creature":
 		frame_path = "res://assets/images/frames/" + landscape + "_Creature.png"
+	else:
+		frame_path = "res://assets/images/frames" + landscape + ".png"
 
 	var attack_value = String.num(card_data[card_id].get("atk"))
 	var defense_value = String.num(card_data[card_id].get("def"))
@@ -126,6 +128,6 @@ func load_card():
 				$Labels/CardName.add_theme_font_size_override("font_size", font_size)
 				max_characters += 4
 				font_size -= 1
-	
+
 	$Labels/LandscapeCardType.text = landscape + card_type
 	$Labels/Description.text = card_description

@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://owug2m35obl1"]
+[gd_scene load_steps=14 format=3 uid="uid://owug2m35obl1"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_mh3fo"]
 [ext_resource type="PackedScene" uid="uid://b5oih1txnoxfo" path="res://scenes/landscape.tscn" id="1_r6f6m"]
@@ -6,6 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://cqkl8l2uevwon" path="res://scenes/hand.tscn" id="4_v11k8"]
 [ext_resource type="FontFile" uid="uid://ca0g1l1k6v1sf" path="res://assets/fonts/Pendlefont Heavy.TTF" id="4_wuvrs"]
 [ext_resource type="Script" path="res://scripts/draw_card.gd" id="5_xxrii"]
+[ext_resource type="Texture2D" uid="uid://be6u36aq3sqnv" path="res://icon.svg" id="7_ufmem"]
+[ext_resource type="PackedScene" uid="uid://qga2y5wh6ftv" path="res://scenes/drag_component.tscn" id="8_hg626"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_p8yj1"]
 
@@ -18,6 +20,9 @@ corner_radius_bottom_right = 25
 corner_radius_bottom_left = 25
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1ntns"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sr0rc"]
+size = Vector2(128, 128)
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_mh3fo")
@@ -73,5 +78,15 @@ art_variant = 4
 
 [node name="Hand" parent="." instance=ExtResource("4_v11k8")]
 position = Vector2(995, 960)
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(255, 538)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_ufmem")
+
+[node name="drag_component" parent="Icon" instance=ExtResource("8_hg626")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Icon/drag_component"]
+shape = SubResource("RectangleShape2D_sr0rc")
 
 [connection signal="add_card" from="Draw Card" to="." method="_on_draw_card_add_card"]
