@@ -2,7 +2,7 @@ extends Node
 
 
 var card_data = {}
-var data_file_path = "res://Data/all_cards.json"
+var data_file_path = "res://data/all_cards.json"
 
 func _ready():
 	card_data = load_json_file(data_file_path)
