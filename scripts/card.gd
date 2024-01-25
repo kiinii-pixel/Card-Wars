@@ -83,7 +83,7 @@ func _on_area_2d_mouse_exited(): # reverses everything from above
 
 func _on_area_2d_body_entered(landscape: Landscape): # when the card enters a landscape
 	body_ref = landscape # current body
-	if landscape.get_child_count() == 3:
+	if landscape.get_child_count() == 2:
 		is_inside = true # if they overlap
 
 func _on_area_2d_body_exited(landscape: Landscape): # when card leaves current body
