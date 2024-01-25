@@ -57,21 +57,24 @@ func load_card():
 	if card_type == "Creature":
 		frame_path = "res://assets/images/frames/" + landscape + "_Creature.png"
 	else:
-		frame_path = "res://assets/images/frames" + landscape + ".png"
+		frame_path = "res://assets/images/frames/" + landscape + ".png"
 
-	var attack_value = String.num(card_data[card_id].get("atk"))
-	var defense_value = String.num(card_data[card_id].get("def"))
 	var cost_value = String.num(card_data[card_id].get("cost"))
+	if card_type == "Creature":
+		var attack_value = String.num(card_data[card_id].get("atk"))
+		var defense_value = String.num(card_data[card_id].get("def"))
+		
+		$CardFrame/CCAttack/AttackLabel.text = attack_value
+		if defense_value.length() > 1:
+			$CardFrame/CCDefense/DefenseLabel.add_theme_font_size_override("font_size", 56)
+		else:
+			$CardFrame/CCDefense/DefenseLabel.text = defense_value
+	$CardFrame/CostLabel.text = cost_value
+	$Labels/CardName.text = card_name
 
 	$CardFrame.texture = load(frame_path)
 	$CardImage.texture = load(card_image_path)
 
-	$CardFrame/CCAttack/AttackLabel.text = attack_value
-	if defense_value.length() > 1:
-		$CardFrame/CCDefense/DefenseLabel.add_theme_font_size_override("font_size", 56)
-	$CardFrame/CCDefense/DefenseLabel.text = defense_value
-	$CardFrame/CostLabel.text = cost_value
-	$Labels/CardName.text = card_name
 	var max_characters = 12
 	var font_size = 20
 	while card_name.length() > max_characters:

@@ -22,6 +22,7 @@ func _ready():
 	add_card(460)
 	add_card(499)
 	add_card(81)
+	#add_card(362)
 
 func add_cards(amount) -> void:
 	for _x in range(amount):
@@ -39,7 +40,8 @@ func add_card(card_id):
 func add_random_card():
 	var rng = RandomNumberGenerator.new()
 	var card = CARD.instantiate()
-	card.card_id = rng.randf_range(1, 512)
+	card.card_id = rng.randi_range(1, 512)
+	print(card.card_id)
 	add_child(card)
 	card.scale = Vector2(0.5, 0.5)
 
