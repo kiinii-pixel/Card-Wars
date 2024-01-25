@@ -1,12 +1,9 @@
 class_name Card extends Node2D
 
 @export var card_id = 7 # change to id of card you want
-# VARIABLES FOR DRAGGING
-var selected = false # true after mouse hovered over card
-var mouse_offset = Vector2(0, 0) # save where the mouse clicked on the card
+# CARD VARIABLES
 var played = false # true when dragged into play
 var body_ref : Landscape # reference to object that was hovered over (e.g. landscape) // : Object if other zones are implemented
-var initial_pos : Vector2 # save the cards initial position
 var is_inside = false # true if card is inside a landscape
 
 func _ready():
@@ -14,83 +11,36 @@ func _ready():
 	z_index = 4
 
 func _process(_delta):
-	if selected and not played:
-		if Input.is_action_just_pressed("action_key"): # Right when the click occurs
-			Global.is_dragging = true
-			initial_pos = global_position # Safe the cards initial position
-			var tween = create_tween()
-			tween.tween_property(self, "global_position", get_global_mouse_position(), 0.05).set_ease(Tween.EASE_OUT)
-			await tween.finished
-
-		if Input.is_action_pressed("action_key"):
-			if z_index == 5:
-				global_position = get_global_mouse_position() #+ mouse_offset # Keep card on mouse pos
-			
-		elif Input.is_action_just_released("action_key"):
-			Global.is_dragging = false
+#	if not played:
+#		#drag component allow drag
+	if Input.is_action_just_released("action_key"):
+		var drag_component = get_node("drag_component")
+		if is_inside:
+			drag_component.scale_down(0.5, 0.2)
 			var tween = create_tween().set_parallel()
-			if is_inside:
-				tween.tween_property(self, "global_position", body_ref.global_position, 0.2).set_ease(Tween.EASE_OUT)
-				tween.tween_property(self, "scale", Vector2(0.5, 0.5), 0.2).set_ease(Tween.EASE_OUT)
-				played = true
-				await tween.finished
-				scale = Vector2(1, 1)
-				get_parent().card_played.emit()
-				get_parent().remove_child(self)
-				body_ref.add_child(self)
-				position = Vector2(0, 0)
-				#played = true
-			else:
-				tween.tween_property(self, "global_position", initial_pos, 0.2).set_ease(Tween.EASE_IN)
+			tween.tween_property(self, "global_position", body_ref.global_position, 0.2).set_ease(Tween.EASE_OUT)
+			played = true
+			drag_component.allow_drag = false
+			await tween.finished
+			scale = Vector2(1, 1)
+			get_parent().card_played.emit()
+			get_parent().remove_child(self)
+			body_ref.add_child(self)
+			position = Vector2(0, 0)
+		elif drag_component.selected:
+			var tween = create_tween().set_parallel()
+			tween.tween_property(self, "global_position", drag_component.initial_pos, 0.2).set_ease(Tween.EASE_IN)
 
-func _on_area_2d_input_event(_viewport, event, _shape_idx):
-
-	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
-
-		if event.pressed:
-			mouse_offset = position - get_global_mouse_position() #save the mouse offset
-
-func _on_area_2d_mouse_entered(): # when you hover over the card
-
-	if not Global.is_dragging and not played: #if no other card is being dragged:
+func _on_mouse_entered(): # when you hover over the card
+	if not played: #if no other card is being dragged:
 		#if get_parent().get_child_count() > 0:
 		for child in get_parent().get_children():
 			if child.z_index == 5:
 				child.z_index = 4
-			var tween = create_tween()
-			tween.tween_property(child, "scale", Vector2(0.5, 0.5), 0.1).set_ease(Tween.EASE_OUT)
-			selected = false
 
-		selected = true
-		z_index = 5 # raise z index of this card
-
-		if not played:
-			# Scale up (card zoom)
-			var tween = create_tween().set_parallel(true)
-			tween.tween_property(self, "scale", Vector2(0.65, 0.65), 0.1).set_ease(Tween.EASE_IN)
-			#tween.tween_property(self, "position", position + Vector2(0, -50), 0.1).set_ease(Tween.EASE_IN)
-
-func _on_area_2d_mouse_exited(): # reverses everything from above
-
-	if Global.is_dragging == false:
-		selected = false
-		z_index = 4
-		if played == false:
-			# Scale down
-			var tween = create_tween().set_parallel(true)
-			tween.tween_property(self, "scale", Vector2(0.5, 0.5), 0.1).set_ease(Tween.EASE_OUT)
-			#tween.tween_property(self, "position", position + Vector2(0, 50), 0.1).set_ease(Tween.EASE_OUT)
-
-func _on_area_2d_body_entered(landscape: Landscape): # when the card enters a landscape
-	body_ref = landscape # current body
-	if landscape.get_child_count() == 3:
-		is_inside = true # if they overlap
-
-func _on_area_2d_body_exited(landscape: Landscape): # when card leaves current body
-	if body_ref == landscape:
-		is_inside = false
-		#if body ref = body exited
-
+func _on_mouse_exited(): # reverses everything from above
+	pass
+	
 func load_card():
 	#LOAD CARD DATA
 	var card_data = StaticData.return_data() # all data
@@ -131,3 +81,13 @@ func load_card():
 
 	$Labels/LandscapeCardType.text = landscape + card_type
 	$Labels/Description.text = card_description
+
+func _on_drag_component_body_entered(landscape: Landscape):
+	body_ref = landscape # current body
+	if landscape.get_child_count() == 3:
+		is_inside = true # if they overlap
+
+func _on_drag_component_body_exited(landscape: Landscape):
+	if body_ref == landscape:
+		is_inside = false
+		#if body ref = body exited

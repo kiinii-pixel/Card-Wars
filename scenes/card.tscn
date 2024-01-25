@@ -1,28 +1,23 @@
-[gd_scene load_steps=8 format=3 uid="uid://bco1m6ixdmiil"]
+[gd_scene load_steps=9 format=3 uid="uid://bco1m6ixdmiil"]
 
 [ext_resource type="Script" path="res://scripts/card.gd" id="1_xodya"]
 [ext_resource type="Texture2D" uid="uid://ct5331atokkqs" path="res://assets/images/frames/Rainbow_Creature.png" id="3_mw3bc"]
 [ext_resource type="Texture2D" uid="uid://b3xeo685h6h7v" path="res://assets/images/cards/art/Rainbow/Creature/The Pig.png" id="4_0v5ny"]
 [ext_resource type="Theme" uid="uid://cbg740i6iql4" path="res://assets/themes/pendlefont_medium.tres" id="4_ibhnl"]
 [ext_resource type="FontFile" uid="uid://ca0g1l1k6v1sf" path="res://assets/Fonts/Pendlefont Heavy.TTF" id="5_bysvj"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_4b713"]
-size = Vector2(367.667, 518.667)
+[ext_resource type="PackedScene" uid="uid://qga2y5wh6ftv" path="res://scenes/drag_component.tscn" id="6_457fh"]
 
 [sub_resource type="Theme" id="Theme_rcflo"]
 default_font = ExtResource("5_bysvj")
 Label/colors/font_color = Color(0.129412, 0.141176, 0.160784, 1)
 Label/font_sizes/font_size = 25
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4b713"]
+size = Vector2(367.667, 518.667)
+
 [node name="Card" type="Node2D"]
 scale = Vector2(0.75, 0.75)
 script = ExtResource("1_xodya")
-
-[node name="Area2D" type="Area2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(-1.16666, -0.666656)
-shape = SubResource("RectangleShape2D_4b713")
 
 [node name="CardImage" type="Sprite2D" parent="."]
 position = Vector2(-0.949318, -90.0385)
@@ -134,8 +129,11 @@ text = "FLOOP >>> In this space, find the card's description and effects."
 horizontal_alignment = 1
 autowrap_mode = 2
 
-[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
-[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
-[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]
-[connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
-[connection signal="mouse_exited" from="Area2D" to="." method="_on_area_2d_mouse_exited"]
+[node name="drag_component" parent="." instance=ExtResource("6_457fh")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="drag_component"]
+position = Vector2(-1.16666, -0.666656)
+shape = SubResource("RectangleShape2D_4b713")
+
+[connection signal="body_entered" from="drag_component" to="." method="_on_drag_component_body_entered"]
+[connection signal="body_exited" from="drag_component" to="." method="_on_drag_component_body_exited"]

@@ -17,11 +17,11 @@ func _ready():
 	position.x = get_viewport().get_visible_rect().size.x / 2
 	position.y = get_viewport().get_visible_rect().size.y - 100
 #	add_cards(1)
-	add_specific_card(7)
-	add_specific_card(505)
-	add_specific_card(460)
-	add_specific_card(499)
-	add_specific_card(81)
+	add_card(7)
+	add_card(505)
+	add_card(460)
+	add_card(499)
+	add_card(81)
 
 func add_cards(amount) -> void:
 	for _x in range(amount):
@@ -30,9 +30,16 @@ func add_cards(amount) -> void:
 		add_child(card)
 		card.scale = Vector2(0.5, 0.5)
 
-func add_specific_card(id):
+func add_card(card_id):
 	var card = CARD.instantiate()
-	card.card_id = id
+	card.card_id = card_id
+	add_child(card)
+	card.scale = Vector2(0.5, 0.5)
+
+func add_random_card():
+	var rng = RandomNumberGenerator.new()
+	var card = CARD.instantiate()
+	card.card_id = rng.randf_range(1, 512)
 	add_child(card)
 	card.scale = Vector2(0.5, 0.5)
 
