@@ -1,13 +1,15 @@
-[gd_scene load_steps=14 format=3 uid="uid://owug2m35obl1"]
+[gd_scene load_steps=16 format=3 uid="uid://owug2m35obl1"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_mh3fo"]
 [ext_resource type="PackedScene" uid="uid://b5oih1txnoxfo" path="res://scenes/landscape.tscn" id="1_r6f6m"]
 [ext_resource type="PackedScene" uid="uid://clyo1ca2sglx8" path="res://scenes/interface.tscn" id="3_82cvq"]
+[ext_resource type="Theme" uid="uid://cbg740i6iql4" path="res://assets/themes/pendlefont_medium.tres" id="3_y5g1q"]
 [ext_resource type="PackedScene" uid="uid://cqkl8l2uevwon" path="res://scenes/hand.tscn" id="4_v11k8"]
-[ext_resource type="FontFile" uid="uid://ca0g1l1k6v1sf" path="res://assets/fonts/Pendlefont Heavy.TTF" id="4_wuvrs"]
+[ext_resource type="FontFile" uid="uid://ca0g1l1k6v1sf" path="res://assets/Fonts/Pendlefont Heavy.TTF" id="4_wuvrs"]
 [ext_resource type="Script" path="res://scripts/draw_card.gd" id="5_xxrii"]
 [ext_resource type="Texture2D" uid="uid://be6u36aq3sqnv" path="res://icon.svg" id="7_ufmem"]
 [ext_resource type="PackedScene" uid="uid://qga2y5wh6ftv" path="res://scenes/drag_component.tscn" id="8_hg626"]
+[ext_resource type="Script" path="res://scripts/random_card.gd" id="9_dy4o8"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_p8yj1"]
 
@@ -34,17 +36,18 @@ layer = -1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = 32.0
-offset_top = 942.0
-offset_right = 424.0
-offset_bottom = 1052.0
+offset_left = 96.0
+offset_top = 853.0
+offset_right = 247.0
+offset_bottom = 913.0
 grow_horizontal = 0
 size_flags_horizontal = 4
+theme = ExtResource("3_y5g1q")
 theme_override_colors/font_color = Color(0.121569, 0.121569, 0.121569, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
-theme_override_constants/outline_size = 25
+theme_override_constants/outline_size = 10
 theme_override_fonts/font = ExtResource("4_wuvrs")
-theme_override_font_sizes/font_size = 55
+theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = SubResource("StyleBoxEmpty_p8yj1")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_ke7rg")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_pejhu")
@@ -89,4 +92,14 @@ texture = ExtResource("7_ufmem")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Icon/drag_component"]
 shape = SubResource("RectangleShape2D_sr0rc")
 
+[node name="Random Card" type="Button" parent="."]
+offset_left = 100.0
+offset_top = 756.0
+offset_right = 252.0
+offset_bottom = 817.0
+theme = ExtResource("3_y5g1q")
+text = "Random Card"
+script = ExtResource("9_dy4o8")
+
 [connection signal="add_card" from="Draw Card" to="." method="_on_draw_card_add_card"]
+[connection signal="pressed" from="Random Card" to="." method="_on_random_card_pressed"]

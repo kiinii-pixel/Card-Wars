@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://cmpkl3fd0mkwm"
-path="res://.godot/imported/Pendlefont Thin.TTF-6554e11aa39c42f8d6fb9f5d15b9ba47.fontdata"
+path="res://.godot/imported/Pendlefont Thin.TTF-e697d3635d32e07f500c0c6549e2863f.fontdata"
 
 [deps]
 
-source_file="res://assets/fonts/Pendlefont Thin.TTF"
-dest_files=["res://.godot/imported/Pendlefont Thin.TTF-6554e11aa39c42f8d6fb9f5d15b9ba47.fontdata"]
+source_file="res://assets/Fonts/Pendlefont Thin.TTF"
+dest_files=["res://.godot/imported/Pendlefont Thin.TTF-e697d3635d32e07f500c0c6549e2863f.fontdata"]
 
 [params]
 
