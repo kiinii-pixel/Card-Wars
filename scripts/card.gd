@@ -2,45 +2,54 @@ class_name Card extends Node2D
 
 @export var card_id = 7 # change to id of card you want
 # CARD VARIABLES
-var played = false # true when dragged into play
-var body_ref : Landscape # reference to object that was hovered over (e.g. landscape) // : Object if other zones are implemented
+var played = false # true when dragged into play // drag_component.allow_drag should be enough
+var body_ref : Landscape # reference to object that was hovered over (e.g. landscape)
+# : Object if other zones are implemented
 var is_inside = false # true if card is inside a landscape
+var drag_component
 
 func _ready():
 	load_card()
 	z_index = 4
+	drag_component = get_node("drag_component")
 
 func _process(_delta):
-#	if not played:
-#		#drag component allow drag
-	if Input.is_action_just_released("action_key"):
-		var drag_component = get_node("drag_component")
-		if is_inside:
-			drag_component.scale_down(0.5, 0.2)
-			var tween = create_tween().set_parallel()
-			tween.tween_property(self, "global_position", body_ref.global_position, 0.2).set_ease(Tween.EASE_OUT)
-			played = true
-			drag_component.allow_drag = false
-			await tween.finished
-			scale = Vector2(1, 1)
-			get_parent().card_played.emit()
-			get_parent().remove_child(self)
-			body_ref.add_child(self)
-			position = Vector2(0, 0)
-		elif drag_component.selected:
-			var tween = create_tween().set_parallel()
-			tween.tween_property(self, "global_position", drag_component.initial_pos, 0.2).set_ease(Tween.EASE_IN)
+	if Input.is_action_just_released("action_key"): # When button is released
+		if is_inside and drag_component.selected: # If the card is released/placed inside a Landscape
+			play_card()
 
-func _on_mouse_entered(): # when you hover over the card
-	if not played: #if no other card is being dragged:
-		#if get_parent().get_child_count() > 0:
+		elif drag_component.selected and not played:
+			drag_component.move(drag_component.initial_pos, 0.2)
+
+func play_card():
+	Global.is_dragging = false
+	drag_component.scale_down(0.5, 0.2)
+	await drag_component.move(body_ref.global_position, 0.2)
+	drag_component.allow_drag = false
+	played = true
+	is_inside = false
+	#scale = Vector2(1, 1)
+#	get_parent().card_played.emit()
+	get_parent().remove_child(self)
+	body_ref.add_child(self)
+	position = Vector2(0, 0)
+	scale = Vector2(1, 1)
+	#z_index = 4
+
+func _on_drag_component_mouse_entered(): # when you hover over the card
+	if not played and !Global.is_dragging:
 		for child in get_parent().get_children():
 			if child.z_index == 5:
 				child.z_index = 4
+				child.drag_component.scale_down(0.5, 0.1)
+				child.drag_component.selected = false
+		drag_component.scale_up(0.65, 0.1)
+		z_index = 5 # raise z index of this card
+		drag_component.selected = true
 
-func _on_mouse_exited(): # reverses everything from above
+func _on_drag_component_mouse_exited(): # reverses everything from above
 	pass
-	
+
 func load_card():
 	#LOAD CARD DATA
 	var card_data = StaticData.return_data() # all data
@@ -51,7 +60,8 @@ func load_card():
 	var jpg = card_data[card_id].get("image_name") # original name (.jpg)
 	var card_name = jpg.left(jpg.length() - 4) # card name without file extension
 	
-	var card_image_path = "res://assets/images/cards/art/" + landscape + "/" + card_type + "/" + card_name + ".png"
+	var card_image_path = "res://assets/images/cards/art/" + landscape + "/" \
+	+ card_type + "/" + card_name + ".png"
 	
 	var frame_path
 	if card_type == "Creature":
@@ -59,7 +69,9 @@ func load_card():
 	else:
 		frame_path = "res://assets/images/frames/" + landscape + ".png"
 
-	var cost_value = String.num(card_data[card_id].get("cost"))
+	if card_data[card_id].get("cost"):
+		var cost_value = String.num(card_data[card_id].get("cost"))
+		$CardFrame/CostLabel.text = cost_value
 	if card_type == "Creature":
 		var attack_value = String.num(card_data[card_id].get("atk"))
 		var defense_value = String.num(card_data[card_id].get("def"))
@@ -69,7 +81,6 @@ func load_card():
 			$CardFrame/CCDefense/DefenseLabel.add_theme_font_size_override("font_size", 56)
 		else:
 			$CardFrame/CCDefense/DefenseLabel.text = defense_value
-	$CardFrame/CostLabel.text = cost_value
 	$Labels/CardName.text = card_name
 
 	$CardFrame.texture = load(frame_path)
@@ -86,6 +97,7 @@ func load_card():
 	$Labels/Description.text = card_description
 
 func _on_drag_component_body_entered(landscape: Landscape):
+	is_inside = false
 	body_ref = landscape # current body
 	if landscape.get_child_count() == 3:
 		is_inside = true # if they overlap

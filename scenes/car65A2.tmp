@@ -137,5 +137,3 @@ shape = SubResource("RectangleShape2D_4b713")
 
 [connection signal="body_entered" from="drag_component" to="." method="_on_drag_component_body_entered"]
 [connection signal="body_exited" from="drag_component" to="." method="_on_drag_component_body_exited"]
-[connection signal="mouse_entered" from="drag_component" to="." method="_on_drag_component_mouse_entered"]
-[connection signal="mouse_exited" from="drag_component" to="." method="_on_drag_component_mouse_exited"]

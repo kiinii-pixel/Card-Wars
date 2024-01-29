@@ -22,7 +22,7 @@ func _ready():
 	add_card(460)
 	add_card(499)
 	add_card(81)
-	#add_card(362)
+	#add_card(26)
 
 func add_cards(amount) -> void:
 	for _x in range(amount):
@@ -42,6 +42,8 @@ func add_random_card():
 	var card = CARD.instantiate()
 	card.card_id = rng.randi_range(1, 512)
 	print(card.card_id)
+#	while !FileAccess.file_exists(card_data[card.card_id]): # While the card doesnt have an image
+#		card.card_id = rng.randi_range(1, 512)
 	add_child(card)
 	card.scale = Vector2(0.5, 0.5)
 
