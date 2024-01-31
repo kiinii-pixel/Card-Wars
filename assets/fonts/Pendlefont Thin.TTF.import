@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://3fiaey4jsd3x"
-path="res://.godot/imported/Pendlefont Medium.TTF-ebf53c265a0b49d48fcdb3de966b6cd2.fontdata"
+uid="uid://cmpkl3fd0mkwm"
+path="res://.godot/imported/Pendlefont Thin.TTF-6554e11aa39c42f8d6fb9f5d15b9ba47.fontdata"
 
 [deps]
 
-source_file="res://assets/Fonts/Pendlefont Medium.TTF"
-dest_files=["res://.godot/imported/Pendlefont Medium.TTF-ebf53c265a0b49d48fcdb3de966b6cd2.fontdata"]
+source_file="res://assets/fonts/Pendlefont Thin.TTF"
+dest_files=["res://.godot/imported/Pendlefont Thin.TTF-6554e11aa39c42f8d6fb9f5d15b9ba47.fontdata"]
 
 [params]
 
