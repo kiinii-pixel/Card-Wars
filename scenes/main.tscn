@@ -1,27 +1,14 @@
-[gd_scene load_steps=16 format=3 uid="uid://owug2m35obl1"]
+[gd_scene load_steps=11 format=3 uid="uid://owug2m35obl1"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_mh3fo"]
 [ext_resource type="PackedScene" uid="uid://b5oih1txnoxfo" path="res://scenes/landscape.tscn" id="1_r6f6m"]
 [ext_resource type="PackedScene" uid="uid://clyo1ca2sglx8" path="res://scenes/interface.tscn" id="3_82cvq"]
-[ext_resource type="Theme" uid="uid://cbg740i6iql4" path="res://assets/themes/pendlefont_medium.tres" id="3_y5g1q"]
-[ext_resource type="FontFile" uid="uid://ca0g1l1k6v1sf" path="res://assets/fonts/Pendlefont Heavy.TTF" id="4_qyyn8"]
+[ext_resource type="Theme" uid="uid://cmfvdnu5kgo71" path="res://assets/themes/button_theme.tres" id="3_bno0n"]
 [ext_resource type="PackedScene" uid="uid://cqkl8l2uevwon" path="res://scenes/hand.tscn" id="4_v11k8"]
 [ext_resource type="Script" path="res://scripts/draw_card.gd" id="5_xxrii"]
 [ext_resource type="Texture2D" uid="uid://be6u36aq3sqnv" path="res://icon.svg" id="7_ufmem"]
 [ext_resource type="PackedScene" uid="uid://qga2y5wh6ftv" path="res://scenes/drag_component.tscn" id="8_hg626"]
 [ext_resource type="Script" path="res://scripts/random_card.gd" id="9_dy4o8"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_p8yj1"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ke7rg"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pejhu"]
-corner_radius_top_left = 25
-corner_radius_top_right = 25
-corner_radius_bottom_right = 25
-corner_radius_bottom_left = 25
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1ntns"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sr0rc"]
 size = Vector2(128, 128)
@@ -33,51 +20,71 @@ script = ExtResource("1_mh3fo")
 layer = -1
 
 [node name="Draw Card" type="Button" parent="."]
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = 96.0
-offset_top = 853.0
-offset_right = 247.0
-offset_bottom = 913.0
-grow_horizontal = 0
+offset_left = 100.0
+offset_top = 856.0
+offset_right = 251.0
+offset_bottom = 916.0
 size_flags_horizontal = 4
-theme = ExtResource("3_y5g1q")
-theme_override_colors/font_color = Color(0.121569, 0.121569, 0.121569, 1)
+theme = ExtResource("3_bno0n")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
-theme_override_constants/outline_size = 10
-theme_override_fonts/font = ExtResource("4_qyyn8")
-theme_override_font_sizes/font_size = 20
-theme_override_styles/normal = SubResource("StyleBoxEmpty_p8yj1")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_ke7rg")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_pejhu")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_1ntns")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_1ntns")
-action_mode = 0
 text = "Draw Card"
 script = ExtResource("5_xxrii")
 
 [node name="Landscapes" type="Node2D" parent="."]
-position = Vector2(995, 500)
+position = Vector2(995, 621)
+metadata/_edit_group_ = true
 
 [node name="Landscape" parent="Landscapes" instance=ExtResource("1_r6f6m")]
 position = Vector2(-393, 0)
 scale = Vector2(0.5, 0.5)
 art_variant = 2
+landscape_type = 0
 
 [node name="Landscape2" parent="Landscapes" instance=ExtResource("1_r6f6m")]
 position = Vector2(-131, 0)
 scale = Vector2(0.5, 0.5)
 art_variant = 1
+landscape_type = 0
 
 [node name="Landscape3" parent="Landscapes" instance=ExtResource("1_r6f6m")]
 position = Vector2(131, 0)
 scale = Vector2(0.5, 0.5)
+landscape_type = 0
 
 [node name="Landscape4" parent="Landscapes" instance=ExtResource("1_r6f6m")]
 position = Vector2(393, 0)
 scale = Vector2(0.5, 0.5)
 art_variant = 4
+landscape_type = 0
+
+[node name="EnemyLandscapes" type="Node2D" parent="."]
+position = Vector2(995, 283)
+rotation = 3.14159
+metadata/_edit_group_ = true
+
+[node name="Landscape" parent="EnemyLandscapes" instance=ExtResource("1_r6f6m")]
+position = Vector2(-393, 0)
+scale = Vector2(0.5, 0.5)
+art_variant = 1
+landscape_type = 1
+
+[node name="Landscape2" parent="EnemyLandscapes" instance=ExtResource("1_r6f6m")]
+position = Vector2(-131, 0)
+scale = Vector2(0.5, 0.5)
+art_variant = 2
+landscape_type = 1
+
+[node name="Landscape3" parent="EnemyLandscapes" instance=ExtResource("1_r6f6m")]
+position = Vector2(131, 0)
+scale = Vector2(0.5, 0.5)
+landscape_type = 1
+
+[node name="Landscape4" parent="EnemyLandscapes" instance=ExtResource("1_r6f6m")]
+position = Vector2(393, 0)
+scale = Vector2(0.5, 0.5)
+art_variant = 4
+landscape_type = 1
 
 [node name="Hand" parent="." instance=ExtResource("4_v11k8")]
 position = Vector2(995, 960)
@@ -97,7 +104,7 @@ offset_left = 100.0
 offset_top = 756.0
 offset_right = 252.0
 offset_bottom = 817.0
-theme = ExtResource("3_y5g1q")
+theme = ExtResource("3_bno0n")
 text = "Random Card"
 script = ExtResource("9_dy4o8")
 

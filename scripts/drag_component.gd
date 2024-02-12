@@ -27,14 +27,14 @@ func _process(_delta):
 func _on_mouse_entered(): # when you hover over the card
 	if not Global.is_dragging and allow_drag: # If no other card is being dragged:
 		selected = true # Select current card
-		scale_up(0.6, 0.1) # Scale up current card
+		scale_up(0.65, 0.1) # Scale up current card
 		get_parent().z_index = 5
 
 func _on_mouse_exited():
 	if not Global.is_dragging and allow_drag:
 		selected = false
-		
-	if get_parent().scale == Vector2(0.6, 0.6):
+
+	if get_parent().scale == Vector2(0.65, 0.65):
 		scale_down(0.5, 0.1)
 	get_parent().z_index = 4
 

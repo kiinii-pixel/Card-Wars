@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://6484fn40ihwf"
-path="res://.godot/imported/cornfields2.jpg-b12da9424a2efa0e87cb7520d272ef26.ctex"
+uid="uid://11pejnoegj7l"
+path="res://.godot/imported/04.png-3e10d7d82de729a73794ba36ebc5e270.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/landscapes/cornfields2.jpg"
-dest_files=["res://.godot/imported/cornfields2.jpg-b12da9424a2efa0e87cb7520d272ef26.ctex"]
+source_file="res://assets/images/landscapes/04.png"
+dest_files=["res://.godot/imported/04.png-3e10d7d82de729a73794ba36ebc5e270.ctex"]
 
 [params]
 

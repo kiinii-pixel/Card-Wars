@@ -1,0 +1,60 @@
+[gd_resource type="Theme" load_steps=8 format=3 uid="uid://cmfvdnu5kgo71"]
+
+[ext_resource type="FontFile" uid="uid://3fiaey4jsd3x" path="res://assets/fonts/Pendlefont Medium.TTF" id="1_crqik"]
+[ext_resource type="FontFile" uid="uid://ca0g1l1k6v1sf" path="res://assets/fonts/Pendlefont Heavy.TTF" id="1_ecaja"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g3gmu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d1m0q"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jttfs"]
+bg_color = Color(0.498039, 0.560784, 0.752941, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 0.933333)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qwrsc"]
+bg_color = Color(0.388235, 0.419608, 0.572549, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 0.933333)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yixlb"]
+bg_color = Color(0.333333, 0.32549, 0.482353, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 0.933333)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 5
+
+[resource]
+default_font = ExtResource("1_crqik")
+Button/colors/font_color = Color(1, 1, 1, 1)
+Button/font_sizes/font_size = 20
+Button/fonts/font = ExtResource("1_ecaja")
+Button/styles/disabled = SubResource("StyleBoxEmpty_g3gmu")
+Button/styles/focus = SubResource("StyleBoxEmpty_d1m0q")
+Button/styles/hover = SubResource("StyleBoxFlat_jttfs")
+Button/styles/normal = SubResource("StyleBoxFlat_qwrsc")
+Button/styles/pressed = SubResource("StyleBoxFlat_yixlb")
+Label/colors/font_color = Color(0.129412, 0.141176, 0.160784, 1)
+Label/font_sizes/font_size = 25
