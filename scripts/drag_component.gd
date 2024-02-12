@@ -33,9 +33,10 @@ func _on_mouse_entered(): # when you hover over the card
 func _on_mouse_exited():
 	if not Global.is_dragging and allow_drag:
 		selected = false
-		if get_parent().scale == Vector2(0.6, 0.6):
-			scale_down(0.5, 0.1)
-		get_parent().z_index = 4
+		
+	if get_parent().scale == Vector2(0.6, 0.6):
+		scale_down(0.5, 0.1)
+	get_parent().z_index = 4
 
 func follow_mouse():
 	get_parent().global_position = get_global_mouse_position()

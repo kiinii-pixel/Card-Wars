@@ -6,11 +6,11 @@ var played = false # true when dragged into play // drag_component.allow_drag sh
 var body_ref : Landscape # reference to object that was hovered over (e.g. landscape)
 # : Object if other zones are implemented
 var is_inside = false # true if card is inside a landscape
-var drag_component
+var drag_component # drag component node
 
 func _ready():
-	load_card()
-	z_index = 4
+	load_card() # load card image and text
+	z_index = 4 # z_index is initialized as 4. Elements on top are set to 5.
 	drag_component = get_node("drag_component")
 
 func _process(_delta):
@@ -97,10 +97,10 @@ func load_card():
 	$Labels/Description.text = card_description
 
 func _on_drag_component_body_entered(landscape: Landscape):
-	is_inside = false
-	body_ref = landscape # current body
+	#is_inside = false
 	if landscape.get_child_count() == 3:
 		is_inside = true # if they overlap
+		body_ref = landscape # current body
 
 func _on_drag_component_body_exited(landscape: Landscape):
 	if body_ref == landscape:

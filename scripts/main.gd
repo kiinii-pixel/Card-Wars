@@ -8,4 +8,3 @@ func _on_draw_card_add_card():
 func _on_random_card_pressed():
 	var hand = get_node("Hand")
 	hand.add_random_card()
-
