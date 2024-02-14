@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://7wknvewfkv0e"]
 
 [ext_resource type="Script" path="res://scripts/hand3d.gd" id="1_mbmuw"]
-[ext_resource type="PackedScene" uid="uid://bbkje3fixpirf" path="res://scenes/card3d.tscn" id="2_550ii"]
+[ext_resource type="PackedScene" uid="uid://cqbgk1d2m8g18" path="res://assets/3d/card.blend" id="2_2dmkb"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_l6lkc"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -35,10 +35,11 @@ shadow_enabled = true
 script = ExtResource("1_mbmuw")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.259864, 0.965645, 0, -0.965645, 0.259864, 0, 4.46981, 1.72195)
+transform = Transform3D(1, 0, 0, 0, 0.259864, 0.965645, 0, -0.965645, 0.259864, 0, 8.93434, 4.99128)
 
 [node name="Table" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 0, 0, 0)
 mesh = SubResource("PlaneMesh_jam80")
 
-[node name="Card" parent="." instance=ExtResource("2_550ii")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.87414, 0)
+[node name="card" parent="." instance=ExtResource("2_2dmkb")]
+transform = Transform3D(1, 0, 0, 0, 0.000226931, 1, 0, -1, 0.000226931, 0, 0.846845, 0)
