@@ -23,7 +23,7 @@ func _process(_delta):
 
 func play_card():
 	Global.is_dragging = false
-	drag_component.scale_down(0.5, 0.2)
+	drag_component.scale_down(0.25, 0.2)
 	await drag_component.move(body_ref.global_position, 0.2)
 	drag_component.allow_drag = false
 	played = true
@@ -41,9 +41,9 @@ func _on_drag_component_mouse_entered(): # when you hover over the card
 		for child in get_parent().get_children():
 			if child.z_index == 5:
 				child.z_index = 4
-				child.drag_component.scale_down(0.5, 0.1)
+				child.drag_component.scale_down(0.25, 0.1)
 				child.drag_component.selected = false
-		drag_component.scale_up(0.65, 0.1)
+		drag_component.scale_up(0.3, 0.1)
 		z_index = 5 # raise z index of this card
 		drag_component.selected = true
 
@@ -71,30 +71,30 @@ func load_card():
 
 	if card_data[card_id].get("cost"):
 		var cost_value = String.num(card_data[card_id].get("cost"))
-		$CardFrame/CostLabel.text = cost_value
+		%CostLabel.text = cost_value
 	if card_type == "Creature":
 		var attack_value = String.num(card_data[card_id].get("atk"))
 		var defense_value = String.num(card_data[card_id].get("def"))
 		
-		$CardFrame/CCAttack/AttackLabel.text = attack_value
+		%AttackLabel.text = attack_value
 		if defense_value.length() > 1:
-			$CardFrame/CCDefense/DefenseLabel.add_theme_font_size_override("font_size", 56)
+			%DefenseLabel.add_theme_font_size_override("font_size", 56)
 		else:
-			$CardFrame/CCDefense/DefenseLabel.text = defense_value
-	$Labels/CardName.text = card_name
+			%DefenseLabel.text = defense_value
+	%CardName.text = card_name
 
-	$CardFrame.texture = load(frame_path)
-	$CardImage.texture = load(card_image_path)
+	%CardFrame.texture = load(frame_path)
+	%CardImage.texture = load(card_image_path)
 
 	var max_characters = 12
 	var font_size = 20
 	while card_name.length() > max_characters:
-				$Labels/CardName.add_theme_font_size_override("font_size", font_size)
+				%CardName.add_theme_font_size_override("font_size", font_size)
 				max_characters += 4
 				font_size -= 1
 
-	$Labels/LandscapeCardType.text = landscape + card_type
-	$Labels/Description.text = card_description
+	%LandscapeCardType.text = landscape + card_type
+	%Description.text = card_description
 
 func _on_drag_component_body_entered(landscape: Landscape):
 	#is_inside = false

@@ -29,13 +29,13 @@ func add_cards(amount) -> void:
 		var card = CARD.instantiate()
 		#card.load_image()
 		add_child(card)
-		card.scale = Vector2(0.5, 0.5)
+		card.scale = Vector2(0.25, 0.25)
 
 func add_card(card_id):
 	var card = CARD.instantiate()
 	card.card_id = card_id
 	add_child(card)
-	card.scale = Vector2(0.5, 0.5)
+	card.scale = Vector2(0.25, 0.25)
 
 func add_random_card():
 	var rng = RandomNumberGenerator.new()
@@ -45,13 +45,13 @@ func add_random_card():
 #	while !FileAccess.file_exists(card_data[card.card_id]): # While the card doesnt have an image
 #		card.card_id = rng.randi_range(1, 512)
 	add_child(card)
-	card.scale = Vector2(0.5, 0.5)
+	card.scale = Vector2(0.25, 0.25)
 
 func _on_child_order_changed():
 	hand = self
 	
 	for card in hand.get_children():
-		var hand_ratio = 0.5
+		var hand_ratio = 0.25
 
 		if get_child_count() > 1:
 			hand_ratio = float(card.get_index()) / float(hand.get_child_count() - 1)

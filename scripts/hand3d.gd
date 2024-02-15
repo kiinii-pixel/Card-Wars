@@ -1,7 +1,7 @@
 extends Node3D
 
 signal card_played
-const CARD = preload("res://scenes/card3d.tscn")
+const CARD = preload("res://scenes/3d.tscn")
 
 @export var spread_curve: Curve
 @export var height_curve: Curve

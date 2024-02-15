@@ -22,20 +22,22 @@ func _process(_delta):
 
 		elif Input.is_action_just_released("action_key"):
 			Global.is_dragging = false
-			scale_down(0.5, 0.1)
+			scale_down(0.25, 0.1)
 
 func _on_mouse_entered(): # when you hover over the card
 	if not Global.is_dragging and allow_drag: # If no other card is being dragged:
 		selected = true # Select current card
-		scale_up(0.65, 0.1) # Scale up current card
+		scale_up(0.3, 0.1) # Scale up current card
 		get_parent().z_index = 5
 
 func _on_mouse_exited():
 	if not Global.is_dragging and allow_drag:
 		selected = false
 
-	if get_parent().scale == Vector2(0.65, 0.65):
-		scale_down(0.5, 0.1)
+	# If the card hasn't been scaled down yet. allow_drag has to be ture,
+	# so the card doesnt scale down during it being placed onto a landscape.
+	if get_parent().scale != Vector2(0.25, 0.25) and allow_drag:
+		scale_down(0.25, 0.1)
 	get_parent().z_index = 4
 
 func follow_mouse():

@@ -1,0 +1,47 @@
+[gd_scene load_steps=9 format=3 uid="uid://7wknvewfkv0e"]
+
+[ext_resource type="Script" path="res://scripts/hand3d.gd" id="1_mbmuw"]
+[ext_resource type="Script" path="res://scripts/3d.gd" id="1_xqn5r"]
+[ext_resource type="PackedScene" uid="uid://cqbgk1d2m8g18" path="res://assets/3d/card.blend" id="2_2dmkb"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_l6lkc"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_iwhtx"]
+sky_material = SubResource("ProceduralSkyMaterial_l6lkc")
+
+[sub_resource type="Environment" id="Environment_63xi0"]
+background_mode = 2
+sky = SubResource("Sky_iwhtx")
+tonemap_mode = 2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s7aah"]
+albedo_color = Color(0.184314, 0.329412, 0.156863, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_jam80"]
+material = SubResource("StandardMaterial3D_s7aah")
+size = Vector2(10, 10)
+
+[node name="3DMain" type="Node3D"]
+script = ExtResource("1_xqn5r")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_63xi0")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866024, -0.433016, 0.250001, 0, 0.499998, 0.866026, -0.500003, 0.749999, -0.43301, 0, 8.30544, -4.25023)
+shadow_enabled = true
+
+[node name="Hand" type="Node3D" parent="."]
+script = ExtResource("1_mbmuw")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.259864, 0.965645, 0, -0.965645, 0.259864, 0, 8.93434, 4.99128)
+
+[node name="Table" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 0, 0, 0)
+mesh = SubResource("PlaneMesh_jam80")
+
+[node name="card" parent="." instance=ExtResource("2_2dmkb")]
+transform = Transform3D(1, 0, 0, 0, 0.000226931, 1, 0, -1, 0.000226931, 0, 0.846845, 0)
