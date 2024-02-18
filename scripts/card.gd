@@ -95,6 +95,8 @@ func load_card():
 	%LandscapeCardType.text = landscape + card_type
 	%Description.text = card_description
 
+	set_name(card_name)
+
 func _on_drag_component_body_entered(landscape: Landscape):
 	#is_inside = false
 	if landscape.get_child_count() == 3:
