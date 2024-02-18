@@ -2,7 +2,8 @@ class_name Landscape extends Node2D
 
 #@export var landscape_type = 'blueplains'
 @export var art_variant = 3
-@export_enum("blueplains", "cornfields", "icylands", "nicelands", "sanylands", "useswamps") var landscape_type
+@export_enum("blueplains", "cornfields", "icylands", "nicelands",
+"sanylands", "useswamps") var landscape_type
 
 func _ready():
 	load_image()

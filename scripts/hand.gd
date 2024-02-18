@@ -34,7 +34,7 @@ func add_cards(amount) -> void:
 func add_card(card_id):
 	var card = CARD.instantiate()
 	card.card_id = card_id
-	add_child(card)
+	add_child(card, true)
 	card.scale = Vector2(0.25, 0.25)
 
 func add_random_card():
@@ -44,7 +44,7 @@ func add_random_card():
 	print(card.card_id)
 #	while !FileAccess.file_exists(card_data[card.card_id]): # While the card doesnt have an image
 #		card.card_id = rng.randi_range(1, 512)
-	add_child(card)
+	add_child(card, true)
 	card.scale = Vector2(0.25, 0.25)
 
 func _on_child_order_changed():
@@ -70,5 +70,4 @@ func _on_child_order_changed():
 		card.global_position = destination.origin
 
 func _on_card_played():
-	#remove played card as child and add it as a child to the landscape it was played on
 	pass

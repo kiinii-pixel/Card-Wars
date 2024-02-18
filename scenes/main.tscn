@@ -11,7 +11,7 @@
 [ext_resource type="Script" path="res://scripts/random_card.gd" id="9_dy4o8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sr0rc"]
-size = Vector2(128, 128)
+size = Vector2(262, 262)
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_mh3fo")
@@ -89,16 +89,6 @@ landscape_type = 1
 [node name="Hand" parent="." instance=ExtResource("4_v11k8")]
 position = Vector2(995, 960)
 
-[node name="Icon" type="Sprite2D" parent="."]
-position = Vector2(255, 538)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_ufmem")
-
-[node name="drag_component" parent="Icon" instance=ExtResource("8_hg626")]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Icon/drag_component"]
-shape = SubResource("RectangleShape2D_sr0rc")
-
 [node name="Random Card" type="Button" parent="."]
 offset_left = 100.0
 offset_top = 756.0
@@ -107,6 +97,34 @@ offset_bottom = 817.0
 theme = ExtResource("3_bno0n")
 text = "Random Card"
 script = ExtResource("9_dy4o8")
+
+[node name="Godot Icon" type="Node2D" parent="."]
+position = Vector2(251, 422)
+scale = Vector2(0.25, 0.25)
+metadata/_edit_group_ = true
+
+[node name="Godot Icon" type="TextureRect" parent="Godot Icon"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -150.0
+offset_right = 150.0
+offset_bottom = 150.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(44, 44)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("7_ufmem")
+expand_mode = 1
+
+[node name="drag_component" parent="Godot Icon" instance=ExtResource("8_hg626")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Godot Icon/drag_component"]
+shape = SubResource("RectangleShape2D_sr0rc")
 
 [connection signal="add_card" from="Draw Card" to="." method="_on_draw_card_add_card"]
 [connection signal="pressed" from="Random Card" to="." method="_on_random_card_pressed"]

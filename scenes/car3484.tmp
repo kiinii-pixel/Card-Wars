@@ -52,66 +52,13 @@ position = Vector2(2.38419e-07, 0)
 texture = ExtResource("3_mw3bc")
 centered = false
 
-[node name="Labels" type="Control" parent="SubViewportContainer/PanelContainer"]
-layout_mode = 2
-
-[node name="CardName" type="Label" parent="SubViewportContainer/PanelContainer/Labels"]
-unique_name_in_owner = true
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 190.667
-offset_top = 24.8333
-offset_right = 561.667
-offset_bottom = 100.833
-grow_horizontal = 2
-grow_vertical = 2
-theme = SubResource("Theme_rcflo")
-theme_override_font_sizes/font_size = 45
-text = "Card Name"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="LandscapeCardType" type="Label" parent="SubViewportContainer/PanelContainer/Labels"]
-unique_name_in_owner = true
-layout_mode = 0
-offset_left = 25.0
-offset_top = 575.0
-offset_right = 668.0
-offset_bottom = 658.0
-theme = SubResource("Theme_rcflo")
-theme_override_fonts/font = ExtResource("5_bysvj")
-theme_override_font_sizes/font_size = 45
-text = "Landscape / Card Type"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Description" type="Label" parent="SubViewportContainer/PanelContainer/Labels"]
-unique_name_in_owner = true
-layout_mode = 0
-offset_left = 37.0
-offset_top = 660.0
-offset_right = 659.0
-offset_bottom = 864.0
-theme = ExtResource("5_bmwov")
-theme_override_colors/font_outline_color = Color(0, 0, 0, 0)
-theme_override_constants/outline_size = 0
-theme_override_font_sizes/font_size = 32
-text = "FLOOP >>> In this space, find the card's description and effects."
-horizontal_alignment = 1
-autowrap_mode = 2
-
-[node name="CCAttack" type="CenterContainer" parent="SubViewportContainer/PanelContainer/Labels"]
-layout_mode = 0
+[node name="CCAttack" type="CenterContainer" parent="SubViewportContainer/PanelContainer/CardFrame"]
 offset_left = 26.6667
 offset_top = 833.667
 offset_right = 114.667
 offset_bottom = 1002.67
 
-[node name="AttackLabel" type="Label" parent="SubViewportContainer/PanelContainer/Labels/CCAttack"]
+[node name="AttackLabel" type="Label" parent="SubViewportContainer/PanelContainer/CardFrame/CCAttack"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 0
@@ -122,14 +69,13 @@ text = "A"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="CCDefense" type="CenterContainer" parent="SubViewportContainer/PanelContainer/Labels"]
-layout_mode = 0
+[node name="CCDefense" type="CenterContainer" parent="SubViewportContainer/PanelContainer/CardFrame"]
 offset_left = 582.629
 offset_top = 833.667
 offset_right = 670.629
 offset_bottom = 1002.67
 
-[node name="DefenseLabel" type="Label" parent="SubViewportContainer/PanelContainer/Labels/CCDefense"]
+[node name="DefenseLabel" type="Label" parent="SubViewportContainer/PanelContainer/CardFrame/CCDefense"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 8
@@ -140,11 +86,10 @@ text = "D"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="CostLabel" type="Label" parent="SubViewportContainer/PanelContainer/Labels"]
+[node name="CostLabel" type="Label" parent="SubViewportContainer/PanelContainer/CardFrame"]
 unique_name_in_owner = true
 clip_contents = true
 custom_minimum_size = Vector2(120, 0)
-layout_mode = 0
 offset_left = 47.1827
 offset_top = 10.6667
 offset_right = 167.183
@@ -157,6 +102,56 @@ text = "C"
 horizontal_alignment = 1
 vertical_alignment = 1
 clip_text = true
+
+[node name="Labels" type="Control" parent="SubViewportContainer/PanelContainer"]
+layout_mode = 2
+
+[node name="CardName" type="Label" parent="SubViewportContainer/PanelContainer/Labels"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 190.667
+offset_top = 37.3333
+offset_right = 561.667
+offset_bottom = 92.3333
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_rcflo")
+text = "Card Name"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LandscapeCardType" type="Label" parent="SubViewportContainer/PanelContainer/Labels"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 25.0
+offset_top = 591.0
+offset_right = 668.0
+offset_bottom = 647.0
+theme = SubResource("Theme_rcflo")
+theme_override_fonts/font = ExtResource("5_bysvj")
+text = "Landscape / Card Type"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Description" type="Label" parent="SubViewportContainer/PanelContainer/Labels"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 27.0
+offset_top = 656.0
+offset_right = 668.0
+offset_bottom = 862.0
+theme = ExtResource("5_bmwov")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0)
+theme_override_constants/outline_size = 0
+theme_override_font_sizes/font_size = 17
+text = "FLOOP >>> In this space, find the card's description and effects."
+horizontal_alignment = 1
+autowrap_mode = 2
 
 [node name="drag_component" parent="." instance=ExtResource("6_457fh")]
 position = Vector2(-692.5, -980)
