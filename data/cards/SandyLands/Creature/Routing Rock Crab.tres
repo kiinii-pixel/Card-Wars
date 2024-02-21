@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_5cnrl"]
+
+[resource]
+script = ExtResource("1_5cnrl")
+card_name = "Routing Rock Crab"
+atk = 2
+def = 10
+ability = ""
+cost = 2
+description = "Each time Routing Rock Crab takes Damage from a Creature, you may move that Creature to an adjacent empty Landscape."
+landscape = "SandyLands"
+card_type = "Creature"
+image = "Routing Rock Crab.jpg"
+id = 368

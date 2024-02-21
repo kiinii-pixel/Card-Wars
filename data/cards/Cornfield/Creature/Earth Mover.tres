@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_8or4l"]
+
+[resource]
+script = ExtResource("1_8or4l")
+card_name = "Earth Mover"
+atk = 2
+def = 10
+ability = "Continuous"
+cost = 2
+description = "+2 ATK for each face-down Landscape in play."
+landscape = "Cornfield"
+card_type = "Creature"
+image = "Earth Mover.jpg"
+id = 122

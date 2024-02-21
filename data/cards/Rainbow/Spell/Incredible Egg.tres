@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_oweie"]
+
+[resource]
+script = ExtResource("1_oweie")
+card_name = "Incredible Egg"
+atk = 0
+def = 0
+ability = ""
+cost = 0
+description = "Reveal the top 2 cards of your deck. You may put a revealed Cornfield card into your hand. Discard the rest."
+landscape = "Rainbow"
+card_type = "Spell"
+image = "Incredible Egg.jpg"
+id = 244

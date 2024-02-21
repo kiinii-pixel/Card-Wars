@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_i8w0m"]
+
+[resource]
+script = ExtResource("1_i8w0m")
+card_name = "Well-Dressed Wolf"
+atk = 3
+def = 6
+ability = "Continuous"
+cost = 2
+description = "Well-Dressed Wolf has +1 ATK while attacking a Creature that is on a Cornfield Landscape."
+landscape = "Rainbow"
+card_type = "Creature"
+image = "Well-Dressed Wolf.jpg"
+id = 492

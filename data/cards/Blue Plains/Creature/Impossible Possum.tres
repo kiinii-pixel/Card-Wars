@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_4t564"]
+
+[resource]
+script = ExtResource("1_4t564")
+card_name = "Impossible Possum"
+atk = 2
+def = 8
+ability = ""
+cost = 2
+description = "When this card is placed into your discard pile from anywhere, you may discard a card from your hand to return Impossible Possum to your hand."
+landscape = "Blue Plains"
+card_type = "Creature"
+image = "Impossible Possum.jpg"
+id = 243

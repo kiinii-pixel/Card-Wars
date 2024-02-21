@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_7xkqy"]
+
+[resource]
+script = ExtResource("1_7xkqy")
+card_name = "Bog Bum"
+atk = 2
+def = 6
+ability = "Leaving Play"
+cost = 1
+description = "If Bog Bum leaves play while Ready, each opponent discards a random card."
+landscape = "Useless Swamp"
+card_type = "Creature"
+image = "Bog Bum.jpg"
+id = 45

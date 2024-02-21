@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_u1313"]
+
+[resource]
+script = ExtResource("1_u1313")
+card_name = "Red Eyeling"
+atk = 2
+def = 6
+ability = "FLOOP"
+cost = 1
+description = "FLOOP >>> Return a card with cost 0 from your discard pile to your hand."
+landscape = "Useless Swamp"
+card_type = "Creature"
+image = "Red Eyeling.jpg"
+id = 355

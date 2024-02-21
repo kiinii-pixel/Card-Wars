@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_7ovfj"]
+
+[resource]
+script = ExtResource("1_7ovfj")
+card_name = "Woad Talisman"
+atk = 0
+def = 0
+ability = ""
+cost = 0
+description = "Target Blue Plains Creature you control has +2 ATK this turn."
+landscape = "Rainbow"
+card_type = "Spell"
+image = "Woad Talisman.jpg"
+id = 498

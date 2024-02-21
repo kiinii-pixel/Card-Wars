@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_7sccp"]
+
+[resource]
+script = ExtResource("1_7sccp")
+card_name = "Wake Up Call"
+atk = 0
+def = 0
+ability = ""
+cost = 1
+description = "Ready each Creature you control."
+landscape = "Blue Plains"
+card_type = "Spell"
+image = "Wake Up Call.jpg"
+id = 484

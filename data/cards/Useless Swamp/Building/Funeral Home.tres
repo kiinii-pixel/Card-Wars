@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_7wl8d"]
+
+[resource]
+script = ExtResource("1_7wl8d")
+card_name = "Funeral Home"
+atk = 0
+def = 0
+ability = ""
+cost = 1
+description = "Whenever a foe discards a card, your Creature in this Lane has +1 ATK until the end of turn."
+landscape = "Useless Swamp"
+card_type = "Building"
+image = "Funeral Home.jpg"
+id = 174

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_2ag41"]
+
+[resource]
+script = ExtResource("1_2ag41")
+card_name = "Windmill of Health"
+atk = 0
+def = 0
+ability = ""
+cost = 1
+description = "While your Creature in this Lane has no Damage on it, it has +2 ATK."
+landscape = "NiceLands"
+card_type = "Building"
+image = "Windmill of Health.jpg"
+id = 493

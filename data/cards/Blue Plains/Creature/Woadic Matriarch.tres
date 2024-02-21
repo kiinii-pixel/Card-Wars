@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_7iygm"]
+
+[resource]
+script = ExtResource("1_7iygm")
+card_name = "Woadic Matriarch"
+atk = 1
+def = 7
+ability = ""
+cost = 1
+description = "Woadic Matriarch has +1 ATK for each Rainbow Creature you control."
+landscape = "Blue Plains"
+card_type = "Creature"
+image = "Woadic Matriarch.jpg"
+id = 502

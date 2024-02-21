@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_0d6wi"]
+
+[resource]
+script = ExtResource("1_0d6wi")
+card_name = "Peach Djinni"
+atk = 0
+def = 6
+ability = "Trigger"
+cost = 0
+description = "When a SandyLands Creature enters play under your control, Peach Djinni has +1 ATK this turn."
+landscape = "Rainbow"
+card_type = "Creature"
+image = "Peach Djinni.jpg"
+id = 320

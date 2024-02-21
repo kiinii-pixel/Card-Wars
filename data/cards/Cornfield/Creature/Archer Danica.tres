@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_m7bnv"]
+
+[resource]
+script = ExtResource("1_m7bnv")
+card_name = "Archer Danica"
+atk = 1
+def = 6
+ability = "FLOOP"
+cost = 2
+description = "Destroy a Building you control and Floop >>> Deal 3 damage to each opposing Creature."
+landscape = "Cornfield"
+card_type = "Creature"
+image = "Archer Danica.jpg"
+id = 14

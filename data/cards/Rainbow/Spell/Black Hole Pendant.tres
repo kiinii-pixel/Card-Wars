@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_aduxw"]
+
+[resource]
+script = ExtResource("1_aduxw")
+card_name = "Black Hole Pendant"
+atk = 0
+def = 0
+ability = ""
+cost = 0
+description = "Target Creature has +X ATK this turn, where X is the number of different Landscape types your opponent controls."
+landscape = "Rainbow"
+card_type = "Spell"
+image = "Black Hole Pendant.jpg"
+id = 28

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_mixsd"]
+
+[resource]
+script = ExtResource("1_mixsd")
+card_name = "Robomancer"
+atk = 2
+def = 7
+ability = "Continuous"
+cost = 2
+description = "+1 ATK for each Creature that changed Lanes during your turn."
+landscape = "Blue Plains"
+card_type = "Creature"
+image = "Robomancer.jpg"
+id = 364

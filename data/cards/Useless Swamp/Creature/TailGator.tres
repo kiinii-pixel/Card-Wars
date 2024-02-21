@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_xbk6b"]
+
+[resource]
+script = ExtResource("1_xbk6b")
+card_name = "TailGator"
+atk = 2
+def = 6
+ability = ""
+cost = 1
+description = "When TailGator enters play, draw a card for each Creature that entered your discard pile this turn."
+landscape = "Useless Swamp"
+card_type = "Creature"
+image = "TailGator.jpg"
+id = 447

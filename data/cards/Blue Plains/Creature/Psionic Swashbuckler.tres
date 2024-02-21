@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_nim14"]
+
+[resource]
+script = ExtResource("1_nim14")
+card_name = "Psionic Swashbuckler"
+atk = 2
+def = 6
+ability = ""
+cost = 1
+description = "When Psionic Swashbuckler enters play, you may deal 3 Damage to target Flooped Creature"
+landscape = "Blue Plains"
+card_type = "Creature"
+image = "Psionic Swashbuckler.jpg"
+id = 341

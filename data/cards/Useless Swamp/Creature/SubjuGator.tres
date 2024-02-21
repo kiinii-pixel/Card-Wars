@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_fkpi7"]
+
+[resource]
+script = ExtResource("1_fkpi7")
+card_name = "SubjuGator"
+atk = 3
+def = 7
+ability = ""
+cost = 2
+description = "The opposing Creature in this Lane has -1 DEF for every 5 cards in your discard pile."
+landscape = "Useless Swamp"
+card_type = "Creature"
+image = "SubjuGator.jpg"
+id = 439

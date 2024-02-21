@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_13kxj"]
+
+[resource]
+script = ExtResource("1_13kxj")
+card_name = "Biomancer"
+atk = 1
+def = 8
+ability = "Trigger"
+cost = 1
+description = "Each time a Creature you control changes Lanes, heal 2 Damage from Biomancer."
+landscape = "Blue Plains"
+card_type = "Creature"
+image = "Biomancer.jpg"
+id = 27

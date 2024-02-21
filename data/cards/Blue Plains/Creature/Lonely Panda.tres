@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_yhfxp"]
+
+[resource]
+script = ExtResource("1_yhfxp")
+card_name = "Lonely Panda"
+atk = 1
+def = 8
+ability = ""
+cost = 1
+description = "When Lonely Panda enters play, if you control no other Creatures, draw a card."
+landscape = "Blue Plains"
+card_type = "Creature"
+image = "Lonely Panda.jpg"
+id = 271

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_dlqv2"]
+
+[resource]
+script = ExtResource("1_dlqv2")
+card_name = "Repelling Rock Crab"
+atk = 1
+def = 5
+ability = ""
+cost = 1
+description = "Each time Repelling Rock Crab takes Damage from a Creature, it deals that much Damage to that Creature."
+landscape = "SandyLands"
+card_type = "Creature"
+image = "Repelling Rock Crab.jpg"
+id = 358

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_27244"]
+
+[resource]
+script = ExtResource("1_27244")
+card_name = "Sandhorn Devil"
+atk = 3
+def = 6
+ability = "Entering Play"
+cost = 1
+description = "When Sandhorn Devil enters play, deal 1 Damage to each Creature in play, (including each of your Creatures)."
+landscape = "SandyLands"
+card_type = "Creature"
+image = "Sandhorn Devil.jpg"
+id = 380

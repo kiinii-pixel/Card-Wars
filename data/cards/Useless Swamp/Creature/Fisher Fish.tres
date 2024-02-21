@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_q3cb1"]
+
+[resource]
+script = ExtResource("1_q3cb1")
+card_name = "Fisher Fish"
+atk = 2
+def = 6
+ability = "Entering Play"
+cost = 1
+description = "If Fisher Fish enters play onto a Blue Plains Landscape, deal 2 Damage to each opposing player."
+landscape = "Useless Swamp"
+card_type = "Creature"
+image = "Fisher Fish.jpg"
+id = 152

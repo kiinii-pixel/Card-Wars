@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_sfgye"]
+
+[resource]
+script = ExtResource("1_sfgye")
+card_name = "Confectionary Ring"
+atk = 0
+def = 0
+ability = ""
+cost = 1
+description = "Each of your Creatures has +2 ATK this turn while attacking a Creature that is on a Cornfield Landscape."
+landscape = "NiceLands"
+card_type = "Spell"
+image = "Confectionary Ring.jpg"
+id = 78

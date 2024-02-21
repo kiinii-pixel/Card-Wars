@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_obskn"]
+
+[resource]
+script = ExtResource("1_obskn")
+card_name = "Husky Parrotrooper"
+atk = 2
+def = 4
+ability = "Entering Play"
+cost = 2
+description = "When Husky Parrotrooper enters play, move it to any empty Landscape, and then flip that Landscape face down."
+landscape = "Rainbow"
+card_type = "Creature"
+image = "Husky Parrotrooper.jpg"
+id = 229

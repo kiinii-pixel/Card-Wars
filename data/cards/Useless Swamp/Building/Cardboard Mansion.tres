@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_2yfxq"]
+
+[resource]
+script = ExtResource("1_2yfxq")
+card_name = "Cardboard Mansion"
+atk = 0
+def = 0
+ability = ""
+cost = 5
+description = "Cardboard Mansion costs 1 less to play for every 5 cards in your Discard Pile. FLOOP >>> Gain 1 Action."
+landscape = "Useless Swamp"
+card_type = "Building"
+image = "Cardboard Mansion.jpg"
+id = 62

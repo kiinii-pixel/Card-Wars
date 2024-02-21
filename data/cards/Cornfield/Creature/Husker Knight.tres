@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_xuqut"]
+
+[resource]
+script = ExtResource("1_xuqut")
+card_name = "Husker Knight"
+atk = 0
+def = 0
+ability = "Continuous"
+cost = 2
+description = "Husker Knight has +1 ATK and +2 DEF for each Cornfield Landscape you control."
+landscape = "Cornfield"
+card_type = "Creature"
+image = "Husker Knight.jpg"
+id = 226

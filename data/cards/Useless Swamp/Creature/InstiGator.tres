@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_krhkm"]
+
+[resource]
+script = ExtResource("1_krhkm")
+card_name = "InstiGator"
+atk = 5
+def = 3
+ability = ""
+cost = 2
+description = "When InstiGator enters play, move target opposing Creature into InstiGator's Lane (if empty)."
+landscape = "Useless Swamp"
+card_type = "Creature"
+image = "InstiGator.jpg"
+id = 249

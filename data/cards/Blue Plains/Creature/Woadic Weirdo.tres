@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_1u5hu"]
+
+[resource]
+script = ExtResource("1_1u5hu")
+card_name = "Woadic Weirdo"
+atk = 1
+def = 7
+ability = ""
+cost = 1
+description = "FLOOP >>> Reveal a card from your hand. That card becomes a Rainbow card until the end of your turn. (It has no Landscape type)."
+landscape = "Blue Plains"
+card_type = "Creature"
+image = "Woadic Weirdo.jpg"
+id = 504

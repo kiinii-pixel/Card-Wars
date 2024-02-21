@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_doo61"]
+
+[resource]
+script = ExtResource("1_doo61")
+card_name = "Firm Handshake"
+atk = 0
+def = 0
+ability = ""
+cost = 2
+description = "Deal 5 Damage to yourself and target opponent."
+landscape = "Rainbow"
+card_type = "Spell"
+image = "Firm Handshake.jpg"
+id = 151

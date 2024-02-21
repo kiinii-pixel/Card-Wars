@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_6w0ya"]
+
+[resource]
+script = ExtResource("1_6w0ya")
+card_name = "Enchanted Celebration"
+atk = 0
+def = 0
+ability = ""
+cost = 1
+description = "Move target Creature to an adjacent empty Landscape its controller controls. After playing this, you may put it into your Teammate's hand."
+landscape = "Rainbow"
+card_type = "Spell"
+image = "Enchanted Celebration.jpg"
+id = 127

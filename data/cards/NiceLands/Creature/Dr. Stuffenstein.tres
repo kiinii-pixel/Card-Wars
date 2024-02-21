@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_hc3f4"]
+
+[resource]
+script = ExtResource("1_hc3f4")
+card_name = "Dr. Stuffenstein"
+atk = 1
+def = 9
+ability = "FLOOP"
+cost = 2
+description = "FLOOP >>> Heal 2 Damage from a Creature on an adjacent Landscape. If Dr. Stuffenstein has 5 or more Damage on it, heal 2 Damage from each of your Creatures instead."
+landscape = "NiceLands"
+card_type = "Creature"
+image = "Dr. Stuffenstein.jpg"
+id = 113

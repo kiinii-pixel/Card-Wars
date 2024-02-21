@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_nf7bh"]
+
+[resource]
+script = ExtResource("1_nf7bh")
+card_name = "Drooling Dude"
+atk = 3
+def = 9
+ability = "None"
+cost = 2
+description = "The ladies love him, as long as they have waterproof shoes."
+landscape = "Rainbow"
+card_type = "Creature"
+image = "Drooling Dude.jpg"
+id = 118

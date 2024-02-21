@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_3v4b5"]
+
+[resource]
+script = ExtResource("1_3v4b5")
+card_name = "Brigadier Banana Split"
+atk = 3
+def = 9
+ability = ""
+cost = 2
+description = "When Brigadier Banana Split attacks, deal 2 Damage to target opposing Creature on a Landscape with a Frozen token on it."
+landscape = "IcyLands"
+card_type = "Creature"
+image = "Brigadier Banana Split.jpg"
+id = 53

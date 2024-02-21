@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_0hach"]
+
+[resource]
+script = ExtResource("1_0hach")
+card_name = "Sandsnake"
+atk = 0
+def = 9
+ability = "Entering Play"
+cost = 1
+description = "When Sandsnake enters play, deal 4 Damage to target opposing Creature in this Lane."
+landscape = "SandyLands"
+card_type = "Creature"
+image = "Sandsnake.jpg"
+id = 382

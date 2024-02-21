@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_cwaex"]
+
+[resource]
+script = ExtResource("1_cwaex")
+card_name = "The Pig"
+atk = 1
+def = 4
+ability = "FLOOP"
+cost = 1
+description = "FLOOP >>> Flip target Cornfield Landscape in this Lane face down."
+landscape = "Rainbow"
+card_type = "Creature"
+image = "The Pig.jpg"
+id = 460

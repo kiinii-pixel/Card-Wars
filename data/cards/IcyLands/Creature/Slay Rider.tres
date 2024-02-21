@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_0kn20"]
+
+[resource]
+script = ExtResource("1_0kn20")
+card_name = "Slay Rider"
+atk = 0
+def = 5
+ability = "FLOOP"
+cost = 1
+description = "FLOOP >>> Deal 3 Damage to target Creature on a Landscape with a Frozen token on it."
+landscape = "IcyLands"
+card_type = "Creature"
+image = "Slay Rider.jpg"
+id = 404

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_m6vvw"]
+
+[resource]
+script = ExtResource("1_m6vvw")
+card_name = "Lady Beetle"
+atk = 1
+def = 9
+ability = "Trigger"
+cost = 1
+description = "At the start of your turn, you may return a Creature you control with 2 or fewer DEF remaining to its owner's hand."
+landscape = "SandyLands"
+card_type = "Creature"
+image = "Lady Beetle.jpg"
+id = 260

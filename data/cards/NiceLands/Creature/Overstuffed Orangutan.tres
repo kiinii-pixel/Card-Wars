@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_kmkbw"]
+
+[resource]
+script = ExtResource("1_kmkbw")
+card_name = "Overstuffed Orangutan"
+atk = 2
+def = 8
+ability = ""
+cost = 2
+description = "While Overstuffed Orangutan has 4 or more Damage on it, double its ATK."
+landscape = "NiceLands"
+card_type = "Creature"
+image = "Overstuffed Orangutan.jpg"
+id = 310

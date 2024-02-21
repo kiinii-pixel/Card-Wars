@@ -1,12 +1,12 @@
 class_name Card extends Node2D
 
-@export var card_id = 7 # change to id of card you want
+@export var card_id : int # change to id of card you want
 # CARD VARIABLES
 var played = false # true when dragged into play // drag_component.allow_drag should be enough
 var body_ref : Landscape # reference to object that was hovered over (e.g. landscape)
 # : Object if other zones are implemented
 var is_inside = false # true if card is inside a landscape
-var drag_component # drag component node
+var drag_component : Object # drag component node
 
 func _ready():
 	load_card() # load card image and text

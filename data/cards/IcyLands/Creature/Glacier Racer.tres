@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_xah61"]
+
+[resource]
+script = ExtResource("1_xah61")
+card_name = "Glacier Racer"
+atk = 2
+def = 6
+ability = "Continuous"
+cost = 1
+description = "+4 ATK if both Landscapes in this Lane have Frozen tokens on them."
+landscape = "IcyLands"
+card_type = "Creature"
+image = "Glacier Racer.jpg"
+id = 188

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_opxn1"]
+
+[resource]
+script = ExtResource("1_opxn1")
+card_name = "Grape Djini"
+atk = 1
+def = 6
+ability = "Entering Play"
+cost = 1
+description = "When Grape Djini enters play, if it replaced a Creature, you may put a card from your discard pile on top of your deck."
+landscape = "Blue Plains"
+card_type = "Creature"
+image = "Grape Djini.jpg"
+id = 199

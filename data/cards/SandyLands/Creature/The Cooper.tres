@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_wxgt2"]
+
+[resource]
+script = ExtResource("1_wxgt2")
+card_name = "The Cooper"
+atk = 3
+def = 8
+ability = ""
+cost = 2
+description = "FLOOP >>> Target Creature gets +ATK this turn equal to the total cost of Teamwork cards your team controls."
+landscape = "SandyLands"
+card_type = "Creature"
+image = "The Cooper.jpg"
+id = 457

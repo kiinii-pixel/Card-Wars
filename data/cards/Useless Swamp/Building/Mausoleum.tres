@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_bgshn"]
+
+[resource]
+script = ExtResource("1_bgshn")
+card_name = "Mausoleum"
+atk = 0
+def = 0
+ability = ""
+cost = 1
+description = "Your Creature in this Lane has +1 DEF for every 5 cards in your discard pile."
+landscape = "Useless Swamp"
+card_type = "Building"
+image = "Mausoleum.jpg"
+id = 290

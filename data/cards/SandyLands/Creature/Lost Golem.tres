@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_1x44a"]
+
+[resource]
+script = ExtResource("1_1x44a")
+card_name = "Lost Golem"
+atk = 5
+def = 6
+ability = "Continuous"
+cost = 3
+description = "Lost Golem costs 1 less to play for each other Creature you have played this turn."
+landscape = "SandyLands"
+card_type = "Creature"
+image = "Lost Golem.jpg"
+id = 273

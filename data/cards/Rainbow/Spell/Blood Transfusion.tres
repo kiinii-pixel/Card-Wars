@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_si448"]
+
+[resource]
+script = ExtResource("1_si448")
+card_name = "Blood Transfusion"
+atk = 0
+def = 0
+ability = ""
+cost = 0
+description = "Remove from game a card in any player's discard pile. Heal X Damage from target Creature, where X is the cost of the card removed this way."
+landscape = "Rainbow"
+card_type = "Spell"
+image = "Blood Transfusion.jpg"
+id = 34

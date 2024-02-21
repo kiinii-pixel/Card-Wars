@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_qv7h2"]
+
+[resource]
+script = ExtResource("1_qv7h2")
+card_name = "Snow Angel"
+atk = 2
+def = 7
+ability = "FLOOP"
+cost = 1
+description = "FLOOP >>> Heal 1 Damage from each of your Creatures for each Landscape with a Frozen token on it players control."
+landscape = "IcyLands"
+card_type = "Creature"
+image = "Snow Angel.jpg"
+id = 411

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_3qdp1"]
+
+[resource]
+script = ExtResource("1_3qdp1")
+card_name = "Cabin of Many Woods"
+atk = 0
+def = 0
+ability = ""
+cost = 5
+description = "Cabin of Many Woods costs 1 less to play for each Flooped Creature you control. Your Creature in the Lane has +5 DEF."
+landscape = "Cornfield"
+card_type = "Building"
+image = "Cabin of Many Woods.jpg"
+id = 57

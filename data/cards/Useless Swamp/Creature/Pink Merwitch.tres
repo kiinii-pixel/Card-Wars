@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_4ddd8"]
+
+[resource]
+script = ExtResource("1_4ddd8")
+card_name = "Pink Merwitch"
+atk = 2
+def = 8
+ability = "Ignition"
+cost = 2
+description = "Discard a card >>> Deal 1 Damage to each opposing Creature. (Use only once during each of your turns.)"
+landscape = "Useless Swamp"
+card_type = "Creature"
+image = "Pink Merwitch.jpg"
+id = 330

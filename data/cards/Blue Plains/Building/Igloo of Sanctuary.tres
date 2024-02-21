@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_oi4c3"]
+
+[resource]
+script = ExtResource("1_oi4c3")
+card_name = "Igloo of Sanctuary"
+atk = 0
+def = 0
+ability = ""
+cost = 1
+description = "FLOOP >>> If your Creature in this Lane moved here from another Lane this turn, it has +3ATK this turn."
+landscape = "Blue Plains"
+card_type = "Building"
+image = "Igloo of Sanctuary.jpg"
+id = 241

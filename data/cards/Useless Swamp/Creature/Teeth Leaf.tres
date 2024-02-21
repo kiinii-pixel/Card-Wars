@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_jtgah"]
+
+[resource]
+script = ExtResource("1_jtgah")
+card_name = "Teeth Leaf"
+atk = 3
+def = 10
+ability = "Continuous"
+cost = 2
+description = "If you have 10 or more cards in your discard pile, pay 2 fewer Actions to play Teeth Leaf."
+landscape = "Useless Swamp"
+card_type = "Creature"
+image = "Teeth Leaf.jpg"
+id = 451

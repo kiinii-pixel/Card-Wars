@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_d88r8"]
+
+[resource]
+script = ExtResource("1_d88r8")
+card_name = "Furious Hen"
+atk = 0
+def = 10
+ability = "Continuous"
+cost = 2
+description = "Furious Hen has +1 ATK for each Damage on it."
+landscape = "NiceLands"
+card_type = "Creature"
+image = "Furious Hen.jpg"
+id = 177

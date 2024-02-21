@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_trivc"]
+
+[resource]
+script = ExtResource("1_trivc")
+card_name = "Snow Bank"
+atk = 0
+def = 0
+ability = ""
+cost = 1
+description = "FLOOP, Remove a Frozen token from a Landscape in this Lane >>> Deal 3 Damage to target opponent."
+landscape = "IcyLands"
+card_type = "Building"
+image = "Snow Bank.jpg"
+id = 413

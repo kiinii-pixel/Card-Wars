@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_tbsfg"]
+
+[resource]
+script = ExtResource("1_tbsfg")
+card_name = "Night Tower"
+atk = 0
+def = 0
+ability = ""
+cost = 1
+description = "FLOOP >>> If your opponent has no Creature in this Lane they discard a card."
+landscape = "Useless Swamp"
+card_type = "Building"
+image = "Night Tower.jpg"
+id = 304

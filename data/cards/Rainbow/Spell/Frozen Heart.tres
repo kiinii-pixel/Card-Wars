@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_86ux4"]
+
+[resource]
+script = ExtResource("1_86ux4")
+card_name = "Frozen Heart"
+atk = 0
+def = 0
+ability = ""
+cost = 0
+description = "Deal 1 Damage to target Creature. If that Creature is on a Landscape with a Frozen token on it, deal 3 Damage instead."
+landscape = "Rainbow"
+card_type = "Spell"
+image = "Frozen Heart.jpg"
+id = 169

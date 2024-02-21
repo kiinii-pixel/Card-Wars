@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_15cy7"]
+
+[resource]
+script = ExtResource("1_15cy7")
+card_name = "Ms. Fluff"
+atk = 2
+def = 10
+ability = "Continuous"
+cost = 2
+description = "While Ms. Fluff has exactly 7 Damage on it, it has +7 ATK."
+landscape = "NiceLands"
+card_type = "Creature"
+image = "Ms. Fluff.jpg"
+id = 295

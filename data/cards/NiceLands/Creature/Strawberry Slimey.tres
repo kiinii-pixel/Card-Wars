@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_na04g"]
+
+[resource]
+script = ExtResource("1_na04g")
+card_name = "Strawberry Slimey"
+atk = 2
+def = 6
+ability = "Continuous"
+cost = 1
+description = "If you control 3 or more different Landscape types when Strawberry Slimey enters play, heal 4 Damage from each Creature you control."
+landscape = "NiceLands"
+card_type = "Creature"
+image = "Strawberry Slimey.jpg"
+id = 435

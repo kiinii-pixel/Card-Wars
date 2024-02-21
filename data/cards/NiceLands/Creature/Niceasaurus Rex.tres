@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_fhs1j"]
+
+[resource]
+script = ExtResource("1_fhs1j")
+card_name = "Niceasaurus Rex"
+atk = 2
+def = 7
+ability = "Continuous"
+cost = 1
+description = "At the start of your turn, if Niceasaurus Rex has Damage on it, draw a card."
+landscape = "NiceLands"
+card_type = "Creature"
+image = "Niceasaurus Rex.jpg"
+id = 303

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_gb5dm"]
+
+[resource]
+script = ExtResource("1_gb5dm")
+card_name = "Drained Cleric"
+atk = 3
+def = 5
+ability = "Trigger"
+cost = 1
+description = "At the start of your turn, move Drained Cleric to an empty Landscape you control. If you cannot, discard a card."
+landscape = "Blue Plains"
+card_type = "Creature"
+image = "Drained Cleric.jpg"
+id = 117

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_uh5uc"]
+
+[resource]
+script = ExtResource("1_uh5uc")
+card_name = "Boarder Collie"
+atk = 1
+def = 7
+ability = "FLOOP"
+cost = 1
+description = "FLOOP >>> Move Boarder Collie to any of your empty Landscapes. If either Landscape in that Lane is Frozen, gain 1 Action."
+landscape = "IcyLands"
+card_type = "Creature"
+image = "Boarder Collie.jpg"
+id = 43

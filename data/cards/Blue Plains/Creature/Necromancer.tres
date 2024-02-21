@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_eqq17"]
+
+[resource]
+script = ExtResource("1_eqq17")
+card_name = "Necromancer"
+atk = 1
+def = 8
+ability = "Trigger"
+cost = 1
+description = "Each time a Creature you control leaves play, you may move Necromancer to that Creature's empty Landscape."
+landscape = "Blue Plains"
+card_type = "Creature"
+image = "Necromancer.jpg"
+id = 300

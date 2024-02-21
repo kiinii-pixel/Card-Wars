@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_on6b1"]
+
+[resource]
+script = ExtResource("1_on6b1")
+card_name = "Patchwork"
+atk = 0
+def = 0
+ability = ""
+cost = 1
+description = "Redistribute the Damage on Creatures you control (no Creature can have more Damage than DEF)."
+landscape = "NiceLands"
+card_type = "Spell"
+image = "Patchwork.jpg"
+id = 317

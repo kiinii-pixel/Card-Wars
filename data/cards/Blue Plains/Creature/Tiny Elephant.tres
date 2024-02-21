@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_0jtvy"]
+
+[resource]
+script = ExtResource("1_0jtvy")
+card_name = "Tiny Elephant"
+atk = 2
+def = 6
+ability = ""
+cost = 1
+description = "While in play, Tiny Elephant is also a Rainbow Creature (in addition to Blue Plains)."
+landscape = "Blue Plains"
+card_type = "Creature"
+image = "Tiny Elephant.jpg"
+id = 463

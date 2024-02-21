@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_2hw4m"]
+
+[resource]
+script = ExtResource("1_2hw4m")
+card_name = "Fright Tower"
+atk = 0
+def = 0
+ability = ""
+cost = 1
+description = "Pay 1 Action >>> Target Creature in this Lane has +1 ATK this turn for every 5 cards in your discard pile."
+landscape = "Useless Swamp"
+card_type = "Building"
+image = "Fright Tower.jpg"
+id = 162

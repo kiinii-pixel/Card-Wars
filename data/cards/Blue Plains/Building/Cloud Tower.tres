@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3 uid="uid://db74gc36ip2fj"]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_nemva"]
+
+[resource]
+script = ExtResource("1_nemva")
+card_name = "Cloud Tower"
+atk = 0
+def = 0
+ability = ""
+cost = 2
+description = "Your Creature on this Landscape cannot be targeted by your foe's Spells or Creature abilities. FLOOP >>> Move a Creature you control to this Landscape."
+landscape = "Blue Plains"
+card_type = "Building"
+image = "Cloud Tower.jpg"
+id = 74

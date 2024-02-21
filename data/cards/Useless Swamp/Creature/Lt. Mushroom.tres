@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_wpec4"]
+
+[resource]
+script = ExtResource("1_wpec4")
+card_name = "Lt. Mushroom"
+atk = 2
+def = 3
+ability = "Leaving Play"
+cost = 1
+description = "When Lt. Mushroom leaves play during an opponent's turn, that opponent discards 3 cards."
+landscape = "Useless Swamp"
+card_type = "Creature"
+image = "Lt. Mushroom.jpg"
+id = 275

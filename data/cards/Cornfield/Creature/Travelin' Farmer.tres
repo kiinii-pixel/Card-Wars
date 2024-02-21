@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_ycjbh"]
+
+[resource]
+script = ExtResource("1_ycjbh")
+card_name = "Travelin' Farmer"
+atk = 2
+def = 12
+ability = "Leaving Play"
+cost = 2
+description = "When Travelin' Farmer leaves play, deal 1 Damage to your opponent for each card in his hand."
+landscape = "Cornfield"
+card_type = "Creature"
+image = "Travelin' Farmer.jpg"
+id = 471

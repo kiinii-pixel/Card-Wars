@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_knqht"]
+
+[resource]
+script = ExtResource("1_knqht")
+card_name = "Ring of Fluffy"
+atk = 0
+def = 0
+ability = ""
+cost = 2
+description = "Target Creature you control has +X ATK this turn, where X is the amount of Damage on it."
+landscape = "NiceLands"
+card_type = "Spell"
+image = "Ring of Fluffy.jpg"
+id = 361

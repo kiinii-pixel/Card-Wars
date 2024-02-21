@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_qbqdl"]
+
+[resource]
+script = ExtResource("1_qbqdl")
+card_name = "Pyromancer"
+atk = 0
+def = 8
+ability = "Trigger"
+cost = 1
+description = "Each time Pyromancer enters a Landscape, you may deal 2 Damage to target Creature in that Lane. Pay 1 Action >>> Move Pyromancer to an empty Landscape you control."
+landscape = "Blue Plains"
+card_type = "Creature"
+image = "Pyromancer.jpg"
+id = 347

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_ibfwk"]
+
+[resource]
+script = ExtResource("1_ibfwk")
+card_name = "Ghost Chest Burster"
+atk = 1
+def = 9
+ability = "Leaving Play"
+cost = 1
+description = "When Ghost Chest Burster leaves play, draw the bottom card of your deck."
+landscape = "Useless Swamp"
+card_type = "Creature"
+image = "Ghost Hag.jpg"
+id = 182

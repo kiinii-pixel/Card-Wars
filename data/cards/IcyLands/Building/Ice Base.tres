@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_npes1"]
+
+[resource]
+script = ExtResource("1_npes1")
+card_name = "Ice Base"
+atk = 0
+def = 0
+ability = ""
+cost = 2
+description = "When Ice Base enters play, Freeze both Landscapes in this Lane. You may play Creatures onto this Landscape even while Frozen."
+landscape = "IcyLands"
+card_type = "Building"
+image = "Ice Base.jpg"
+id = 231

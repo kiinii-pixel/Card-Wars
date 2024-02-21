@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_k7q6i"]
+
+[resource]
+script = ExtResource("1_k7q6i")
+card_name = "Burly Lumberjack"
+atk = 2
+def = 9
+ability = "Continuous"
+cost = 2
+description = "You may play additional Buildings onto this Landscape."
+landscape = "Cornfield"
+card_type = "Creature"
+image = "Burly Lumberjack.jpg"
+id = 55

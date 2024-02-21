@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_mg3xu"]
+
+[resource]
+script = ExtResource("1_mg3xu")
+card_name = "Fly Swatter"
+atk = 1
+def = 6
+ability = "FLOOP"
+cost = 1
+description = "FLOOP >>> Each opponent discards a card with cost 0, or reveals a hand with none."
+landscape = "Useless Swamp"
+card_type = "Creature"
+image = "Fly Swatter.jpg"
+id = 155

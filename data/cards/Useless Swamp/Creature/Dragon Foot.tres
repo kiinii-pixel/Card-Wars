@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_t4ifd"]
+
+[resource]
+script = ExtResource("1_t4ifd")
+card_name = "Dragon Foot"
+atk = 1
+def = 5
+ability = "Ignition"
+cost = 1
+description = "Discard a card >>> Dragon Foot has +1 ATK this turn. (Use up to five times during each of your turns.)"
+landscape = "Useless Swamp"
+card_type = "Creature"
+image = "Dragon Foot.jpg"
+id = 115

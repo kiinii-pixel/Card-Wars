@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_g2doq"]
+
+[resource]
+script = ExtResource("1_g2doq")
+card_name = "Trained ZebraCorn Husker"
+atk = 3
+def = 7
+ability = ""
+cost = 2
+description = "+1 ATK for each Teamwork your team controls. If Trained ZebraCorn Husker leaves play during your Fight Phase, you may put it into your hand."
+landscape = "Cornfield"
+card_type = "Creature"
+image = "Trained ZebraCorn Husker.jpg"
+id = 470

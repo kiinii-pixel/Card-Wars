@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_5p7fi"]
+
+[resource]
+script = ExtResource("1_5p7fi")
+card_name = "Volcano"
+atk = 0
+def = 0
+ability = ""
+cost = 1
+description = "Destroy target Building. You may deal 3 Damage to a Creature in that Lane. Flip your Landscape in that Lane face down."
+landscape = "Rainbow"
+card_type = "Spell"
+image = "Volcano.jpg"
+id = 483

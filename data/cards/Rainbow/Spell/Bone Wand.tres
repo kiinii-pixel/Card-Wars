@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_0ixqt"]
+
+[resource]
+script = ExtResource("1_0ixqt")
+card_name = "Bone Wand"
+atk = 0
+def = 0
+ability = ""
+cost = 0
+description = "Play only if you control a Useless Swamp Creature. Target opponent discards a card from his hand."
+landscape = "Rainbow"
+card_type = "Spell"
+image = "Bone Wand.jpg"
+id = 49

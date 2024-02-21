@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_acx6t"]
+
+[resource]
+script = ExtResource("1_acx6t")
+card_name = "Convey Wisdom"
+atk = 0
+def = 0
+ability = ""
+cost = 1
+description = "Look at the top 4 cards of target player's deck and put them back in any order. Then draw a card."
+landscape = "Blue Plains"
+card_type = "Spell"
+image = "Convey Wisdom.jpg"
+id = 80

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_y26ru"]
+
+[resource]
+script = ExtResource("1_y26ru")
+card_name = "Crystal Palace"
+atk = 0
+def = 0
+ability = ""
+cost = 1
+description = "When a Landscape in this Lane becomes Frozen, deal 2 Damage to target Creature."
+landscape = "IcyLands"
+card_type = "Building"
+image = "Crystal Palace.jpg"
+id = 100

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_dys4d"]
+
+[resource]
+script = ExtResource("1_dys4d")
+card_name = "Cross Pollination"
+atk = 0
+def = 0
+ability = ""
+cost = 2
+description = "Each of your Cornfield Creatures has +1 ATK this turn for each different Landscape type you control."
+landscape = "Rainbow"
+card_type = "Spell"
+image = "Cross Pollination.jpg"
+id = 99

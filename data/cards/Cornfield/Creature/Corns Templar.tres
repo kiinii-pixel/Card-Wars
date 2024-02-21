@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_kiyji"]
+
+[resource]
+script = ExtResource("1_kiyji")
+card_name = "Corns Templar"
+atk = 1
+def = 7
+ability = "FLOOP"
+cost = 1
+description = "FLOOP >>> Heal 1 Damage from Corns Templar."
+landscape = "Cornfield"
+card_type = "Creature"
+image = "Corns Templar.jpg"
+id = 90

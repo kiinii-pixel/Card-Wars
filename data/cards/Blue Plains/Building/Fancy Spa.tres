@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3 uid="uid://bq0ocexnh13wt"]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_cgu44"]
+
+[resource]
+script = ExtResource("1_cgu44")
+card_name = "Fancy Spa"
+atk = 0
+def = 0
+ability = ""
+cost = 1
+description = "At the start of your Fight Phase, if you control an exhausted Creature on this Landscape, draw a card."
+landscape = "Blue Plains"
+card_type = "Building"
+image = "Fancy Spa.jpg"
+id = 138

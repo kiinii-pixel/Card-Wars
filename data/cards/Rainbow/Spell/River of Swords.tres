@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_bhvex"]
+
+[resource]
+script = ExtResource("1_bhvex")
+card_name = "River of Swords"
+atk = 0
+def = 0
+ability = ""
+cost = 2
+description = "Creatures you control each have +2 ATK this turn. Draw 2 cards."
+landscape = "Rainbow"
+card_type = "Spell"
+image = "River of Swords.jpg"
+id = 363

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_svple"]
+
+[resource]
+script = ExtResource("1_svple")
+card_name = "Green Mermaid"
+atk = 1
+def = 9
+ability = "Ignition"
+cost = 1
+description = "Destroy Green Mermaid >>> Deal 1 Damage to each opposing Creature."
+landscape = "Useless Swamp"
+card_type = "Creature"
+image = "Green Mermaid.jpg"
+id = 204

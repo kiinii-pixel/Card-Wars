@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_vdv1k"]
+
+[resource]
+script = ExtResource("1_vdv1k")
+card_name = "Fluffy Fox"
+atk = 2
+def = 6
+ability = ""
+cost = 1
+description = "While Fluffy Fox has 4 or more Damage on it, it ignores the first 2 Damage dealt to it by opposing Creatures."
+landscape = "NiceLands"
+card_type = "Creature"
+image = "Fluffy Fox.jpg"
+id = 154

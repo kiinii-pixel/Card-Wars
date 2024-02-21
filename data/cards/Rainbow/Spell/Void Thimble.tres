@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_vxwnh"]
+
+[resource]
+script = ExtResource("1_vxwnh")
+card_name = "Void Thimble"
+atk = 0
+def = 0
+ability = ""
+cost = 0
+description = "Lose 2 Hit Points, gain 1 Action."
+landscape = "Rainbow"
+card_type = "Spell"
+image = "Void Thimble.jpg"
+id = 482

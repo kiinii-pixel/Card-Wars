@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_gfbms"]
+
+[resource]
+script = ExtResource("1_gfbms")
+card_name = "Dark Angel"
+atk = 0
+def = 5
+ability = "Continuous"
+cost = 1
+description = "+1 ATK for every 5 cards in your discard pile."
+landscape = "Useless Swamp"
+card_type = "Creature"
+image = "Dark Angel.jpg"
+id = 105

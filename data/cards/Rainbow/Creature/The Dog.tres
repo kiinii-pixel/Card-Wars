@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_4laob"]
+
+[resource]
+script = ExtResource("1_4laob")
+card_name = "The Dog"
+atk = 1
+def = 7
+ability = ""
+cost = 1
+description = "FLOOP >>> Opposing Buildings in this Lane are blank while The Dog is Flooped \"Woof."
+landscape = "Rainbow"
+card_type = "Creature"
+image = "The Dog.jpg"
+id = 458

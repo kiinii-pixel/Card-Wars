@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_hpp8s"]
+
+[resource]
+script = ExtResource("1_hpp8s")
+card_name = "Ghost Ninja"
+atk = 2
+def = 7
+ability = "Continuous"
+cost = 1
+description = "When Ghost Ninja deals Damage to an opposing player, that opponent can't play Spells during his next turn."
+landscape = "Blue Plains"
+card_type = "Creature"
+image = "Ghost Tree.jpg"
+id = 184

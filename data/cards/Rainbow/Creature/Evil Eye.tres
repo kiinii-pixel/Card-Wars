@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_0i1au"]
+
+[resource]
+script = ExtResource("1_0i1au")
+card_name = "Evil Eye"
+atk = 1
+def = 5
+ability = "None"
+cost = 0
+description = "Evil is in the eye of the beholder."
+landscape = "Rainbow"
+card_type = "Creature"
+image = "Evil Eye.jpg"
+id = 130

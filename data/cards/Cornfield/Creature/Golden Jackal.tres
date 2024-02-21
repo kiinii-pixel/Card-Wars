@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_i4epl"]
+
+[resource]
+script = ExtResource("1_i4epl")
+card_name = "Golden Jackal"
+atk = 1
+def = 4
+ability = "FLOOP"
+cost = 1
+description = "FLOOP and discard a SandyLands card >>> Deal 1 Damage to each opposing Creature."
+landscape = "Cornfield"
+card_type = "Creature"
+image = "Golden Jackal.jpg"
+id = 194

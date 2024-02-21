@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_wlko4"]
+
+[resource]
+script = ExtResource("1_wlko4")
+card_name = "Auto-Plucker"
+atk = 0
+def = 0
+ability = ""
+cost = 1
+description = "FLOOP >>> Heal or deal 1 Damage to your Creature in this Lane."
+landscape = "NiceLands"
+card_type = "Building"
+image = "Auto-Plucker.jpg"
+id = 16

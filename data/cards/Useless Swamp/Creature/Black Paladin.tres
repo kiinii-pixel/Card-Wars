@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_7267d"]
+
+[resource]
+script = ExtResource("1_7267d")
+card_name = "Black Paladin"
+atk = 1
+def = 7
+ability = "Continuous"
+cost = 1
+description = "+1 ATK for each card players (including you) have discarded from their hand this turn."
+landscape = "Useless Swamp"
+card_type = "Creature"
+image = "Black Paladin.jpg"
+id = 29

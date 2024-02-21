@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_rruah"]
+
+[resource]
+script = ExtResource("1_rruah")
+card_name = "Travelin' Wizard"
+atk = 3
+def = 3
+ability = "Entering Play"
+cost = 2
+description = "When Travelin' Wizard enters play, the opposing Creature in this Lane and Travelin' Wizard switch sides."
+landscape = "Blue Plains"
+card_type = "Creature"
+image = "Travelin' Wizard.jpg"
+id = 473

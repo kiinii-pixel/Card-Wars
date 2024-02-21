@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_a8xh6"]
+
+[resource]
+script = ExtResource("1_a8xh6")
+card_name = "Celestial Fortress"
+atk = 0
+def = 0
+ability = ""
+cost = 1
+description = "The opposing Creature in this Lane has -2 DEF."
+landscape = "Rainbow"
+card_type = "Building"
+image = "Celestial Fortress.jpg"
+id = 66

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_xgwug"]
+
+[resource]
+script = ExtResource("1_xgwug")
+card_name = "Snow Bunny"
+atk = 3
+def = 3
+ability = "Ignition"
+cost = 1
+description = "Destroy Snow Bunny >>> Freeze target Landscape."
+landscape = "IcyLands"
+card_type = "Creature"
+image = "Snow Bunny.jpg"
+id = 414

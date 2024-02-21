@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_pke6u"]
+
+[resource]
+script = ExtResource("1_pke6u")
+card_name = "Pants of Awesome"
+atk = 0
+def = 0
+ability = ""
+cost = 1
+description = "Move target Creature you control to an empty Blue Plains Landscape you control, and then draw a card."
+landscape = "Blue Plains"
+card_type = "Spell"
+image = "Pants of Awesome.jpg"
+id = 313

@@ -5,3 +5,8 @@
 [resource]
 script = ExtResource("1_g3gk3")
 character = 0
+deck = []
+landscape1 = 0
+landscape2 = 0
+landscape3 = 0
+landscape4 = 0

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_yct6p"]
+
+[resource]
+script = ExtResource("1_yct6p")
+card_name = "Frosted Deanimator"
+atk = 2
+def = 6
+ability = "Entering Play"
+cost = 1
+description = "Frosted Deanimator may enter play onto a Landscape that has a Frozen token on it."
+landscape = "IcyLands"
+card_type = "Creature"
+image = "Frosted Deanimator.jpg"
+id = 164

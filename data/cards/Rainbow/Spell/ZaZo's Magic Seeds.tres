@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_u53ss"]
+
+[resource]
+script = ExtResource("1_u53ss")
+card_name = "ZaZo's Magic Seeds"
+atk = 0
+def = 0
+ability = ""
+cost = 0
+description = "Target SandyLands Creature has +2 ATK this turn for each Creature that entered play into an adjacent Lane this turn."
+landscape = "Rainbow"
+card_type = "Spell"
+image = "ZaZo's Magic Seeds.jpg"
+id = 510

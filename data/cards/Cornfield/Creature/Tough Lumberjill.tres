@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_4dekr"]
+
+[resource]
+script = ExtResource("1_4dekr")
+card_name = "Tough Lumberjill"
+atk = 3
+def = 6
+ability = "Entering Play"
+cost = 2
+description = "When Tough Lumberjill enters play, deal 1 Damage to your opponent for each Building you control."
+landscape = "Cornfield"
+card_type = "Creature"
+image = "Tough Lumberjill.jpg"
+id = 469

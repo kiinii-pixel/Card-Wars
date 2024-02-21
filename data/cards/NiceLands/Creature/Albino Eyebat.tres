@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_b41cp"]
+
+[resource]
+script = ExtResource("1_b41cp")
+card_name = "Albino Eyebat"
+atk = 2
+def = 7
+ability = "Continuous"
+cost = 1
+description = "While Albino Eyebat has exactly 2 Damage on it, it has +2 ATK."
+landscape = "NiceLands"
+card_type = "Creature"
+image = "Albino Eyebat.jpg"
+id = 5

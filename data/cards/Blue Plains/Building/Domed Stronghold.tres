@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3 uid="uid://c37gi4ryurhe3"]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_00ko2"]
+
+[resource]
+script = ExtResource("1_00ko2")
+card_name = "Domed Stronghold"
+atk = 0
+def = 0
+ability = ""
+cost = 1
+description = "Your Creature on this Landscape has +2 DEF and cannot be damaged by your foe's Spells."
+landscape = "Blue Plains"
+card_type = "Building"
+image = "Domed Stronghold.jpg"
+id = 111

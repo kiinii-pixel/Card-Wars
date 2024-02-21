@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_b4ofj"]
+
+[resource]
+script = ExtResource("1_b4ofj")
+card_name = "Softie Recruit"
+atk = 2
+def = 5
+ability = ""
+cost = 1
+description = "When Softie Recruit enters play, if your opponent does not control a Creature in this Lane, gain 1 Action."
+landscape = "IcyLands"
+card_type = "Creature"
+image = "Softie Recruit.jpg"
+id = 422

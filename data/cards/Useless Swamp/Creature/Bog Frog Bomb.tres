@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_dkofx"]
+
+[resource]
+script = ExtResource("1_dkofx")
+card_name = "Bog Frog Bomb"
+atk = 3
+def = 8
+ability = "Leaving Play"
+cost = 2
+description = "If Bog Frog Bomb leaves play while Ready, deal 2 Damage to each opposing Creature."
+landscape = "Useless Swamp"
+card_type = "Creature"
+image = "Bog Frog Bomb.jpg"
+id = 46

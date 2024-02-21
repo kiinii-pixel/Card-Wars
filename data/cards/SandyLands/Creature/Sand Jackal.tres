@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_nyawn"]
+
+[resource]
+script = ExtResource("1_nyawn")
+card_name = "Sand Jackal"
+atk = 3
+def = 3
+ability = "Continuous"
+cost = 1
+description = "While Sand Jackal is on a [NiceLands]] Landscape, when it defeats an opposing Creature, you heal 3 Hit Points."
+landscape = "SandyLands"
+card_type = "Creature"
+image = "Sand Jackal.jpg"
+id = 375

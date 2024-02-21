@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_5yyq4"]
+
+[resource]
+script = ExtResource("1_5yyq4")
+card_name = "Puppy Parade"
+atk = 0
+def = 0
+ability = ""
+cost = 2
+description = "Heal 2 Damage from each Creature you control. Creatures you control lose their Landscape type and become Rainbow Creatures this turn."
+landscape = "Blue Plains"
+card_type = "Spell"
+image = "Puppy Parade.jpg"
+id = 345

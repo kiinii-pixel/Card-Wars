@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_yijlx"]
+
+[resource]
+script = ExtResource("1_yijlx")
+card_name = "Blue Ogre"
+atk = 1
+def = 5
+ability = "Trigger"
+cost = 2
+description = "Whenever you draw a card, Blue Ogre has +1 ATK this turn."
+landscape = "Blue Plains"
+card_type = "Creature"
+image = "Blue Ogre.jpg"
+id = 38

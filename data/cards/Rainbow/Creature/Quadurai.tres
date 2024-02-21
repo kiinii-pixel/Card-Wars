@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_7dy37"]
+
+[resource]
+script = ExtResource("1_7dy37")
+card_name = "Quadurai"
+atk = 0
+def = 6
+ability = "Continuous"
+cost = 0
+description = "At the start of you turn, deal 2 Damage to each opponent with 4 or more cards in hand."
+landscape = "Rainbow"
+card_type = "Creature"
+image = "Quadurai.jpg"
+id = 348

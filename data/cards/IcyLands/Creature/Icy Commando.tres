@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_qun0x"]
+
+[resource]
+script = ExtResource("1_qun0x")
+card_name = "Icy Commando"
+atk = 1
+def = 7
+ability = "Continuous"
+cost = 1
+description = "Icy Commando has +1 ATK for each Landscape with a Frozen token on it."
+landscape = "IcyLands"
+card_type = "Creature"
+image = "Icy Commando.jpg"
+id = 238

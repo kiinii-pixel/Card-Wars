@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_k05sd"]
+
+[resource]
+script = ExtResource("1_k05sd")
+card_name = "Twinsies"
+atk = 0
+def = 0
+ability = ""
+cost = 0
+description = "Draw a card and reveal it. Another target player then reveals the top card of their deck. If their costs match, the targeted player draws it."
+landscape = "Rainbow"
+card_type = "Spell"
+image = "Twinsies.jpg"
+id = 476

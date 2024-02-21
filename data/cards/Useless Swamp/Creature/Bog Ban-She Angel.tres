@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_fe52u"]
+
+[resource]
+script = ExtResource("1_fe52u")
+card_name = "Bog Ban-She Angel"
+atk = 2
+def = 7
+ability = "Ignition"
+cost = 2
+description = "Pay 1 Action >>> Move all Damage on this Creature to target Creature."
+landscape = "Useless Swamp"
+card_type = "Creature"
+image = "Bog Ban-She Angel.jpg"
+id = 44

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_tm04n"]
+
+[resource]
+script = ExtResource("1_tm04n")
+card_name = "Farmhouse"
+atk = 0
+def = 0
+ability = ""
+cost = 1
+description = "Farmhouse counts as an additional Cornfield Landscape you control."
+landscape = "Cornfield"
+card_type = "Building"
+image = "Farmhouse.jpg"
+id = 140

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_rolrt"]
+
+[resource]
+script = ExtResource("1_rolrt")
+card_name = "Frosty Frolic"
+atk = 0
+def = 0
+ability = ""
+cost = 2
+description = "Target player discards 1 card from her hand for each Landscape with a Frozen token on it she controls."
+landscape = "IcyLands"
+card_type = "Spell"
+image = "Frosty Frolic.jpg"
+id = 166

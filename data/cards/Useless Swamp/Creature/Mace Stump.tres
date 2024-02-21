@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_bsbjp"]
+
+[resource]
+script = ExtResource("1_bsbjp")
+card_name = "Mace Stump"
+atk = 3
+def = 3
+ability = "Ignition"
+cost = 1
+description = "Destroy Mace Stump >>> Target opponent discards a card for every 5 cards in your discard pile."
+landscape = "Useless Swamp"
+card_type = "Creature"
+image = "Mace Stump.jpg"
+id = 280

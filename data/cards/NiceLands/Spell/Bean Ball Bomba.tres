@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_vc200"]
+
+[resource]
+script = ExtResource("1_vc200")
+card_name = "Bean Ball Bomba"
+atk = 0
+def = 0
+ability = ""
+cost = 2
+description = "FLOOP >>> Heal or deal Damage to your Creature on this Landscape until it has 4 Damage on it."
+landscape = "NiceLands"
+card_type = "Spell"
+image = "Bean Ball Bomba.jpg"
+id = 24

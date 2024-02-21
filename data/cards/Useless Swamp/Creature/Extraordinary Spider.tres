@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_drsp3"]
+
+[resource]
+script = ExtResource("1_drsp3")
+card_name = "Extraordinary Spider"
+atk = 1
+def = 7
+ability = "Continuous"
+cost = 1
+description = "At the start of your turn, deal 1 Damage to target opponent for every 5 cards in your discard pile."
+landscape = "Useless Swamp"
+card_type = "Creature"
+image = "Extraordinary Spider.jpg"
+id = 131

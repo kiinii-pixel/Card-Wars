@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_yvl5w"]
+
+[resource]
+script = ExtResource("1_yvl5w")
+card_name = "Amaizing Avalanche"
+atk = 0
+def = 0
+ability = ""
+cost = 1
+description = "Each of your Creatures has +1 ATK this turn for each face-down Landscape in play."
+landscape = "Cornfield"
+card_type = "Spell"
+image = "Amaizing Avalanche.jpg"
+id = 6

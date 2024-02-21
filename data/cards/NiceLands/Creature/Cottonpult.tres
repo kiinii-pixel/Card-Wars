@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_6r5uo"]
+
+[resource]
+script = ExtResource("1_6r5uo")
+card_name = "Cottonpult"
+atk = 1
+def = 8
+ability = "FLOOP"
+cost = 1
+description = "FLOOP >>> Deal 1 Damage to target Creature. If Cottonpult has 5 or more Damage on it, it heals 1 Damage and readies."
+landscape = "NiceLands"
+card_type = "Creature"
+image = "Cottonpult.jpg"
+id = 94

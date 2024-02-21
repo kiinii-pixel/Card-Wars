@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_soe1g"]
+
+[resource]
+script = ExtResource("1_soe1g")
+card_name = "Fountain of Tears"
+atk = 0
+def = 0
+ability = ""
+cost = 0
+description = "While your Creature in this Lane has exactly 3 Damage on it, it has +3 ATK."
+landscape = "Rainbow"
+card_type = "Building"
+image = "Fountain of Tears.jpg"
+id = 156

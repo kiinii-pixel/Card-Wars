@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_oj5al"]
+
+[resource]
+script = ExtResource("1_oj5al")
+card_name = "Bail Out"
+atk = 0
+def = 0
+ability = ""
+cost = 1
+description = "Put target Creature you own into your hand, and then play it for free."
+landscape = "SandyLands"
+card_type = "Spell"
+image = "Bail Out.jpg"
+id = 17

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_b4p8e"]
+
+[resource]
+script = ExtResource("1_b4p8e")
+card_name = "Heavenly Gazer"
+atk = 2
+def = 5
+ability = "FLOOP"
+cost = 1
+description = "FLOOP >>> Put a Spell from your discard pile on top of your deck."
+landscape = "Blue Plains"
+card_type = "Creature"
+image = "Heavenly Gazer.jpg"
+id = 215

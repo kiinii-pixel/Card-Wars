@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_lp3n2"]
+
+[resource]
+script = ExtResource("1_lp3n2")
+card_name = "Corn Bat"
+atk = 2
+def = 7
+ability = "Ignition"
+cost = 1
+description = "Pay 1 Action >>> Deal 1 Damage to target Creature in this Lane for each different Landscape type you control."
+landscape = "Cornfield"
+card_type = "Creature"
+image = "Corn Bat.jpg"
+id = 84

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_r2cq3"]
+
+[resource]
+script = ExtResource("1_r2cq3")
+card_name = "Magenapping"
+atk = 0
+def = 0
+ability = ""
+cost = 2
+description = "Play only if you control one or fewer Creatures and have 15 or fewer Hit Points. Move target Creature to target empty Landscape you control."
+landscape = "Blue Plains"
+card_type = "Spell"
+image = "Magenapping.jpg"
+id = 281

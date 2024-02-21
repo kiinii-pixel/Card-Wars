@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_17wme"]
+
+[resource]
+script = ExtResource("1_17wme")
+card_name = "Pentacutie"
+atk = 3
+def = 8
+ability = "Continuous"
+cost = 2
+description = "Opponents can't play 0 cost cards."
+landscape = "Blue Plains"
+card_type = "Creature"
+image = "Pentacutie.jpg"
+id = 321

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_2p7xs"]
+
+[resource]
+script = ExtResource("1_2p7xs")
+card_name = "Fairy Shepard"
+atk = 2
+def = 9
+ability = "Continuous"
+cost = 2
+description = "Each Adjacent NiceLands Creature has +2 DEF."
+landscape = "NiceLands"
+card_type = "Creature"
+image = "Fairy Shepard.jpg"
+id = 134

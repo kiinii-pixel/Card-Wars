@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_bbe0c"]
+
+[resource]
+script = ExtResource("1_bbe0c")
+card_name = "Green Snakey"
+atk = 1
+def = 6
+ability = "Leaving Play"
+cost = 1
+description = "When Green Snakey leaves play, deal 1 Damage to target Creature in this Lane."
+landscape = "SandyLands"
+card_type = "Creature"
+image = "Green Snakey.jpg"
+id = 207

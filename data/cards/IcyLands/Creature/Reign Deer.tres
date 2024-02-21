@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_kqrwg"]
+
+[resource]
+script = ExtResource("1_kqrwg")
+card_name = "Reign Deer"
+atk = 4
+def = 4
+ability = "FLOOP"
+cost = 2
+description = "FLOOP >>> Draw a card for each Landscape with a Frozen token on it players control."
+landscape = "IcyLands"
+card_type = "Creature"
+image = "Reign Deer.jpg"
+id = 357

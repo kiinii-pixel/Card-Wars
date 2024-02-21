@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_v2yrg"]
+
+[resource]
+script = ExtResource("1_v2yrg")
+card_name = "Unicyclops"
+atk = 1
+def = 10
+ability = "Continuous"
+cost = 2
+description = "At the start of your turn, each player draws a card and then discards a card."
+landscape = "Useless Swamp"
+card_type = "Creature"
+image = "Unicyclops.jpg"
+id = 479

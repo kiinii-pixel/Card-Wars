@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_1mynq"]
+
+[resource]
+script = ExtResource("1_1mynq")
+card_name = "Tree of Undeath"
+atk = 2
+def = 6
+ability = "FLOOP"
+cost = 2
+description = "FLOOP >>> Return a random Creature from your discard pile to your hand."
+landscape = "Useless Swamp"
+card_type = "Creature"
+image = "Tree of Undeath.jpg"
+id = 474

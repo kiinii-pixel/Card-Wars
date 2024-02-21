@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_qfprd"]
+
+[resource]
+script = ExtResource("1_qfprd")
+card_name = "Snake Eye Ring"
+atk = 0
+def = 0
+ability = ""
+cost = 0
+description = "Return a random Useless Swamp Creature from your discard pile to your hand."
+landscape = "Rainbow"
+card_type = "Spell"
+image = "Snake Eye Ring.jpg"
+id = 408

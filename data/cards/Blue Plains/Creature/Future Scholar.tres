@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_ls23k"]
+
+[resource]
+script = ExtResource("1_ls23k")
+card_name = "Future Scholar"
+atk = 2
+def = 8
+ability = "Entering Play"
+cost = 2
+description = "When Future Scholar enters play, if it replaced a Creature, gain 1 Action."
+landscape = "Blue Plains"
+card_type = "Creature"
+image = "Future Scholar.jpg"
+id = 179

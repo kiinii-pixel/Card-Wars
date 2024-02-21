@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_5px5p"]
+
+[resource]
+script = ExtResource("1_5px5p")
+card_name = "Grand Mummy"
+atk = 3
+def = 3
+ability = "Trigger"
+cost = 1
+description = "At the start of your turn, you may return Grand Mummy to its owner's hand. If you do, draw two cards."
+landscape = "SandyLands"
+card_type = "Creature"
+image = "Grand Mummy.jpg"
+id = 196

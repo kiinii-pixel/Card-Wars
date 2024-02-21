@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_lv0d1"]
+
+[resource]
+script = ExtResource("1_lv0d1")
+card_name = "Music Mallard"
+atk = 0
+def = 9
+ability = "FLOOP"
+cost = 1
+description = "FLOOP >>> Draw a card. If Music Mallard has 5 or more Damage on it, draw an additional card."
+landscape = "NiceLands"
+card_type = "Creature"
+image = "Music Mallard.jpg"
+id = 297

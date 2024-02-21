@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_v7hjw"]
+
+[resource]
+script = ExtResource("1_v7hjw")
+card_name = "Mantle Masher"
+atk = 1
+def = 6
+ability = "Entering Play"
+cost = 1
+description = "When Mantle Masher enters play, flip a Landscape in this Lane face down. When Mantle Masher leaves play, flip it face up."
+landscape = "Cornfield"
+card_type = "Creature"
+image = "Mantle Masher.jpg"
+id = 285

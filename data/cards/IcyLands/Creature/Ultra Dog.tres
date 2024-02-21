@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_iofdp"]
+
+[resource]
+script = ExtResource("1_iofdp")
+card_name = "Ultra Dog"
+atk = 3
+def = 6
+ability = ""
+cost = 2
+description = "Floop >>> Freeze target Landscape with a Creature on it."
+landscape = "IcyLands"
+card_type = "Creature"
+image = "Ultra Dog.jpg"
+id = 477

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_6jsbf"]
+
+[resource]
+script = ExtResource("1_6jsbf")
+card_name = "Green Candy"
+atk = 0
+def = 0
+ability = ""
+cost = 0
+description = "Heal or deal 1 Damage to target Creature."
+landscape = "Rainbow"
+card_type = "Spell"
+image = "Green Candy.jpg"
+id = 202

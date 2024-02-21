@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_7nf6s"]
+
+[resource]
+script = ExtResource("1_7nf6s")
+card_name = "Dragoon Parrotrooper"
+atk = 1
+def = 8
+ability = "Entering Play"
+cost = 2
+description = "When Dragoon Parrotrooper enters play, move it to any empty Landscape. It cannot be replaced. Adjacent Creatures have - 1 ATK."
+landscape = "Rainbow"
+card_type = "Creature"
+image = "Dragoon Parrotrooper.jpg"
+id = 116

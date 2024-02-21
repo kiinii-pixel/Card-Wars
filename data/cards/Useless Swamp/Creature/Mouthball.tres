@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_rni3u"]
+
+[resource]
+script = ExtResource("1_rni3u")
+card_name = "Mouthball"
+atk = 2
+def = 4
+ability = "Continuous"
+cost = 1
+description = "+2 DEF for every 5 cards in your discard pile."
+landscape = "Useless Swamp"
+card_type = "Creature"
+image = "Mouthball.jpg"
+id = 294

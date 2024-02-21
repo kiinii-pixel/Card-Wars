@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_2ppiw"]
+
+[resource]
+script = ExtResource("1_2ppiw")
+card_name = "Static Parrotrooper"
+atk = 0
+def = 6
+ability = "Entering Play"
+cost = 0
+description = "When Static Parrotrooper enters play, move it to any empty Landscape. It cannot be replaced. At the start of your turn, deal 1 damage to your Hero."
+landscape = "Rainbow"
+card_type = "Creature"
+image = "Static Parrotrooper.jpg"
+id = 432

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_1hnqs"]
+
+[resource]
+script = ExtResource("1_1hnqs")
+card_name = "Floating Ice Palace"
+atk = 0
+def = 0
+ability = ""
+cost = 2
+description = "Your Creature on this Landscape has +1 ATK during your turn for each Landscape with a Frozen token on it."
+landscape = "IcyLands"
+card_type = "Building"
+image = "Floating Ice Palace.jpg"
+id = 153

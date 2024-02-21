@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_3p0ig"]
+
+[resource]
+script = ExtResource("1_3p0ig")
+card_name = "Wall of Ears"
+atk = 2
+def = 4
+ability = "Continuous"
+cost = 1
+description = "+1 DEF for each Cornfield Landscape in play (counting all players)."
+landscape = "Cornfield"
+card_type = "Creature"
+image = "Wall of Ears.jpg"
+id = 486

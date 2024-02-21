@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_6rtwq"]
+
+[resource]
+script = ExtResource("1_6rtwq")
+card_name = "Sand Angel"
+atk = 1
+def = 5
+ability = "None"
+cost = 0
+description = "Lie down in the sand, wave your arms and legs, and she will appear to you."
+landscape = "Rainbow"
+card_type = "Creature"
+image = "Sand Angel.jpg"
+id = 372

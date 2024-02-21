@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_cvap3"]
+
+[resource]
+script = ExtResource("1_cvap3")
+card_name = "Stitched Squirrel"
+atk = 2
+def = 8
+ability = ""
+cost = 1
+description = "At the start of your turn, if Stitched Squirrel has 4 or more Damage on it, destroy target opposing Building in this lane."
+landscape = "NiceLands"
+card_type = "Creature"
+image = "Stitched Squirrel.jpg"
+id = 434

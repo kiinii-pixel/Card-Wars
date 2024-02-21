@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_i8lty"]
+
+[resource]
+script = ExtResource("1_i8lty")
+card_name = "Dragon Claw"
+atk = 1
+def = 8
+ability = "FLOOP"
+cost = 1
+description = "FLOOP >>> Move a Creature you control to an empty Lane."
+landscape = "Blue Plains"
+card_type = "Creature"
+image = "Dragon Claw.jpg"
+id = 114

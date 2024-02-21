@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_rus5i"]
+
+[resource]
+script = ExtResource("1_rus5i")
+card_name = "The Barrel"
+atk = 1
+def = 5
+ability = "Continuous"
+cost = 0
+description = "Each The Barrel has +1 ATK and +1 DEF for each other The Barrel in play."
+landscape = "Rainbow"
+card_type = "Creature"
+image = "The Barrel.jpg"
+id = 454

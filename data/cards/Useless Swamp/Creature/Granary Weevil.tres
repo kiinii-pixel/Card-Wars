@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_fgv1j"]
+
+[resource]
+script = ExtResource("1_fgv1j")
+card_name = "Granary Weevil"
+atk = 2
+def = 6
+ability = ""
+cost = 2
+description = "Destroy Granary Weevil >>> Destroy target opposing Creature in this Lane and any Creature with the same name in play."
+landscape = "Useless Swamp"
+card_type = "Creature"
+image = "Granary Weevil.jpg"
+id = 195

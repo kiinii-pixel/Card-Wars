@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_bfiw7"]
+
+[resource]
+script = ExtResource("1_bfiw7")
+card_name = "Sandasaurus Rex"
+atk = 0
+def = 9
+ability = "Continuous"
+cost = 2
+description = "+2 ATK for each of your empty Lanes."
+landscape = "SandyLands"
+card_type = "Creature"
+image = "Sandasaurus Rex.jpg"
+id = 379

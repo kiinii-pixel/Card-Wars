@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_ghb3s"]
+
+[resource]
+script = ExtResource("1_ghb3s")
+card_name = "Headphone Jerk"
+atk = 2
+def = 7
+ability = "Entering Play"
+cost = 2
+description = "When Headphone Jerk enters play, if it replaced a Creature, deal 3 Damage to another Creature in this Lane."
+landscape = "Blue Plains"
+card_type = "Creature"
+image = "Headphone Jerk.jpg"
+id = 214

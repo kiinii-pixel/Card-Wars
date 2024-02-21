@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_pw1cm"]
+
+[resource]
+script = ExtResource("1_pw1cm")
+card_name = "Infinite Figure"
+atk = 1
+def = 6
+ability = "Ignition"
+cost = 1
+description = "Discard a card >>> Deal 1 Damage to another Creature in this Lane. (Use any number of times during each of your turns.)"
+landscape = "Useless Swamp"
+card_type = "Creature"
+image = "Infinite Figure.jpg"
+id = 247

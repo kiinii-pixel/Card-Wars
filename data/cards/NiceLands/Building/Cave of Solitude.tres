@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_ksbnf"]
+
+[resource]
+script = ExtResource("1_ksbnf")
+card_name = "Cave of Solitude"
+atk = 0
+def = 0
+ability = ""
+cost = 2
+description = "Discard a card >>> Your Creature in this Lane can't be targeted or attacked until the start of your next turn."
+landscape = "NiceLands"
+card_type = "Building"
+image = "Cave of Solitude.jpg"
+id = 64

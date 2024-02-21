@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_ow0vp"]
+
+[resource]
+script = ExtResource("1_ow0vp")
+card_name = "The Big Hen House"
+atk = 0
+def = 0
+ability = ""
+cost = 1
+description = "At the start of your turn, deal 1 or 2 Damage to your Creature in this Lane, then you heal 1 HP (Max 25)."
+landscape = "NiceLands"
+card_type = "Building"
+image = "The Big Hen House.jpg"
+id = 455

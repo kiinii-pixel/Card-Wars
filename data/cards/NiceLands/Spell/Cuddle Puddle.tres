@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_8ko7j"]
+
+[resource]
+script = ExtResource("1_8ko7j")
+card_name = "Cuddle Puddle"
+atk = 0
+def = 0
+ability = ""
+cost = 1
+description = "Friendly Creatures have +1 ATK until the start of the Fight Phase. Then each Creature deals Damage equal to its ATK to the opposing Creature in its Lane."
+landscape = "NiceLands"
+card_type = "Spell"
+image = "Cuddle Puddle.jpg"
+id = 101

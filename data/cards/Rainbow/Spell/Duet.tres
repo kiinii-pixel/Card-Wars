@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_atrqb"]
+
+[resource]
+script = ExtResource("1_atrqb")
+card_name = "Duet"
+atk = 0
+def = 0
+ability = ""
+cost = 0
+description = "Heal 1 Damage from a Creature you control and 1 Damage from a Creature you do not control."
+landscape = "Rainbow"
+card_type = "Spell"
+image = "Duet.jpg"
+id = 121

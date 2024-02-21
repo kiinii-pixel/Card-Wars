@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_l61es"]
+
+[resource]
+script = ExtResource("1_l61es")
+card_name = "Deforestation"
+atk = 0
+def = 0
+ability = ""
+cost = 2
+description = "Additional Cost: Floop a Creature you control. Search your deck for a Building and put it into play. Then shuffle your deck."
+landscape = "Cornfield"
+card_type = "Spell"
+image = "Deforestation.jpg"
+id = 107

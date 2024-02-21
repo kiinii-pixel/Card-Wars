@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_h28yb"]
+
+[resource]
+script = ExtResource("1_h28yb")
+card_name = "Knit Kitty"
+atk = 3
+def = 7
+ability = ""
+cost = 2
+description = "Knit Kitty is affected by Buildings on adjacent Landscapes."
+landscape = "NiceLands"
+card_type = "Creature"
+image = "Knit Kitty.jpg"
+id = 258

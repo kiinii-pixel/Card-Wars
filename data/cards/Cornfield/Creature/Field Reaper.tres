@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_vyj85"]
+
+[resource]
+script = ExtResource("1_vyj85")
+card_name = "Field Reaper"
+atk = 1
+def = 4
+ability = "Entering Play"
+cost = 2
+description = "Additional Cost: Discard a card. When Field Reaper enters play, move target Creature in this Lane to an adjacent empty Lane on your side."
+landscape = "Cornfield"
+card_type = "Creature"
+image = "Field Reaper.jpg"
+id = 147

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_0is6y"]
+
+[resource]
+script = ExtResource("1_0is6y")
+card_name = "Pyramidia"
+atk = 0
+def = 0
+ability = ""
+cost = 1
+description = "FLOOP >>> If you control a Creature in this Lane, gain 1 Action. Use it only to play a Creature into this Lane."
+landscape = "Blue Plains"
+card_type = "Building"
+image = "Pyramidia.jpg"
+id = 346

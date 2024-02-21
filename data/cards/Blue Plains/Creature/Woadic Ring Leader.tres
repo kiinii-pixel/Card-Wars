@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_2mktm"]
+
+[resource]
+script = ExtResource("1_2mktm")
+card_name = "Woadic Ring Leader"
+atk = 3
+def = 4
+ability = "Trigger"
+cost = 1
+description = "At the start of your turn, move Woadic Ring Leader to an empty Landscape you control. If you cannot, destroy it."
+landscape = "Blue Plains"
+card_type = "Creature"
+image = "Woadic Ring Leader.jpg"
+id = 503

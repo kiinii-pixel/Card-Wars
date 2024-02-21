@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_4onwp"]
+
+[resource]
+script = ExtResource("1_4onwp")
+card_name = "Eye Guy"
+atk = 1
+def = 8
+ability = "Continuous"
+cost = 1
+description = "At the start of your turn, look at the top card of your deck. You may put it on the bottom of your deck."
+landscape = "Useless Swamp"
+card_type = "Creature"
+image = "Eye Guy.jpg"
+id = 133

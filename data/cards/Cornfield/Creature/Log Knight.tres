@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_ms4jf"]
+
+[resource]
+script = ExtResource("1_ms4jf")
+card_name = "Log Knight"
+atk = 2
+def = 2
+ability = "FLOOP"
+cost = 1
+description = "FLOOP >>> Put a Building from your hand below this Lane. (If it doesn't already have one.)"
+landscape = "Cornfield"
+card_type = "Creature"
+image = "Log Knight.jpg"
+id = 269

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_byljs"]
+
+[resource]
+script = ExtResource("1_byljs")
+card_name = "Archer Dan"
+atk = 2
+def = 6
+ability = "FLOOP"
+cost = 2
+description = "FLOOP >>> Destroy target Building in Archer Dan's Lane."
+landscape = "Cornfield"
+card_type = "Creature"
+image = "Archer Dan.jpg"
+id = 13

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_u8o13"]
+
+[resource]
+script = ExtResource("1_u8o13")
+card_name = "Sea Hag"
+atk = 3
+def = 6
+ability = "Continuous"
+cost = 2
+description = "Sea Hag has +1 ATK while attacking a Creature that is on a Useless Swamp Landscape."
+landscape = "Rainbow"
+card_type = "Creature"
+image = "Sea Hag.jpg"
+id = 388

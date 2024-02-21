@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_3m4fx"]
+
+[resource]
+script = ExtResource("1_3m4fx")
+card_name = "Four Star Fudge"
+atk = 2
+def = 9
+ability = ""
+cost = 2
+description = "Each time a Landscape becomes Frozen, draw a card."
+landscape = "IcyLands"
+card_type = "Creature"
+image = "Four Star Fudge.jpg"
+id = 157

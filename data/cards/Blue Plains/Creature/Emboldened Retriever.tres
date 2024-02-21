@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_arad8"]
+
+[resource]
+script = ExtResource("1_arad8")
+card_name = "Emboldened Retriever"
+atk = 2
+def = 7
+ability = ""
+cost = 2
+description = "Each time Emboldened Retriever attacks, you may deal a card. Much ball. Wow."
+landscape = "Blue Plains"
+card_type = "Creature"
+image = "Emboldened Retriever.jpg"
+id = 125

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_sshmc"]
+
+[resource]
+script = ExtResource("1_sshmc")
+card_name = "The Cooler"
+atk = 4
+def = 7
+ability = "Leaving Play"
+cost = 2
+description = "When The Cooler leaves play, Freeze its Landscape."
+landscape = "IcyLands"
+card_type = "Creature"
+image = "The Cooler.jpg"
+id = 456

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_xmjwt"]
+
+[resource]
+script = ExtResource("1_xmjwt")
+card_name = "Lifeguard Lobster"
+atk = 2
+def = 9
+ability = ""
+cost = 2
+description = "Each time another creature enters play during your turn, you must heal 1 Damage from another Creature."
+landscape = "SandyLands"
+card_type = "Creature"
+image = "Lifeguard Lobster.jpg"
+id = 266

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_vqgxb"]
+
+[resource]
+script = ExtResource("1_vqgxb")
+card_name = "Sand Sphinx"
+atk = 0
+def = 0
+ability = ""
+cost = 1
+description = "FLOOP >>> Return a Creature you control in this Lane to its owner's hand."
+landscape = "SandyLands"
+card_type = "Building"
+image = "Sand Sphinx.jpg"
+id = 378

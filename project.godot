@@ -19,8 +19,8 @@ config/icon="res://assets/images/other/icon.png"
 
 [autoload]
 
-StaticData="*res://data/static_data.gd"
 Global="*res://scripts/global.gd"
+StaticData="*res://data/static_data.gd"
 
 [display]
 

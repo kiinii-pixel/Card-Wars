@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_2ugpn"]
+
+[resource]
+script = ExtResource("1_2ugpn")
+card_name = "Blonde MerWitch"
+atk = 3
+def = 9
+ability = "None"
+cost = 2
+description = "The seas are her cauldron, and her ingredients are anything that sinks."
+landscape = "Rainbow"
+card_type = "Creature"
+image = "Blonde MerWitch.jpg"
+id = 30

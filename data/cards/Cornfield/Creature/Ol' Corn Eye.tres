@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_e4dp0"]
+
+[resource]
+script = ExtResource("1_e4dp0")
+card_name = "Ol' Corn Eye"
+atk = 4
+def = 1
+ability = "Continuous"
+cost = 2
+description = "+1 DEF for each different Landscape type you control."
+landscape = "Cornfield"
+card_type = "Creature"
+image = "Ol' Corn Eye.jpg"
+id = 308

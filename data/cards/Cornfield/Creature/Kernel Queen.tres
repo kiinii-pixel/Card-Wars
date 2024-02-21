@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_bppxy"]
+
+[resource]
+script = ExtResource("1_bppxy")
+card_name = "Kernel Queen"
+atk = 1
+def = 6
+ability = "Continuous"
+cost = 1
+description = "Kernel Queen has +1 ATK for each Flooped Creature you control."
+landscape = "Cornfield"
+card_type = "Creature"
+image = "Kernel Queen.jpg"
+id = 256

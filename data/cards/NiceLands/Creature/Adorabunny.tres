@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_m1ts0"]
+
+[resource]
+script = ExtResource("1_m1ts0")
+card_name = "Adorabunny"
+atk = 0
+def = 8
+ability = ""
+cost = 1
+description = "At the start of your turn, if Adorabunny has 4 or more Damage on it, deal 3 Damage to target opponent."
+landscape = "NiceLands"
+card_type = "Creature"
+image = "Adorabunny.jpg"
+id = 3

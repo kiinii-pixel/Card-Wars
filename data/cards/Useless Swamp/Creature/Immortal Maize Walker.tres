@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_0xhf2"]
+
+[resource]
+script = ExtResource("1_0xhf2")
+card_name = "Immortal Maize Walker"
+atk = 2
+def = 8
+ability = "Continuous"
+cost = 2
+description = "While Immortal Maize Walker is on a Cornfield Landscape, it deals triple Damage."
+landscape = "Useless Swamp"
+card_type = "Creature"
+image = "Immortal Maize Walker.jpg"
+id = 242

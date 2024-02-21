@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_g5g8j"]
+
+[resource]
+script = ExtResource("1_g5g8j")
+card_name = "Endearing Elephant"
+atk = 4
+def = 4
+ability = ""
+cost = 2
+description = "Each time Endearing Elephant is targeted by an opponent's Spell, deal 2 Damage to target opponent."
+landscape = "NiceLands"
+card_type = "Creature"
+image = "Endearing Elephant.jpg"
+id = 128

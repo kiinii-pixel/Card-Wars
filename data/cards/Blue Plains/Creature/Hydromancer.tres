@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_ktbds"]
+
+[resource]
+script = ExtResource("1_ktbds")
+card_name = "Hydromancer"
+atk = 3
+def = 6
+ability = "Entering Play"
+cost = 2
+description = "When Hydromancer enters into play, you may reveal cards from the top of your deck until you reveal a Teamwork, and then play it for free. Shuffle the other revealed cards into your deck."
+landscape = "Blue Plains"
+card_type = "Creature"
+image = "Hydromancer.jpg"
+id = 230

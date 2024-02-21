@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_81qwj"]
+
+[resource]
+script = ExtResource("1_81qwj")
+card_name = "Herculeye"
+atk = 1
+def = 6
+ability = "Ignition"
+cost = 2
+description = "Discard a card >>> Herculeye has +4 ATK this turn. (Use only once during each of your turns.)"
+landscape = "Useless Swamp"
+card_type = "Creature"
+image = "Herculeye.jpg"
+id = 217

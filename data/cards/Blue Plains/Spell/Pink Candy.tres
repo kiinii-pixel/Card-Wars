@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_3ykt3"]
+
+[resource]
+script = ExtResource("1_3ykt3")
+card_name = "Pink Candy"
+atk = 0
+def = 0
+ability = ""
+cost = 1
+description = "Each of your Creatures has +2 ATK this turn while attacking a Creature that is on a SandyLands Landscape."
+landscape = "Blue Plains"
+card_type = "Spell"
+image = "Pink Candy.jpg"
+id = 329

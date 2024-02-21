@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_2pc7q"]
+
+[resource]
+script = ExtResource("1_2pc7q")
+card_name = "Papercut Tiger"
+atk = 2
+def = 9
+ability = "Continuous"
+cost = 2
+description = "While Papercut Tiger has exactly 5 Damage on it, it has +5 ATK."
+landscape = "NiceLands"
+card_type = "Creature"
+image = "Papercut Tiger.jpg"
+id = 314

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_r7rkh"]
+
+[resource]
+script = ExtResource("1_r7rkh")
+card_name = "Psionic Architect"
+atk = 2
+def = 6
+ability = "Entering Play"
+cost = 1
+description = "When Psionic Architect enters play, you may ready a Flooped Creature you control."
+landscape = "Blue Plains"
+card_type = "Creature"
+image = "Psionic Architect.jpg"
+id = 340

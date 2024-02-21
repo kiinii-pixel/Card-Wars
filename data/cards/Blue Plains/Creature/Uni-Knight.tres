@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_25ng3"]
+
+[resource]
+script = ExtResource("1_25ng3")
+card_name = "Uni-Knight"
+atk = 3
+def = 4
+ability = "Ignition"
+cost = 1
+description = "Pay 1 Action >>> Target Creature in this Lane has -10 ATK this turn."
+landscape = "Blue Plains"
+card_type = "Creature"
+image = "Uni-Knight.jpg"
+id = 480

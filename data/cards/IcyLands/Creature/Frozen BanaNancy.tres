@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_w4b7k"]
+
+[resource]
+script = ExtResource("1_w4b7k")
+card_name = "Frozen BanaNancy"
+atk = 1
+def = 7
+ability = ""
+cost = 1
+description = "At the start of your Fight Phase, if there are one or more Frozen tokens in this Lane, deal 2 Damage to target opponent."
+landscape = "IcyLands"
+card_type = "Creature"
+image = "Frozen BanaNancy.jpg"
+id = 167

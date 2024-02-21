@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_qlh48"]
+
+[resource]
+script = ExtResource("1_qlh48")
+card_name = "Scorching Serve"
+atk = 0
+def = 0
+ability = ""
+cost = 1
+description = "Destroy target opposing Creature. Each opponent draws cards equal to that Creature's cost."
+landscape = "SandyLands"
+card_type = "Spell"
+image = "Scorching Serve.jpg"
+id = 385

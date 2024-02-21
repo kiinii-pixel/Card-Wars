@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_ww33p"]
+
+[resource]
+script = ExtResource("1_ww33p")
+card_name = "Silo of Truth"
+atk = 0
+def = 0
+ability = ""
+cost = 1
+description = "Pay 2 Actions >>> Steal a random card from your opponent and play it at no cost."
+landscape = "Cornfield"
+card_type = "Building"
+image = "Silo of Truth.jpg"
+id = 398

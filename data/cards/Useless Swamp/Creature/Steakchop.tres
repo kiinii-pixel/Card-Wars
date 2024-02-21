@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_sydlf"]
+
+[resource]
+script = ExtResource("1_sydlf")
+card_name = "Steakchop"
+atk = 4
+def = 4
+ability = "Continuous"
+cost = 1
+description = "At the start of your turn, discard 2 cards or destroy Steakchop. (Discard after your free draw.)"
+landscape = "Useless Swamp"
+card_type = "Creature"
+image = "Steakchop.jpg"
+id = 433

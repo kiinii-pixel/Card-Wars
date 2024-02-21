@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_w7px8"]
+
+[resource]
+script = ExtResource("1_w7px8")
+card_name = "Mocha Launcher"
+atk = 0
+def = 4
+ability = ""
+cost = 1
+description = "Pay 1 Action, FLOOP >>> Deal 2 Damage to target Creature. If that Creature is destroyed this way, Freeze the Landscape it is on."
+landscape = "IcyLands"
+card_type = "Creature"
+image = "Mocha Launcher.jpg"
+id = 292

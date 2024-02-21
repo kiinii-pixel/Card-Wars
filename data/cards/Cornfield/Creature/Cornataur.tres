@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_70f6d"]
+
+[resource]
+script = ExtResource("1_70f6d")
+card_name = "Cornataur"
+atk = 2
+def = 10
+ability = "Entering Play"
+cost = 2
+description = "When Cornataur enters play, deal 1 Damage to your opponent for each Cornfield Landscape you control."
+landscape = "Cornfield"
+card_type = "Creature"
+image = "Cornataur.jpg"
+id = 89

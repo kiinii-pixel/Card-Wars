@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_te6c8"]
+
+[resource]
+script = ExtResource("1_te6c8")
+card_name = "Dr. Death"
+atk = 1
+def = 7
+ability = "FLOOP"
+cost = 2
+description = "Destroy a Creature you control and FLOOP >>> Destroy target opposing Creature in this Lane."
+landscape = "Useless Swamp"
+card_type = "Creature"
+image = "Dr. Death.jpg"
+id = 112

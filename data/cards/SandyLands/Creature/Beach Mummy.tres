@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_gkd0r"]
+
+[resource]
+script = ExtResource("1_gkd0r")
+card_name = "Beach Mummy"
+atk = 1
+def = 6
+ability = "FLOOP"
+cost = 1
+description = "FLOOP >>> Return a Creature in an adjacent Lane to its owner's hand."
+landscape = "SandyLands"
+card_type = "Creature"
+image = "Beach Mummy.jpg"
+id = 23

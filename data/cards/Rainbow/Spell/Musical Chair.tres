@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_rw5q5"]
+
+[resource]
+script = ExtResource("1_rw5q5")
+card_name = "Musical Chair"
+atk = 0
+def = 0
+ability = ""
+cost = 0
+description = "Swap up to 2 of your Landscapes with ones from outside of the game."
+landscape = "Rainbow"
+card_type = "Spell"
+image = "Musical Chair.jpg"
+id = 298

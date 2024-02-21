@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_ms6hv"]
+
+[resource]
+script = ExtResource("1_ms6hv")
+card_name = "Husker Champion"
+atk = 1
+def = 4
+ability = "Continuous"
+cost = 1
+description = "Husker Champion has +2 ATK and +2 DEF if you control a Building on this Landscape."
+landscape = "Cornfield"
+card_type = "Creature"
+image = "Husker Champion.jpg"
+id = 224

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_8k6qr"]
+
+[resource]
+script = ExtResource("1_8k6qr")
+card_name = "Lime Slimey"
+atk = 2
+def = 6
+ability = "Entering Play"
+cost = 1
+description = "If you control 3 or more different Landscape types when Lime Slimey enters play, draw 2 cards."
+landscape = "SandyLands"
+card_type = "Creature"
+image = "Lime Slimey.jpg"
+id = 267

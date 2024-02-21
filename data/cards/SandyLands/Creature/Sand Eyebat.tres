@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_sbael"]
+
+[resource]
+script = ExtResource("1_sbael")
+card_name = "Sand Eyebat"
+atk = 1
+def = 10
+ability = "Trigger"
+cost = 2
+description = "When another Creature enters play under your control, Sand Eyebat gains 1 DEF."
+landscape = "SandyLands"
+card_type = "Creature"
+image = "Sand Eyebat.jpg"
+id = 374

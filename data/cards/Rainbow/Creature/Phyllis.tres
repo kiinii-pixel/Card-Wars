@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_3j1a4"]
+
+[resource]
+script = ExtResource("1_3j1a4")
+card_name = "Phyllis"
+atk = 2
+def = 7
+ability = "None"
+cost = 1
+description = "While her blade distracts you, her purse swings in for the whammy."
+landscape = "Rainbow"
+card_type = "Creature"
+image = "Phyllis.jpg"
+id = 323

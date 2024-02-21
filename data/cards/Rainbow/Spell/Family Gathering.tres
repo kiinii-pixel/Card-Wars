@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_4772n"]
+
+[resource]
+script = ExtResource("1_4772n")
+card_name = "Family Gathering"
+atk = 0
+def = 0
+ability = ""
+cost = 0
+description = "Choose another player and a Landscape you control. Draw a card for each of their Creatures that match that Landscape."
+landscape = "Rainbow"
+card_type = "Spell"
+image = "Family Gathering.jpg"
+id = 136

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_rutco"]
+
+[resource]
+script = ExtResource("1_rutco")
+card_name = "Sand Castle"
+atk = 0
+def = 0
+ability = ""
+cost = 1
+description = "Discard Sand Castle from play >>> Put your Creature on this Landscape into your hand and then play it for free."
+landscape = "SandyLands"
+card_type = "Building"
+image = "Sand Castle.jpg"
+id = 373

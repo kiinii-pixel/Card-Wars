@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_ohceg"]
+
+[resource]
+script = ExtResource("1_ohceg")
+card_name = "Chronomancer"
+atk = 3
+def = 6
+ability = "Trigger"
+cost = 2
+description = "Each time Chronomancer changes Lanes, gain 1 Action."
+landscape = "Blue Plains"
+card_type = "Creature"
+image = "Chronomancer.jpg"
+id = 72

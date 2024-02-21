@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_h7mef"]
+
+[resource]
+script = ExtResource("1_h7mef")
+card_name = "Rainbow Eyebat"
+atk = 1
+def = 4
+ability = "Continuous"
+cost = 1
+description = "At the start of your turn, you heal 1 Hit Point for each different Landscape type you control. (Can 't go over 25.)"
+landscape = "NiceLands"
+card_type = "Creature"
+image = "Rainbow Eyebat.jpg"
+id = 351

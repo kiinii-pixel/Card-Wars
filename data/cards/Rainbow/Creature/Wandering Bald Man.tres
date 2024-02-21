@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_fb5d0"]
+
+[resource]
+script = ExtResource("1_fb5d0")
+card_name = "Wandering Bald Man"
+atk = 0
+def = 10
+ability = "Continuous"
+cost = 0
+description = "At the start of your turn, put the top card of your deck into your discard pile."
+landscape = "Rainbow"
+card_type = "Creature"
+image = "Wandering Bald Man.jpg"
+id = 488

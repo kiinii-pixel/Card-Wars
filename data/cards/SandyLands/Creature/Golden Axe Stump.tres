@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_cx6n2"]
+
+[resource]
+script = ExtResource("1_cx6n2")
+card_name = "Golden Axe Stump"
+atk = 1
+def = 7
+ability = "Continuous"
+cost = 1
+description = "Whenever an opponent draws a card, deal 1 Damage to that player."
+landscape = "SandyLands"
+card_type = "Creature"
+image = "Golden Axe Stump.jpg"
+id = 193

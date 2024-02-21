@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_frhry"]
+
+[resource]
+script = ExtResource("1_frhry")
+card_name = "Green Cactiball"
+atk = 0
+def = 4
+ability = "Continuous"
+cost = 1
+description = "+2 ATK for each Green Cactiball you control."
+landscape = "SandyLands"
+card_type = "Creature"
+image = "Green Cactiball.jpg"
+id = 201

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_kvuxl"]
+
+[resource]
+script = ExtResource("1_kvuxl")
+card_name = "Tandem Bike"
+atk = 0
+def = 0
+ability = ""
+cost = 0
+description = "Choose a Creature you control and put it into its owner's hand. Then choose another player. That player chooses a creature they control and puts it into its owner's hand."
+landscape = "Rainbow"
+card_type = "Spell"
+image = "Tandem Bike.jpg"
+id = 448

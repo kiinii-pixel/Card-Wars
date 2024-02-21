@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_oadrr"]
+
+[resource]
+script = ExtResource("1_oadrr")
+card_name = "Pickler"
+atk = 2
+def = 9
+ability = "Ignition"
+cost = 2
+description = "Sacrifice Pickler >>> Deal 3 Damage to target Creature."
+landscape = "Useless Swamp"
+card_type = "Creature"
+image = "Pickler.jpg"
+id = 324

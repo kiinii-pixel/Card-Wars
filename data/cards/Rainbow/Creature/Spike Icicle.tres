@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_utnvj"]
+
+[resource]
+script = ExtResource("1_utnvj")
+card_name = "Spike Icicle"
+atk = 3
+def = 1
+ability = "None"
+cost = 0
+description = "Look out below!"
+landscape = "Rainbow"
+card_type = "Creature"
+image = "Spike Icicle.jpg"
+id = 426

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_p37s7"]
+
+[resource]
+script = ExtResource("1_p37s7")
+card_name = "Silo of Justice"
+atk = 0
+def = 0
+ability = ""
+cost = 1
+description = "Pay 1 Action >>> Deal 1 Damage to target Creature in this Lane and 1 Damage to its controller."
+landscape = "Cornfield"
+card_type = "Building"
+image = "Silo of Justice.jpg"
+id = 397

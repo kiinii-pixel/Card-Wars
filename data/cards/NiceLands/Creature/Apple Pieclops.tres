@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_7leqt"]
+
+[resource]
+script = ExtResource("1_7leqt")
+card_name = "Apple Pieclops"
+atk = 1
+def = 7
+ability = "Trigger"
+cost = 2
+description = "At the start of your turn, you may heal or deal 1 Damage to each Creature you control. (Choose for each Creature.)"
+landscape = "NiceLands"
+card_type = "Creature"
+image = "Apple Pieclops.jpg"
+id = 12

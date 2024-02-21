@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_06684"]
+
+[resource]
+script = ExtResource("1_06684")
+card_name = "Fiddling Ferret"
+atk = 1
+def = 6
+ability = "FLOOP"
+cost = 1
+description = "FLOOP >>> Draw a card, and then discard a card. If you discard a Rainbow card this way, gain 1 Action."
+landscape = "Blue Plains"
+card_type = "Creature"
+image = "Fiddling Ferret.jpg"
+id = 145

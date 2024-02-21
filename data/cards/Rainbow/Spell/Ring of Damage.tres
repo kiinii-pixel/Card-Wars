@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_w2276"]
+
+[resource]
+script = ExtResource("1_w2276")
+card_name = "Ring of Damage"
+atk = 0
+def = 0
+ability = ""
+cost = 2
+description = "Each of your Creatures has +2 ATK this turn."
+landscape = "Rainbow"
+card_type = "Spell"
+image = "Ring of Damage.jpg"
+id = 360

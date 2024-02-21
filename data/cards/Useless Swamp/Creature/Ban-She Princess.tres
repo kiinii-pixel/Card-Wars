@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_u45ep"]
+
+[resource]
+script = ExtResource("1_u45ep")
+card_name = "Ban-She Princess"
+atk = 2
+def = 7
+ability = "Entering Play"
+cost = 1
+description = "When Ban-She Princess enters play, you may remove a token from an adjacent Landscape."
+landscape = "Useless Swamp"
+card_type = "Creature"
+image = "Ban-She Princess.jpg"
+id = 19

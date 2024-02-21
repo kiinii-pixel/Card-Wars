@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_siy8n"]
+
+[resource]
+script = ExtResource("1_siy8n")
+card_name = "Ms. Mummy"
+atk = 1
+def = 4
+ability = "Trigger"
+cost = 0
+description = "At the start of you turn, you may return Ms. Mummy to its owner's hand. If you do, target SandyLands Creature you control gains 1 DEF."
+landscape = "Rainbow"
+card_type = "Creature"
+image = "Ms. Mummy.jpg"
+id = 296

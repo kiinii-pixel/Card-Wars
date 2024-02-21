@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_17soj"]
+
+[resource]
+script = ExtResource("1_17soj")
+card_name = "Djini Ghost"
+atk = 1
+def = 6
+ability = "FLOOP"
+cost = 1
+description = "FLOOP >>> Pay 2 less to play your next Spell this Turn."
+landscape = "Blue Plains"
+card_type = "Creature"
+image = "Djini Ghost.jpg"
+id = 109

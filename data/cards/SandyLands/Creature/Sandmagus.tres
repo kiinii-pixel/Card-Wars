@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_acpu8"]
+
+[resource]
+script = ExtResource("1_acpu8")
+card_name = "Sandmagus"
+atk = 2
+def = 4
+ability = "Trigger"
+cost = 1
+description = "At the start of your turn, you may return Sandmagus to its owner's hand. If you do, each other Creature you control has +1 ATK this turn."
+landscape = "SandyLands"
+card_type = "Creature"
+image = "Sandmagus.jpg"
+id = 381

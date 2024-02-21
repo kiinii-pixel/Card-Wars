@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_0oxsc"]
+
+[resource]
+script = ExtResource("1_0oxsc")
+card_name = "Grape Butt"
+atk = 0
+def = 0
+ability = ""
+cost = 1
+description = "Play only if you played a non-Cornfield card this turn. Deal 5 Damage to target Creature."
+landscape = "Cornfield"
+card_type = "Spell"
+image = "Grape Butt.jpg"
+id = 198

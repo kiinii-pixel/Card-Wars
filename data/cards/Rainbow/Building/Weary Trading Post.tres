@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_ev7sr"]
+
+[resource]
+script = ExtResource("1_ev7sr")
+card_name = "Weary Trading Post"
+atk = 0
+def = 0
+ability = ""
+cost = 0
+description = "FLOOP >> Move an exhausted Creature you control to this Landscape (if empty)."
+landscape = "Rainbow"
+card_type = "Building"
+image = "Weary Trading Post.jpg"
+id = 491

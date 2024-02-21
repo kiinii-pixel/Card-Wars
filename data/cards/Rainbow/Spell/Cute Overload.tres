@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_aypgi"]
+
+[resource]
+script = ExtResource("1_aypgi")
+card_name = "Cute Overload"
+atk = 0
+def = 0
+ability = ""
+cost = 0
+description = "Destroy any number of Creatures you control. Draw a card for each Creature destroyed this way."
+landscape = "Rainbow"
+card_type = "Spell"
+image = "Cute Overload.jpg"
+id = 102

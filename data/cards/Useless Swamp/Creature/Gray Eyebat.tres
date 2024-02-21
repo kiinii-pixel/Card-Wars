@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_ubb47"]
+
+[resource]
+script = ExtResource("1_ubb47")
+card_name = "Gray Eyebat"
+atk = 2
+def = 7
+ability = "Ignition"
+cost = 1
+description = "Pay 1 Action >>> Return a random Useless Swamp Creature from your discard pile to your hand."
+landscape = "Useless Swamp"
+card_type = "Creature"
+image = "Gray Eyebat.jpg"
+id = 200

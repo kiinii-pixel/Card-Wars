@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_tahk6"]
+
+[resource]
+script = ExtResource("1_tahk6")
+card_name = "Ice Cream Captain"
+atk = 4
+def = 8
+ability = ""
+cost = 4
+description = "Ice Cream Captain costs 1 less to play for each player that has a Landscape with a Frozen token on it."
+landscape = "IcyLands"
+card_type = "Creature"
+image = "Ice Cream Captain.jpg"
+id = 232

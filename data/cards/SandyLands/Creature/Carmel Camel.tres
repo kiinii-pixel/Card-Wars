@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_3amsn"]
+
+[resource]
+script = ExtResource("1_3amsn")
+card_name = "Carmel Camel"
+atk = 0
+def = 4
+ability = "Trigger"
+cost = 1
+description = "When a Creature you own leaves play, you may put it underneath this card instead. + 1 ATK and + 1 DEF for each card under this. When this card leaves play, discard all cards under it."
+landscape = "SandyLands"
+card_type = "Creature"
+image = "Carmel Camel.jpg"
+id = 63

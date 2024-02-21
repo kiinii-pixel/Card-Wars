@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_ag3eh"]
+
+[resource]
+script = ExtResource("1_ag3eh")
+card_name = "Sailing Sand Crab"
+atk = 2
+def = 6
+ability = ""
+cost = 1
+description = "When Sailing Sand Crab enters play, you may play a Creature with cost 1 for free."
+landscape = "SandyLands"
+card_type = "Creature"
+image = "Sailing Sand Crab.jpg"
+id = 371

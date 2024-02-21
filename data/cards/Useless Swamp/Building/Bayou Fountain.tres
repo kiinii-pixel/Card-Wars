@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_gmfd6"]
+
+[resource]
+script = ExtResource("1_gmfd6")
+card_name = "Bayou Fountain"
+atk = 0
+def = 0
+ability = ""
+cost = 1
+description = "Discard a card >>> Your Creature on this Landscape has +1 ATK this turn. (Use any number of times during each of your turns.)"
+landscape = "Useless Swamp"
+card_type = "Building"
+image = "Bayou Fountain.jpg"
+id = 21

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_crtd1"]
+
+[resource]
+script = ExtResource("1_crtd1")
+card_name = "Smoldering Elder"
+atk = 3
+def = 8
+ability = "Entering Play"
+cost = 2
+description = "When Smoldering Elder enters play, each player discards 2 cards."
+landscape = "Useless Swamp"
+card_type = "Creature"
+image = "Smoldering Elder.jpg"
+id = 406

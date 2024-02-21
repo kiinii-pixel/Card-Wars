@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_pogmf"]
+
+[resource]
+script = ExtResource("1_pogmf")
+card_name = "Patchy the Pumpkin"
+atk = 0
+def = 5
+ability = "FLOOP"
+cost = 1
+description = "FLOOP >>> Deal 1 Damage to target Creature. Do this once for each Cornfield Landscape you control. (May only target each Creature once.)"
+landscape = "Cornfield"
+card_type = "Creature"
+image = "Patchy the Pumpkin.jpg"
+id = 318

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_emegf"]
+
+[resource]
+script = ExtResource("1_emegf")
+card_name = "Stuffed"
+atk = 0
+def = 0
+ability = ""
+cost = 1
+description = "Choose a Creature you control and deal Damage to it equal to its ATK, and then double its ATK this turn."
+landscape = "NiceLands"
+card_type = "Spell"
+image = "Stuffed.jpg"
+id = 438

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/example_card_script.gd" id="1_nx4c8"]
+
+[resource]
+script = ExtResource("1_nx4c8")
+card_name = "Ghost Hag"
+atk = 1
+def = 4
+ability = "Continuous"
+cost = 0
+description = "Ghost Hag has +2 ATK while defending against a Creature that is on a Blue Plains Landscape."
+landscape = "Rainbow"
+card_type = "Creature"
+image = "Ghost Ninja.jpg"
+id = 183
