@@ -1,17 +1,17 @@
 extends Node2D
+var deck : Array
 
 func _ready():
 	#create_resources()
-	pass
+	deck = load("res://data/decks/finn.tres").deck
+	$Hand.add_cards(5)
 
 func _on_draw_card_add_card():
-	var legal_cards = ["The Pig"]
-	var hand = get_node("Hand")
-	hand.add_card(legal_cards.pick_random())
-
-func _on_random_card_pressed():
-	var hand = get_node("Hand")
-	hand.add_random_card()
+	var cards = $Deck/Cards.get_children()
+	var random_card = cards.pick_random()
+	if random_card != null:
+		var hand = get_node("Hand")
+		hand.add_card_to_hand(random_card)
 
 # Creates Resources (.tres) for each card in the JSON
 func create_resources():

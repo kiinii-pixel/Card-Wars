@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://vufgh5aygac3"
-path="res://.godot/imported/Puma Paw.png-858ff550ccaa336815d0be7c9ff83b87.ctex"
+uid="uid://dhnkp6tw0jjc5"
+path="res://.godot/imported/Celestial Castle.png-a4cf612ac6d15196d0f8c554e3db0502.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/cards/art/NiceLands/Building/Puma Paw.png"
-dest_files=["res://.godot/imported/Puma Paw.png-858ff550ccaa336815d0be7c9ff83b87.ctex"]
+source_file="res://assets/images/cards/art/Rainbow/Building/Celestial Castle.png"
+dest_files=["res://.godot/imported/Celestial Castle.png-a4cf612ac6d15196d0f8c554e3db0502.ctex"]
 
 [params]
 

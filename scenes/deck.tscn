@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://df3a2sawj0htj"]
+
+[ext_resource type="Script" path="res://scripts/deck.gd" id="1_fiffs"]
+[ext_resource type="Texture2D" uid="uid://cn0ywq5f0a58r" path="res://assets/images/cards/card_back/back.png" id="2_2c5j1"]
+
+[node name="Deck" type="Node2D"]
+script = ExtResource("1_fiffs")
+
+[node name="Deck Space" type="Sprite2D" parent="."]
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("2_2c5j1")
+
+[node name="Cards" type="Node2D" parent="."]

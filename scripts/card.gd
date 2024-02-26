@@ -65,6 +65,9 @@ func load_card():
 		if defense_value.length() > 1:
 			%DefenseLabel.add_theme_font_size_override("font_size", 58)
 		%DefenseLabel.text = defense_value
+	else:
+		%AttackLabel.text = ""
+		%DefenseLabel.text = ""
 	# Load Image
 	var card_image_path : String = "res://assets/images/cards/art/" + data.landscape + \
 	"/" + data.card_type + "/" + data.card_name + ".png"

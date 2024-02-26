@@ -16,36 +16,21 @@ const MAX_HAND_HEIGHT = 100 # Maximum hand height
 func _ready():
 	position.x = get_viewport().get_visible_rect().size.x / 2
 	position.y = get_viewport().get_visible_rect().size.y - 100
-#	add_cards(1)
-	add_card("The Pig")
-#	add_card(505)
-#	add_card(460)
-#	add_card(499)
-#	add_card(81)
-	#add_card(26)
+	#add_cards(5)
 
 func add_cards(amount) -> void:
 	for _x in range(amount):
-		var card = CARD.instantiate()
-		#card.load_image()
-		add_child(card)
-		card.scale = Vector2(0.25, 0.25)
+		add_random_card()
 
-func add_card(card_name):
-	var card = CARD.instantiate()
-	card.card_name = card_name
-	add_child(card, true)
-	card.scale = Vector2(0.25, 0.25)
+func add_card_to_hand(card):
+	card.reparent(hand, true)
+	hand.emit_signal("child_order_changed")
 
-#func add_random_card():
-#	var rng = RandomNumberGenerator.new()
-#	var card = CARD.instantiate()
-#	card.card_id = rng.randi_range(1, 512)
-#	print(card.card_id)
-##	while !FileAccess.file_exists(card_data[card.card_id]): # While the card doesnt have an image
-##		card.card_id = rng.randi_range(1, 512)
-#	add_child(card, true)
-#	card.scale = Vector2(0.25, 0.25)
+func add_random_card():
+	var cards = get_parent().get_node("Deck/Cards").get_children()
+	var random_card = cards.pick_random()
+	if random_card != null:
+		hand.add_card_to_hand(random_card)
 
 func _on_child_order_changed():
 	hand = self

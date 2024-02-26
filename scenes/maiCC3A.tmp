@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://cqkl8l2uevwon" path="res://scenes/hand.tscn" id="4_v11k8"]
 [ext_resource type="Texture2D" uid="uid://be6u36aq3sqnv" path="res://icon.svg" id="7_ufmem"]
 [ext_resource type="PackedScene" uid="uid://qga2y5wh6ftv" path="res://scenes/drag_component.tscn" id="8_hg626"]
-[ext_resource type="PackedScene" uid="uid://df3a2sawj0htj" path="res://scenes/deck.tscn" id="9_6xswo"]
+[ext_resource type="Script" path="res://scripts/deck.gd" id="9_is6dv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sr0rc"]
 size = Vector2(262, 262)
@@ -116,7 +116,9 @@ expand_mode = 1
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Godot Icon/drag_component"]
 shape = SubResource("RectangleShape2D_sr0rc")
 
-[node name="Deck" parent="." instance=ExtResource("9_6xswo")]
-position = Vector2(1726, 845)
+[node name="Deck" type="Node2D" parent="."]
+position = Vector2(1749, 845)
+script = ExtResource("9_is6dv")
+metadata/_edit_group_ = true
 
 [connection signal="add_card" from="Draw Card" to="." method="_on_draw_card_add_card"]

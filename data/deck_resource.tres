@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="DeckResource" load_steps=2 format=3 uid="uid://x4e5mlyka7l0"]
+
+[ext_resource type="Script" path="res://data/deck_resource_script.gd" id="1_72t0k"]
+
+[resource]
+script = ExtResource("1_72t0k")
+character = 0
+deck = Array[Resource("res://data/example_card_script.gd")]([])
+landscape1 = 0
+landscape2 = 0
+landscape3 = 0
+landscape4 = 0

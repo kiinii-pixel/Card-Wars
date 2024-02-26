@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cau8wjygb3aet"
-path="res://.godot/imported/Kung Fu Power.png-f7b9ae036e3efd28566915d62ad0badf.ctex"
+uid="uid://2oyvoro2d4am"
+path="res://.godot/imported/Blood Fortress.png-bacfc7ecc4e8696411e6f38329171370.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/cards/art/NiceLands/Building/Kung Fu Power.png"
-dest_files=["res://.godot/imported/Kung Fu Power.png-f7b9ae036e3efd28566915d62ad0badf.ctex"]
+source_file="res://assets/images/cards/art/Rainbow/Building/Blood Fortress.png"
+dest_files=["res://.godot/imported/Blood Fortress.png-bacfc7ecc4e8696411e6f38329171370.ctex"]
 
 [params]
 
