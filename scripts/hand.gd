@@ -23,6 +23,8 @@ func add_cards(amount) -> void:
 		add_random_card()
 
 func add_card_to_hand(card):
+	card.get_node("SubViewportContainer/PanelContainer/AnimationPlayer").play("card_flip")
+	await move(card, hand.position, 0.3)
 	card.reparent(hand, true)
 	hand.emit_signal("child_order_changed")
 
@@ -53,6 +55,11 @@ func _on_child_order_changed():
 		destination.origin.x += spread_curve.sample(hand_ratio) * hand_width
 		destination.origin.y -= height_curve.sample(hand_ratio) * hand_height
 		card.global_position = destination.origin
+
+func move(object, destination : Vector2, time : float):
+	var tween = create_tween()
+	tween.tween_property(object, "global_position", destination, time).set_ease(Tween.EASE_OUT)
+	await tween.finished
 
 func _on_card_played():
 	pass

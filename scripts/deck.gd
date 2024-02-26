@@ -1,6 +1,7 @@
 extends Node
 
 const CARD = preload("res://scenes/card.tscn")
+var offset : Vector2
 
 func _ready():
 	var deck = preload("res://data/decks/finn.tres")
@@ -13,3 +14,5 @@ func add_card(card_name):
 	card.card_name = card_name
 	$Cards.add_child(card, true)
 	card.scale = Vector2(0.25, 0.25)
+	card.position = offset
+	offset += Vector2(0.2, 0.2)

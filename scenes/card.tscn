@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://bco1m6ixdmiil"]
+[gd_scene load_steps=13 format=3 uid="uid://bco1m6ixdmiil"]
 
 [ext_resource type="Script" path="res://scripts/card.gd" id="1_xodya"]
 [ext_resource type="Texture2D" uid="uid://ct5331atokkqs" path="res://assets/images/frames/Rainbow_Creature.png" id="3_mw3bc"]
@@ -6,19 +6,131 @@
 [ext_resource type="Theme" uid="uid://cmfvdnu5kgo71" path="res://assets/themes/button_theme.tres" id="5_bmwov"]
 [ext_resource type="FontFile" uid="uid://ca0g1l1k6v1sf" path="res://assets/fonts/Pendlefont Heavy.TTF" id="5_bysvj"]
 [ext_resource type="PackedScene" uid="uid://qga2y5wh6ftv" path="res://scenes/drag_component.tscn" id="6_457fh"]
+[ext_resource type="Texture2D" uid="uid://cn0ywq5f0a58r" path="res://assets/images/cards/card_back/back.png" id="6_uokre"]
 
 [sub_resource type="Theme" id="Theme_rcflo"]
 default_font = ExtResource("5_bysvj")
 Label/colors/font_color = Color(0.129412, 0.141176, 0.160784, 1)
 Label/font_sizes/font_size = 25
 
+[sub_resource type="Animation" id="Animation_0kbrg"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CardBack:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CardBack:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2.95, 3)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("SubViewportContainer:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("SubViewportContainer:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_ljt8f"]
+resource_name = "card_flip"
+length = 0.3
+step = 0.01
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CardBack:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.15),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CardBack:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.15),
+"transitions": PackedFloat32Array(1.5, 1),
+"update": 0,
+"values": [Vector2(2.95, 3), Vector2(0, 3)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("SubViewportContainer:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.15, 0.3),
+"transitions": PackedFloat32Array(1, 0.5),
+"update": 0,
+"values": [Vector2(0, 1), Vector2(1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("SubViewportContainer:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.15),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_swdfb"]
+_data = {
+"RESET": SubResource("Animation_0kbrg"),
+"card_flip": SubResource("Animation_ljt8f")
+}
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4b713"]
-size = Vector2(636, 908.667)
+size = Vector2(638.5, 928)
 
 [node name="Card" type="Node2D"]
 script = ExtResource("1_xodya")
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+visible = false
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -30,11 +142,14 @@ offset_right = 346.5
 offset_bottom = 490.0
 grow_horizontal = 2
 grow_vertical = 2
+pivot_offset = Vector2(346.5, 490)
+size_flags_horizontal = 4
+size_flags_vertical = 4
 
 [node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
 transparent_bg = true
 handle_input_locally = false
-render_target_update_mode = 4
+render_target_update_mode = 0
 
 [node name="PanelContainer" type="PanelContainer" parent="SubViewportContainer"]
 layout_mode = 2
@@ -158,12 +273,22 @@ horizontal_alignment = 1
 vertical_alignment = 1
 clip_text = true
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="SubViewportContainer/PanelContainer"]
+unique_name_in_owner = true
+root_node = NodePath("../../..")
+libraries = {
+"": SubResource("AnimationLibrary_swdfb")
+}
+
 [node name="drag_component" parent="." instance=ExtResource("6_457fh")]
-position = Vector2(-692.5, -980)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="drag_component"]
-position = Vector2(693, 980)
 shape = SubResource("RectangleShape2D_4b713")
+
+[node name="CardBack" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+scale = Vector2(2.95, 3)
+texture = ExtResource("6_uokre")
 
 [connection signal="body_entered" from="drag_component" to="." method="_on_drag_component_body_entered"]
 [connection signal="body_exited" from="drag_component" to="." method="_on_drag_component_body_exited"]
