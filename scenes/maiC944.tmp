@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://owug2m35obl1"]
+[gd_scene load_steps=13 format=3 uid="uid://owug2m35obl1"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_mh3fo"]
 [ext_resource type="PackedScene" uid="uid://b5oih1txnoxfo" path="res://scenes/landscape.tscn" id="1_r6f6m"]
@@ -9,6 +9,8 @@
 [ext_resource type="Script" path="res://scripts/buttons/random_card.gd" id="7_4fngp"]
 [ext_resource type="Texture2D" uid="uid://be6u36aq3sqnv" path="res://icon.svg" id="7_ufmem"]
 [ext_resource type="PackedScene" uid="uid://qga2y5wh6ftv" path="res://scenes/drag_component.tscn" id="8_hg626"]
+[ext_resource type="Script" path="res://save_cards.gd" id="10_f1l57"]
+[ext_resource type="Resource" uid="uid://3ptikpg3wypd" path="res://data/card_resource.tres" id="11_whyab"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sr0rc"]
 size = Vector2(262, 262)
@@ -124,6 +126,10 @@ expand_mode = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Godot Icon/drag_component"]
 shape = SubResource("RectangleShape2D_sr0rc")
+
+[node name="save_cards" type="Node" parent="."]
+script = ExtResource("10_f1l57")
+stats = ExtResource("11_whyab")
 
 [connection signal="add_card" from="Draw Card" to="." method="_on_draw_card_add_card"]
 [connection signal="pressed" from="Random Card" to="." method="_on_random_card_pressed"]

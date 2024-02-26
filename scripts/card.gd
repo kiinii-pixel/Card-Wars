@@ -1,6 +1,6 @@
 class_name Card extends Node2D
 
-@export var card_id : int # change to id of card you want
+@export var card_name : String # change to card you want
 # CARD VARIABLES
 var played = false # true when dragged into play // drag_component.allow_drag should be enough
 var body_ref : Landscape # reference to object that was hovered over (e.g. landscape)
@@ -48,54 +48,41 @@ func _on_drag_component_mouse_exited(): # reverses everything from above
 	pass
 
 func load_card():
-	#LOAD CARD DATA
-	var card_data = StaticData.return_data() # all data
-	var landscape = card_data[card_id].get("landscape") # landscape (e.g. 'Blue Plains')
-	var card_type = card_data[card_id].get("card_type") # card type (e.g. 'Creature')
-	var card_description = card_data[card_id].get("description")
-
-	var jpg = card_data[card_id].get("image_name") # original name (.jpg)
-	var card_name = jpg.left(jpg.length() - 4) # card name without file extension
-	
-	var card_image_path = "res://assets/images/cards/art/" + landscape + "/" \
-	+ card_type + "/" + card_name + ".png"
-	
-	var frame_path
-	if card_type == "Creature":
-		frame_path = "res://assets/images/frames/" + landscape + "_Creature.png"
-	else:
-		frame_path = "res://assets/images/frames/" + landscape + ".png"
-
-	if card_data[card_id].get("cost"):
-		var cost_value = String.num(card_data[card_id].get("cost"))
-		%CostLabel.text = cost_value
-	if card_type == "Creature":
-		var attack_value = String.num(card_data[card_id].get("atk"))
-		var defense_value = String.num(card_data[card_id].get("def"))
-		
+	var resource_path : String = "res://data/cards/" + card_name + ".tres"
+	var data : Resource = load(resource_path)
+	set_name(card_name) # sets name in the debug editor (instead of Node2D@1)
+	%CardName.text = data.card_name
+	%LandscapeCardType.text = data.landscape + " " + data.card_type
+	%CostLabel.text = String.num(data.cost)
+	%Description.text = data.description
+	# Atk/Def (when creature)
+	if data.card_type == "Creature":
+		var attack_value = String.num_int64(data.atk)
+		var defense_value = String.num_int64(data.def)
 		if attack_value.length() > 1:
 			%AttackLabel.add_theme_font_size_override("font_size", 58)
 		%AttackLabel.text = attack_value
 		if defense_value.length() > 1:
 			%DefenseLabel.add_theme_font_size_override("font_size", 58)
 		%DefenseLabel.text = defense_value
-
-	%CardName.text = card_name
-
-	%CardFrame.texture = load(frame_path)
+	# Load Image
+	var card_image_path : String = "res://assets/images/cards/art/" + data.landscape + \
+	"/" + data.card_type + "/" + data.card_name + ".png"
 	%CardImage.texture = load(card_image_path)
-
-	var max_characters = 12
+	# Load Frame
+	var frame_path : String
+	if data.card_type == "Creature":
+		frame_path = "res://assets/images/frames/" + data.landscape + "_Creature.png"
+	else:
+		frame_path = "res://assets/images/frames/" + data.landscape + ".png"
+	%CardFrame.texture = load(frame_path)
+	# Adjust name size
+	var max_characters : int = 12
 	var font_size = %CardName.get_theme_font_size("font_size")
 	while card_name.length() > max_characters:
 				%CardName.add_theme_font_size_override("font_size", font_size)
 				max_characters += 1
 				font_size -= 1.15
-
-	%LandscapeCardType.text = landscape + card_type
-	%Description.text = card_description
-
-	set_name(card_name)
 
 func _on_drag_component_body_entered(landscape: Landscape):
 	#is_inside = false
