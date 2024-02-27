@@ -25,26 +25,12 @@ func draw():
 		var card = deck.get_child(top_card)
 		card.get_node("%AnimationPlayer").play("card_flip")
 		card.reparent(hand, true)
-		await move(card, hand.position, 0.3)
+		#await move(card, hand.position, 0.3)
 		hand.emit_signal("child_order_changed")
 
-func add_card_to_hand(card):
-	card.get_node("%AnimationPlayer").play("card_flip")
-	await move(card, hand.position, 0.3)
-	card.reparent(hand, true)
-	print(card.get_parent())
-	print("PARENT:")
-	hand.emit_signal("child_order_changed")
-
-func add_random_card():
-	var cards = get_parent().get_node("Deck/Cards").get_children()
-	var random_card = cards.pick_random()
-	if random_card != null:
-		hand.add_card_to_hand(random_card)
-
-func add_cards(amount) -> void:
+func draw_multiple(amount) -> void:
 	for _x in range(amount):
-		add_random_card()
+		await draw()
 
 func _on_child_order_changed():
 	hand = self

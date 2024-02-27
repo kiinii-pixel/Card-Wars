@@ -18,4 +18,4 @@ func add_card(card_name):
 func load_deck():
 	var cards = deck.deck
 	for card in cards:
-		add_card(card.card_name)
+		add_card(cards.pick_random().card_name)

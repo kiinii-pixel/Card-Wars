@@ -4,17 +4,11 @@ var deck : Array
 func _ready():
 	#create_resources()
 	deck = load("res://data/decks/finn.tres").deck
-	for i in 5:
-		$Hand.draw()
+	$Hand.draw_multiple(5)
 
 
 func _on_draw_card_add_card():
-	get_node("Hand").draw()
-#	var cards = $Deck/Cards.get_children()
-#	var random_card = cards.pick_random()
-#	if random_card != null:
-#		var hand = get_node("Hand")
-#		hand.add_card_to_hand(random_card)
+	await get_node("Hand").draw()
 
 # Creates Resources (.tres) for each card in the JSON
 func create_resources():
