@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://owug2m35obl1"]
+[gd_scene load_steps=13 format=3 uid="uid://owug2m35obl1"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_mh3fo"]
 [ext_resource type="PackedScene" uid="uid://b5oih1txnoxfo" path="res://scenes/landscape.tscn" id="1_r6f6m"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://be6u36aq3sqnv" path="res://icon.svg" id="7_ufmem"]
 [ext_resource type="PackedScene" uid="uid://qga2y5wh6ftv" path="res://scenes/drag_component.tscn" id="8_hg626"]
 [ext_resource type="PackedScene" uid="uid://df3a2sawj0htj" path="res://scenes/deck.tscn" id="9_6xswo"]
+[ext_resource type="Texture2D" uid="uid://v2dwr8jfb1c6" path="res://assets/images/ui/draw_card_border.png" id="10_63nk0"]
 [ext_resource type="Script" path="res://scripts/buttons/reset.gd" id="10_oq2us"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sr0rc"]
@@ -114,24 +115,36 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="Reset" type="Button" parent="Buttons"]
-offset_left = 100.0
-offset_top = 776.0
-offset_right = 251.0
-offset_bottom = 831.0
-theme = ExtResource("3_bno0n")
-text = "Reset"
-script = ExtResource("10_oq2us")
-
 [node name="Draw Card" type="Button" parent="Buttons"]
+custom_minimum_size = Vector2(111, 114)
 offset_left = 100.0
-offset_top = 856.0
-offset_right = 251.0
-offset_bottom = 916.0
-size_flags_horizontal = 4
-theme = ExtResource("3_bno0n")
-text = "Draw Card"
+offset_top = 695.0
+offset_right = 232.0
+offset_bottom = 831.0
+icon = ExtResource("10_63nk0")
+flat = true
+vertical_icon_alignment = 0
+expand_icon = true
 script = ExtResource("4_5av6a")
 
-[connection signal="pressed" from="Buttons/Reset" to="." method="_on_reset_pressed"]
+[node name="Reset" type="Button" parent="Buttons"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 80.0
+offset_top = 825.0
+offset_right = 221.0
+offset_bottom = 956.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("3_bno0n")
+theme_override_font_sizes/font_size = 26
+text = "Reset"
+icon_alignment = 1
+script = ExtResource("10_oq2us")
+
 [connection signal="add_card" from="Buttons/Draw Card" to="." method="_on_draw_card_add_card"]
+[connection signal="pressed" from="Buttons/Reset" to="." method="_on_reset_pressed"]
