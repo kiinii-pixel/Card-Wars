@@ -117,27 +117,36 @@ offset_bottom = 40.0
 
 [node name="Draw Card" type="Button" parent="Buttons"]
 custom_minimum_size = Vector2(111, 114)
-offset_left = 100.0
-offset_top = 695.0
-offset_right = 232.0
-offset_bottom = 831.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 4.15
+anchor_top = 18.825
+anchor_right = 4.15
+anchor_bottom = 18.825
+offset_left = -64.0
+offset_top = -31.0
+offset_right = 68.0
+offset_bottom = 105.0
+grow_horizontal = 2
+grow_vertical = 2
 icon = ExtResource("10_63nk0")
 flat = true
 vertical_icon_alignment = 0
 expand_icon = true
 script = ExtResource("4_5av6a")
+metadata/_edit_use_anchors_ = true
 
 [node name="Reset" type="Button" parent="Buttons"]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 80.0
-offset_top = 825.0
-offset_right = 221.0
-offset_bottom = 956.0
+anchors_preset = -1
+anchor_left = 4.2625
+anchor_top = 22.7625
+anchor_right = 4.2625
+anchor_bottom = 22.7625
+offset_left = -68.5
+offset_top = -28.5
+offset_right = 72.5
+offset_bottom = 102.5
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("3_bno0n")
@@ -145,6 +154,11 @@ theme_override_font_sizes/font_size = 26
 text = "Reset"
 icon_alignment = 1
 script = ExtResource("10_oq2us")
+
+[node name="Button" type="Button" parent="Buttons"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
 
 [connection signal="add_card" from="Buttons/Draw Card" to="." method="_on_draw_card_add_card"]
 [connection signal="pressed" from="Buttons/Reset" to="." method="_on_reset_pressed"]

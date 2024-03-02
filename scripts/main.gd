@@ -18,9 +18,8 @@ func create_resources():
 		$save_cards.create_resource()
 
 func fight():
-	pass
 	var landscapes = $Landscapes
-	var enemy_landscapes = $EnemyLandscapes
+	var _enemy_landscapes = $EnemyLandscapes
 	
 	for landscape in landscapes.get_children():
 		if get_child_count() == 4:
