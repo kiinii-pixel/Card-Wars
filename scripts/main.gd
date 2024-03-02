@@ -5,6 +5,7 @@ func _ready():
 	#create_resources()
 	deck = load("res://data/decks/finn.tres").deck
 	$Hand.draw_multiple(5)
+	fight()
 
 
 func _on_draw_card_add_card():
@@ -15,6 +16,16 @@ func create_resources():
 	for card_id in 511:
 		$save_cards.initialize(card_id)
 		$save_cards.create_resource()
+
+func fight():
+	pass
+	var landscapes = $Landscapes
+	var enemy_landscapes = $EnemyLandscapes
+	
+	for landscape in landscapes.get_children():
+		if get_child_count() == 4:
+			print(landscape.get_child(3))
+			print(123)
 
 func _on_reset_pressed():
 	for n in $Deck/Cards.get_children():

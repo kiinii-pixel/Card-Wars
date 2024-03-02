@@ -23,6 +23,7 @@ func draw():
 	var top_card = deck.get_child_count() - 1
 	if top_card >= 0:
 		var card = deck.get_child(top_card)
+		card.z_index = 5
 		card.get_node("%AnimationPlayer").play("card_flip")
 		card.reparent(hand, true)
 		#await move(card, hand.position, 0.3)
@@ -52,7 +53,7 @@ func _on_child_order_changed():
 		#change the x position of the current card, based on its index
 		destination.origin.x += spread_curve.sample(hand_ratio) * hand_width
 		destination.origin.y -= height_curve.sample(hand_ratio) * hand_height
-		move(card, destination.origin, 0.2)
+		move(card, destination.origin, 0.3)
 		#card.global_position = destination.origin
 
 func move(object, destination : Vector2, time : float):

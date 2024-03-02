@@ -7,7 +7,7 @@
 script = ExtResource("1_fiffs")
 
 [node name="Deck Space" type="Sprite2D" parent="."]
-scale = Vector2(0.75, 0.75)
+scale = Vector2(0.224, 0.224)
 texture = ExtResource("2_2c5j1")
 
 [node name="Cards" type="Node2D" parent="."]

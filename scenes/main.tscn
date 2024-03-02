@@ -20,18 +20,6 @@ script = ExtResource("1_mh3fo")
 [node name="Interface" parent="." instance=ExtResource("3_82cvq")]
 layer = -1
 
-[node name="Draw Card" type="Button" parent="."]
-offset_left = 100.0
-offset_top = 856.0
-offset_right = 251.0
-offset_bottom = 916.0
-size_flags_horizontal = 4
-theme = ExtResource("3_bno0n")
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
-text = "Draw Card"
-script = ExtResource("4_5av6a")
-
 [node name="Landscapes" type="Node2D" parent="."]
 position = Vector2(995, 621)
 metadata/_edit_group_ = true
@@ -120,7 +108,13 @@ shape = SubResource("RectangleShape2D_sr0rc")
 [node name="Deck" parent="." instance=ExtResource("9_6xswo")]
 position = Vector2(1726, 845)
 
-[node name="Reset" type="Button" parent="."]
+[node name="Buttons" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Reset" type="Button" parent="Buttons"]
 offset_left = 100.0
 offset_top = 776.0
 offset_right = 251.0
@@ -129,5 +123,15 @@ theme = ExtResource("3_bno0n")
 text = "Reset"
 script = ExtResource("10_oq2us")
 
-[connection signal="add_card" from="Draw Card" to="." method="_on_draw_card_add_card"]
-[connection signal="pressed" from="Reset" to="." method="_on_reset_pressed"]
+[node name="Draw Card" type="Button" parent="Buttons"]
+offset_left = 100.0
+offset_top = 856.0
+offset_right = 251.0
+offset_bottom = 916.0
+size_flags_horizontal = 4
+theme = ExtResource("3_bno0n")
+text = "Draw Card"
+script = ExtResource("4_5av6a")
+
+[connection signal="pressed" from="Buttons/Reset" to="." method="_on_reset_pressed"]
+[connection signal="add_card" from="Buttons/Draw Card" to="." method="_on_draw_card_add_card"]
