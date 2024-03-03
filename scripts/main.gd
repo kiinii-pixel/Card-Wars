@@ -7,8 +7,7 @@ func _ready():
 	$Hand.draw_multiple(5)
 	fight()
 
-
-func _on_draw_card_add_card():
+func _on_draw_card_pressed():
 	await get_node("Hand").draw()
 
 # Creates Resources (.tres) for each card in the JSON
@@ -35,3 +34,6 @@ func _on_reset_pressed():
 		n.queue_free()
 	$Deck.offset = Vector2(0, 0)
 	$Deck.load_deck()
+
+func _on_fight_pressed():
+	pass # Replace with function body.
