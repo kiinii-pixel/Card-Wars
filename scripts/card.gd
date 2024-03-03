@@ -8,6 +8,9 @@ var body_ref : Landscape # reference to object that was hovered over (e.g. lands
 var is_inside = false # true if card is inside a landscape
 var drag_component : Object # drag component node
 
+var atk : int
+var def : int
+
 func _ready():
 	load_card() # load card image and text
 	z_index = 4 # z_index is initialized as 4. Elements on top are set to 5.
@@ -57,14 +60,14 @@ func load_card():
 	%Description.text = data.description
 	# Atk/Def (when creature)
 	if data.card_type == "Creature":
-		var attack_value = String.num_int64(data.atk)
-		var defense_value = String.num_int64(data.def)
-		if attack_value.length() > 1:
+		atk = data.atk
+		def = data.def
+		if String.num_int64(atk).length() > 1:
 			%AttackLabel.add_theme_font_size_override("font_size", 58)
-		%AttackLabel.text = attack_value
-		if defense_value.length() > 1:
+		%AttackLabel.text = String.num_int64(atk)
+		if String.num_int64(def).length() > 1:
 			%DefenseLabel.add_theme_font_size_override("font_size", 58)
-		%DefenseLabel.text = defense_value
+		%DefenseLabel.text = String.num_int64(def)
 	else:
 		%AttackLabel.text = ""
 		%DefenseLabel.text = ""
