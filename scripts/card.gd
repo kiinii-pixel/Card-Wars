@@ -1,5 +1,6 @@
 class_name Card extends Node2D
 
+@onready var card_sound = $card_sound
 @export var card_name : String # change to card you want
 # CARD VARIABLES
 var played = false # true when dragged into play // drag_component.allow_drag should be enough
@@ -35,6 +36,7 @@ func play_card():
 	body_ref.add_child(self)
 	position = Vector2(0, 0)
 	scale = Vector2(0.5, 0.5)
+	card_sound.play()
 
 func _on_drag_component_mouse_entered(): # when you hover over the card
 	if not played and !Global.is_dragging:

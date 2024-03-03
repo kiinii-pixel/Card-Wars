@@ -1,5 +1,6 @@
 extends Node2D
 var deck : Array
+@onready var card_sound = $card_sound
 
 func _ready():
 	#create_resources()
@@ -8,6 +9,7 @@ func _ready():
 
 func _on_draw_card_pressed():
 	await get_node("Hand").draw()
+	card_sound.play()
 
 # Creates Resources (.tres) for each card in the JSON
 func create_resources():
@@ -35,10 +37,8 @@ func _on_fight_pressed():
 			var creature = landscape.get_child(3) # Get the card / creature
 			var opposing_creature = enemy_landscapes.get_child(index).get_child(3)
 			if opposing_creature != null:
-				creature.def -= opposing_creature.atk
-				creature.get_node("%DefenseLabel").text = String.num_int64(creature.def)
-				opposing_creature.def -= creature.atk
-				opposing_creature.get_node("%DefenseLabel").text = String.num_int64(opposing_creature.def)
+				deal_damage(creature, opposing_creature)
+				deal_damage(opposing_creature, creature)
 				if creature.def <= 0:
 					creature.queue_free()
 				if opposing_creature.def <= 0:
@@ -51,3 +51,6 @@ func _on_fight_pressed():
 			#if enemy_landscape.get_child_count() == 4:
 			#decrease own health
 		index += 1
+func deal_damage(creature, opponent):
+	creature.def -= opponent.atk
+	creature.get_node("%DefenseLabel").text = String.num_int64(creature.def)

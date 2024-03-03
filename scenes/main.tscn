@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://owug2m35obl1"]
+[gd_scene load_steps=20 format=3 uid="uid://owug2m35obl1"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_mh3fo"]
 [ext_resource type="PackedScene" uid="uid://b5oih1txnoxfo" path="res://scenes/landscape.tscn" id="1_r6f6m"]
@@ -7,13 +7,26 @@
 [ext_resource type="PackedScene" uid="uid://cqkl8l2uevwon" path="res://scenes/hand.tscn" id="4_v11k8"]
 [ext_resource type="Texture2D" uid="uid://be6u36aq3sqnv" path="res://icon.svg" id="7_ufmem"]
 [ext_resource type="PackedScene" uid="uid://qga2y5wh6ftv" path="res://scenes/drag_component.tscn" id="8_hg626"]
+[ext_resource type="Texture2D" uid="uid://b7rsc22jon6mb" path="res://assets/images/ui/draw_card_border_pressed.png" id="9_0eq6p"]
 [ext_resource type="PackedScene" uid="uid://df3a2sawj0htj" path="res://scenes/deck.tscn" id="9_6xswo"]
 [ext_resource type="Texture2D" uid="uid://v2dwr8jfb1c6" path="res://assets/images/ui/draw_card_border.png" id="10_63nk0"]
+[ext_resource type="AudioStream" uid="uid://dwrf3q4nllt0q" path="res://assets/sounds/Card_Pick.wav" id="12_eiseh"]
 [ext_resource type="FontFile" uid="uid://ca0g1l1k6v1sf" path="res://assets/fonts/Pendlefont Heavy.TTF" id="12_kugc0"]
 [ext_resource type="Texture2D" uid="uid://b4ol2ch82cnk8" path="res://assets/images/ui/long_border_tile.png" id="13_610m2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sr0rc"]
 size = Vector2(262, 262)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wqxbo"]
+texture = ExtResource("10_63nk0")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_smrcd"]
+texture = ExtResource("10_63nk0")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ejnwn"]
+texture = ExtResource("9_0eq6p")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o5jgd"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qawrv"]
 content_margin_left = 0.0
@@ -132,18 +145,19 @@ offset_bottom = 40.0
 custom_minimum_size = Vector2(111, 114)
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 4.15
-anchor_top = 18.825
-anchor_right = 4.15
-anchor_bottom = 18.825
-offset_left = -64.0
-offset_top = -31.0
-offset_right = 68.0
-offset_bottom = 105.0
+anchor_left = 2.55
+anchor_top = 17.487
+anchor_right = 5.85
+anchor_bottom = 20.875
+offset_top = -0.47998
+offset_right = -1.52588e-05
 grow_horizontal = 2
 grow_vertical = 2
-icon = ExtResource("10_63nk0")
-flat = true
+pivot_offset = Vector2(66, 68)
+theme_override_styles/normal = SubResource("StyleBoxTexture_wqxbo")
+theme_override_styles/hover = SubResource("StyleBoxTexture_smrcd")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_ejnwn")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_o5jgd")
 vertical_icon_alignment = 0
 expand_icon = true
 metadata/_edit_use_anchors_ = true
@@ -151,16 +165,15 @@ metadata/_edit_use_anchors_ = true
 [node name="Reset" type="Button" parent="Buttons"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 4.2625
-anchor_top = 22.7625
-anchor_right = 4.2625
-anchor_bottom = 22.7625
-offset_left = -68.5
-offset_top = -28.5
-offset_right = 72.5
-offset_bottom = 102.5
+anchor_left = 2.55
+anchor_top = 22.05
+anchor_right = 6.075
+anchor_bottom = 25.325
+offset_top = -6.10352e-05
+offset_right = -1.52588e-05
 grow_horizontal = 2
 grow_vertical = 2
+pivot_offset = Vector2(71, 66)
 theme = ExtResource("3_bno0n")
 theme_override_font_sizes/font_size = 26
 text = "Reset"
@@ -176,7 +189,14 @@ scale = Vector2(0.15, 0.15)
 theme_override_fonts/font = ExtResource("12_kugc0")
 theme_override_font_sizes/font_size = 191
 theme_override_styles/normal = SubResource("StyleBoxTexture_qawrv")
+theme_override_styles/hover = SubResource("StyleBoxTexture_qawrv")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_qawrv")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_qawrv")
+theme_override_styles/focus = SubResource("StyleBoxTexture_qawrv")
 text = "Fight!"
+
+[node name="card_sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("12_eiseh")
 
 [connection signal="pressed" from="Buttons/Draw Card" to="." method="_on_draw_card_pressed"]
 [connection signal="pressed" from="Buttons/Reset" to="." method="_on_reset_pressed"]
