@@ -51,6 +51,7 @@ func _on_fight_pressed():
 			#if enemy_landscape.get_child_count() == 4:
 			#decrease own health
 		index += 1
+		
 func deal_damage(creature, opponent):
 	creature.def -= opponent.atk
-	creature.get_node("%DefenseLabel").text = String.num_int64(creature.def)
+	creature.load_values()
