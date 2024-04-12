@@ -3,17 +3,16 @@
 [ext_resource type="FontFile" uid="uid://3fiaey4jsd3x" path="res://assets/fonts/Pendlefont Medium.TTF" id="1_crqik"]
 [ext_resource type="FontFile" uid="uid://ca0g1l1k6v1sf" path="res://assets/fonts/Pendlefont Heavy.TTF" id="1_ecaja"]
 [ext_resource type="Texture2D" uid="uid://cvx8n0iqahhel" path="res://assets/images/ui/button_purple_front.png" id="2_6g7b4"]
+[ext_resource type="Texture2D" uid="uid://yx4hpq172s4s" path="res://assets/images/ui/button_purple_pressed.png" id="3_4csn8"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0rilu"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8qwrf"]
 texture = ExtResource("2_6g7b4")
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ft8at"]
-texture = ExtResource("2_6g7b4")
+region_rect = Rect2(0, 0, 446, 459)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_snrtb"]
-texture = ExtResource("2_6g7b4")
+texture = ExtResource("3_4csn8")
 
 [resource]
 default_font = ExtResource("1_crqik")
@@ -23,7 +22,7 @@ Button/fonts/font = ExtResource("1_ecaja")
 Button/styles/disabled = null
 Button/styles/focus = SubResource("StyleBoxEmpty_0rilu")
 Button/styles/hover = SubResource("StyleBoxTexture_8qwrf")
-Button/styles/normal = SubResource("StyleBoxTexture_ft8at")
+Button/styles/normal = SubResource("StyleBoxTexture_8qwrf")
 Button/styles/pressed = SubResource("StyleBoxTexture_snrtb")
 Label/colors/font_color = Color(0.129412, 0.141176, 0.160784, 1)
 Label/font_sizes/font_size = 25

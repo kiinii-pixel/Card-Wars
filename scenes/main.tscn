@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://owug2m35obl1"]
+[gd_scene load_steps=23 format=3 uid="uid://owug2m35obl1"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_mh3fo"]
 [ext_resource type="PackedScene" uid="uid://b5oih1txnoxfo" path="res://scenes/landscape.tscn" id="1_r6f6m"]
@@ -11,8 +11,9 @@
 [ext_resource type="PackedScene" uid="uid://df3a2sawj0htj" path="res://scenes/deck.tscn" id="9_6xswo"]
 [ext_resource type="Texture2D" uid="uid://v2dwr8jfb1c6" path="res://assets/images/ui/draw_card_border.png" id="10_63nk0"]
 [ext_resource type="AudioStream" uid="uid://dwrf3q4nllt0q" path="res://assets/sounds/Card_Pick.wav" id="12_eiseh"]
+[ext_resource type="Texture2D" uid="uid://b81mxoiegkk36" path="res://assets/images/ui/battle_button_pressed.png" id="12_hu3hp"]
 [ext_resource type="FontFile" uid="uid://ca0g1l1k6v1sf" path="res://assets/fonts/Pendlefont Heavy.TTF" id="12_kugc0"]
-[ext_resource type="Texture2D" uid="uid://b4ol2ch82cnk8" path="res://assets/images/ui/long_border_tile.png" id="13_610m2"]
+[ext_resource type="Texture2D" uid="uid://dke7w7scdxpnl" path="res://assets/images/ui/battle_button.png" id="12_obfg2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sr0rc"]
 size = Vector2(262, 262)
@@ -33,13 +34,18 @@ content_margin_left = 0.0
 content_margin_top = 0.0
 content_margin_right = 0.0
 content_margin_bottom = 85.0
-texture = ExtResource("13_610m2")
+texture = ExtResource("12_obfg2")
 texture_margin_left = 753.75
 texture_margin_top = 200.25
 texture_margin_right = 875.25
 texture_margin_bottom = 236.25
 axis_stretch_horizontal = 1
 axis_stretch_vertical = 1
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_shqf4"]
+texture = ExtResource("12_hu3hp")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_usg6i"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_mh3fo")
@@ -181,18 +187,17 @@ icon_alignment = 1
 
 [node name="Fight" type="Button" parent="Buttons"]
 layout_mode = 0
-offset_left = 1611.0
-offset_top = 433.0
-offset_right = 2671.0
-offset_bottom = 888.0
+offset_left = 1619.0
+offset_top = 429.0
+offset_right = 2706.0
+offset_bottom = 977.0
 scale = Vector2(0.15, 0.15)
 theme_override_fonts/font = ExtResource("12_kugc0")
 theme_override_font_sizes/font_size = 191
 theme_override_styles/normal = SubResource("StyleBoxTexture_qawrv")
 theme_override_styles/hover = SubResource("StyleBoxTexture_qawrv")
-theme_override_styles/pressed = SubResource("StyleBoxTexture_qawrv")
-theme_override_styles/disabled = SubResource("StyleBoxTexture_qawrv")
-theme_override_styles/focus = SubResource("StyleBoxTexture_qawrv")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_shqf4")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_usg6i")
 text = "Fight!"
 
 [node name="card_sound" type="AudioStreamPlayer2D" parent="."]
