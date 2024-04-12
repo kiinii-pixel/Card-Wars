@@ -85,27 +85,29 @@ func load_values():
 	var data : Resource = load(resource_path)
 	%CostLabel.text = String.num(cost)
 	if data.card_type == "Creature":
-		if %AttackLabel.text != String.num_int64(atk):
+		var atk_label = %AttackLabel
+		var def_label = %DefenseLabel
+		if atk_label.text != String.num_int64(atk):
 			if String.num_int64(atk).length() > 1:
-				%AttackLabel.add_theme_font_size_override("font_size", 58)
+				atk_label.add_theme_font_size_override("font_size", 58)
 			else:
-				%AttackLabel.remove_theme_color_override("font_size")
-			%AttackLabel.text = String.num_int64(atk)
-		if int(%AttackLabel.text) < data.atk:
-			%AttackLabel.add_theme_color_override("font_color", Color(1, 0, 0))
-		elif int(%AttackLabel.text) > data.atk:
-			%AttackLabel.add_theme_color_override("font_color", Color(0, 1, 0))
+				atk_label.remove_theme_font_size_override("font_size")
+			atk_label.text = String.num_int64(atk)
+		if int(atk_label.text) < data.atk:
+			atk_label.add_theme_color_override("font_color", Color(1, 0, 0))
+		elif int(atk_label.text) > data.atk:
+			atk_label.add_theme_color_override("font_color", Color(0, 1, 0))
 
-		if %DefenseLabel.text != String.num_int64(def):
+		if def_label.text != String.num_int64(def):
 			if String.num_int64(def).length() > 1:
-				%DefenseLabel.add_theme_font_size_override("font_size", 58)
+				def_label.add_theme_font_size_override("font_size", 58)
 			else:
-				%DefenseLabel.add_theme_font_size_override("font_size", 78)
-			%DefenseLabel.text = String.num_int64(def)
-		if int(%DefenseLabel.text) < data.def:
-			%DefenseLabel.add_theme_color_override("font_color", Color(1, 0, 0))
-		elif int(%DefenseLabel.text) > data.def:
-			%DefenseLabel.add_theme_color_override("font_color", Color(0, 1, 0))
+				def_label.remove_theme_font_size_override("font_size")
+			def_label.text = String.num_int64(def)
+		if int(def_label.text) < data.def:
+			def_label.add_theme_color_override("font_color", Color(1, 0, 0))
+		elif int(def_label.text) > data.def:
+			def_label.add_theme_color_override("font_color", Color(0, 1, 0))
 	else:
 		%AttackLabel.text = ""
 		%DefenseLabel.text = ""
