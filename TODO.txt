@@ -1,3 +1,4 @@
 - Add card_id to data json file ✔
 - Replace global is_dragging with local var in hand scene - bad idea
 - Clean up Card script
+- Cards in deck not draggable
