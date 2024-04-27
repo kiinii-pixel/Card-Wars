@@ -4,7 +4,7 @@ extends Node
 
 const CARD : PackedScene = preload("res://scenes/card.tscn")
 var deck : Resource = preload("res://data/decks/finn.tres")
-var offset : Vector2
+var offset : Vector2 # makes cards have slight offset (pseudo 3D)
 
 func _ready():
 	load_deck()
@@ -19,5 +19,5 @@ func add_card(card_name):
 
 func load_deck():
 	var cards = deck.deck
-	for card in cards:
+	for card in cards: # add cards to deck in random order
 		add_card(cards.pick_random().card_name)

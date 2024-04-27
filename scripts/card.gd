@@ -8,13 +8,14 @@ var body_ref : Landscape # reference to object that was hovered over (e.g. lands
 var is_inside = false # true if card is inside a landscape
 var drag_component : Object # drag component node
 
-var atk : int
+var atk : int # dynamic values
 var def : int
 var cost : int
 
 func _ready():
 	load_card() # load card image and text
 	z_index = 4 # z_index is initialized as 4. Elements on top are set to 5.
+	# why not 0 and 1? because it didnt work..
 	drag_component = $drag_component
 
 func _process(_delta):
@@ -22,35 +23,35 @@ func _process(_delta):
 		if is_inside and drag_component.selected: # If the card is released/placed inside a Landscape
 			play_card()
 
-		elif drag_component.selected and not played:
-			drag_component.move(drag_component.initial_pos, 0.2)
+		elif drag_component.selected and not played: # when released anywherere else:
+			drag_component.move(drag_component.initial_pos, 0.2) # go back
 
 func play_card():
-	drag_component.allow_drag = false
+	drag_component.allow_drag = false # card can't be dragged anymore
 	Global.is_dragging = false
 	played = true
 	is_inside = false
-	drag_component.scale_down(0.2)
-	await drag_component.move(body_ref.global_position, 0.2)
-	reparent(body_ref)
+	drag_component.scale_down(0.2) # scale card back down
+	await drag_component.move(body_ref.global_position, 0.2) # move to landscape
+	reparent(body_ref) # reparent to the landscape it was played on
 	position = Vector2(0, 0)
 	scale = Vector2(0.5, 0.5)
 	card_sound.play()
 
 func _on_drag_component_mouse_entered(): # when you hover over the card
 	if not played and !Global.is_dragging:
-		for child in get_parent().get_children():
+		for child in get_parent().get_children(): #scale all cards down (only one scaled at a time)
 			if child.z_index == 5:
 				child.z_index = 4
 				child.drag_component.scale_down(0.1)
 				child.drag_component.selected = false
-		drag_component.scale_up(0.1)
+		drag_component.scale_up(0.1) # scale new selected card up
 		z_index = 5 # raise z index of this card
 		drag_component.selected = true
 
-func load_card():
+func load_card(): # set the cards stats, name etc. to whatever is stored in its resource
 	var resource_path : String = "res://data/cards/" + card_name + ".tres"
-	var data : Resource = load(resource_path)
+	var data : Resource = load(resource_path) # load card resource
 	set_name(card_name) # sets name in the debug editor (instead of Node2D@1)
 	%CardName.text = data.card_name
 	%LandscapeCardType.text = data.landscape + " " + data.card_type
@@ -75,12 +76,12 @@ func load_card():
 	# Adjust name size
 	var max_characters : int = 12
 	var font_size = %CardName.get_theme_font_size("font_size")
-	while card_name.length() > max_characters:
+	while card_name.length() > max_characters: # if name is too long, scale it down
 				%CardName.add_theme_font_size_override("font_size", font_size)
 				max_characters += 1
 				font_size -= 1.15
 
-func load_values():
+func load_values(): # reload card values and changes colors
 	var resource_path : String = "res://data/cards/" + card_name + ".tres"
 	var data : Resource = load(resource_path)
 	%CostLabel.text = String.num(cost)
@@ -117,8 +118,15 @@ func _on_drag_component_body_entered(landscape: Landscape):
 	if landscape.get_child_count() == 3:
 		is_inside = true # if they overlap
 		body_ref = landscape # current body
+		#spawn card copy / indicator:
+		var sprite = Sprite2D.new()
+		sprite.texture = load("res://assets/images/cards/art/Rainbow/Creature/The Pig.png")
+		#sprite.texture = %SubViewportContainer
+		landscape.add_child(sprite)
+#		card_copy.modulate.a = 0.5
 
 func _on_drag_component_body_exited(landscape: Landscape):
 	if body_ref == landscape:
 		is_inside = false
 		#if body ref = body exited
+		landscape.get_child(3).queue_free()

@@ -49,8 +49,8 @@ func _on_fight_pressed():
 		index += 1
 		
 func deal_damage(creature, opponent):
-	creature.def -= opponent.atk
-	creature.load_values()
+	creature.def -= opponent.atk # decrease hp by opponents atk
+	creature.load_values() # refresh values
 
 # Creates Resources (.tres) for each card in the JSON
 # This was only used to create Resources, doesnt do anything in game.
