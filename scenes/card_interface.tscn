@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://dpmnaa8xswxig"]
+[gd_scene load_steps=10 format=3 uid="uid://dpmnaa8xswxig"]
 
 [ext_resource type="Script" path="res://scripts/card.gd" id="1_iinpi"]
 [ext_resource type="Texture2D" uid="uid://b3xeo685h6h7v" path="res://assets/images/cards/art/Rainbow/Creature/The Pig.png" id="2_3yfvv"]
@@ -6,6 +6,7 @@
 [ext_resource type="FontFile" uid="uid://ca0g1l1k6v1sf" path="res://assets/fonts/Pendlefont Heavy.TTF" id="4_qh24y"]
 [ext_resource type="Theme" uid="uid://cmfvdnu5kgo71" path="res://assets/themes/button_theme.tres" id="5_d5cup"]
 [ext_resource type="PackedScene" uid="uid://qga2y5wh6ftv" path="res://scenes/drag_component.tscn" id="6_3nrdw"]
+[ext_resource type="PackedScene" uid="uid://de57x6w0o023y" path="res://scenes/floop_component.tscn" id="7_dibsc"]
 
 [sub_resource type="Theme" id="Theme_rcflo"]
 default_font = ExtResource("4_qh24y")
@@ -132,6 +133,14 @@ autowrap_mode = 2
 [node name="drag_component" parent="." instance=ExtResource("6_3nrdw")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="drag_component"]
+visible = false
+position = Vector2(-1.16666, -0.666656)
+shape = SubResource("RectangleShape2D_4b713")
+
+[node name="floop_component" parent="." instance=ExtResource("7_dibsc")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="floop_component"]
+visible = false
 position = Vector2(-1.16666, -0.666656)
 shape = SubResource("RectangleShape2D_4b713")
 

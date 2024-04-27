@@ -118,9 +118,15 @@ func _on_drag_component_body_entered(landscape: Landscape):
 	if landscape.get_child_count() == 3:
 		is_inside = true # if they overlap
 		body_ref = landscape # current body
-		#spawn card copy / indicator here <<<<<<<<<<<<<<
+		#spawn card copy / indicator:
+		var sprite = Sprite2D.new()
+		sprite.texture = load("res://assets/images/cards/art/Rainbow/Creature/The Pig.png")
+		#sprite.texture = %SubViewportContainer
+		landscape.add_child(sprite)
+#		card_copy.modulate.a = 0.5
 
 func _on_drag_component_body_exited(landscape: Landscape):
 	if body_ref == landscape:
 		is_inside = false
 		#if body ref = body exited
+		landscape.get_child(3).queue_free()
