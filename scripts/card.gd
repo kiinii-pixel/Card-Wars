@@ -120,10 +120,18 @@ func _on_drag_component_body_entered(landscape: Landscape):
 		body_ref = landscape # current body
 		#spawn card copy / indicator:
 		var sprite = Sprite2D.new()
-		sprite.texture = load("res://assets/images/cards/art/Rainbow/Creature/The Pig.png")
-		#sprite.texture = %SubViewportContainer
+		#sprite.texture = %SubViewport.get_texture()
+		print(sprite.texture)
 		landscape.add_child(sprite)
 #		card_copy.modulate.a = 0.5
+
+		# Retrieve the captured Image using get_image().
+		var sub_viewport = %SubViewport
+		var img = sub_viewport.get_viewport().get_texture().get_image()
+		# Convert Image to ImageTexture.
+		var tex = ImageTexture.create_from_image(img)
+		# Set sprite texture.
+		sprite.texture = tex
 
 func _on_drag_component_body_exited(landscape: Landscape):
 	if body_ref == landscape:
