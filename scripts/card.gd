@@ -123,15 +123,14 @@ func _on_drag_component_body_entered(landscape: Landscape):
 		#sprite.texture = %SubViewport.get_texture()
 		print(sprite.texture)
 		landscape.add_child(sprite)
-#		card_copy.modulate.a = 0.5
 
-		# Retrieve the captured Image using get_image().
-		var sub_viewport = %SubViewport
-		var img = sub_viewport.get_viewport().get_texture().get_image()
-		# Convert Image to ImageTexture.
-		var tex = ImageTexture.create_from_image(img)
-		# Set sprite texture.
-		sprite.texture = tex
+		var sub_viewport = %SubViewport # Used to Render the Card again
+		var img = sub_viewport.get_viewport().get_texture().get_image() # Retrieve the captured Image using get_image().
+		var tex = ImageTexture.create_from_image(img) 		# Convert Image to ImageTexture.
+		sprite.texture = tex # Set sprite texture.
+		sprite.scale = Vector2(0.5, 0.5)
+		sprite.modulate.a = 0.5
+		
 
 func _on_drag_component_body_exited(landscape: Landscape):
 	if body_ref == landscape:
