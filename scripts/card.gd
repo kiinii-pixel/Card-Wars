@@ -113,17 +113,21 @@ func load_values(): # reload card values and changes colors
 		%AttackLabel.text = ""
 		%DefenseLabel.text = ""
 
-func _on_drag_component_body_entered(landscape: Landscape):
-	#is_inside = false
+func _on_drag_component_body_entered(landscape : Landscape):
+	for landscapes in landscape.get_parent().get_children(): # Loop through landscapes
+		if landscapes.get_child_count() >= 4: # If there's a previe
+			if landscapes.get_node_or_null("card_preview"):
+				landscapes.get_node("card_preview").queue_free()
 	if landscape.get_child_count() == 3:
 		is_inside = true # if they overlap
 		body_ref = landscape # current body
+
+		#Get Landscapes. Remove Sprite
+
 		#spawn card copy / indicator:
 		var sprite = Sprite2D.new()
-		#sprite.texture = %SubViewport.get_texture()
-		print(sprite.texture)
+		sprite.set_name("card_preview")
 		landscape.add_child(sprite)
-
 		var sub_viewport = %SubViewport # Used to Render the Card again
 		var img = sub_viewport.get_viewport().get_texture().get_image() # Retrieve the captured Image using get_image().
 		var tex = ImageTexture.create_from_image(img) 		# Convert Image to ImageTexture.
@@ -136,4 +140,6 @@ func _on_drag_component_body_exited(landscape: Landscape):
 	if body_ref == landscape:
 		is_inside = false
 		#if body ref = body exited
-		landscape.get_child(3).queue_free()
+		#landscape.get_child(3).queue_free()
+		if landscape.get_node_or_null("card_preview"):
+			landscape.get_node("card_preview").queue_free()

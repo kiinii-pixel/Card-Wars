@@ -16,6 +16,7 @@ func add_card(card_name):
 	card.scale = Vector2(0.25, 0.25)
 	card.position = offset
 	offset += Vector2(0.2, 0.2)
+	card.drag_component.allow_drag = false
 
 func load_deck():
 	var cards = deck.deck
