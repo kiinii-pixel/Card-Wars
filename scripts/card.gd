@@ -7,6 +7,7 @@ var played = false # true when dragged into play // drag_component.allow_drag sh
 var body_ref : Landscape # reference to object that was hovered over (e.g. landscape)
 var is_inside = false # true if card is inside a landscape
 var drag_component : Object # drag component node
+var floop_component : Object
 
 var atk : int # dynamic values
 var def : int
@@ -17,6 +18,7 @@ func _ready():
 	z_index = 4 # z_index is initialized as 4. Elements on top are set to 5.
 	# why not 0 and 1? because it didnt work..
 	drag_component = $drag_component
+	floop_component = $floop_component
 
 func _process(_delta):
 	if Input.is_action_just_released("action_key"): # When button is released
@@ -39,7 +41,7 @@ func play_card():
 	card_sound.play()
 
 func _on_drag_component_mouse_entered(): # when you hover over the card
-	if not played and !Global.is_dragging:
+	if not played and !Global.is_dragging and drag_component.allow_drag:
 		for child in get_parent().get_children(): #scale all cards down (only one scaled at a time)
 			if child.z_index == 5:
 				child.z_index = 4
@@ -113,20 +115,52 @@ func load_values(): # reload card values and changes colors
 		%AttackLabel.text = ""
 		%DefenseLabel.text = ""
 
-func _on_drag_component_body_entered(landscape: Landscape):
-	#is_inside = false
+func reset_values():
+	var resource_path : String = "res://data/cards/" + card_name + ".tres"
+	var data : Resource = load(resource_path) # load card resource
+	set_name(card_name) # sets name in the debug editor (instead of Node2D@1)
+	# Atk/Def (when creature)
+	if data.card_type == "Creature":
+		atk = data.atk
+		%AttackLabel.text = String.num_int64(atk)
+		%AttackLabel.remove_theme_color_override("font_color")
+
+		def = data.def
+		%DefenseLabel.text = String.num_int64(def)
+		%DefenseLabel.remove_theme_color_override("font_color")
+
+	cost = data.cost
+	%CostLabel.text = String.num_int64(cost)
+
+func _on_drag_component_body_entered(landscape : Landscape):
+	for zones in landscape.get_parent().get_parent().get_children(): # Loop through landscapes
+		for landscapes in zones.get_children():
+			if landscapes.get_child_count() >= 4: # If there's a preview
+				if landscapes.get_node_or_null("card_preview"):
+					landscapes.get_node("card_preview").queue_free()
 	if landscape.get_child_count() == 3:
 		is_inside = true # if they overlap
 		body_ref = landscape # current body
+
+		#Get Landscapes. Remove Sprite
+
 		#spawn card copy / indicator:
-		var sprite = Sprite2D.new()
-		sprite.texture = load("res://assets/images/cards/art/Rainbow/Creature/The Pig.png")
-		#sprite.texture = %SubViewportContainer
-		landscape.add_child(sprite)
-#		card_copy.modulate.a = 0.5
+		if is_inside:
+			var sprite = Sprite2D.new()
+			sprite.set_name("card_preview")
+			landscape.add_child(sprite)
+			var sub_viewport = %SubViewport # Used to Render the Card again
+			var img = sub_viewport.get_viewport().get_texture().get_image() # Retrieve the captured Image using get_image().
+			var tex = ImageTexture.create_from_image(img) 		# Convert Image to ImageTexture.
+			sprite.texture = tex # Set sprite texture.
+			sprite.scale = Vector2(0.5, 0.5)
+			sprite.modulate.a = 0.5
+		
 
 func _on_drag_component_body_exited(landscape: Landscape):
 	if body_ref == landscape:
 		is_inside = false
 		#if body ref = body exited
-		landscape.get_child(3).queue_free()
+		#landscape.get_child(3).queue_free()
+		if landscape.get_node_or_null("card_preview"):
+			landscape.get_node("card_preview").queue_free()

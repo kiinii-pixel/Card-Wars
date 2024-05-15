@@ -26,6 +26,7 @@ func draw():
 		card.z_index = 5
 		card.get_node("%AnimationPlayer").play("card_flip")
 		card.reparent(hand, true)
+		card.drag_component.allow_drag = true # Make Card draggable (not draggavle when in deck)
 		#await move(card, hand.position, 0.3)
 		hand.emit_signal("child_order_changed")
 

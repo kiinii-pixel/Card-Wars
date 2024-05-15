@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://ndctswb5qjjp"]
+
+[ext_resource type="Texture2D" uid="uid://bmskk7288m5wn" path="res://assets/images/cards/card_back/alt_back.png" id="1_2l4bs"]
+
+[node name="Discard" type="Node2D"]
+
+[node name="Deck Space" type="Sprite2D" parent="."]
+scale = Vector2(0.224, 0.224)
+texture = ExtResource("1_2l4bs")
+
+[node name="Cards" type="Node2D" parent="."]
