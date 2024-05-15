@@ -22,7 +22,8 @@ func _on_mouse_entered(): # when you hover over the card
 
 func _on_mouse_exited():
 	selected = false
-	
+
+# Move and Rotate Card (Move by (Vector2), Roation (0-360), Time (Seconds))
 func rotate_card(move_amount : Vector2, rotation_amount : int, time : float):
 	var tween = create_tween().set_parallel()
 	tween.tween_property(get_parent(), "rotation_degrees", rotation_amount, time).set_ease(Tween.EASE_OUT)

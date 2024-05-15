@@ -301,7 +301,6 @@ stream = ExtResource("8_iocnt")
 [node name="floop_component" parent="." instance=ExtResource("9_1g6dh")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="floop_component"]
-visible = false
 shape = SubResource("RectangleShape2D_4b713")
 
 [connection signal="body_entered" from="drag_component" to="." method="_on_drag_component_body_entered"]

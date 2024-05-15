@@ -24,21 +24,24 @@ func _on_reset_pressed():
 	$Deck.load_deck()
 
 func _on_fight_pressed():
-	var landscapes = $Landscapes # Node that holds 4 Landscapes
-	var enemy_landscapes = $EnemyLandscapes # Node that holds 4 (enemy) landscapes
+	var landscapes = %Landscapes # Node that holds 4 Landscapes
+	var enemy_landscapes = %EnemyLandscapes # Node that holds 4 (enemy) landscapes
 	var index = 0 # Used to count current Landscape in For Loop
 
 	for landscape in landscapes.get_children(): # Goes through all Cards.
 		if landscape.get_child_count() == 4: # If there's a Card on the landscape
 			var creature = landscape.get_child(3) # Get the card / creature
-			var opposing_creature = enemy_landscapes.get_child(index).get_child(3)
+			var opposing_creature = null
+			if enemy_landscapes.get_child(index).get_child_count() == 4:
+				opposing_creature = enemy_landscapes.get_child(index).get_child(3)
 			if opposing_creature != null:
 				deal_damage(creature, opposing_creature)
 				deal_damage(opposing_creature, creature)
 				if creature.def <= 0: # When Def reaches 0: remove
-					creature.queue_free()
+					discard(creature)
 				if opposing_creature.def <= 0:
-					opposing_creature.queue_free()
+					discard(opposing_creature)
+					
 			else:
 				pass
 				#Decrease Opponent's HP
@@ -51,6 +54,15 @@ func _on_fight_pressed():
 func deal_damage(creature, opponent):
 	creature.def -= opponent.atk # decrease hp by opponents atk
 	creature.load_values() # refresh values
+
+func discard(creature):
+	creature.floop_component.rotate_card(Vector2(0, 0), 0, 0.2)
+	creature.drag_component.allow_drag = false
+	await creature.drag_component.move($DiscardPile.global_position, 0.2)
+	creature.reparent($DiscardPile/Cards)
+	creature.position = Vector2(0, 0)
+	creature.scale = Vector2(0.25, 0.25)
+	creature.reset_values()
 
 # Creates Resources (.tres) for each card in the JSON
 # This was only used to create Resources, doesnt do anything in game.
