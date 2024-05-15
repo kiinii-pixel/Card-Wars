@@ -21,11 +21,9 @@ For now, the Goal is a PC, or Browser Friendly Game.
   - Main Menu
 
 ### Nerdy Details:
-  -Data can be read from a JSON file containing the stats, description, etc. of every card. \
-  -Drag and drop system \
-  -Hover animations \
-  -Drawing Cards \
-  -Cards use template so that only the art image of the card needs to be saved and everything else is dynamic
+  - ~~Data can be read from a JSON file containing the stats, description, etc. of every card.~~
+  - Cards are now saved as indididual Resources containing all their stats. This might be a good place to implement their effects too.
+  - Cards use a template so that only the art's image of the card needs to be saved and everything else is dynamic (no scans and real time stat changes).
 
 ### **Dreams**, or: Unrealistic, Delusional Goals
   - Move the game to 3D (Like Hearthstone)
