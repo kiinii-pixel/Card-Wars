@@ -145,7 +145,7 @@ func _on_drag_component_body_entered(landscape : Landscape):
 		#Get Landscapes. Remove Sprite
 
 		#spawn card copy / indicator:
-		if is_inside:
+		if is_inside and not played:
 			var sprite = Sprite2D.new()
 			sprite.set_name("card_preview")
 			landscape.add_child(sprite)
