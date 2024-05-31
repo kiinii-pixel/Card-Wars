@@ -297,6 +297,7 @@ texture = ExtResource("6_uokre")
 
 [node name="card_sound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("8_iocnt")
+bus = &"Sound Effects"
 
 [node name="floop_component" parent="." instance=ExtResource("9_1g6dh")]
 

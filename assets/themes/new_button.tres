@@ -1,0 +1,22 @@
+[gd_resource type="Theme" load_steps=5 format=3 uid="uid://dkvgxms3voe23"]
+
+[ext_resource type="FontFile" uid="uid://ca0g1l1k6v1sf" path="res://assets/fonts/Pendlefont Heavy.TTF" id="1_1f6py"]
+[ext_resource type="FontFile" uid="uid://3fiaey4jsd3x" path="res://assets/fonts/Pendlefont Medium.TTF" id="2_jgsf3"]
+[ext_resource type="Texture2D" uid="uid://b4ol2ch82cnk8" path="res://assets/images/ui/long_border_tile.png" id="2_xol7r"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pk0gw"]
+texture = ExtResource("2_xol7r")
+expand_margin_top = 5.0
+expand_margin_bottom = 15.0
+
+[resource]
+Button/colors/font_color = Color(0.333333, 0.333333, 0.333333, 1)
+Button/constants/h_separation = 100
+Button/font_sizes/font_size = 48
+Button/fonts/font = ExtResource("1_1f6py")
+Button/styles/disabled = SubResource("StyleBoxTexture_pk0gw")
+Button/styles/focus = SubResource("StyleBoxTexture_pk0gw")
+Button/styles/hover = SubResource("StyleBoxTexture_pk0gw")
+Button/styles/normal = SubResource("StyleBoxTexture_pk0gw")
+Button/styles/pressed = SubResource("StyleBoxTexture_pk0gw")
+Label/fonts/font = ExtResource("2_jgsf3")

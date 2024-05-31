@@ -149,6 +149,7 @@ text = "Fight!"
 
 [node name="card_sound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("12_eiseh")
+bus = &"Sound Effects"
 
 [node name="DiscardPile" parent="." instance=ExtResource("15_b00fb")]
 position = Vector2(1710, 673)
