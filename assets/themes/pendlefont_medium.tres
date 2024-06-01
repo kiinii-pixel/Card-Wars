@@ -1,8 +1,0 @@
-[gd_resource type="Theme" load_steps=2 format=3 uid="uid://cbg740i6iql4"]
-
-[ext_resource type="FontFile" uid="uid://3fiaey4jsd3x" path="res://assets/fonts/Pendlefont Medium.TTF" id="1_r2q74"]
-
-[resource]
-default_font = ExtResource("1_r2q74")
-Label/colors/font_color = Color(0.129412, 0.141176, 0.160784, 1)
-Label/font_sizes/font_size = 25
