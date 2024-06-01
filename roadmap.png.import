@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dwue10sr108kp"
-path="res://.godot/imported/Card Wars Roadmap.png-d78b99d66ddd47a9df38085c7df67c49.ctex"
+path="res://.godot/imported/roadmap.png-8d2f8bc49c982483274aeb8d36f1723d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Card Wars Roadmap.png"
-dest_files=["res://.godot/imported/Card Wars Roadmap.png-d78b99d66ddd47a9df38085c7df67c49.ctex"]
+source_file="res://roadmap.png"
+dest_files=["res://.godot/imported/roadmap.png-8d2f8bc49c982483274aeb8d36f1723d.ctex"]
 
 [params]
 
