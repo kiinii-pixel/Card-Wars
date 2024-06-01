@@ -1,16 +1,20 @@
-[gd_resource type="Theme" load_steps=7 format=3 uid="uid://dkvgxms3voe23"]
+[gd_resource type="Theme" load_steps=8 format=3 uid="uid://dkvgxms3voe23"]
 
 [ext_resource type="FontFile" uid="uid://ca0g1l1k6v1sf" path="res://assets/fonts/Pendlefont Heavy.TTF" id="1_uk34g"]
-[ext_resource type="Texture2D" uid="uid://b4ol2ch82cnk8" path="res://assets/images/ui/long_border_tile.png" id="2_nwh5o"]
+[ext_resource type="Texture2D" uid="uid://bibtdkbx8ql1m" path="res://assets/images/ui/long_button_tile.png" id="2_h13b3"]
 [ext_resource type="Texture2D" uid="uid://er1i6owt6wsk" path="res://assets/images/ui/slider_knob.png" id="3_meh8x"]
 [ext_resource type="FontFile" uid="uid://3fiaey4jsd3x" path="res://assets/fonts/Pendlefont Medium.TTF" id="3_swhys"]
+[ext_resource type="Texture2D" uid="uid://w025bj8v4glc" path="res://assets/images/ui/slider.png" id="4_sv31t"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pk0gw"]
-texture = ExtResource("2_nwh5o")
+texture = ExtResource("2_h13b3")
 expand_margin_top = 5.0
 expand_margin_bottom = 15.0
 
-[sub_resource type="ImageTexture" id="ImageTexture_7fjdm"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2x1er"]
+texture = ExtResource("4_sv31t")
+expand_margin_top = 30.0
+expand_margin_bottom = 30.0
 
 [resource]
 Button/colors/font_color = Color(0.333333, 0.333333, 0.333333, 1)
@@ -22,8 +26,12 @@ Button/styles/focus = SubResource("StyleBoxTexture_pk0gw")
 Button/styles/hover = SubResource("StyleBoxTexture_pk0gw")
 Button/styles/normal = SubResource("StyleBoxTexture_pk0gw")
 Button/styles/pressed = SubResource("StyleBoxTexture_pk0gw")
-HSlider/icons/grabber_disabled = SubResource("ImageTexture_7fjdm")
+HSlider/icons/grabber = ExtResource("3_meh8x")
+HSlider/icons/grabber_disabled = ExtResource("3_meh8x")
 HSlider/icons/grabber_highlight = ExtResource("3_meh8x")
+HSlider/styles/grabber_area = null
+HSlider/styles/grabber_area_highlight = null
+HSlider/styles/slider = SubResource("StyleBoxTexture_2x1er")
 Label/colors/font_color = Color(0.239216, 0.239216, 0.239216, 1)
 Label/font_sizes/font_size = 64
 Label/fonts/font = ExtResource("3_swhys")

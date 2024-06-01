@@ -1,10 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://dxokx01ac4b2t"]
+[gd_scene load_steps=3 format=3 uid="uid://dxokx01ac4b2t"]
 
 [ext_resource type="Script" path="res://scripts/volume_slider.gd" id="1_q83oi"]
+[ext_resource type="Theme" uid="uid://dkvgxms3voe23" path="res://assets/themes/pendletheme.tres" id="1_x81nj"]
 
 [node name="HSlider" type="HSlider"]
-offset_right = 8.0
-offset_bottom = 16.0
+offset_right = 505.0
+offset_bottom = 100.0
+size_flags_horizontal = 8
+theme = ExtResource("1_x81nj")
 max_value = 1.0
 step = 0.001
 script = ExtResource("1_q83oi")
