@@ -4,7 +4,7 @@ Once I implement the core mechanics of the TCG I will likely turn it into its ow
 This will include **New Cards!** BPDrej has been hard at work creating a **new Landscape Type!** More on that below.
 For now, the Goal is a PC, or Browser Friendly Game.
 
-! [Roadmap] (roadmap.png)
+![Roadmap](roadmap.png)
 
 ## Goals: 
 ### Done:
