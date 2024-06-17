@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=8 format=3 uid="uid://dkvgxms3voe23"]
+[gd_resource type="Theme" load_steps=9 format=3 uid="uid://mmfpajwi7rd7"]
 
 [ext_resource type="FontFile" uid="uid://ca0g1l1k6v1sf" path="res://assets/fonts/Pendlefont Heavy.TTF" id="1_uk34g"]
 [ext_resource type="Texture2D" uid="uid://bibtdkbx8ql1m" path="res://assets/images/ui/long_button_tile.png" id="2_h13b3"]
@@ -10,6 +10,12 @@
 texture = ExtResource("2_h13b3")
 expand_margin_top = 5.0
 expand_margin_bottom = 15.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_311c2"]
+texture = ExtResource("4_sv31t")
+expand_margin_top = 30.0
+expand_margin_bottom = 30.0
+modulate_color = Color(0, 0.729412, 0.270588, 1)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2x1er"]
 texture = ExtResource("4_sv31t")
@@ -29,8 +35,8 @@ Button/styles/pressed = SubResource("StyleBoxTexture_pk0gw")
 HSlider/icons/grabber = ExtResource("3_meh8x")
 HSlider/icons/grabber_disabled = ExtResource("3_meh8x")
 HSlider/icons/grabber_highlight = ExtResource("3_meh8x")
-HSlider/styles/grabber_area = null
-HSlider/styles/grabber_area_highlight = null
+HSlider/styles/grabber_area = SubResource("StyleBoxTexture_311c2")
+HSlider/styles/grabber_area_highlight = SubResource("StyleBoxTexture_311c2")
 HSlider/styles/slider = SubResource("StyleBoxTexture_2x1er")
 Label/colors/font_color = Color(0.239216, 0.239216, 0.239216, 1)
 Label/font_sizes/font_size = 64

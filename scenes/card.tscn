@@ -3,8 +3,8 @@
 [ext_resource type="Script" path="res://scripts/card.gd" id="1_xodya"]
 [ext_resource type="Texture2D" uid="uid://ct5331atokkqs" path="res://assets/images/frames/Rainbow_Creature.png" id="3_mw3bc"]
 [ext_resource type="Texture2D" uid="uid://b3xeo685h6h7v" path="res://assets/images/cards/art/Rainbow/Creature/The Pig.png" id="4_0v5ny"]
+[ext_resource type="Theme" uid="uid://dmwrp6aey18st" path="res://assets/themes/purple_button.tres" id="5_bmwov"]
 [ext_resource type="FontFile" uid="uid://ca0g1l1k6v1sf" path="res://assets/fonts/Pendlefont Heavy.TTF" id="5_bysvj"]
-[ext_resource type="Theme" uid="uid://cmfvdnu5kgo71" path="res://assets/themes/purple_button.tres" id="5_pbv70"]
 [ext_resource type="PackedScene" uid="uid://qga2y5wh6ftv" path="res://scenes/drag_component.tscn" id="6_457fh"]
 [ext_resource type="Texture2D" uid="uid://cn0ywq5f0a58r" path="res://assets/images/cards/card_back/back.png" id="6_uokre"]
 [ext_resource type="AudioStream" uid="uid://cy7urpyd5dqi5" path="res://assets/sounds/CardMove.wav" id="8_iocnt"]
@@ -216,7 +216,7 @@ offset_left = 37.0
 offset_top = 660.0
 offset_right = 659.0
 offset_bottom = 864.0
-theme = ExtResource("5_pbv70")
+theme = ExtResource("5_bmwov")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 0)
 theme_override_constants/outline_size = 0
 theme_override_font_sizes/font_size = 32
@@ -297,7 +297,6 @@ texture = ExtResource("6_uokre")
 
 [node name="card_sound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("8_iocnt")
-bus = &"Sound Effects"
 
 [node name="floop_component" parent="." instance=ExtResource("9_1g6dh")]
 

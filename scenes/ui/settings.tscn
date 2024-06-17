@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://ddiu363v0xlo7"]
 
-[ext_resource type="Script" path="res://scripts/settings.gd" id="1_7hdyw"]
+[ext_resource type="Script" path="res://scripts/ui/settings.gd" id="1_7hdyw"]
 [ext_resource type="Texture2D" uid="uid://hxc1owi487jq" path="res://assets/images/ui/clouds background.jpeg" id="1_x6078"]
-[ext_resource type="Theme" uid="uid://dkvgxms3voe23" path="res://assets/themes/pendletheme.tres" id="2_6s48f"]
-[ext_resource type="PackedScene" uid="uid://dxokx01ac4b2t" path="res://scenes/volume_slider.tscn" id="3_e6qgy"]
+[ext_resource type="Theme" uid="uid://mmfpajwi7rd7" path="res://assets/themes/pendletheme.tres" id="2_6s48f"]
+[ext_resource type="PackedScene" uid="uid://dxokx01ac4b2t" path="res://scenes/ui/volume_slider.tscn" id="3_e6qgy"]
 
 [node name="Settings" type="Control"]
 layout_mode = 3
@@ -50,41 +50,53 @@ alignment = 1
 custom_minimum_size = Vector2(0, 40)
 layout_mode = 2
 
-[node name="SoundSettings" type="VBoxContainer" parent="Options/VBoxContainer"]
+[node name="Back" type="Button" parent="Options/VBoxContainer"]
 layout_mode = 2
+size_flags_vertical = 10
+theme = ExtResource("2_6s48f")
+text = "Back"
 
-[node name="SoundLabel" type="Label" parent="Options/VBoxContainer/SoundSettings"]
+[node name="SoundSettings" type="VBoxContainer" parent="."]
+layout_mode = 2
+offset_left = 859.0
+offset_top = 460.0
+offset_right = 1238.0
+offset_bottom = 944.0
+scale = Vector2(0.75, 0.75)
+
+[node name="SoundLabel" type="Label" parent="SoundSettings"]
 layout_mode = 2
 theme = ExtResource("2_6s48f")
 theme_override_font_sizes/font_size = 46
 text = "Sound"
 horizontal_alignment = 1
 
-[node name="MasterLabel" type="Label" parent="Options/VBoxContainer/SoundSettings"]
+[node name="MasterLabel" type="Label" parent="SoundSettings"]
 layout_mode = 2
 theme = ExtResource("2_6s48f")
 theme_override_font_sizes/font_size = 21
 text = "Master"
 horizontal_alignment = 1
 
-[node name="Master" parent="Options/VBoxContainer/SoundSettings" instance=ExtResource("3_e6qgy")]
+[node name="Master" parent="SoundSettings" instance=ExtResource("3_e6qgy")]
 layout_mode = 2
 size_flags_horizontal = 1
 bus_name = "Master"
 
-[node name="MusicLabel" type="Label" parent="Options/VBoxContainer/SoundSettings"]
+[node name="MusicLabel" type="Label" parent="SoundSettings"]
 layout_mode = 2
+size_flags_vertical = 3
 theme = ExtResource("2_6s48f")
 theme_override_font_sizes/font_size = 21
 text = "Music"
 horizontal_alignment = 1
 
-[node name="Music" parent="Options/VBoxContainer/SoundSettings" instance=ExtResource("3_e6qgy")]
+[node name="Music" parent="SoundSettings" instance=ExtResource("3_e6qgy")]
 layout_mode = 2
 size_flags_horizontal = 1
 bus_name = "Music"
 
-[node name="SoundEffectsLabel" type="Label" parent="Options/VBoxContainer/SoundSettings"]
+[node name="SoundEffectsLabel" type="Label" parent="SoundSettings"]
 layout_mode = 2
 theme = ExtResource("2_6s48f")
 theme_override_font_sizes/font_size = 21
@@ -92,22 +104,9 @@ text = "Sound Effects
 "
 horizontal_alignment = 1
 
-[node name="Sound Effects" parent="Options/VBoxContainer/SoundSettings" instance=ExtResource("3_e6qgy")]
+[node name="Sound Effects" parent="SoundSettings" instance=ExtResource("3_e6qgy")]
 layout_mode = 2
 size_flags_horizontal = 1
 bus_name = "Sound Effects"
-
-[node name="Back" type="Button" parent="Options/VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 10
-theme = ExtResource("2_6s48f")
-text = "Back"
-
-[node name="Sound Settings" type="MarginContainer" parent="."]
-layout_mode = 2
-offset_left = 833.0
-offset_top = 510.0
-offset_right = 1158.0
-offset_bottom = 778.0
 
 [connection signal="pressed" from="Options/VBoxContainer/Back" to="." method="_on_back_pressed"]

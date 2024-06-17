@@ -1,15 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://chvgpj5oj2teu"]
+[gd_scene load_steps=4 format=3 uid="uid://chvgpj5oj2teu"]
 
-[ext_resource type="Script" path="res://scripts/menu.gd" id="1_ia7bn"]
+[ext_resource type="Script" path="res://scripts/ui/menu.gd" id="1_ia7bn"]
 [ext_resource type="Texture2D" uid="uid://hxc1owi487jq" path="res://assets/images/ui/clouds background.jpeg" id="2_pu4cv"]
-[ext_resource type="Theme" uid="uid://dkvgxms3voe23" path="res://assets/themes/pendletheme.tres" id="3_eiqy0"]
-[ext_resource type="Texture2D" uid="uid://er1i6owt6wsk" path="res://assets/images/ui/slider_knob.png" id="4_slv0a"]
-[ext_resource type="Texture2D" uid="uid://w025bj8v4glc" path="res://assets/images/ui/slider.png" id="5_e471f"]
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jhelj"]
-texture = ExtResource("5_e471f")
-expand_margin_top = 30.0
-expand_margin_bottom = 30.0
+[ext_resource type="Theme" uid="uid://mmfpajwi7rd7" path="res://assets/themes/pendletheme.tres" id="3_eiqy0"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -63,17 +56,6 @@ size_flags_vertical = 6
 theme = ExtResource("3_eiqy0")
 text = "Quit
 "
-
-[node name="HSlider" type="HSlider" parent="."]
-layout_mode = 0
-offset_left = 103.0
-offset_top = 217.0
-offset_right = 583.0
-offset_bottom = 317.0
-theme_override_icons/grabber = ExtResource("4_slv0a")
-theme_override_icons/grabber_highlight = ExtResource("4_slv0a")
-theme_override_icons/grabber_disabled = ExtResource("4_slv0a")
-theme_override_styles/slider = SubResource("StyleBoxTexture_jhelj")
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Decks" to="." method="_on_decks_pressed"]

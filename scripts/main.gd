@@ -23,6 +23,9 @@ func _on_reset_pressed():
 	$Deck.offset = Vector2(0, 0) # Reset offset (Card 3D effect)
 	$Deck.load_deck()
 
+func _on_back_pressed():
+	get_tree().change_scene_to_file("res://scenes/ui/menu.tscn")
+
 func _on_fight_pressed():
 	var landscapes = %Landscapes # Node that holds 4 Landscapes
 	var enemy_landscapes = %EnemyLandscapes # Node that holds 4 (enemy) landscapes
