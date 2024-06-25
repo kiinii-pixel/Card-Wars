@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://ddiu363v0xlo7"]
+[gd_scene load_steps=6 format=3 uid="uid://ddiu363v0xlo7"]
 
 [ext_resource type="Script" path="res://scripts/ui/settings.gd" id="1_7hdyw"]
 [ext_resource type="Texture2D" uid="uid://hxc1owi487jq" path="res://assets/images/ui/clouds background.jpeg" id="1_x6078"]
 [ext_resource type="Theme" uid="uid://mmfpajwi7rd7" path="res://assets/themes/pendletheme.tres" id="2_6s48f"]
 [ext_resource type="PackedScene" uid="uid://dxokx01ac4b2t" path="res://scenes/ui/volume_slider.tscn" id="3_e6qgy"]
+[ext_resource type="PackedScene" uid="uid://5w02c5yvt88x" path="res://scenes/ui/button.tscn" id="4_mamm5"]
 
 [node name="Settings" type="Control"]
 layout_mode = 3
@@ -19,7 +20,7 @@ layout_mode = 0
 offset_right = 1920.0
 offset_bottom = 1080.0
 texture = ExtResource("1_x6078")
-expand_mode = 3
+expand_mode = 1
 
 [node name="Options" type="MarginContainer" parent="."]
 layout_mode = 0
@@ -41,7 +42,7 @@ horizontal_alignment = 1
 custom_minimum_size = Vector2(0, 40)
 layout_mode = 2
 
-[node name="OptionButton" type="OptionButton" parent="Options/VBoxContainer"]
+[node name="ResolutionOptionButton" type="OptionButton" parent="Options/VBoxContainer"]
 layout_mode = 2
 theme = ExtResource("2_6s48f")
 alignment = 1
@@ -50,10 +51,9 @@ alignment = 1
 custom_minimum_size = Vector2(0, 40)
 layout_mode = 2
 
-[node name="Back" type="Button" parent="Options/VBoxContainer"]
+[node name="Back" parent="Options/VBoxContainer" instance=ExtResource("4_mamm5")]
 layout_mode = 2
 size_flags_vertical = 10
-theme = ExtResource("2_6s48f")
 text = "Back"
 
 [node name="SoundSettings" type="VBoxContainer" parent="."]
@@ -109,4 +109,5 @@ layout_mode = 2
 size_flags_horizontal = 1
 bus_name = "Sound Effects"
 
+[connection signal="item_selected" from="Options/VBoxContainer/ResolutionOptionButton" to="." method="_on_resolution_option_button_item_selected"]
 [connection signal="pressed" from="Options/VBoxContainer/Back" to="." method="_on_back_pressed"]

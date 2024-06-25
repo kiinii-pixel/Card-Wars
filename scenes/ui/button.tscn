@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://5w02c5yvt88x"]
+
+[ext_resource type="Theme" uid="uid://mmfpajwi7rd7" path="res://assets/themes/pendletheme.tres" id="1_bm7w4"]
+
+[node name="Button" type="Button"]
+size_flags_vertical = 6
+theme = ExtResource("1_bm7w4")
+text = "Button"

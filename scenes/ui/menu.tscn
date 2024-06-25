@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/ui/menu.gd" id="1_ia7bn"]
 [ext_resource type="Texture2D" uid="uid://hxc1owi487jq" path="res://assets/images/ui/clouds background.jpeg" id="2_pu4cv"]
-[ext_resource type="Theme" uid="uid://mmfpajwi7rd7" path="res://assets/themes/pendletheme.tres" id="3_eiqy0"]
+[ext_resource type="PackedScene" uid="uid://5w02c5yvt88x" path="res://scenes/ui/button.tscn" id="3_td3ef"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -31,31 +31,21 @@ offset_bottom = 815.0
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
 
-[node name="Play" type="Button" parent="MarginContainer/VBoxContainer"]
+[node name="Play" parent="MarginContainer/VBoxContainer" instance=ExtResource("3_td3ef")]
 layout_mode = 2
-size_flags_vertical = 6
-theme = ExtResource("3_eiqy0")
 text = "Play"
 
-[node name="Decks" type="Button" parent="MarginContainer/VBoxContainer"]
+[node name="Decks" parent="MarginContainer/VBoxContainer" instance=ExtResource("3_td3ef")]
 layout_mode = 2
-size_flags_vertical = 6
-theme = ExtResource("3_eiqy0")
-text = "Decks
-"
+text = "Decks"
 
-[node name="Settings" type="Button" parent="MarginContainer/VBoxContainer"]
+[node name="Settings" parent="MarginContainer/VBoxContainer" instance=ExtResource("3_td3ef")]
 layout_mode = 2
-size_flags_vertical = 6
-theme = ExtResource("3_eiqy0")
 text = "Settings"
 
-[node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
+[node name="Quit" parent="MarginContainer/VBoxContainer" instance=ExtResource("3_td3ef")]
 layout_mode = 2
-size_flags_vertical = 6
-theme = ExtResource("3_eiqy0")
-text = "Quit
-"
+text = "Quit"
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Decks" to="." method="_on_decks_pressed"]
