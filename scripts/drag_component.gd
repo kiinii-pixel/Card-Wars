@@ -29,11 +29,8 @@ func _process(_delta):
 
 func _on_mouse_entered(): # when you hover over the card
 	if not Global.is_dragging and allow_drag: # If no other card is being dragged:
-		print("selected")
-		print(get_parent().scale)
 		selected = true # Select current card
 		scale_up(0.1) # Scale up current card
-		print(get_parent().scale)
 		get_parent().z_index = 5
 
 func _on_mouse_exited():
@@ -52,8 +49,6 @@ func follow_mouse():
 func scale_up(time):
 	var tween = create_tween().set_parallel(true)
 	tween.tween_property(get_parent(), "scale", SCALE_ZOOMED, time).set_ease(Tween.EASE_IN)
-	print("here")
-	get_parent().scale = SCALE_ZOOMED
 
 func scale_down(time):
 	var tween = create_tween().set_parallel(true)

@@ -6,6 +6,7 @@ func _ready():
 	#create_resources()
 	deck = load("res://data/decks/finn.tres").deck # Load Finn's Deck
 	$Hand.draw_multiple(5) # Draw 5 Cards to hand
+	$"Godot Icon"/drag_component.allow_drag = true
 
 # When the Draw Card Button is pressed
 func _on_draw_card_pressed():
