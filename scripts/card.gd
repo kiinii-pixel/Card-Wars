@@ -2,8 +2,8 @@ class_name Card extends Node2D
 
 @onready var card_sound = $card_sound
 @export var card_name : String # change to card you want
+@export var data : Resource
 # CARD VARIABLES
-var played = false # true when dragged into play // drag_component.allow_drag should be enough
 var body_ref : Landscape # reference to object that was hovered over (e.g. landscape)
 var is_inside = false # true if card is inside a landscape
 var drag_component : Object # drag component node
@@ -20,18 +20,9 @@ func _ready():
 	drag_component = $drag_component
 	floop_component = $floop_component
 
-func _process(_delta):
-	if Input.is_action_just_released("action_key"): # When button is released
-		if is_inside and drag_component.selected: # If the card is released/placed inside a Landscape
-			play_card()
-
-		elif drag_component.selected and not played: # when released anywherere else:
-			drag_component.move(drag_component.initial_pos, 0.2) # go back
-
 func play_card():
 	drag_component.allow_drag = false # card can't be dragged anymore
 	Global.is_dragging = false # no card is being dragged anymore
-	played = true # card is played (doesn't scale up on hover)
 	is_inside = false
 	drag_component.scale_down(0.2) # scale card back down
 	await drag_component.move(body_ref.global_position, 0.2) # move to landscape
@@ -39,17 +30,6 @@ func play_card():
 	position = Vector2(0, 0)
 	scale = Vector2(0.5, 0.5)
 	card_sound.play()
-
-func _on_drag_component_mouse_entered(): # when you hover over the card
-	if not played and !Global.is_dragging and drag_component.allow_drag:
-		for child in get_parent().get_children(): #scale all cards down (only one scaled at a time)
-			if child.z_index == 5:
-				child.z_index = 4
-				child.drag_component.scale_down(0.1)
-				child.drag_component.selected = false
-		drag_component.scale_up(0.1) # scale new selected card up
-		z_index = 5 # raise z index of this card
-		drag_component.selected = true
 
 func load_card(): # set the cards stats, name etc. to whatever is stored in its resource
 	var resource_path : String = "res://data/cards/" + card_name + ".tres"
@@ -146,7 +126,7 @@ func _on_drag_component_body_entered(landscape : Landscape):
 
 		# spawn card copy / indicator / Preview:
 		# If card is inside a landscape (that is empty) and hasn't been played (so it doesnt spawn  preview on its way to discard pile)
-		if is_inside and not played:
+		if is_inside and drag_component.allow_drag:
 			var sprite = Sprite2D.new() # create new sprite
 			sprite.set_name("card_preview") # set more readable name in scene tree
 			body_ref.add_child(sprite) # add new sprite as child of the entered landscape

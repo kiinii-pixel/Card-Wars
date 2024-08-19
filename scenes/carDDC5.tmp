@@ -133,6 +133,7 @@ size = Vector2(638.5, 928)
 
 [node name="Card" type="Node2D"]
 script = ExtResource("1_xodya")
+card_name = null
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="."]
 visible = false
@@ -308,3 +309,4 @@ shape = SubResource("RectangleShape2D_os2xy")
 
 [connection signal="body_entered" from="drag_component" to="." method="_on_drag_component_body_entered"]
 [connection signal="body_exited" from="drag_component" to="." method="_on_drag_component_body_exited"]
+[connection signal="mouse_entered" from="drag_component" to="." method="_on_drag_component_mouse_entered"]

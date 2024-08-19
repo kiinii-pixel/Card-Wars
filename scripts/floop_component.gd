@@ -8,7 +8,7 @@ func _ready():
 	pass
 
 func _process(_delta):
-	if selected and get_parent().played and not flooped and not attacked:
+	if selected and !get_parent().drag_component.allow_drag and !flooped and !attacked:
 		if Input.is_action_just_pressed("floop"):
 			#get_parent().rotation_degrees = 90
 			rotate_card(Vector2(0, 100), 90, 0.25)
