@@ -1,7 +1,7 @@
 class_name Card extends Node2D
 
 @onready var card_sound = $card_sound
-@export var card_name : String # change to card you want
+#@export var card_name : String # change to card you want
 @export var data : Resource
 # CARD VARIABLES
 var body_ref : Landscape # reference to object that was hovered over (e.g. landscape)
@@ -32,9 +32,7 @@ func play_card():
 	card_sound.play()
 
 func load_card(): # set the cards stats, name etc. to whatever is stored in its resource
-	var resource_path : String = "res://data/cards/" + card_name + ".tres"
-	var data : Resource = load(resource_path) # load card resource
-	set_name(card_name) # sets name in the debug editor (instead of Node2D@1)
+	set_name(data.card_name) # sets name in the debug editor (instead of Node2D@1)
 	%CardName.text = data.card_name
 	%LandscapeCardType.text = data.landscape + " " + data.card_type
 	%Description.text = data.description
@@ -58,14 +56,12 @@ func load_card(): # set the cards stats, name etc. to whatever is stored in its 
 	# Adjust name size
 	var max_characters : int = 12
 	var font_size = %CardName.get_theme_font_size("font_size")
-	while card_name.length() > max_characters: # if name is too long, scale it down
+	while data.card_name.length() > max_characters: # if name is too long, scale it down
 				%CardName.add_theme_font_size_override("font_size", font_size)
 				max_characters += 1
 				font_size -= 1.15
 
 func load_values(): # reload card values and changes colors
-	var resource_path : String = "res://data/cards/" + card_name + ".tres"
-	var data : Resource = load(resource_path)
 	%CostLabel.text = String.num(cost)
 	if data.card_type == "Creature":
 		var atk_label = %AttackLabel
@@ -96,9 +92,7 @@ func load_values(): # reload card values and changes colors
 		%DefenseLabel.text = ""
 
 func reset_values():
-	var resource_path : String = "res://data/cards/" + card_name + ".tres"
-	var data : Resource = load(resource_path) # load card resource
-	set_name(card_name) # sets name in the debug editor (instead of Node2D@1)
+	set_name(data.card_name) # sets name in the debug editor (instead of Node2D@1)
 	# Atk/Def (when creature)
 	if data.card_type == "Creature":
 		atk = data.atk

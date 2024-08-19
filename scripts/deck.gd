@@ -9,9 +9,9 @@ var offset : Vector2 # makes cards have slight offset (pseudo 3D)
 func _ready():
 	load_deck()
 
-func add_card(card_name):
+func add_card(card_resource):
 	var card = CARD.instantiate()
-	card.card_name = card_name
+	card.data = card_resource
 	$Cards.add_child(card, true)
 	card.scale = Vector2(0.25, 0.25)
 	card.position = offset
@@ -21,4 +21,4 @@ func add_card(card_name):
 func load_deck():
 	var cards = deck.deck
 	for card in cards: # add cards to deck in random order
-		add_card(cards.pick_random().card_name)
+		add_card(cards.pick_random())
