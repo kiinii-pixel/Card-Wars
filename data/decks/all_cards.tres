@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="DeckResource" load_steps=10 format=3 uid="uid://qy2l0ggo4buy"]
+
+[ext_resource type="Resource" path="res://data/cards/Abdominal Snowman.tres" id="1_8xp30"]
+[ext_resource type="Resource" path="res://data/cards/Abraca Amadeus.tres" id="2_hm8dd"]
+[ext_resource type="Resource" path="res://data/cards/Adorabunny.tres" id="3_nc3gf"]
+[ext_resource type="Resource" path="res://data/cards/Aeromancer.tres" id="4_103k6"]
+[ext_resource type="Resource" path="res://data/cards/Albino Eyebat.tres" id="5_n0snt"]
+[ext_resource type="Resource" path="res://data/cards/Amaizing Avalanche.tres" id="6_mchfr"]
+[ext_resource type="Resource" path="res://data/cards/Ancient Scholar.tres" id="7_5xoi2"]
+[ext_resource type="Resource" path="res://data/cards/Angel Heart.tres" id="8_tgmaj"]
+[ext_resource type="Script" path="res://data/deck_resource_script.gd" id="24_wjiym"]
+
+[resource]
+script = ExtResource("24_wjiym")
+character = 0
+deck = Array[Resource("res://data/example_card_script.gd")]([ExtResource("1_8xp30"), ExtResource("2_hm8dd"), ExtResource("3_nc3gf"), ExtResource("4_103k6"), ExtResource("5_n0snt"), ExtResource("6_mchfr"), ExtResource("7_5xoi2"), ExtResource("8_tgmaj"), null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null])
+landscape1 = 0
+landscape2 = 0
+landscape3 = 0
+landscape4 = 0

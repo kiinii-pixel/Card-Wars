@@ -19,7 +19,7 @@ func _ready():
 	#add_cards(5)
 
 func draw():
-	var deck = get_parent().get_node("Deck/Cards")
+	var deck = get_parent().get_node("Deck/Cards") #gets Main/Deck/Cards from main scene
 	var top_card = deck.get_child_count() - 1
 	if top_card >= 0:
 		var card = deck.get_child(top_card)

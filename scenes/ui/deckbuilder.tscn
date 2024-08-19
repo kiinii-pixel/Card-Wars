@@ -1,0 +1,40 @@
+[gd_scene load_steps=5 format=3 uid="uid://cpt2c1rjk4b6b"]
+
+[ext_resource type="Script" path="res://scripts/ui/deckbuilder.gd" id="1_4e2jx"]
+[ext_resource type="Texture2D" uid="uid://b3xeo685h6h7v" path="res://assets/images/cards/art/Rainbow/Creature/The Pig.png" id="2_tniwu"]
+[ext_resource type="Texture2D" uid="uid://cu7cojv568i17" path="res://assets/images/cards/art/Rainbow/Creature/Brain Gooey.png" id="3_3wqub"]
+[ext_resource type="Texture2D" uid="uid://btjjqut5b3ik2" path="res://assets/images/cards/art/Rainbow/Creature/SnowMan.png" id="4_64rfj"]
+
+[node name="deckbuilder" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4e2jx")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 0
+offset_left = 196.0
+offset_top = 110.0
+offset_right = 1692.0
+offset_bottom = 961.0
+
+[node name="GridContainer" type="GridContainer" parent="ScrollContainer"]
+custom_minimum_size = Vector2(1496, 1000)
+layout_mode = 2
+columns = 3
+
+[node name="TextureRect" type="TextureRect" parent="ScrollContainer/GridContainer"]
+clip_contents = true
+layout_mode = 2
+texture = ExtResource("2_tniwu")
+
+[node name="TextureRect2" type="TextureRect" parent="ScrollContainer/GridContainer"]
+layout_mode = 2
+texture = ExtResource("3_3wqub")
+
+[node name="TextureRect3" type="TextureRect" parent="ScrollContainer/GridContainer"]
+layout_mode = 2
+texture = ExtResource("4_64rfj")
