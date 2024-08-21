@@ -131,11 +131,17 @@ size = Vector2(376, 928)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_os2xy"]
 size = Vector2(638.5, 928)
 
-[node name="Card" type="Node2D"]
+[node name="Card" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
 script = ExtResource("1_xodya")
+metadata/_edit_use_anchors_ = true
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="."]
 visible = false
+layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -288,20 +294,21 @@ libraries = {
 "": SubResource("AnimationLibrary_swdfb")
 }
 
-[node name="drag_component" parent="." instance=ExtResource("6_457fh")]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="drag_component"]
-shape = SubResource("RectangleShape2D_4b713")
-
 [node name="CardBack" type="Sprite2D" parent="."]
 unique_name_in_owner = true
 scale = Vector2(0.896, 0.896)
 texture = ExtResource("6_uokre")
 
+[node name="drag_component" parent="." instance=ExtResource("6_457fh")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="drag_component"]
+shape = SubResource("RectangleShape2D_4b713")
+
 [node name="card_sound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("8_iocnt")
 
 [node name="floop_component" parent="." instance=ExtResource("9_1g6dh")]
+visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="floop_component"]
 shape = SubResource("RectangleShape2D_os2xy")

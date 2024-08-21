@@ -1,4 +1,4 @@
-class_name Card extends Node2D
+class_name Card extends Control
 
 @onready var card_sound = $card_sound
 #@export var card_name : String # change to card you want
