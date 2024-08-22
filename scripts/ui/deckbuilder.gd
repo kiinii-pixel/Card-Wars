@@ -11,7 +11,7 @@ func add_card():
 	var list = preloader.get_resource_list()
 	for instance in list:
 		var card = CARD.instantiate()
-		card.custom_minimum_size = Vector2(693, 980)
+		#card.custom_minimum_size = Vector2(693, 980)
 		card.data = preloader.get_resource(instance)
 		$ScrollContainer/GridContainer.add_child(card)
 		#card.scale = Vector2(0.25, 0.25)
