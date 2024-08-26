@@ -24,6 +24,7 @@ buses/default_bus_layout="res://assets/sounds/default_bus_layout.tres"
 [autoload]
 
 Global="*res://scripts/autoloads/global.gd"
+BackgroundMusic="*res://scenes/background_music.tscn"
 
 [display]
 

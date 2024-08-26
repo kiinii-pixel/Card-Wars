@@ -29,3 +29,7 @@ func add_card():
 #func load_deck():
 #	for card in cards: # add cards to deck in random order
 #		add_card(cards.pick_random())
+
+
+func _on_back_pressed():
+	get_tree().change_scene_to_file("res://scenes/ui/menu.tscn")

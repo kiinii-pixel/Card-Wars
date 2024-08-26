@@ -26,6 +26,7 @@ func _on_reset_pressed():
 
 func _on_back_pressed():
 	get_tree().change_scene_to_file("res://scenes/ui/menu.tscn")
+	BackgroundMusic.playing = true
 
 func _on_fight_pressed():
 	var landscapes = %Landscapes # Node that holds 4 Landscapes

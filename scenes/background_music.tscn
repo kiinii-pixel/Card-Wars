@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dr1v5q5pj2i3j"]
+
+[ext_resource type="AudioStream" uid="uid://ch3h6ajc0w0et" path="res://assets/sounds/music/Adventure Time Card Wars - Menu Theme.mp3" id="1_i7627"]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_i7627")
+autoplay = true
+bus = &"Music"

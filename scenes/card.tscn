@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://bco1m6ixdmiil"]
+[gd_scene load_steps=17 format=3 uid="uid://bco1m6ixdmiil"]
 
 [ext_resource type="Script" path="res://scripts/card.gd" id="1_xodya"]
 [ext_resource type="Texture2D" uid="uid://ct5331atokkqs" path="res://assets/images/frames/Rainbow_Creature.png" id="3_mw3bc"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://cn0ywq5f0a58r" path="res://assets/images/cards/card_back/back.png" id="6_uokre"]
 [ext_resource type="AudioStream" uid="uid://cy7urpyd5dqi5" path="res://assets/sounds/CardMove.wav" id="8_iocnt"]
 [ext_resource type="PackedScene" uid="uid://de57x6w0o023y" path="res://scenes/floop_component.tscn" id="9_1g6dh"]
+[ext_resource type="Script" path="res://scripts/state_mashine.gd" id="10_yq5i8"]
 
 [sub_resource type="Theme" id="Theme_rcflo"]
 default_font = ExtResource("5_bysvj")
@@ -141,6 +142,7 @@ script = ExtResource("1_xodya")
 metadata/_edit_use_anchors_ = true
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+visible = false
 layout_mode = 1
 offset_left = -346.5
 offset_top = -490.0
@@ -157,7 +159,7 @@ disable_3d = true
 transparent_bg = true
 handle_input_locally = false
 size = Vector2i(693, 980)
-render_target_update_mode = 4
+render_target_update_mode = 0
 
 [node name="PanelContainer" type="PanelContainer" parent="SubViewportContainer/SubViewport"]
 
@@ -289,7 +291,6 @@ libraries = {
 
 [node name="CardBack" type="Sprite2D" parent="."]
 unique_name_in_owner = true
-visible = false
 scale = Vector2(0.896, 0.896)
 texture = ExtResource("6_uokre")
 
@@ -307,6 +308,9 @@ stream = ExtResource("8_iocnt")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="floop_component"]
 visible = false
 shape = SubResource("RectangleShape2D_os2xy")
+
+[node name="state_mashine" type="Node" parent="."]
+script = ExtResource("10_yq5i8")
 
 [connection signal="body_entered" from="drag_component" to="." method="_on_drag_component_body_entered"]
 [connection signal="body_exited" from="drag_component" to="." method="_on_drag_component_body_exited"]

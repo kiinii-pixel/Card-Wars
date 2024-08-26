@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://do7v1ykj6rtdq"
+path="res://.godot/imported/Vs Finn - Adventure Time Card Wars Soundtrack.mp3-cd29fd7e1d3a3c15f6759b3979d90236.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/music/Vs Finn - Adventure Time Card Wars Soundtrack.mp3"
+dest_files=["res://.godot/imported/Vs Finn - Adventure Time Card Wars Soundtrack.mp3-cd29fd7e1d3a3c15f6759b3979d90236.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

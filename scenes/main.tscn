@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://owug2m35obl1"]
+[gd_scene load_steps=25 format=3 uid="uid://owug2m35obl1"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_mh3fo"]
 [ext_resource type="PackedScene" uid="uid://b5oih1txnoxfo" path="res://scenes/landscape.tscn" id="1_r6f6m"]
@@ -15,6 +15,7 @@
 [ext_resource type="FontFile" uid="uid://ca0g1l1k6v1sf" path="res://assets/fonts/Pendlefont Heavy.TTF" id="12_kugc0"]
 [ext_resource type="Texture2D" uid="uid://dke7w7scdxpnl" path="res://assets/images/ui/battle_button.png" id="12_obfg2"]
 [ext_resource type="PackedScene" uid="uid://ndctswb5qjjp" path="res://scenes/discard.tscn" id="15_b00fb"]
+[ext_resource type="AudioStream" uid="uid://do7v1ykj6rtdq" path="res://assets/sounds/music/Vs Finn - Adventure Time Card Wars Soundtrack.mp3" id="16_n7sm1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sr0rc"]
 size = Vector2(262, 262)
@@ -168,6 +169,7 @@ text = "Fight!"
 
 [node name="card_sound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("12_eiseh")
+bus = &"Sound Effects"
 
 [node name="DiscardPile" parent="." instance=ExtResource("15_b00fb")]
 position = Vector2(1710, 673)
@@ -229,6 +231,11 @@ position = Vector2(393, -40)
 scale = Vector2(0.5, 0.5)
 art_variant = 4
 landscape_type = 1
+
+[node name="background_music" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("16_n7sm1")
+autoplay = true
+bus = &"Music"
 
 [connection signal="pressed" from="Buttons/Draw Card" to="." method="_on_draw_card_pressed"]
 [connection signal="pressed" from="Buttons/Reset" to="." method="_on_reset_pressed"]
