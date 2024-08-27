@@ -6,19 +6,17 @@ class_name Card extends Control
 # CARD VARIABLES
 var body_ref : Landscape # reference to object that was hovered over (e.g. landscape)
 var is_inside = false # true if card is inside a landscape
-var drag_component : Object # drag component node
-var floop_component : Object
+@onready var drag_component : Object = $drag_component # drag component node
+@onready var floop_component : Object = $floop_component
 
 var atk : int # dynamic values
 var def : int
 var cost : int
 
 func _ready():
+	drag_component.init(self)
 	load_card() # load card image and text
 	z_index = 4 # z_index is initialized as 4. Elements on top are set to 5.
-	# why not 0 and 1? because it didnt work..
-	drag_component = $drag_component
-	floop_component = $floop_component
 
 func play_card():
 	drag_component.allow_drag = false # card can't be dragged anymore
