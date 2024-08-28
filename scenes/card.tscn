@@ -1,6 +1,6 @@
-[gd_scene load_steps=17 format=3 uid="uid://bco1m6ixdmiil"]
+[gd_scene load_steps=20 format=3 uid="uid://bco1m6ixdmiil"]
 
-[ext_resource type="Script" path="res://scripts/card.gd" id="1_xodya"]
+[ext_resource type="Script" path="res://scripts/objects/card.gd" id="1_arv21"]
 [ext_resource type="Texture2D" uid="uid://ct5331atokkqs" path="res://assets/images/frames/Rainbow_Creature.png" id="3_mw3bc"]
 [ext_resource type="Texture2D" uid="uid://b3xeo685h6h7v" path="res://assets/images/cards/art/Rainbow/Creature/The Pig.png" id="4_0v5ny"]
 [ext_resource type="Theme" uid="uid://dmwrp6aey18st" path="res://assets/themes/purple_button.tres" id="5_bmwov"]
@@ -9,7 +9,9 @@
 [ext_resource type="Texture2D" uid="uid://cn0ywq5f0a58r" path="res://assets/images/cards/card_back/back.png" id="6_uokre"]
 [ext_resource type="AudioStream" uid="uid://cy7urpyd5dqi5" path="res://assets/sounds/CardMove.wav" id="8_iocnt"]
 [ext_resource type="PackedScene" uid="uid://de57x6w0o023y" path="res://scenes/floop_component.tscn" id="9_1g6dh"]
-[ext_resource type="Script" path="res://scripts/state_mashine.gd" id="10_yq5i8"]
+[ext_resource type="Script" path="res://scripts/states/state_mashine.gd" id="10_rn6ks"]
+[ext_resource type="Script" path="res://scripts/states/in_deck.gd" id="11_h3v8y"]
+[ext_resource type="Script" path="res://scripts/states/in_hand.gd" id="12_uil7g"]
 
 [sub_resource type="Theme" id="Theme_rcflo"]
 default_font = ExtResource("5_bysvj")
@@ -67,8 +69,61 @@ tracks/3/keys = {
 "values": [false]
 }
 
+[sub_resource type="Animation" id="Animation_hijsi"]
+resource_name = "flip_down"
+length = 0.3
+step = 0.005
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CardBack:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.155),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CardBack:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.155, 0.3),
+"transitions": PackedFloat32Array(1.5, 1),
+"update": 0,
+"values": [Vector2(0, 1), Vector2(0.887, 0.896)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("SubViewportContainer:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.145),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(0, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("SubViewportContainer:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.145),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
 [sub_resource type="Animation" id="Animation_ljt8f"]
-resource_name = "card_flip"
+resource_name = "flip_up"
 length = 0.3
 step = 0.005
 tracks/0/type = "value"
@@ -123,7 +178,8 @@ tracks/3/keys = {
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_swdfb"]
 _data = {
 "RESET": SubResource("Animation_0kbrg"),
-"card_flip": SubResource("Animation_ljt8f")
+"flip_down": SubResource("Animation_hijsi"),
+"flip_up": SubResource("Animation_ljt8f")
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4b713"]
@@ -138,7 +194,7 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 693.0
 offset_bottom = 980.0
-script = ExtResource("1_xodya")
+script = ExtResource("1_arv21")
 metadata/_edit_use_anchors_ = true
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="."]
@@ -310,7 +366,13 @@ visible = false
 shape = SubResource("RectangleShape2D_os2xy")
 
 [node name="state_mashine" type="Node" parent="."]
-script = ExtResource("10_yq5i8")
+script = ExtResource("10_rn6ks")
+
+[node name="InDeck" type="Node" parent="state_mashine"]
+script = ExtResource("11_h3v8y")
+
+[node name="InHand" type="Node" parent="state_mashine"]
+script = ExtResource("12_uil7g")
 
 [connection signal="body_entered" from="drag_component" to="." method="_on_drag_component_body_entered"]
 [connection signal="body_exited" from="drag_component" to="." method="_on_drag_component_body_exited"]

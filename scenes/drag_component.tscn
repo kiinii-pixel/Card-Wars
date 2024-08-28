@@ -1,9 +1,9 @@
 [gd_scene load_steps=2 format=3 uid="uid://qga2y5wh6ftv"]
 
-[ext_resource type="Script" path="res://scripts/drag_component.gd" id="1_r6xsd"]
+[ext_resource type="Script" path="res://scripts/components/drag_component.gd" id="1_dxsrg"]
 
 [node name="drag_component" type="Area2D"]
-script = ExtResource("1_r6xsd")
+script = ExtResource("1_dxsrg")
 
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

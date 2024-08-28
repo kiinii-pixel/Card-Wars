@@ -14,7 +14,6 @@ var def : int
 var cost : int
 
 func _ready():
-	drag_component.init(self)
 	load_card() # load card image and text
 	z_index = 4 # z_index is initialized as 4. Elements on top are set to 5.
 
@@ -136,3 +135,6 @@ func _on_drag_component_body_exited(landscape: Landscape):
 		#landscape.get_child(3).queue_free()
 		if landscape.get_node_or_null("card_preview"):
 			landscape.get_node("card_preview").queue_free()
+
+func flip():
+	get_node("%AnimationPlayer").play("flip_up")

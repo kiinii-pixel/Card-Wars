@@ -1,9 +1,9 @@
 [gd_scene load_steps=2 format=3 uid="uid://de57x6w0o023y"]
 
-[ext_resource type="Script" path="res://scripts/floop_component.gd" id="1_k8jfm"]
+[ext_resource type="Script" path="res://scripts/components/floop_component.gd" id="1_50tbo"]
 
 [node name="floop_component" type="Area2D"]
-script = ExtResource("1_k8jfm")
+script = ExtResource("1_50tbo")
 
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

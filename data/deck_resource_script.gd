@@ -6,6 +6,7 @@ class_name DeckResource extends Resource
 #var character : String // if i need the actual name instead of ID
 
 @export var deck : Array[CardResource]
+#@export var cards : Array[CardResource] should call this cards for clarity
 
 @export_group("Landscapes")
 enum landscapes {BLUE_PLAINS, CORN, NICE_LANDS}
