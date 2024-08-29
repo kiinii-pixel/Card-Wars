@@ -365,8 +365,9 @@ stream = ExtResource("8_iocnt")
 visible = false
 shape = SubResource("RectangleShape2D_os2xy")
 
-[node name="state_mashine" type="Node" parent="."]
+[node name="state_mashine" type="Node" parent="." node_paths=PackedStringArray("initial_state")]
 script = ExtResource("10_rn6ks")
+initial_state = NodePath("InDeck")
 
 [node name="InDeck" type="Node" parent="state_mashine"]
 script = ExtResource("11_h3v8y")

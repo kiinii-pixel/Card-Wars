@@ -8,3 +8,6 @@ var allow_drag : bool
 func enter():
 	face_up = false
 	allow_drag = false
+
+func update(_delta : float):
+	pass
