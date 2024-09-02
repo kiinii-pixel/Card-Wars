@@ -10,4 +10,5 @@ func enter():
 	allow_drag = false
 
 func update(_delta : float):
-	pass
+	if get_parent() == Hand:
+		Transitioned.emit(self, "in_hand")

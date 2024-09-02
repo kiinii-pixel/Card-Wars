@@ -1,4 +1,4 @@
-extends Node
+class_name Deck extends Node
 # A deck is a Resource consisting of a Character
 # and an Array containing Card Resources
 
