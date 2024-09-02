@@ -1,7 +1,7 @@
 extends Node2D
 
 signal card_played
-const CARD = preload("res://scenes/card.tscn")
+const CARD = preload("res://scenes/objects/card.tscn")
 
 @export var spread_curve: Curve
 @export var height_curve: Curve

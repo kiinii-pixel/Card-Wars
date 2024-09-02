@@ -2,7 +2,7 @@ extends Node
 # A deck is a Resource consisting of a Character
 # and an Array containing Card Resources
 
-const CARD : PackedScene = preload("res://scenes/card.tscn")
+const CARD : PackedScene = preload("res://scenes/objects/card.tscn")
 @export var deck : Resource = preload("res://data/decks/finn.tres")
 var offset : Vector2 # makes cards have slight offset (pseudo 3D)
 
