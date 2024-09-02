@@ -16,11 +16,11 @@ For now, the Goal is a PC, or Browser Friendly Game.
   - Decks
   - Fighting
   - Discard Pile
+  - Main Menu
 
 ### Next:
   - Card Effects
   - Spell Zone
-  - Main Menu
 
 ### Nerdy Details:
   - ~~Data can be read from a JSON file containing the stats, description, etc. of every card.~~
