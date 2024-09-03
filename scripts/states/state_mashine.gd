@@ -8,8 +8,9 @@ var states : Dictionary = {}
 func _ready():
 	for child in get_children():
 		if child is State:
-			states[child.name.to_lower()] = child
+			states[child.name] = child
 			child.Transitioned.connect(on_child_transitioned)
+			child.card = get_parent()
 
 func _process(delta):
 	if current_state:
@@ -23,7 +24,7 @@ func on_child_transitioned(state, new_state_name):
 	if state != current_state:
 		return
 	
-	var new_state = states.get(new_state_name.to_lower())
+	var new_state = states.get(new_state_name)
 	if !new_state:
 		return
 	

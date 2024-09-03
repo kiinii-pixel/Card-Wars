@@ -138,4 +138,7 @@ func _on_drag_component_body_exited(landscape: Landscape):
 			landscape.get_node("card_preview").queue_free()
 
 func flip():
-	get_node("%AnimationPlayer").play("flip_up")
+	if state_mashine.current_state == state_mashine.states["in_deck"]:
+		get_node("%AnimationPlayer").play("flip_up")
+	elif state_mashine.current_state == state_mashine.states["in_deck"]:
+		get_node("%AnimationPlayer").play("flip_down")
