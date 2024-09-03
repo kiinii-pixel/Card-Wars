@@ -1,7 +1,7 @@
 extends Control
 
 @onready var preloader = $ResourcePreloader
-const CARD : PackedScene = preload("res://scenes/card.tscn")
+const CARD : PackedScene = preload("res://scenes/objects/card.tscn")
 
 func _ready():
 	#load_deck()

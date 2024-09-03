@@ -367,13 +367,13 @@ shape = SubResource("RectangleShape2D_os2xy")
 
 [node name="state_mashine" type="Node" parent="." node_paths=PackedStringArray("initial_state")]
 script = ExtResource("10_rn6ks")
-initial_state = NodePath("InDeck")
+initial_state = NodePath("in_deck")
 
-[node name="InDeck" type="Node" parent="state_mashine" node_paths=PackedStringArray("card")]
+[node name="in_deck" type="Node" parent="state_mashine" node_paths=PackedStringArray("card")]
 script = ExtResource("11_h3v8y")
 card = NodePath("../..")
 
-[node name="InHand" type="Node" parent="state_mashine" node_paths=PackedStringArray("card")]
+[node name="in_hand" type="Node" parent="state_mashine" node_paths=PackedStringArray("card")]
 script = ExtResource("12_uil7g")
 card = NodePath("../..")
 

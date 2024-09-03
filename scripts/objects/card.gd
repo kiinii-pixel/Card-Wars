@@ -8,6 +8,7 @@ var body_ref : Landscape # reference to object that was hovered over (e.g. lands
 var is_inside = false # true if card is inside a landscape
 @onready var drag_component : Object = $drag_component # drag component node
 @onready var floop_component : Object = $floop_component
+@onready var state_mashine = $state_mashine
 
 var atk : int # dynamic values
 var def : int

@@ -13,6 +13,7 @@ func add_card(card_resource):
 	var card = CARD.instantiate()
 	card.data = card_resource
 	$Cards.add_child(card, true)
+	card.state_mashine.current_state = card.state_mashine.states["indeck"]
 	card.scale = Vector2(0.25, 0.25)
 	card.position = offset
 	offset += Vector2(0.2, 0.2)

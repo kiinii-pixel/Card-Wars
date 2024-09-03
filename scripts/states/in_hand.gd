@@ -8,6 +8,7 @@ var allow_drag : bool
 func enter():
 	face_up = true
 	allow_drag = true
+	#card.flip()
 
 func update(_delta : float):
 	if get_parent() == Deck:

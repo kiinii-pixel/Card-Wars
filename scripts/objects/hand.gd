@@ -6,12 +6,12 @@ const CARD = preload("res://scenes/objects/card.tscn")
 @export var spread_curve: Curve
 @export var height_curve: Curve
 @export var rotation_curve: Curve
+
 var hand = self
 var hand_width = 60
 const MAX_HAND_WIDTH = 300 #Maximum hand width
 var hand_height = 10
 const MAX_HAND_HEIGHT = 100 # Maximum hand height
-# MOVE is_dragging HERE?
 
 func _ready():
 	position.x = get_viewport().get_visible_rect().size.x / 2
