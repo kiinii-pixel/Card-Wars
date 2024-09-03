@@ -10,7 +10,7 @@ class_name DeckResource extends Resource
 
 @export_group("Landscapes")
 enum landscapes {BLUE_PLAINS, CORN, NICE_LANDS}
-@export var landscape1: landscapes
-@export var landscape2: landscapes
-@export var landscape3: landscapes
-@export var landscape4: landscapes
+@export var landscape1 : landscapes
+@export var landscape2 : landscapes
+@export var landscape3 : landscapes
+@export var landscape4 : landscapes

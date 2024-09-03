@@ -14,13 +14,12 @@ const MAX_HAND_WIDTH = 300 #Maximum hand width
 var hand_height = 10
 const MAX_HAND_HEIGHT = 100 # Maximum hand height
 
-func _ready():
+func _ready() -> void:
 	var viewport = get_viewport().get_visible_rect()
 	position.x = viewport.size.x / 2
 	position.y = viewport.size.y - viewport.size.y * 0.1
 
-func draw():
-	#var deck = get_parent().get_node("Deck/Cards") # Get Cards currently in deck
+func draw() -> void:
 	var top_card = deck.get_top_card()
 	if top_card >= 0: # If Deck isn't empty
 		var card = deck.get_card(top_card)
@@ -29,7 +28,7 @@ func draw():
 
 func draw_multiple(amount) -> void:
 	for _x in range(amount):
-		await draw()
+		draw()
 
 func _on_child_order_changed():
 	hand = self
@@ -54,7 +53,7 @@ func _on_child_order_changed():
 		move(card, destination.origin, 0.3)
 		#card.global_position = destination.origin
 
-func move(object, destination : Vector2, time : float):
+func move(object : Object, destination : Vector2, time : float):
 	if is_inside_tree():
 		var tween = create_tween()
 		tween.tween_property(object, "global_position", destination, time).set_ease(Tween.EASE_IN_OUT)

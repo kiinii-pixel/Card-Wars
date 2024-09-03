@@ -1,10 +1,10 @@
-class_name Deck extends Node
 # A deck is a Resource consisting of a Character
 # and an Array containing Card Resources
+class_name Deck extends Node
 
 const CARD : PackedScene = preload("res://scenes/objects/card.tscn")
-@export var deck : Resource = preload("res://data/decks/finn.tres")
-var offset : Vector2 # makes cards have slight offset (pseudo 3D)
+@export var deck : Resource # Holds a Deck Resource
+var offset : Vector2 # Makes Cards have slight offset (Pseudo 3D)
 
 func _ready():
 	load_deck()
