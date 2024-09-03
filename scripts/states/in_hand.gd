@@ -2,12 +2,10 @@ class_name InHand extends State
 
 @onready var card : Card
 
-var allow_drag : bool
-
 func enter():
-	allow_drag = true
 	card.flip()
 	card.drag_component.allow_drag = true
+	card.z_index = 5
 
 func update(_delta : float):
 	if card.get_parent() is Deck:

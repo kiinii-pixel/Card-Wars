@@ -23,3 +23,9 @@ func load_deck():
 	var cards = deck.deck
 	for card in cards: # add cards to deck in random order
 		add_card(cards.pick_random())
+
+func get_top_card():
+	return $Cards.get_child_count() - 1
+
+func get_card(card : int):
+	return $Cards.get_child(card)

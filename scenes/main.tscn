@@ -55,8 +55,9 @@ script = ExtResource("1_mh3fo")
 [node name="Interface" parent="." instance=ExtResource("3_82cvq")]
 layer = -1
 
-[node name="Hand" parent="." instance=ExtResource("4_v11k8")]
+[node name="Hand" parent="." node_paths=PackedStringArray("deck") instance=ExtResource("4_v11k8")]
 position = Vector2(995, 960)
+deck = NodePath("../Deck")
 
 [node name="Godot Icon" type="Node2D" parent="."]
 position = Vector2(251, 422)

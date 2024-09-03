@@ -2,6 +2,7 @@ class_name Hand extends Node2D
 
 signal card_played
 const CARD = preload("res://scenes/objects/card.tscn")
+@export var deck : Deck
 
 @export var spread_curve: Curve
 @export var height_curve: Curve
@@ -19,11 +20,10 @@ func _ready():
 	#add_cards(5)
 
 func draw():
-	var deck = get_parent().get_node("Deck/Cards") #gets Main/Deck/Cards from main scene
-	var top_card = deck.get_child_count() - 1
-	if top_card >= 0:
-		var card = deck.get_child(top_card)
-		card.z_index = 5
+	#var deck = get_parent().get_node("Deck/Cards") # Get Cards currently in deck
+	var top_card = deck.get_top_card()
+	if top_card >= 0: # If Deck isn't empty
+		var card = deck.get_card(top_card)
 		card.reparent(hand, true)
 		hand.emit_signal("child_order_changed")
 
