@@ -15,9 +15,9 @@ var hand_height = 10
 const MAX_HAND_HEIGHT = 100 # Maximum hand height
 
 func _ready():
-	position.x = get_viewport().get_visible_rect().size.x / 2
-	position.y = get_viewport().get_visible_rect().size.y - get_viewport().get_visible_rect().size.y * 0.1
-	#add_cards(5)
+	var viewport = get_viewport().get_visible_rect()
+	position.x = viewport.size.x / 2
+	position.y = viewport.size.y - viewport.size.y * 0.1
 
 func draw():
 	#var deck = get_parent().get_node("Deck/Cards") # Get Cards currently in deck
