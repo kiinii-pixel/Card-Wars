@@ -16,8 +16,9 @@ const MAX_HAND_HEIGHT = 100 # Maximum hand height
 
 func _ready() -> void:
 	var viewport = get_viewport().get_visible_rect()
+	
 	position.x = viewport.size.x / 2
-	position.y = viewport.size.y - viewport.size.y * 0.1
+	position.y = (viewport.size.y / 10) * 9
 
 func draw() -> void:
 	var top_card = deck.get_top_card()
@@ -34,7 +35,7 @@ func _on_child_order_changed():
 	hand = self
 	
 	for card in hand.get_children():
-		var hand_ratio = 0.25
+		var hand_ratio : float = 0.25
 
 		if get_child_count() > 1:
 			hand_ratio = float(card.get_index()) / float(hand.get_child_count() - 1)
@@ -55,8 +56,8 @@ func _on_child_order_changed():
 
 func move(object : Object, destination : Vector2, time : float):
 	if is_inside_tree():
-		var tween = create_tween()
-		tween.tween_property(object, "global_position", destination, time).set_ease(Tween.EASE_IN_OUT)
+		var tween = create_tween().set_ease(Tween.EASE_IN_OUT).set_trans(Tween.TRANS_BACK)
+		tween.tween_property(object, "global_position", destination, time)
 		await tween.finished
 
 func _on_card_played():

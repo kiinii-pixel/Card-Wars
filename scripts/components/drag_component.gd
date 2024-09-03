@@ -39,7 +39,7 @@ func _on_mouse_entered(): # when you hover over the card
 					child.drag_component.scale_down(0.1)
 					child.drag_component.selected = false
 		selected = true # Select current card
-		scale_up(0.1) # Scale up current card
+		scale_up(0.2) # Scale up current card
 		get_parent().z_index = 5
 
 func _on_mouse_exited():
@@ -56,14 +56,14 @@ func follow_mouse():
 	get_parent().global_position = get_global_mouse_position()
 
 func scale_up(time):
-	var tween = create_tween().set_parallel(true)
-	tween.tween_property(get_parent(), "scale", SCALE_ZOOMED, time).set_ease(Tween.EASE_IN)
+	var tween = create_tween().set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_CIRC)
+	tween.tween_property(get_parent(), "scale", SCALE_ZOOMED, time)
 
 func scale_down(time):
-	var tween = create_tween().set_parallel(true)
-	tween.tween_property(get_parent(), "scale", SCALE_NORMAL, time).set_ease(Tween.EASE_OUT)
+	var tween = create_tween().set_ease(Tween.EASE_IN).set_trans(Tween.TRANS_CIRC)
+	tween.tween_property(get_parent(), "scale", SCALE_NORMAL, time)
 
 func move(destination : Vector2, time : float):
-	var tween = create_tween().set_parallel()
-	tween.tween_property(get_parent(), "global_position", destination, time).set_ease(Tween.EASE_OUT)
+	var tween = create_tween().set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_BACK)
+	tween.tween_property(get_parent(), "global_position", destination, time)
 	await tween.finished
