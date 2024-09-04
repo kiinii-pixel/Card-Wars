@@ -1,6 +1,6 @@
 # A deck is a Resource consisting of a Character
 # and an Array containing Card Resources
-class_name Deck extends Node
+class_name Deck extends Pile
 
 const CARD : PackedScene = preload("res://scenes/objects/card.tscn")
 @export var deck : Resource # Holds a Deck Resource
@@ -23,9 +23,3 @@ func load_deck():
 	var cards = deck.deck
 	for card in cards: # add cards to deck in random order
 		add_card(cards.pick_random())
-
-func get_top_card():
-	return $Cards.get_child_count() - 1
-
-func get_card(card : int):
-	return $Cards.get_child(card)

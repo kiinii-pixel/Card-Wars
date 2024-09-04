@@ -10,3 +10,5 @@ func enter():
 func update(_delta : float):
 	if card.get_parent() is Deck:
 		Transitioned.emit(self, "in_deck")
+	elif card.get_parent() is Landscape:
+		Transitioned.emit(self, "in_play")

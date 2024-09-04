@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://ndctswb5qjjp"]
+
+[ext_resource type="Texture2D" uid="uid://bmskk7288m5wn" path="res://assets/images/cards/card_back/alt_back.png" id="1_2l4bs"]
+[ext_resource type="PackedScene" uid="uid://bd30qu4bft5gw" path="res://scenes/objects/pile.tscn" id="1_e72ug"]
+
+[node name="Discard" instance=ExtResource("1_e72ug")]
+
+[node name="Deck Space" parent="." index="0"]
+texture = ExtResource("1_2l4bs")

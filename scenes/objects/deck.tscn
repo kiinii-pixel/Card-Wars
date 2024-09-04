@@ -1,15 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://df3a2sawj0htj"]
+[gd_scene load_steps=5 format=3 uid="uid://df3a2sawj0htj"]
 
+[ext_resource type="PackedScene" uid="uid://bd30qu4bft5gw" path="res://scenes/objects/pile.tscn" id="1_4ew6x"]
 [ext_resource type="Script" path="res://scripts/objects/deck.gd" id="1_hsfed"]
 [ext_resource type="Texture2D" uid="uid://cn0ywq5f0a58r" path="res://assets/images/cards/card_back/back.png" id="2_2c5j1"]
 [ext_resource type="Resource" uid="uid://dpbktsr7jtlv8" path="res://data/decks/finn.tres" id="2_ycx0o"]
 
-[node name="Deck" type="Node2D"]
+[node name="Deck" instance=ExtResource("1_4ew6x")]
 script = ExtResource("1_hsfed")
 deck = ExtResource("2_ycx0o")
 
-[node name="Deck Space" type="Sprite2D" parent="."]
-scale = Vector2(0.224, 0.224)
+[node name="Deck Space" parent="." index="0"]
 texture = ExtResource("2_2c5j1")
-
-[node name="Cards" type="Node2D" parent="."]

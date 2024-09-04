@@ -14,7 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://b81mxoiegkk36" path="res://assets/images/ui/battle_button_pressed.png" id="12_hu3hp"]
 [ext_resource type="FontFile" uid="uid://ca0g1l1k6v1sf" path="res://assets/fonts/Pendlefont Heavy.TTF" id="12_kugc0"]
 [ext_resource type="Texture2D" uid="uid://dke7w7scdxpnl" path="res://assets/images/ui/battle_button.png" id="12_obfg2"]
-[ext_resource type="PackedScene" uid="uid://ndctswb5qjjp" path="res://scenes/discard.tscn" id="15_b00fb"]
+[ext_resource type="PackedScene" uid="uid://ndctswb5qjjp" path="res://scenes/objects/discard.tscn" id="15_b00fb"]
 [ext_resource type="AudioStream" uid="uid://do7v1ykj6rtdq" path="res://assets/sounds/music/Vs Finn - Adventure Time Card Wars Soundtrack.mp3" id="16_n7sm1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sr0rc"]
@@ -86,9 +86,6 @@ expand_mode = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Godot Icon/drag_component"]
 shape = SubResource("RectangleShape2D_sr0rc")
-
-[node name="Deck" parent="." instance=ExtResource("9_6xswo")]
-position = Vector2(1710, 937)
 
 [node name="Buttons" type="Control" parent="."]
 layout_mode = 3
@@ -168,7 +165,10 @@ theme_override_styles/pressed = SubResource("StyleBoxTexture_shqf4")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_usg6i")
 text = "Fight!"
 
-[node name="DiscardPile" parent="." instance=ExtResource("15_b00fb")]
+[node name="Deck" parent="." instance=ExtResource("9_6xswo")]
+position = Vector2(1710, 937)
+
+[node name="Discard" parent="." instance=ExtResource("15_b00fb")]
 position = Vector2(1710, 673)
 
 [node name="Zones" type="Node2D" parent="."]
