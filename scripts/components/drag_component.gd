@@ -23,10 +23,11 @@ func _process(_delta):
 
 		elif Input.is_action_just_released("action_key"):
 			Global.is_dragging = false
-			scale_down(0.1)
-			if get_parent() is Card:
-				if get_parent().is_inside and selected and allow_drag: # If the card is released/placed inside a Landscape
-					get_parent().play_card()
+			#scale_down(0.1)
+			if get_owner() is Card:
+				var card = get_owner()
+				if card.is_inside and selected and allow_drag: # If the card is released/placed inside a Landscape
+					card.reparent(card.body_ref)
 				elif selected and allow_drag: # when released anywherere else:
 					move(initial_pos, 0.2) # go back
 
@@ -48,7 +49,7 @@ func _on_mouse_exited():
 
 	# If the card hasn't been scaled down yet. allow_drag has to be ture,
 	# so the card doesnt scale down during it being placed onto a landscape.
-	if get_parent().scale != SCALE_NORMAL and allow_drag:
+	if get_owner().scale != SCALE_NORMAL and allow_drag:
 		scale_down(0.1)
 	get_parent().z_index = 4
 

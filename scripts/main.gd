@@ -61,8 +61,8 @@ func deal_damage(creature, opponent):
 func discard(creature):
 	creature.floop_component.rotate_card(Vector2(0, 0), 0, 0.2)
 	creature.drag_component.allow_drag = false
-	await creature.drag_component.move($DiscardPile.global_position, 0.2)
-	creature.reparent($DiscardPile/Cards)
+	await creature.drag_component.move($Discard.global_position, 0.2)
+	creature.reparent($Discard/Cards)
 	creature.position = Vector2(0, 0)
 	creature.scale = Vector2(0.25, 0.25)
 	creature.reset_values()

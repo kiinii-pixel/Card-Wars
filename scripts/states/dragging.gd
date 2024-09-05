@@ -1,11 +1,9 @@
 class_name dragging extends State
 
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
+func enter():
+	pass
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func update(_delta : float):
 	pass

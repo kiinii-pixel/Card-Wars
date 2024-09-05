@@ -167,7 +167,6 @@ text = "Fight!"
 
 [node name="Deck" parent="." instance=ExtResource("9_6xswo")]
 position = Vector2(1710, 937)
-deck_space = null
 
 [node name="Discard" parent="." instance=ExtResource("15_b00fb")]
 position = Vector2(1710, 673)

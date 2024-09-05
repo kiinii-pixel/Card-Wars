@@ -1,13 +1,18 @@
-class_name in_play extends State
+class_name InPlay extends State
+
 
 @export var card_sound : AudioStreamPlayer2D
 
 
 func enter():
-	card.drag_component.scale_down(0.2)
-	card.scale = Vector2(0.5, 0.5)
+	card.is_inside = false
 	card.drag_component.allow_drag = false
 	card_sound.play()
+	Global.is_dragging = false
+	card.scale = Vector2(0.5, 0.5)
+	await card.drag_component.move(card.body_ref.global_position, 0.2)
+	#card.reparent(card.body_ref)
+	card.position = Vector2(0, 0)
 
 
 func update(_delta : float):

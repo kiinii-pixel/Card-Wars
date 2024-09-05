@@ -1,8 +1,7 @@
 class_name Card extends Control
 
-@onready var card_sound = $card_sound
-@export var data : Resource
-# CARD VARIABLES
+@export var data : Resource # Contains a Card Resource with its values
+
 var body_ref : Landscape # Reference to the Landscape you're hovering over.
 var is_inside = false # true if card is inside a landscape
 @onready var drag_component : Object = $drag_component # drag component node
@@ -17,14 +16,6 @@ func _ready():
 	load_card() # load card image and text
 	z_index = 4 # z_index is initialized as 4. Elements on top are set to 5.
 
-func play_card():
-	Global.is_dragging = false # no card is being dragged anymore
-	is_inside = false
-	#drag_component.scale_down(0.2) # scale card back down
-	await drag_component.move(body_ref.global_position, 0.2) # move to landscape
-	reparent(body_ref) # reparent to the landscape it was played on
-	position = Vector2(0, 0)
-	#scale = Vector2(0.5, 0.5)
 
 func load_card(): # set the cards stats, name etc. to whatever is stored in its resource
 	set_name(data.card_name) # sets name in the debug editor (instead of Node2D@1)

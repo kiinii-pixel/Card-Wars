@@ -1,8 +1,10 @@
-class_name in_deck extends State
+class_name InDeck extends State
+
 
 func enter():
 	card.drag_component.allow_drag = false
 	card.flip()
+
 
 func update(_delta : float):
 	if card.get_parent() is Hand:
