@@ -3,7 +3,7 @@ extends Node2D
 var selected : bool = false # true after mouse hovered over object
 var mouse_offset : Vector2 = Vector2(0, 0) # save where the mouse clicked on the object
 var initial_pos : Vector2 # save the cards initial position
-var allow_drag : bool = false # This is set true when drawn and to false when the card is played
+var allow_drag : bool = true # This is set true when drawn and to false when the card is played
 const SCALE_NORMAL = Vector2(0.25, 0.25)
 const SCALE_ZOOMED = Vector2(0.3, 0.3)
  

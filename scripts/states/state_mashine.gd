@@ -10,7 +10,6 @@ func _ready():
 		if child is State:
 			states[child.name] = child
 			child.Transitioned.connect(on_child_transitioned)
-			child.card = get_parent()
 
 func _process(delta):
 	if current_state:

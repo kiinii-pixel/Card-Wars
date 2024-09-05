@@ -1,10 +1,5 @@
 class_name Pile extends Node2D
 
-@export var deck_space : Image
-
-func _ready():
-	$"Deck Space".texture = deck_space
-
 # Returns the Top Card.
 func get_top_card():
 	return $Cards.get_child_count() - 1

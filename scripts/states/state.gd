@@ -2,6 +2,8 @@ class_name State extends Node
 
 signal Transitioned
 
+@onready var card : Card = get_owner()
+
 func enter():
 	pass
 

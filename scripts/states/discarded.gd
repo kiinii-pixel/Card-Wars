@@ -1,7 +1,5 @@
 class_name Discarded extends State
 
-@onready var card : Card
-
 func enter():
 	pass
 

@@ -1,7 +1,5 @@
 class_name InHand extends State
 
-@onready var card : Card
-
 func enter():
 	card.flip()
 	card.drag_component.allow_drag = true
