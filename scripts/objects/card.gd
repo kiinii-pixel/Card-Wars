@@ -1,5 +1,6 @@
 class_name Card extends Control
 
+
 @export var data : Resource # Contains a Card Resource with its values
 
 var body_ref : Landscape # Reference to the Landscape you're hovering over.
@@ -47,6 +48,7 @@ func load_card(): # set the cards stats, name etc. to whatever is stored in its 
 				max_characters += 1
 				font_size -= 1.15
 
+
 func load_values(): # reload card values and changes colors
 	%CostLabel.text = String.num(cost)
 	if data.card_type == "Creature":
@@ -77,6 +79,7 @@ func load_values(): # reload card values and changes colors
 		%AttackLabel.text = ""
 		%DefenseLabel.text = ""
 
+
 func reset_values():
 	set_name(data.card_name) # sets name in the debug editor (instead of Node2D@1)
 	# Atk/Def (when creature)
@@ -91,6 +94,7 @@ func reset_values():
 
 	cost = data.cost
 	%CostLabel.text = String.num_int64(cost)
+
 
 func _on_drag_component_body_entered(landscape : Landscape):
 	# Problem: preview sometimes not spawned when 2 landscapes are entered at once
@@ -117,6 +121,7 @@ func _on_drag_component_body_entered(landscape : Landscape):
 			sprite.scale = Vector2(0.5, 0.5) # scale down
 			sprite.modulate.a = 0.5 # make transparent
 
+
 func _on_drag_component_body_exited(landscape: Landscape):
 	if body_ref == landscape:
 		is_inside = false
@@ -124,6 +129,7 @@ func _on_drag_component_body_exited(landscape: Landscape):
 		#landscape.get_child(3).queue_free()
 		if landscape.get_node_or_null("card_preview"):
 			landscape.get_node("card_preview").queue_free()
+
 
 func flip():
 	if state_mashine.current_state == state_mashine.states["in_deck"]:

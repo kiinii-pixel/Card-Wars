@@ -3,6 +3,7 @@
 class_name Deck extends Pile
 
 const Card : PackedScene = preload("res://scenes/objects/card.tscn")
+#@onready var Card : PackedScene = preload("res://scenes/objects/card.tscn")
 @export var deck : Resource # Holds a Deck Resource
 var offset : Vector2 # Makes Cards have slight offset (Pseudo 3D)
 

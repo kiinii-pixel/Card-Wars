@@ -1,15 +1,20 @@
 extends Node2D
+
+
 var deck : Array # Empty Array that a deck can be loaded into.
 @onready var card_sound = $card_sound # Will likely be moved somewehre else
+
 
 func _ready():
 	deck = load("res://data/decks/finn.tres").deck # Load Finn's Deck
 	$Hand.draw_multiple(5) # Draw 5 Cards to hand
 
+
 # When the Draw Card Button is pressed
 func _on_draw_card_pressed():
 	await get_node("Hand").draw() # Draw a Card
 	card_sound.play() # Play Card Sound
+
 
 # When Reset Button is pressed
 func _on_reset_pressed():
@@ -22,9 +27,11 @@ func _on_reset_pressed():
 	$Deck.offset = Vector2(0, 0) # Reset offset (Card 3D effect)
 	$Deck.load_deck()
 
+
 func _on_back_pressed():
 	get_tree().change_scene_to_file("res://scenes/ui/menu.tscn")
 	BackgroundMusic.playing = true
+
 
 func _on_fight_pressed():
 	var landscapes = %Landscapes # Node that holds 4 Landscapes
@@ -53,10 +60,12 @@ func _on_fight_pressed():
 			#if enemy_landscape.get_child_count() == 4:
 			#decrease own health
 		index += 1
-		
+
+
 func deal_damage(creature, opponent):
 	creature.def -= opponent.atk # decrease hp by opponents atk
 	creature.load_values() # refresh values
+
 
 func discard(creature):
 	creature.floop_component.rotate_card(Vector2(0, 0), 0, 0.2)
@@ -66,6 +75,7 @@ func discard(creature):
 	creature.position = Vector2(0, 0)
 	creature.scale = Vector2(0.25, 0.25)
 	creature.reset_values()
+
 
 # Creates Resources (.tres) for each card in the JSON
 # This was only used to create Resources, doesnt do anything in game.
