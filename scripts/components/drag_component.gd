@@ -14,7 +14,8 @@ func _ready():
 func _process(_delta):
 	if allow_drag and selected:
 		if Input.is_action_just_pressed("action_key"): # When the button press occurs
-			get_parent().state_mashine.current_state.Transitioned.emit(self, "dragging")
+			if get_owner() is Card:
+				get_owner().state_mashine.current_state.Transitioned.emit(self, "dragging")
 			Global.is_dragging = true
 			#mouse_offset = get_parent().position - get_global_mouse_position()
 			initial_pos = get_parent().global_position

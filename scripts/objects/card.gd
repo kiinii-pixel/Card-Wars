@@ -13,6 +13,7 @@ var atk : int # dynamic values
 var def : int
 var cost : int
 
+
 func _ready():
 	load_card() # load card image and text
 	z_index = 4 # z_index is initialized as 4. Elements on top are set to 5.
