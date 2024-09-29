@@ -14,26 +14,11 @@ func _ready():
 func _process(_delta):
 	if allow_drag and selected:
 		if Input.is_action_just_pressed("action_key"): # When the button press occurs
-			if get_owner() is Card:
-				get_owner().state_mashine.current_state.Transitioned.emit(self, "dragging")
-			Global.is_dragging = true
-			#mouse_offset = get_parent().position - get_global_mouse_position()
 			initial_pos = get_parent().global_position
 			await move(get_global_mouse_position(), 0.05) # Move to mouse position
 
 		if Input.is_action_pressed("action_key"): # While button is pressed
 			follow_mouse()
-
-		elif Input.is_action_just_released("action_key"):
-			Global.is_dragging = false
-			if get_owner() is Card:
-				var card = get_owner()
-				if card.is_inside and selected and allow_drag: # If the card is released/placed inside a Landscape
-					allow_drag = false
-					move(card.body_ref.global_position, 0.2)
-					card.reparent(card.body_ref)
-				elif selected and allow_drag: # when released anywherere else:
-					move(initial_pos, 0.3) # go back
 
 func _on_mouse_entered(): # when you hover over the card
 	if not Global.is_dragging and allow_drag: # If no other card is being dragged:

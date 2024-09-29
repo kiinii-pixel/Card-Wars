@@ -8,7 +8,9 @@ func enter():
 
 
 func update(_delta : float):
-	if card.get_parent() is Deck:
+	if card.drag_component.selected and Input.is_action_just_pressed("action_key"):
+		Transitioned.emit(self, "dragging")
+	elif card.get_parent() is Deck:
 		Transitioned.emit(self, "in_deck")
 	elif card.get_parent() is Landscape:
 		Transitioned.emit(self, "in_play")
