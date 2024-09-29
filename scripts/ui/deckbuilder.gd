@@ -13,11 +13,14 @@ func add_card():
 		var card = CARD.instantiate()
 		#card.custom_minimum_size = Vector2(693, 980)
 		card.data = preloader.get_resource(instance)
-		$ScrollContainer/GridContainer.add_child(card)
-		#card.scale = Vector2(0.25, 0.25)
-		card.get_node("drag_component").scale_down(0.1)
-		card.get_node("%AnimationPlayer").play("card_flip")
-		card.drag_component.allow_drag = true
+		card.load_image()
+		if card.get_node("%CardImage").texture != null:
+		#if card.load(card_image_path) != null:
+			$ScrollContainer/GridContainer.add_child(card)
+			#card.scale = Vector2(0.25, 0.25)
+			card.get_node("%AnimationPlayer").play("flip_up")
+			card.drag_component.allow_drag = true
+			card.get_node("drag_component").scale_down(0.1)
 
 #		var sprite = Sprite2D.new()
 #		var sub_viewport = card.%SubViewport # Used to Render the Card again

@@ -54,7 +54,7 @@ func _on_mouse_exited():
 	# If the card hasn't been scaled down yet. allow_drag has to be ture,
 	# so the card doesnt scale down during it being placed onto a landscape.
 	if get_owner().scale != SCALE_NORMAL and allow_drag:
-		scale_down(0.1)
+		scale_down(0.2)
 	get_parent().z_index = 4
 
 func follow_mouse():

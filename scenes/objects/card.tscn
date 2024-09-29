@@ -1,8 +1,7 @@
-[gd_scene load_steps=24 format=3 uid="uid://bco1m6ixdmiil"]
+[gd_scene load_steps=23 format=3 uid="uid://bco1m6ixdmiil"]
 
 [ext_resource type="Script" path="res://scripts/objects/card.gd" id="1_arv21"]
 [ext_resource type="Texture2D" uid="uid://ct5331atokkqs" path="res://assets/images/frames/Rainbow_Creature.png" id="3_mw3bc"]
-[ext_resource type="Texture2D" uid="uid://b3xeo685h6h7v" path="res://assets/images/cards/art/Rainbow/Creature/The Pig.png" id="4_0v5ny"]
 [ext_resource type="Theme" uid="uid://dmwrp6aey18st" path="res://assets/themes/purple_button.tres" id="5_bmwov"]
 [ext_resource type="FontFile" uid="uid://ca0g1l1k6v1sf" path="res://assets/fonts/Pendlefont Heavy.TTF" id="5_bysvj"]
 [ext_resource type="PackedScene" uid="uid://qga2y5wh6ftv" path="res://scenes/components/drag_component.tscn" id="6_457fh"]
@@ -190,7 +189,7 @@ _data = {
 size = Vector2(376, 928)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_os2xy"]
-size = Vector2(638.5, 928)
+size = Vector2(376, 928)
 
 [node name="Card" type="Control"]
 custom_minimum_size = Vector2(693, 980)
@@ -227,7 +226,6 @@ render_target_update_mode = 0
 unique_name_in_owner = true
 position = Vector2(26, 0)
 scale = Vector2(1.25391, 1.25391)
-texture = ExtResource("4_0v5ny")
 centered = false
 
 [node name="CardFrame" type="Sprite2D" parent="SubViewportContainer/SubViewport/PanelContainer"]
@@ -357,7 +355,6 @@ texture = ExtResource("6_uokre")
 [node name="drag_component" parent="." instance=ExtResource("6_457fh")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="drag_component"]
-visible = false
 shape = SubResource("RectangleShape2D_4b713")
 
 [node name="card_sound" type="AudioStreamPlayer2D" parent="."]
@@ -366,7 +363,6 @@ stream = ExtResource("8_iocnt")
 [node name="floop_component" parent="." instance=ExtResource("9_1g6dh")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="floop_component"]
-visible = false
 shape = SubResource("RectangleShape2D_os2xy")
 
 [node name="state_mashine" type="Node" parent="." node_paths=PackedStringArray("initial_state")]

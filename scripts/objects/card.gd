@@ -30,10 +30,7 @@ func load_card(): # set the cards stats, name etc. to whatever is stored in its 
 		def = data.def
 	cost = data.cost
 	load_values()
-	# Load Image
-	var card_image_path : String = "res://assets/images/cards/art/" + data.landscape + \
-	"/" + data.card_type + "/" + data.card_name + ".png"
-	%CardImage.texture = load(card_image_path)
+	load_image()
 	# Load Frame
 	var frame_path : String
 	if data.card_type == "Creature":
@@ -48,6 +45,16 @@ func load_card(): # set the cards stats, name etc. to whatever is stored in its 
 				%CardName.add_theme_font_size_override("font_size", font_size)
 				max_characters += 1
 				font_size -= 1.15
+
+
+func load_image():
+	# Load Image
+	var card_image_path : String = "res://assets/images/cards/art/" + data.landscape + \
+	"/" + data.card_type + "/" + data.card_name + ".png"
+	if load(card_image_path) != null:
+		%CardImage.texture = load(card_image_path)
+	else:
+		print("No Image Texture found")
 
 
 func load_values(): # reload card values and changes colors
