@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c5tipoa8gquvp"
-path="res://.godot/imported/Socks Of Fortitude.png-d65585c80005eaf6dc758f4565298318.ctex"
+path="res://.godot/imported/Socks of Fortitude.png-d8389a06acae477d99ffd67704e3e761.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/cards/art/Blue Plains/Spell/Socks Of Fortitude.png"
-dest_files=["res://.godot/imported/Socks Of Fortitude.png-d65585c80005eaf6dc758f4565298318.ctex"]
+source_file="res://assets/images/cards/art/Blue Plains/Spell/Socks of Fortitude.png"
+dest_files=["res://.godot/imported/Socks of Fortitude.png-d8389a06acae477d99ffd67704e3e761.ctex"]
 
 [params]
 

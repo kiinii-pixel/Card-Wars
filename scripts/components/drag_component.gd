@@ -26,16 +26,8 @@ func _process(_delta):
 # when you hover over the card
 func _on_mouse_entered():
 	if not Global.is_dragging and allow_drag: # If no other card is being dragged:
-		if get_parent() is Card:
-			for child in get_owner().get_parent().get_children(): #scale all cards in hand down (only one scaled at a time)
-				if child.z_index == 5:
-					child.z_index = 4
-					child.drag_component.scale_down(0.1)
-					child.drag_component.selected = false
 		selected = true # Select current card
 		scale_up(0.2) # Scale up current card
-		get_parent().z_index = 5
-
 
 func _on_mouse_exited():
 	if not Global.is_dragging and allow_drag:

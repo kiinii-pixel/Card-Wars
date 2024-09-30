@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://bco1m6ixdmiil"]
+[gd_scene load_steps=24 format=3 uid="uid://bco1m6ixdmiil"]
 
 [ext_resource type="Script" path="res://scripts/objects/card.gd" id="1_arv21"]
 [ext_resource type="Texture2D" uid="uid://ct5331atokkqs" path="res://assets/images/frames/Rainbow_Creature.png" id="3_mw3bc"]
@@ -14,6 +14,7 @@
 [ext_resource type="Script" path="res://scripts/states/in_play.gd" id="13_e3wur"]
 [ext_resource type="Script" path="res://scripts/states/discarded.gd" id="14_x832o"]
 [ext_resource type="Script" path="res://scripts/states/dragging.gd" id="15_smlb4"]
+[ext_resource type="Script" path="res://scripts/states/overlapping.gd" id="16_eswy8"]
 [ext_resource type="Script" path="res://scripts/states/hovering.gd" id="16_psrjk"]
 
 [sub_resource type="Theme" id="Theme_rcflo"]
@@ -387,6 +388,9 @@ script = ExtResource("15_smlb4")
 
 [node name="hovering" type="Node" parent="state_mashine"]
 script = ExtResource("16_psrjk")
+
+[node name="overlapping" type="Node" parent="state_mashine"]
+script = ExtResource("16_eswy8")
 
 [connection signal="body_entered" from="drag_component" to="." method="_on_drag_component_body_entered"]
 [connection signal="body_exited" from="drag_component" to="." method="_on_drag_component_body_exited"]

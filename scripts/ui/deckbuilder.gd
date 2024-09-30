@@ -15,12 +15,12 @@ func add_card():
 		card.data = preloader.get_resource(instance)
 		card.load_image()
 		if card.get_node("%CardImage").texture != null:
-		#if card.load(card_image_path) != null:
 			$ScrollContainer/GridContainer.add_child(card)
-			#card.scale = Vector2(0.25, 0.25)
-			card.get_node("%AnimationPlayer").play("flip_up")
+			card.state_mashine.current_state = card.state_mashine.states["in_deck"]
 			card.drag_component.allow_drag = true
 			card.get_node("drag_component").scale_down(0.1)
+		else:
+			card.queue_free()
 
 #		var sprite = Sprite2D.new()
 #		var sub_viewport = card.%SubViewport # Used to Render the Card again
@@ -35,4 +35,5 @@ func add_card():
 
 
 func _on_back_pressed():
+	queue_free()
 	get_tree().change_scene_to_file("res://scenes/ui/menu.tscn")

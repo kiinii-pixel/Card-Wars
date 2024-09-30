@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://24p2lo0gxnqf"
-path="res://.godot/imported/Patchy The Pumpkin.png-91e61fb3d22872704ce3d2d7e23f9ddf.ctex"
+path="res://.godot/imported/Patchy the Pumpkin.png-057f0c2cc9884e9dc23ae03c369ad66e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/cards/art/Cornfield/Creature/Patchy The Pumpkin.png"
-dest_files=["res://.godot/imported/Patchy The Pumpkin.png-91e61fb3d22872704ce3d2d7e23f9ddf.ctex"]
+source_file="res://assets/images/cards/art/Cornfield/Creature/Patchy the Pumpkin.png"
+dest_files=["res://.godot/imported/Patchy the Pumpkin.png-057f0c2cc9884e9dc23ae03c369ad66e.ctex"]
 
 [params]
 
