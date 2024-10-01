@@ -13,6 +13,7 @@ func enter():
 	card.reparent(card.body_ref)
 	await drag_component.move(card.body_ref.global_position, 0.2)
 	card.position = Vector2(0, 0)
+	card.z_index = 4
 
 func update(_delta : float):
 	if card.get_owner() is Pile:

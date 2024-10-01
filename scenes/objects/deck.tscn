@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://bd30qu4bft5gw" path="res://scenes/objects/pile.tscn" id="1_4ew6x"]
 [ext_resource type="Script" path="res://scripts/objects/deck.gd" id="1_hsfed"]
-[ext_resource type="Texture2D" uid="uid://cn0ywq5f0a58r" path="res://assets/images/cards/card_back/back.png" id="2_2c5j1"]
+[ext_resource type="Texture2D" uid="uid://dsuwmnh6sbhed" path="res://assets/images/cards/card_back/back.png" id="2_2c5j1"]
 [ext_resource type="Resource" uid="uid://dpbktsr7jtlv8" path="res://data/decks/finn.tres" id="2_ycx0o"]
 
 [node name="Deck" instance=ExtResource("1_4ew6x")]
