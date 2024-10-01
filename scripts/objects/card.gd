@@ -51,7 +51,7 @@ func load_image():
 	# Load Image
 	var card_image_path : String = "res://assets/images/cards/art/" + data.landscape + \
 	"/" + data.card_type + "/" + data.card_name + ".png"
-	if load(card_image_path) != null:
+	if FileAccess.file_exists(card_image_path):
 		%CardImage.texture = load(card_image_path)
 	else:
 		print("No Image Texture found")
