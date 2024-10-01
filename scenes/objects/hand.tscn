@@ -24,5 +24,4 @@ spread_curve = SubResource("Curve_v3udk")
 height_curve = SubResource("Curve_085fp")
 rotation_curve = SubResource("Curve_rwvyn")
 
-[connection signal="card_played" from="." to="." method="_on_card_played"]
 [connection signal="child_order_changed" from="." to="." method="_on_child_order_changed"]

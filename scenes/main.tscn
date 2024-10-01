@@ -20,8 +20,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sr0rc"]
 size = Vector2(262, 262)
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wqxbo"]
-texture = ExtResource("10_63nk0")
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o5jgd"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_smrcd"]
 texture = ExtResource("10_63nk0")
@@ -29,7 +28,10 @@ texture = ExtResource("10_63nk0")
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ejnwn"]
 texture = ExtResource("9_0eq6p")
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o5jgd"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wqxbo"]
+texture = ExtResource("10_63nk0")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_usg6i"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qawrv"]
 content_margin_left = 0.0
@@ -46,8 +48,6 @@ axis_stretch_vertical = 1
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_shqf4"]
 texture = ExtResource("12_hu3hp")
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_usg6i"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_mh3fo")
@@ -106,10 +106,10 @@ offset_right = -1.52588e-05
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(66, 68)
-theme_override_styles/normal = SubResource("StyleBoxTexture_wqxbo")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_o5jgd")
 theme_override_styles/hover = SubResource("StyleBoxTexture_smrcd")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_ejnwn")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_o5jgd")
+theme_override_styles/normal = SubResource("StyleBoxTexture_wqxbo")
 vertical_icon_alignment = 0
 expand_icon = true
 metadata/_edit_use_anchors_ = true
@@ -159,10 +159,10 @@ offset_bottom = 977.0
 scale = Vector2(0.15, 0.15)
 theme_override_fonts/font = ExtResource("12_kugc0")
 theme_override_font_sizes/font_size = 191
-theme_override_styles/normal = SubResource("StyleBoxTexture_qawrv")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_usg6i")
 theme_override_styles/hover = SubResource("StyleBoxTexture_qawrv")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_shqf4")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_usg6i")
+theme_override_styles/normal = SubResource("StyleBoxTexture_qawrv")
 text = "Fight!"
 
 [node name="Deck" parent="." instance=ExtResource("9_6xswo")]

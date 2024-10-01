@@ -8,4 +8,3 @@ func enter():
 func update(_delta : float):
 	if card.get_parent() is Hand:
 		Transitioned.emit(self, "in_hand")
-		print(card.get_parent(), card, card.state_mashine.current_state)
