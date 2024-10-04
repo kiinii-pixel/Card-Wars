@@ -35,5 +35,4 @@ func add_card():
 
 
 func _on_back_pressed():
-	queue_free()
 	get_tree().change_scene_to_file("res://scenes/ui/menu.tscn")

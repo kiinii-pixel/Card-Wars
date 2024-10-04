@@ -25,10 +25,8 @@ func _process(_delta):
 
 # when you hover over the card
 func _on_mouse_entered():
-	print("mouse_entered")
 	if not Global.is_dragging and allow_drag: # If no other card is being dragged:
 		selected = true # Select current card
-		print("selected")
 		scale_up(0.2) # Scale up current card
 
 

@@ -104,30 +104,31 @@ func reset_values():
 	%CostLabel.text = String.num_int64(cost)
 
 
-func _on_drag_component_body_entered(landscape : Landscape):
-	# Problem: preview sometimes not spawned when 2 landscapes are entered at once
-	
-	for zones in landscape.get_parent().get_parent().get_children(): # Loop Zones Node
-		for landscapes in zones.get_children(): # Loop through Landscapes (Children of Landscapes and EnemyLandscapes Node)
-			if landscapes.get_child_count() >= 4: # If there's a preview or a card already
-				if landscapes.get_node_or_null("card_preview"): # If a preview exists
-					landscapes.get_node("card_preview").queue_free() # delete preview
-	if landscape.get_child_count() == 3: # If landscape is empty
-		is_inside = true # card is now inside a landcape
-		body_ref = landscape # body_ref set to entered landscape
+func _on_drag_component_body_entered(body):
+	if body is Landscape:
+		for zones in body.get_parent().get_parent().get_children(): # Loop Zones Node
+			for landscapes in zones.get_children(): # Loop through Landscapes (Children of Landscapes and EnemyLandscapes Node)
+				if landscapes.get_child_count() >= 4: # If there's a preview or a card already
+					if landscapes.get_node_or_null("card_preview"): # If a preview exists
+						landscapes.get_node("card_preview").queue_free() # delete preview
+		if body.get_child_count() == 3: # If landscape is empty
+			is_inside = true # card is now inside a landcape
+			body_ref = body # body_ref set to entered landscape
 
-		# spawn card copy / indicator / Preview:
-		# If card is inside a landscape (that is empty) and hasn't been played (so it doesnt spawn  preview on its way to discard pile)
-		if is_inside and drag_component.allow_drag:
-			var sprite = Sprite2D.new() # create new sprite
-			sprite.set_name("card_preview") # set more readable name in scene tree
-			body_ref.add_child(sprite) # add new sprite as child of the entered landscape
-			var sub_viewport = %SubViewport # Used to Render the Card again
-			var img = sub_viewport.get_viewport().get_texture().get_image() # Retrieve the captured Image using get_image().
-			var tex = ImageTexture.create_from_image(img) 		# Convert Image to ImageTexture.
-			sprite.texture = tex # Set sprite texture.
-			sprite.scale = Vector2(0.5, 0.5) # scale down
-			sprite.modulate.a = 0.5 # make transparent
+			# spawn card copy / indicator / Preview:
+			# If card is inside a landscape (that is empty) and hasn't been played (so it doesnt spawn  preview on its way to discard pile)
+			if is_inside and drag_component.allow_drag:
+				var sprite = Sprite2D.new() # create new sprite
+				sprite.set_name("card_preview") # set more readable name in scene tree
+				body_ref.add_child(sprite) # add new sprite as child of the entered landscape
+				var sub_viewport = %SubViewport # Used to Render the Card again
+				var img = sub_viewport.get_viewport().get_texture().get_image() # Retrieve the captured Image using get_image().
+				var tex = ImageTexture.create_from_image(img) 		# Convert Image to ImageTexture.
+				sprite.texture = tex # Set sprite texture.
+				sprite.scale = Vector2(0.5, 0.5) # scale down
+				sprite.modulate.a = 0.5 # make transparent
+	elif body is StaticBody2D:
+		print("entered")
 
 
 func _on_drag_component_body_exited(landscape: Landscape):

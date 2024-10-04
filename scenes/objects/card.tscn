@@ -193,8 +193,11 @@ size = Vector2(376, 928)
 size = Vector2(376, 928)
 
 [node name="Card" type="Control"]
+custom_minimum_size = Vector2(693, 980)
 layout_mode = 3
 anchors_preset = 0
+offset_right = 693.0
+offset_bottom = 980.0
 mouse_filter = 2
 script = ExtResource("1_arv21")
 
