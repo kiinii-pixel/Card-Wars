@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="DeckResource" load_steps=25 format=3 uid="uid://dpbktsr7jtlv8"]
+[gd_resource type="Resource" script_class="DeckResource" load_steps=26 format=3 uid="uid://dpbktsr7jtlv8"]
 
 [ext_resource type="Resource" uid="uid://cbt1jgf00eyyn" path="res://data/cards/The Pig.tres" id="1_ic8tu"]
+[ext_resource type="Script" path="res://data/card_resource.gd" id="1_n64e3"]
 [ext_resource type="Resource" path="res://data/cards/Nice Ice Baby.tres" id="2_rwyl4"]
 [ext_resource type="Resource" path="res://data/cards/Dragon Claw.tres" id="3_hpm5w"]
 [ext_resource type="Resource" path="res://data/cards/Ancient Scholar.tres" id="4_qbsyh"]
@@ -28,7 +29,7 @@
 [resource]
 script = ExtResource("24_87h4u")
 character = 0
-deck = Array[Resource("res://data/card_resource.gd")]([ExtResource("1_ic8tu"), ExtResource("1_ic8tu"), ExtResource("2_rwyl4"), ExtResource("2_rwyl4"), ExtResource("3_hpm5w"), ExtResource("3_hpm5w"), ExtResource("4_qbsyh"), ExtResource("4_qbsyh"), ExtResource("5_6w2cm"), ExtResource("5_6w2cm"), ExtResource("6_ku2b6"), ExtResource("6_ku2b6"), ExtResource("7_tywjy"), ExtResource("8_x38qr"), ExtResource("8_x38qr"), ExtResource("9_svl5h"), ExtResource("9_svl5h"), ExtResource("10_8aws3"), ExtResource("11_1b7ub"), ExtResource("11_1b7ub"), ExtResource("12_cuee1"), ExtResource("12_cuee1"), ExtResource("13_a7k2w"), ExtResource("14_auekm"), ExtResource("14_auekm"), ExtResource("15_vvciy"), ExtResource("15_vvciy"), ExtResource("16_3mryk"), ExtResource("17_o3008"), ExtResource("17_o3008"), ExtResource("18_wcvx7"), ExtResource("18_wcvx7"), ExtResource("19_7rgek"), ExtResource("19_7rgek"), ExtResource("20_07xnh"), ExtResource("20_07xnh"), ExtResource("21_6ow88"), ExtResource("22_eqm5g"), ExtResource("22_eqm5g"), ExtResource("23_wqw7t")])
+deck = Array[ExtResource("1_n64e3")]([ExtResource("1_ic8tu"), ExtResource("1_ic8tu"), ExtResource("2_rwyl4"), ExtResource("2_rwyl4"), ExtResource("3_hpm5w"), ExtResource("3_hpm5w"), ExtResource("4_qbsyh"), ExtResource("4_qbsyh"), ExtResource("5_6w2cm"), ExtResource("5_6w2cm"), ExtResource("6_ku2b6"), ExtResource("6_ku2b6"), ExtResource("7_tywjy"), ExtResource("8_x38qr"), ExtResource("8_x38qr"), ExtResource("9_svl5h"), ExtResource("9_svl5h"), ExtResource("10_8aws3"), ExtResource("11_1b7ub"), ExtResource("11_1b7ub"), ExtResource("12_cuee1"), ExtResource("12_cuee1"), ExtResource("13_a7k2w"), ExtResource("14_auekm"), ExtResource("14_auekm"), ExtResource("15_vvciy"), ExtResource("15_vvciy"), ExtResource("16_3mryk"), ExtResource("17_o3008"), ExtResource("17_o3008"), ExtResource("18_wcvx7"), ExtResource("18_wcvx7"), ExtResource("19_7rgek"), ExtResource("19_7rgek"), ExtResource("20_07xnh"), ExtResource("20_07xnh"), ExtResource("21_6ow88"), ExtResource("22_eqm5g"), ExtResource("22_eqm5g"), ExtResource("23_wqw7t")])
 landscape1 = 0
 landscape2 = 0
 landscape3 = 0

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dmv3am1c5eq32"
-path="res://.godot/imported/Silo of Truth.png-aa3b8f8076c208af77ff3990ab208516.ctex"
+path="res://.godot/imported/Silo Of Truth.png-76127eaafe4995d68333595541bcace8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/cards/art/Cornfield/Building/Silo of Truth.png"
-dest_files=["res://.godot/imported/Silo of Truth.png-aa3b8f8076c208af77ff3990ab208516.ctex"]
+source_file="res://assets/images/cards/art/Cornfield/Building/Silo Of Truth.png"
+dest_files=["res://.godot/imported/Silo Of Truth.png-76127eaafe4995d68333595541bcace8.ctex"]
 
 [params]
 
