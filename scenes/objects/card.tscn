@@ -1,6 +1,7 @@
-[gd_scene load_steps=24 format=3 uid="uid://bco1m6ixdmiil"]
+[gd_scene load_steps=25 format=3 uid="uid://bco1m6ixdmiil"]
 
 [ext_resource type="Script" path="res://scripts/objects/card.gd" id="1_arv21"]
+[ext_resource type="Texture2D" uid="uid://fa7porh7emrp" path="res://assets/images/cards/art/Blue Plains/Creature/Ancient Scholar.png" id="2_h63qs"]
 [ext_resource type="Texture2D" uid="uid://ct5331atokkqs" path="res://assets/images/frames/Rainbow_Creature.png" id="3_mw3bc"]
 [ext_resource type="Theme" uid="uid://dmwrp6aey18st" path="res://assets/themes/purple_button.tres" id="5_bmwov"]
 [ext_resource type="FontFile" uid="uid://ca0g1l1k6v1sf" path="res://assets/fonts/Pendlefont Heavy.TTF" id="5_bysvj"]
@@ -17,17 +18,12 @@
 [ext_resource type="Script" path="res://scripts/states/overlapping.gd" id="16_eswy8"]
 [ext_resource type="Script" path="res://scripts/states/hovering.gd" id="16_psrjk"]
 
-[sub_resource type="Theme" id="Theme_rcflo"]
-default_font = ExtResource("5_bysvj")
-Label/colors/font_color = Color(0.129412, 0.141176, 0.160784, 1)
-Label/font_sizes/font_size = 78
-
 [sub_resource type="Animation" id="Animation_0kbrg"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("CardBack:visible")
+tracks/0/path = NodePath("SubViewportContainer/SubViewport/CardBack:visible")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -39,7 +35,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("CardBack:scale")
+tracks/1/path = NodePath("SubViewportContainer/SubViewport/CardBack:scale")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -72,6 +68,30 @@ tracks/3/keys = {
 "update": 1,
 "values": [false]
 }
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("SubViewportContainer/SubViewport/PanelContainer:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("SubViewportContainer/SubViewport/PanelContainer:scale")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
 
 [sub_resource type="Animation" id="Animation_hijsi"]
 resource_name = "flip_down"
@@ -80,7 +100,7 @@ step = 0.005
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("CardBack:visible")
+tracks/0/path = NodePath("SubViewportContainer/SubViewport/CardBack:visible")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -92,7 +112,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("CardBack:scale")
+tracks/1/path = NodePath("SubViewportContainer/SubViewport/CardBack:scale")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -133,7 +153,7 @@ step = 0.005
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("CardBack:visible")
+tracks/0/path = NodePath("SubViewportContainer/SubViewport/CardBack:visible")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -145,7 +165,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("CardBack:scale")
+tracks/1/path = NodePath("SubViewportContainer/SubViewport/CardBack:scale")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -161,10 +181,10 @@ tracks/2/path = NodePath("SubViewportContainer:scale")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0.145, 0.3),
-"transitions": PackedFloat32Array(1, 0.5),
+"times": PackedFloat32Array(0, 0.145, 0.3),
+"transitions": PackedFloat32Array(1, 1, 0.5),
 "update": 0,
-"values": [Vector2(0, 1), Vector2(1, 1)]
+"values": [Vector2(1, 1), Vector2(0, 1), Vector2(1, 1)]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -173,6 +193,30 @@ tracks/3/path = NodePath("SubViewportContainer:visible")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.145),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("SubViewportContainer/SubViewport/PanelContainer:scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.145, 0.3),
+"transitions": PackedFloat32Array(1, 0.5),
+"update": 0,
+"values": [Vector2(0, 1), Vector2(1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("SubViewportContainer/SubViewport/PanelContainer:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
 "times": PackedFloat32Array(0, 0.145),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
@@ -185,6 +229,11 @@ _data = {
 "flip_down": SubResource("Animation_hijsi"),
 "flip_up": SubResource("Animation_ljt8f")
 }
+
+[sub_resource type="Theme" id="Theme_rcflo"]
+default_font = ExtResource("5_bysvj")
+Label/colors/font_color = Color(0.129412, 0.141176, 0.160784, 1)
+Label/font_sizes/font_size = 78
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4b713"]
 size = Vector2(376, 928)
@@ -203,14 +252,9 @@ script = ExtResource("1_arv21")
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="."]
 visible = false
-layout_mode = 1
-anchors_preset = -1
-anchor_left = -0.005
-anchor_right = -0.005
-offset_left = -346.535
-offset_top = -490.0
-offset_right = 346.465
-offset_bottom = 490.0
+layout_mode = 0
+offset_right = 693.0
+offset_bottom = 980.0
 pivot_offset = Vector2(346.75, 490)
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -232,16 +276,35 @@ position = Vector2(26, 0)
 scale = Vector2(1.25391, 1.25391)
 centered = false
 
+[node name="TextureRect" type="TextureRect" parent="SubViewportContainer/SubViewport/PanelContainer"]
+layout_mode = 2
+texture = ExtResource("2_h63qs")
+expand_mode = 2
+
 [node name="CardFrame" type="Sprite2D" parent="SubViewportContainer/SubViewport/PanelContainer"]
 unique_name_in_owner = true
 position = Vector2(2.38419e-07, 0)
 texture = ExtResource("3_mw3bc")
 centered = false
 
-[node name="Labels" type="Control" parent="SubViewportContainer/SubViewport/PanelContainer"]
-layout_mode = 2
+[node name="AnimationPlayer" type="AnimationPlayer" parent="SubViewportContainer/SubViewport/PanelContainer"]
+unique_name_in_owner = true
+root_node = NodePath("../../../..")
+libraries = {
+"": SubResource("AnimationLibrary_swdfb")
+}
 
-[node name="CardName" type="Label" parent="SubViewportContainer/SubViewport/PanelContainer/Labels"]
+[node name="CardBack" type="Sprite2D" parent="SubViewportContainer/SubViewport"]
+unique_name_in_owner = true
+scale = Vector2(0.896, 0.896)
+texture = ExtResource("6_uokre")
+centered = false
+
+[node name="Labels" type="Control" parent="SubViewportContainer/SubViewport"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="CardName" type="Label" parent="SubViewportContainer/SubViewport/Labels"]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 8
@@ -261,7 +324,7 @@ text = "Card Name"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="LandscapeCardType" type="Label" parent="SubViewportContainer/SubViewport/PanelContainer/Labels"]
+[node name="LandscapeCardType" type="Label" parent="SubViewportContainer/SubViewport/Labels"]
 unique_name_in_owner = true
 layout_mode = 0
 offset_left = 25.0
@@ -275,7 +338,7 @@ text = "Landscape / Card Type"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Description" type="Label" parent="SubViewportContainer/SubViewport/PanelContainer/Labels"]
+[node name="Description" type="Label" parent="SubViewportContainer/SubViewport/Labels"]
 unique_name_in_owner = true
 layout_mode = 0
 offset_left = 37.0
@@ -290,14 +353,14 @@ text = "FLOOP >>> In this space, find the card's description and effects."
 horizontal_alignment = 1
 autowrap_mode = 2
 
-[node name="CCAttack" type="CenterContainer" parent="SubViewportContainer/SubViewport/PanelContainer/Labels"]
+[node name="CCAttack" type="CenterContainer" parent="SubViewportContainer/SubViewport/Labels"]
 layout_mode = 0
 offset_left = 26.6667
 offset_top = 833.667
 offset_right = 114.667
 offset_bottom = 1002.67
 
-[node name="AttackLabel" type="Label" parent="SubViewportContainer/SubViewport/PanelContainer/Labels/CCAttack"]
+[node name="AttackLabel" type="Label" parent="SubViewportContainer/SubViewport/Labels/CCAttack"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 0
@@ -308,14 +371,14 @@ text = "A"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="CCDefense" type="CenterContainer" parent="SubViewportContainer/SubViewport/PanelContainer/Labels"]
+[node name="CCDefense" type="CenterContainer" parent="SubViewportContainer/SubViewport/Labels"]
 layout_mode = 0
 offset_left = 582.629
 offset_top = 833.667
 offset_right = 670.629
 offset_bottom = 1002.67
 
-[node name="DefenseLabel" type="Label" parent="SubViewportContainer/SubViewport/PanelContainer/Labels/CCDefense"]
+[node name="DefenseLabel" type="Label" parent="SubViewportContainer/SubViewport/Labels/CCDefense"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 8
@@ -326,7 +389,7 @@ text = "D"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="CostLabel" type="Label" parent="SubViewportContainer/SubViewport/PanelContainer/Labels"]
+[node name="CostLabel" type="Label" parent="SubViewportContainer/SubViewport/Labels"]
 unique_name_in_owner = true
 clip_contents = true
 custom_minimum_size = Vector2(120, 0)
@@ -343,18 +406,6 @@ text = "C"
 horizontal_alignment = 1
 vertical_alignment = 1
 clip_text = true
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="SubViewportContainer/SubViewport/PanelContainer"]
-unique_name_in_owner = true
-root_node = NodePath("../../../..")
-libraries = {
-"": SubResource("AnimationLibrary_swdfb")
-}
-
-[node name="CardBack" type="Sprite2D" parent="."]
-unique_name_in_owner = true
-scale = Vector2(0.896, 0.896)
-texture = ExtResource("6_uokre")
 
 [node name="drag_component" parent="." instance=ExtResource("6_457fh")]
 
