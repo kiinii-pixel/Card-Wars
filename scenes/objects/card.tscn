@@ -242,19 +242,20 @@ size = Vector2(376, 928)
 size = Vector2(376, 928)
 
 [node name="Card" type="Control"]
-custom_minimum_size = Vector2(693, 980)
 layout_mode = 3
 anchors_preset = 0
-offset_right = 693.0
-offset_bottom = 980.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
 mouse_filter = 2
 script = ExtResource("1_arv21")
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="."]
 visible = false
-layout_mode = 0
-offset_right = 693.0
-offset_bottom = 980.0
+layout_mode = 1
+offset_left = -346.5
+offset_top = -490.0
+offset_right = 346.5
+offset_bottom = 490.0
 pivot_offset = Vector2(346.75, 490)
 size_flags_horizontal = 4
 size_flags_vertical = 4
