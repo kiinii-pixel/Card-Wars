@@ -20,80 +20,8 @@
 
 [sub_resource type="Animation" id="Animation_0kbrg"]
 length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("SubViewportContainer/SubViewport/CardBack:visible")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("SubViewportContainer/SubViewport/CardBack:scale")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0.896, 0.896)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("SubViewportContainer:scale")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(1, 1)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("SubViewportContainer:visible")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("SubViewportContainer/SubViewport/PanelContainer:visible")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-tracks/5/type = "value"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("SubViewportContainer/SubViewport/PanelContainer:scale")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(1, 1)]
-}
 
-[sub_resource type="Animation" id="Animation_hijsi"]
+[sub_resource type="Animation" id="Animation_djqq5"]
 resource_name = "flip_down"
 length = 0.3
 step = 0.005
@@ -104,7 +32,7 @@ tracks/0/path = NodePath("SubViewportContainer/SubViewport/CardBack:visible")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.155),
+"times": PackedFloat32Array(0, 0.14),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [false, true]
@@ -116,19 +44,19 @@ tracks/1/path = NodePath("SubViewportContainer/SubViewport/CardBack:scale")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0.155, 0.3),
-"transitions": PackedFloat32Array(1.5, 1),
+"times": PackedFloat32Array(0.14, 0.3),
+"transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(0, 1), Vector2(0.887, 0.896)]
+"values": [Vector2(1e-05, 0.896), Vector2(0.896, 0.896)]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("SubViewportContainer:scale")
+tracks/2/path = NodePath("SubViewportContainer/SubViewport/PanelContainer:scale")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.145),
+"times": PackedFloat32Array(0, 0.14),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(1, 1), Vector2(0, 1)]
@@ -136,14 +64,14 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("SubViewportContainer:visible")
+tracks/3/path = NodePath("SubViewportContainer/SubViewport/Labels:scale")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(0, 0.145),
+"times": PackedFloat32Array(0, 0.14),
 "transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [true, false]
+"update": 0,
+"values": [Vector2(1, 1), Vector2(0, 1)]
 }
 
 [sub_resource type="Animation" id="Animation_ljt8f"]
@@ -157,7 +85,7 @@ tracks/0/path = NodePath("SubViewportContainer/SubViewport/CardBack:visible")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.155),
+"times": PackedFloat32Array(0, 0.14),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [true, false]
@@ -169,64 +97,40 @@ tracks/1/path = NodePath("SubViewportContainer/SubViewport/CardBack:scale")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.155),
-"transitions": PackedFloat32Array(1.5, 1),
+"times": PackedFloat32Array(0, 0.14),
+"transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(0.887, 0.896), Vector2(0, 0.896)]
+"values": [Vector2(0.896, 0.896), Vector2(1e-05, 0.896)]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("SubViewportContainer:scale")
+tracks/2/path = NodePath("SubViewportContainer/SubViewport/PanelContainer:scale")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.145, 0.3),
-"transitions": PackedFloat32Array(1, 1, 0.5),
+"times": PackedFloat32Array(0.14, 0.3),
+"transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(1, 1), Vector2(0, 1), Vector2(1, 1)]
+"values": [Vector2(0, 1), Vector2(1, 1)]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("SubViewportContainer:visible")
+tracks/3/path = NodePath("SubViewportContainer/SubViewport/Labels:scale")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(0, 0.145),
+"times": PackedFloat32Array(0.14, 0.3),
 "transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [true, true]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("SubViewportContainer/SubViewport/PanelContainer:scale")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(0.145, 0.3),
-"transitions": PackedFloat32Array(1, 0.5),
 "update": 0,
 "values": [Vector2(0, 1), Vector2(1, 1)]
-}
-tracks/5/type = "value"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("SubViewportContainer/SubViewport/PanelContainer:visible")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
-"times": PackedFloat32Array(0, 0.145),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [false, true]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_swdfb"]
 _data = {
 "RESET": SubResource("Animation_0kbrg"),
-"flip_down": SubResource("Animation_hijsi"),
+"flip_down": SubResource("Animation_djqq5"),
 "flip_up": SubResource("Animation_ljt8f")
 }
 
@@ -250,7 +154,6 @@ mouse_filter = 2
 script = ExtResource("1_arv21")
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="."]
-visible = false
 layout_mode = 1
 offset_left = -346.5
 offset_top = -490.0
@@ -267,9 +170,10 @@ disable_3d = true
 transparent_bg = true
 handle_input_locally = false
 size = Vector2i(693, 980)
-render_target_update_mode = 0
+render_target_update_mode = 4
 
 [node name="PanelContainer" type="PanelContainer" parent="SubViewportContainer/SubViewport"]
+scale = Vector2(1e-05, 1)
 
 [node name="CardImage" type="Sprite2D" parent="SubViewportContainer/SubViewport/PanelContainer"]
 unique_name_in_owner = true
@@ -299,11 +203,12 @@ libraries = {
 unique_name_in_owner = true
 scale = Vector2(0.896, 0.896)
 texture = ExtResource("6_uokre")
-centered = false
+offset = Vector2(385.655, 540.96)
 
 [node name="Labels" type="Control" parent="SubViewportContainer/SubViewport"]
 layout_mode = 3
 anchors_preset = 0
+scale = Vector2(1e-05, 1)
 
 [node name="CardName" type="Label" parent="SubViewportContainer/SubViewport/Labels"]
 unique_name_in_owner = true

@@ -1,4 +1,4 @@
-[gd_scene load_steps=483 format=3 uid="uid://cpt2c1rjk4b6b"]
+[gd_scene load_steps=482 format=3 uid="uid://cpt2c1rjk4b6b"]
 
 [ext_resource type="Script" path="res://scripts/ui/deckbuilder.gd" id="1_4e2jx"]
 [ext_resource type="Resource" path="res://data/cards/Abdominal Snowman.tres" id="5_tkhjr"]
@@ -480,7 +480,6 @@
 [ext_resource type="Resource" path="res://data/cards/Young ZebraCorn Husker.tres" id="479_vajwh"]
 [ext_resource type="Texture2D" uid="uid://b3xeo685h6h7v" path="res://assets/images/cards/art/Rainbow/Creature/The Pig.png" id="480_fog4a"]
 [ext_resource type="Resource" path="res://data/cards/ZaZo's Magic Seeds.tres" id="480_odbm7"]
-[ext_resource type="PackedScene" uid="uid://bco1m6ixdmiil" path="res://scenes/objects/card.tscn" id="480_pbvv3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tkwq5"]
 size = Vector2(345, 830)
@@ -532,10 +531,11 @@ scale = Vector2(0.75, 0.75)
 text = "Back"
 
 [node name="ScrollContainer" type="ScrollContainer" parent="."]
+clip_contents = false
 layout_mode = 0
 offset_left = 441.0
 offset_top = 110.0
-offset_right = 1839.0
+offset_right = 1505.0
 offset_bottom = 1009.0
 horizontal_scroll_mode = 0
 
@@ -543,6 +543,8 @@ horizontal_scroll_mode = 0
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_override_constants/h_separation = 200
+theme_override_constants/v_separation = 300
 columns = 6
 
 [node name="ItemList" type="ItemList" parent="."]
@@ -566,12 +568,5 @@ item_0/icon = ExtResource("480_fog4a")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ItemList/StaticBody2D"]
 position = Vector2(162.5, 405)
 shape = SubResource("RectangleShape2D_tkwq5")
-
-[node name="Card" parent="." instance=ExtResource("480_pbvv3")]
-layout_mode = 2
-offset_left = 2301.0
-offset_top = 944.0
-offset_right = 2301.0
-offset_bottom = 944.0
 
 [connection signal="pressed" from="back" to="." method="_on_back_pressed"]

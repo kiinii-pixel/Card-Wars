@@ -131,13 +131,13 @@ func _on_drag_component_body_entered(body):
 		print("entered")
 
 
-func _on_drag_component_body_exited(landscape: Landscape):
-	if body_ref == landscape:
+func _on_drag_component_body_exited(body):
+	if body_ref == body:
 		is_inside = false
 		#if body ref = body exited
 		#landscape.get_child(3).queue_free()
-		if landscape.get_node_or_null("card_preview"):
-			landscape.get_node("card_preview").queue_free()
+		if body.get_node_or_null("card_preview"):
+			body.get_node("card_preview").queue_free()
 
 
 func flip():
