@@ -1,4 +1,4 @@
-class_name Overlapping extends State
+class_name Overlapping extends State # Card is being dragged over a Landscape
 
 
 func enter():

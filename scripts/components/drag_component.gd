@@ -23,24 +23,6 @@ func _process(_delta):
 		if Input.is_action_pressed("action_key"): # While button is pressed
 			follow_mouse()
 
-# when you hover over the card
-func _on_mouse_entered():
-	if not Global.is_dragging and allow_drag: # If no other card is being dragged:
-		selected = true # Select current card
-		scale_up(0.2) # Scale up current card
-
-
-func _on_mouse_exited():
-	if not Global.is_dragging and allow_drag:
-		selected = false
-
-	# If the card hasn't been scaled down yet. allow_drag has to be ture,
-	# so the card doesnt scale down during it being placed onto a landscape.
-	# selected has to be false, so it doesn't happen on the card you're dragging
-	if get_owner().scale != SCALE_NORMAL and allow_drag and not selected:
-		scale_down(0.2)
-		get_parent().z_index = 4
-
 
 func follow_mouse():
 	get_parent().global_position = get_global_mouse_position()

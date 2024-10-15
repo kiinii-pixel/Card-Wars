@@ -352,5 +352,5 @@ script = ExtResource("16_psrjk")
 [node name="overlapping" type="Node" parent="state_mashine"]
 script = ExtResource("16_eswy8")
 
-[connection signal="body_entered" from="drag_component" to="." method="_on_drag_component_body_entered"]
 [connection signal="body_exited" from="drag_component" to="." method="_on_drag_component_body_exited"]
+[connection signal="mouse_exited" from="drag_component" to="state_mashine/hovering" method="_on_drag_component_mouse_exited"]
