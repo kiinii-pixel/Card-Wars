@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://coqj7a3bhq44d"
-path="res://.godot/imported/Toilet Of Doom.png-6350f3b443d9afd7f645e69b7b6b5969.ctex"
+uid="uid://dohtf14u56lj7"
+path="res://.godot/imported/Toilet of Doom.png-220d4ca892fb93da14fd074f51ad326b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/cards/art/Useless Swamp/Spell/Toilet Of Doom.png"
-dest_files=["res://.godot/imported/Toilet Of Doom.png-6350f3b443d9afd7f645e69b7b6b5969.ctex"]
+source_file="res://assets/images/cards/art/Useless Swamp/Spell/Toilet of Doom.png"
+dest_files=["res://.godot/imported/Toilet of Doom.png-220d4ca892fb93da14fd074f51ad326b.ctex"]
 
 [params]
 

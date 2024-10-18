@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c0mrd8tvruw0b"
-path="res://.godot/imported/Fountain Of Tears.png-6f545d3fbf10d0cd3797f4d2863f1bb4.ctex"
+uid="uid://byofgsp0gxf8"
+path="res://.godot/imported/Fountain of Tears.png-4d254ec911510b34ae40f34f1666b07b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/cards/art/Rainbow/Spell/Fountain Of Tears.png"
-dest_files=["res://.godot/imported/Fountain Of Tears.png-6f545d3fbf10d0cd3797f4d2863f1bb4.ctex"]
+source_file="res://assets/images/cards/art/Rainbow/Spell/Fountain of Tears.png"
+dest_files=["res://.godot/imported/Fountain of Tears.png-4d254ec911510b34ae40f34f1666b07b.ctex"]
 
 [params]
 
