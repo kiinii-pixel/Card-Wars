@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cwk1jkmbp2wxn"
-path="res://.godot/imported/Mouthball.png-d8f91fcfc480443e3c0eb8e590f24ec0.ctex"
+uid="uid://dllowyes77psh"
+path="res://.godot/imported/YellowGnome.png-a34ac92263ab65b0af3d0a2fbab0d26a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/cards/art/Rainbow/Creature/Mouthball.png"
-dest_files=["res://.godot/imported/Mouthball.png-d8f91fcfc480443e3c0eb8e590f24ec0.ctex"]
+source_file="res://assets/images/cards/art/Cornfield/Creature/YellowGnome.png"
+dest_files=["res://.godot/imported/YellowGnome.png-a34ac92263ab65b0af3d0a2fbab0d26a.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://efp4xqemitkm"
-path="res://.godot/imported/Field of Nightmares.png-b7069a6481e075e762ffb532b51af7d1.ctex"
+uid="uid://cg6i8g70icbx2"
+path="res://.godot/imported/Field Of Nightmares.png-d98f487d7c6d58f3bc0f72c1369fe392.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/cards/art/Cornfield/Spell/Field of Nightmares.png"
-dest_files=["res://.godot/imported/Field of Nightmares.png-b7069a6481e075e762ffb532b51af7d1.ctex"]
+source_file="res://assets/images/cards/art/Cornfield/Spell/Field Of Nightmares.png"
+dest_files=["res://.godot/imported/Field Of Nightmares.png-d98f487d7c6d58f3bc0f72c1369fe392.ctex"]
 
 [params]
 
