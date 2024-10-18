@@ -1,4 +1,4 @@
-class_name dragging extends State # Dragging a Card
+class_name Dragging extends State # Dragging a Card
 
 
 
@@ -24,7 +24,10 @@ func _on_body_entered(body : Node2D):
 			card.is_inside = true # card is now inside a landcape
 			card.body_ref = body # body_ref set to entered landscape
 			create_preview()
-
+	if body is DeckList:
+		var item_list = body.get_parent()
+		item_list.add_item(card.data.card_name, card.load_image())
+		card.queue_free()
 
 func create_preview():
 	if card.is_inside and drag_component.allow_drag:

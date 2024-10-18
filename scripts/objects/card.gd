@@ -53,6 +53,7 @@ func load_image():
 	"/" + data.card_type + "/" + data.card_name + ".png"
 	if FileAccess.file_exists(card_image_path):
 		%CardImage.texture = load(card_image_path)
+		return load(card_image_path)
 	else:
 		print("No Image Texture found")
 

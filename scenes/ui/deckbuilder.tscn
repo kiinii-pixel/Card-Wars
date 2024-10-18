@@ -1,4 +1,4 @@
-[gd_scene load_steps=482 format=3 uid="uid://cpt2c1rjk4b6b"]
+[gd_scene load_steps=483 format=3 uid="uid://cpt2c1rjk4b6b"]
 
 [ext_resource type="Script" path="res://scripts/ui/deckbuilder.gd" id="1_4e2jx"]
 [ext_resource type="Resource" path="res://data/cards/Abdominal Snowman.tres" id="5_tkhjr"]
@@ -480,6 +480,7 @@
 [ext_resource type="Resource" path="res://data/cards/Young ZebraCorn Husker.tres" id="479_vajwh"]
 [ext_resource type="Texture2D" uid="uid://b3xeo685h6h7v" path="res://assets/images/cards/art/Rainbow/Creature/The Pig.png" id="480_fog4a"]
 [ext_resource type="Resource" path="res://data/cards/ZaZo's Magic Seeds.tres" id="480_odbm7"]
+[ext_resource type="Script" path="res://scripts/ui/deck_list.gd" id="481_32nnb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tkwq5"]
 size = Vector2(345, 830)
@@ -491,6 +492,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 script = ExtResource("1_4e2jx")
 
 [node name="TextureRect" type="TextureRect" parent="."]
@@ -537,12 +539,14 @@ offset_left = 441.0
 offset_top = 110.0
 offset_right = 1505.0
 offset_bottom = 1009.0
+mouse_filter = 2
 horizontal_scroll_mode = 0
 
 [node name="GridContainer" type="GridContainer" parent="ScrollContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+mouse_filter = 2
 theme_override_constants/h_separation = 200
 theme_override_constants/v_separation = 300
 columns = 6
@@ -563,9 +567,10 @@ fixed_icon_size = Vector2i(32, 32)
 item_0/text = "The Pig"
 item_0/icon = ExtResource("480_fog4a")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="ItemList"]
+[node name="DeckList" type="StaticBody2D" parent="ItemList"]
+script = ExtResource("481_32nnb")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ItemList/StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ItemList/DeckList"]
 position = Vector2(162.5, 405)
 shape = SubResource("RectangleShape2D_tkwq5")
 

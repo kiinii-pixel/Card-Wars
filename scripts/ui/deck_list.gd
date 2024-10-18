@@ -1,0 +1,1 @@
+class_name DeckList extends StaticBody2D

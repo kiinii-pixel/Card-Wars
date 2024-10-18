@@ -40,12 +40,15 @@ func _on_child_order_changed():
 		if get_child_count() > 1:
 			hand_ratio = float(card.get_index()) / float(hand.get_child_count() - 1)
 
+			# Adjust Collision Shape Size depending on hand_ration?
+
 			hand_width = get_child_count() * 60
 			if hand_width > MAX_HAND_WIDTH:
 				hand_width = MAX_HAND_WIDTH
 			hand_height = get_child_count() * 5
 			if hand_height > MAX_HAND_HEIGHT:
 				hand_height = MAX_HAND_HEIGHT
+
 
 		var destination = hand.global_transform #set destination to hand position
 		#change the x position of the current card, based on its index

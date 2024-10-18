@@ -14,6 +14,8 @@ func update(_delta : float):
 
 
 func _on_drag_component_mouse_entered() -> void:
+	print("mouse entered")
 	if not Input.is_action_pressed("action_key"):
 		drag_component.mouse_entered.disconnect(_on_drag_component_mouse_entered)
 		Transitioned.emit(self, "hovering")
+		print("hovering")

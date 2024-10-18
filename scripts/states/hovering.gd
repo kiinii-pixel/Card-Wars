@@ -1,4 +1,4 @@
-class_name hovering extends State # Mouse is hovering over Card in Hand
+class_name Hovering extends State # Mouse is hovering over Card in Hand
 
 
 const SCALE_NORMAL = Vector2(0.25, 0.25)
