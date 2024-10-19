@@ -1,6 +1,6 @@
 class_name Landscape extends Node2D
 
-#@export var landscape_type = 'blueplains'
+var empty : bool = true
 @export var art_variant = 3
 @export_enum("blueplains", "cornfields", "icylands", "nicelands",
 "sanylands", "useswamps") var landscape_type

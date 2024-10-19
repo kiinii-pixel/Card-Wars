@@ -11,6 +11,7 @@ func enter():
 	card.scale = Vector2(0.5, 0.5)
 	Global.is_dragging = false
 	card.reparent(card.body_ref)
+	card.body_ref.empty = false
 	await drag_component.move(card.body_ref.global_position, 0.2)
 	card.position = Vector2(0, 0)
 	card.z_index = 4

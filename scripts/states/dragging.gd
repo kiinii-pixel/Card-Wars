@@ -20,7 +20,7 @@ func update(_delta : float):
 func _on_body_entered(body : Node2D):
 	if body is Landscape:
 		remove_preview(body)
-		if body.get_child_count() == 3: # If landscape is empty
+		if body.empty:
 			card.is_inside = true # card is now inside a landcape
 			card.body_ref = body # body_ref set to entered landscape
 			create_preview()
