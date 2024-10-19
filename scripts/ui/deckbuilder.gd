@@ -22,17 +22,6 @@ func add_card():
 		else:
 			card.queue_free()
 
-#		var sprite = Sprite2D.new()
-#		var sub_viewport = card.%SubViewport # Used to Render the Card again
-#		var img = sub_viewport.get_viewport().get_texture().get_image() # Retrieve the captured Image using get_image().
-#		var tex = ImageTexture.create_from_image(img) 		# Convert Image to ImageTexture.
-#		sprite.texture = tex # Set sprite texture.
-#		$ScrollContainer/GridContainer.add_child(tex)
-
-#func load_deck():
-#	for card in cards: # add cards to deck in random order
-#		add_card(cards.pick_random())
-
 
 func _on_back_pressed():
 	get_tree().change_scene_to_file("res://scenes/ui/menu.tscn")

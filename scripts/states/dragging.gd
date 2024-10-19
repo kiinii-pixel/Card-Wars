@@ -29,6 +29,7 @@ func _on_body_entered(body : Node2D):
 		item_list.add_item(card.data.card_name, card.load_image())
 		card.queue_free()
 
+
 func create_preview():
 	if card.is_inside and drag_component.allow_drag:
 		var sprite = Sprite2D.new() # create new sprite

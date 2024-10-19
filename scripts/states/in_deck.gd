@@ -8,4 +8,3 @@ func enter():
 func update(_delta : float):
 	if card.get_parent() is Hand or card.get_parent() is GridContainer:
 		Transitioned.emit(self, "in_hand")
-		print("transitioned")
