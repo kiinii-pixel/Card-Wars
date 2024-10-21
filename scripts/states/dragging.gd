@@ -27,6 +27,7 @@ func _on_body_entered(body : Node2D):
 	if body is DeckList:
 		var item_list = body.get_parent()
 		item_list.add_item(card.data.card_name, card.load_image())
+		#item_list.add_item(card.data.card_name, card.image)
 		card.queue_free()
 
 
