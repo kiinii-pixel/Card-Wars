@@ -1,10 +1,10 @@
 class_name Dragging extends State # Dragging a Card
 
 
-
 func enter():
 	Global.is_dragging = true
-	drag_component.body_entered.connect(_on_body_entered)
+	if not drag_component.body_entered.is_connected(_on_body_entered):
+		drag_component.body_entered.connect(_on_body_entered)
 
 
 func update(_delta : float):
@@ -15,6 +15,10 @@ func update(_delta : float):
 		drag_component.body_entered.disconnect(_on_body_entered)
 		Transitioned.emit(self, "in_hand")
 		Global.is_dragging = false
+
+
+func exit():
+	card.drag_component.selected = false
 
 
 func _on_body_entered(body : Node2D):
@@ -28,7 +32,7 @@ func _on_body_entered(body : Node2D):
 		var item_list = body.get_parent()
 		item_list.add_item(card.data.card_name, card.load_image())
 		#item_list.add_item(card.data.card_name, card.image)
-		card.queue_free()
+		#card.queue_free()
 
 
 func create_preview():

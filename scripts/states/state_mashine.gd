@@ -36,5 +36,5 @@ func on_child_transitioned(state, new_state_name):
 		current_state.exit()
 	
 	new_state.enter()
-	print("transitioned from", current_state, "to", new_state)
+	print(get_owner().name + " transitioned from " + current_state.name + " to " + new_state.name)
 	current_state = new_state

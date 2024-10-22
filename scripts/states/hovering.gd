@@ -23,8 +23,9 @@ func update(_delta : float):
 
 
 func _on_drag_component_mouse_exited() -> void:
-	drag_component.selected = false
-	Transitioned.emit(self, "in_hand")
+	if card.state_mashine.current_state is Hovering:
+		drag_component.selected = false
+		Transitioned.emit(self, "in_hand")
 	
 	#if get_owner().scale != SCALE_NORMAL and drag_component.allow_drag and not drag_component.selected:
 		#print("happening")

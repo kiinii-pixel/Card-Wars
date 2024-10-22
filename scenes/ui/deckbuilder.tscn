@@ -562,6 +562,7 @@ offset_left = -0.600098
 offset_top = 0.279984
 offset_right = 0.319946
 offset_bottom = -0.360046
+mouse_filter = 2
 item_count = 1
 fixed_icon_size = Vector2i(32, 32)
 item_0/text = "The Pig"
