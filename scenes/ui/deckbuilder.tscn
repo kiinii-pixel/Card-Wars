@@ -1,4 +1,4 @@
-[gd_scene load_steps=483 format=3 uid="uid://cpt2c1rjk4b6b"]
+[gd_scene load_steps=484 format=3 uid="uid://cpt2c1rjk4b6b"]
 
 [ext_resource type="Script" path="res://scripts/ui/deckbuilder.gd" id="1_4e2jx"]
 [ext_resource type="Resource" path="res://data/cards/Abdominal Snowman.tres" id="5_tkhjr"]
@@ -478,6 +478,7 @@
 [ext_resource type="Texture2D" uid="uid://bjsk5ehgiwas3" path="res://assets/images/other/background.jpg" id="478_60h8k"]
 [ext_resource type="PackedScene" uid="uid://5w02c5yvt88x" path="res://scenes/ui/button.tscn" id="479_fuatx"]
 [ext_resource type="Resource" path="res://data/cards/Young ZebraCorn Husker.tres" id="479_vajwh"]
+[ext_resource type="Theme" uid="uid://mmfpajwi7rd7" path="res://assets/themes/pendletheme.tres" id="480_0t632"]
 [ext_resource type="Texture2D" uid="uid://b3xeo685h6h7v" path="res://assets/images/cards/art/Rainbow/Creature/The Pig.png" id="480_fog4a"]
 [ext_resource type="Resource" path="res://data/cards/ZaZo's Magic Seeds.tres" id="480_odbm7"]
 [ext_resource type="Script" path="res://scripts/ui/deck_list.gd" id="481_32nnb"]
@@ -535,11 +536,11 @@ text = "Back"
 [node name="ScrollContainer" type="ScrollContainer" parent="."]
 clip_contents = false
 layout_mode = 0
-offset_left = 441.0
-offset_top = 110.0
-offset_right = 1505.0
-offset_bottom = 1009.0
-mouse_filter = 2
+offset_left = 473.0
+offset_top = 272.0
+offset_right = 1391.0
+offset_bottom = 955.0
+theme = ExtResource("480_0t632")
 horizontal_scroll_mode = 0
 
 [node name="GridContainer" type="GridContainer" parent="ScrollContainer"]
@@ -549,7 +550,7 @@ size_flags_vertical = 3
 mouse_filter = 2
 theme_override_constants/h_separation = 200
 theme_override_constants/v_separation = 300
-columns = 6
+columns = 5
 
 [node name="ItemList" type="ItemList" parent="."]
 layout_mode = 1

@@ -18,7 +18,7 @@ func update(_delta : float):
 
 
 func exit():
-	card.drag_component.selected = false
+	pass
 
 
 func _on_body_entered(body : Node2D):
