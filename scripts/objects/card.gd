@@ -31,13 +31,7 @@ func load_card():
 	cost = data.cost
 	load_values()
 	load_image()
-	# Load Frame
-	var frame_path : String
-	if data.card_type == "Creature":
-		frame_path = "res://assets/images/frames/" + data.landscape + "_Creature.png"
-	else:
-		frame_path = "res://assets/images/frames/" + data.landscape + ".png"
-	%CardFrame.texture = load(frame_path)
+	%CardFrame.texture = data.frame
 	# Adjust name size
 	var max_characters : int = 12
 	var font_size = %CardName.get_theme_font_size("font_size")
@@ -48,12 +42,9 @@ func load_card():
 
 # Load Card Image
 func load_image():
-	# Load Image
-	var card_image_path : String = "res://assets/images/cards/art/" + data.landscape + \
-	"/" + data.card_type + "/" + data.card_name + ".png"
-	if FileAccess.file_exists(card_image_path):
-		%CardImage.texture = load(card_image_path)
-		return load(card_image_path)
+	if data.image:
+		%CardImage.texture = data.image
+		return data.image
 	else:
 		print("No Image Texture found")
 
@@ -104,7 +95,7 @@ func reset_values():
 	cost = data.cost
 	%CostLabel.text = String.num_int64(cost)
 
-
+# When Card enteres a Physics body
 func _on_drag_component_body_exited(body):
 	if body_ref == body:
 		is_inside = false

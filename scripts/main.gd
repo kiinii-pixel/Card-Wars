@@ -8,7 +8,6 @@ var deck : Array # Empty Array that a deck can be loaded into.
 func _ready():
 	deck = load("res://data/decks/finn.tres").deck # Load Finn's Deck
 	$Hand.draw_multiple(5) # Draw 5 Cards to hand
-	dir_contents("res://data/cards/")
 
 
 # When the Draw Card Button is pressed
@@ -76,34 +75,3 @@ func discard(creature):
 	creature.position = Vector2(0, 0)
 	creature.scale = Vector2(0.25, 0.25)
 	creature.reset_values()
-
-
-func dir_contents(path):
-	var dir = DirAccess.open(path)
-	if dir:
-		dir.list_dir_begin()
-		var file_name = dir.get_next()
-		while file_name != "":
-			if dir.current_is_dir():
-				print("Found directory: " + file_name)
-			else:
-				var imported_resource : Resource = load(path + file_name)
-				var image = get_image(imported_resource)
-				imported_resource.image = image
-				ResourceSaver.save(imported_resource, path + file_name)
-			file_name = dir.get_next()
-	else:
-		print("An error occurred when trying to access the path.")
-
-func get_frame(data):
-	var frame_path : String
-	if data.card_type == "Creature":
-		frame_path = "res://assets/images/frames/" + data.landscape + "_Creature.png"
-	else:
-		frame_path = "res://assets/images/frames/" + data.landscape + ".png"
-	return load(frame_path)
-
-func get_image(data):
-	var card_image_path : String = "res://assets/images/cards/art/" + data.landscape + \
-	"/" + data.card_type + "/" + data.card_name + ".png"
-	return load(card_image_path)
