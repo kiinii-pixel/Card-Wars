@@ -13,6 +13,5 @@ cost = 1
 description = "Each time a Creature you control leaves play, you may move Necromancer to that Creature's empty Landscape."
 landscape = "Blue Plains"
 card_type = "Creature"
-image = "Necromancer.jpg"
 id = 300
 frame = ExtResource("1_2ld7g")

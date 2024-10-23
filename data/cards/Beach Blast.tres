@@ -13,6 +13,5 @@ cost = 1
 description = "Reveal the top 3 cards of your deck. Draw 1 and discard the rest. After playing this, you may put it into your Teammate's hand."
 landscape = "Rainbow"
 card_type = "Spell"
-image = "Beach Blast.jpg"
 id = 22
 frame = ExtResource("1_djhp6")

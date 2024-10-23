@@ -13,6 +13,5 @@ cost = 1
 description = "Fatigued Librarian comes into play exhausted and does not ready at the start of your turn. Whenever Fatigued Librarian changes Lanes, ready it."
 landscape = "Blue Plains"
 card_type = "Creature"
-image = "Fatigued Librarian.jpg"
 id = 142
 frame = ExtResource("1_8mye6")

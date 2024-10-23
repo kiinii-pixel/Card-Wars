@@ -13,6 +13,5 @@ cost = 1
 description = "FLOOP >>> Draw a card for each Building you control."
 landscape = "Cornfield"
 card_type = "Creature"
-image = "Popcorn Butteredfly.jpg"
 id = 334
 frame = ExtResource("1_iyhma")

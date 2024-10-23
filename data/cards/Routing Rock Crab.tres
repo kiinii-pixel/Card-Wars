@@ -13,6 +13,5 @@ cost = 2
 description = "Each time Routing Rock Crab takes Damage from a Creature, you may move that Creature to an adjacent empty Landscape."
 landscape = "SandyLands"
 card_type = "Creature"
-image = "Routing Rock Crab.jpg"
 id = 368
 frame = ExtResource("1_mk7kp")

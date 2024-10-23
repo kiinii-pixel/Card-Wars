@@ -13,6 +13,5 @@ cost = 1
 description = "FLOOP and discard a SandyLands card >>> Deal 1 Damage to each opposing Creature."
 landscape = "Cornfield"
 card_type = "Creature"
-image = "Golden Jackal.jpg"
 id = 194
 frame = ExtResource("1_j4w35")

@@ -13,6 +13,5 @@ cost = 2
 description = "If one or more other SandyLands Creatures enter play during your turn, Wall of Sand has +2 ATK this turn."
 landscape = "SandyLands"
 card_type = "Creature"
-image = "Wall of Sand.jpg"
 id = 487
 frame = ExtResource("1_xl73f")

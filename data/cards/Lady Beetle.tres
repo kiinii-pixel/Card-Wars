@@ -13,6 +13,5 @@ cost = 1
 description = "At the start of your turn, you may return a Creature you control with 2 or fewer DEF remaining to its owner's hand."
 landscape = "SandyLands"
 card_type = "Creature"
-image = "Lady Beetle.jpg"
 id = 260
 frame = ExtResource("1_fjrnw")

@@ -13,6 +13,5 @@ cost = 2
 description = "Sea Hag has +1 ATK while attacking a Creature that is on a Useless Swamp Landscape."
 landscape = "Rainbow"
 card_type = "Creature"
-image = "Sea Hag.jpg"
 id = 388
 frame = ExtResource("1_0e3q4")

@@ -13,6 +13,5 @@ cost = 1
 description = "At the start of your turn, you may return Sandmagus to its owner's hand. If you do, each other Creature you control has +1 ATK this turn."
 landscape = "SandyLands"
 card_type = "Creature"
-image = "Sandmagus.jpg"
 id = 381
 frame = ExtResource("1_pmk7t")

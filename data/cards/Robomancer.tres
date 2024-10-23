@@ -13,6 +13,5 @@ cost = 2
 description = "+1 ATK for each Creature that changed Lanes during your turn."
 landscape = "Blue Plains"
 card_type = "Creature"
-image = "Robomancer.jpg"
 id = 364
 frame = ExtResource("1_18u0b")

@@ -13,6 +13,5 @@ cost = 1
 description = "Woadic Matriarch has +1 ATK for each Rainbow Creature you control."
 landscape = "Blue Plains"
 card_type = "Creature"
-image = "Woadic Matriarch.jpg"
 id = 502
 frame = ExtResource("1_i54mc")

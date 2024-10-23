@@ -13,6 +13,5 @@ cost = 2
 description = "+2 ATK for each face-down Landscape in play."
 landscape = "Cornfield"
 card_type = "Creature"
-image = "Earth Mover.jpg"
 id = 122
 frame = ExtResource("1_d4rdq")

@@ -13,6 +13,5 @@ cost = 1
 description = "Discard the top 2 cards of your deck. If they have the same cost, deal Damage equal to their combined cost to target opponent. After playing this, you may put it into your Teammate's hand."
 landscape = "Rainbow"
 card_type = "Spell"
-image = "Matchy Matchy.jpg"
 id = 289
 frame = ExtResource("1_7x2pl")

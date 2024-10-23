@@ -13,6 +13,5 @@ cost = 2
 description = "Apple Bully's Landscape cannot be flipped down by effects opponents control."
 landscape = "Cornfield"
 card_type = "Creature"
-image = "Apple Bully.jpg"
 id = 11
 frame = ExtResource("1_hh1t6")

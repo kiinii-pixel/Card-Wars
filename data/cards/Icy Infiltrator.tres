@@ -13,6 +13,5 @@ cost = 0
 description = "When Icy Infiltrator enters play, Freeze its Landscape."
 landscape = "Rainbow"
 card_type = "Creature"
-image = "Icy Infiltrator.jpg"
 id = 239
 frame = ExtResource("1_vgrd8")

@@ -13,6 +13,5 @@ cost = 1
 description = "+4 ATK if both Landscapes in this Lane have Frozen tokens on them."
 landscape = "IcyLands"
 card_type = "Creature"
-image = "Glacier Racer.jpg"
 id = 188
 frame = ExtResource("1_5d5i4")

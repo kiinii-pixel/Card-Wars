@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://deav5htpk0q2h"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://deav5htpk0q2h"]
 
 [ext_resource type="Texture2D" uid="uid://be2gbw036jfuv" path="res://assets/images/frames/Blue Plains_Creature.png" id="1_3y5gh"]
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_clucp"]
+[ext_resource type="Texture2D" uid="uid://dg2itf8osgeid" path="res://assets/images/cards/art/Blue Plains/Creature/Travelin' Skeleton.png" id="2_2oj3q"]
 
 [resource]
 script = ExtResource("1_clucp")
@@ -13,6 +14,6 @@ cost = 1
 description = "FLOOP >>> Travelin' Skeleton and another Creature you control change Lanes with each other."
 landscape = "Blue Plains"
 card_type = "Creature"
-image = "Travelin' Skeleton.jpg"
 id = 472
+image = ExtResource("2_2oj3q")
 frame = ExtResource("1_3y5gh")

@@ -13,6 +13,5 @@ cost = 0
 description = "Flip target Landscape face down until the start of your next turn."
 landscape = "Rainbow"
 card_type = "Spell"
-image = "Rock Out!.jpg"
 id = 366
 frame = ExtResource("1_4ls6c")

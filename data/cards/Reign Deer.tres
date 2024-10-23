@@ -13,6 +13,5 @@ cost = 2
 description = "FLOOP >>> Draw a card for each Landscape with a Frozen token on it players control."
 landscape = "IcyLands"
 card_type = "Creature"
-image = "Reign Deer.jpg"
 id = 357
 frame = ExtResource("1_k0sv3")

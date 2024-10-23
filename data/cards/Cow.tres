@@ -13,6 +13,5 @@ cost = 0
 description = "Moo."
 landscape = "Rainbow"
 card_type = "Creature"
-image = "Cow.jpg"
 id = 95
 frame = ExtResource("1_rjhft")

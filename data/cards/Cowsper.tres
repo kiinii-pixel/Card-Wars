@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://c0bbpb2yqy5hr"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://c0bbpb2yqy5hr"]
 
 [ext_resource type="Texture2D" uid="uid://b0p6pgobeqtuk" path="res://assets/images/frames/Cornfield_Creature.png" id="1_abtlh"]
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_e6lkq"]
+[ext_resource type="Texture2D" uid="uid://b8o0st54lfbuk" path="res://assets/images/cards/art/Cornfield/Creature/Cowsper.png" id="2_p0p2l"]
 
 [resource]
 script = ExtResource("1_e6lkq")
@@ -13,6 +14,6 @@ cost = 2
 description = "Each adjacent Cornfield Creature has +1 DEF."
 landscape = "Cornfield"
 card_type = "Creature"
-image = "Cowsper.jpg"
 id = 96
+image = ExtResource("2_p0p2l")
 frame = ExtResource("1_abtlh")

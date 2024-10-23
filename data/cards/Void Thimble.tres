@@ -13,6 +13,5 @@ cost = 0
 description = "Lose 2 Hit Points, gain 1 Action."
 landscape = "Rainbow"
 card_type = "Spell"
-image = "Void Thimble.jpg"
 id = 482
 frame = ExtResource("1_3kgwc")

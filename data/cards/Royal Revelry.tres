@@ -13,6 +13,5 @@ cost = 1
 description = "If target Creature you control deals 1 or more Damage to an opponent this turn, deal 2 Damage to that opponent. After playing this, you may put it into your Teammate's hand."
 landscape = "Rainbow"
 card_type = "Spell"
-image = "Royal Revelry.jpg"
 id = 369
 frame = ExtResource("1_80g0r")

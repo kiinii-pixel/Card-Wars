@@ -13,6 +13,5 @@ cost = 2
 description = "When a SandyLands Creature enters play during your turn (including Shark), it has +1 ATK this turn."
 landscape = "SandyLands"
 card_type = "Creature"
-image = "Shark.jpg"
 id = 391
 frame = ExtResource("1_nux2e")

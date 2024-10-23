@@ -13,6 +13,5 @@ cost = 1
 description = "Heal up to 3 Damage from target Creature you control."
 landscape = "NiceLands"
 card_type = "Spell"
-image = "Blue Candy.jpg"
 id = 35
 frame = ExtResource("1_ont7s")

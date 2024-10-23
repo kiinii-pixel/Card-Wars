@@ -13,6 +13,5 @@ cost = 0
 description = ""
 landscape = "Rainbow"
 card_type = "Creature"
-image = "Pony.jpg"
 id = 333
 frame = ExtResource("1_hvjpp")

@@ -13,6 +13,5 @@ cost = 0
 description = "Deal 1 Damage to target Creature for every card you have drawn this turn."
 landscape = "Rainbow"
 card_type = "Spell"
-image = "Sword Bouquet.jpg"
 id = 445
 frame = ExtResource("1_rclpt")

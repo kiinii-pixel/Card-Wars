@@ -13,6 +13,5 @@ cost = 1
 description = "+1 ATK for each card players (including you) have discarded from their hand this turn."
 landscape = "Useless Swamp"
 card_type = "Creature"
-image = "Black Paladin.jpg"
 id = 29
 frame = ExtResource("1_kwo3p")

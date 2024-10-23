@@ -13,6 +13,5 @@ cost = 0
 description = "Target Creature you control has -5 ATK this turn. Draw a card."
 landscape = "Rainbow"
 card_type = "Spell"
-image = "Ham Fist.jpg"
 id = 211
 frame = ExtResource("1_by4w5")

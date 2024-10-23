@@ -13,6 +13,5 @@ cost = 1
 description = "Each Creature you control with a Building on its Landscape had +2 ATK this turn."
 landscape = "Cornfield"
 card_type = "Spell"
-image = "Log Rhythm.jpg"
 id = 270
 frame = ExtResource("1_pj5cw")

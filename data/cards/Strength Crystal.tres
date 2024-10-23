@@ -13,6 +13,5 @@ cost = 2
 description = "Target player draws five cards."
 landscape = "Blue Plains"
 card_type = "Spell"
-image = "Strength Crystal.jpg"
 id = 436
 frame = ExtResource("1_csot8")

@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://dbyqrq03avtn0"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://dbyqrq03avtn0"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_agxb3"]
 [ext_resource type="Texture2D" uid="uid://be2gbw036jfuv" path="res://assets/images/frames/Blue Plains_Creature.png" id="1_v5sbl"]
+[ext_resource type="Texture2D" uid="uid://ct443v1cqy88s" path="res://assets/images/cards/art/Blue Plains/Creature/X-Large Spirit Soldier.png" id="2_uy4yl"]
 
 [resource]
 script = ExtResource("1_agxb3")
@@ -13,6 +14,6 @@ cost = 1
 description = "Each adjacent Creature has +1 ATK."
 landscape = "Blue Plains"
 card_type = "Creature"
-image = "X-Large Spirit Soldier.jpg"
 id = 505
+image = ExtResource("2_uy4yl")
 frame = ExtResource("1_v5sbl")

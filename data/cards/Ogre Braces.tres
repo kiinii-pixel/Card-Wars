@@ -13,6 +13,5 @@ cost = 1
 description = "You heal 1 Hit Point for every 5 cards in your discard pile."
 landscape = "Useless Swamp"
 card_type = "Spell"
-image = "Ogre Braces.jpg"
 id = 305
 frame = ExtResource("1_lrv2x")

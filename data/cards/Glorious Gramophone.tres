@@ -13,6 +13,5 @@ cost = 1
 description = "Draw 4 cards, then discard 2 cards."
 landscape = "Blue Plains"
 card_type = "Spell"
-image = "Glorious Gramophone.jpg"
 id = 189
 frame = ExtResource("1_18ur8")

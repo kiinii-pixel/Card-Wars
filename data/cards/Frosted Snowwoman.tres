@@ -13,6 +13,5 @@ cost = 2
 description = "When Frosted Snowwoman enters play, Freeze both Landscapes in her Lane."
 landscape = "IcyLands"
 card_type = "Creature"
-image = "Frosted Snowwoman.jpg"
 id = 165
 frame = ExtResource("1_5c22r")

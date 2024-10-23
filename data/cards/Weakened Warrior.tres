@@ -13,6 +13,5 @@ cost = 2
 description = "Weakened Warrior comes into play exhausted and does not ready at the start of your turn. Whenever Weakened Warrior changes Lanes, ready it."
 landscape = "Blue Plains"
 card_type = "Creature"
-image = "Weakened Warrior.jpg"
 id = 490
 frame = ExtResource("1_psqr7")

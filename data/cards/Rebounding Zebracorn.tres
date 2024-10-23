@@ -13,6 +13,5 @@ cost = 1
 description = "+1 ATK for each different Landscape type you control."
 landscape = "Cornfield"
 card_type = "Creature"
-image = "Rebounding Zebracorn.jpg"
 id = 353
 frame = ExtResource("1_g7e0y")

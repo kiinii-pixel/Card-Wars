@@ -13,6 +13,5 @@ cost = 1
 description = "Each time a Creature you control changes Lanes, heal 2 Damage from Biomancer."
 landscape = "Blue Plains"
 card_type = "Creature"
-image = "Biomancer.jpg"
 id = 27
 frame = ExtResource("1_6acvt")

@@ -13,6 +13,5 @@ cost = 1
 description = "When Green ZebraCorn attacks, deal 1 Damage to target opponent."
 landscape = "Cornfield"
 card_type = "Creature"
-image = "Green ZebraCorn.jpg"
 id = 208
 frame = ExtResource("1_3y77k")

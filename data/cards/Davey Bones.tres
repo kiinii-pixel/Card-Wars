@@ -13,6 +13,5 @@ cost = 0
 description = "Ghost has +2 ATK while defending against a Creature that is on a SandyLands Landscape."
 landscape = "Rainbow"
 card_type = "Creature"
-image = "Davey Bones.jpg"
 id = 106
 frame = ExtResource("1_edf3c")

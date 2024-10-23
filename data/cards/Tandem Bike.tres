@@ -13,6 +13,5 @@ cost = 0
 description = "Choose a Creature you control and put it into its owner's hand. Then choose another player. That player chooses a creature they control and puts it into its owner's hand."
 landscape = "Rainbow"
 card_type = "Spell"
-image = "Tandem Bike.jpg"
 id = 448
 frame = ExtResource("1_dbfat")

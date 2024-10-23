@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://b34chhessslvg"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://b34chhessslvg"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_3p0ig"]
 [ext_resource type="Texture2D" uid="uid://b0p6pgobeqtuk" path="res://assets/images/frames/Cornfield_Creature.png" id="1_dht2x"]
+[ext_resource type="Texture2D" uid="uid://etf6tsyg5mg0" path="res://assets/images/cards/art/Cornfield/Creature/Wall of Ears.png" id="2_vgfws"]
 
 [resource]
 script = ExtResource("1_3p0ig")
@@ -13,6 +14,6 @@ cost = 1
 description = "+1 DEF for each Cornfield Landscape in play (counting all players)."
 landscape = "Cornfield"
 card_type = "Creature"
-image = "Wall of Ears.jpg"
 id = 486
+image = ExtResource("2_vgfws")
 frame = ExtResource("1_dht2x")

@@ -13,6 +13,5 @@ cost = 2
 description = "Each time a Creature enters play during your turn on an adjacent Landscape, Slashy Sand Crab deals 2 Damage to a Creature in its Lane."
 landscape = "SandyLands"
 card_type = "Creature"
-image = "Slashy Sand Crab.jpg"
 id = 403
 frame = ExtResource("1_k46dx")

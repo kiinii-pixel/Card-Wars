@@ -13,6 +13,5 @@ cost = 1
 description = "+2 ATK for each face-down Landscape in play."
 landscape = "Cornfield"
 card_type = "Creature"
-image = "Quake Maker.jpg"
 id = 349
 frame = ExtResource("1_kksk1")

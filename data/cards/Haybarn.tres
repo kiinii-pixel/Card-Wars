@@ -13,6 +13,5 @@ cost = 1
 description = "Pay 1 Action, FLOOP >>> If this Landscape is empty, play a \"Feedman\" from your discard pile onto this Landscape for free. If Haybarn leaves play, destroy the Feedman on its Landscape."
 landscape = "Cornfield"
 card_type = "Building"
-image = "Haybarn.jpg"
 id = 213
 frame = ExtResource("1_8cgny")

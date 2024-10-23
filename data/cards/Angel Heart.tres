@@ -13,6 +13,5 @@ cost = 0
 description = "While Angel Heart has exactly 3 Damage on it, it has +3 ATK."
 landscape = "Rainbow"
 card_type = "Creature"
-image = "Angel Heart.jpg"
 id = 8
 frame = ExtResource("1_ui35b")

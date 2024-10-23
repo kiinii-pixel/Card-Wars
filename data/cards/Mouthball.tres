@@ -13,6 +13,5 @@ cost = 1
 description = "+2 DEF for every 5 cards in your discard pile."
 landscape = "Useless Swamp"
 card_type = "Creature"
-image = "Mouthball.jpg"
 id = 294
 frame = ExtResource("1_hht54")

@@ -13,6 +13,5 @@ cost = 2
 description = "Play only if you control one or fewer Creatures and have 15 or fewer Hit Points. Move target Creature to target empty Landscape you control."
 landscape = "Blue Plains"
 card_type = "Spell"
-image = "Magenapping.jpg"
 id = 281
 frame = ExtResource("1_e5qvw")

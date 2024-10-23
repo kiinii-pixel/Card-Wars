@@ -13,6 +13,5 @@ cost = 1
 description = "When Sandhorn Devil enters play, deal 1 Damage to each Creature in play, (including each of your Creatures)."
 landscape = "SandyLands"
 card_type = "Creature"
-image = "Sandhorn Devil.jpg"
 id = 380
 frame = ExtResource("1_ddj4a")

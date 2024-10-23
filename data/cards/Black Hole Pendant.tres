@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://bqtpntgo8r37b"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://bqtpntgo8r37b"]
 
 [ext_resource type="Texture2D" uid="uid://tqpubod46faw" path="res://assets/images/frames/Rainbow.png" id="1_8e3bv"]
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_aduxw"]
+[ext_resource type="Texture2D" uid="uid://c04slmbe8c28b" path="res://assets/images/cards/art/Rainbow/Spell/Black Hole Pendant.png" id="2_3sylp"]
 
 [resource]
 script = ExtResource("1_aduxw")
@@ -13,6 +14,6 @@ cost = 0
 description = "Target Creature has +X ATK this turn, where X is the number of different Landscape types your opponent controls."
 landscape = "Rainbow"
 card_type = "Spell"
-image = "Black Hole Pendant.jpg"
 id = 28
+image = ExtResource("2_3sylp")
 frame = ExtResource("1_8e3bv")

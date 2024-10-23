@@ -13,6 +13,5 @@ cost = 2
 description = "FLOOP >>> Reveal the top 3 cards of your deck. Play a revealed Teamwork for free, and then discard the other cards."
 landscape = "Useless Swamp"
 card_type = "Creature"
-image = "InvestiGator.jpg"
 id = 250
 frame = ExtResource("1_aua77")

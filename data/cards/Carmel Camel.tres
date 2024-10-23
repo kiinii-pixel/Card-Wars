@@ -13,6 +13,5 @@ cost = 1
 description = "When a Creature you own leaves play, you may put it underneath this card instead. + 1 ATK and + 1 DEF for each card under this. When this card leaves play, discard all cards under it."
 landscape = "SandyLands"
 card_type = "Creature"
-image = "Carmel Camel.jpg"
 id = 63
 frame = ExtResource("1_m0ux2")

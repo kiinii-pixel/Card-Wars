@@ -13,6 +13,5 @@ cost = 1
 description = "Count the number of Landscapes with Frozen tokens. Heal 1 damage from that many friendly Creatures."
 landscape = "IcyLands"
 card_type = "Spell"
-image = "Frozen Lemon Aid.jpg"
 id = 170
 frame = ExtResource("1_eh2uq")

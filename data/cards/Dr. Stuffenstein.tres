@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://bmbbxydh3k6kb"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://bmbbxydh3k6kb"]
 
 [ext_resource type="Texture2D" uid="uid://b0rsdd3n7u8r4" path="res://assets/images/frames/NiceLands_Creature.png" id="1_4n5os"]
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_hc3f4"]
+[ext_resource type="Texture2D" uid="uid://ce0r6p5ubwjdn" path="res://assets/images/cards/art/NiceLands/Creature/Dr. Stuffenstein.png" id="2_r7s86"]
 
 [resource]
 script = ExtResource("1_hc3f4")
@@ -13,6 +14,6 @@ cost = 2
 description = "FLOOP >>> Heal 2 Damage from a Creature on an adjacent Landscape. If Dr. Stuffenstein has 5 or more Damage on it, heal 2 Damage from each of your Creatures instead."
 landscape = "NiceLands"
 card_type = "Creature"
-image = "Dr. Stuffenstein.jpg"
 id = 113
+image = ExtResource("2_r7s86")
 frame = ExtResource("1_4n5os")

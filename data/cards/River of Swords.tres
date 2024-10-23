@@ -13,6 +13,5 @@ cost = 2
 description = "Creatures you control each have +2 ATK this turn. Draw 2 cards."
 landscape = "Rainbow"
 card_type = "Spell"
-image = "River of Swords.jpg"
 id = 363
 frame = ExtResource("1_0u6wv")

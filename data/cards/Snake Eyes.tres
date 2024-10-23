@@ -13,6 +13,5 @@ cost = 1
 description = "Each of your Creatures has +2 ATK this turn while attacking a Creature that is on a Useless Swamp Landscape."
 landscape = "SandyLands"
 card_type = "Spell"
-image = "Snake Eyes.jpg"
 id = 409
 frame = ExtResource("1_3n50o")

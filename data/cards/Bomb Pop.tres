@@ -13,6 +13,5 @@ cost = 1
 description = "Destroy target Creature on a Landscape with a Frozen token on it."
 landscape = "IcyLands"
 card_type = "Spell"
-image = "Bomb Pop.jpg"
 id = 48
 frame = ExtResource("1_xah14")

@@ -13,6 +13,5 @@ cost = 1
 description = "Heal or deal 1 Damage to target Creature. After playing this, you may put it into your Teammate's hand."
 landscape = "Rainbow"
 card_type = "Spell"
-image = "Extreme High Five.jpg"
 id = 132
 frame = ExtResource("1_sgn85")

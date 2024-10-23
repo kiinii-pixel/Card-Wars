@@ -13,6 +13,5 @@ cost = 1
 description = "At the start of your turn, move Drained Cleric to an empty Landscape you control. If you cannot, discard a card."
 landscape = "Blue Plains"
 card_type = "Creature"
-image = "Drained Cleric.jpg"
 id = 117
 frame = ExtResource("1_kot1g")

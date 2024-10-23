@@ -13,6 +13,5 @@ cost = 1
 description = "Pay 1 Action >>> Deal 1 Damage to target Creature in this Lane and 1 Damage to its controller."
 landscape = "Cornfield"
 card_type = "Building"
-image = "Silo of Justice.jpg"
 id = 397
 frame = ExtResource("1_nplmr")

@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://c7xjxwnu8wlhw"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://c7xjxwnu8wlhw"]
 
 [ext_resource type="Texture2D" uid="uid://b0rsdd3n7u8r4" path="res://assets/images/frames/NiceLands_Creature.png" id="1_jpn8c"]
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_v5ygp"]
+[ext_resource type="Texture2D" uid="uid://de6jjbtyih3aq" path="res://assets/images/cards/art/NiceLands/Creature/Wall of Chocolate.png" id="2_wj2le"]
 
 [resource]
 script = ExtResource("1_v5ygp")
@@ -13,6 +14,6 @@ cost = 2
 description = "While Wall of Chocolate has no Damage on it, it has +3 ATK."
 landscape = "NiceLands"
 card_type = "Creature"
-image = "Wall of Chocolate.jpg"
 id = 485
+image = ExtResource("2_wj2le")
 frame = ExtResource("1_jpn8c")

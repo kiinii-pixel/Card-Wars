@@ -13,6 +13,5 @@ cost = 1
 description = "Discard a card >>> NaviGator gets +ATK equal to the cost of the discarded card. (Use only once during each of your turns.)"
 landscape = "Useless Swamp"
 card_type = "Creature"
-image = "NaviGator.jpg"
 id = 299
 frame = ExtResource("1_cneit")

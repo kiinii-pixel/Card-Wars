@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://b132vbav8rpqp"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://b132vbav8rpqp"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_kakmf"]
 [ext_resource type="Texture2D" uid="uid://b0p6pgobeqtuk" path="res://assets/images/frames/Cornfield_Creature.png" id="1_nhgch"]
+[ext_resource type="Texture2D" uid="uid://bn1304wfucjf0" path="res://assets/images/cards/art/Cornfield/Creature/Yellow Gnome.png" id="2_iiokp"]
 
 [resource]
 script = ExtResource("1_kakmf")
@@ -13,6 +14,6 @@ cost = 1
 description = "FLOOP >>> Deal 1 Damage to each opposing Creature that is on a NiceLands Landscape."
 landscape = "Cornfield"
 card_type = "Creature"
-image = "Yellow Gnome.jpg"
 id = 506
+image = ExtResource("2_iiokp")
 frame = ExtResource("1_nhgch")

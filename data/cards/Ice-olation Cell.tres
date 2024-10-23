@@ -13,6 +13,5 @@ cost = 1
 description = "Creatures on Landscapes with a Frozen token on it in this Lane cannot Attack or use abilities."
 landscape = "IcyLands"
 card_type = "Building"
-image = "Ice-olation Cell.jpg"
 id = 237
 frame = ExtResource("1_hft6c")

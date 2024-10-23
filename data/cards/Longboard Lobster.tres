@@ -13,6 +13,5 @@ cost = 2
 description = "+1 ATK for each Useless Swamp Landscapes in play."
 landscape = "SandyLands"
 card_type = "Creature"
-image = "Longboard Lobster.jpg"
 id = 272
 frame = ExtResource("1_5yx8g")

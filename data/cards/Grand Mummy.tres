@@ -13,6 +13,5 @@ cost = 1
 description = "At the start of your turn, you may return Grand Mummy to its owner's hand. If you do, draw two cards."
 landscape = "SandyLands"
 card_type = "Creature"
-image = "Grand Mummy.jpg"
 id = 196
 frame = ExtResource("1_ypqqo")

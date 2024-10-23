@@ -13,6 +13,5 @@ cost = 1
 description = "Move target Creature you control to an empty Blue Plains Landscape you control, and then draw a card."
 landscape = "Blue Plains"
 card_type = "Spell"
-image = "Pants of Awesome.jpg"
 id = 313
 frame = ExtResource("1_fs1e7")

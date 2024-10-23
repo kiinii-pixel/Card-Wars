@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://dtfxoqpo2bib5"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://dtfxoqpo2bib5"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_drsp3"]
 [ext_resource type="Texture2D" uid="uid://d2o5o4cm304mt" path="res://assets/images/frames/Useless Swamp_Creature.png" id="1_pcced"]
+[ext_resource type="Texture2D" uid="uid://e5t8udwtka7t" path="res://assets/images/cards/art/Useless Swamp/Creature/Extraordinary Spider.png" id="2_myng2"]
 
 [resource]
 script = ExtResource("1_drsp3")
@@ -13,6 +14,6 @@ cost = 1
 description = "At the start of your turn, deal 1 Damage to target opponent for every 5 cards in your discard pile."
 landscape = "Useless Swamp"
 card_type = "Creature"
-image = "Extraordinary Spider.jpg"
 id = 131
+image = ExtResource("2_myng2")
 frame = ExtResource("1_pcced")

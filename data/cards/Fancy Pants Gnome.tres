@@ -13,6 +13,5 @@ cost = 1
 description = "FLOOP >>> Deal 1 Damage to each opposing Creature that is on a Cornfield Landscape."
 landscape = "Useless Swamp"
 card_type = "Creature"
-image = "Fancy Pants Gnome.jpg"
 id = 137
 frame = ExtResource("1_qj46l")

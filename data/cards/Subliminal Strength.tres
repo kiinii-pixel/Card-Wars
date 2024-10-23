@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://c0ooarun8q6e7"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://c0ooarun8q6e7"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_cspls"]
 [ext_resource type="Texture2D" uid="uid://d1kvwyj0lxwng" path="res://assets/images/frames/Blue Plains.png" id="1_yqssp"]
+[ext_resource type="Texture2D" uid="uid://c3c7i6ibmh8me" path="res://assets/images/cards/art/Blue Plains/Spell/Subliminal Strength.png" id="2_b4ld1"]
 
 [resource]
 script = ExtResource("1_cspls")
@@ -13,6 +14,6 @@ cost = 1
 description = "Target Creature you control has +2 ATK this turn for each Spell you played this turn (including this one)."
 landscape = "Blue Plains"
 card_type = "Spell"
-image = "Subliminal Strength.jpg"
 id = 440
+image = ExtResource("2_b4ld1")
 frame = ExtResource("1_yqssp")

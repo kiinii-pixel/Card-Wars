@@ -13,6 +13,5 @@ cost = 2
 description = "FLOOP >>> Target Creature gets +ATK this turn equal to the total cost of Teamwork cards your team controls."
 landscape = "SandyLands"
 card_type = "Creature"
-image = "The Cooper.jpg"
 id = 457
 frame = ExtResource("1_mbhbj")

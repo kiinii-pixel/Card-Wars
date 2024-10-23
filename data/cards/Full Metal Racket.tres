@@ -13,6 +13,5 @@ cost = 0
 description = "Deal 2 Damage to target Creature."
 landscape = "Rainbow"
 card_type = "Spell"
-image = "Full Metal Racket.jpg"
 id = 171
 frame = ExtResource("1_s0k2y")

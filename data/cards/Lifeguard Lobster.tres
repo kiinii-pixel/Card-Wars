@@ -13,6 +13,5 @@ cost = 2
 description = "Each time another creature enters play during your turn, you must heal 1 Damage from another Creature."
 landscape = "SandyLands"
 card_type = "Creature"
-image = "Lifeguard Lobster.jpg"
 id = 266
 frame = ExtResource("1_sao5q")

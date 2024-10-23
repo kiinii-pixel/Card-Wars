@@ -13,6 +13,5 @@ cost = 1
 description = "Business Dog has +2 ATK this turn for each card you have played \"Dog\" or \"Puppy\" in its tile this turn."
 landscape = "Blue Plains"
 card_type = "Creature"
-image = "Business Dog.jpg"
 id = 56
 frame = ExtResource("1_5mke2")

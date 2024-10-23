@@ -13,6 +13,5 @@ cost = 2
 description = "Each adjacent Creature has +1 ATK. If Sewn Sloth has 4 or more Damage on it, each adjacent Creature has +2 ATK instead."
 landscape = "NiceLands"
 card_type = "Creature"
-image = "Sewn Sloth.jpg"
 id = 389
 frame = ExtResource("1_4uk2k")

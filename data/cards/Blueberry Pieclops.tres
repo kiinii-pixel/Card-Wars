@@ -13,6 +13,5 @@ cost = 4
 description = "Blueberry Pieclops costs 1 less to play for each Spell you have played this turn."
 landscape = "Blue Plains"
 card_type = "Creature"
-image = "Blueberry Pieclops.jpg"
 id = 41
 frame = ExtResource("1_hwehv")

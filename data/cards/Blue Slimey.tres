@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://do7t6l17ps5vl"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://do7t6l17ps5vl"]
 
 [ext_resource type="Texture2D" uid="uid://be2gbw036jfuv" path="res://assets/images/frames/Blue Plains_Creature.png" id="1_0s3kn"]
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_ntwyd"]
+[ext_resource type="Texture2D" uid="uid://bfvqn2ogtx8ok" path="res://assets/images/cards/art/Blue Plains/Creature/Blue Slimey.png" id="2_0tvxn"]
 
 [resource]
 script = ExtResource("1_ntwyd")
@@ -13,6 +14,6 @@ cost = 1
 description = "If you control 3 or more different Landscape types when Blue Slimey enters play, return a Creature in this Lane to it's owner's hand."
 landscape = "Blue Plains"
 card_type = "Creature"
-image = "Blue Slimey.jpg"
 id = 39
+image = ExtResource("2_0tvxn")
 frame = ExtResource("1_0s3kn")

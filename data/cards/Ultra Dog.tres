@@ -13,6 +13,5 @@ cost = 2
 description = "Floop >>> Freeze target Landscape with a Creature on it."
 landscape = "IcyLands"
 card_type = "Creature"
-image = "Ultra Dog.jpg"
 id = 477
 frame = ExtResource("1_ybiyj")

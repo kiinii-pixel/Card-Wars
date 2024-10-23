@@ -13,6 +13,5 @@ cost = 1
 description = "When Brain Gooey enters play, if it replaced a Creature, it has +2 ATK this turn."
 landscape = "Blue Plains"
 card_type = "Creature"
-image = "Brain Gooey.jpg"
 id = 51
 frame = ExtResource("1_fvafm")

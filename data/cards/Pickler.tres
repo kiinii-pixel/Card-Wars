@@ -13,6 +13,5 @@ cost = 2
 description = "Sacrifice Pickler >>> Deal 3 Damage to target Creature."
 landscape = "Useless Swamp"
 card_type = "Creature"
-image = "Pickler.jpg"
 id = 324
 frame = ExtResource("1_j0q8b")

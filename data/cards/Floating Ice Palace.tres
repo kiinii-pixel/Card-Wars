@@ -13,6 +13,5 @@ cost = 2
 description = "Your Creature on this Landscape has +1 ATK during your turn for each Landscape with a Frozen token on it."
 landscape = "IcyLands"
 card_type = "Building"
-image = "Floating Ice Palace.jpg"
 id = 153
 frame = ExtResource("1_awt8y")

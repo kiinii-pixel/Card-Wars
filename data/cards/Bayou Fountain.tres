@@ -13,6 +13,5 @@ cost = 1
 description = "Discard a card >>> Your Creature on this Landscape has +1 ATK this turn. (Use any number of times during each of your turns.)"
 landscape = "Useless Swamp"
 card_type = "Building"
-image = "Bayou Fountain.jpg"
 id = 21
 frame = ExtResource("1_5aqos")

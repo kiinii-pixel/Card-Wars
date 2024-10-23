@@ -13,6 +13,5 @@ cost = 2
 description = "When InstiGator enters play, move target opposing Creature into InstiGator's Lane (if empty)."
 landscape = "Useless Swamp"
 card_type = "Creature"
-image = "InstiGator.jpg"
 id = 249
 frame = ExtResource("1_frm5t")

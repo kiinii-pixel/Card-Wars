@@ -13,6 +13,5 @@ cost = 1
 description = "While Albino Eyebat has exactly 2 Damage on it, it has +2 ATK."
 landscape = "NiceLands"
 card_type = "Creature"
-image = "Albino Eyebat.jpg"
 id = 5
 frame = ExtResource("1_owwju")

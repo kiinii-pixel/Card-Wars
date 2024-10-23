@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://eboxckikh12q"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://eboxckikh12q"]
 
 [ext_resource type="Texture2D" uid="uid://d2o5o4cm304mt" path="res://assets/images/frames/Useless Swamp_Creature.png" id="1_a6cag"]
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_yglqh"]
+[ext_resource type="Texture2D" uid="uid://m0dq7tlntb1" path="res://assets/images/cards/art/Useless Swamp/Creature/Ban-She Queen.png" id="2_7bchj"]
 
 [resource]
 script = ExtResource("1_yglqh")
@@ -13,6 +14,6 @@ cost = 2
 description = "When Ban-She Queen enters play, you may remove a token from an adjacent Landscape."
 landscape = "Useless Swamp"
 card_type = "Creature"
-image = "Ban-She Queen.jpg"
 id = 20
+image = ExtResource("2_7bchj")
 frame = ExtResource("1_a6cag")

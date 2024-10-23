@@ -13,6 +13,5 @@ cost = 1
 description = "FLOOP >>> Move target Building you control to any Landscape without one."
 landscape = "Cornfield"
 card_type = "Creature"
-image = "Lumbercaddy.jpg"
 id = 277
 frame = ExtResource("1_w7o7u")

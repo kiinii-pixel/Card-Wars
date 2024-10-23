@@ -13,6 +13,5 @@ cost = 2
 description = "FLOOP >>> Each adjacent Creature has +2 ATK this turn."
 landscape = "IcyLands"
 card_type = "Creature"
-image = "Snow Dog.jpg"
 id = 416
 frame = ExtResource("1_a2tkp")

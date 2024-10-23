@@ -13,6 +13,5 @@ cost = 1
 description = "When SandWitch or another Creature enters play under your control, deal 1 Damage to your opponent."
 landscape = "SandyLands"
 card_type = "Creature"
-image = "SandWitch.jpg"
 id = 383
 frame = ExtResource("1_27brb")

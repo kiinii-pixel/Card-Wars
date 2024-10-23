@@ -13,6 +13,5 @@ cost = 1
 description = "Play Hot Eyebat only if you have 10 or more cards in your discard pile."
 landscape = "Useless Swamp"
 card_type = "Creature"
-image = "Hot Eyebat.jpg"
 id = 218
 frame = ExtResource("1_m6pj0")

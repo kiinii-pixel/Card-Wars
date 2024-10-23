@@ -13,6 +13,5 @@ cost = 2
 description = "Target foe may discard a card with cost 2 or greater. If they do not, deal 5 Damage to that foe."
 landscape = "Useless Swamp"
 card_type = "Spell"
-image = "Blood Bath.jpg"
 id = 31
 frame = ExtResource("1_qes2m")

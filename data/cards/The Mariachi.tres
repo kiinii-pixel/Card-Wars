@@ -13,6 +13,5 @@ cost = 2
 description = "FLOOP >>> Deal 1 Damage to target Creature for each Creature that entered play this turn."
 landscape = "SandyLands"
 card_type = "Creature"
-image = "The Mariachi.jpg"
 id = 459
 frame = ExtResource("1_4fbuf")

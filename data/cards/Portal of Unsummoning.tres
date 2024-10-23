@@ -13,6 +13,5 @@ cost = 2
 description = "Return target Creature to its owner's hand."
 landscape = "SandyLands"
 card_type = "Spell"
-image = "Portal of Unsummoning.jpg"
 id = 336
 frame = ExtResource("1_xh761")

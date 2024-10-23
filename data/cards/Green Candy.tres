@@ -13,6 +13,5 @@ cost = 0
 description = "Heal or deal 1 Damage to target Creature."
 landscape = "Rainbow"
 card_type = "Spell"
-image = "Green Candy.jpg"
 id = 202
 frame = ExtResource("1_epwtm")

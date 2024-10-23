@@ -13,6 +13,5 @@ cost = 0
 description = "FLOOP >>> Return a Building from your discard pile to your hand."
 landscape = "Rainbow"
 card_type = "Creature"
-image = "Helping Hand.jpg"
 id = 216
 frame = ExtResource("1_palmf")

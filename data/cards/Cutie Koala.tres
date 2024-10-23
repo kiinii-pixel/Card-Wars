@@ -13,6 +13,5 @@ cost = 1
 description = "While Cutie Koala has 4 or more Damage on it, it has +2 ATK."
 landscape = "NiceLands"
 card_type = "Creature"
-image = "Cutie.jpg"
 id = 104
 frame = ExtResource("1_2yh7k")

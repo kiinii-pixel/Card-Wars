@@ -13,6 +13,5 @@ cost = 1
 description = "If you played one or more Rainbow cards this turn, Infant Scholar has +3 ATK this turn."
 landscape = "Blue Plains"
 card_type = "Creature"
-image = "Infant Scholar.jpg"
 id = 246
 frame = ExtResource("1_8vgql")

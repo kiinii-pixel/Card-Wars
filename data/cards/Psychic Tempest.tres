@@ -13,6 +13,5 @@ cost = 1
 description = "Return all Creatures in play you own to your hand. (This includes stolen Creatures.)"
 landscape = "SandyLands"
 card_type = "Spell"
-image = "Psychic Tempest.jpg"
 id = 342
 frame = ExtResource("1_1cetn")

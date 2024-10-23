@@ -13,6 +13,5 @@ cost = 1
 description = "While there is no opposing Creature in this Lane, Mint Chocouflage can't be damaged by your opponent's Spells or Creature abilities."
 landscape = "IcyLands"
 card_type = "Creature"
-image = "Mint Chocouflage.jpg"
 id = 291
 frame = ExtResource("1_jp6wc")

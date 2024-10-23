@@ -13,6 +13,5 @@ cost = 1
 description = "Move target Creature to an adjacent empty Landscape its controller controls. After playing this, you may put it into your Teammate's hand."
 landscape = "Rainbow"
 card_type = "Spell"
-image = "Enchanted Celebration.jpg"
 id = 127
 frame = ExtResource("1_nht0a")

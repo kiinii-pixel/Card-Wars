@@ -13,6 +13,5 @@ cost = 1
 description = "Each of your Creatures has +2 ATK this turn while attacking a Creature that is on a Useless Swamp Landscape."
 landscape = "NiceLands"
 card_type = "Spell"
-image = "Scroll of Fresh Breath.jpg"
 id = 387
 frame = ExtResource("1_46lh6")

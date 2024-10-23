@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://c27ygbi8o412g"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://c27ygbi8o412g"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_4dcuu"]
 [ext_resource type="Texture2D" uid="uid://b0p6pgobeqtuk" path="res://assets/images/frames/Cornfield_Creature.png" id="1_wyoaw"]
+[ext_resource type="Texture2D" uid="uid://dnneaekdv0gbb" path="res://assets/images/cards/art/Cornfield/Creature/Yellow Slimey.png" id="2_wbh3t"]
 
 [resource]
 script = ExtResource("1_4dcuu")
@@ -13,6 +14,6 @@ cost = 1
 description = "While you control 3 or more different Landscape types, Yellow Slimey has +3 ATK."
 landscape = "Cornfield"
 card_type = "Creature"
-image = "Yellow Slimey.jpg"
 id = 508
+image = ExtResource("2_wbh3t")
 frame = ExtResource("1_wyoaw")

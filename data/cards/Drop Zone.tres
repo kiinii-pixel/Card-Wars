@@ -13,6 +13,5 @@ cost = 0
 description = "Return target Creature you own to your hand."
 landscape = "Rainbow"
 card_type = "Spell"
-image = "Drop Zone.jpg"
 id = 119
 frame = ExtResource("1_87o6j")

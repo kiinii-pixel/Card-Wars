@@ -13,6 +13,5 @@ cost = 1
 description = "Add Damage to target Creature until it has 1 DEF remaining."
 landscape = "Useless Swamp"
 card_type = "Spell"
-image = "Staff of Frailty.jpg"
 id = 431
 frame = ExtResource("1_o5pjd")

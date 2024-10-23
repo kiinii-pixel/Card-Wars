@@ -13,6 +13,5 @@ cost = 2
 description = "When Husky Parrotrooper enters play, move it to any empty Landscape, and then flip that Landscape face down."
 landscape = "Rainbow"
 card_type = "Creature"
-image = "Husky Parrotrooper.jpg"
 id = 229
 frame = ExtResource("1_by56u")

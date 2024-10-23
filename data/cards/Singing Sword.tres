@@ -13,6 +13,5 @@ cost = 0
 description = "Target Creature has +1 ATK this turn for every 2 cards you have drawn this turn."
 landscape = "Rainbow"
 card_type = "Spell"
-image = "Singing Sword.jpg"
 id = 399
 frame = ExtResource("1_lwfek")

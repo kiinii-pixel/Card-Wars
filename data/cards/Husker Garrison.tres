@@ -13,6 +13,5 @@ cost = 2
 description = "Your Creature on this Landscape has +1 ATK and +1 DEF for each Cornfield Creature you control."
 landscape = "Cornfield"
 card_type = "Building"
-image = "Husker Garrison.jpg"
 id = 225
 frame = ExtResource("1_q3tf2")

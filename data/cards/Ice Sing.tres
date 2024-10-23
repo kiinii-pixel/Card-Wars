@@ -13,6 +13,5 @@ cost = 1
 description = "Freeze 1 of each player's target Landscapes and then draw a card."
 landscape = "IcyLands"
 card_type = "Spell"
-image = "Ice Sing.jpg"
 id = 235
 frame = ExtResource("1_wdexk")

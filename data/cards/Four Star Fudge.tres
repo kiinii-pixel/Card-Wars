@@ -13,6 +13,5 @@ cost = 2
 description = "Each time a Landscape becomes Frozen, draw a card."
 landscape = "IcyLands"
 card_type = "Creature"
-image = "Four Star Fudge.jpg"
 id = 157
 frame = ExtResource("1_doctu")

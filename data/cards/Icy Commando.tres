@@ -13,6 +13,5 @@ cost = 1
 description = "Icy Commando has +1 ATK for each Landscape with a Frozen token on it."
 landscape = "IcyLands"
 card_type = "Creature"
-image = "Icy Commando.jpg"
 id = 238
 frame = ExtResource("1_uuhja")

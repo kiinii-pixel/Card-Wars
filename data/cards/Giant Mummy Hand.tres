@@ -13,6 +13,5 @@ cost = 1
 description = "FLOOP >>> Deal 1 Damage to target Creature for each Cornfield Landscape adjacent to this Lane."
 landscape = "SandyLands"
 card_type = "Creature"
-image = "Giant Mummy Hand.jpg"
 id = 186
 frame = ExtResource("1_u71vk")

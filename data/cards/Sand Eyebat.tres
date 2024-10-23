@@ -13,6 +13,5 @@ cost = 2
 description = "When another Creature enters play under your control, Sand Eyebat gains 1 DEF."
 landscape = "SandyLands"
 card_type = "Creature"
-image = "Sand Eyebat.jpg"
 id = 374
 frame = ExtResource("1_22trj")

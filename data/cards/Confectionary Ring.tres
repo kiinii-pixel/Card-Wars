@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://bnuoqg08no2on"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://bnuoqg08no2on"]
 
 [ext_resource type="Texture2D" uid="uid://7f0fsvgty6vg" path="res://assets/images/frames/NiceLands.png" id="1_3m7mk"]
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_sfgye"]
+[ext_resource type="Texture2D" uid="uid://dnuumelabeln6" path="res://assets/images/cards/art/NiceLands/Spell/Confectionary Ring.png" id="2_gv4tw"]
 
 [resource]
 script = ExtResource("1_sfgye")
@@ -13,6 +14,6 @@ cost = 1
 description = "Each of your Creatures has +2 ATK this turn while attacking a Creature that is on a Cornfield Landscape."
 landscape = "NiceLands"
 card_type = "Spell"
-image = "Confectionary Ring.jpg"
 id = 78
+image = ExtResource("2_gv4tw")
 frame = ExtResource("1_3m7mk")

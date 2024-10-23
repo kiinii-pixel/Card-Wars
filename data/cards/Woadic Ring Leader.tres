@@ -13,6 +13,5 @@ cost = 1
 description = "At the start of your turn, move Woadic Ring Leader to an empty Landscape you control. If you cannot, destroy it."
 landscape = "Blue Plains"
 card_type = "Creature"
-image = "Woadic Ring Leader.jpg"
 id = 503
 frame = ExtResource("1_u3lhh")

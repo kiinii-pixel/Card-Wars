@@ -13,6 +13,5 @@ cost = 1
 description = "Destroy target Creature you control, and then destroy target Creature in its Lane."
 landscape = "NiceLands"
 card_type = "Spell"
-image = "Hug It Out.jpg"
 id = 219
 frame = ExtResource("1_5nb7s")

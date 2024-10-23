@@ -13,6 +13,5 @@ cost = 1
 description = "When Softie Recruit enters play, if your opponent does not control a Creature in this Lane, gain 1 Action."
 landscape = "IcyLands"
 card_type = "Creature"
-image = "Softie Recruit.jpg"
 id = 422
 frame = ExtResource("1_q5kpk")

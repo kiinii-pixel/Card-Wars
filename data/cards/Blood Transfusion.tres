@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://bnnad5lm83awj"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://bnnad5lm83awj"]
 
 [ext_resource type="Texture2D" uid="uid://tqpubod46faw" path="res://assets/images/frames/Rainbow.png" id="1_8im4v"]
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_si448"]
+[ext_resource type="Texture2D" uid="uid://c6h56s157dlc2" path="res://assets/images/cards/art/Rainbow/Spell/Blood Transfusion.png" id="2_wm2em"]
 
 [resource]
 script = ExtResource("1_si448")
@@ -13,6 +14,6 @@ cost = 0
 description = "Remove from game a card in any player's discard pile. Heal X Damage from target Creature, where X is the cost of the card removed this way."
 landscape = "Rainbow"
 card_type = "Spell"
-image = "Blood Transfusion.jpg"
 id = 34
+image = ExtResource("2_wm2em")
 frame = ExtResource("1_8im4v")

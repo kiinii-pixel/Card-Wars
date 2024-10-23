@@ -13,6 +13,5 @@ cost = 1
 description = "Discard a card >>> Your Landscape in this Lane loses its type and becomes the type of your choice (except face down) until the start of your next turn."
 landscape = "Cornfield"
 card_type = "Building"
-image = "Silo of Freedom.jpg"
 id = 396
 frame = ExtResource("1_vcr5n")

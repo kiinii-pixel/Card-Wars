@@ -13,6 +13,5 @@ cost = 1
 description = "Pay 1 Action, FLOOP >>> Freeze target Landscape."
 landscape = "IcyLands"
 card_type = "Creature"
-image = "Icy Intruder.jpg"
 id = 240
 frame = ExtResource("1_l1pq7")

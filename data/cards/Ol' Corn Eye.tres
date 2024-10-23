@@ -13,6 +13,5 @@ cost = 2
 description = "+1 DEF for each different Landscape type you control."
 landscape = "Cornfield"
 card_type = "Creature"
-image = "Ol' Corn Eye.jpg"
 id = 308
 frame = ExtResource("1_er2yf")

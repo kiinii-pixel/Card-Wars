@@ -13,6 +13,5 @@ cost = 2
 description = "FLOOP >>> Tornado Wall of Fire has +3 ATK while Flooped."
 landscape = "Cornfield"
 card_type = "Creature"
-image = "Tornado Wall Of Fire.jpg"
 id = 468
 frame = ExtResource("1_rwcwa")

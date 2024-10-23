@@ -13,6 +13,5 @@ cost = 1
 description = "Move up to 3 Damage on a Creature you control to target opposing Creature in its Lane."
 landscape = "Blue Plains"
 card_type = "Spell"
-image = "Redirect Danger.jpg"
 id = 356
 frame = ExtResource("1_hsoft")

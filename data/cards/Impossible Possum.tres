@@ -13,6 +13,5 @@ cost = 2
 description = "When this card is placed into your discard pile from anywhere, you may discard a card from your hand to return Impossible Possum to your hand."
 landscape = "Blue Plains"
 card_type = "Creature"
-image = "Impossible Possum.jpg"
 id = 243
 frame = ExtResource("1_k2ji1")

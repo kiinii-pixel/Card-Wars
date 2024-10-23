@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://ckxmpn26fqtsg"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://ckxmpn26fqtsg"]
 
 [ext_resource type="Texture2D" uid="uid://d2o5o4cm304mt" path="res://assets/images/frames/Useless Swamp_Creature.png" id="1_0m122"]
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_qldfj"]
+[ext_resource type="Texture2D" uid="uid://ulfynf21nd71" path="res://assets/images/cards/art/Useless Swamp/Creature/Green Merman.png" id="2_vaxq8"]
 
 [resource]
 script = ExtResource("1_qldfj")
@@ -13,6 +14,6 @@ cost = 2
 description = "FLOOP >>> Put the top card of your deck into your discard pile, Deal Damage to each opposing Creature equal to the discarded card's Action Cost."
 landscape = "Useless Swamp"
 card_type = "Creature"
-image = "Green Merman.jpg"
 id = 205
+image = ExtResource("2_vaxq8")
 frame = ExtResource("1_0m122")

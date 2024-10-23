@@ -13,6 +13,5 @@ cost = 2
 description = "FLOOP >>> Discard the top 3 cards of your deck. For each Spell discarded this way, target player discards a card."
 landscape = "Useless Swamp"
 card_type = "Creature"
-image = "Skeletal Hand.jpg"
 id = 402
 frame = ExtResource("1_2igd0")

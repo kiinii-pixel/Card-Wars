@@ -13,6 +13,5 @@ cost = 2
 description = "Creatures in this Lane cannot use Floop abilities."
 landscape = "Blue Plains"
 card_type = "Creature"
-image = "Woadic Enchantress.jpg"
 id = 500
 frame = ExtResource("1_8buri")

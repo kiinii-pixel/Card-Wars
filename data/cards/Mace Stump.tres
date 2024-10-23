@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://cdq3bib17u4ao"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://cdq3bib17u4ao"]
 
 [ext_resource type="Texture2D" uid="uid://d2o5o4cm304mt" path="res://assets/images/frames/Useless Swamp_Creature.png" id="1_bay6d"]
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_bsbjp"]
+[ext_resource type="Texture2D" uid="uid://ckyjv1jttg44l" path="res://assets/images/cards/art/Useless Swamp/Creature/Mace Stump.png" id="2_mpyqy"]
 
 [resource]
 script = ExtResource("1_bsbjp")
@@ -13,6 +14,6 @@ cost = 1
 description = "Destroy Mace Stump >>> Target opponent discards a card for every 5 cards in your discard pile."
 landscape = "Useless Swamp"
 card_type = "Creature"
-image = "Mace Stump.jpg"
 id = 280
+image = ExtResource("2_mpyqy")
 frame = ExtResource("1_bay6d")

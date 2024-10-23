@@ -13,6 +13,5 @@ cost = 1
 description = "Husker Champion has +2 ATK and +2 DEF if you control a Building on this Landscape."
 landscape = "Cornfield"
 card_type = "Creature"
-image = "Husker Champion.jpg"
 id = 224
 frame = ExtResource("1_l22mc")

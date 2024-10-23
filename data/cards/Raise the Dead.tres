@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://b3htvnpcrppvl"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://b3htvnpcrppvl"]
 
 [ext_resource type="Texture2D" uid="uid://ypdgp0t1gdd0" path="res://assets/images/frames/Useless Swamp.png" id="1_4rujk"]
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_jxlr3"]
+[ext_resource type="Texture2D" uid="uid://da1ml7o35hwwt" path="res://assets/images/cards/art/Useless Swamp/Spell/Raise the Dead.png" id="2_bcy43"]
 
 [resource]
 script = ExtResource("1_jxlr3")
@@ -13,6 +14,6 @@ cost = 1
 description = "Put a Creature with cost 2 or less from your discard pile into play."
 landscape = "Useless Swamp"
 card_type = "Spell"
-image = "Raise the Dead.jpg"
 id = 352
+image = ExtResource("2_bcy43")
 frame = ExtResource("1_4rujk")

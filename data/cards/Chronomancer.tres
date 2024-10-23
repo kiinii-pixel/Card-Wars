@@ -13,6 +13,5 @@ cost = 2
 description = "Each time Chronomancer changes Lanes, gain 1 Action."
 landscape = "Blue Plains"
 card_type = "Creature"
-image = "Chronomancer.jpg"
 id = 72
 frame = ExtResource("1_0kd4w")

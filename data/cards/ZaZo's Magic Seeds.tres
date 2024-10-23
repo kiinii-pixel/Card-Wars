@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://cyocky4ixd5p"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://cyocky4ixd5p"]
 
 [ext_resource type="Texture2D" uid="uid://tqpubod46faw" path="res://assets/images/frames/Rainbow.png" id="1_al5x3"]
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_u53ss"]
+[ext_resource type="Texture2D" uid="uid://b0tsy6iabtq6q" path="res://assets/images/cards/art/Rainbow/Spell/ZaZo's Magic Seeds.png" id="2_volvc"]
 
 [resource]
 script = ExtResource("1_u53ss")
@@ -13,6 +14,6 @@ cost = 0
 description = "Target SandyLands Creature has +2 ATK this turn for each Creature that entered play into an adjacent Lane this turn."
 landscape = "Rainbow"
 card_type = "Spell"
-image = "ZaZo's Magic Seeds.jpg"
 id = 510
+image = ExtResource("2_volvc")
 frame = ExtResource("1_al5x3")

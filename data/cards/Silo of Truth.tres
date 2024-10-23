@@ -13,6 +13,5 @@ cost = 1
 description = "Pay 2 Actions >>> Steal a random card from your opponent and play it at no cost."
 landscape = "Cornfield"
 card_type = "Building"
-image = "Silo of Truth.jpg"
 id = 398
 frame = ExtResource("1_7y2vl")

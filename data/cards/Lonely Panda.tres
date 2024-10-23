@@ -13,6 +13,5 @@ cost = 1
 description = "When Lonely Panda enters play, if you control no other Creatures, draw a card."
 landscape = "Blue Plains"
 card_type = "Creature"
-image = "Lonely Panda.jpg"
 id = 271
 frame = ExtResource("1_ktacl")

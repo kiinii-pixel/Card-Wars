@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://d2dptdgnjcr7l"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://d2dptdgnjcr7l"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_28x04"]
 [ext_resource type="Texture2D" uid="uid://b0p6pgobeqtuk" path="res://assets/images/frames/Cornfield_Creature.png" id="1_f5f3n"]
+[ext_resource type="Texture2D" uid="uid://c6lcoxdobh1ru" path="res://assets/images/cards/art/Cornfield/Creature/Captain Taco.png" id="2_vo4iw"]
 
 [resource]
 script = ExtResource("1_28x04")
@@ -13,6 +14,6 @@ cost = 1
 description = "When Captain Taco enters play, deal 1 Damage to each Creature that is not on a Cornfield Landscape."
 landscape = "Cornfield"
 card_type = "Creature"
-image = "Captain Taco.jpg"
 id = 61
+image = ExtResource("2_vo4iw")
 frame = ExtResource("1_f5f3n")

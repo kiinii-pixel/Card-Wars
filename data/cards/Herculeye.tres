@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://8qx4aca6xiqe"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://8qx4aca6xiqe"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_81qwj"]
 [ext_resource type="Texture2D" uid="uid://d2o5o4cm304mt" path="res://assets/images/frames/Useless Swamp_Creature.png" id="1_fnovq"]
+[ext_resource type="Texture2D" uid="uid://v4j6lgo3nhap" path="res://assets/images/cards/art/Useless Swamp/Creature/Herculeye.png" id="2_dm2hj"]
 
 [resource]
 script = ExtResource("1_81qwj")
@@ -13,6 +14,6 @@ cost = 2
 description = "Discard a card >>> Herculeye has +4 ATK this turn. (Use only once during each of your turns.)"
 landscape = "Useless Swamp"
 card_type = "Creature"
-image = "Herculeye.jpg"
 id = 217
+image = ExtResource("2_dm2hj")
 frame = ExtResource("1_fnovq")

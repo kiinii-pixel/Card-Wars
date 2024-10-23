@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://c6ihiv1t5jexd"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://c6ihiv1t5jexd"]
 
 [ext_resource type="Texture2D" uid="uid://d2o5o4cm304mt" path="res://assets/images/frames/Useless Swamp_Creature.png" id="1_3oqry"]
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_u1313"]
+[ext_resource type="Texture2D" uid="uid://yf6rimmi56bg" path="res://assets/images/cards/art/Useless Swamp/Creature/Red Eyeling.png" id="2_hvry7"]
 
 [resource]
 script = ExtResource("1_u1313")
@@ -13,6 +14,6 @@ cost = 1
 description = "FLOOP >>> Return a card with cost 0 from your discard pile to your hand."
 landscape = "Useless Swamp"
 card_type = "Creature"
-image = "Red Eyeling.jpg"
 id = 355
+image = ExtResource("2_hvry7")
 frame = ExtResource("1_3oqry")

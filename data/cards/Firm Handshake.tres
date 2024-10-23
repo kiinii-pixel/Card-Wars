@@ -13,6 +13,5 @@ cost = 2
 description = "Deal 5 Damage to yourself and target opponent."
 landscape = "Rainbow"
 card_type = "Spell"
-image = "Firm Handshake.jpg"
 id = 151
 frame = ExtResource("1_0fogn")

@@ -13,6 +13,5 @@ cost = 1
 description = "Target Creature you control has +2 ATK for each exhausted Creature you control (at the time you play this)."
 landscape = "Blue Plains"
 card_type = "Spell"
-image = "Tapped Out.jpg"
 id = 449
 frame = ExtResource("1_nkp6e")

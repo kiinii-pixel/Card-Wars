@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://bi00avoysgufh"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://bi00avoysgufh"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_i677y"]
 [ext_resource type="Texture2D" uid="uid://d2o5o4cm304mt" path="res://assets/images/frames/Useless Swamp_Creature.png" id="1_uk747"]
+[ext_resource type="Texture2D" uid="uid://rqurcnmbewce" path="res://assets/images/cards/art/Useless Swamp/Creature/Man-Witch.png" id="2_f54tq"]
 
 [resource]
 script = ExtResource("1_i677y")
@@ -13,6 +14,6 @@ cost = 2
 description = "Whenever a foe discards a card, deal 1 Damage to that foe."
 landscape = "Useless Swamp"
 card_type = "Creature"
-image = "Man-Witch.jpg"
 id = 286
+image = ExtResource("2_f54tq")
 frame = ExtResource("1_uk747")

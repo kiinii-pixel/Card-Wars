@@ -13,6 +13,5 @@ cost = 2
 description = "Target opponent discards down to 5 cards, and then takes 1 Damage for each card discarded this way."
 landscape = "Rainbow"
 card_type = "Spell"
-image = "Witch Slap.jpg"
 id = 494
 frame = ExtResource("1_0187q")

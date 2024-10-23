@@ -13,6 +13,5 @@ cost = 0
 description = "Each The Barrel has +1 ATK and +1 DEF for each other The Barrel in play."
 landscape = "Rainbow"
 card_type = "Creature"
-image = "The Barrel.jpg"
 id = 454
 frame = ExtResource("1_3y5up")

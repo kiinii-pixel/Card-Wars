@@ -13,6 +13,5 @@ cost = 2
 description = "When Vampire Lord deals damage, heal that much Damage from him."
 landscape = "Rainbow"
 card_type = "Creature"
-image = "Vampire Lord.jpg"
 id = 481
 frame = ExtResource("1_l36xo")

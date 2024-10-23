@@ -13,6 +13,5 @@ cost = 5
 description = "Cabin of Many Woods costs 1 less to play for each Flooped Creature you control. Your Creature in the Lane has +5 DEF."
 landscape = "Cornfield"
 card_type = "Building"
-image = "Cabin of Many Woods.jpg"
 id = 57
 frame = ExtResource("1_age1l")

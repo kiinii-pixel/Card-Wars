@@ -13,6 +13,5 @@ cost = 1
 description = "FLOOP >>> Deal 3 Damage to target Creature on a Landscape with a Frozen token on it."
 landscape = "IcyLands"
 card_type = "Creature"
-image = "Slay Rider.jpg"
 id = 404
 frame = ExtResource("1_1q6kc")

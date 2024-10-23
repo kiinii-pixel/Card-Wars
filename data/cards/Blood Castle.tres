@@ -13,6 +13,5 @@ cost = 1
 description = "Each time an opposing Creature in this Lane takes Damage, increase the amount by 1."
 landscape = "Rainbow"
 card_type = "Building"
-image = "Blood Castle.jpg"
 id = 32
 frame = ExtResource("1_8cpe7")

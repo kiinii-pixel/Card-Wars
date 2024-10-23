@@ -13,6 +13,5 @@ cost = 2
 description = "Discard a card >>> Your Creature in this Lane can't be targeted or attacked until the start of your next turn."
 landscape = "NiceLands"
 card_type = "Building"
-image = "Cave of Solitude.jpg"
 id = 64
 frame = ExtResource("1_ofnf6")

@@ -13,6 +13,5 @@ cost = 1
 description = "When Patriot Popsicle enters play, you may Freeze a Landscape in this Lane."
 landscape = "IcyLands"
 card_type = "Creature"
-image = "Patriot Popsicle.jpg"
 id = 319
 frame = ExtResource("1_8q1wu")

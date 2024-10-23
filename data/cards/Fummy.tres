@@ -13,6 +13,5 @@ cost = 1
 description = "FLOOP >>> Gain 1 Action this turn."
 landscape = "SandyLands"
 card_type = "Creature"
-image = "Fummy.jpg"
 id = 173
 frame = ExtResource("1_jl4so")

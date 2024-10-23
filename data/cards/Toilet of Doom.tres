@@ -13,6 +13,5 @@ cost = 1
 description = "Target Creature you control has +1 ATK this turn for every 5 cards in your discard pile."
 landscape = "Useless Swamp"
 card_type = "Spell"
-image = "Toilet of Doom.jpg"
 id = 466
 frame = ExtResource("1_m5eru")

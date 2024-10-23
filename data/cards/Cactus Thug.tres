@@ -13,6 +13,5 @@ cost = 1
 description = "Adjacent Cornfield Creatures have +1 ATK."
 landscape = "SandyLands"
 card_type = "Creature"
-image = "Cactus Thug.jpg"
 id = 58
 frame = ExtResource("1_f0lld")

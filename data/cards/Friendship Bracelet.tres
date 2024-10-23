@@ -13,6 +13,5 @@ cost = 0
 description = "Swap any amount of Damage between two Creatures you control."
 landscape = "Rainbow"
 card_type = "Spell"
-image = "Friendship Bracelet.jpg"
 id = 161
 frame = ExtResource("1_23pyb")

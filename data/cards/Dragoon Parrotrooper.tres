@@ -13,6 +13,5 @@ cost = 2
 description = "When Dragoon Parrotrooper enters play, move it to any empty Landscape. It cannot be replaced. Adjacent Creatures have - 1 ATK."
 landscape = "Rainbow"
 card_type = "Creature"
-image = "Dragoon Parrotrooper.jpg"
 id = 116
 frame = ExtResource("1_hiv0h")

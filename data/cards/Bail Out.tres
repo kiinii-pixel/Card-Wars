@@ -13,6 +13,5 @@ cost = 1
 description = "Put target Creature you own into your hand, and then play it for free."
 landscape = "SandyLands"
 card_type = "Spell"
-image = "Bail Out.jpg"
 id = 17
 frame = ExtResource("1_wclbm")

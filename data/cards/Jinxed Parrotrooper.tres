@@ -13,6 +13,5 @@ cost = 1
 description = "When Jinxed Parrotrooper enters play, move it to any empty Landscape. It cannot be replaced. At the start of your turn, discard a card."
 landscape = "Rainbow"
 card_type = "Creature"
-image = "Jinxed Parrotrooper.jpg"
 id = 255
 frame = ExtResource("1_41quu")

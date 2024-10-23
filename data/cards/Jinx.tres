@@ -13,6 +13,5 @@ cost = 0
 description = "Choose two players. Each reveals a random card from their hand. If their costs don't match, they discard those cards."
 landscape = "Rainbow"
 card_type = "Spell"
-image = "Jinx.jpg"
 id = 254
 frame = ExtResource("1_fs83i")

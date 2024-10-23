@@ -13,6 +13,5 @@ cost = 2
 description = "When Tough Lumberjill enters play, deal 1 Damage to your opponent for each Building you control."
 landscape = "Cornfield"
 card_type = "Creature"
-image = "Tough Lumberjill.jpg"
 id = 469
 frame = ExtResource("1_41f3o")

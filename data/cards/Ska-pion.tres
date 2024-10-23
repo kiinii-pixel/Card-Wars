@@ -13,6 +13,5 @@ cost = 1
 description = "Ska-pion costs 1 less to play while an opponent controls a Creature you own."
 landscape = "SandyLands"
 card_type = "Creature"
-image = "Ska-pion.jpg"
 id = 401
 frame = ExtResource("1_h7mog")

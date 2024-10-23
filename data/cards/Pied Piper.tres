@@ -13,6 +13,5 @@ cost = 2
 description = "When Pied Piper attacks an opposing Creature, you may have a Flooped Creature you control attack it instead."
 landscape = "Cornfield"
 card_type = "Creature"
-image = "Pied Piper.jpg"
 id = 326
 frame = ExtResource("1_woi75")

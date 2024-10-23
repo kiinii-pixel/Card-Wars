@@ -13,6 +13,5 @@ cost = 1
 description = "Freeze two target Landscapes."
 landscape = "IcyLands"
 card_type = "Spell"
-image = "Snow Way.jpg"
 id = 418
 frame = ExtResource("1_wxppb")

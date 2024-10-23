@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://baveiul0xagek"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://baveiul0xagek"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_awid8"]
 [ext_resource type="Texture2D" uid="uid://ypdgp0t1gdd0" path="res://assets/images/frames/Useless Swamp.png" id="1_ux85j"]
+[ext_resource type="Texture2D" uid="uid://l04ouxwoew6o" path="res://assets/images/cards/art/Useless Swamp/Spell/Magic Ring Ding.png" id="2_4faea"]
 
 [resource]
 script = ExtResource("1_awid8")
@@ -13,6 +14,6 @@ cost = 2
 description = "Each of your Creatures has +1 ATK this turn for every 5 cards in your discard pile."
 landscape = "Useless Swamp"
 card_type = "Spell"
-image = "Magic Ring Ding.jpg"
 id = 284
+image = ExtResource("2_4faea")
 frame = ExtResource("1_ux85j")

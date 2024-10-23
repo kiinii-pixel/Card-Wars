@@ -13,6 +13,5 @@ cost = 4
 description = "Ice Cream Captain costs 1 less to play for each player that has a Landscape with a Frozen token on it."
 landscape = "IcyLands"
 card_type = "Creature"
-image = "Ice Cream Captain.jpg"
 id = 232
 frame = ExtResource("1_ysmle")

@@ -13,6 +13,5 @@ cost = 1
 description = "Ready each Creature that changed Lanes this turn. They each have +2 ATK this turn."
 landscape = "Blue Plains"
 card_type = "Spell"
-image = "Socks of Fortitude.jpg"
 id = 421
 frame = ExtResource("1_xi0mt")

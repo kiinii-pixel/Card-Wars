@@ -13,6 +13,5 @@ cost = 1
 description = "Floop >>> Move target Frozen token from one Landscape to a new Landscape."
 landscape = "IcyLands"
 card_type = "Creature"
-image = "Smooth Eli.jpg"
 id = 407
 frame = ExtResource("1_nqgre")

@@ -13,6 +13,5 @@ cost = 1
 description = "Freeze target Landscape. You may move any number of Frozen tokens to a new Landscape (1 token per Landscapes)."
 landscape = "IcyLands"
 card_type = "Spell"
-image = "Slushie Salvo.jpg"
 id = 405
 frame = ExtResource("1_8m4x3")

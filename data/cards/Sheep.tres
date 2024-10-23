@@ -13,6 +13,5 @@ cost = 0
 description = ""
 landscape = "Rainbow"
 card_type = "Creature"
-image = "Sheep.jpg"
 id = 393
 frame = ExtResource("1_4lg6s")

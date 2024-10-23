@@ -13,6 +13,5 @@ cost = 0
 description = "Discard a card >>> Dogboy has +2 ATK this turn. (Use only once during each of your turns.)"
 landscape = "Rainbow"
 card_type = "Creature"
-image = "Dogboy.jpg"
 id = 110
 frame = ExtResource("1_3c7nb")

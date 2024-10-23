@@ -13,6 +13,5 @@ cost = 1
 description = "When Green Snakey leaves play, deal 1 Damage to target Creature in this Lane."
 landscape = "SandyLands"
 card_type = "Creature"
-image = "Green Snakey.jpg"
 id = 207
 frame = ExtResource("1_5h2s7")

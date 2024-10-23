@@ -13,6 +13,5 @@ cost = 1
 description = "Destroy Snow Bunny >>> Freeze target Landscape."
 landscape = "IcyLands"
 card_type = "Creature"
-image = "Snow Bunny.jpg"
 id = 414
 frame = ExtResource("1_23jsf")

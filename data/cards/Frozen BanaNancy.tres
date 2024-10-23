@@ -13,6 +13,5 @@ cost = 1
 description = "At the start of your Fight Phase, if there are one or more Frozen tokens in this Lane, deal 2 Damage to target opponent."
 landscape = "IcyLands"
 card_type = "Creature"
-image = "Frozen BanaNancy.jpg"
 id = 167
 frame = ExtResource("1_qpprj")

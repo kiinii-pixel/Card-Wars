@@ -13,6 +13,5 @@ cost = 1
 description = "When target Creature attacks this turn, if it would leave play  during the Fight Phase, remove all Damage from it instead."
 landscape = "Cornfield"
 card_type = "Spell"
-image = "Bale Out.jpg"
 id = 18
 frame = ExtResource("1_ik3ll")

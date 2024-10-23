@@ -13,6 +13,5 @@ cost = 1
 description = "Creatures on Landscapes with a Frozen token on it have -1 ATK."
 landscape = "IcyLands"
 card_type = "Creature"
-image = "Emperor Penguin.jpg"
 id = 126
 frame = ExtResource("1_bufwv")

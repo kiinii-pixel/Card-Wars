@@ -13,6 +13,5 @@ cost = 2
 description = "Deal 3 Damage to Patched Puppy >>> Patched Puppy has +2 ATK this turn."
 landscape = "NiceLands"
 card_type = "Creature"
-image = "Patched Puppy.jpg"
 id = 316
 frame = ExtResource("1_5nebk")

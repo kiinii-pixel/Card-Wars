@@ -13,6 +13,5 @@ cost = 1
 description = "FLOOP >>> Draw a card, and then discard a card. If you discard a Rainbow card this way, gain 1 Action."
 landscape = "Blue Plains"
 card_type = "Creature"
-image = "Fiddling Ferret.jpg"
 id = 145
 frame = ExtResource("1_v5ru3")

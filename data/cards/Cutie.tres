@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://d2qmbjqxd2upp"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://d2qmbjqxd2upp"]
 
 [ext_resource type="Texture2D" uid="uid://b0rsdd3n7u8r4" path="res://assets/images/frames/NiceLands_Creature.png" id="1_aq7al"]
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_jo5hg"]
+[ext_resource type="Texture2D" uid="uid://dqc65iej68jdt" path="res://assets/images/cards/art/NiceLands/Creature/Cutie.png" id="2_galmf"]
 
 [resource]
 script = ExtResource("1_jo5hg")
@@ -13,6 +14,6 @@ cost = 1
 description = "FLOOP >>> You heal 1 Hit Point. (Can 't go over 25.)"
 landscape = "NiceLands"
 card_type = "Creature"
-image = "Cutie Koala.jpg"
 id = 103
+image = ExtResource("2_galmf")
 frame = ExtResource("1_aq7al")

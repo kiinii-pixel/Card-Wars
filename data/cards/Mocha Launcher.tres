@@ -13,6 +13,5 @@ cost = 1
 description = "Pay 1 Action, FLOOP >>> Deal 2 Damage to target Creature. If that Creature is destroyed this way, Freeze the Landscape it is on."
 landscape = "IcyLands"
 card_type = "Creature"
-image = "Mocha Launcher.jpg"
 id = 292
 frame = ExtResource("1_06iol")

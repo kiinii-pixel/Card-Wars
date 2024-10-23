@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://d0p043v3wkf45"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://d0p043v3wkf45"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_5mu44"]
 [ext_resource type="Texture2D" uid="uid://b0rsdd3n7u8r4" path="res://assets/images/frames/NiceLands_Creature.png" id="1_4532w"]
+[ext_resource type="Texture2D" uid="uid://b1rcs8ivva81g" path="res://assets/images/cards/art/NiceLands/Creature/Angel of Chocolate.png" id="2_8nwrr"]
 
 [resource]
 script = ExtResource("1_5mu44")
@@ -13,6 +14,6 @@ cost = 2
 description = "Pay 1 Action >>> Heal all Damage from Angel of Chocolate."
 landscape = "NiceLands"
 card_type = "Creature"
-image = "Angel of Chocolate.jpg"
 id = 9
+image = ExtResource("2_8nwrr")
 frame = ExtResource("1_4532w")

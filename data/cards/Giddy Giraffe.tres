@@ -13,6 +13,5 @@ cost = 1
 description = "While Giddy Giraffe has 4 or more Damage on it, it deal Damage directly to your opponent instead of the opposing Creature."
 landscape = "NiceLands"
 card_type = "Creature"
-image = "Giddy Giraffe.jpg"
 id = 187
 frame = ExtResource("1_ujhp8")

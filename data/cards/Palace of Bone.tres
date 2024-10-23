@@ -13,6 +13,5 @@ cost = 1
 description = "Opposing Creatures in this Lane don't trigger entering or leaving play effects."
 landscape = "Useless Swamp"
 card_type = "Building"
-image = "Palace of Bone.jpg"
 id = 311
 frame = ExtResource("1_i5ld3")

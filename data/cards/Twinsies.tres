@@ -13,6 +13,5 @@ cost = 0
 description = "Draw a card and reveal it. Another target player then reveals the top card of their deck. If their costs match, the targeted player draws it."
 landscape = "Rainbow"
 card_type = "Spell"
-image = "Twinsies.jpg"
 id = 476
 frame = ExtResource("1_eiq1u")

@@ -13,6 +13,5 @@ cost = 1
 description = "Each of your opponent's Creatures has -1 ATK this turn."
 landscape = "Rainbow"
 card_type = "Spell"
-image = "Master of Disguise.jpg"
 id = 288
 frame = ExtResource("1_tp6wj")

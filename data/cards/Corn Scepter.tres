@@ -13,6 +13,5 @@ cost = 1
 description = "Deal 1 Damage to target Creature for each Cornfield Landscape you control."
 landscape = "Rainbow"
 card_type = "Spell"
-image = "Corn Scepter.jpg"
 id = 88
 frame = ExtResource("1_7yva2")

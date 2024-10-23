@@ -13,6 +13,5 @@ cost = 1
 description = "Choose a Lane. Freeze both Landscapes in that Lane."
 landscape = "IcyLands"
 card_type = "Spell"
-image = "Snowblower.jpg"
 id = 419
 frame = ExtResource("1_tvcjc")

@@ -13,6 +13,5 @@ cost = 2
 description = "+1 DEF for each different Landscape type you control."
 landscape = "Useless Swamp"
 card_type = "Creature"
-image = "Swamp Horn.jpg"
 id = 444
 frame = ExtResource("1_jbov1")

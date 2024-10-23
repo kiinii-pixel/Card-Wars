@@ -8,7 +8,7 @@ class_name CardResource extends Resource
 @export var description : String
 @export var landscape : String
 @export var card_type : String
-@export var image : String
+#@export var image : String
 @export var id : int
-@export var image1 : Texture
+@export var image : CompressedTexture2D
 @export var frame : CompressedTexture2D

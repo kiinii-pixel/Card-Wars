@@ -13,6 +13,5 @@ cost = 2
 description = "Destroy a Building you control and Floop >>> Deal 3 damage to each opposing Creature."
 landscape = "Cornfield"
 card_type = "Creature"
-image = "Archer Danica.jpg"
 id = 14
 frame = ExtResource("1_ve6es")

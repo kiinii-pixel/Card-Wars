@@ -13,6 +13,5 @@ cost = 0
 description = "Deal 2 Damage to each opposing Creature on a Landscape with a Frozen token on it."
 landscape = "Rainbow"
 card_type = "Spell"
-image = "Snowvalanche.jpg"
 id = 420
 frame = ExtResource("1_3lmn5")

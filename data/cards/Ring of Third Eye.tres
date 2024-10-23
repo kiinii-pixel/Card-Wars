@@ -13,6 +13,5 @@ cost = 1
 description = "Each of your Creatures has +2 ATK this turn while attacking a Creature that is on a Cornfield Landscape."
 landscape = "Blue Plains"
 card_type = "Spell"
-image = "Ring of Third Eye.jpg"
 id = 362
 frame = ExtResource("1_g8iow")

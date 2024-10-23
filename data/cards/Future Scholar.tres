@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://h7c7oa733bck"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://h7c7oa733bck"]
 
 [ext_resource type="Texture2D" uid="uid://be2gbw036jfuv" path="res://assets/images/frames/Blue Plains_Creature.png" id="1_80xlp"]
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_ls23k"]
+[ext_resource type="Texture2D" uid="uid://cnvsu6ujo5fb4" path="res://assets/images/cards/art/Blue Plains/Creature/Future Scholar.png" id="2_71o6o"]
 
 [resource]
 script = ExtResource("1_ls23k")
@@ -13,6 +14,6 @@ cost = 2
 description = "When Future Scholar enters play, if it replaced a Creature, gain 1 Action."
 landscape = "Blue Plains"
 card_type = "Creature"
-image = "Future Scholar.jpg"
 id = 179
+image = ExtResource("2_71o6o")
 frame = ExtResource("1_80xlp")

@@ -13,6 +13,5 @@ cost = 1
 description = "Each of your Creatures has +2 ATK this turn while attacking a Creature that is on a Blue Plains Landscape."
 landscape = "Cornfield"
 card_type = "Spell"
-image = "Popcorn Power.jpg"
 id = 335
 frame = ExtResource("1_yiyql")

@@ -13,6 +13,5 @@ cost = 1
 description = "Pay 1 Action, FLOOP >>> Deal 1 Damage to each opposing Creature in play."
 landscape = "Useless Swamp"
 card_type = "Creature"
-image = "FumiGator.jpg"
 id = 172
 frame = ExtResource("1_bpuj0")

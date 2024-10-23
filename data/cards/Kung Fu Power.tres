@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://b5q1m65p44vgk"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://b5q1m65p44vgk"]
 
 [ext_resource type="Texture2D" uid="uid://d1kvwyj0lxwng" path="res://assets/images/frames/Blue Plains.png" id="1_etl3f"]
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_vxfmj"]
+[ext_resource type="Texture2D" uid="uid://bi35rsjqlrd5k" path="res://assets/images/cards/art/Blue Plains/Spell/Kung Fu Power.png" id="2_vaqc0"]
 
 [resource]
 script = ExtResource("1_vxfmj")
@@ -13,6 +14,6 @@ cost = 1
 description = "Ready 1 Creature of each type you control. (The types are Cornfield, Rainbow, Useless Swamp, Blue Plains, NiceLands and SandyLands.)"
 landscape = "Blue Plains"
 card_type = "Spell"
-image = "Kung Fu Power.jpg"
 id = 259
+image = ExtResource("2_vaqc0")
 frame = ExtResource("1_etl3f")

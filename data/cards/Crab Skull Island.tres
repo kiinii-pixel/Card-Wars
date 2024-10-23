@@ -13,6 +13,5 @@ cost = 1
 description = "Pay 1 Action, FLOOP >>> If this Landscape is empty, reveal cards from the top of your deck until you reveal a Creature, then play it onto this Landscape for free and shuffle the other revealed cards into your deck."
 landscape = "SandyLands"
 card_type = "Building"
-image = "Crab Skull Island.jpg"
 id = 97
 frame = ExtResource("1_mvx2m")

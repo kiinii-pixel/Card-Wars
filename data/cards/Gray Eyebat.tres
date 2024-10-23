@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://bubpfyrnwhnar"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://bubpfyrnwhnar"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_ubb47"]
 [ext_resource type="Texture2D" uid="uid://d2o5o4cm304mt" path="res://assets/images/frames/Useless Swamp_Creature.png" id="1_v8j8i"]
+[ext_resource type="Texture2D" uid="uid://wrdtn2qxsrly" path="res://assets/images/cards/art/Useless Swamp/Creature/Gray Eyebat.png" id="2_o3584"]
 
 [resource]
 script = ExtResource("1_ubb47")
@@ -13,6 +14,6 @@ cost = 1
 description = "Pay 1 Action >>> Return a random Useless Swamp Creature from your discard pile to your hand."
 landscape = "Useless Swamp"
 card_type = "Creature"
-image = "Gray Eyebat.jpg"
 id = 200
+image = ExtResource("2_o3584")
 frame = ExtResource("1_v8j8i")

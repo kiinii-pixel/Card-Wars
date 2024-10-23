@@ -13,6 +13,5 @@ cost = 1
 description = "FLOOP >>> Reveal a card from your hand. That card becomes a Rainbow card until the end of your turn. (It has no Landscape type)."
 landscape = "Blue Plains"
 card_type = "Creature"
-image = "Woadic Weirdo.jpg"
 id = 504
 frame = ExtResource("1_xbprw")

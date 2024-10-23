@@ -13,6 +13,5 @@ cost = 2
 description = "+1 DEF for each different Landscape type you control."
 landscape = "Blue Plains"
 card_type = "Creature"
-image = "Little Freezy.jpg"
 id = 268
 frame = ExtResource("1_bp177")

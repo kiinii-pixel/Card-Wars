@@ -13,6 +13,5 @@ cost = 1
 description = "At the start of your turn, if Adorabunny has 4 or more Damage on it, deal 3 Damage to target opponent."
 landscape = "NiceLands"
 card_type = "Creature"
-image = "Adorabunny.jpg"
 id = 3
 frame = ExtResource("1_8iyb3")

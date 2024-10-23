@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://dfqw85dpvvrnl"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://dfqw85dpvvrnl"]
 
 [ext_resource type="Texture2D" uid="uid://be2gbw036jfuv" path="res://assets/images/frames/Blue Plains_Creature.png" id="1_ce3o7"]
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_wv05b"]
+[ext_resource type="Texture2D" uid="uid://b1ywgxh4urk0g" path="res://assets/images/cards/art/Blue Plains/Creature/Woadic Chief.png" id="2_nbt2e"]
 
 [resource]
 script = ExtResource("1_wv05b")
@@ -13,6 +14,6 @@ cost = 2
 description = "Woadic Chief has +2 ATK this turn for each Spell you have played this turn."
 landscape = "Blue Plains"
 card_type = "Creature"
-image = "Woadic Chief.jpg"
 id = 499
+image = ExtResource("2_nbt2e")
 frame = ExtResource("1_ce3o7")

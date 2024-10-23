@@ -13,6 +13,5 @@ cost = 2
 description = "Your Creature on this Landscape has +3 ATK. At the start of each of your turns, discard a card."
 landscape = "Useless Swamp"
 card_type = "Building"
-image = "Bog Palace.jpg"
 id = 47
 frame = ExtResource("1_p5ver")

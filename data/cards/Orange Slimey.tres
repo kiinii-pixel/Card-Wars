@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://big3gdka1qxqg"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://big3gdka1qxqg"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_7h0hs"]
 [ext_resource type="Texture2D" uid="uid://d2o5o4cm304mt" path="res://assets/images/frames/Useless Swamp_Creature.png" id="1_ru3xo"]
+[ext_resource type="Texture2D" uid="uid://cfgoxsofb2foj" path="res://assets/images/cards/art/Useless Swamp/Creature/Orange Slimey.png" id="2_kot71"]
 
 [resource]
 script = ExtResource("1_7h0hs")
@@ -13,6 +14,6 @@ cost = 1
 description = "If you control 3 or more different Landscape types when Orange Slimey enters play, deal 3 Damage to your opponent."
 landscape = "Useless Swamp"
 card_type = "Creature"
-image = "Orange Slimey.jpg"
 id = 309
+image = ExtResource("2_kot71")
 frame = ExtResource("1_ru3xo")

@@ -13,6 +13,5 @@ cost = 1
 description = "Swap the positions of 2 Creatures you control. (They change Lanes simultaneously.)"
 landscape = "Blue Plains"
 card_type = "Spell"
-image = "Spell Warp.jpg"
 id = 425
 frame = ExtResource("1_xvymm")

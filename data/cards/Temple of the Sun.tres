@@ -13,6 +13,5 @@ cost = 1
 description = "When a SandyLands Creature with cost 1 or greater you control enters play in this Lane, you may return it to its owner's hand."
 landscape = "SandyLands"
 card_type = "Building"
-image = "Temple of the Sun.jpg"
 id = 453
 frame = ExtResource("1_shhv1")

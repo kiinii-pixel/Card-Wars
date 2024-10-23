@@ -13,6 +13,5 @@ cost = 1
 description = "At the start of your turn, you may move Geomancer to an empty Landscape you control."
 landscape = "Blue Plains"
 card_type = "Creature"
-image = "Geomancer.jpg"
 id = 180
 frame = ExtResource("1_ioo6w")

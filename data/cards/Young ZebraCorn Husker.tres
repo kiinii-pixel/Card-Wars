@@ -13,6 +13,5 @@ cost = 1
 description = "If Young ZebraCorn Husker leaves play during your Fight Phase, you may put it on top of your deck."
 landscape = "Cornfield"
 card_type = "Creature"
-image = "Young ZebraCorn Husker.jpg"
 id = 509
 frame = ExtResource("1_7h8ef")

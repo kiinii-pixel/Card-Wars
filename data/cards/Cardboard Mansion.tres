@@ -13,6 +13,5 @@ cost = 5
 description = "Cardboard Mansion costs 1 less to play for every 5 cards in your Discard Pile. FLOOP >>> Gain 1 Action."
 landscape = "Useless Swamp"
 card_type = "Building"
-image = "Cardboard Mansion.jpg"
 id = 62
 frame = ExtResource("1_gmvl2")

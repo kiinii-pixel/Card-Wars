@@ -13,6 +13,5 @@ cost = 1
 description = "Redistribute the Damage on Creatures you control (no Creature can have more Damage than DEF)."
 landscape = "NiceLands"
 card_type = "Spell"
-image = "Patchwork.jpg"
 id = 317
 frame = ExtResource("1_rpeo2")

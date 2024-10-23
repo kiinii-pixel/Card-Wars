@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://ccelmtieitpq2"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://ccelmtieitpq2"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_fhs1j"]
 [ext_resource type="Texture2D" uid="uid://b0rsdd3n7u8r4" path="res://assets/images/frames/NiceLands_Creature.png" id="1_ppkvj"]
+[ext_resource type="Texture2D" uid="uid://8eefyvwt1q27" path="res://assets/images/cards/art/NiceLands/Creature/Niceasaurus Rex.png" id="2_me7ru"]
 
 [resource]
 script = ExtResource("1_fhs1j")
@@ -13,6 +14,6 @@ cost = 1
 description = "At the start of your turn, if Niceasaurus Rex has Damage on it, draw a card."
 landscape = "NiceLands"
 card_type = "Creature"
-image = "Niceasaurus Rex.jpg"
 id = 303
+image = ExtResource("2_me7ru")
 frame = ExtResource("1_ppkvj")

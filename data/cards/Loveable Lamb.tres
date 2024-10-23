@@ -13,6 +13,5 @@ cost = 1
 description = "At the start of your turn, if Loveable Lamb has 4 or more Damage on it, deal 2 Damage to target opposing Creature in this Lane."
 landscape = "NiceLands"
 card_type = "Creature"
-image = "Loveable Lamb.jpg"
 id = 274
 frame = ExtResource("1_weld6")

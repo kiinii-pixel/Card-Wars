@@ -13,6 +13,5 @@ cost = 0
 description = "Destroy any number of Creatures you control. Draw a card for each Creature destroyed this way."
 landscape = "Rainbow"
 card_type = "Spell"
-image = "Cute Overload.jpg"
 id = 102
 frame = ExtResource("1_4qc7a")

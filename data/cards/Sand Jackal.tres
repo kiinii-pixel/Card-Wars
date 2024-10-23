@@ -13,6 +13,5 @@ cost = 1
 description = "While Sand Jackal is on a [NiceLands]] Landscape, when it defeats an opposing Creature, you heal 3 Hit Points."
 landscape = "SandyLands"
 card_type = "Creature"
-image = "Sand Jackal.jpg"
 id = 375
 frame = ExtResource("1_x4nvl")

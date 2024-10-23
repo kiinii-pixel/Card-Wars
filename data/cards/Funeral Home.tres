@@ -13,6 +13,5 @@ cost = 1
 description = "Whenever a foe discards a card, your Creature in this Lane has +1 ATK until the end of turn."
 landscape = "Useless Swamp"
 card_type = "Building"
-image = "Funeral Home.jpg"
 id = 174
 frame = ExtResource("1_k4wbp")

@@ -13,6 +13,5 @@ cost = 2
 description = "Opponents can't play 0 cost cards."
 landscape = "Blue Plains"
 card_type = "Creature"
-image = "Pentacutie.jpg"
 id = 321
 frame = ExtResource("1_chu53")

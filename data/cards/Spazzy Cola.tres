@@ -13,6 +13,5 @@ cost = 0
 description = "Each Creature in play has +1 ATK this turn (including your opponent's Creatures)."
 landscape = "Rainbow"
 card_type = "Spell"
-image = "Spazzy Cola.jpg"
 id = 424
 frame = ExtResource("1_tgxjk")

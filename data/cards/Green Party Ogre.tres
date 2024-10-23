@@ -13,6 +13,5 @@ cost = 1
 description = "When a Creature you control leaves play, heal 1 Damage from Green Party Ogre."
 landscape = "SandyLands"
 card_type = "Creature"
-image = "Green Party Ogre.jpg"
 id = 206
 frame = ExtResource("1_1thg3")

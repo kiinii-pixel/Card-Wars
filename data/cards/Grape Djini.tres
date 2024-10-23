@@ -13,6 +13,5 @@ cost = 1
 description = "When Grape Djini enters play, if it replaced a Creature, you may put a card from your discard pile on top of your deck."
 landscape = "Blue Plains"
 card_type = "Creature"
-image = "Grape Djini.jpg"
 id = 199
 frame = ExtResource("1_krivg")

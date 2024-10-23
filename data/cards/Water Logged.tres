@@ -13,6 +13,5 @@ cost = 1
 description = "Opposing Creatures have -2 ATK this turn (min 0)."
 landscape = "Useless Swamp"
 card_type = "Spell"
-image = "Water Logged.jpg"
 id = 489
 frame = ExtResource("1_0gbk0")

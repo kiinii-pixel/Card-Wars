@@ -13,6 +13,5 @@ cost = 2
 description = "Heal 2 Damage from each Creature you control. Creatures you control lose their Landscape type and become Rainbow Creatures this turn."
 landscape = "Blue Plains"
 card_type = "Spell"
-image = "Puppy Parade.jpg"
 id = 345
 frame = ExtResource("1_e6chs")

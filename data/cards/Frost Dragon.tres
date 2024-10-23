@@ -13,6 +13,5 @@ cost = 2
 description = "Pay 1 Action >>> Freeze a Landscape in this Lane."
 landscape = "IcyLands"
 card_type = "Creature"
-image = "Frost Dragon.jpg"
 id = 163
 frame = ExtResource("1_plafc")

@@ -13,6 +13,5 @@ cost = 2
 description = "When The Cooler leaves play, Freeze its Landscape."
 landscape = "IcyLands"
 card_type = "Creature"
-image = "The Cooler.jpg"
 id = 456
 frame = ExtResource("1_8nhpa")

@@ -13,6 +13,5 @@ cost = 2
 description = "When Spiked ZebraCorn attacks, deal 1 Damage to each opposing Creature in adjacent Lanes."
 landscape = "Cornfield"
 card_type = "Creature"
-image = "Spiked ZebraCorn.jpg"
 id = 427
 frame = ExtResource("1_o1vxq")

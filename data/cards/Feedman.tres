@@ -13,6 +13,5 @@ cost = 1
 description = "When Feedman enters play, the next Creature you play this turn costs 1 less to play."
 landscape = "Cornfield"
 card_type = "Creature"
-image = "Feedman.jpg"
 id = 143
 frame = ExtResource("1_ktu6l")

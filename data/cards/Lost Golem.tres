@@ -13,6 +13,5 @@ cost = 3
 description = "Lost Golem costs 1 less to play for each other Creature you have played this turn."
 landscape = "SandyLands"
 card_type = "Creature"
-image = "Lost Golem.jpg"
 id = 273
 frame = ExtResource("1_86kny")

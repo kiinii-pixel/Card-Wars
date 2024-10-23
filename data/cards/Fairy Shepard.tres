@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://dxn4fjl16ur7c"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://dxn4fjl16ur7c"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_2p7xs"]
 [ext_resource type="Texture2D" uid="uid://b0rsdd3n7u8r4" path="res://assets/images/frames/NiceLands_Creature.png" id="1_dfc2d"]
+[ext_resource type="Texture2D" uid="uid://cq62xigv2jxst" path="res://assets/images/cards/art/NiceLands/Creature/Fairy Shepard.png" id="2_3j5io"]
 
 [resource]
 script = ExtResource("1_2p7xs")
@@ -13,6 +14,6 @@ cost = 2
 description = "Each Adjacent NiceLands Creature has +2 DEF."
 landscape = "NiceLands"
 card_type = "Creature"
-image = "Fairy Shepard.jpg"
 id = 134
+image = ExtResource("2_3j5io")
 frame = ExtResource("1_dfc2d")

@@ -13,6 +13,5 @@ cost = 2
 description = "Timmy Magic Eyes has +1 ATK while attacking a Creature that is on a Blue Plains Landscape."
 landscape = "Rainbow"
 card_type = "Creature"
-image = "Timmy Magic Eyes.jpg"
 id = 462
 frame = ExtResource("1_804x7")

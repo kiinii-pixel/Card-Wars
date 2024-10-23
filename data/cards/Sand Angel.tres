@@ -13,6 +13,5 @@ cost = 0
 description = "Lie down in the sand, wave your arms and legs, and she will appear to you."
 landscape = "Rainbow"
 card_type = "Creature"
-image = "Sand Angel.jpg"
 id = 372
 frame = ExtResource("1_8u22o")

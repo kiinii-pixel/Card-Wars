@@ -13,6 +13,5 @@ cost = 2
 description = "When Brigadier Banana Split attacks, deal 2 Damage to target opposing Creature on a Landscape with a Frozen token on it."
 landscape = "IcyLands"
 card_type = "Creature"
-image = "Brigadier Banana Split.jpg"
 id = 53
 frame = ExtResource("1_l7n81")

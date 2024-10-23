@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://qq7q48rmc0en"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://qq7q48rmc0en"]
 
 [ext_resource type="Texture2D" uid="uid://be2gbw036jfuv" path="res://assets/images/frames/Blue Plains_Creature.png" id="1_3qgoo"]
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_17soj"]
+[ext_resource type="Texture2D" uid="uid://bbsja00o80oge" path="res://assets/images/cards/art/Blue Plains/Creature/Djini Ghost.png" id="2_oc4l6"]
 
 [resource]
 script = ExtResource("1_17soj")
@@ -13,6 +14,6 @@ cost = 1
 description = "FLOOP >>> Pay 2 less to play your next Spell this Turn."
 landscape = "Blue Plains"
 card_type = "Creature"
-image = "Djini Ghost.jpg"
 id = 109
+image = ExtResource("2_oc4l6")
 frame = ExtResource("1_3qgoo")

@@ -13,6 +13,5 @@ cost = 1
 description = "FLOOP >>> Opposing Buildings in this Lane are blank while The Dog is Flooped \"Woof."
 landscape = "Rainbow"
 card_type = "Creature"
-image = "The Dog.jpg"
 id = 458
 frame = ExtResource("1_ntid3")

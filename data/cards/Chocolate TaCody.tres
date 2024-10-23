@@ -13,6 +13,5 @@ cost = 2
 description = "At the start of your Fight Phase, if there are 1 or more Frozen tokens in this Lane, deal 1 Damage to each Creature target player controls."
 landscape = "IcyLands"
 card_type = "Creature"
-image = "Chocolate TaCody.jpg"
 id = 71
 frame = ExtResource("1_2dud3")

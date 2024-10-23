@@ -13,6 +13,5 @@ cost = 1
 description = "When a Landscape in this Lane becomes Frozen, deal 2 Damage to target Creature."
 landscape = "IcyLands"
 card_type = "Building"
-image = "Crystal Palace.jpg"
 id = 100
 frame = ExtResource("1_y2t4h")

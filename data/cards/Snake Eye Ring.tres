@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://dfqblu2l1lek7"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://dfqblu2l1lek7"]
 
 [ext_resource type="Texture2D" uid="uid://tqpubod46faw" path="res://assets/images/frames/Rainbow.png" id="1_nq0c4"]
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_qfprd"]
+[ext_resource type="Texture2D" uid="uid://dxgui38iherrq" path="res://assets/images/cards/art/Rainbow/Spell/Snake Eye Ring.png" id="2_2s4sw"]
 
 [resource]
 script = ExtResource("1_qfprd")
@@ -13,6 +14,6 @@ cost = 0
 description = "Return a random Useless Swamp Creature from your discard pile to your hand."
 landscape = "Rainbow"
 card_type = "Spell"
-image = "Snake Eye Ring.jpg"
 id = 408
+image = ExtResource("2_2s4sw")
 frame = ExtResource("1_nq0c4")

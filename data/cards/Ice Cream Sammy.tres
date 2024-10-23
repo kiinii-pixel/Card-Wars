@@ -13,6 +13,5 @@ cost = 1
 description = "Pay 1 Action, FLOOP >>> Choose a Lane, Freeze both Landscapes in that Lane."
 landscape = "IcyLands"
 card_type = "Creature"
-image = "Ice Cream Sammy.jpg"
 id = 233
 frame = ExtResource("1_b0jyt")

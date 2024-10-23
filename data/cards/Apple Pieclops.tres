@@ -13,6 +13,5 @@ cost = 2
 description = "At the start of your turn, you may heal or deal 1 Damage to each Creature you control. (Choose for each Creature.)"
 landscape = "NiceLands"
 card_type = "Creature"
-image = "Apple Pieclops.jpg"
 id = 12
 frame = ExtResource("1_88wvb")

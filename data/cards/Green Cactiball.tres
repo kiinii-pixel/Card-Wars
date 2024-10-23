@@ -13,6 +13,5 @@ cost = 1
 description = "+2 ATK for each Green Cactiball you control."
 landscape = "SandyLands"
 card_type = "Creature"
-image = "Green Cactiball.jpg"
 id = 201
 frame = ExtResource("1_m6xo6")

@@ -13,6 +13,5 @@ cost = 1
 description = "Destroy target opposing Creature. Each opponent draws cards equal to that Creature's cost."
 landscape = "SandyLands"
 card_type = "Spell"
-image = "Scorching Serve.jpg"
 id = 385
 frame = ExtResource("1_knwt3")

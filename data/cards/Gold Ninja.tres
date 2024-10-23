@@ -13,6 +13,5 @@ cost = 1
 description = "When Gold Ninja enters play, deal 1 Damage to target Creature for each different Landscape type you control."
 landscape = "Cornfield"
 card_type = "Creature"
-image = "Gold Ninja.jpg"
 id = 192
 frame = ExtResource("1_iv6xf")

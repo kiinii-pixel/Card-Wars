@@ -13,6 +13,5 @@ cost = 2
 description = "FLOOP >>> Heal or deal Damage to your Creature on this Landscape until it has 4 Damage on it."
 landscape = "NiceLands"
 card_type = "Spell"
-image = "Bean Ball Bomba.jpg"
 id = 24
 frame = ExtResource("1_27cjx")

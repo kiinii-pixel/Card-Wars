@@ -13,6 +13,5 @@ cost = 0
 description = "Deal 1 Damage to target Creature. If that Creature is on a Landscape with a Frozen token on it, deal 3 Damage instead."
 landscape = "Rainbow"
 card_type = "Spell"
-image = "Frozen Heart.jpg"
 id = 169
 frame = ExtResource("1_6lovt")

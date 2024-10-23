@@ -13,6 +13,5 @@ cost = 1
 description = "FLOOP >>> Heal 1 Damage from Corns Templar."
 landscape = "Cornfield"
 card_type = "Creature"
-image = "Corns Templar.jpg"
 id = 90
 frame = ExtResource("1_b3nsa")

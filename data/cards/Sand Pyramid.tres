@@ -13,6 +13,5 @@ cost = 1
 description = "Pay 2 Actions >>> Return each Creature in this Lane to its owner's hand. (Affects both players.)"
 landscape = "SandyLands"
 card_type = "Building"
-image = "Sand Pyramid.jpg"
 id = 377
 frame = ExtResource("1_hslek")

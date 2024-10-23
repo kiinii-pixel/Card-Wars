@@ -13,6 +13,5 @@ cost = 1
 description = "Kernel Queen has +1 ATK for each Flooped Creature you control."
 landscape = "Cornfield"
 card_type = "Creature"
-image = "Kernel Queen.jpg"
 id = 256
 frame = ExtResource("1_tnwgm")

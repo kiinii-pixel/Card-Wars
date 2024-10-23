@@ -13,6 +13,5 @@ cost = 1
 description = "FLOOP >>> Return a Creature in an adjacent Lane to its owner's hand."
 landscape = "SandyLands"
 card_type = "Creature"
-image = "Beach Mummy.jpg"
 id = 23
 frame = ExtResource("1_fa75s")

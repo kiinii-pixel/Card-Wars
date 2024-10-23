@@ -13,6 +13,5 @@ cost = 2
 description = "When Hydromancer enters into play, you may reveal cards from the top of your deck until you reveal a Teamwork, and then play it for free. Shuffle the other revealed cards into your deck."
 landscape = "Blue Plains"
 card_type = "Creature"
-image = "Hydromancer.jpg"
 id = 230
 frame = ExtResource("1_vwuc6")

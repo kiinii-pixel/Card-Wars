@@ -13,6 +13,5 @@ cost = 1
 description = "Your Creature on this Landscape has +2 DEF and cannot be damaged by your foe's Spells."
 landscape = "Blue Plains"
 card_type = "Building"
-image = "Domed Stronghold.jpg"
 id = 111
 frame = ExtResource("1_fttcl")

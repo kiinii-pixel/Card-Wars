@@ -13,6 +13,5 @@ cost = 1
 description = "Each of your Creature has +2 ATK this turn while attacking a Creature that is on a NiceLands Landscape."
 landscape = "Cornfield"
 card_type = "Spell"
-image = "Husker Amulet.jpg"
 id = 223
 frame = ExtResource("1_v4ft6")

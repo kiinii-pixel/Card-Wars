@@ -13,6 +13,5 @@ cost = 2
 description = "Each time Emboldened Retriever attacks, you may deal a card. Much ball. Wow."
 landscape = "Blue Plains"
 card_type = "Creature"
-image = "Emboldened Retriever.jpg"
 id = 125
 frame = ExtResource("1_s8vd6")

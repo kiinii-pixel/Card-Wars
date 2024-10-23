@@ -13,6 +13,5 @@ cost = 1
 description = "When Frozen Fish deals Damage to a Creature, you may Freeze a Landscape in this Lane."
 landscape = "IcyLands"
 card_type = "Creature"
-image = "Frozen Fish.jpg"
 id = 168
 frame = ExtResource("1_vtt1b")

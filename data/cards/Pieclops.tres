@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://ce6axgiyb6era"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://ce6axgiyb6era"]
 
 [ext_resource type="Texture2D" uid="uid://b0rsdd3n7u8r4" path="res://assets/images/frames/NiceLands_Creature.png" id="1_dj6rh"]
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_pcunj"]
+[ext_resource type="Texture2D" uid="uid://bkjihmpwianeu" path="res://assets/images/cards/art/NiceLands/Creature/Pieclops.png" id="2_eg811"]
 
 [resource]
 script = ExtResource("1_pcunj")
@@ -13,6 +14,6 @@ cost = 1
 description = "When Pieclops enters play, heal 1 Damage from each adjacent Creature."
 landscape = "NiceLands"
 card_type = "Creature"
-image = "Pieclops.jpg"
 id = 325
+image = ExtResource("2_eg811")
 frame = ExtResource("1_dj6rh")

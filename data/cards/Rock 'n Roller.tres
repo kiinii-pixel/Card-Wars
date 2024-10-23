@@ -13,6 +13,5 @@ cost = 2
 description = "When Rock 'n Roller enters play, flip a Landscape in this Lane face down. When Rock 'n Roller leaves play, flip it face up."
 landscape = "Cornfield"
 card_type = "Creature"
-image = "Rock 'n Roller.jpg"
 id = 365
 frame = ExtResource("1_6tb48")

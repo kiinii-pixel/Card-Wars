@@ -13,6 +13,5 @@ cost = 1
 description = "If you control 3 or more different Landscape types when Lime Slimey enters play, draw 2 cards."
 landscape = "SandyLands"
 card_type = "Creature"
-image = "Lime Slimey.jpg"
 id = 267
 frame = ExtResource("1_ji1qh")

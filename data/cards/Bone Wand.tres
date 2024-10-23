@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://b53nge5oninys"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://b53nge5oninys"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_0ixqt"]
 [ext_resource type="Texture2D" uid="uid://tqpubod46faw" path="res://assets/images/frames/Rainbow.png" id="1_yu0mx"]
+[ext_resource type="Texture2D" uid="uid://c1ku5is6nqa7p" path="res://assets/images/cards/art/Rainbow/Spell/Bone Wand.png" id="2_bfus4"]
 
 [resource]
 script = ExtResource("1_0ixqt")
@@ -13,6 +14,6 @@ cost = 0
 description = "Play only if you control a Useless Swamp Creature. Target opponent discards a card from his hand."
 landscape = "Rainbow"
 card_type = "Spell"
-image = "Bone Wand.jpg"
 id = 49
+image = ExtResource("2_bfus4")
 frame = ExtResource("1_yu0mx")

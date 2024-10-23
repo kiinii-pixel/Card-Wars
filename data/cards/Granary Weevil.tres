@@ -13,6 +13,5 @@ cost = 2
 description = "Destroy Granary Weevil >>> Destroy target opposing Creature in this Lane and any Creature with the same name in play."
 landscape = "Useless Swamp"
 card_type = "Creature"
-image = "Granary Weevil.jpg"
 id = 195
 frame = ExtResource("1_7qv1j")

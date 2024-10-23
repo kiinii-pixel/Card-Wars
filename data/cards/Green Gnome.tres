@@ -13,6 +13,5 @@ cost = 1
 description = "FLOOP >>> Deal 1 Damage to each opposing Creature that is on a Blue Plains Landscape."
 landscape = "SandyLands"
 card_type = "Creature"
-image = "Green Gnome.jpg"
 id = 203
 frame = ExtResource("1_1n14d")

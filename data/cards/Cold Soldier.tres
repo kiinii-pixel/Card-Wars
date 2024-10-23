@@ -13,6 +13,5 @@ cost = 1
 description = "+3 ATK while your opponent does not control a Creature in this Lane"
 landscape = "IcyLands"
 card_type = "Creature"
-image = "Cold Soldier.jpg"
 id = 75
 frame = ExtResource("1_aje48")

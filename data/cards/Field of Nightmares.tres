@@ -13,6 +13,5 @@ cost = 1
 description = "Deal 1 Damage to your opponent for each card in his hand."
 landscape = "Cornfield"
 card_type = "Spell"
-image = "Field of Nightmares.jpg"
 id = 146
 frame = ExtResource("1_uspgx")

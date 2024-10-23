@@ -13,6 +13,5 @@ cost = 0
 description = "When Static Parrotrooper enters play, move it to any empty Landscape. It cannot be replaced. At the start of your turn, deal 1 damage to your Hero."
 landscape = "Rainbow"
 card_type = "Creature"
-image = "Static Parrotrooper.jpg"
 id = 432
 frame = ExtResource("1_txjak")

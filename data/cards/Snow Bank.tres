@@ -13,6 +13,5 @@ cost = 1
 description = "FLOOP, Remove a Frozen token from a Landscape in this Lane >>> Deal 3 Damage to target opponent."
 landscape = "IcyLands"
 card_type = "Building"
-image = "Snow Bank.jpg"
 id = 413
 frame = ExtResource("1_hbo45")

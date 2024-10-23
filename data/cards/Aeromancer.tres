@@ -13,6 +13,5 @@ cost = 2
 description = "When Aeromancer enters play, you may swap the positions of 2 Creatures [that the] target player controls."
 landscape = "Blue Plains"
 card_type = "Creature"
-image = "Aeromancer.jpg"
 id = 4
 frame = ExtResource("1_xl4uf")

@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://dn3dirbynwuql"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://dn3dirbynwuql"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_byljs"]
 [ext_resource type="Texture2D" uid="uid://b0p6pgobeqtuk" path="res://assets/images/frames/Cornfield_Creature.png" id="1_fodox"]
+[ext_resource type="Texture2D" uid="uid://bkmejfijtpgxa" path="res://assets/images/cards/art/Cornfield/Creature/Archer Dan.png" id="2_po1ho"]
 
 [resource]
 script = ExtResource("1_byljs")
@@ -13,6 +14,6 @@ cost = 2
 description = "FLOOP >>> Destroy target Building in Archer Dan's Lane."
 landscape = "Cornfield"
 card_type = "Creature"
-image = "Archer Dan.jpg"
 id = 13
+image = ExtResource("2_po1ho")
 frame = ExtResource("1_fodox")

@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://ddjwklet7i88b"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://ddjwklet7i88b"]
 
 [ext_resource type="Texture2D" uid="uid://b0p6pgobeqtuk" path="res://assets/images/frames/Cornfield_Creature.png" id="1_2q7ts"]
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_n5mwa"]
+[ext_resource type="Texture2D" uid="uid://bo4ewtupb5qxl" path="res://assets/images/cards/art/Cornfield/Creature/Ethan Allfire.png" id="2_ife6m"]
 
 [resource]
 script = ExtResource("1_n5mwa")
@@ -13,6 +14,6 @@ cost = 1
 description = "When Ethan Allfire leaves play, draw 1 card for each Cornfield Landscapes you control."
 landscape = "Cornfield"
 card_type = "Creature"
-image = "Ethan Allfire.jpg"
 id = 129
+image = ExtResource("2_ife6m")
 frame = ExtResource("1_2q7ts")

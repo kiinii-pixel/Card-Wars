@@ -13,6 +13,5 @@ cost = 1
 description = "FLOOP >>> Move Boarder Collie to any of your empty Landscapes. If either Landscape in that Lane is Frozen, gain 1 Action."
 landscape = "IcyLands"
 card_type = "Creature"
-image = "Boarder Collie.jpg"
 id = 43
 frame = ExtResource("1_g8phu")

@@ -13,6 +13,5 @@ cost = 1
 description = "Each of your Creatures has +2 ATK this turn while attacking a Creature that is on a SandyLands Landscape."
 landscape = "Useless Swamp"
 card_type = "Spell"
-image = "Magic Lamp.jpg"
 id = 282
 frame = ExtResource("1_imgwt")

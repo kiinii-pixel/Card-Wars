@@ -13,6 +13,5 @@ cost = 2
 description = "You may play additional Buildings onto this Landscape."
 landscape = "Cornfield"
 card_type = "Creature"
-image = "Burly Lumberjack.jpg"
 id = 55
 frame = ExtResource("1_42rfp")

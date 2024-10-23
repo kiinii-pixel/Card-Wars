@@ -13,6 +13,5 @@ cost = 2
 description = "Additional Cost: Floop a Creature you control. Search your deck for a Building and put it into play. Then shuffle your deck."
 landscape = "Cornfield"
 card_type = "Spell"
-image = "Deforestation.jpg"
 id = 107
 frame = ExtResource("1_pu333")

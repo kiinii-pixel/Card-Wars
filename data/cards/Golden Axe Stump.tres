@@ -13,6 +13,5 @@ cost = 1
 description = "Whenever an opponent draws a card, deal 1 Damage to that player."
 landscape = "SandyLands"
 card_type = "Creature"
-image = "Golden Axe Stump.jpg"
 id = 193
 frame = ExtResource("1_edj1i")

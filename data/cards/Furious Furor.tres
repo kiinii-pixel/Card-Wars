@@ -13,6 +13,5 @@ cost = 1
 description = "Target Creature has +2 ATK this turn for each Flooped Creature you control."
 landscape = "Cornfield"
 card_type = "Spell"
-image = "Furious Furor.jpg"
 id = 176
 frame = ExtResource("1_rp437")

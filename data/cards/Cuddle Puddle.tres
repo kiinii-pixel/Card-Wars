@@ -13,6 +13,5 @@ cost = 1
 description = "Friendly Creatures have +1 ATK until the start of the Fight Phase. Then each Creature deals Damage equal to its ATK to the opposing Creature in its Lane."
 landscape = "NiceLands"
 card_type = "Spell"
-image = "Cuddle Puddle.jpg"
 id = 101
 frame = ExtResource("1_bwmhx")

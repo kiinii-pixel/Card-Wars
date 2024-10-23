@@ -13,6 +13,5 @@ cost = 2
 description = "Knit Kitty is affected by Buildings on adjacent Landscapes."
 landscape = "NiceLands"
 card_type = "Creature"
-image = "Knit Kitty.jpg"
 id = 258
 frame = ExtResource("1_27w6f")

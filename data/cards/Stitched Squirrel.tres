@@ -13,6 +13,5 @@ cost = 1
 description = "At the start of your turn, if Stitched Squirrel has 4 or more Damage on it, destroy target opposing Building in this lane."
 landscape = "NiceLands"
 card_type = "Creature"
-image = "Stitched Squirrel.jpg"
 id = 434
 frame = ExtResource("1_2fqjc")

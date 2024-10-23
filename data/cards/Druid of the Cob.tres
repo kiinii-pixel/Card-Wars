@@ -13,6 +13,5 @@ cost = 1
 description = "Flooped Creatures you control have +1 ATK."
 landscape = "Cornfield"
 card_type = "Creature"
-image = "Druid of the Cob.jpg"
 id = 120
 frame = ExtResource("1_1tsk8")

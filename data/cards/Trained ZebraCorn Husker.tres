@@ -13,6 +13,5 @@ cost = 2
 description = "+1 ATK for each Teamwork your team controls. If Trained ZebraCorn Husker leaves play during your Fight Phase, you may put it into your hand."
 landscape = "Cornfield"
 card_type = "Creature"
-image = "Trained ZebraCorn Husker.jpg"
 id = 470
 frame = ExtResource("1_sgf6c")

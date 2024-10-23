@@ -13,6 +13,5 @@ cost = 0
 description = "Look out below!"
 landscape = "Rainbow"
 card_type = "Creature"
-image = "Spike Icicle.jpg"
 id = 426
 frame = ExtResource("1_f1xa8")

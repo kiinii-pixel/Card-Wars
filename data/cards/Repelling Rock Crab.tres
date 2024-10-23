@@ -13,6 +13,5 @@ cost = 1
 description = "Each time Repelling Rock Crab takes Damage from a Creature, it deals that much Damage to that Creature."
 landscape = "SandyLands"
 card_type = "Creature"
-image = "Repelling Rock Crab.jpg"
 id = 358
 frame = ExtResource("1_sb0hr")

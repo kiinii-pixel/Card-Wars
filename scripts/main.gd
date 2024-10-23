@@ -88,11 +88,8 @@ func dir_contents(path):
 				print("Found directory: " + file_name)
 			else:
 				var imported_resource : Resource = load(path + file_name)
-				#print(imported_resource)
-				#print(get_frame(imported_resource))
-				var frame = get_frame(imported_resource)
-				imported_resource.frame = frame
-				print(imported_resource.frame)
+				var image = get_image(imported_resource)
+				imported_resource.image = image
 				ResourceSaver.save(imported_resource, path + file_name)
 			file_name = dir.get_next()
 	else:

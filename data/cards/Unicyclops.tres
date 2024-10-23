@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://ct4j6kpiabjul"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://ct4j6kpiabjul"]
 
 [ext_resource type="Texture2D" uid="uid://d2o5o4cm304mt" path="res://assets/images/frames/Useless Swamp_Creature.png" id="1_27kbs"]
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_v2yrg"]
+[ext_resource type="Texture2D" uid="uid://cvqkcqgsisprn" path="res://assets/images/cards/art/Useless Swamp/Creature/Unicyclops.png" id="2_58w64"]
 
 [resource]
 script = ExtResource("1_v2yrg")
@@ -13,6 +14,6 @@ cost = 2
 description = "At the start of your turn, each player draws a card and then discards a card."
 landscape = "Useless Swamp"
 card_type = "Creature"
-image = "Unicyclops.jpg"
 id = 479
+image = ExtResource("2_58w64")
 frame = ExtResource("1_27kbs")

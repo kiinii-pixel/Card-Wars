@@ -13,6 +13,5 @@ cost = 1
 description = "Farmhouse counts as an additional Cornfield Landscape you control."
 landscape = "Cornfield"
 card_type = "Building"
-image = "Farmhouse.jpg"
 id = 140
 frame = ExtResource("1_4d14q")

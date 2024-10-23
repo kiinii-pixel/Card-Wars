@@ -13,6 +13,5 @@ cost = 2
 description = "While Overstuffed Orangutan has 4 or more Damage on it, double its ATK."
 landscape = "NiceLands"
 card_type = "Creature"
-image = "Overstuffed Orangutan.jpg"
 id = 310
 frame = ExtResource("1_0nj44")

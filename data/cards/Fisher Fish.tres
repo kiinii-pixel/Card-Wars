@@ -13,6 +13,5 @@ cost = 1
 description = "If Fisher Fish enters play onto a Blue Plains Landscape, deal 2 Damage to each opposing player."
 landscape = "Useless Swamp"
 card_type = "Creature"
-image = "Fisher Fish.jpg"
 id = 152
 frame = ExtResource("1_cdi8a")

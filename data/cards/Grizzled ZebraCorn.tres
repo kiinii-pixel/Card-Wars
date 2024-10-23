@@ -13,6 +13,5 @@ cost = 2
 description = "When Grizzled ZebraCorn attacks, deal 2 Damage to target opponent."
 landscape = "Cornfield"
 card_type = "Creature"
-image = "Grizzled ZebraCorn.jpg"
 id = 209
 frame = ExtResource("1_28y1p")

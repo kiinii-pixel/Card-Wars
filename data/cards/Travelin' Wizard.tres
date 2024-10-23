@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://dal65nxg8e6eq"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://dal65nxg8e6eq"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_rruah"]
 [ext_resource type="Texture2D" uid="uid://be2gbw036jfuv" path="res://assets/images/frames/Blue Plains_Creature.png" id="1_umejq"]
+[ext_resource type="Texture2D" uid="uid://2w6o2g04soga" path="res://assets/images/cards/art/Blue Plains/Creature/Travelin' Wizard.png" id="2_fkw31"]
 
 [resource]
 script = ExtResource("1_rruah")
@@ -13,6 +14,6 @@ cost = 2
 description = "When Travelin' Wizard enters play, the opposing Creature in this Lane and Travelin' Wizard switch sides."
 landscape = "Blue Plains"
 card_type = "Creature"
-image = "Travelin' Wizard.jpg"
 id = 473
+image = ExtResource("2_fkw31")
 frame = ExtResource("1_umejq")

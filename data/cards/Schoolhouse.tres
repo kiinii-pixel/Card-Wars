@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://ckp7dvwuyrfnv"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://ckp7dvwuyrfnv"]
 
 [ext_resource type="Texture2D" uid="uid://d1kvwyj0lxwng" path="res://assets/images/frames/Blue Plains.png" id="1_5u7gt"]
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_cohfv"]
+[ext_resource type="Texture2D" uid="uid://bgf77yr1px0i6" path="res://assets/images/cards/art/Blue Plains/Building/Schoolhouse.png" id="2_r8pjq"]
 
 [resource]
 script = ExtResource("1_cohfv")
@@ -13,6 +14,6 @@ cost = 1
 description = "FLOOP >>> Your Creature in this Lane loses all abilities and gains the FLOOP ability of a random Creature (with a FLOOP ability) in your discard pile until end of turn."
 landscape = "Blue Plains"
 card_type = "Building"
-image = "Schoolhouse.jpg"
 id = 384
+image = ExtResource("2_r8pjq")
 frame = ExtResource("1_5u7gt")

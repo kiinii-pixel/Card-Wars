@@ -13,6 +13,5 @@ cost = 1
 description = "The opposing Creature in this Lane has -2 DEF."
 landscape = "Rainbow"
 card_type = "Building"
-image = "Celestial Fortress.jpg"
 id = 66
 frame = ExtResource("1_n72pv")

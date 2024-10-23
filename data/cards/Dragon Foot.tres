@@ -13,6 +13,5 @@ cost = 1
 description = "Discard a card >>> Dragon Foot has +1 ATK this turn. (Use up to five times during each of your turns.)"
 landscape = "Useless Swamp"
 card_type = "Creature"
-image = "Dragon Foot.jpg"
 id = 115
 frame = ExtResource("1_43scg")

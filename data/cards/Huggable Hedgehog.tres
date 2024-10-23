@@ -13,6 +13,5 @@ cost = 2
 description = "While Huggable Hedgehog has 4 or more Damage on it, it deals Damage directly to your opponent instead of the opposing Creature."
 landscape = "NiceLands"
 card_type = "Creature"
-image = "Huggable Hedgehog.jpg"
 id = 220
 frame = ExtResource("1_fux42")

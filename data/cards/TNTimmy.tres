@@ -13,6 +13,5 @@ cost = 0
 description = "When TNTimmy leaves play, deal 1 Damage to each opposing Creature."
 landscape = "Rainbow"
 card_type = "Creature"
-image = "TNTimmy.jpg"
 id = 465
 frame = ExtResource("1_s07m3")

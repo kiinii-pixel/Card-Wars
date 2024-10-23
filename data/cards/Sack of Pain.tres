@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://0rpnstxlokkp"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://0rpnstxlokkp"]
 
 [ext_resource type="Texture2D" uid="uid://b0rsdd3n7u8r4" path="res://assets/images/frames/NiceLands_Creature.png" id="1_lwxxp"]
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_xs6th"]
+[ext_resource type="Texture2D" uid="uid://348v8oxwu0kn" path="res://assets/images/cards/art/NiceLands/Creature/Sack of Pain.png" id="2_7nunk"]
 
 [resource]
 script = ExtResource("1_xs6th")
@@ -13,6 +14,6 @@ cost = 2
 description = "While Sack of Pain has exactly 6 Damage on it, it has +6 ATK."
 landscape = "NiceLands"
 card_type = "Creature"
-image = "Sack of Pain.jpg"
 id = 370
+image = ExtResource("2_7nunk")
 frame = ExtResource("1_lwxxp")

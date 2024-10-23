@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://babb7lsv3pctc"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://babb7lsv3pctc"]
 
 [ext_resource type="Texture2D" uid="uid://d1kvwyj0lxwng" path="res://assets/images/frames/Blue Plains.png" id="1_4wj1g"]
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_5e4hm"]
+[ext_resource type="Texture2D" uid="uid://bf62av3p5oogc" path="res://assets/images/cards/art/Blue Plains/Spell/Gnome Snot.png" id="2_gcra2"]
 
 [resource]
 script = ExtResource("1_5e4hm")
@@ -13,6 +14,6 @@ cost = 1
 description = "Draw 3 cards."
 landscape = "Blue Plains"
 card_type = "Spell"
-image = "Gnome Snot.jpg"
 id = 190
+image = ExtResource("2_gcra2")
 frame = ExtResource("1_4wj1g")

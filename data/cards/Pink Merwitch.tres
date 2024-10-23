@@ -13,6 +13,5 @@ cost = 2
 description = "Discard a card >>> Deal 1 Damage to each opposing Creature. (Use only once during each of your turns.)"
 landscape = "Useless Swamp"
 card_type = "Creature"
-image = "Pink Merwitch.jpg"
 id = 330
 frame = ExtResource("1_60xju")

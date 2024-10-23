@@ -13,6 +13,5 @@ cost = 2
 description = "Each of your Cornfield Creatures has +1 ATK this turn for each different Landscape type you control."
 landscape = "Rainbow"
 card_type = "Spell"
-image = "Cross Pollination.jpg"
 id = 99
 frame = ExtResource("1_80duq")

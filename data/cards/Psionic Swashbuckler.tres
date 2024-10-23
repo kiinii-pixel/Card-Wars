@@ -13,6 +13,5 @@ cost = 1
 description = "When Psionic Swashbuckler enters play, you may deal 3 Damage to target Flooped Creature"
 landscape = "Blue Plains"
 card_type = "Creature"
-image = "Psionic Swashbuckler.jpg"
 id = 341
 frame = ExtResource("1_5lx6f")

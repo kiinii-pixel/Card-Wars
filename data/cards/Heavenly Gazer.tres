@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://dpginsf6p8lsk"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://dpginsf6p8lsk"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_b4p8e"]
 [ext_resource type="Texture2D" uid="uid://be2gbw036jfuv" path="res://assets/images/frames/Blue Plains_Creature.png" id="1_jd0pw"]
+[ext_resource type="Texture2D" uid="uid://0psy3t2xsnfx" path="res://assets/images/cards/art/Blue Plains/Creature/Heavenly Gazer.png" id="2_5rl4f"]
 
 [resource]
 script = ExtResource("1_b4p8e")
@@ -13,6 +14,6 @@ cost = 1
 description = "FLOOP >>> Put a Spell from your discard pile on top of your deck."
 landscape = "Blue Plains"
 card_type = "Creature"
-image = "Heavenly Gazer.jpg"
 id = 215
+image = ExtResource("2_5rl4f")
 frame = ExtResource("1_jd0pw")

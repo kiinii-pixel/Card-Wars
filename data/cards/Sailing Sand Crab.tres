@@ -13,6 +13,5 @@ cost = 1
 description = "When Sailing Sand Crab enters play, you may play a Creature with cost 1 for free."
 landscape = "SandyLands"
 card_type = "Creature"
-image = "Sailing Sand Crab.jpg"
 id = 371
 frame = ExtResource("1_132kd")

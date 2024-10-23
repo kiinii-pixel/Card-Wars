@@ -13,6 +13,5 @@ cost = 2
 description = "Well-Dressed Wolf has +1 ATK while attacking a Creature that is on a Cornfield Landscape."
 landscape = "Rainbow"
 card_type = "Creature"
-image = "Well-Dressed Wolf.jpg"
 id = 492
 frame = ExtResource("1_g1nue")

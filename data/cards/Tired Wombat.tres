@@ -13,6 +13,5 @@ cost = 2
 description = "At the start of your turn, move Tired Wombat to an empty Landscape you control. If you cannot, move it to an empty Landscape your opponent controls."
 landscape = "Blue Plains"
 card_type = "Creature"
-image = "Tired Wombat.jpg"
 id = 464
 frame = ExtResource("1_5l5cn")

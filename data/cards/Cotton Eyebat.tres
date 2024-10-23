@@ -13,6 +13,5 @@ cost = 1
 description = "While Cotton Eyebat has exactly 4 Damage on it, it has +4 ATK."
 landscape = "NiceLands"
 card_type = "Creature"
-image = "Cotton Eyebat.jpg"
 id = 93
 frame = ExtResource("1_8088i")

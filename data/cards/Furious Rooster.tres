@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://cjux60f8mtf03"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://cjux60f8mtf03"]
 
 [ext_resource type="Texture2D" uid="uid://b0rsdd3n7u8r4" path="res://assets/images/frames/NiceLands_Creature.png" id="1_8gog7"]
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_114kx"]
+[ext_resource type="Texture2D" uid="uid://btw844jq5l5l7" path="res://assets/images/cards/art/NiceLands/Creature/Furious Rooster.png" id="2_t7ef5"]
 
 [resource]
 script = ExtResource("1_114kx")
@@ -13,6 +14,6 @@ cost = 1
 description = "Furious Rooster has +1 ATK for each Damage on it."
 landscape = "NiceLands"
 card_type = "Creature"
-image = "Furious Rooster.jpg"
 id = 178
+image = ExtResource("2_t7ef5")
 frame = ExtResource("1_8gog7")

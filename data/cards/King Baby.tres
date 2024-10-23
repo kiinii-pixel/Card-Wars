@@ -13,6 +13,5 @@ cost = 2
 description = "Pay 1 Action, FLOOP >>> Deal 1 Damage to target Creature for each Cornfield Landscape you control."
 landscape = "Cornfield"
 card_type = "Creature"
-image = "King Baby.jpg"
 id = 257
 frame = ExtResource("1_s6epr")

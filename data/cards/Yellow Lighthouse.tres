@@ -13,6 +13,5 @@ cost = 1
 description = "At the start of your turn, each players who controls a Creature in this Lane draws a card."
 landscape = "Cornfield"
 card_type = "Building"
-image = "Yellow Lighthouse.jpg"
 id = 507
 frame = ExtResource("1_xuu75")

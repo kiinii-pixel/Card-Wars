@@ -13,6 +13,5 @@ cost = 2
 description = "+1 DEF for each different Landscape type you control."
 landscape = "SandyLands"
 card_type = "Creature"
-image = "Polterclops.jpg"
 id = 332
 frame = ExtResource("1_uygv3")

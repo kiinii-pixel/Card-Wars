@@ -13,6 +13,5 @@ cost = 0
 description = "Choose another player and a Landscape you control. Draw a card for each of their Creatures that match that Landscape."
 landscape = "Rainbow"
 card_type = "Spell"
-image = "Family Gathering.jpg"
 id = 136
 frame = ExtResource("1_ckg62")

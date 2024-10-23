@@ -13,6 +13,5 @@ cost = 1
 description = "When Ghost Ninja deals Damage to an opposing player, that opponent can't play Spells during his next turn."
 landscape = "Blue Plains"
 card_type = "Creature"
-image = "Ghost Tree.jpg"
 id = 184
 frame = ExtResource("1_opkne")

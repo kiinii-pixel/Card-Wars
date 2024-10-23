@@ -13,6 +13,5 @@ cost = 1
 description = "When Lt. Mushroom leaves play during an opponent's turn, that opponent discards 3 cards."
 landscape = "Useless Swamp"
 card_type = "Creature"
-image = "Lt. Mushroom.jpg"
 id = 275
 frame = ExtResource("1_vg4ke")

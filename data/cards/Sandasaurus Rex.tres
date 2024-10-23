@@ -13,6 +13,5 @@ cost = 2
 description = "+2 ATK for each of your empty Lanes."
 landscape = "SandyLands"
 card_type = "Creature"
-image = "Sandasaurus Rex.jpg"
 id = 379
 frame = ExtResource("1_gryi4")

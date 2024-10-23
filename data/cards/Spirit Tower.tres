@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://b4nnf56d5i8i1"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://b4nnf56d5i8i1"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_gq7ec"]
 [ext_resource type="Texture2D" uid="uid://ypdgp0t1gdd0" path="res://assets/images/frames/Useless Swamp.png" id="1_gq65o"]
+[ext_resource type="Texture2D" uid="uid://cb1qamhdq3hxe" path="res://assets/images/cards/art/Useless Swamp/Building/Spirit Tower.png" id="2_kfrq5"]
 
 [resource]
 script = ExtResource("1_gq7ec")
@@ -13,6 +14,6 @@ cost = 2
 description = "Pay 1 Action and FLOOP >>> If you control no Creatures in this Lane, move target Creature in this Lane to your side and ready it. At end of turn, return it to its owner's side."
 landscape = "Useless Swamp"
 card_type = "Building"
-image = "Spirit Tower.jpg"
 id = 428
+image = ExtResource("2_kfrq5")
 frame = ExtResource("1_gq65o")

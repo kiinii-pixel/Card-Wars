@@ -13,6 +13,5 @@ cost = 2
 description = "Each time Endearing Elephant is targeted by an opponent's Spell, deal 2 Damage to target opponent."
 landscape = "NiceLands"
 card_type = "Creature"
-image = "Endearing Elephant.jpg"
 id = 128
 frame = ExtResource("1_i6k2d")

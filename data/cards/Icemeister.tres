@@ -13,6 +13,5 @@ cost = 2
 description = "At the start of your turn, deal 1 Damage to each Creature on a Landscape with a Frozen token on it."
 landscape = "IcyLands"
 card_type = "Creature"
-image = "Icemeister.jpg"
 id = 236
 frame = ExtResource("1_cx4kj")

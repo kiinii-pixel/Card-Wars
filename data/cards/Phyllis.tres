@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://duffbl3kuqnp7"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://duffbl3kuqnp7"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_3j1a4"]
 [ext_resource type="Texture2D" uid="uid://ct5331atokkqs" path="res://assets/images/frames/Rainbow_Creature.png" id="1_h00r4"]
+[ext_resource type="Texture2D" uid="uid://bsg2fhdr0u7pf" path="res://assets/images/cards/art/Rainbow/Creature/Phyllis.png" id="2_fh8es"]
 
 [resource]
 script = ExtResource("1_3j1a4")
@@ -13,6 +14,6 @@ cost = 1
 description = "While her blade distracts you, her purse swings in for the whammy."
 landscape = "Rainbow"
 card_type = "Creature"
-image = "Phyllis.jpg"
 id = 323
+image = ExtResource("2_fh8es")
 frame = ExtResource("1_h00r4")

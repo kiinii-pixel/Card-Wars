@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://dixt3wvsu5sfk"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://dixt3wvsu5sfk"]
 
 [ext_resource type="Texture2D" uid="uid://b0p6pgobeqtuk" path="res://assets/images/frames/Cornfield_Creature.png" id="1_0gexm"]
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_uq20b"]
+[ext_resource type="Texture2D" uid="uid://ch51fx4hs2shj" path="res://assets/images/cards/art/Cornfield/Creature/Corn Lord.png" id="2_5mgtl"]
 
 [resource]
 script = ExtResource("1_uq20b")
@@ -13,6 +14,6 @@ cost = 1
 description = "Corn Lord has +1 ATK for each other Cornfield Creature you control."
 landscape = "Cornfield"
 card_type = "Creature"
-image = "Corn Lord.jpg"
 id = 86
+image = ExtResource("2_5mgtl")
 frame = ExtResource("1_0gexm")

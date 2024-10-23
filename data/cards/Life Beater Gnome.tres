@@ -13,6 +13,5 @@ cost = 1
 description = "FLOOP >>> Deal 1 Damage to each opposing Creature that is on a SandyLands Landscape."
 landscape = "NiceLands"
 card_type = "Creature"
-image = "Life Beater Gnome.jpg"
 id = 265
 frame = ExtResource("1_irxuo")

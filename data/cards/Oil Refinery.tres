@@ -13,6 +13,5 @@ cost = 2
 description = "Your Creature on this Landscape has +2 DEF for each Oil Refinery you control."
 landscape = "Blue Plains"
 card_type = "Building"
-image = "Oil Refinery.jpg"
 id = 307
 frame = ExtResource("1_rtk6t")

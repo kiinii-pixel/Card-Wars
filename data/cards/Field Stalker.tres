@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://dwhh67on8gi44"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://dwhh67on8gi44"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_be7uh"]
 [ext_resource type="Texture2D" uid="uid://b0p6pgobeqtuk" path="res://assets/images/frames/Cornfield_Creature.png" id="1_c5p4a"]
+[ext_resource type="Texture2D" uid="uid://bk7o8fuvs815p" path="res://assets/images/cards/art/Cornfield/Creature/Field Stalker.png" id="2_ag2ag"]
 
 [resource]
 script = ExtResource("1_be7uh")
@@ -13,6 +14,6 @@ cost = 1
 description = "At the start of your turn, each player draws a card."
 landscape = "Cornfield"
 card_type = "Creature"
-image = "Field Stalker.jpg"
 id = 148
+image = ExtResource("2_ag2ag")
 frame = ExtResource("1_c5p4a")

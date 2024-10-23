@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://vfp28grllptg"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://vfp28grllptg"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_kgdwh"]
 [ext_resource type="Texture2D" uid="uid://d1kvwyj0lxwng" path="res://assets/images/frames/Blue Plains.png" id="1_lbsoh"]
+[ext_resource type="Texture2D" uid="uid://bfhss6p2ujqqe" path="res://assets/images/cards/art/Blue Plains/Building/Woad Mobile Home.png" id="2_yp5kc"]
 
 [resource]
 script = ExtResource("1_kgdwh")
@@ -13,6 +14,6 @@ cost = 1
 description = "FLOOP >>> Move a Creature in an empty adjacent Lane to this Lane (if empty)."
 landscape = "Blue Plains"
 card_type = "Building"
-image = "Woad Mobile Home.jpg"
 id = 497
+image = ExtResource("2_yp5kc")
 frame = ExtResource("1_lbsoh")

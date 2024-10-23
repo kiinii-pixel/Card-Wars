@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://dk00uouekett7"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://dk00uouekett7"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_6tqwi"]
 [ext_resource type="Texture2D" uid="uid://ct5331atokkqs" path="res://assets/images/frames/Rainbow_Creature.png" id="1_axgt0"]
+[ext_resource type="Texture2D" uid="uid://c6pa6umb4v7mu" path="res://assets/images/cards/art/Rainbow/Creature/Rocktopus.png" id="2_syfsk"]
 
 [resource]
 script = ExtResource("1_6tqwi")
@@ -13,6 +14,6 @@ cost = 2
 description = "Rocktopus has +1 ATK while attacking a Creature that is on a SandyLands Landscape."
 landscape = "Rainbow"
 card_type = "Creature"
-image = "Rocktopus.jpg"
 id = 367
+image = ExtResource("2_syfsk")
 frame = ExtResource("1_axgt0")

@@ -13,6 +13,5 @@ cost = 2
 description = "Rainbow Creatures you control have +1 ATK."
 landscape = "Blue Plains"
 card_type = "Creature"
-image = "Crazy Cat Lady.jpg"
 id = 98
 frame = ExtResource("1_tp18i")

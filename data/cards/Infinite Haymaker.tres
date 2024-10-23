@@ -13,6 +13,5 @@ cost = 1
 description = "Deal damage to yourself equal to target Creature's remaining DEF, then destroy it."
 landscape = "Cornfield"
 card_type = "Spell"
-image = "Infinite Haymaker.jpg"
 id = 248
 frame = ExtResource("1_2sswt")

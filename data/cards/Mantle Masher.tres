@@ -13,6 +13,5 @@ cost = 1
 description = "When Mantle Masher enters play, flip a Landscape in this Lane face down. When Mantle Masher leaves play, flip it face up."
 landscape = "Cornfield"
 card_type = "Creature"
-image = "Mantle Masher.jpg"
 id = 285
 frame = ExtResource("1_mln60")

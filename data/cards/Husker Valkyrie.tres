@@ -13,6 +13,5 @@ cost = 2
 description = "Husker Valkyrie has +2 ATK and +2 DEF if you control a Building on this Landscape."
 landscape = "Cornfield"
 card_type = "Creature"
-image = "Husker Valkyrie.jpg"
 id = 227
 frame = ExtResource("1_iclux")

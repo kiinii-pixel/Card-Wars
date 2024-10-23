@@ -13,6 +13,5 @@ cost = 1
 description = "When Ghost Chest Burster leaves play, draw the bottom card of your deck."
 landscape = "Useless Swamp"
 card_type = "Creature"
-image = "Ghost Hag.jpg"
 id = 182
 frame = ExtResource("1_ptb2u")

@@ -13,6 +13,5 @@ cost = 1
 description = "FLOOP >>> Deal 1 Damage to target Creature. Do this once for each Cornfield Landscape you control. (May only target each Creature once.)"
 landscape = "Cornfield"
 card_type = "Creature"
-image = "Patchy the Pumpkin.jpg"
 id = 318
 frame = ExtResource("1_jny41")

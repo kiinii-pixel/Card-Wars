@@ -13,6 +13,5 @@ cost = 2
 description = "Freeze each of your opponent's Landscapes."
 landscape = "IcyLands"
 card_type = "Spell"
-image = "Freezing Point.jpg"
 id = 160
 frame = ExtResource("1_mojcl")

@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://unuoiluwb6ug"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://unuoiluwb6ug"]
 
 [ext_resource type="Texture2D" uid="uid://be2gbw036jfuv" path="res://assets/images/frames/Blue Plains_Creature.png" id="1_0q7fk"]
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_vr7iw"]
+[ext_resource type="Texture2D" uid="uid://cpy814jxl1idp" path="res://assets/images/cards/art/Blue Plains/Creature/Embarrassing Bard.png" id="2_nqjgu"]
 
 [resource]
 script = ExtResource("1_vr7iw")
@@ -13,6 +14,6 @@ cost = 2
 description = "FLOOP >>> Draw a card for each Flooped Creature you control (including this one)."
 landscape = "Blue Plains"
 card_type = "Creature"
-image = "Embarrassing Bard.jpg"
 id = 124
+image = ExtResource("2_nqjgu")
 frame = ExtResource("1_0q7fk")

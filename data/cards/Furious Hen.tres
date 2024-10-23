@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://c5buebnf6gee5"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://c5buebnf6gee5"]
 
 [ext_resource type="Texture2D" uid="uid://b0rsdd3n7u8r4" path="res://assets/images/frames/NiceLands_Creature.png" id="1_5434l"]
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_d88r8"]
+[ext_resource type="Texture2D" uid="uid://cmlgf3la2oxh2" path="res://assets/images/cards/art/NiceLands/Creature/Furious Hen.png" id="2_0iofq"]
 
 [resource]
 script = ExtResource("1_d88r8")
@@ -13,6 +14,6 @@ cost = 2
 description = "Furious Hen has +1 ATK for each Damage on it."
 landscape = "NiceLands"
 card_type = "Creature"
-image = "Furious Hen.jpg"
 id = 177
+image = ExtResource("2_0iofq")
 frame = ExtResource("1_5434l")

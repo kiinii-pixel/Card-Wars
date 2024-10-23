@@ -13,6 +13,5 @@ cost = 2
 description = "Discard a card, FLOOP >>> Flip target Landscape in this Lane face down until the start of your next turn."
 landscape = "Cornfield"
 card_type = "Building"
-image = "Sinkhole.jpg"
 id = 400
 frame = ExtResource("1_nu807")

@@ -13,6 +13,5 @@ cost = 1
 description = "At the start of your Fight Phase, if you control an exhausted Creature on this Landscape, draw a card."
 landscape = "Blue Plains"
 card_type = "Building"
-image = "Fancy Spa.jpg"
 id = 138
 frame = ExtResource("1_8qvn2")

@@ -13,6 +13,5 @@ cost = 1
 description = "When Sandsnake enters play, deal 4 Damage to target opposing Creature in this Lane."
 landscape = "SandyLands"
 card_type = "Creature"
-image = "Sandsnake.jpg"
 id = 382
 frame = ExtResource("1_3cv4l")

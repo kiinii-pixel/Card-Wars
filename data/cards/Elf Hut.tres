@@ -13,6 +13,5 @@ cost = 1
 description = "Pay 1 Action >>> Draw a card for each Creature in this Lane."
 landscape = "Blue Plains"
 card_type = "Building"
-image = "Elf Hut.jpg"
 id = 123
 frame = ExtResource("1_pt37d")

@@ -13,6 +13,5 @@ cost = 1
 description = "Return target Creature you control to its owner's hand. Gain Actions equal to its cost."
 landscape = "SandyLands"
 card_type = "Spell"
-image = "Quick Pick Me Up.jpg"
 id = 350
 frame = ExtResource("1_ljuao")

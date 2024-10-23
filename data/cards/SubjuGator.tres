@@ -13,6 +13,5 @@ cost = 2
 description = "The opposing Creature in this Lane has -1 DEF for every 5 cards in your discard pile."
 landscape = "Useless Swamp"
 card_type = "Creature"
-image = "SubjuGator.jpg"
 id = 439
 frame = ExtResource("1_d8g7y")

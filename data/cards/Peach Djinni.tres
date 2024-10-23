@@ -13,6 +13,5 @@ cost = 0
 description = "When a SandyLands Creature enters play under your control, Peach Djinni has +1 ATK this turn."
 landscape = "Rainbow"
 card_type = "Creature"
-image = "Peach Djinni.jpg"
 id = 320
 frame = ExtResource("1_gjgdu")

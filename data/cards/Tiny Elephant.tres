@@ -13,6 +13,5 @@ cost = 1
 description = "While in play, Tiny Elephant is also a Rainbow Creature (in addition to Blue Plains)."
 landscape = "Blue Plains"
 card_type = "Creature"
-image = "Tiny Elephant.jpg"
 id = 463
 frame = ExtResource("1_awtyx")

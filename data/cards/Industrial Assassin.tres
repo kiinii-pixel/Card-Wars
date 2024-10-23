@@ -13,6 +13,5 @@ cost = 1
 description = "Destroy a Creature you control, FLOOP >>> Draw a card."
 landscape = "Blue Plains"
 card_type = "Creature"
-image = "Industrial Assassin.jpg"
 id = 245
 frame = ExtResource("1_sd6vh")

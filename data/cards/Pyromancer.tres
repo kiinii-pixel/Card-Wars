@@ -13,6 +13,5 @@ cost = 1
 description = "Each time Pyromancer enters a Landscape, you may deal 2 Damage to target Creature in that Lane. Pay 1 Action >>> Move Pyromancer to an empty Landscape you control."
 landscape = "Blue Plains"
 card_type = "Creature"
-image = "Pyromancer.jpg"
 id = 347
 frame = ExtResource("1_oi7wq")

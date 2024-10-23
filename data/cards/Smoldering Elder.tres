@@ -13,6 +13,5 @@ cost = 2
 description = "When Smoldering Elder enters play, each player discards 2 cards."
 landscape = "Useless Swamp"
 card_type = "Creature"
-image = "Smoldering Elder.jpg"
 id = 406
 frame = ExtResource("1_jra88")
