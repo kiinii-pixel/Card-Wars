@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://bi8iwrpmrdcsv"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_077tb"]
+[ext_resource type="Texture2D" uid="uid://d1kvwyj0lxwng" path="res://assets/images/frames/Blue Plains.png" id="1_ea7fj"]
 
 [resource]
 script = ExtResource("1_077tb")
@@ -14,3 +15,4 @@ landscape = "Blue Plains"
 card_type = "Spell"
 image = "Puma Paw.jpg"
 id = 343
+frame = ExtResource("1_ea7fj")

@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://ds0tjl7qo48nx"]
 
+[ext_resource type="Texture2D" uid="uid://du1xi1t4s1wio" path="res://assets/images/frames/Cornfield.png" id="1_nplmr"]
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_p37s7"]
 
 [resource]
@@ -14,3 +15,4 @@ landscape = "Cornfield"
 card_type = "Building"
 image = "Silo of Justice.jpg"
 id = 397
+frame = ExtResource("1_nplmr")

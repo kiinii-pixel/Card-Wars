@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://bky7lql1vsqro"]
 
+[ext_resource type="Texture2D" uid="uid://7f0fsvgty6vg" path="res://assets/images/frames/NiceLands.png" id="1_46lh6"]
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_sebiv"]
 
 [resource]
@@ -14,3 +15,4 @@ landscape = "NiceLands"
 card_type = "Spell"
 image = "Scroll of Fresh Breath.jpg"
 id = 387
+frame = ExtResource("1_46lh6")

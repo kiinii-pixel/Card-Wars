@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://hq5dwk2g8tjg"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_813ty"]
+[ext_resource type="Texture2D" uid="uid://b0p6pgobeqtuk" path="res://assets/images/frames/Cornfield_Creature.png" id="1_gcj60"]
 
 [resource]
 script = ExtResource("1_813ty")
@@ -14,3 +15,4 @@ landscape = "Cornfield"
 card_type = "Creature"
 image = "Bouncing Zebracorn.jpg"
 id = 50
+frame = ExtResource("1_gcj60")

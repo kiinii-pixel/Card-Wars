@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://djppdxmf60sgp"]
 
+[ext_resource type="Texture2D" uid="uid://d2206nj3vtb31" path="res://assets/images/frames/IcyLands_Creature.png" id="1_jp6wc"]
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_lnqd5"]
 
 [resource]
@@ -14,3 +15,4 @@ landscape = "IcyLands"
 card_type = "Creature"
 image = "Mint Chocouflage.jpg"
 id = 291
+frame = ExtResource("1_jp6wc")

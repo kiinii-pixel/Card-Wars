@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://cblevkhhk8rd4"]
 
+[ext_resource type="Texture2D" uid="uid://b0p6pgobeqtuk" path="res://assets/images/frames/Cornfield_Creature.png" id="1_g7e0y"]
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_sbmyb"]
 
 [resource]
@@ -14,3 +15,4 @@ landscape = "Cornfield"
 card_type = "Creature"
 image = "Rebounding Zebracorn.jpg"
 id = 353
+frame = ExtResource("1_g7e0y")

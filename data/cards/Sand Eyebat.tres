@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://bn8skqbk0h7dv"]
 
+[ext_resource type="Texture2D" uid="uid://tbt4hmdhcclb" path="res://assets/images/frames/SandyLands_Creature.png" id="1_22trj"]
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_sbael"]
 
 [resource]
@@ -14,3 +15,4 @@ landscape = "SandyLands"
 card_type = "Creature"
 image = "Sand Eyebat.jpg"
 id = 374
+frame = ExtResource("1_22trj")

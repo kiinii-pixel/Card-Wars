@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://d1iwfyryi0w7i"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_mg3xu"]
+[ext_resource type="Texture2D" uid="uid://d2o5o4cm304mt" path="res://assets/images/frames/Useless Swamp_Creature.png" id="1_vtlu5"]
 
 [resource]
 script = ExtResource("1_mg3xu")
@@ -14,3 +15,4 @@ landscape = "Useless Swamp"
 card_type = "Creature"
 image = "Fly Swatter.jpg"
 id = 155
+frame = ExtResource("1_vtlu5")

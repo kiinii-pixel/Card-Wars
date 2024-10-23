@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://d2qmbjqxd2upp"]
 
+[ext_resource type="Texture2D" uid="uid://b0rsdd3n7u8r4" path="res://assets/images/frames/NiceLands_Creature.png" id="1_aq7al"]
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_jo5hg"]
 
 [resource]
@@ -14,3 +15,4 @@ landscape = "NiceLands"
 card_type = "Creature"
 image = "Cutie Koala.jpg"
 id = 103
+frame = ExtResource("1_aq7al")

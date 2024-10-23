@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://bay8eompif5bq"]
 
+[ext_resource type="Texture2D" uid="uid://ypdgp0t1gdd0" path="res://assets/images/frames/Useless Swamp.png" id="1_0gbk0"]
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_1xcbg"]
 
 [resource]
@@ -14,3 +15,4 @@ landscape = "Useless Swamp"
 card_type = "Spell"
 image = "Water Logged.jpg"
 id = 489
+frame = ExtResource("1_0gbk0")

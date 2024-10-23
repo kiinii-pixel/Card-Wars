@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://ck13hmtdxkcae"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_0oxsc"]
+[ext_resource type="Texture2D" uid="uid://du1xi1t4s1wio" path="res://assets/images/frames/Cornfield.png" id="1_lnqs6"]
 
 [resource]
 script = ExtResource("1_0oxsc")
@@ -14,3 +15,4 @@ landscape = "Cornfield"
 card_type = "Spell"
 image = "Grape Butt.jpg"
 id = 198
+frame = ExtResource("1_lnqs6")

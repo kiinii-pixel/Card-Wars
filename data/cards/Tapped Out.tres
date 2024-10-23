@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://drgra1usn6kxp"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_abuyp"]
+[ext_resource type="Texture2D" uid="uid://d1kvwyj0lxwng" path="res://assets/images/frames/Blue Plains.png" id="1_nkp6e"]
 
 [resource]
 script = ExtResource("1_abuyp")
@@ -14,3 +15,4 @@ landscape = "Blue Plains"
 card_type = "Spell"
 image = "Tapped Out.jpg"
 id = 449
+frame = ExtResource("1_nkp6e")

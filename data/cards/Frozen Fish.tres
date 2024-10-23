@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://b8gm1rp7rcqun"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_kb2dv"]
+[ext_resource type="Texture2D" uid="uid://d2206nj3vtb31" path="res://assets/images/frames/IcyLands_Creature.png" id="1_vtt1b"]
 
 [resource]
 script = ExtResource("1_kb2dv")
@@ -14,3 +15,4 @@ landscape = "IcyLands"
 card_type = "Creature"
 image = "Frozen Fish.jpg"
 id = 168
+frame = ExtResource("1_vtt1b")

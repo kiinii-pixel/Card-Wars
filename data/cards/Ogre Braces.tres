@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://d308xa83e41dk"]
 
+[ext_resource type="Texture2D" uid="uid://ypdgp0t1gdd0" path="res://assets/images/frames/Useless Swamp.png" id="1_lrv2x"]
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_n37cj"]
 
 [resource]
@@ -14,3 +15,4 @@ landscape = "Useless Swamp"
 card_type = "Spell"
 image = "Ogre Braces.jpg"
 id = 305
+frame = ExtResource("1_lrv2x")

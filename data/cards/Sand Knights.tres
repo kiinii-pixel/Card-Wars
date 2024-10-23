@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://p8c0iyyikiyc"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_a4cnu"]
+[ext_resource type="Texture2D" uid="uid://tbt4hmdhcclb" path="res://assets/images/frames/SandyLands_Creature.png" id="1_y5lpi"]
 
 [resource]
 script = ExtResource("1_a4cnu")
@@ -14,3 +15,4 @@ landscape = "SandyLands"
 card_type = "Creature"
 image = "Sand Knights.jpg"
 id = 376
+frame = ExtResource("1_y5lpi")

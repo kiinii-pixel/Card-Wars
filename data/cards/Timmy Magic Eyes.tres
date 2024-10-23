@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://dgomlqbsr0afp"]
 
+[ext_resource type="Texture2D" uid="uid://ct5331atokkqs" path="res://assets/images/frames/Rainbow_Creature.png" id="1_804x7"]
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_i4kun"]
 
 [resource]
@@ -14,3 +15,4 @@ landscape = "Rainbow"
 card_type = "Creature"
 image = "Timmy Magic Eyes.jpg"
 id = 462
+frame = ExtResource("1_804x7")

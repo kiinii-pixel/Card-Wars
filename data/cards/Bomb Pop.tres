@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://cl8oe85s31uc3"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_dvp0r"]
+[ext_resource type="Texture2D" uid="uid://c51xyr2tedybn" path="res://assets/images/frames/IcyLands.png" id="1_xah14"]
 
 [resource]
 script = ExtResource("1_dvp0r")
@@ -14,3 +15,4 @@ landscape = "IcyLands"
 card_type = "Spell"
 image = "Bomb Pop.jpg"
 id = 48
+frame = ExtResource("1_xah14")

@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://23c1x23mblr"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_drkvp"]
+[ext_resource type="Texture2D" uid="uid://7f0fsvgty6vg" path="res://assets/images/frames/NiceLands.png" id="1_qxmuo"]
 
 [resource]
 script = ExtResource("1_drkvp")
@@ -14,3 +15,4 @@ landscape = "NiceLands"
 card_type = "Spell"
 image = "Falling Star.jpg"
 id = 135
+frame = ExtResource("1_qxmuo")

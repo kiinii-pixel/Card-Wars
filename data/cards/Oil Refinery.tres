@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://djavu05euonpm"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_j46b6"]
+[ext_resource type="Texture2D" uid="uid://d1kvwyj0lxwng" path="res://assets/images/frames/Blue Plains.png" id="1_rtk6t"]
 
 [resource]
 script = ExtResource("1_j46b6")
@@ -14,3 +15,4 @@ landscape = "Blue Plains"
 card_type = "Building"
 image = "Oil Refinery.jpg"
 id = 307
+frame = ExtResource("1_rtk6t")

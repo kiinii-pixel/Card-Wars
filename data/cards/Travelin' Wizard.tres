@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://dal65nxg8e6eq"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_rruah"]
+[ext_resource type="Texture2D" uid="uid://be2gbw036jfuv" path="res://assets/images/frames/Blue Plains_Creature.png" id="1_umejq"]
 
 [resource]
 script = ExtResource("1_rruah")
@@ -14,3 +15,4 @@ landscape = "Blue Plains"
 card_type = "Creature"
 image = "Travelin' Wizard.jpg"
 id = 473
+frame = ExtResource("1_umejq")

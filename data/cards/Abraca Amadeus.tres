@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://cjtoc42merygo"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_7jf3v"]
+[ext_resource type="Texture2D" uid="uid://ypdgp0t1gdd0" path="res://assets/images/frames/Useless Swamp.png" id="1_dtqim"]
 
 [resource]
 script = ExtResource("1_7jf3v")
@@ -14,3 +15,4 @@ landscape = "Useless Swamp"
 card_type = "Spell"
 image = "Abraca Amadeus.jpg"
 id = 1
+frame = ExtResource("1_dtqim")

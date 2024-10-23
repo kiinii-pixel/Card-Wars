@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://dyldqj60nv13k"]
 
+[ext_resource type="Texture2D" uid="uid://ct5331atokkqs" path="res://assets/images/frames/Rainbow_Creature.png" id="1_edf3c"]
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_uu7lg"]
 
 [resource]
@@ -14,3 +15,4 @@ landscape = "Rainbow"
 card_type = "Creature"
 image = "Davey Bones.jpg"
 id = 106
+frame = ExtResource("1_edf3c")

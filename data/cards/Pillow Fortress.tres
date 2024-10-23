@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://j43i2nj0q2pj"]
 
+[ext_resource type="Texture2D" uid="uid://7f0fsvgty6vg" path="res://assets/images/frames/NiceLands.png" id="1_tlorh"]
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_vkhn7"]
 
 [resource]
@@ -14,3 +15,4 @@ landscape = "NiceLands"
 card_type = "Building"
 image = "Pillow Fortress.jpg"
 id = 328
+frame = ExtResource("1_tlorh")

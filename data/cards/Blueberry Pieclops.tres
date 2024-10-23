@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://dc7kgufncin4f"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_6cpio"]
+[ext_resource type="Texture2D" uid="uid://be2gbw036jfuv" path="res://assets/images/frames/Blue Plains_Creature.png" id="1_hwehv"]
 
 [resource]
 script = ExtResource("1_6cpio")
@@ -14,3 +15,4 @@ landscape = "Blue Plains"
 card_type = "Creature"
 image = "Blueberry Pieclops.jpg"
 id = 41
+frame = ExtResource("1_hwehv")

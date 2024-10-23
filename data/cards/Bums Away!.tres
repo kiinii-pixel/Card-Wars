@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://orlsrodsdeqo"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_c3uwa"]
+[ext_resource type="Texture2D" uid="uid://ypdgp0t1gdd0" path="res://assets/images/frames/Useless Swamp.png" id="1_hm33r"]
 
 [resource]
 script = ExtResource("1_c3uwa")
@@ -14,3 +15,4 @@ landscape = "Useless Swamp"
 card_type = "Spell"
 image = "Bums Away!.jpg"
 id = 54
+frame = ExtResource("1_hm33r")

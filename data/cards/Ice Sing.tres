@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://cwg87jwh0tyu3"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_vdlvk"]
+[ext_resource type="Texture2D" uid="uid://c51xyr2tedybn" path="res://assets/images/frames/IcyLands.png" id="1_wdexk"]
 
 [resource]
 script = ExtResource("1_vdlvk")
@@ -14,3 +15,4 @@ landscape = "IcyLands"
 card_type = "Spell"
 image = "Ice Sing.jpg"
 id = 235
+frame = ExtResource("1_wdexk")

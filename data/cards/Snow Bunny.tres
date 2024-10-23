@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://cijib506506k"]
 
+[ext_resource type="Texture2D" uid="uid://d2206nj3vtb31" path="res://assets/images/frames/IcyLands_Creature.png" id="1_23jsf"]
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_xgwug"]
 
 [resource]
@@ -14,3 +15,4 @@ landscape = "IcyLands"
 card_type = "Creature"
 image = "Snow Bunny.jpg"
 id = 414
+frame = ExtResource("1_23jsf")

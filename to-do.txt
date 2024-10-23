@@ -1,0 +1,1 @@
+- Differentiate Cards into subtypes (Creature, Building, Spell)

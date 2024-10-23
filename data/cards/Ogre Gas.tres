@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://bgk132uxh32m0"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_bkv8s"]
+[ext_resource type="Texture2D" uid="uid://tqpubod46faw" path="res://assets/images/frames/Rainbow.png" id="1_p6lph"]
 
 [resource]
 script = ExtResource("1_bkv8s")
@@ -14,3 +15,4 @@ landscape = "Rainbow"
 card_type = "Spell"
 image = "Ogre Gas.jpg"
 id = 306
+frame = ExtResource("1_p6lph")

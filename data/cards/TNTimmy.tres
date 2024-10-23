@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://clxf68vevxg5m"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_dob2o"]
+[ext_resource type="Texture2D" uid="uid://ct5331atokkqs" path="res://assets/images/frames/Rainbow_Creature.png" id="1_s07m3"]
 
 [resource]
 script = ExtResource("1_dob2o")
@@ -14,3 +15,4 @@ landscape = "Rainbow"
 card_type = "Creature"
 image = "TNTimmy.jpg"
 id = 465
+frame = ExtResource("1_s07m3")

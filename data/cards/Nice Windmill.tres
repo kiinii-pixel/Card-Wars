@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://ciej7xj801vq5"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_f66pg"]
+[ext_resource type="Texture2D" uid="uid://7f0fsvgty6vg" path="res://assets/images/frames/NiceLands.png" id="1_pvbgt"]
 
 [resource]
 script = ExtResource("1_f66pg")
@@ -14,3 +15,4 @@ landscape = "NiceLands"
 card_type = "Building"
 image = "Nice Windmill.jpg"
 id = 302
+frame = ExtResource("1_pvbgt")

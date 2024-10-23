@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://cwkixl0tiyllb"]
 
+[ext_resource type="Texture2D" uid="uid://be2gbw036jfuv" path="res://assets/images/frames/Blue Plains_Creature.png" id="1_5l5cn"]
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_xvoxm"]
 
 [resource]
@@ -14,3 +15,4 @@ landscape = "Blue Plains"
 card_type = "Creature"
 image = "Tired Wombat.jpg"
 id = 464
+frame = ExtResource("1_5l5cn")

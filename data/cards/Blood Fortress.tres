@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://b604bxeq53sgb"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_hdisx"]
+[ext_resource type="Texture2D" uid="uid://tqpubod46faw" path="res://assets/images/frames/Rainbow.png" id="1_ry7w7"]
 
 [resource]
 script = ExtResource("1_hdisx")
@@ -14,3 +15,4 @@ landscape = "Rainbow"
 card_type = "Building"
 image = "Blood Fortress.jpg"
 id = 33
+frame = ExtResource("1_ry7w7")

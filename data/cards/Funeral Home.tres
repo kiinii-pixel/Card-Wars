@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://cvyk6waau6x1d"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_7wl8d"]
+[ext_resource type="Texture2D" uid="uid://ypdgp0t1gdd0" path="res://assets/images/frames/Useless Swamp.png" id="1_k4wbp"]
 
 [resource]
 script = ExtResource("1_7wl8d")
@@ -14,3 +15,4 @@ landscape = "Useless Swamp"
 card_type = "Building"
 image = "Funeral Home.jpg"
 id = 174
+frame = ExtResource("1_k4wbp")

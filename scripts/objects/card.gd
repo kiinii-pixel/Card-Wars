@@ -1,5 +1,5 @@
+# Base Script for any Card
 class_name Card extends Control
-
 
 @export var data : Resource # Contains a Card Resource with its values
 
@@ -18,9 +18,9 @@ func _ready():
 	load_card() # load card image and text
 	z_index = 4 # z_index is initialized as 4. Elements on top are set to 5.
 
-
-func load_card(): # set the cards stats, name etc. to whatever is stored in its resource
-	set_name(data.card_name) # sets name in the debug editor (instead of Node2D@1)
+# Set the Card's Text Labels to the Stats store in its "data" Resource File
+func load_card():
+	set_name(data.card_name) # Set Debug Editor Name (instead of Node2D@1)
 	%CardName.text = data.card_name
 	%LandscapeCardType.text = data.landscape + " " + data.card_type
 	%Description.text = data.description
@@ -46,7 +46,7 @@ func load_card(): # set the cards stats, name etc. to whatever is stored in its 
 				max_characters += 1
 				font_size -= 1.15
 
-
+# Load Card Image
 func load_image():
 	# Load Image
 	var card_image_path : String = "res://assets/images/cards/art/" + data.landscape + \
@@ -57,8 +57,8 @@ func load_image():
 	else:
 		print("No Image Texture found")
 
-
-func load_values(): # reload card values and changes colors
+# Reload Values (Atk, Def, Cost) and change color.
+func load_values():
 	%CostLabel.text = String.num(cost)
 	if data.card_type == "Creature":
 		var atk_label = %AttackLabel
@@ -88,7 +88,7 @@ func load_values(): # reload card values and changes colors
 		%AttackLabel.text = ""
 		%DefenseLabel.text = ""
 
-
+# Reset Values to default
 func reset_values():
 	set_name(data.card_name) # sets name in the debug editor (instead of Node2D@1)
 	# Atk/Def (when creature)
@@ -113,7 +113,7 @@ func _on_drag_component_body_exited(body):
 		if body.get_node_or_null("card_preview"):
 			body.get_node("card_preview").queue_free()
 
-
+# Flip Card face up or down
 func flip():
 	if state_mashine.current_state == state_mashine.states["in_deck"]:
 		get_node("%AnimationPlayer").play("flip_up")

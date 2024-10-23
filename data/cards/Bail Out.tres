@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://bliykmwuipnfm"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_oj5al"]
+[ext_resource type="Texture2D" uid="uid://b1httut4wv5or" path="res://assets/images/frames/SandyLands.png" id="1_wclbm"]
 
 [resource]
 script = ExtResource("1_oj5al")
@@ -14,3 +15,4 @@ landscape = "SandyLands"
 card_type = "Spell"
 image = "Bail Out.jpg"
 id = 17
+frame = ExtResource("1_wclbm")

@@ -8,6 +8,7 @@ var deck : Array # Empty Array that a deck can be loaded into.
 func _ready():
 	deck = load("res://data/decks/finn.tres").deck # Load Finn's Deck
 	$Hand.draw_multiple(5) # Draw 5 Cards to hand
+	dir_contents("res://data/cards/")
 
 
 # When the Draw Card Button is pressed
@@ -77,9 +78,35 @@ func discard(creature):
 	creature.reset_values()
 
 
-# Creates Resources (.tres) for each card in the JSON
-# This was only used to create Resources, doesnt do anything in game.
-func create_resources():
-	for card_id in 511:
-		$save_cards.initialize(card_id)
-		$save_cards.create_resource()
+func dir_contents(path):
+	var dir = DirAccess.open(path)
+	if dir:
+		dir.list_dir_begin()
+		var file_name = dir.get_next()
+		while file_name != "":
+			if dir.current_is_dir():
+				print("Found directory: " + file_name)
+			else:
+				var imported_resource : Resource = load(path + file_name)
+				#print(imported_resource)
+				#print(get_frame(imported_resource))
+				var frame = get_frame(imported_resource)
+				imported_resource.frame = frame
+				print(imported_resource.frame)
+				ResourceSaver.save(imported_resource, path + file_name)
+			file_name = dir.get_next()
+	else:
+		print("An error occurred when trying to access the path.")
+
+func get_frame(data):
+	var frame_path : String
+	if data.card_type == "Creature":
+		frame_path = "res://assets/images/frames/" + data.landscape + "_Creature.png"
+	else:
+		frame_path = "res://assets/images/frames/" + data.landscape + ".png"
+	return load(frame_path)
+
+func get_image(data):
+	var card_image_path : String = "res://assets/images/cards/art/" + data.landscape + \
+	"/" + data.card_type + "/" + data.card_name + ".png"
+	return load(card_image_path)

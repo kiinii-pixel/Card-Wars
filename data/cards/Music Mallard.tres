@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://tsmmjo7v0wn2"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_lv0d1"]
+[ext_resource type="Texture2D" uid="uid://b0rsdd3n7u8r4" path="res://assets/images/frames/NiceLands_Creature.png" id="1_x1ky0"]
 
 [resource]
 script = ExtResource("1_lv0d1")
@@ -14,3 +15,4 @@ landscape = "NiceLands"
 card_type = "Creature"
 image = "Music Mallard.jpg"
 id = 297
+frame = ExtResource("1_x1ky0")

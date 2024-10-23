@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://do7t6l17ps5vl"]
 
+[ext_resource type="Texture2D" uid="uid://be2gbw036jfuv" path="res://assets/images/frames/Blue Plains_Creature.png" id="1_0s3kn"]
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_ntwyd"]
 
 [resource]
@@ -14,3 +15,4 @@ landscape = "Blue Plains"
 card_type = "Creature"
 image = "Blue Slimey.jpg"
 id = 39
+frame = ExtResource("1_0s3kn")

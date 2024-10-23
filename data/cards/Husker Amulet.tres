@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://by5ng37chxpba"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_26m7g"]
+[ext_resource type="Texture2D" uid="uid://du1xi1t4s1wio" path="res://assets/images/frames/Cornfield.png" id="1_v4ft6"]
 
 [resource]
 script = ExtResource("1_26m7g")
@@ -14,3 +15,4 @@ landscape = "Cornfield"
 card_type = "Spell"
 image = "Husker Amulet.jpg"
 id = 223
+frame = ExtResource("1_v4ft6")

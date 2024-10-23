@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://n7fw5cr8oss"]
 
+[ext_resource type="Texture2D" uid="uid://b0rsdd3n7u8r4" path="res://assets/images/frames/NiceLands_Creature.png" id="1_myub8"]
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_yj6td"]
 
 [resource]
@@ -14,3 +15,4 @@ landscape = "NiceLands"
 card_type = "Creature"
 image = "Snakemint.jpg"
 id = 410
+frame = ExtResource("1_myub8")

@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://ce5pr6c0vr1gc"]
 
+[ext_resource type="Texture2D" uid="uid://d2o5o4cm304mt" path="res://assets/images/frames/Useless Swamp_Creature.png" id="1_6saab"]
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_pw1cm"]
 
 [resource]
@@ -14,3 +15,4 @@ landscape = "Useless Swamp"
 card_type = "Creature"
 image = "Infinite Figure.jpg"
 id = 247
+frame = ExtResource("1_6saab")

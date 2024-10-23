@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://du3qat6ohj2e0"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_8k6qr"]
+[ext_resource type="Texture2D" uid="uid://tbt4hmdhcclb" path="res://assets/images/frames/SandyLands_Creature.png" id="1_ji1qh"]
 
 [resource]
 script = ExtResource("1_8k6qr")
@@ -14,3 +15,4 @@ landscape = "SandyLands"
 card_type = "Creature"
 image = "Lime Slimey.jpg"
 id = 267
+frame = ExtResource("1_ji1qh")

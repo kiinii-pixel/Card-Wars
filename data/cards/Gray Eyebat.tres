@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://bubpfyrnwhnar"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_ubb47"]
+[ext_resource type="Texture2D" uid="uid://d2o5o4cm304mt" path="res://assets/images/frames/Useless Swamp_Creature.png" id="1_v8j8i"]
 
 [resource]
 script = ExtResource("1_ubb47")
@@ -14,3 +15,4 @@ landscape = "Useless Swamp"
 card_type = "Creature"
 image = "Gray Eyebat.jpg"
 id = 200
+frame = ExtResource("1_v8j8i")

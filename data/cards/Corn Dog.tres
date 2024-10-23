@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://b80b7oxhyqoc4"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_n4f1m"]
+[ext_resource type="Texture2D" uid="uid://b0p6pgobeqtuk" path="res://assets/images/frames/Cornfield_Creature.png" id="1_pt15y"]
 
 [resource]
 script = ExtResource("1_n4f1m")
@@ -14,3 +15,4 @@ landscape = "Cornfield"
 card_type = "Creature"
 image = "Corn Dog.jpg"
 id = 85
+frame = ExtResource("1_pt15y")

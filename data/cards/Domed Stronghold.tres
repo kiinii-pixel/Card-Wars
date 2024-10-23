@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3 uid="uid://c37gi4ryurhe3"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://c37gi4ryurhe3"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_00ko2"]
+[ext_resource type="Texture2D" uid="uid://d1kvwyj0lxwng" path="res://assets/images/frames/Blue Plains.png" id="1_fttcl"]
 
 [resource]
 script = ExtResource("1_00ko2")
@@ -14,3 +15,4 @@ landscape = "Blue Plains"
 card_type = "Building"
 image = "Domed Stronghold.jpg"
 id = 111
+frame = ExtResource("1_fttcl")

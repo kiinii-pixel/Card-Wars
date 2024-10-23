@@ -1,7 +1,6 @@
-[gd_scene load_steps=25 format=3 uid="uid://bco1m6ixdmiil"]
+[gd_scene load_steps=24 format=3 uid="uid://bco1m6ixdmiil"]
 
 [ext_resource type="Script" path="res://scripts/objects/card.gd" id="1_arv21"]
-[ext_resource type="Texture2D" uid="uid://fa7porh7emrp" path="res://assets/images/cards/art/Blue Plains/Creature/Ancient Scholar.png" id="2_h63qs"]
 [ext_resource type="Texture2D" uid="uid://ct5331atokkqs" path="res://assets/images/frames/Rainbow_Creature.png" id="3_mw3bc"]
 [ext_resource type="Theme" uid="uid://dmwrp6aey18st" path="res://assets/themes/purple_button.tres" id="5_bmwov"]
 [ext_resource type="FontFile" uid="uid://ca0g1l1k6v1sf" path="res://assets/fonts/Pendlefont Heavy.TTF" id="5_bysvj"]
@@ -146,6 +145,7 @@ size = Vector2(376, 928)
 size = Vector2(376, 928)
 
 [node name="Card" type="Control"]
+editor_description = "This is the base Node for any Card."
 layout_mode = 3
 anchors_preset = 0
 size_flags_horizontal = 4
@@ -154,6 +154,7 @@ mouse_filter = 2
 script = ExtResource("1_arv21")
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+editor_description = "Displays Subviewport"
 layout_mode = 1
 offset_left = -346.5
 offset_top = -490.0
@@ -166,6 +167,7 @@ metadata/_edit_use_anchors_ = true
 
 [node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
 unique_name_in_owner = true
+editor_description = "The SubViewport is used to render a Card's texture, without having to reload all its elements."
 disable_3d = true
 transparent_bg = true
 handle_input_locally = false
@@ -173,18 +175,12 @@ size = Vector2i(693, 980)
 render_target_update_mode = 4
 
 [node name="PanelContainer" type="PanelContainer" parent="SubViewportContainer/SubViewport"]
-scale = Vector2(1e-05, 1)
 
 [node name="CardImage" type="Sprite2D" parent="SubViewportContainer/SubViewport/PanelContainer"]
 unique_name_in_owner = true
 position = Vector2(26, 0)
 scale = Vector2(1.25391, 1.25391)
 centered = false
-
-[node name="TextureRect" type="TextureRect" parent="SubViewportContainer/SubViewport/PanelContainer"]
-layout_mode = 2
-texture = ExtResource("2_h63qs")
-expand_mode = 2
 
 [node name="CardFrame" type="Sprite2D" parent="SubViewportContainer/SubViewport/PanelContainer"]
 unique_name_in_owner = true
@@ -201,14 +197,14 @@ libraries = {
 
 [node name="CardBack" type="Sprite2D" parent="SubViewportContainer/SubViewport"]
 unique_name_in_owner = true
-scale = Vector2(0.896, 0.896)
+visible = false
+scale = Vector2(1e-05, 0.896)
 texture = ExtResource("6_uokre")
 offset = Vector2(385.655, 540.96)
 
 [node name="Labels" type="Control" parent="SubViewportContainer/SubViewport"]
 layout_mode = 3
 anchors_preset = 0
-scale = Vector2(1e-05, 1)
 
 [node name="CardName" type="Label" parent="SubViewportContainer/SubViewport/Labels"]
 unique_name_in_owner = true
@@ -327,6 +323,7 @@ stream = ExtResource("8_iocnt")
 shape = SubResource("RectangleShape2D_os2xy")
 
 [node name="state_mashine" type="Node" parent="." node_paths=PackedStringArray("initial_state")]
+editor_description = "Manages a Card's states"
 script = ExtResource("10_rn6ks")
 initial_state = NodePath("in_deck")
 

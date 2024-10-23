@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://8uqvje50ls0n"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_f2rfe"]
+[ext_resource type="Texture2D" uid="uid://ypdgp0t1gdd0" path="res://assets/images/frames/Useless Swamp.png" id="1_imgwt"]
 
 [resource]
 script = ExtResource("1_f2rfe")
@@ -14,3 +15,4 @@ landscape = "Useless Swamp"
 card_type = "Spell"
 image = "Magic Lamp.jpg"
 id = 282
+frame = ExtResource("1_imgwt")

@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3 uid="uid://d4b60g2x2vkb2"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://d4b60g2x2vkb2"]
 
+[ext_resource type="Texture2D" uid="uid://d1kvwyj0lxwng" path="res://assets/images/frames/Blue Plains.png" id="1_v3hov"]
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_vuejh"]
 
 [resource]
@@ -14,3 +15,4 @@ landscape = "Blue Plains"
 card_type = "Building"
 image = "Charming City.jpg"
 id = 69
+frame = ExtResource("1_v3hov")

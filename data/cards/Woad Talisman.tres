@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://n8jwciy46g1b"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_7ovfj"]
+[ext_resource type="Texture2D" uid="uid://tqpubod46faw" path="res://assets/images/frames/Rainbow.png" id="1_8deqr"]
 
 [resource]
 script = ExtResource("1_7ovfj")
@@ -14,3 +15,4 @@ landscape = "Rainbow"
 card_type = "Spell"
 image = "Woad Talisman.jpg"
 id = 498
+frame = ExtResource("1_8deqr")

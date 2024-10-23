@@ -1,7 +1,7 @@
 [gd_scene load_steps=484 format=3 uid="uid://cpt2c1rjk4b6b"]
 
 [ext_resource type="Script" path="res://scripts/ui/deckbuilder.gd" id="1_4e2jx"]
-[ext_resource type="Resource" path="res://data/cards/Abdominal Snowman.tres" id="5_tkhjr"]
+[ext_resource type="Resource" uid="uid://67mrqhaopl5c" path="res://data/cards/Abdominal Snowman.tres" id="5_tkhjr"]
 [ext_resource type="Resource" path="res://data/cards/Abraca Amadeus.tres" id="6_802k6"]
 [ext_resource type="Resource" path="res://data/cards/Adorabunny.tres" id="7_dhcnt"]
 [ext_resource type="Resource" path="res://data/cards/Aeromancer.tres" id="8_q06at"]
@@ -575,5 +575,12 @@ script = ExtResource("481_32nnb")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ItemList/DeckList"]
 position = Vector2(162.5, 405)
 shape = SubResource("RectangleShape2D_tkwq5")
+
+[node name="LineEdit" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 695.0
+offset_top = 73.0
+offset_right = 762.062
+offset_bottom = 104.0
 
 [connection signal="pressed" from="back" to="." method="_on_back_pressed"]

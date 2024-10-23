@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://ccwwrchreph8f"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_1uhnq"]
+[ext_resource type="Texture2D" uid="uid://c51xyr2tedybn" path="res://assets/images/frames/IcyLands.png" id="1_c00ro"]
 
 [resource]
 script = ExtResource("1_1uhnq")
@@ -14,3 +15,4 @@ landscape = "IcyLands"
 card_type = "Building"
 image = "Snow Business.jpg"
 id = 415
+frame = ExtResource("1_c00ro")

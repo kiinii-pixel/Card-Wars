@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://bqgyrvmxm04bn"]
 
+[ext_resource type="Texture2D" uid="uid://tqpubod46faw" path="res://assets/images/frames/Rainbow.png" id="1_fs83i"]
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_tpsjn"]
 
 [resource]
@@ -14,3 +15,4 @@ landscape = "Rainbow"
 card_type = "Spell"
 image = "Jinx.jpg"
 id = 254
+frame = ExtResource("1_fs83i")

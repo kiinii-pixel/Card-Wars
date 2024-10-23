@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://b2b5y25oggo3h"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_frhry"]
+[ext_resource type="Texture2D" uid="uid://tbt4hmdhcclb" path="res://assets/images/frames/SandyLands_Creature.png" id="1_m6xo6"]
 
 [resource]
 script = ExtResource("1_frhry")
@@ -14,3 +15,4 @@ landscape = "SandyLands"
 card_type = "Creature"
 image = "Green Cactiball.jpg"
 id = 201
+frame = ExtResource("1_m6xo6")

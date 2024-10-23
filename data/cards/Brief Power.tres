@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://dkbxdme5j2inn"]
 
 [ext_resource type="Script" path="res://data/card_resource.gd" id="1_2qmlx"]
+[ext_resource type="Texture2D" uid="uid://tqpubod46faw" path="res://assets/images/frames/Rainbow.png" id="1_scqx1"]
 
 [resource]
 script = ExtResource("1_2qmlx")
@@ -14,3 +15,4 @@ landscape = "Rainbow"
 card_type = "Spell"
 image = "Brief Power.jpg"
 id = 52
+frame = ExtResource("1_scqx1")
