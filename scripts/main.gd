@@ -2,30 +2,30 @@ extends Node2D
 
 
 var deck : Array # Empty Array that a deck can be loaded into.
-@onready var card_sound = $card_sound # Will likely be moved somewehre else
+@onready var card_sound = %card_sound # Will likely be moved somewehre else
 
 
 func _ready():
 	deck = load("res://data/decks/finn.tres").deck # Load Finn's Deck
-	$Hand.draw_multiple(5) # Draw 5 Cards to hand
+	%Hand.draw_multiple(5) # Draw 5 Cards to hand
 
 
 # When the Draw Card Button is pressed
 func _on_draw_card_pressed():
-	await get_node("Hand").draw() # Draw a Card
+	await %Hand.draw() # Draw a Card
 	card_sound.play() # Play Card Sound
 
 
 # When Reset Button is pressed
 func _on_reset_pressed():
-	for card in $Deck/Cards.get_children():
-		$Deck/Cards.remove_child(card)
+	for card in %Deck/Cards.get_children():
+		%Deck/Cards.remove_child(card)
 		card.queue_free() # Delete Cards in Deck
-	for card in $Hand.get_children():
-		$Hand.remove_child(card)
+	for card in %Hand.get_children():
+		%Hand.remove_child(card)
 		card.queue_free() # Delete Cards in Hand
-	$Deck.offset = Vector2(0, 0) # Reset offset (Card 3D effect)
-	$Deck.load_deck()
+	%Deck.offset = Vector2(0, 0) # Reset offset (Card 3D effect)
+	%Deck.load_deck()
 
 
 func _on_back_pressed():

@@ -8,7 +8,7 @@ func enter():
 	drag_component.allow_drag = false
 	card.is_inside = false
 	card_sound.play()
-	card.scale = Vector2(0.5, 0.5)
+	card.scale = Vector2(1, 1)
 	Global.is_dragging = false
 	card.reparent(card.body_ref)
 	card.body_ref.empty = false

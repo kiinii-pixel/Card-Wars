@@ -56,6 +56,7 @@ script = ExtResource("1_mh3fo")
 layer = -1
 
 [node name="Hand" parent="." node_paths=PackedStringArray("deck") instance=ExtResource("4_v11k8")]
+unique_name_in_owner = true
 position = Vector2(995, 960)
 deck = NodePath("../Deck")
 
@@ -166,6 +167,7 @@ theme_override_styles/normal = SubResource("StyleBoxTexture_qawrv")
 text = "Fight!"
 
 [node name="Deck" parent="." instance=ExtResource("9_6xswo")]
+unique_name_in_owner = true
 position = Vector2(1710, 937)
 
 [node name="Discard" parent="." instance=ExtResource("15_b00fb")]
@@ -180,24 +182,20 @@ metadata/_edit_group_ = true
 
 [node name="Landscape" parent="Zones/Landscapes" instance=ExtResource("1_r6f6m")]
 position = Vector2(-393, 0)
-scale = Vector2(0.5, 0.5)
 art_variant = 2
 landscape_type = 0
 
 [node name="Landscape2" parent="Zones/Landscapes" instance=ExtResource("1_r6f6m")]
 position = Vector2(-131, 0)
-scale = Vector2(0.5, 0.5)
 art_variant = 1
 landscape_type = 0
 
 [node name="Landscape3" parent="Zones/Landscapes" instance=ExtResource("1_r6f6m")]
 position = Vector2(131, 0)
-scale = Vector2(0.5, 0.5)
 landscape_type = 0
 
 [node name="Landscape4" parent="Zones/Landscapes" instance=ExtResource("1_r6f6m")]
 position = Vector2(393, 0)
-scale = Vector2(0.5, 0.5)
 art_variant = 4
 landscape_type = 0
 
@@ -208,32 +206,30 @@ metadata/_edit_group_ = true
 
 [node name="Landscape" parent="Zones/EnemyLandscapes" instance=ExtResource("1_r6f6m")]
 position = Vector2(-393, -40)
-scale = Vector2(0.5, 0.5)
 art_variant = 1
 landscape_type = 1
 
 [node name="Landscape2" parent="Zones/EnemyLandscapes" instance=ExtResource("1_r6f6m")]
 position = Vector2(-131, -40)
-scale = Vector2(0.5, 0.5)
 art_variant = 2
 landscape_type = 1
 
 [node name="Landscape3" parent="Zones/EnemyLandscapes" instance=ExtResource("1_r6f6m")]
 position = Vector2(131, -40)
-scale = Vector2(0.5, 0.5)
 landscape_type = 1
 
 [node name="Landscape4" parent="Zones/EnemyLandscapes" instance=ExtResource("1_r6f6m")]
 position = Vector2(393, -40)
-scale = Vector2(0.5, 0.5)
 art_variant = 4
 landscape_type = 1
 
 [node name="card_sound" type="AudioStreamPlayer2D" parent="."]
+unique_name_in_owner = true
 stream = ExtResource("12_eiseh")
 bus = &"Sound Effects"
 
 [node name="background_music" type="AudioStreamPlayer2D" parent="."]
+unique_name_in_owner = true
 stream = ExtResource("16_n7sm1")
 autoplay = true
 bus = &"Music"

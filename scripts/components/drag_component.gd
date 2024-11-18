@@ -6,8 +6,8 @@ var selected : bool = false # true when mouse is hovering over card
 var initial_pos : Vector2 # save the cards initial position
 var allow_drag : bool = true # This is set true when drawn and to false when the card is played
 
-const SCALE_NORMAL = Vector2(0.25, 0.25)
-const SCALE_ZOOMED = Vector2(0.3, 0.3)
+const SCALE_NORMAL = Vector2(1, 1)
+const SCALE_ZOOMED = Vector2(1.2, 1.2)
  
 
 func _ready():

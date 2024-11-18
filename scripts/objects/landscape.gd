@@ -13,5 +13,5 @@ func _process(_delta):
 
 func load_image():
 	var image_path = "res://assets/images/landscapes/" + String.num(landscape_type) + String.num(art_variant) + ".png"
-	$LandscapeImage.texture = load(image_path)
+	%LandscapeImage.texture = load(image_path)
 	

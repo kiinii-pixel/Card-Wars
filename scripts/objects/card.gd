@@ -3,7 +3,7 @@ class_name Card extends Control
 
 @export var data : Resource # Contains a Card Resource with its values
 
-var body_ref : Landscape # Reference to the Landscape you're hovering over.
+var body_ref : StaticBody2D # Reference to the Landscape you're hovering over.
 var is_inside = false # true if card is inside a landscape
 @onready var drag_component : Object = $drag_component # drag component node
 @onready var floop_component : Object = $floop_component

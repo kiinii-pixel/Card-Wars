@@ -1,5 +1,6 @@
 class_name Dragging extends State # Dragging a Card
 
+var in_deck_list : bool
 
 func enter():
 	Global.is_dragging = true
@@ -15,6 +16,11 @@ func update(_delta : float):
 		drag_component.body_entered.disconnect(_on_body_entered)
 		Transitioned.emit(self, "in_hand")
 		Global.is_dragging = false
+	if in_deck_list:
+		if Input.is_action_just_released("action_key"):
+				var item_list = card.body_ref.get_parent()
+				item_list.add_item(card.data.card_name, card.data.image)
+				#card.queue_free()
 
 
 func exit():
@@ -29,10 +35,8 @@ func _on_body_entered(body : Node2D):
 			card.body_ref = body # body_ref set to entered landscape
 			create_preview()
 	if body is DeckList:
-		var item_list = body.get_parent()
-		item_list.add_item(card.data.card_name, card.load_image())
-		#item_list.add_item(card.data.card_name, card.image)
-		#card.queue_free()
+		in_deck_list = true
+		card.body_ref = body
 
 
 func create_preview():
@@ -44,7 +48,7 @@ func create_preview():
 		var img = sub_viewport.get_viewport().get_texture().get_image() # Retrieve the captured Image using get_image().
 		var tex = ImageTexture.create_from_image(img) 		# Convert Image to ImageTexture.
 		sprite.texture = tex # Set sprite texture.
-		sprite.scale = Vector2(0.5, 0.5) # scale down
+		sprite.scale = Vector2(.25, .25) # scale down
 		sprite.modulate.a = 0.5 # make transparent
 
 

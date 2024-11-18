@@ -17,6 +17,17 @@
 [ext_resource type="Script" path="res://scripts/states/overlapping.gd" id="16_eswy8"]
 [ext_resource type="Script" path="res://scripts/states/hovering.gd" id="16_psrjk"]
 
+[sub_resource type="Theme" id="Theme_rcflo"]
+default_font = ExtResource("5_bysvj")
+Label/colors/font_color = Color(0.129412, 0.141176, 0.160784, 1)
+Label/font_sizes/font_size = 78
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4b713"]
+size = Vector2(92, 222)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_os2xy"]
+size = Vector2(92, 222)
+
 [sub_resource type="Animation" id="Animation_0kbrg"]
 length = 0.001
 
@@ -133,17 +144,6 @@ _data = {
 "flip_up": SubResource("Animation_ljt8f")
 }
 
-[sub_resource type="Theme" id="Theme_rcflo"]
-default_font = ExtResource("5_bysvj")
-Label/colors/font_color = Color(0.129412, 0.141176, 0.160784, 1)
-Label/font_sizes/font_size = 78
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_4b713"]
-size = Vector2(376, 928)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_os2xy"]
-size = Vector2(376, 928)
-
 [node name="Card" type="Control"]
 editor_description = "This is the base Node for any Card."
 layout_mode = 3
@@ -160,6 +160,7 @@ offset_left = -346.5
 offset_top = -490.0
 offset_right = 346.5
 offset_bottom = 490.0
+scale = Vector2(0.25, 0.25)
 pivot_offset = Vector2(346.75, 490)
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -175,6 +176,7 @@ size = Vector2i(693, 980)
 render_target_update_mode = 4
 
 [node name="PanelContainer" type="PanelContainer" parent="SubViewportContainer/SubViewport"]
+scale = Vector2(1e-05, 1)
 
 [node name="CardImage" type="Sprite2D" parent="SubViewportContainer/SubViewport/PanelContainer"]
 unique_name_in_owner = true
@@ -188,23 +190,16 @@ position = Vector2(2.38419e-07, 0)
 texture = ExtResource("3_mw3bc")
 centered = false
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="SubViewportContainer/SubViewport/PanelContainer"]
-unique_name_in_owner = true
-root_node = NodePath("../../../..")
-libraries = {
-"": SubResource("AnimationLibrary_swdfb")
-}
-
 [node name="CardBack" type="Sprite2D" parent="SubViewportContainer/SubViewport"]
 unique_name_in_owner = true
-visible = false
-scale = Vector2(1e-05, 0.896)
+scale = Vector2(0.896, 0.896)
 texture = ExtResource("6_uokre")
 offset = Vector2(385.655, 540.96)
 
 [node name="Labels" type="Control" parent="SubViewportContainer/SubViewport"]
 layout_mode = 3
 anchors_preset = 0
+scale = Vector2(1e-05, 1)
 
 [node name="CardName" type="Label" parent="SubViewportContainer/SubViewport/Labels"]
 unique_name_in_owner = true
@@ -348,6 +343,12 @@ script = ExtResource("16_psrjk")
 
 [node name="overlapping" type="Node" parent="state_mashine"]
 script = ExtResource("16_eswy8")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+unique_name_in_owner = true
+libraries = {
+"": SubResource("AnimationLibrary_swdfb")
+}
 
 [connection signal="body_exited" from="drag_component" to="." method="_on_drag_component_body_exited"]
 [connection signal="mouse_exited" from="drag_component" to="state_mashine/hovering" method="_on_drag_component_mouse_exited"]

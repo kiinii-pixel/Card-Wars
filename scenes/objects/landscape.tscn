@@ -4,14 +4,28 @@
 [ext_resource type="Texture2D" uid="uid://ji270ao8uksi" path="res://assets/images/landscapes/01.png" id="2_swo5x"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1lp4w"]
-size = Vector2(362.667, 508)
+size = Vector2(196, 264)
 
 [node name="Landscape" type="StaticBody2D" groups=["droppable"]]
 script = ExtResource("1_ke2ls")
 
-[node name="LandscapeImage" type="Sprite2D" parent="."]
-position = Vector2(0, 75)
+[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+offset_left = -131.0
+offset_top = -150.0
+offset_right = 393.0
+offset_bottom = 597.0
+scale = Vector2(0.5, 0.5)
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
+handle_input_locally = false
+size = Vector2i(524, 747)
+render_target_update_mode = 4
+
+[node name="LandscapeImage" type="Sprite2D" parent="SubViewportContainer/SubViewport"]
+unique_name_in_owner = true
 texture = ExtResource("2_swo5x")
+centered = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_1lp4w")
