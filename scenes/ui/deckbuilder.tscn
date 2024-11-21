@@ -1,4 +1,4 @@
-[gd_scene load_steps=485 format=3 uid="uid://cpt2c1rjk4b6b"]
+[gd_scene load_steps=486 format=3 uid="uid://cpt2c1rjk4b6b"]
 
 [ext_resource type="Script" path="res://scripts/ui/deckbuilder.gd" id="1_4e2jx"]
 [ext_resource type="Resource" uid="uid://67mrqhaopl5c" path="res://data/cards/Abdominal Snowman.tres" id="5_tkhjr"]
@@ -479,13 +479,14 @@
 [ext_resource type="PackedScene" uid="uid://5w02c5yvt88x" path="res://scenes/ui/button.tscn" id="479_fuatx"]
 [ext_resource type="Resource" uid="uid://b032b7lilr3j0" path="res://data/cards/Young ZebraCorn Husker.tres" id="479_vajwh"]
 [ext_resource type="Theme" uid="uid://mmfpajwi7rd7" path="res://assets/themes/pendletheme.tres" id="480_0t632"]
-[ext_resource type="Texture2D" uid="uid://b3xeo685h6h7v" path="res://assets/images/cards/art/Rainbow/Creature/The Pig.png" id="480_fog4a"]
 [ext_resource type="Resource" uid="uid://cyocky4ixd5p" path="res://data/cards/ZaZo's Magic Seeds.tres" id="480_odbm7"]
 [ext_resource type="Script" path="res://scripts/ui/deck_list.gd" id="481_32nnb"]
 [ext_resource type="Script" path="res://scripts/ui/grid_container.gd" id="481_88qej"]
+[ext_resource type="PackedScene" uid="uid://6kgdmuouav1e" path="res://scenes/ui/searchbar.tscn" id="483_14q2w"]
+[ext_resource type="PackedScene" uid="uid://dalexkrn3lhaj" path="res://scenes/ui/option_button.tscn" id="483_k4org"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tkwq5"]
-size = Vector2(345, 830)
+size = Vector2(298, 722)
 
 [node name="deckbuilder" type="Control"]
 layout_mode = 3
@@ -497,7 +498,7 @@ grow_vertical = 2
 mouse_filter = 2
 script = ExtResource("1_4e2jx")
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="background" type="TextureRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -506,16 +507,17 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("478_60h8k")
 
-[node name="Button" parent="." instance=ExtResource("479_fuatx")]
+[node name="savedeck" parent="." instance=ExtResource("479_fuatx")]
 layout_mode = 1
-anchor_left = 0.813125
-anchor_top = 0.037037
-anchor_right = 0.978125
-anchor_bottom = 0.116037
+anchor_left = 0.775625
+anchor_top = 0.796296
+anchor_right = 0.977604
+anchor_bottom = 0.875296
 offset_left = -0.200073
 offset_right = 0.0
 offset_bottom = -0.320007
 grow_horizontal = 0
+text = "Save Deck"
 metadata/_edit_use_anchors_ = true
 
 [node name="ResourcePreloader" type="ResourcePreloader" parent="."]
@@ -555,35 +557,69 @@ columns = 5
 script = ExtResource("481_88qej")
 
 [node name="ItemList" type="ItemList" parent="."]
+unique_name_in_owner = true
 layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.805
-anchor_top = 0.159
-anchor_right = 0.979
-anchor_bottom = 0.917
-offset_left = -0.600098
-offset_top = 0.279984
-offset_right = 0.319946
-offset_bottom = -0.360046
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -390.0
+offset_top = 46.0
+offset_right = -93.0
+offset_bottom = 767.0
+grow_horizontal = 0
 mouse_filter = 2
-item_count = 1
 fixed_icon_size = Vector2i(32, 32)
-item_0/text = "The Pig"
-item_0/icon = ExtResource("480_fog4a")
 
 [node name="DeckList" type="StaticBody2D" parent="ItemList"]
 script = ExtResource("481_32nnb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ItemList/DeckList"]
-position = Vector2(162.5, 405)
+position = Vector2(149, 360)
 shape = SubResource("RectangleShape2D_tkwq5")
 
-[node name="searchbar" type="LineEdit" parent="."]
-layout_mode = 0
-offset_left = 695.0
-offset_top = 73.0
-offset_right = 762.062
-offset_bottom = 104.0
+[node name="searchbar" parent="." instance=ExtResource("483_14q2w")]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -125.0
+offset_top = 60.0
+offset_right = 125.0
+offset_bottom = 120.0
+grow_horizontal = 2
 
+[node name="OptionButton" parent="." instance=ExtResource("483_k4org")]
+layout_mode = 0
+offset_left = 46.0
+offset_top = 272.0
+offset_right = 502.0
+offset_bottom = 357.0
+scale = Vector2(0.5, 0.5)
+
+[node name="OptionButton2" parent="." instance=ExtResource("483_k4org")]
+layout_mode = 0
+offset_left = 46.0
+offset_top = 351.0
+offset_right = 502.0
+offset_bottom = 436.0
+scale = Vector2(0.5, 0.5)
+
+[node name="OptionButton3" parent="." instance=ExtResource("483_k4org")]
+layout_mode = 0
+offset_left = 46.0
+offset_top = 436.0
+offset_right = 502.0
+offset_bottom = 521.0
+scale = Vector2(0.5, 0.5)
+
+[node name="OptionButton4" parent="." instance=ExtResource("483_k4org")]
+layout_mode = 0
+offset_left = 46.0
+offset_top = 531.0
+offset_right = 502.0
+offset_bottom = 616.0
+scale = Vector2(0.5, 0.5)
+
+[connection signal="pressed" from="savedeck" to="." method="_on_savedeck_pressed"]
 [connection signal="pressed" from="back" to="." method="_on_back_pressed"]
 [connection signal="text_changed" from="searchbar" to="." method="_on_searchbar_text_changed"]

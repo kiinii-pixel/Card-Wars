@@ -156,9 +156,9 @@ script = ExtResource("1_arv21")
 [node name="SubViewportContainer" type="SubViewportContainer" parent="."]
 editor_description = "Displays Subviewport"
 layout_mode = 1
-offset_left = -346.5
+offset_left = -346.75
 offset_top = -490.0
-offset_right = 346.5
+offset_right = 346.25
 offset_bottom = 490.0
 scale = Vector2(0.25, 0.25)
 pivot_offset = Vector2(346.75, 490)

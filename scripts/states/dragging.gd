@@ -18,9 +18,10 @@ func update(_delta : float):
 		Global.is_dragging = false
 	if in_deck_list:
 		if Input.is_action_just_released("action_key"):
-				var item_list = card.body_ref.get_parent()
-				item_list.add_item(card.data.card_name, card.data.image)
-				#card.queue_free()
+				var decklist = card.body_ref
+				decklist.add_card_to_list(card)
+				card.global_position = card.drag_component.initial_pos
+				card.scale = Vector2(1, 1)
 
 
 func exit():

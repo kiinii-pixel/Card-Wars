@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://6kgdmuouav1e"]
+
+[ext_resource type="Theme" uid="uid://mmfpajwi7rd7" path="res://assets/themes/pendletheme.tres" id="1_75637"]
+
+[node name="searchbar" type="LineEdit"]
+custom_minimum_size = Vector2(250, 60)
+offset_right = 180.0
+offset_bottom = 50.0
+theme = ExtResource("1_75637")
+placeholder_text = "Search ..."
+alignment = 1

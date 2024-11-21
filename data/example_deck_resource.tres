@@ -1,11 +1,12 @@
-[gd_resource type="Resource" script_class="DeckResource" load_steps=2 format=3 uid="uid://x4e5mlyka7l0"]
+[gd_resource type="Resource" script_class="DeckResource" load_steps=3 format=3 uid="uid://x4e5mlyka7l0"]
 
+[ext_resource type="Script" path="res://data/card_resource.gd" id="1_0hf52"]
 [ext_resource type="Script" path="res://data/deck_resource.gd" id="1_av106"]
 
 [resource]
 script = ExtResource("1_av106")
 character = 0
-deck = Array[Resource("res://data/card_resource.gd")]([])
+deck = Array[ExtResource("1_0hf52")]([])
 landscape1 = 0
 landscape2 = 0
 landscape3 = 0

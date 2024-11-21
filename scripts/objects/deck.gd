@@ -15,7 +15,7 @@ func add_card(card_resource):
 	card.data = card_resource
 	$Cards.add_child(card, true)
 	card.state_mashine.current_state = card.state_mashine.states["in_deck"]
-	card.scale = Vector2(0.25, 0.25)
+	#card.scale = Vector2(0.25, 0.25)
 	card.position = offset
 	offset += Vector2(0.2, 0.2)
 	card.drag_component.allow_drag = false # Cards in Deck shouldnt be draggable

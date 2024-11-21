@@ -38,16 +38,19 @@ func _on_searchbar_text_changed(new_text: String) -> void:
 	if new_text == "":
 		for card in items:
 			card.show()
-			card.drag_component.scale_down(0.2)
-	matches.clear()
-	for card in items:
-		if new_text in card.data.card_name.to_lower():
-			matches.append(card)
-			card.drag_component.scale_down(0.2)
-	for card in items:
-		#card.show() if card in matches else card.hide()
-		if card in matches:
-			card.show()
-			card.drag_component.scale_down(0.2)
-		else:
-			card.hide()
+	else:
+		matches.clear()
+		for card in items:
+			if new_text in card.data.card_name.to_lower():
+				matches.append(card)
+				card.drag_component.scale_down(0.2)
+		for card in items:
+			#card.show() if card in matches else card.hide()
+			if card in matches:
+				card.show()
+			else:
+				card.hide()
+
+
+func _on_savedeck_pressed() -> void:
+	pass

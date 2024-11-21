@@ -39,10 +39,10 @@ func _on_fight_pressed():
 	var index = 0 # Used to count current Landscape in For Loop
 
 	for landscape in landscapes.get_children(): # Goes through all Cards.
-		if landscape.get_child_count() == 4: # If there's a Card on the landscape
+		if !landscape.empty: # If there's a Card on the landscape
 			var creature = landscape.get_child(3) # Get the card / creature
 			var opposing_creature = null
-			if enemy_landscapes.get_child(index).get_child_count() == 4:
+			if enemy_landscapes.get_child(index).empty == false:
 				opposing_creature = enemy_landscapes.get_child(index).get_child(3)
 			if opposing_creature != null:
 				deal_damage(creature, opposing_creature)
@@ -73,5 +73,5 @@ func discard(creature):
 	await creature.drag_component.move($Discard.global_position, 0.2)
 	creature.reparent($Discard/Cards)
 	creature.position = Vector2(0, 0)
-	creature.scale = Vector2(0.25, 0.25)
+	#creature.scale = Vector2(0.25, 0.25)
 	creature.reset_values()

@@ -14,4 +14,10 @@ func _process(_delta):
 func load_image():
 	var image_path = "res://assets/images/landscapes/" + String.num(landscape_type) + String.num(art_variant) + ".png"
 	%LandscapeImage.texture = load(image_path)
-	
+
+
+func _on_child_order_changed() -> void:
+	if get_child_count() == 4:
+		empty = false
+	if get_child_count() == 3:
+		empty = true
