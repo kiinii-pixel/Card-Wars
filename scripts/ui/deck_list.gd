@@ -30,6 +30,9 @@ func add_card_to_list(card):
 		resource_list[card_name] = 1
 
 func save_deck():
+	var root = get_owner()
 	var new_deck = DeckResource.new()
+	print(root.hero_button.get_item_text(root.hero_button.get_selected_id()))
 	for i in range(MAX_DECK_SIZE):
 		new_deck.deck[i] = resource_list[i]
+	

@@ -53,4 +53,4 @@ func _on_searchbar_text_changed(new_text: String) -> void:
 
 
 func _on_savedeck_pressed() -> void:
-	pass
+	%ItemList/DeckList.save_deck()
