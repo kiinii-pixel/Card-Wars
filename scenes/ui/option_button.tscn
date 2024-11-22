@@ -2,14 +2,8 @@
 
 [ext_resource type="Theme" uid="uid://mmfpajwi7rd7" path="res://assets/themes/pendletheme.tres" id="1_qrxwl"]
 
-[node name="OptionButton" type="OptionButton"]
+[node name="option_button" type="OptionButton"]
 offset_right = 396.0
 offset_bottom = 85.0
 theme = ExtResource("1_qrxwl")
 alignment = 1
-item_count = 3
-popup/item_0/text = "Blue Plains"
-popup/item_1/text = "Corn"
-popup/item_1/id = 1
-popup/item_2/text = "Useless Swamp"
-popup/item_2/id = 2

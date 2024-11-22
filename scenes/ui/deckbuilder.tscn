@@ -1,4 +1,4 @@
-[gd_scene load_steps=486 format=3 uid="uid://cpt2c1rjk4b6b"]
+[gd_scene load_steps=489 format=3 uid="uid://cpt2c1rjk4b6b"]
 
 [ext_resource type="Script" path="res://scripts/ui/deckbuilder.gd" id="1_4e2jx"]
 [ext_resource type="Resource" uid="uid://67mrqhaopl5c" path="res://data/cards/Abdominal Snowman.tres" id="5_tkhjr"]
@@ -484,6 +484,9 @@
 [ext_resource type="Script" path="res://scripts/ui/grid_container.gd" id="481_88qej"]
 [ext_resource type="PackedScene" uid="uid://6kgdmuouav1e" path="res://scenes/ui/searchbar.tscn" id="483_14q2w"]
 [ext_resource type="PackedScene" uid="uid://dalexkrn3lhaj" path="res://scenes/ui/option_button.tscn" id="483_k4org"]
+[ext_resource type="Script" path="res://scripts/ui/hero_button.gd" id="485_bbgcx"]
+[ext_resource type="Resource" uid="uid://x4e5mlyka7l0" path="res://data/example_deck_resource.tres" id="486_86y5p"]
+[ext_resource type="PackedScene" uid="uid://cwbym6ickpc8i" path="res://scenes/ui/landscape_button.tscn" id="487_hlqw5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tkwq5"]
 size = Vector2(298, 722)
@@ -509,6 +512,7 @@ texture = ExtResource("478_60h8k")
 
 [node name="savedeck" parent="." instance=ExtResource("479_fuatx")]
 layout_mode = 1
+anchors_preset = -1
 anchor_left = 0.775625
 anchor_top = 0.796296
 anchor_right = 0.977604
@@ -525,6 +529,7 @@ resources = [PackedStringArray("Abdominal Snowman", "Abraca Amadeus", "Adorabunn
 
 [node name="back" parent="." instance=ExtResource("479_fuatx")]
 layout_mode = 1
+anchors_preset = -1
 anchor_left = 0.024
 anchor_top = 0.037
 anchor_right = 0.148
@@ -588,36 +593,46 @@ offset_right = 125.0
 offset_bottom = 120.0
 grow_horizontal = 2
 
-[node name="OptionButton" parent="." instance=ExtResource("483_k4org")]
+[node name="hero_button" parent="." instance=ExtResource("483_k4org")]
 layout_mode = 0
 offset_left = 46.0
-offset_top = 272.0
+offset_top = 597.0
 offset_right = 502.0
-offset_bottom = 357.0
+offset_bottom = 682.0
+scale = Vector2(0.5, 0.5)
+script = ExtResource("485_bbgcx")
+deck_resource = ExtResource("486_86y5p")
+
+[node name="landscape_button" parent="." instance=ExtResource("487_hlqw5")]
+layout_mode = 0
+offset_left = 61.0
+offset_top = 322.0
+offset_right = 457.0
+offset_bottom = 407.0
 scale = Vector2(0.5, 0.5)
 
-[node name="OptionButton2" parent="." instance=ExtResource("483_k4org")]
+[node name="landscape_button2" parent="." instance=ExtResource("487_hlqw5")]
 layout_mode = 0
-offset_left = 46.0
-offset_top = 351.0
-offset_right = 502.0
-offset_bottom = 436.0
+offset_left = 61.0
+offset_top = 382.0
+offset_right = 457.0
+offset_bottom = 467.0
 scale = Vector2(0.5, 0.5)
 
-[node name="OptionButton3" parent="." instance=ExtResource("483_k4org")]
+[node name="landscape_button3" parent="." instance=ExtResource("487_hlqw5")]
 layout_mode = 0
-offset_left = 46.0
-offset_top = 436.0
-offset_right = 502.0
-offset_bottom = 521.0
+offset_left = 61.0
+offset_top = 448.0
+offset_right = 457.0
+offset_bottom = 533.0
 scale = Vector2(0.5, 0.5)
 
-[node name="OptionButton4" parent="." instance=ExtResource("483_k4org")]
+[node name="landscape_button4" parent="." instance=ExtResource("487_hlqw5")]
 layout_mode = 0
-offset_left = 46.0
-offset_top = 531.0
-offset_right = 502.0
-offset_bottom = 616.0
+offset_left = 61.0
+offset_top = 516.0
+offset_right = 457.0
+offset_bottom = 601.0
 scale = Vector2(0.5, 0.5)
 
 [connection signal="pressed" from="savedeck" to="." method="_on_savedeck_pressed"]

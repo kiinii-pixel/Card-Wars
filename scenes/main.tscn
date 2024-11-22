@@ -183,21 +183,17 @@ metadata/_edit_group_ = true
 [node name="Landscape" parent="Zones/Landscapes" instance=ExtResource("1_r6f6m")]
 position = Vector2(-393, 0)
 art_variant = 2
-landscape_type = 0
 
 [node name="Landscape2" parent="Zones/Landscapes" instance=ExtResource("1_r6f6m")]
 position = Vector2(-131, 0)
 art_variant = 1
-landscape_type = 0
 
 [node name="Landscape3" parent="Zones/Landscapes" instance=ExtResource("1_r6f6m")]
 position = Vector2(131, 0)
-landscape_type = 0
 
 [node name="Landscape4" parent="Zones/Landscapes" instance=ExtResource("1_r6f6m")]
 position = Vector2(393, 0)
 art_variant = 4
-landscape_type = 0
 
 [node name="EnemyLandscapes" type="Node2D" parent="Zones"]
 unique_name_in_owner = true

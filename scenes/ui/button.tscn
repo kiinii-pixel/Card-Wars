@@ -3,11 +3,8 @@
 [ext_resource type="Theme" uid="uid://mmfpajwi7rd7" path="res://assets/themes/pendletheme.tres" id="1_bm7w4"]
 
 [node name="Button" type="Button"]
-anchors_preset = -1
-anchor_right = 0.086
-anchor_bottom = 0.079
-offset_right = -165.12
-offset_bottom = -85.32
-size_flags_vertical = 6
+custom_minimum_size = Vector2(400, 0)
+offset_right = 164.0
+offset_bottom = 85.0
 theme = ExtResource("1_bm7w4")
 text = "Button"

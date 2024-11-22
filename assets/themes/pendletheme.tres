@@ -1,16 +1,14 @@
-[gd_resource type="Theme" load_steps=11 format=3 uid="uid://mmfpajwi7rd7"]
+[gd_resource type="Theme" load_steps=10 format=3 uid="uid://mmfpajwi7rd7"]
 
 [ext_resource type="FontFile" uid="uid://ca0g1l1k6v1sf" path="res://assets/fonts/Pendlefont Heavy.TTF" id="1_uk34g"]
-[ext_resource type="Texture2D" uid="uid://bibtdkbx8ql1m" path="res://assets/images/ui/long_button_tile.png" id="2_h13b3"]
 [ext_resource type="Texture2D" uid="uid://er1i6owt6wsk" path="res://assets/images/ui/slider_knob.png" id="3_meh8x"]
 [ext_resource type="FontFile" uid="uid://3fiaey4jsd3x" path="res://assets/fonts/Pendlefont Medium.TTF" id="3_swhys"]
 [ext_resource type="Texture2D" uid="uid://dcu1xptw4u2he" path="res://assets/images/ui/slider_long.png" id="4_mc51i"]
 [ext_resource type="Texture2D" uid="uid://cycmfkxqnwimh" path="res://assets/images/ui/UIAtlas.png" id="6_2kc77"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pk0gw"]
-texture = ExtResource("2_h13b3")
-expand_margin_top = 5.0
-expand_margin_bottom = 15.0
+texture = ExtResource("6_2kc77")
+region_rect = Rect2(-9.91591, 514.448, 1084.3, 303.091)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_311c2"]
 expand_margin_top = 30.0
