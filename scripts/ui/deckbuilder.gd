@@ -5,6 +5,7 @@ const CARD : PackedScene = preload("res://scenes/objects/card.tscn")
 
 var matches : Array = []
 var items
+var count : int = 0
 
 func _ready():
 	load_cards()
@@ -16,6 +17,38 @@ func load_cards():
 	for instance in list:
 		create_card(instance)
 
+# Used to save all Cards to Disk as images (for the Discord Bot)
+# Enable function call in create_card for this to work
+func save_card_images(card):
+	var sub_viewport = card.find_child("SubViewport", true, false)
+
+	if not sub_viewport:
+		print("Error: SubViewport not found!")
+		return
+
+	# Wait for rendering to finish
+	await RenderingServer.frame_post_draw 
+
+	var img = sub_viewport.get_texture().get_image()
+
+	if img.is_empty():
+		print("Error: Captured image is empty!")
+		return
+
+	var node_name = str(card)
+	var split_string = node_name.rsplit(":", true, 1)
+	print(split_string[0])
+
+	var path = "user://" + str(split_string[0]) + ".jpg"
+	var err = img.save_png(path)
+
+	if err == OK:
+		print("Saved image:", path)
+	else:
+		print("Error saving image!")
+
+	count += 1
+
 
 func create_card(instance):
 	var card = CARD.instantiate()
@@ -25,6 +58,7 @@ func create_card(instance):
 		$ScrollContainer/GridContainer.add_child(card) # Add Card to Container
 		$ScrollContainer/GridContainer.cards.append(card) # Add Card to cards Array
 		card.state_mashine.current_state = card.state_mashine.states["in_deck"]
+		#save_card_images(card)
 	else:
 		card.queue_free()
 

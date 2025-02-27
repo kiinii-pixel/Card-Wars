@@ -38,7 +38,7 @@ func load_card():
 	while data.card_name.length() > max_characters: # if name is too long, scale it down
 				%CardName.add_theme_font_size_override("font_size", font_size)
 				max_characters += 1
-				font_size -= 1.15
+				font_size -= 1.75
 
 # Load Card Image
 func load_image():
