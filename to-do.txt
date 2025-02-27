@@ -1,7 +1,10 @@
 To Do:
-	Fix Card Scaling Issue: Put everything into Viewport with Scale x4
-		-> Cards can be Scale 1 instead of 0.25
-	
+
 	Differentiate Cards into subtypes (Creature, Building, Spell)
 
-Use Dictionary for Deck List. Cards are Keys, Values are Amount of that Card
+	Use Dictionary for Deck List. Cards are Keys, Values are Amount of that Card
+
+
+Done:
+	Fix Card Scaling Issue: Put everything into Viewport with Scale x4
+	-> Cards can be Scale 1 instead of 0.25 ✔

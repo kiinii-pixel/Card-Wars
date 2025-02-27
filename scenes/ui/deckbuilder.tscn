@@ -513,15 +513,29 @@ texture = ExtResource("478_60h8k")
 [node name="savedeck" parent="." instance=ExtResource("479_fuatx")]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.775625
-anchor_top = 0.796296
+anchor_left = 0.769375
+anchor_top = 0.755556
 anchor_right = 0.977604
-anchor_bottom = 0.875296
+anchor_bottom = 0.834556
 offset_left = -0.200073
 offset_right = 0.0
 offset_bottom = -0.320007
 grow_horizontal = 0
 text = "Save Deck"
+metadata/_edit_use_anchors_ = true
+
+[node name="import_deck" parent="." instance=ExtResource("479_fuatx")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.769375
+anchor_top = 0.861111
+anchor_right = 0.977604
+anchor_bottom = 0.940111
+offset_left = -0.200073
+offset_right = 0.0
+offset_bottom = -0.320007
+grow_horizontal = 0
+text = "Import Deck"
 metadata/_edit_use_anchors_ = true
 
 [node name="ResourcePreloader" type="ResourcePreloader" parent="."]
@@ -636,5 +650,6 @@ offset_bottom = 601.0
 scale = Vector2(0.5, 0.5)
 
 [connection signal="pressed" from="savedeck" to="." method="_on_savedeck_pressed"]
+[connection signal="pressed" from="import_deck" to="." method="_on_import_deck_pressed"]
 [connection signal="pressed" from="back" to="." method="_on_back_pressed"]
 [connection signal="text_changed" from="searchbar" to="." method="_on_searchbar_text_changed"]
