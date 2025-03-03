@@ -514,9 +514,9 @@ texture = ExtResource("478_60h8k")
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.769375
-anchor_top = 0.755556
+anchor_top = 0.787963
 anchor_right = 0.977604
-anchor_bottom = 0.834556
+anchor_bottom = 0.866963
 offset_left = -0.200073
 offset_right = 0.0
 offset_bottom = -0.320007
@@ -524,13 +524,29 @@ grow_horizontal = 0
 text = "Save Deck"
 metadata/_edit_use_anchors_ = true
 
+[node name="clear" parent="." instance=ExtResource("479_fuatx")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.8225
+anchor_top = 0.725926
+anchor_right = 0.927
+anchor_bottom = 0.765
+offset_left = -0.200073
+offset_right = 199.16
+offset_bottom = 42.7999
+grow_horizontal = 0
+scale = Vector2(0.5, 0.5)
+text = "Clear
+"
+metadata/_edit_use_anchors_ = true
+
 [node name="import_deck" parent="." instance=ExtResource("479_fuatx")]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.769375
-anchor_top = 0.861111
+anchor_top = 0.891667
 anchor_right = 0.977604
-anchor_bottom = 0.940111
+anchor_bottom = 0.970667
 offset_left = -0.200073
 offset_right = 0.0
 offset_bottom = -0.320007
@@ -596,6 +612,14 @@ script = ExtResource("481_32nnb")
 position = Vector2(149, 360)
 shape = SubResource("RectangleShape2D_tkwq5")
 
+[node name="FileLoadDialog" type="FileDialog" parent="ItemList/DeckList"]
+title = "Open a File"
+position = Vector2i(645, 385)
+size = Vector2i(745, 350)
+ok_button_text = "Open"
+file_mode = 0
+access = 2
+
 [node name="searchbar" parent="." instance=ExtResource("483_14q2w")]
 layout_mode = 1
 anchors_preset = 5
@@ -650,6 +674,8 @@ offset_bottom = 601.0
 scale = Vector2(0.5, 0.5)
 
 [connection signal="pressed" from="savedeck" to="." method="_on_savedeck_pressed"]
+[connection signal="pressed" from="clear" to="ItemList/DeckList" method="_on_clear_pressed"]
 [connection signal="pressed" from="import_deck" to="." method="_on_import_deck_pressed"]
 [connection signal="pressed" from="back" to="." method="_on_back_pressed"]
+[connection signal="file_selected" from="ItemList/DeckList/FileLoadDialog" to="ItemList/DeckList" method="_on_file_dialog_file_selected"]
 [connection signal="text_changed" from="searchbar" to="." method="_on_searchbar_text_changed"]

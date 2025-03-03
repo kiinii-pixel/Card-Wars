@@ -19,7 +19,7 @@ func update(_delta : float):
 	if in_deck_list:
 		if Input.is_action_just_released("action_key"):
 				var decklist = card.body_ref
-				decklist.add_card_to_list(card)
+				decklist.add_card_to_list(card.data)
 				card.global_position = card.drag_component.initial_pos
 				card.scale = Vector2(1, 1)
 

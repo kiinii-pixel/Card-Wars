@@ -1,5 +1,6 @@
 extends Control
 
+@onready var file_dialog = $ItemList/DeckList/FileLoadDialog
 @onready var preloader = $ResourcePreloader
 const CARD : PackedScene = preload("res://scenes/objects/card.tscn")
 
@@ -91,4 +92,4 @@ func _on_savedeck_pressed() -> void:
 
 
 func _on_import_deck_pressed() -> void:
-	%ItemList/DeckList.import_deck()
+	file_dialog.visible = true
