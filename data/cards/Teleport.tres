@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://2lyef8l3igb8"]
 
 [ext_resource type="Texture2D" uid="uid://tqpubod46faw" path="res://assets/images/frames/Rainbow.png" id="1_ewlv0"]
-[ext_resource type="Script" path="res://data/card_resource.gd" id="1_y3q0g"]
+[ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_y3q0g"]
 [ext_resource type="Texture2D" uid="uid://cgu5ws280urd3" path="res://assets/images/cards/art/Rainbow/Spell/Teleport.png" id="2_h03ea"]
 
 [resource]

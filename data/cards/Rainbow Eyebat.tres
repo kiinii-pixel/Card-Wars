@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://gt2ge6ryv7nu"]
 
-[ext_resource type="Script" path="res://data/card_resource.gd" id="1_h7mef"]
+[ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_h7mef"]
 [ext_resource type="Texture2D" uid="uid://b0rsdd3n7u8r4" path="res://assets/images/frames/NiceLands_Creature.png" id="1_x6tmv"]
 
 [resource]

@@ -1,20 +1,19 @@
 [gd_scene load_steps=5 format=3 uid="uid://cqkl8l2uevwon"]
 
-[ext_resource type="Script" path="res://scripts/objects/hand.gd" id="1_4i1hi"]
+[ext_resource type="Script" uid="uid://dycrl83jvwvg8" path="res://scripts/objects/hand.gd" id="1_4i1hi"]
 
 [sub_resource type="Curve" id="Curve_v3udk"]
-min_value = -1.0
+_limits = [-1.0, 1.0, 0.0, 1.0]
 _data = [Vector2(0, -1), 0.0, 2.0, 0, 1, Vector2(1, 1), 2.0, 0.0, 1, 0]
 point_count = 2
 
 [sub_resource type="Curve" id="Curve_085fp"]
-min_value = -1.0
-max_value = 0.0
+_limits = [-1.0, 0.0, 0.0, 1.0]
 _data = [Vector2(0, -1), 0.0, 2.0, 0, 1, Vector2(0.5, 0), 0.0, 0.0, 0, 0, Vector2(1, -1), -2.0, 0.0, 1, 0]
 point_count = 3
 
 [sub_resource type="Curve" id="Curve_rwvyn"]
-min_value = -1.0
+_limits = [-1.0, 1.0, 0.0, 1.0]
 _data = [Vector2(0, 1), 0.0, -5.0, 0, 0, Vector2(0.5, 0), 0.0, 0.0, 0, 0, Vector2(1, -1), -5.0, 0.0, 0, 0]
 point_count = 3
 

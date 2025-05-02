@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dxokx01ac4b2t"]
 
-[ext_resource type="Script" path="res://scripts/ui/volume_slider.gd" id="1_q83oi"]
+[ext_resource type="Script" uid="uid://dutor1j4udqpl" path="res://scripts/ui/volume_slider.gd" id="1_q83oi"]
 [ext_resource type="Theme" uid="uid://mmfpajwi7rd7" path="res://assets/themes/pendletheme.tres" id="1_x81nj"]
 
 [node name="HSlider" type="HSlider"]

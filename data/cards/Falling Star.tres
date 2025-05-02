@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://23c1x23mblr"]
 
-[ext_resource type="Script" path="res://data/card_resource.gd" id="1_drkvp"]
+[ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_drkvp"]
 [ext_resource type="Texture2D" uid="uid://7f0fsvgty6vg" path="res://assets/images/frames/NiceLands.png" id="1_qxmuo"]
 [ext_resource type="Texture2D" uid="uid://bct6ydxf6m6rp" path="res://assets/images/cards/art/NiceLands/Spell/Falling Star.png" id="2_cjq2v"]
 

@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://jrqtjdrbg1hx"]
 
 [ext_resource type="Texture2D" uid="uid://d2o5o4cm304mt" path="res://assets/images/frames/Useless Swamp_Creature.png" id="1_gtfla"]
-[ext_resource type="Script" path="res://data/card_resource.gd" id="1_sydlf"]
+[ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_sydlf"]
 [ext_resource type="Texture2D" uid="uid://llnfsffl6f03" path="res://assets/images/cards/art/Useless Swamp/Creature/Steakchop.png" id="2_qe24b"]
 
 [resource]

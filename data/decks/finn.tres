@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="DeckResource" load_steps=26 format=3 uid="uid://dpbktsr7jtlv8"]
 
 [ext_resource type="Resource" uid="uid://cbt1jgf00eyyn" path="res://data/cards/The Pig.tres" id="1_ic8tu"]
-[ext_resource type="Script" path="res://data/card_resource.gd" id="1_n64e3"]
+[ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_n64e3"]
 [ext_resource type="Resource" uid="uid://dd2vdku0vb3oh" path="res://data/cards/Nice Ice Baby.tres" id="2_rwyl4"]
 [ext_resource type="Resource" uid="uid://cg10b2fyyhdn" path="res://data/cards/Dragon Claw.tres" id="3_hpm5w"]
 [ext_resource type="Resource" uid="uid://b3ferx1lcaxxv" path="res://data/cards/Ancient Scholar.tres" id="4_qbsyh"]
@@ -24,7 +24,7 @@
 [ext_resource type="Resource" uid="uid://ckp7dvwuyrfnv" path="res://data/cards/Schoolhouse.tres" id="21_6ow88"]
 [ext_resource type="Resource" uid="uid://cfqm0m4tpwcpr" path="res://data/cards/Celestial Castle.tres" id="22_eqm5g"]
 [ext_resource type="Resource" uid="uid://b604bxeq53sgb" path="res://data/cards/Blood Fortress.tres" id="23_wqw7t"]
-[ext_resource type="Script" path="res://data/deck_resource.gd" id="24_87h4u"]
+[ext_resource type="Script" uid="uid://baliimricelyf" path="res://data/deck_resource.gd" id="24_87h4u"]
 
 [resource]
 script = ExtResource("24_87h4u")

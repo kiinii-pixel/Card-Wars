@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://cyocky4ixd5p"]
 
 [ext_resource type="Texture2D" uid="uid://tqpubod46faw" path="res://assets/images/frames/Rainbow.png" id="1_al5x3"]
-[ext_resource type="Script" path="res://data/card_resource.gd" id="1_u53ss"]
+[ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_u53ss"]
 [ext_resource type="Texture2D" uid="uid://b0tsy6iabtq6q" path="res://assets/images/cards/art/Rainbow/Spell/ZaZo's Magic Seeds.png" id="2_volvc"]
 
 [resource]

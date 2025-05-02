@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://qga2y5wh6ftv"]
 
-[ext_resource type="Script" path="res://scripts/components/drag_component.gd" id="1_kdf26"]
+[ext_resource type="Script" uid="uid://cd6eglueq1ag4" path="res://scripts/components/drag_component.gd" id="1_kdf26"]
 
 [node name="drag_component" type="Area2D"]
 script = ExtResource("1_kdf26")

@@ -1,8 +1,8 @@
 [gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://delligxc67t8v"]
 
-[ext_resource type="Script" path="res://data/card_resource.gd" id="1_na04g"]
+[ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_na04g"]
 [ext_resource type="Texture2D" uid="uid://b0rsdd3n7u8r4" path="res://assets/images/frames/NiceLands_Creature.png" id="1_xyc0q"]
-[ext_resource type="Texture2D" uid="uid://datcycjmb4iq6" path="res://assets/images/cards/art/NiceLands/Creature/Strawberry Slimey.png" id="2_l657p"]
+[ext_resource type="Texture2D" uid="uid://c42wlrrpjrvy" path="res://assets/images/cards/art/NiceLands/Creature/Strawberry Slimey.png" id="2_l657p"]
 
 [resource]
 script = ExtResource("1_na04g")

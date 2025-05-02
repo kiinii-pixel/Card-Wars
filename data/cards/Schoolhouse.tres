@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://ckp7dvwuyrfnv"]
 
 [ext_resource type="Texture2D" uid="uid://d1kvwyj0lxwng" path="res://assets/images/frames/Blue Plains.png" id="1_5u7gt"]
-[ext_resource type="Script" path="res://data/card_resource.gd" id="1_cohfv"]
+[ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_cohfv"]
 [ext_resource type="Texture2D" uid="uid://bgf77yr1px0i6" path="res://assets/images/cards/art/Blue Plains/Building/Schoolhouse.png" id="2_r8pjq"]
 
 [resource]

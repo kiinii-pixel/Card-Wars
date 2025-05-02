@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3 uid="uid://3ptikpg3wypd"]
 
-[ext_resource type="Script" path="res://data/card_resource.gd" id="1_t0ds6"]
+[ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_t0ds6"]
 
 [resource]
 script = ExtResource("1_t0ds6")
@@ -12,5 +12,4 @@ cost = 0
 description = ""
 landscape = ""
 card_type = ""
-image = ""
 id = 0

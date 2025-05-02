@@ -1,6 +1,6 @@
 [gd_scene load_steps=24 format=3 uid="uid://bco1m6ixdmiil"]
 
-[ext_resource type="Script" path="res://scripts/objects/card.gd" id="1_arv21"]
+[ext_resource type="Script" uid="uid://bn53btc3jyr00" path="res://scripts/objects/card.gd" id="1_arv21"]
 [ext_resource type="Texture2D" uid="uid://ct5331atokkqs" path="res://assets/images/frames/Rainbow_Creature.png" id="3_mw3bc"]
 [ext_resource type="Theme" uid="uid://dmwrp6aey18st" path="res://assets/themes/purple_button.tres" id="5_bmwov"]
 [ext_resource type="FontFile" uid="uid://ca0g1l1k6v1sf" path="res://assets/fonts/Pendlefont Heavy.TTF" id="5_bysvj"]
@@ -8,14 +8,14 @@
 [ext_resource type="Texture2D" uid="uid://dsuwmnh6sbhed" path="res://assets/images/cards/card_back/back.png" id="6_uokre"]
 [ext_resource type="AudioStream" uid="uid://cy7urpyd5dqi5" path="res://assets/sounds/CardMove.wav" id="8_iocnt"]
 [ext_resource type="PackedScene" uid="uid://de57x6w0o023y" path="res://scenes/components/floop_component.tscn" id="9_1g6dh"]
-[ext_resource type="Script" path="res://scripts/states/state_mashine.gd" id="10_rn6ks"]
-[ext_resource type="Script" path="res://scripts/states/in_deck.gd" id="11_h3v8y"]
-[ext_resource type="Script" path="res://scripts/states/in_hand.gd" id="12_uil7g"]
-[ext_resource type="Script" path="res://scripts/states/in_play.gd" id="13_e3wur"]
-[ext_resource type="Script" path="res://scripts/states/discarded.gd" id="14_x832o"]
-[ext_resource type="Script" path="res://scripts/states/dragging.gd" id="15_smlb4"]
-[ext_resource type="Script" path="res://scripts/states/overlapping.gd" id="16_eswy8"]
-[ext_resource type="Script" path="res://scripts/states/hovering.gd" id="16_psrjk"]
+[ext_resource type="Script" uid="uid://d1885gn25pp22" path="res://scripts/states/state_mashine.gd" id="10_rn6ks"]
+[ext_resource type="Script" uid="uid://3l7mebfvdmku" path="res://scripts/states/in_deck.gd" id="11_h3v8y"]
+[ext_resource type="Script" uid="uid://68tq7rbymysj" path="res://scripts/states/in_hand.gd" id="12_uil7g"]
+[ext_resource type="Script" uid="uid://birqns01fev0p" path="res://scripts/states/in_play.gd" id="13_e3wur"]
+[ext_resource type="Script" uid="uid://bmnbur3jpxvfv" path="res://scripts/states/discarded.gd" id="14_x832o"]
+[ext_resource type="Script" uid="uid://xgddeqsh2gim" path="res://scripts/states/dragging.gd" id="15_smlb4"]
+[ext_resource type="Script" uid="uid://vcpc5cr3hndp" path="res://scripts/states/overlapping.gd" id="16_eswy8"]
+[ext_resource type="Script" uid="uid://dc3pn32y8ayx0" path="res://scripts/states/hovering.gd" id="16_psrjk"]
 
 [sub_resource type="Theme" id="Theme_rcflo"]
 default_font = ExtResource("5_bysvj")
@@ -139,9 +139,9 @@ tracks/3/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_swdfb"]
 _data = {
-"RESET": SubResource("Animation_0kbrg"),
-"flip_down": SubResource("Animation_djqq5"),
-"flip_up": SubResource("Animation_ljt8f")
+&"RESET": SubResource("Animation_0kbrg"),
+&"flip_down": SubResource("Animation_djqq5"),
+&"flip_up": SubResource("Animation_ljt8f")
 }
 
 [node name="Card" type="Control"]
@@ -347,7 +347,7 @@ script = ExtResource("16_eswy8")
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 unique_name_in_owner = true
 libraries = {
-"": SubResource("AnimationLibrary_swdfb")
+&"": SubResource("AnimationLibrary_swdfb")
 }
 
 [connection signal="body_exited" from="drag_component" to="." method="_on_drag_component_body_exited"]

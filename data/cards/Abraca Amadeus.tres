@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://cjtoc42merygo"]
 
-[ext_resource type="Script" path="res://data/card_resource.gd" id="1_7jf3v"]
+[ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_7jf3v"]
 [ext_resource type="Texture2D" uid="uid://ypdgp0t1gdd0" path="res://assets/images/frames/Useless Swamp.png" id="1_dtqim"]
 [ext_resource type="Texture2D" uid="uid://ct80c25vbi1cv" path="res://assets/images/cards/art/Useless Swamp/Spell/Abraca Amadeus.png" id="2_2v5mj"]
 

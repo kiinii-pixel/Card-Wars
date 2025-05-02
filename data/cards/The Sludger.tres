@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://cqyuj7yqka6aq"]
 
-[ext_resource type="Script" path="res://data/card_resource.gd" id="1_k1ld1"]
+[ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_k1ld1"]
 [ext_resource type="Texture2D" uid="uid://d2o5o4cm304mt" path="res://assets/images/frames/Useless Swamp_Creature.png" id="1_yr0is"]
 [ext_resource type="Texture2D" uid="uid://ddeb5fm4gs5na" path="res://assets/images/cards/art/Useless Swamp/Creature/The Sludger.png" id="2_3lqn8"]
 

@@ -1,8 +1,8 @@
 [gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://c27ygbi8o412g"]
 
-[ext_resource type="Script" path="res://data/card_resource.gd" id="1_4dcuu"]
+[ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_4dcuu"]
 [ext_resource type="Texture2D" uid="uid://b0p6pgobeqtuk" path="res://assets/images/frames/Cornfield_Creature.png" id="1_wyoaw"]
-[ext_resource type="Texture2D" uid="uid://dnneaekdv0gbb" path="res://assets/images/cards/art/Cornfield/Creature/Yellow Slimey.png" id="2_wbh3t"]
+[ext_resource type="Texture2D" uid="uid://gg3ofjb1nmbd" path="res://assets/images/cards/art/Cornfield/Creature/Yellow Slimey.png" id="2_wbh3t"]
 
 [resource]
 script = ExtResource("1_4dcuu")

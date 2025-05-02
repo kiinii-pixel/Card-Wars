@@ -1,6 +1,6 @@
 [gd_scene load_steps=489 format=3 uid="uid://cpt2c1rjk4b6b"]
 
-[ext_resource type="Script" path="res://scripts/ui/deckbuilder.gd" id="1_4e2jx"]
+[ext_resource type="Script" uid="uid://djkb8yr6q8ry1" path="res://scripts/ui/deckbuilder.gd" id="1_4e2jx"]
 [ext_resource type="Resource" uid="uid://67mrqhaopl5c" path="res://data/cards/Abdominal Snowman.tres" id="5_tkhjr"]
 [ext_resource type="Resource" uid="uid://cjtoc42merygo" path="res://data/cards/Abraca Amadeus.tres" id="6_802k6"]
 [ext_resource type="Resource" uid="uid://b8j73y14v43bv" path="res://data/cards/Adorabunny.tres" id="7_dhcnt"]
@@ -480,11 +480,11 @@
 [ext_resource type="Resource" uid="uid://b032b7lilr3j0" path="res://data/cards/Young ZebraCorn Husker.tres" id="479_vajwh"]
 [ext_resource type="Theme" uid="uid://mmfpajwi7rd7" path="res://assets/themes/pendletheme.tres" id="480_0t632"]
 [ext_resource type="Resource" uid="uid://cyocky4ixd5p" path="res://data/cards/ZaZo's Magic Seeds.tres" id="480_odbm7"]
-[ext_resource type="Script" path="res://scripts/ui/deck_list.gd" id="481_32nnb"]
-[ext_resource type="Script" path="res://scripts/ui/grid_container.gd" id="481_88qej"]
+[ext_resource type="Script" uid="uid://hq0fgxmfh33e" path="res://scripts/ui/deck_list.gd" id="481_32nnb"]
+[ext_resource type="Script" uid="uid://xdlv7v8yucct" path="res://scripts/ui/grid_container.gd" id="481_88qej"]
 [ext_resource type="PackedScene" uid="uid://6kgdmuouav1e" path="res://scenes/ui/searchbar.tscn" id="483_14q2w"]
 [ext_resource type="PackedScene" uid="uid://dalexkrn3lhaj" path="res://scenes/ui/option_button.tscn" id="483_k4org"]
-[ext_resource type="Script" path="res://scripts/ui/hero_button.gd" id="485_bbgcx"]
+[ext_resource type="Script" uid="uid://cdpetjl0gedkp" path="res://scripts/ui/hero_button.gd" id="485_bbgcx"]
 [ext_resource type="Resource" uid="uid://x4e5mlyka7l0" path="res://data/example_deck_resource.tres" id="486_86y5p"]
 [ext_resource type="PackedScene" uid="uid://cwbym6ickpc8i" path="res://scenes/ui/landscape_button.tscn" id="487_hlqw5"]
 

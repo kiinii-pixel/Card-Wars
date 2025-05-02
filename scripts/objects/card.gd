@@ -50,7 +50,7 @@ func load_image():
 
 # Reload Values (Atk, Def, Cost) and change color.
 func load_values():
-	%CostLabel.text = String.num(cost)
+	%CostLabel.text = String.num_int64(cost)
 	if data.card_type == "Creature":
 		var atk_label = %AttackLabel
 		var def_label = %DefenseLabel

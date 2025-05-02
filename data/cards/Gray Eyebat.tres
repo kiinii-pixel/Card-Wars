@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://bubpfyrnwhnar"]
 
-[ext_resource type="Script" path="res://data/card_resource.gd" id="1_ubb47"]
+[ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_ubb47"]
 [ext_resource type="Texture2D" uid="uid://d2o5o4cm304mt" path="res://assets/images/frames/Useless Swamp_Creature.png" id="1_v8j8i"]
 [ext_resource type="Texture2D" uid="uid://wrdtn2qxsrly" path="res://assets/images/cards/art/Useless Swamp/Creature/Gray Eyebat.png" id="2_o3584"]
 

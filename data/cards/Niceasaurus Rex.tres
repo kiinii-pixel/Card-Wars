@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://ccelmtieitpq2"]
 
-[ext_resource type="Script" path="res://data/card_resource.gd" id="1_fhs1j"]
+[ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_fhs1j"]
 [ext_resource type="Texture2D" uid="uid://b0rsdd3n7u8r4" path="res://assets/images/frames/NiceLands_Creature.png" id="1_ppkvj"]
 [ext_resource type="Texture2D" uid="uid://8eefyvwt1q27" path="res://assets/images/cards/art/NiceLands/Creature/Niceasaurus Rex.png" id="2_me7ru"]
 

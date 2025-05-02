@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://41nh5qugr26d"]
 
-[ext_resource type="Script" path="res://data/card_resource.gd" id="1_0is6y"]
+[ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_0is6y"]
 [ext_resource type="Texture2D" uid="uid://d1kvwyj0lxwng" path="res://assets/images/frames/Blue Plains.png" id="1_kjcmj"]
 [ext_resource type="Texture2D" uid="uid://k6ju38oer7s1" path="res://assets/images/cards/art/Blue Plains/Building/Pyramidia.png" id="2_iycnf"]
 

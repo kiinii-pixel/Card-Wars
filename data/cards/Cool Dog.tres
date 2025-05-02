@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://koqfljtm4ab7"]
 
 [ext_resource type="Texture2D" uid="uid://be2gbw036jfuv" path="res://assets/images/frames/Blue Plains_Creature.png" id="1_7avty"]
-[ext_resource type="Script" path="res://data/card_resource.gd" id="1_ryju2"]
+[ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_ryju2"]
 [ext_resource type="Texture2D" uid="uid://cwxtui74x5jst" path="res://assets/images/cards/art/Blue Plains/Creature/Cool Dog.png" id="2_8ocji"]
 
 [resource]

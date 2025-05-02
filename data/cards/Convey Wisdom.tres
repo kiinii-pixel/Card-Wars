@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://nk63f4sj8ftg"]
 
 [ext_resource type="Texture2D" uid="uid://d1kvwyj0lxwng" path="res://assets/images/frames/Blue Plains.png" id="1_6l8yi"]
-[ext_resource type="Script" path="res://data/card_resource.gd" id="1_acx6t"]
+[ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_acx6t"]
 
 [resource]
 script = ExtResource("1_acx6t")

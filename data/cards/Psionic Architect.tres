@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://cch823a1ef0ut"]
 
 [ext_resource type="Texture2D" uid="uid://be2gbw036jfuv" path="res://assets/images/frames/Blue Plains_Creature.png" id="1_034sw"]
-[ext_resource type="Script" path="res://data/card_resource.gd" id="1_r7rkh"]
+[ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_r7rkh"]
 [ext_resource type="Texture2D" uid="uid://bui8h3t4okq3o" path="res://assets/images/cards/art/Blue Plains/Creature/Psionic Architect.png" id="2_n4kdj"]
 
 [resource]

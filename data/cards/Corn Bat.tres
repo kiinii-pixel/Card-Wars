@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://dyq5nws18utyc"]
 
-[ext_resource type="Script" path="res://data/card_resource.gd" id="1_lp3n2"]
+[ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_lp3n2"]
 [ext_resource type="Texture2D" uid="uid://b0p6pgobeqtuk" path="res://assets/images/frames/Cornfield_Creature.png" id="1_y0ojr"]
 [ext_resource type="Texture2D" uid="uid://dc0sc1lao38vr" path="res://assets/images/cards/art/Cornfield/Creature/Corn Bat.png" id="2_m8xfa"]
 

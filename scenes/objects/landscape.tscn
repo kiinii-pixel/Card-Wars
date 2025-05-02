@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://b5oih1txnoxfo"]
 
-[ext_resource type="Script" path="res://scripts/objects/landscape.gd" id="1_ke2ls"]
+[ext_resource type="Script" uid="uid://bafsnxubw6cbh" path="res://scripts/objects/landscape.gd" id="1_ke2ls"]
 [ext_resource type="Texture2D" uid="uid://ji270ao8uksi" path="res://assets/images/landscapes/01.png" id="2_swo5x"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1lp4w"]

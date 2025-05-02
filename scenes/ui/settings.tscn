@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://ddiu363v0xlo7"]
 
-[ext_resource type="Script" path="res://scripts/ui/settings.gd" id="1_7hdyw"]
+[ext_resource type="Script" uid="uid://bxtqn6map4uku" path="res://scripts/ui/settings.gd" id="1_7hdyw"]
 [ext_resource type="Texture2D" uid="uid://hxc1owi487jq" path="res://assets/images/ui/clouds background.jpeg" id="1_x6078"]
 [ext_resource type="Theme" uid="uid://mmfpajwi7rd7" path="res://assets/themes/pendletheme.tres" id="2_6s48f"]
 [ext_resource type="PackedScene" uid="uid://dxokx01ac4b2t" path="res://scenes/ui/volume_slider.tscn" id="3_e6qgy"]

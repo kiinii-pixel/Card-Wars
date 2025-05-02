@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://b1kxbh78q4h5v"]
 
 [ext_resource type="Texture2D" uid="uid://7f0fsvgty6vg" path="res://assets/images/frames/NiceLands.png" id="1_vpd23"]
-[ext_resource type="Script" path="res://data/card_resource.gd" id="1_wlko4"]
+[ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_wlko4"]
 [ext_resource type="Texture2D" uid="uid://c1f5thyv4mtku" path="res://assets/images/cards/art/NiceLands/Building/Auto-Plucker.png" id="2_0uhml"]
 
 [resource]

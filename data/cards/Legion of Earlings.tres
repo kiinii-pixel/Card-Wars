@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://gximytp7q7ek"]
 
 [ext_resource type="Texture2D" uid="uid://b0p6pgobeqtuk" path="res://assets/images/frames/Cornfield_Creature.png" id="1_qd8dq"]
-[ext_resource type="Script" path="res://data/card_resource.gd" id="1_tbt2r"]
+[ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_tbt2r"]
 [ext_resource type="Texture2D" uid="uid://b1r46wly1xilq" path="res://assets/images/cards/art/Cornfield/Creature/Legion of Earlings.png" id="2_ikdo3"]
 
 [resource]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=25 format=3 uid="uid://owug2m35obl1"]
 
-[ext_resource type="Script" path="res://scripts/main.gd" id="1_mh3fo"]
+[ext_resource type="Script" uid="uid://bbn0tkh12j4qf" path="res://scripts/main.gd" id="1_mh3fo"]
 [ext_resource type="PackedScene" uid="uid://b5oih1txnoxfo" path="res://scenes/objects/landscape.tscn" id="1_r6f6m"]
 [ext_resource type="PackedScene" uid="uid://clyo1ca2sglx8" path="res://scenes/ui/interface.tscn" id="3_82cvq"]
 [ext_resource type="Theme" uid="uid://dmwrp6aey18st" path="res://assets/themes/purple_button.tres" id="3_bno0n"]
@@ -171,7 +171,7 @@ unique_name_in_owner = true
 position = Vector2(1710, 937)
 
 [node name="Discard" parent="." instance=ExtResource("15_b00fb")]
-position = Vector2(1710, 673)
+position = Vector2(1716, 673)
 
 [node name="Zones" type="Node2D" parent="."]
 

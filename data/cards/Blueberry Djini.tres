@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://dxm5jgx8agt4p"]
 
-[ext_resource type="Script" path="res://data/card_resource.gd" id="1_2o7wr"]
+[ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_2o7wr"]
 [ext_resource type="Texture2D" uid="uid://be2gbw036jfuv" path="res://assets/images/frames/Blue Plains_Creature.png" id="1_34xni"]
 [ext_resource type="Texture2D" uid="uid://c7a16y6m2t3bl" path="res://assets/images/cards/art/Blue Plains/Creature/Blueberry Djini.png" id="2_g1kkq"]
 

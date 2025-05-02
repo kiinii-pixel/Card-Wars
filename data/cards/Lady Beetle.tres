@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://277d3x74y8v2"]
 
 [ext_resource type="Texture2D" uid="uid://tbt4hmdhcclb" path="res://assets/images/frames/SandyLands_Creature.png" id="1_fjrnw"]
-[ext_resource type="Script" path="res://data/card_resource.gd" id="1_m6vvw"]
+[ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_m6vvw"]
 
 [resource]
 script = ExtResource("1_m6vvw")

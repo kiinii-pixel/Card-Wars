@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://cue47aiig3ov7"]
 
 [ext_resource type="Texture2D" uid="uid://tqpubod46faw" path="res://assets/images/frames/Rainbow.png" id="1_euj44"]
-[ext_resource type="Script" path="res://data/card_resource.gd" id="1_gg7hd"]
+[ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_gg7hd"]
 [ext_resource type="Texture2D" uid="uid://bwy04v5f7o6aa" path="res://assets/images/cards/art/Rainbow/Spell/Cerebral Bloodstorm.png" id="2_683g8"]
 
 [resource]

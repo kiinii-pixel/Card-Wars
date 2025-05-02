@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://oxt4npqn7kk8"]
 
 [ext_resource type="Texture2D" uid="uid://tqpubod46faw" path="res://assets/images/frames/Rainbow.png" id="1_n7yg5"]
-[ext_resource type="Script" path="res://data/card_resource.gd" id="1_rw5q5"]
+[ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_rw5q5"]
 [ext_resource type="Texture2D" uid="uid://c5rbwvxctyrq1" path="res://assets/images/cards/art/Rainbow/Spell/Musical Chair.png" id="2_8e6jj"]
 
 [resource]

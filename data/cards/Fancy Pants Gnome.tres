@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://cwgkuwd6fkq0q"]
 
 [ext_resource type="Texture2D" uid="uid://d2o5o4cm304mt" path="res://assets/images/frames/Useless Swamp_Creature.png" id="1_qj46l"]
-[ext_resource type="Script" path="res://data/card_resource.gd" id="1_ryubf"]
+[ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_ryubf"]
 
 [resource]
 script = ExtResource("1_ryubf")

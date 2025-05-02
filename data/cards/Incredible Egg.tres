@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://bd5r2rwaw5g2n"]
 
 [ext_resource type="Texture2D" uid="uid://tqpubod46faw" path="res://assets/images/frames/Rainbow.png" id="1_5tyjg"]
-[ext_resource type="Script" path="res://data/card_resource.gd" id="1_oweie"]
+[ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_oweie"]
 [ext_resource type="Texture2D" uid="uid://dxhhbye8hxada" path="res://assets/images/cards/art/Rainbow/Spell/Incredible Egg.png" id="2_nq7qd"]
 
 [resource]

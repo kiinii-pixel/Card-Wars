@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://dv3uc0jrnqlw3"]
 
-[ext_resource type="Script" path="res://data/card_resource.gd" id="1_c7feh"]
+[ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_c7feh"]
 [ext_resource type="Texture2D" uid="uid://tbt4hmdhcclb" path="res://assets/images/frames/SandyLands_Creature.png" id="1_u71vk"]
 
 [resource]

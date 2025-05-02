@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://cms03kcb1ds8s"]
 
-[ext_resource type="Script" path="res://data/card_resource.gd" id="1_m7bnv"]
+[ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_m7bnv"]
 [ext_resource type="Texture2D" uid="uid://b0p6pgobeqtuk" path="res://assets/images/frames/Cornfield_Creature.png" id="1_ve6es"]
 
 [resource]

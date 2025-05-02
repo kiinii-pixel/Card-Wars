@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://chvgpj5oj2teu"]
 
-[ext_resource type="Script" path="res://scripts/ui/menu.gd" id="1_ia7bn"]
+[ext_resource type="Script" uid="uid://c4h20plxnuo3v" path="res://scripts/ui/menu.gd" id="1_ia7bn"]
 [ext_resource type="Texture2D" uid="uid://hxc1owi487jq" path="res://assets/images/ui/clouds background.jpeg" id="2_pu4cv"]
 [ext_resource type="PackedScene" uid="uid://5w02c5yvt88x" path="res://scenes/ui/button.tscn" id="3_td3ef"]
 

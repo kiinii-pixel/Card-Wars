@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://cv5hr1et8rojy"]
 
-[ext_resource type="Script" path="res://data/card_resource.gd" id="1_6r5uo"]
+[ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_6r5uo"]
 [ext_resource type="Texture2D" uid="uid://b0rsdd3n7u8r4" path="res://assets/images/frames/NiceLands_Creature.png" id="1_nnysx"]
 [ext_resource type="Texture2D" uid="uid://bluy7p3w33ru8" path="res://assets/images/cards/art/NiceLands/Creature/Cottonpult.png" id="2_6u3dp"]
 

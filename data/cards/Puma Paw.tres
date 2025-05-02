@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://bi8iwrpmrdcsv"]
 
-[ext_resource type="Script" path="res://data/card_resource.gd" id="1_077tb"]
+[ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_077tb"]
 [ext_resource type="Texture2D" uid="uid://d1kvwyj0lxwng" path="res://assets/images/frames/Blue Plains.png" id="1_ea7fj"]
 [ext_resource type="Texture2D" uid="uid://c151ffjmyxwas" path="res://assets/images/cards/art/Blue Plains/Spell/Puma Paw.png" id="2_sxan1"]
 

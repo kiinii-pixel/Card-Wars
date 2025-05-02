@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://b34chhessslvg"]
 
-[ext_resource type="Script" path="res://data/card_resource.gd" id="1_3p0ig"]
+[ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_3p0ig"]
 [ext_resource type="Texture2D" uid="uid://b0p6pgobeqtuk" path="res://assets/images/frames/Cornfield_Creature.png" id="1_dht2x"]
 [ext_resource type="Texture2D" uid="uid://etf6tsyg5mg0" path="res://assets/images/cards/art/Cornfield/Creature/Wall of Ears.png" id="2_vgfws"]
 

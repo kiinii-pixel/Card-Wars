@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://dbyqrq03avtn0"]
 
-[ext_resource type="Script" path="res://data/card_resource.gd" id="1_agxb3"]
+[ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_agxb3"]
 [ext_resource type="Texture2D" uid="uid://be2gbw036jfuv" path="res://assets/images/frames/Blue Plains_Creature.png" id="1_v5sbl"]
 [ext_resource type="Texture2D" uid="uid://ct443v1cqy88s" path="res://assets/images/cards/art/Blue Plains/Creature/X-Large Spirit Soldier.png" id="2_uy4yl"]
 

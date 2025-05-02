@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://dendvmen7wvwn"]
 
 [ext_resource type="Texture2D" uid="uid://be2gbw036jfuv" path="res://assets/images/frames/Blue Plains_Creature.png" id="1_428ff"]
-[ext_resource type="Script" path="res://data/card_resource.gd" id="1_ghb3s"]
+[ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_ghb3s"]
 [ext_resource type="Texture2D" uid="uid://bur3jm5wgkyk8" path="res://assets/images/cards/art/Blue Plains/Creature/Headphone Jerk.png" id="2_humfa"]
 
 [resource]

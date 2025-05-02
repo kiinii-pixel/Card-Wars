@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://cjkwyodqfer35"]
 
-[ext_resource type="Script" path="res://data/card_resource.gd" id="1_1ykcp"]
+[ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_1ykcp"]
 [ext_resource type="Texture2D" uid="uid://d1kvwyj0lxwng" path="res://assets/images/frames/Blue Plains.png" id="1_bj4dg"]
 [ext_resource type="Texture2D" uid="uid://du70aw75pki4j" path="res://assets/images/cards/art/Blue Plains/Spell/Tax Reduction.png" id="2_4iocv"]
 

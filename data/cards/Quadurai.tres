@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://bp8tfqf7j8i3r"]
 
-[ext_resource type="Script" path="res://data/card_resource.gd" id="1_7dy37"]
+[ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_7dy37"]
 [ext_resource type="Texture2D" uid="uid://ct5331atokkqs" path="res://assets/images/frames/Rainbow_Creature.png" id="1_418k7"]
 [ext_resource type="Texture2D" uid="uid://wpqw63iyin4y" path="res://assets/images/cards/art/Rainbow/Creature/Quadurai.png" id="2_wwi43"]
 

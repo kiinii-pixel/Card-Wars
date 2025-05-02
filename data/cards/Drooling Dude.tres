@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://c8q38d2g01msv"]
 
 [ext_resource type="Texture2D" uid="uid://ct5331atokkqs" path="res://assets/images/frames/Rainbow_Creature.png" id="1_bswrb"]
-[ext_resource type="Script" path="res://data/card_resource.gd" id="1_nf7bh"]
+[ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_nf7bh"]
 [ext_resource type="Texture2D" uid="uid://dhnuadt71ipho" path="res://assets/images/cards/art/Rainbow/Creature/Drooling Dude.png" id="2_axteo"]
 
 [resource]

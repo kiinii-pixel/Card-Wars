@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://d2empwj8heanh"]
 
 [ext_resource type="Texture2D" uid="uid://d2o5o4cm304mt" path="res://assets/images/frames/Useless Swamp_Creature.png" id="1_f1h1k"]
-[ext_resource type="Script" path="res://data/card_resource.gd" id="1_n5mhc"]
+[ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_n5mhc"]
 [ext_resource type="Texture2D" uid="uid://dpnv6dumcmrq5" path="res://assets/images/cards/art/Useless Swamp/Creature/Squatting Bald Man.png" id="2_ipucn"]
 
 [resource]
