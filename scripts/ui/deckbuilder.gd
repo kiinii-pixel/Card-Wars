@@ -19,7 +19,7 @@ func load_cards():
 		create_card(instance)
 
 # Used to save all Cards to Disk as images (for the Discord Bot)
-# Enable function call in create_card for this to work
+# Function used in SaveImages Button
 func save_card_images(card):
 	var sub_viewport = card.find_child("SubViewport", true, false)
 
@@ -59,7 +59,6 @@ func create_card(instance):
 		$ScrollContainer/GridContainer.add_child(card) # Add Card to Container
 		$ScrollContainer/GridContainer.cards.append(card) # Add Card to cards Array
 		card.state_mashine.current_state = card.state_mashine.states["in_deck"]
-		#save_card_images(card)
 	else:
 		card.queue_free()
 
@@ -93,3 +92,8 @@ func _on_savedeck_pressed() -> void:
 
 func _on_import_deck_pressed() -> void:
 	file_dialog.visible = true
+
+
+func _on_save_images_pressed() -> void:
+	for card in $ScrollContainer/GridContainer.get_children():
+		save_card_images(card)

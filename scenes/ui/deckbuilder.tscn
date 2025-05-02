@@ -1,6 +1,6 @@
 [gd_scene load_steps=489 format=3 uid="uid://cpt2c1rjk4b6b"]
 
-[ext_resource type="Script" uid="uid://djkb8yr6q8ry1" path="res://scripts/ui/deckbuilder.gd" id="1_4e2jx"]
+[ext_resource type="Script" path="res://scripts/ui/deckbuilder.gd" id="1_4e2jx"]
 [ext_resource type="Resource" uid="uid://67mrqhaopl5c" path="res://data/cards/Abdominal Snowman.tres" id="5_tkhjr"]
 [ext_resource type="Resource" uid="uid://cjtoc42merygo" path="res://data/cards/Abraca Amadeus.tres" id="6_802k6"]
 [ext_resource type="Resource" uid="uid://b8j73y14v43bv" path="res://data/cards/Adorabunny.tres" id="7_dhcnt"]
@@ -480,7 +480,7 @@
 [ext_resource type="Resource" uid="uid://b032b7lilr3j0" path="res://data/cards/Young ZebraCorn Husker.tres" id="479_vajwh"]
 [ext_resource type="Theme" uid="uid://mmfpajwi7rd7" path="res://assets/themes/pendletheme.tres" id="480_0t632"]
 [ext_resource type="Resource" uid="uid://cyocky4ixd5p" path="res://data/cards/ZaZo's Magic Seeds.tres" id="480_odbm7"]
-[ext_resource type="Script" uid="uid://hq0fgxmfh33e" path="res://scripts/ui/deck_list.gd" id="481_32nnb"]
+[ext_resource type="Script" path="res://scripts/ui/deck_list.gd" id="481_32nnb"]
 [ext_resource type="Script" uid="uid://xdlv7v8yucct" path="res://scripts/ui/grid_container.gd" id="481_88qej"]
 [ext_resource type="PackedScene" uid="uid://6kgdmuouav1e" path="res://scenes/ui/searchbar.tscn" id="483_14q2w"]
 [ext_resource type="PackedScene" uid="uid://dalexkrn3lhaj" path="res://scenes/ui/option_button.tscn" id="483_k4org"]
@@ -673,9 +673,21 @@ offset_right = 457.0
 offset_bottom = 601.0
 scale = Vector2(0.5, 0.5)
 
+[node name="SaveImages" type="Button" parent="."]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 669.0
+offset_right = 259.0
+offset_bottom = 716.0
+theme = ExtResource("480_0t632")
+theme_override_font_sizes/font_size = 20
+text = "Save Images
+"
+
 [connection signal="pressed" from="savedeck" to="." method="_on_savedeck_pressed"]
 [connection signal="pressed" from="clear" to="ItemList/DeckList" method="_on_clear_pressed"]
 [connection signal="pressed" from="import_deck" to="." method="_on_import_deck_pressed"]
 [connection signal="pressed" from="back" to="." method="_on_back_pressed"]
 [connection signal="file_selected" from="ItemList/DeckList/FileLoadDialog" to="ItemList/DeckList" method="_on_file_dialog_file_selected"]
 [connection signal="text_changed" from="searchbar" to="." method="_on_searchbar_text_changed"]
+[connection signal="pressed" from="SaveImages" to="." method="_on_save_images_pressed"]
