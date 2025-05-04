@@ -57,7 +57,7 @@ layer = -1
 
 [node name="Hand" parent="." node_paths=PackedStringArray("deck") instance=ExtResource("4_v11k8")]
 unique_name_in_owner = true
-position = Vector2(995, 960)
+position = Vector2(965, 954)
 deck = NodePath("../Deck")
 
 [node name="Godot Icon" type="Node2D" parent="."]
@@ -177,7 +177,8 @@ position = Vector2(1716, 673)
 
 [node name="Landscapes" type="Node2D" parent="Zones"]
 unique_name_in_owner = true
-position = Vector2(995, 621)
+position = Vector2(995, 543)
+scale = Vector2(0.75, 0.75)
 metadata/_edit_group_ = true
 
 [node name="Landscape" parent="Zones/Landscapes" instance=ExtResource("1_r6f6m")]
@@ -197,7 +198,8 @@ art_variant = 4
 
 [node name="EnemyLandscapes" type="Node2D" parent="Zones"]
 unique_name_in_owner = true
-position = Vector2(995, 258)
+position = Vector2(995, 222)
+scale = Vector2(0.75, 0.75)
 metadata/_edit_group_ = true
 
 [node name="Landscape" parent="Zones/EnemyLandscapes" instance=ExtResource("1_r6f6m")]
