@@ -13,6 +13,3 @@ export_presets.cfg
 .mono/
 data_*/
 mono_crash.*.json
-.godot/
-.godot/shader_cache/CopyShaderGLES3/b1bc5a355ed9bda23f291956f121e0535b4e81b54cdac398412d200e6133161f/0569298c4bd67f71fa194e93b48a113d8bfd63e0.cache
-*.import
