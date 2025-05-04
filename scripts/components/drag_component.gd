@@ -1,6 +1,5 @@
 extends Node2D
 
-
 var selected : bool = false # true when mouse is hovering over card
 #var mouse_offset : Vector2 = Vector2(0, 0) # save where the mouse clicked on the object
 var initial_pos : Vector2 # save the cards initial position

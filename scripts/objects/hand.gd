@@ -18,8 +18,7 @@ func _ready() -> void:
 	var viewport = get_viewport().get_visible_rect()
 	
 	position.x = viewport.size.x / 2
-	#position.y = (viewport.size.y / 10) * 9
-	position.y = (viewport.size.y / 1.15)
+	position.y = (viewport.size.y / 1.1)
 
 func draw() -> void:
 	var top_card = deck.get_top_card()

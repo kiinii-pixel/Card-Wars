@@ -15,6 +15,8 @@ func enter():
 	drag_component.selected = true
 	card.z_index = 5
 	drag_component.scale_up(0.2)
+	#drag_component.move(card.global_position + Vector2(0, -50), 0.5) # Move Card Upwards
+	card.get_node("SubViewportContainer").position += Vector2(0, -50)
 
 
 func update(_delta : float):
@@ -24,6 +26,7 @@ func update(_delta : float):
 
 func _on_drag_component_mouse_exited() -> void:
 	if card.state_mashine.current_state is Hovering:
+		card.get_node("SubViewportContainer").position += Vector2(0, 50)
 		drag_component.selected = false
 		Transitioned.emit(self, "in_hand")
 	
