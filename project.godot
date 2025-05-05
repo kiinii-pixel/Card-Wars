@@ -15,7 +15,7 @@ config/description="Adventure Time: Card Wars made in Godot engine.
 Card Wars is a casual deckbuilding card game in the land of Ooo."
 run/main_scene="res://scenes/ui/menu.tscn"
 config/features=PackedStringArray("4.4", "GL Compatibility")
-config/icon="res://assets/images/other/icon.png"
+config/icon="uid://osr8g3ergbwa"
 
 [audio]
 
