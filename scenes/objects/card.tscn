@@ -1,6 +1,7 @@
-[gd_scene load_steps=24 format=3 uid="uid://bco1m6ixdmiil"]
+[gd_scene load_steps=26 format=3 uid="uid://bco1m6ixdmiil"]
 
 [ext_resource type="Script" uid="uid://bn53btc3jyr00" path="res://scripts/objects/card.gd" id="1_arv21"]
+[ext_resource type="Shader" uid="uid://dup42d4bdccro" path="res://assets/shaders/2D-perspective.gdshader" id="2_qwdqa"]
 [ext_resource type="Texture2D" uid="uid://ct5331atokkqs" path="res://assets/images/frames/Rainbow_Creature.png" id="3_mw3bc"]
 [ext_resource type="Theme" uid="uid://dmwrp6aey18st" path="res://assets/themes/purple_button.tres" id="5_bmwov"]
 [ext_resource type="FontFile" uid="uid://ca0g1l1k6v1sf" path="res://assets/fonts/Pendlefont Heavy.TTF" id="5_bysvj"]
@@ -17,6 +18,15 @@
 [ext_resource type="Script" uid="uid://vcpc5cr3hndp" path="res://scripts/states/overlapping.gd" id="16_eswy8"]
 [ext_resource type="Script" uid="uid://dc3pn32y8ayx0" path="res://scripts/states/hovering.gd" id="16_psrjk"]
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_611br"]
+resource_local_to_scene = true
+shader = ExtResource("2_qwdqa")
+shader_parameter/fov = 45.0
+shader_parameter/cull_back = true
+shader_parameter/y_rot = 0.0
+shader_parameter/x_rot = 0.0
+shader_parameter/inset = 0.0
+
 [sub_resource type="Theme" id="Theme_rcflo"]
 default_font = ExtResource("5_bysvj")
 Label/colors/font_color = Color(0.129412, 0.141176, 0.160784, 1)
@@ -30,6 +40,42 @@ size = Vector2(92, 222)
 
 [sub_resource type="Animation" id="Animation_0kbrg"]
 length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SubViewportContainer:material:shader_parameter/y_rot")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SubViewportContainer/SubViewport/CardBack:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("SubViewportContainer:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
 
 [sub_resource type="Animation" id="Animation_djqq5"]
 resource_name = "flip_down"
@@ -86,8 +132,8 @@ tracks/3/keys = {
 
 [sub_resource type="Animation" id="Animation_ljt8f"]
 resource_name = "flip_up"
-length = 0.3
-step = 0.005
+length = 0.2
+step = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -95,7 +141,7 @@ tracks/0/path = NodePath("SubViewportContainer/SubViewport/CardBack:visible")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.14),
+"times": PackedFloat32Array(0, 0.108),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [true, false]
@@ -103,38 +149,26 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("SubViewportContainer/SubViewport/CardBack:scale")
+tracks/1/path = NodePath("SubViewportContainer:material:shader_parameter/y_rot")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.14),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0, 0.107, 0.109, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(0.896, 0.896), Vector2(1e-05, 0.896)]
+"values": [0.0, 90.0, -90.0, 8.55e-06]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("SubViewportContainer/SubViewport/PanelContainer:scale")
+tracks/2/path = NodePath("SubViewportContainer:visible")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0.14, 0.3),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(0, 1), Vector2(1, 1)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("SubViewportContainer/SubViewport/Labels:scale")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0.14, 0.3),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(0, 1), Vector2(1, 1)]
+"times": PackedFloat32Array(0, 0.107, 0.109),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [true, false, true]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_swdfb"]
@@ -155,6 +189,8 @@ script = ExtResource("1_arv21")
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="."]
 editor_description = "Displays Subviewport"
+visible = false
+material = SubResource("ShaderMaterial_611br")
 layout_mode = 1
 offset_left = -346.75
 offset_top = -490.0
@@ -173,10 +209,9 @@ disable_3d = true
 transparent_bg = true
 handle_input_locally = false
 size = Vector2i(693, 980)
-render_target_update_mode = 4
+render_target_update_mode = 0
 
 [node name="PanelContainer" type="PanelContainer" parent="SubViewportContainer/SubViewport"]
-scale = Vector2(1e-05, 1)
 
 [node name="CardImage" type="Sprite2D" parent="SubViewportContainer/SubViewport/PanelContainer"]
 unique_name_in_owner = true
@@ -190,16 +225,9 @@ position = Vector2(2.38419e-07, 0)
 texture = ExtResource("3_mw3bc")
 centered = false
 
-[node name="CardBack" type="Sprite2D" parent="SubViewportContainer/SubViewport"]
-unique_name_in_owner = true
-scale = Vector2(0.896, 0.896)
-texture = ExtResource("6_uokre")
-offset = Vector2(385.655, 540.96)
-
 [node name="Labels" type="Control" parent="SubViewportContainer/SubViewport"]
 layout_mode = 3
 anchors_preset = 0
-scale = Vector2(1e-05, 1)
 
 [node name="CardName" type="Label" parent="SubViewportContainer/SubViewport/Labels"]
 unique_name_in_owner = true
@@ -303,6 +331,14 @@ text = "C"
 horizontal_alignment = 1
 vertical_alignment = 1
 clip_text = true
+
+[node name="CardBack" type="Sprite2D" parent="SubViewportContainer/SubViewport"]
+unique_name_in_owner = true
+visible = false
+position = Vector2(-0.480189, -0.629174)
+scale = Vector2(0.896, 0.896)
+texture = ExtResource("6_uokre")
+offset = Vector2(385.655, 540.96)
 
 [node name="drag_component" parent="." instance=ExtResource("6_457fh")]
 

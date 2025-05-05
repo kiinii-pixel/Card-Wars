@@ -108,9 +108,10 @@ func _on_drag_component_body_exited(body):
 		if body.get_node_or_null("card_preview"):
 			body.get_node("card_preview").queue_free()
 
-# Flip Card face up or down
-func flip():
-	if state_mashine.current_state == state_mashine.states["in_deck"]:
-		get_node("%AnimationPlayer").play("flip_up")
-	elif state_mashine.current_state == state_mashine.states["in_deck"]:
-		get_node("%AnimationPlayer").play("flip_down")
+# Flip Card face up
+func flip_up():
+	get_node("%AnimationPlayer").play("flip_up")
+
+# Flip Card face down
+func flip_down():
+	get_node("%AnimationPlayer").play("flip_down")
