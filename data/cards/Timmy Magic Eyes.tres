@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://dgomlqbsr0afp"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://dgomlqbsr0afp"]
 
 [ext_resource type="Texture2D" uid="uid://ct5331atokkqs" path="res://assets/images/frames/Rainbow_Creature.png" id="1_804x7"]
 [ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_i4kun"]
+[ext_resource type="Texture2D" uid="uid://bea0lw8snccr8" path="res://assets/images/cards/art/Blue Plains/Creature/Timmy Magic Eyes.png" id="2_ycf8g"]
 
 [resource]
 script = ExtResource("1_i4kun")
@@ -14,4 +15,5 @@ description = "Timmy Magic Eyes has +1 ATK while attacking a Creature that is on
 landscape = "Rainbow"
 card_type = "Creature"
 id = 462
+image = ExtResource("2_ycf8g")
 frame = ExtResource("1_804x7")

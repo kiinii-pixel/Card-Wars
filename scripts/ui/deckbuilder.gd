@@ -40,7 +40,7 @@ func save_card_images(card):
 	var split_string = node_name.rsplit(":", true, 1)
 	print(split_string[0])
 
-	var path = "user://" + str(split_string[0]) + ".jpg"
+	var path = "user://" + str(split_string[0]) + ".png"
 	var err = img.save_png(path)
 
 	if err == OK:

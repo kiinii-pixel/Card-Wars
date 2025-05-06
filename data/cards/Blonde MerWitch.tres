@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://breg7igv03qx0"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://breg7igv03qx0"]
 
 [ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_2ugpn"]
 [ext_resource type="Texture2D" uid="uid://ct5331atokkqs" path="res://assets/images/frames/Rainbow_Creature.png" id="1_8xs5p"]
+[ext_resource type="Texture2D" uid="uid://b6xwk7fm14dyj" path="res://assets/images/cards/art/Rainbow/Creature/Blonde MerWich.png" id="2_sur3l"]
 
 [resource]
 script = ExtResource("1_2ugpn")
@@ -14,4 +15,5 @@ description = "The seas are her cauldron, and her ingredients are anything that 
 landscape = "Rainbow"
 card_type = "Creature"
 id = 30
+image = ExtResource("2_sur3l")
 frame = ExtResource("1_8xs5p")
