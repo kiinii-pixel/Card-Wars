@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://ciphtnh0eqsxn"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://ciphtnh0eqsxn"]
 
 [ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_hjc47"]
 [ext_resource type="Texture2D" uid="uid://d2o5o4cm304mt" path="res://assets/images/frames/Useless Swamp_Creature.png" id="1_m6pj0"]
+[ext_resource type="Texture2D" uid="uid://daqojwffjly71" path="res://assets/images/cards/art/Useless Swamp/Creature/Hot EyeBat.png" id="2_avkls"]
 
 [resource]
 script = ExtResource("1_hjc47")
@@ -14,4 +15,5 @@ description = "Play Hot Eyebat only if you have 10 or more cards in your discard
 landscape = "Useless Swamp"
 card_type = "Creature"
 id = 218
+image = ExtResource("2_avkls")
 frame = ExtResource("1_m6pj0")

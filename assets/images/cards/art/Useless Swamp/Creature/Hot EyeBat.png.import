@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://viixvpnml3xg"
-path="res://.godot/imported/HotEyeBat.png-d01aaac36d29ec60db09953a6d7c6991.ctex"
+uid="uid://daqojwffjly71"
+path="res://.godot/imported/Hot EyeBat.png-02a4f23a7aa35288dea904b19d1f2c8f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/cards/art/Useless Swamp/Creature/HotEyeBat.png"
-dest_files=["res://.godot/imported/HotEyeBat.png-d01aaac36d29ec60db09953a6d7c6991.ctex"]
+source_file="res://assets/images/cards/art/Useless Swamp/Creature/Hot EyeBat.png"
+dest_files=["res://.godot/imported/Hot EyeBat.png-02a4f23a7aa35288dea904b19d1f2c8f.ctex"]
 
 [params]
 
