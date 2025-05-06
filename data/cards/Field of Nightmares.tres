@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://d28nkg8wx55qq"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://d28nkg8wx55qq"]
 
 [ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_30aia"]
 [ext_resource type="Texture2D" uid="uid://du1xi1t4s1wio" path="res://assets/images/frames/Cornfield.png" id="1_uspgx"]
+[ext_resource type="Texture2D" uid="uid://cg6i8g70icbx2" path="res://assets/images/cards/art/Cornfield/Spell/Field of Nightmares.png" id="2_xrfrf"]
 
 [resource]
 script = ExtResource("1_30aia")
@@ -14,4 +15,5 @@ description = "Deal 1 Damage to your opponent for each card in his hand."
 landscape = "Cornfield"
 card_type = "Spell"
 id = 146
+image = ExtResource("2_xrfrf")
 frame = ExtResource("1_uspgx")

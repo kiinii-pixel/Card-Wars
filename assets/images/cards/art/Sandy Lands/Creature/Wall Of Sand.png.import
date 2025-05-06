@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dlhpytex45ybb"
-path="res://.godot/imported/Wall Of Sand.png-afad3bf27d2ca0d78dc68628a077ed73.ctex"
+path="res://.godot/imported/Wall of Sand.png-df14670daddca0576ef3727de570f2f4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/cards/art/Sandy Lands/Creature/Wall Of Sand.png"
-dest_files=["res://.godot/imported/Wall Of Sand.png-afad3bf27d2ca0d78dc68628a077ed73.ctex"]
+source_file="res://assets/images/cards/art/Sandy Lands/Creature/Wall of Sand.png"
+dest_files=["res://.godot/imported/Wall of Sand.png-df14670daddca0576ef3727de570f2f4.ctex"]
 
 [params]
 

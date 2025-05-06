@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://bky7lql1vsqro"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://bky7lql1vsqro"]
 
 [ext_resource type="Texture2D" uid="uid://7f0fsvgty6vg" path="res://assets/images/frames/NiceLands.png" id="1_46lh6"]
 [ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_sebiv"]
+[ext_resource type="Texture2D" uid="uid://b6i0dphokedpl" path="res://assets/images/cards/art/NiceLands/Spell/Scroll of Fresh Breath.png" id="2_x8wg4"]
 
 [resource]
 script = ExtResource("1_sebiv")
@@ -14,4 +15,5 @@ description = "Each of your Creatures has +2 ATK this turn while attacking a Cre
 landscape = "NiceLands"
 card_type = "Spell"
 id = 387
+image = ExtResource("2_x8wg4")
 frame = ExtResource("1_46lh6")

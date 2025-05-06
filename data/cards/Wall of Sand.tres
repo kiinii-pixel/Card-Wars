@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://ce4lvoxg1txvh"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://ce4lvoxg1txvh"]
 
 [ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_0bbto"]
 [ext_resource type="Texture2D" uid="uid://tbt4hmdhcclb" path="res://assets/images/frames/SandyLands_Creature.png" id="1_xl73f"]
+[ext_resource type="Texture2D" uid="uid://dlhpytex45ybb" path="res://assets/images/cards/art/Sandy Lands/Creature/Wall of Sand.png" id="2_psa64"]
 
 [resource]
 script = ExtResource("1_0bbto")
@@ -14,4 +15,5 @@ description = "If one or more other SandyLands Creatures enter play during your 
 landscape = "SandyLands"
 card_type = "Creature"
 id = 487
+image = ExtResource("2_psa64")
 frame = ExtResource("1_xl73f")

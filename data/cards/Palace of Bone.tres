@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://ckfcldl7866bg"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://ckfcldl7866bg"]
 
 [ext_resource type="Texture2D" uid="uid://ypdgp0t1gdd0" path="res://assets/images/frames/Useless Swamp.png" id="1_i5ld3"]
 [ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_y7ndm"]
+[ext_resource type="Texture2D" uid="uid://b86mps6m61rqd" path="res://assets/images/cards/art/Useless Swamp/Building/Palace of Bone.png" id="2_8shy1"]
 
 [resource]
 script = ExtResource("1_y7ndm")
@@ -14,4 +15,5 @@ description = "Opposing Creatures in this Lane don't trigger entering or leaving
 landscape = "Useless Swamp"
 card_type = "Building"
 id = 311
+image = ExtResource("2_8shy1")
 frame = ExtResource("1_i5ld3")

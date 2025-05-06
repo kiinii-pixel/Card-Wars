@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://d4dfn8pph1awq"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://d4dfn8pph1awq"]
 
 [ext_resource type="Texture2D" uid="uid://tqpubod46faw" path="res://assets/images/frames/Rainbow.png" id="1_pabwi"]
 [ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_soe1g"]
+[ext_resource type="Texture2D" uid="uid://c0mrd8tvruw0b" path="res://assets/images/cards/art/Rainbow/Spell/Fountain of Tears.png" id="2_nxe1e"]
 
 [resource]
 script = ExtResource("1_soe1g")
@@ -14,4 +15,5 @@ description = "While your Creature in this Lane has exactly 3 Damage on it, it h
 landscape = "Rainbow"
 card_type = "Building"
 id = 156
+image = ExtResource("2_nxe1e")
 frame = ExtResource("1_pabwi")

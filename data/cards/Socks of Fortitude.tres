@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://duw3bl8fmerm5"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://duw3bl8fmerm5"]
 
 [ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_p0p32"]
 [ext_resource type="Texture2D" uid="uid://d1kvwyj0lxwng" path="res://assets/images/frames/Blue Plains.png" id="1_xi0mt"]
+[ext_resource type="Texture2D" uid="uid://c5tipoa8gquvp" path="res://assets/images/cards/art/Blue Plains/Spell/Socks of Fortitude.png" id="2_16wkn"]
 
 [resource]
 script = ExtResource("1_p0p32")
@@ -14,4 +15,5 @@ description = "Ready each Creature that changed Lanes this turn. They each have 
 landscape = "Blue Plains"
 card_type = "Spell"
 id = 421
+image = ExtResource("2_16wkn")
 frame = ExtResource("1_xi0mt")

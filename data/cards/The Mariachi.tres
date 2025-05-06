@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://dwryukogouc5i"]
+[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://dwryukogouc5i"]
 
 [ext_resource type="Texture2D" uid="uid://tbt4hmdhcclb" path="res://assets/images/frames/SandyLands_Creature.png" id="1_4fbuf"]
 [ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_wcmny"]
+[ext_resource type="Texture2D" uid="uid://dejilj7c4eqvn" path="res://assets/images/cards/art/Sandy Lands/Creature/The Mariachi.png" id="2_e7jp2"]
 
 [resource]
 script = ExtResource("1_wcmny")
@@ -14,4 +15,5 @@ description = "FLOOP >>> Deal 1 Damage to target Creature for each Creature that
 landscape = "SandyLands"
 card_type = "Creature"
 id = 459
+image = ExtResource("2_e7jp2")
 frame = ExtResource("1_4fbuf")
