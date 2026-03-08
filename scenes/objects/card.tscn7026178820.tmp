@@ -185,6 +185,8 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 173.0
 offset_bottom = 245.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
 script = ExtResource("1_arv21")
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="."]
@@ -395,7 +397,6 @@ libraries = {
 &"": SubResource("AnimationLibrary_swdfb")
 }
 
-[connection signal="gui_input" from="." to="." method="_on_gui_input"]
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
 [connection signal="body_exited" from="drag_component" to="." method="_on_drag_component_body_exited"]

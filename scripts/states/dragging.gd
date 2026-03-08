@@ -3,7 +3,7 @@ class_name Dragging extends State # Dragging a Card
 var in_deck_list : bool
 
 func enter():
-	Global.is_dragging = true
+	#Mousebrain.is_dragging = card
 	if not drag_component.body_entered.is_connected(_on_body_entered):
 		drag_component.body_entered.connect(_on_body_entered)
 
@@ -16,7 +16,7 @@ func update(_delta : float):
 		drag_component.body_entered.disconnect(_on_body_entered)
 		Transitioned.emit(self, "in_hand")
 		card.get_node("SubViewportContainer").position += Vector2(0, 50)
-		Global.is_dragging = false
+		#Mousebrain.is_dragging = null
 	if in_deck_list:
 		if Input.is_action_just_released("action_key"):
 				var decklist = card.body_ref

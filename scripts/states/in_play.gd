@@ -9,7 +9,7 @@ func enter():
 	card.is_inside = false
 	card_sound.play()
 	card.scale = Vector2(1, 1)
-	Global.is_dragging = false
+	Mousebrain.is_dragging = null
 	card.reparent(card.body_ref)
 	card.body_ref.empty = false
 	await drag_component.move(card.body_ref.global_position, 0.2)

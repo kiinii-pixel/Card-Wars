@@ -24,7 +24,7 @@ func _process(_delta):
 
 
 func follow_mouse():
-	get_parent().global_position = get_global_mouse_position()
+	get_parent().global_position = get_global_mouse_position() - (position / 2)
 
 
 func scale_up(time):
