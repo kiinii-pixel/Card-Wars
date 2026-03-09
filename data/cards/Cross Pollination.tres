@@ -1,17 +1,16 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://cbck4miio3djy"]
+[gd_resource type="Resource" script_class="CardResource" format=3 uid="uid://cbck4miio3djy"]
 
 [ext_resource type="Texture2D" uid="uid://tqpubod46faw" path="res://assets/images/frames/Rainbow.png" id="1_80duq"]
 [ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_dys4d"]
+[ext_resource type="Texture2D" uid="uid://c5csk78yt0mbm" path="res://assets/images/cards/art/Cornfield/Spell/Cross Pollination.png" id="2_n0bjn"]
 
 [resource]
 script = ExtResource("1_dys4d")
 card_name = "Cross Pollination"
-atk = 0
-def = 0
-ability = ""
 cost = 2
 description = "Each of your Cornfield Creatures has +1 ATK this turn for each different Landscape type you control."
 landscape = "Rainbow"
 card_type = "Spell"
 id = 99
+image = ExtResource("2_n0bjn")
 frame = ExtResource("1_80duq")
