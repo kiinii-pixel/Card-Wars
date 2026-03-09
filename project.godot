@@ -8,13 +8,17 @@
 
 config_version=5
 
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
 [application]
 
 config/name="Card Wars"
 config/description="Adventure Time: Card Wars made in Godot engine.
 Card Wars is a casual deckbuilding card game in the land of Ooo."
 run/main_scene="res://scenes/ui/menu.tscn"
-config/features=PackedStringArray("4.4", "GL Compatibility")
+config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://assets/images/other/icon.png"
 
 [audio]

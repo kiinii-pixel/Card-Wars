@@ -1,6 +1,7 @@
-[gd_scene load_steps=24 format=3 uid="uid://bco1m6ixdmiil"]
+[gd_scene format=3 uid="uid://bco1m6ixdmiil"]
 
 [ext_resource type="Script" uid="uid://bn53btc3jyr00" path="res://scripts/objects/card.gd" id="1_arv21"]
+[ext_resource type="Shader" uid="uid://blcxl1nxmcnbb" path="res://assets/shaders/2D-perspective.gdshader" id="2_qwdqa"]
 [ext_resource type="Texture2D" uid="uid://ct5331atokkqs" path="res://assets/images/frames/Rainbow_Creature.png" id="3_mw3bc"]
 [ext_resource type="Theme" uid="uid://dmwrp6aey18st" path="res://assets/themes/purple_button.tres" id="5_bmwov"]
 [ext_resource type="FontFile" uid="uid://ca0g1l1k6v1sf" path="res://assets/fonts/Pendlefont Heavy.TTF" id="5_bysvj"]
@@ -16,6 +17,14 @@
 [ext_resource type="Script" uid="uid://xgddeqsh2gim" path="res://scripts/states/dragging.gd" id="15_smlb4"]
 [ext_resource type="Script" uid="uid://vcpc5cr3hndp" path="res://scripts/states/overlapping.gd" id="16_eswy8"]
 [ext_resource type="Script" uid="uid://dc3pn32y8ayx0" path="res://scripts/states/hovering.gd" id="16_psrjk"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_611br"]
+shader = ExtResource("2_qwdqa")
+shader_parameter/fov = 90.0
+shader_parameter/cull_back = true
+shader_parameter/y_rot = 0.0
+shader_parameter/x_rot = 0.0
+shader_parameter/inset = 0.0
 
 [sub_resource type="Theme" id="Theme_rcflo"]
 default_font = ExtResource("5_bysvj")
@@ -144,7 +153,7 @@ _data = {
 &"flip_up": SubResource("Animation_ljt8f")
 }
 
-[node name="Card" type="Control"]
+[node name="Card" type="Control" unique_id=1032134489]
 editor_description = "This is the base Node for any Card."
 layout_mode = 3
 anchors_preset = 0
@@ -153,8 +162,9 @@ size_flags_vertical = 4
 mouse_filter = 2
 script = ExtResource("1_arv21")
 
-[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+[node name="SubViewportContainer" type="SubViewportContainer" parent="." unique_id=626273987]
 editor_description = "Displays Subviewport"
+material = SubResource("ShaderMaterial_611br")
 layout_mode = 1
 offset_left = -346.75
 offset_top = -490.0
@@ -166,7 +176,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 metadata/_edit_use_anchors_ = true
 
-[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer" unique_id=1253828225]
 unique_name_in_owner = true
 editor_description = "The SubViewport is used to render a Card's texture, without having to reload all its elements."
 disable_3d = true
@@ -175,33 +185,33 @@ handle_input_locally = false
 size = Vector2i(693, 980)
 render_target_update_mode = 4
 
-[node name="PanelContainer" type="PanelContainer" parent="SubViewportContainer/SubViewport"]
+[node name="PanelContainer" type="PanelContainer" parent="SubViewportContainer/SubViewport" unique_id=463416446]
 scale = Vector2(1e-05, 1)
 
-[node name="CardImage" type="Sprite2D" parent="SubViewportContainer/SubViewport/PanelContainer"]
+[node name="CardImage" type="Sprite2D" parent="SubViewportContainer/SubViewport/PanelContainer" unique_id=924718755]
 unique_name_in_owner = true
 position = Vector2(26, 0)
 scale = Vector2(1.25391, 1.25391)
 centered = false
 
-[node name="CardFrame" type="Sprite2D" parent="SubViewportContainer/SubViewport/PanelContainer"]
+[node name="CardFrame" type="Sprite2D" parent="SubViewportContainer/SubViewport/PanelContainer" unique_id=697358200]
 unique_name_in_owner = true
 position = Vector2(2.38419e-07, 0)
 texture = ExtResource("3_mw3bc")
 centered = false
 
-[node name="CardBack" type="Sprite2D" parent="SubViewportContainer/SubViewport"]
+[node name="CardBack" type="Sprite2D" parent="SubViewportContainer/SubViewport" unique_id=1344010180]
 unique_name_in_owner = true
 scale = Vector2(0.896, 0.896)
 texture = ExtResource("6_uokre")
 offset = Vector2(385.655, 540.96)
 
-[node name="Labels" type="Control" parent="SubViewportContainer/SubViewport"]
+[node name="Labels" type="Control" parent="SubViewportContainer/SubViewport" unique_id=487695819]
 layout_mode = 3
 anchors_preset = 0
 scale = Vector2(1e-05, 1)
 
-[node name="CardName" type="Label" parent="SubViewportContainer/SubViewport/Labels"]
+[node name="CardName" type="Label" parent="SubViewportContainer/SubViewport/Labels" unique_id=1141435452]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 8
@@ -221,7 +231,7 @@ text = "Card Name"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="LandscapeCardType" type="Label" parent="SubViewportContainer/SubViewport/Labels"]
+[node name="LandscapeCardType" type="Label" parent="SubViewportContainer/SubViewport/Labels" unique_id=1814797568]
 unique_name_in_owner = true
 layout_mode = 0
 offset_left = 25.0
@@ -235,7 +245,7 @@ text = "Landscape / Card Type"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Description" type="Label" parent="SubViewportContainer/SubViewport/Labels"]
+[node name="Description" type="Label" parent="SubViewportContainer/SubViewport/Labels" unique_id=2068552610]
 unique_name_in_owner = true
 layout_mode = 0
 offset_left = 37.0
@@ -250,14 +260,14 @@ text = "FLOOP >>> In this space, find the card's description and effects."
 horizontal_alignment = 1
 autowrap_mode = 2
 
-[node name="CCAttack" type="CenterContainer" parent="SubViewportContainer/SubViewport/Labels"]
+[node name="CCAttack" type="CenterContainer" parent="SubViewportContainer/SubViewport/Labels" unique_id=244033179]
 layout_mode = 0
 offset_left = 26.6667
 offset_top = 833.667
 offset_right = 114.667
 offset_bottom = 1002.67
 
-[node name="AttackLabel" type="Label" parent="SubViewportContainer/SubViewport/Labels/CCAttack"]
+[node name="AttackLabel" type="Label" parent="SubViewportContainer/SubViewport/Labels/CCAttack" unique_id=969093091]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 0
@@ -268,14 +278,14 @@ text = "A"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="CCDefense" type="CenterContainer" parent="SubViewportContainer/SubViewport/Labels"]
+[node name="CCDefense" type="CenterContainer" parent="SubViewportContainer/SubViewport/Labels" unique_id=2078065749]
 layout_mode = 0
 offset_left = 582.629
 offset_top = 833.667
 offset_right = 670.629
 offset_bottom = 1002.67
 
-[node name="DefenseLabel" type="Label" parent="SubViewportContainer/SubViewport/Labels/CCDefense"]
+[node name="DefenseLabel" type="Label" parent="SubViewportContainer/SubViewport/Labels/CCDefense" unique_id=879582850]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 8
@@ -286,7 +296,7 @@ text = "D"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="CostLabel" type="Label" parent="SubViewportContainer/SubViewport/Labels"]
+[node name="CostLabel" type="Label" parent="SubViewportContainer/SubViewport/Labels" unique_id=1496977094]
 unique_name_in_owner = true
 clip_contents = true
 custom_minimum_size = Vector2(120, 0)
@@ -304,51 +314,49 @@ horizontal_alignment = 1
 vertical_alignment = 1
 clip_text = true
 
-[node name="drag_component" parent="." instance=ExtResource("6_457fh")]
+[node name="drag_component" parent="." unique_id=1428205689 instance=ExtResource("6_457fh")]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="drag_component"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="drag_component" unique_id=427651339]
 shape = SubResource("RectangleShape2D_4b713")
 
-[node name="card_sound" type="AudioStreamPlayer2D" parent="."]
+[node name="card_sound" type="AudioStreamPlayer2D" parent="." unique_id=1362466032]
 stream = ExtResource("8_iocnt")
 
-[node name="floop_component" parent="." instance=ExtResource("9_1g6dh")]
+[node name="floop_component" parent="." unique_id=425266844 instance=ExtResource("9_1g6dh")]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="floop_component"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="floop_component" unique_id=67648499]
 shape = SubResource("RectangleShape2D_os2xy")
 
-[node name="state_mashine" type="Node" parent="." node_paths=PackedStringArray("initial_state")]
+[node name="state_mashine" type="Node" parent="." unique_id=76925116 node_paths=PackedStringArray("initial_state")]
 editor_description = "Manages a Card's states"
 script = ExtResource("10_rn6ks")
 initial_state = NodePath("in_deck")
 
-[node name="in_deck" type="Node" parent="state_mashine"]
+[node name="in_deck" type="Node" parent="state_mashine" unique_id=1270991780]
 script = ExtResource("11_h3v8y")
 
-[node name="in_hand" type="Node" parent="state_mashine"]
+[node name="in_hand" type="Node" parent="state_mashine" unique_id=1866942774]
 script = ExtResource("12_uil7g")
 
-[node name="in_play" type="Node" parent="state_mashine" node_paths=PackedStringArray("card_sound")]
+[node name="in_play" type="Node" parent="state_mashine" unique_id=1942635132 node_paths=PackedStringArray("card_sound")]
 script = ExtResource("13_e3wur")
 card_sound = NodePath("../../card_sound")
 
-[node name="discarded" type="Node" parent="state_mashine"]
+[node name="discarded" type="Node" parent="state_mashine" unique_id=1849038653]
 script = ExtResource("14_x832o")
 
-[node name="dragging" type="Node" parent="state_mashine"]
+[node name="dragging" type="Node" parent="state_mashine" unique_id=1596502815]
 script = ExtResource("15_smlb4")
 
-[node name="hovering" type="Node" parent="state_mashine"]
+[node name="hovering" type="Node" parent="state_mashine" unique_id=697686970]
 script = ExtResource("16_psrjk")
 
-[node name="overlapping" type="Node" parent="state_mashine"]
+[node name="overlapping" type="Node" parent="state_mashine" unique_id=1170070386]
 script = ExtResource("16_eswy8")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1223582511]
 unique_name_in_owner = true
-libraries = {
-&"": SubResource("AnimationLibrary_swdfb")
-}
+libraries/ = SubResource("AnimationLibrary_swdfb")
 
 [connection signal="body_exited" from="drag_component" to="." method="_on_drag_component_body_exited"]
 [connection signal="mouse_exited" from="drag_component" to="state_mashine/hovering" method="_on_drag_component_mouse_exited"]
