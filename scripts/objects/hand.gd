@@ -54,13 +54,18 @@ func _on_child_order_changed():
 		#change the x position of the current card, based on its index
 		destination.origin.x += spread_curve.sample(hand_ratio) * hand_width
 		destination.origin.y -= height_curve.sample(hand_ratio) * hand_height
-		move(card, destination.origin, 0.3)
-		#card.global_position = destination.origin
+		
+		var target_rotation: float = 0.0
+		if get_child_count() > 2:
+			var max_rotation: float = 0.2
+			target_rotation = rotation_curve.sample(hand_ratio) * max_rotation
+		move(card, destination.origin, target_rotation, 0.3)
 
-func move(object : Object, destination : Vector2, time : float):
+func move(object : Object, destination : Vector2, target_rotation: float, time : float):
 	if is_inside_tree():
-		var tween: Tween = create_tween().set_ease(Tween.EASE_IN_OUT).set_trans(Tween.TRANS_BACK)
+		var tween: Tween = create_tween().set_parallel(true).set_ease(Tween.EASE_IN_OUT).set_trans(Tween.TRANS_BACK)
 		tween.tween_property(object, "global_position", destination, time)
+		tween.tween_property(object, "rotation", target_rotation, time)
 		await tween.finished
 
 func _on_card_played():

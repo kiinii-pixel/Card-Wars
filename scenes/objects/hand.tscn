@@ -14,7 +14,7 @@ point_count = 3
 
 [sub_resource type="Curve" id="Curve_rwvyn"]
 _limits = [-1.0, 1.0, 0.0, 1.0]
-_data = [Vector2(0, 1), 0.0, -5.0, 0, 0, Vector2(0.5, 0), 0.0, 0.0, 0, 0, Vector2(1, -1), -5.0, 0.0, 0, 0]
+_data = [Vector2(0, -1), 0.0, 5.0, 0, 0, Vector2(0.5, 0), 0.0, 0.0, 0, 0, Vector2(0.9769231, 1), 5.0, 0.0, 0, 0]
 point_count = 3
 
 [node name="Hand" type="Node2D" unique_id=441787985]

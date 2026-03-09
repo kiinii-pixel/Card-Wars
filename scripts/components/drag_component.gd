@@ -28,16 +28,16 @@ func follow_mouse():
 
 
 func scale_up(time):
-	var tween: Tween = create_tween().set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_CIRC)
+	var tween: Tween = create_tween().set_parallel(true).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_CIRC)
 	tween.tween_property(get_parent(), "scale", SCALE_ZOOMED, time)
 
 
 func scale_down(time):
-	var tween: Tween = create_tween().set_ease(Tween.EASE_IN).set_trans(Tween.TRANS_CIRC)
+	var tween: Tween = create_tween().set_parallel(true).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_CIRC)
 	tween.tween_property(get_parent(), "scale", SCALE_NORMAL, time)
 
 
 func move(destination : Vector2, time : float):
-	var tween: Tween = create_tween().set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_BACK)
+	var tween: Tween = create_tween().set_parallel(true).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_BACK)
 	tween.tween_property(get_parent(), "global_position", destination, time)
 	await tween.finished
