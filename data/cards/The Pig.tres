@@ -1,8 +1,21 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=4 format=3 uid="uid://cbt1jgf00eyyn"]
+[gd_resource type="Resource" script_class="CardResource" format=3 uid="uid://cbt1jgf00eyyn"]
 
+[ext_resource type="Script" uid="uid://diguj3qmnlf4m" path="res://scripts/card_ability.gd" id="1_8qs8k"]
 [ext_resource type="Texture2D" uid="uid://ct5331atokkqs" path="res://assets/images/frames/Rainbow_Creature.png" id="1_585o2"]
 [ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_cwaex"]
 [ext_resource type="Texture2D" uid="uid://b3xeo685h6h7v" path="res://assets/images/cards/art/Rainbow/Creature/The Pig.png" id="2_27gpo"]
+[ext_resource type="Script" uid="uid://c21qau1iycqg2" path="res://scripts/effects/effect.gd" id="2_rnnix"]
+[ext_resource type="Script" uid="uid://ci4rrwurxe1bc" path="res://scripts/effects/damage_effect.gd" id="3_rnnix"]
+
+[sub_resource type="Resource" id="Resource_lmtjd"]
+script = ExtResource("3_rnnix")
+metadata/_custom_type_script = "uid://ci4rrwurxe1bc"
+
+[sub_resource type="Resource" id="Resource_ylkbh"]
+script = ExtResource("1_8qs8k")
+trigger = 2
+effects = Array[ExtResource("2_rnnix")]([SubResource("Resource_lmtjd")])
+metadata/_custom_type_script = "uid://diguj3qmnlf4m"
 
 [resource]
 script = ExtResource("1_cwaex")
@@ -10,6 +23,7 @@ card_name = "The Pig"
 atk = 1
 def = 4
 ability = "FLOOP"
+abilities = Array[ExtResource("1_8qs8k")]([SubResource("Resource_ylkbh")])
 cost = 1
 description = "FLOOP >>> Flip target Cornfield Landscape in this Lane face down."
 landscape = "Rainbow"
