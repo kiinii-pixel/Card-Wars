@@ -1,7 +1,7 @@
 extends Control
 
-@onready var file_dialog = $ItemList/DeckList/FileLoadDialog
-@onready var preloader = $ResourcePreloader
+@onready var file_dialog: FileDialog = $ItemList/DeckList/FileLoadDialog
+@onready var preloader: ResourcePreloader = $ResourcePreloader
 const CARD : PackedScene = preload("res://scenes/objects/card.tscn")
 
 var matches : Array = []
@@ -14,13 +14,13 @@ func _ready():
 
 
 func load_cards():
-	var list = preloader.get_resource_list()
+	var list: PackedStringArray = preloader.get_resource_list()
 	for instance in list:
 		create_card(instance)
 
 # Used to save all Cards to Disk as images (for the Discord Bot)
 # Function used in SaveImages Button
-func save_card_images(card):
+func save_card_images(card) -> void:
 	var sub_viewport = card.find_child("SubViewport", true, false)
 
 	if not sub_viewport:
@@ -36,11 +36,11 @@ func save_card_images(card):
 		print("Error: Captured image is empty!")
 		return
 
-	var node_name = str(card)
-	var split_string = node_name.rsplit(":", true, 1)
+	var node_name: String = str(card)
+	var split_string: PackedStringArray = node_name.rsplit(":", true, 1)
 	print(split_string[0])
 
-	var path = "user://" + str(split_string[0]) + ".jpg"
+	var path: String = "user://" + str(split_string[0]) + ".png"
 	var err = img.save_png(path)
 
 	if err == OK:
@@ -52,7 +52,7 @@ func save_card_images(card):
 
 
 func create_card(instance):
-	var card = CARD.instantiate()
+	var card: Node = CARD.instantiate()
 	card.data = preloader.get_resource(instance)
 	card.load_image()
 	if card.get_node("%CardImage").texture != null:
