@@ -10,12 +10,12 @@ func _ready():
 func _process(_delta):
 	if selected and !get_parent().drag_component.allow_drag and !flooped and !attacked:
 		if Input.is_action_just_pressed("floop"):
-			#get_parent().rotation_degrees = 90
-			rotate_card(Vector2(0, 100), 90, 0.25)
+			rotate_card(Vector2(0, -50), -90, 0.25)
 			flooped = true
 			get_parent().trigger_abilities(CardAbility.Trigger.FLOOP)
+			print("flooped")
 		elif Input.is_action_just_pressed("attack"):
-			rotate_card(Vector2(0, -100), -90, 0.25)
+			rotate_card(Vector2(0, 50), 90, 0.25)
 			attacked = true
 
 func _on_mouse_entered(): # when you hover over the card
