@@ -11,14 +11,14 @@ func _ready() -> void:
 	#card_list.resize(MAX_DECK_SIZE)
 
 
-func add_card_to_list(card_data):
+func add_card_to_list(card_data) -> void:
 	var card_name = card_data.card_name
 	
 	if card_count <= MAX_DECK_SIZE - 1: # If Deck isn't full
 		print(item_list.item_count)
 		for item in item_list.item_count: # Iterate through Cards by number
 			# if current card to add is already in deck
-			var item_text = item_list.get_item_text(item)
+			var item_text: String = item_list.get_item_text(item)
 			if item_text == card_name:
 				card_list[card_name] += 1 # Increments the amount for that Card by 1
 				resource_list[card_data] += 1
@@ -42,14 +42,14 @@ func add_card_to_list(card_data):
 
 
 func save_deck():
-	var new_deck = DeckResource.new()
+	var new_deck: DeckResource = DeckResource.new()
 	new_deck.deck.resize(40)
 	var i : int = 0
 	for card in resource_list: # Iterating through card_list
 		new_deck.deck[i] = card # Save current entry in the new_deck resource at position i
 		i += 1
 
-	var save_result = ResourceSaver.save(new_deck, 'user://resources/' + 'new deck' + '.tres')
+	var save_result: int = ResourceSaver.save(new_deck, 'user://resources/' + 'new deck' + '.tres')
 	if save_result != OK:
 		print(save_result)
 
@@ -64,7 +64,7 @@ func clear_deck():
 func _on_file_dialog_file_selected(path: String) -> void:
 	clear_deck()
 	
-	var deck_file = ResourceLoader.load(path)
+	var deck_file: Resource = ResourceLoader.load(path)
 	#print(str(deck_file.deck[0].card_name))
 	var i : int = 0
 	while i < 40:

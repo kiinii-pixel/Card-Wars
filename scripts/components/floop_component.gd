@@ -1,8 +1,8 @@
 extends Node2D
 
-var selected = false # true after mouse hovered over object
-var flooped = false
-var attacked = false
+var selected: bool = false # true after mouse hovered over object
+var flooped: bool = false
+var attacked: bool = false
 
 func _ready():
 	pass
@@ -25,7 +25,7 @@ func _on_mouse_exited():
 
 # Move and Rotate Card (Move by (Vector2), Roation (0-360), Time (Seconds))
 func rotate_card(move_amount : Vector2, rotation_amount : int, time : float):
-	var tween = create_tween().set_parallel()
+	var tween: Tween = create_tween().set_parallel()
 	tween.tween_property(get_parent(), "rotation_degrees", rotation_amount, time).set_ease(Tween.EASE_OUT)
 	tween.tween_property(get_parent(), "position", position - move_amount, time).set_ease(Tween.EASE_OUT)
 	await tween.finished

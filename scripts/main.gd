@@ -2,7 +2,7 @@ extends Node2D
 
 
 var deck : Array # Empty Array that a deck can be loaded into.
-@onready var card_sound = %card_sound # Will likely be moved somewehre else
+@onready var card_sound: AudioStreamPlayer2D = %card_sound # Will likely be moved somewehre else
 
 
 func _ready():
@@ -34,13 +34,13 @@ func _on_back_pressed():
 
 
 func _on_fight_pressed():
-	var landscapes = %Landscapes # Node that holds 4 Landscapes
-	var enemy_landscapes = %EnemyLandscapes # Node that holds 4 (enemy) landscapes
-	var index = 0 # Used to count current Landscape in For Loop
+	var landscapes: Node2D = %Landscapes # Node that holds 4 Landscapes
+	var enemy_landscapes: Node2D = %EnemyLandscapes # Node that holds 4 (enemy) landscapes
+	var index: int = 0 # Used to count current Landscape in For Loop
 
 	for landscape in landscapes.get_children(): # Goes through all Cards.
 		if !landscape.empty: # If there's a Card on the landscape
-			var creature = landscape.get_child(3) # Get the card / creature
+			var creature: Node = landscape.get_child(3) # Get the card / creature
 			var opposing_creature = null
 			if enemy_landscapes.get_child(index).empty == false:
 				opposing_creature = enemy_landscapes.get_child(index).get_child(3)

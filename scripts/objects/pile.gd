@@ -1,11 +1,11 @@
 class_name Pile extends Node2D
 
 # Returns the Top Card.
-func get_top_card():
+func get_top_card() -> int:
 	return $Cards.get_child_count() - 1
 
 # Returns the Card x Cards from bottom. get_card(0) returns bottom Card.
-func get_card(card : int):
+func get_card(card : int) -> Node:
 	return $Cards.get_child(card)
 
 # Returns all Cards with the given Name.

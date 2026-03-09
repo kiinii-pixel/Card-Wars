@@ -8,14 +8,14 @@ const CARD = preload("res://scenes/objects/card.tscn")
 @export var height_curve: Curve
 @export var rotation_curve: Curve
 
-var hand = self
-var hand_width = 60
-const MAX_HAND_WIDTH = 300 #Maximum hand width
-var hand_height = 10
-const MAX_HAND_HEIGHT = 100 # Maximum hand height
+var hand: Hand = self
+var hand_width: int = 60
+const MAX_HAND_WIDTH: int = 300 #Maximum hand width
+var hand_height: int = 10
+const MAX_HAND_HEIGHT: int = 100 # Maximum hand height
 
 func _ready() -> void:
-	var viewport = get_viewport().get_visible_rect()
+	var viewport: Rect2 = get_viewport().get_visible_rect()
 	
 	position.x = viewport.size.x / 2
 	position.y = (viewport.size.y / 1.1)
@@ -50,7 +50,7 @@ func _on_child_order_changed():
 				hand_height = MAX_HAND_HEIGHT
 
 
-		var destination = hand.global_transform #set destination to hand position
+		var destination: Transform2D = hand.global_transform #set destination to hand position
 		#change the x position of the current card, based on its index
 		destination.origin.x += spread_curve.sample(hand_ratio) * hand_width
 		destination.origin.y -= height_curve.sample(hand_ratio) * hand_height
@@ -59,7 +59,7 @@ func _on_child_order_changed():
 
 func move(object : Object, destination : Vector2, time : float):
 	if is_inside_tree():
-		var tween = create_tween().set_ease(Tween.EASE_IN_OUT).set_trans(Tween.TRANS_BACK)
+		var tween: Tween = create_tween().set_ease(Tween.EASE_IN_OUT).set_trans(Tween.TRANS_BACK)
 		tween.tween_property(object, "global_position", destination, time)
 		await tween.finished
 

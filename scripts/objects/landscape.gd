@@ -1,7 +1,7 @@
 class_name Landscape extends Node2D
 
 var empty : bool = true
-@export var art_variant = 3
+@export var art_variant: int = 3
 enum LANDSCAPES { Blue_Plains, Cornfields, IcyLands, NiceLands,
 SandyLands, Useless_Swamps }
 @export var landscape_type : LANDSCAPES
@@ -13,7 +13,7 @@ func _process(_delta):
 	pass
 
 func load_image():
-	var image_path = "res://assets/images/landscapes/" + str(landscape_type) + str(art_variant) + ".png"
+	var image_path: String = "res://assets/images/landscapes/" + str(landscape_type) + str(art_variant) + ".png"
 	%LandscapeImage.texture = load(image_path)
 
 

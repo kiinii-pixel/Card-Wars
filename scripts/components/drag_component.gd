@@ -5,8 +5,8 @@ var selected : bool = false # true when mouse is hovering over card
 var initial_pos : Vector2 # save the cards initial position
 var allow_drag : bool = true # This is set true when drawn and to false when the card is played
 
-const SCALE_NORMAL = Vector2(1, 1)
-const SCALE_ZOOMED = Vector2(1.2, 1.2)
+const SCALE_NORMAL: Vector2 = Vector2(1, 1)
+const SCALE_ZOOMED: Vector2 = Vector2(1.2, 1.2)
  
 
 func _ready():
@@ -28,16 +28,16 @@ func follow_mouse():
 
 
 func scale_up(time):
-	var tween = create_tween().set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_CIRC)
+	var tween: Tween = create_tween().set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_CIRC)
 	tween.tween_property(get_parent(), "scale", SCALE_ZOOMED, time)
 
 
 func scale_down(time):
-	var tween = create_tween().set_ease(Tween.EASE_IN).set_trans(Tween.TRANS_CIRC)
+	var tween: Tween = create_tween().set_ease(Tween.EASE_IN).set_trans(Tween.TRANS_CIRC)
 	tween.tween_property(get_parent(), "scale", SCALE_NORMAL, time)
 
 
 func move(destination : Vector2, time : float):
-	var tween = create_tween().set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_BACK)
+	var tween: Tween = create_tween().set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_BACK)
 	tween.tween_property(get_parent(), "global_position", destination, time)
 	await tween.finished

@@ -19,7 +19,7 @@ func update(_delta : float):
 		Global.is_dragging = false
 	if in_deck_list:
 		if Input.is_action_just_released("action_key"):
-				var decklist = card.body_ref
+				var decklist: StaticBody2D = card.body_ref
 				decklist.add_card_to_list(card.data)
 				card.global_position = card.drag_component.initial_pos
 				card.scale = Vector2(1, 1)
@@ -43,12 +43,12 @@ func _on_body_entered(body : Node2D):
 
 func create_preview():
 	if card.is_inside and drag_component.allow_drag:
-		var sprite = Sprite2D.new() # create new sprite
+		var sprite: Sprite2D = Sprite2D.new() # create new sprite
 		sprite.set_name("card_preview") # set more readable name in scene tree
 		card.body_ref.add_child(sprite) # add new sprite as child of the entered landscape
-		var sub_viewport = %SubViewport # Used to Render the Card again
-		var img = sub_viewport.get_viewport().get_texture().get_image() # Retrieve the captured Image using get_image().
-		var tex = ImageTexture.create_from_image(img) 		# Convert Image to ImageTexture.
+		var sub_viewport: SubViewport = %SubViewport # Used to Render the Card again
+		var img: Image = sub_viewport.get_viewport().get_texture().get_image() # Retrieve the captured Image using get_image().
+		var tex: ImageTexture = ImageTexture.create_from_image(img) 		# Convert Image to ImageTexture.
 		sprite.texture = tex # Set sprite texture.
 		sprite.scale = Vector2(.25, .25) # scale down
 		sprite.modulate.a = 0.5 # make transparent

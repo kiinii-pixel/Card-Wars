@@ -1,8 +1,8 @@
 class_name Hovering extends State # Mouse is hovering over Card in Hand
 
 
-const SCALE_NORMAL = Vector2(1, 1)
-const SCALE_ZOOMED = Vector2(1.2, 1.2)
+const SCALE_NORMAL: Vector2 = Vector2(1, 1)
+const SCALE_ZOOMED: Vector2 = Vector2(1.2, 1.2)
 
 
 func enter():

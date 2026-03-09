@@ -11,7 +11,7 @@ func _ready():
 	load_deck()
 
 func add_card(card_resource):
-	var card = CARD.instantiate()
+	var card: Node = CARD.instantiate()
 	card.data = card_resource
 	$Cards.add_child(card, true)
 	card.state_mashine.current_state = card.state_mashine.states["in_deck"]
