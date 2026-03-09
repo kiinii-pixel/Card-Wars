@@ -1,17 +1,17 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://clwfb1ipvgnd"]
+[gd_resource type="Resource" script_class="CardResource" format=3 uid="uid://clwfb1ipvgnd"]
 
 [ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_fb5d0"]
 [ext_resource type="Texture2D" uid="uid://ct5331atokkqs" path="res://assets/images/frames/Rainbow_Creature.png" id="1_o83e3"]
+[ext_resource type="Texture2D" uid="uid://bbn3w6lag3bme" path="res://assets/images/cards/art/Useless Swamp/Creature/Wandering Bald Man.png" id="2_6d0qo"]
 
 [resource]
 script = ExtResource("1_fb5d0")
 card_name = "Wandering Bald Man"
-atk = 0
 def = 10
 ability = "Continuous"
-cost = 0
 description = "At the start of your turn, put the top card of your deck into your discard pile."
 landscape = "Rainbow"
 card_type = "Creature"
 id = 488
+image = ExtResource("2_6d0qo")
 frame = ExtResource("1_o83e3")

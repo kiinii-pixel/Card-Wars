@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://blbccv1j1b67t"]
+[gd_resource type="Resource" script_class="CardResource" format=3 uid="uid://blbccv1j1b67t"]
 
 [ext_resource type="Texture2D" uid="uid://tbt4hmdhcclb" path="res://assets/images/frames/SandyLands_Creature.png" id="1_5h2s7"]
 [ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_bbe0c"]
+[ext_resource type="Texture2D" uid="uid://bc6teifl6d6qi" path="res://assets/images/cards/art/Rainbow/Creature/Green Snakey.png" id="2_2dm3v"]
 
 [resource]
 script = ExtResource("1_bbe0c")
@@ -14,4 +15,5 @@ description = "When Green Snakey leaves play, deal 1 Damage to target Creature i
 landscape = "SandyLands"
 card_type = "Creature"
 id = 207
+image = ExtResource("2_2dm3v")
 frame = ExtResource("1_5h2s7")

@@ -1,12 +1,12 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://b2b5y25oggo3h"]
+[gd_resource type="Resource" script_class="CardResource" format=3 uid="uid://b2b5y25oggo3h"]
 
 [ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_frhry"]
 [ext_resource type="Texture2D" uid="uid://tbt4hmdhcclb" path="res://assets/images/frames/SandyLands_Creature.png" id="1_m6xo6"]
+[ext_resource type="Texture2D" uid="uid://bx180d5x45w32" path="res://assets/images/cards/art/Sandy Lands/Creature/Green Cactiball.png" id="2_y2elr"]
 
 [resource]
 script = ExtResource("1_frhry")
 card_name = "Green Cactiball"
-atk = 0
 def = 4
 ability = "Continuous"
 cost = 1
@@ -14,4 +14,5 @@ description = "+2 ATK for each Green Cactiball you control."
 landscape = "SandyLands"
 card_type = "Creature"
 id = 201
+image = ExtResource("2_y2elr")
 frame = ExtResource("1_m6xo6")

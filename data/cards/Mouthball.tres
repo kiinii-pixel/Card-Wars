@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://c6m8wwysgb2yq"]
+[gd_resource type="Resource" script_class="CardResource" format=3 uid="uid://c6m8wwysgb2yq"]
 
 [ext_resource type="Texture2D" uid="uid://d2o5o4cm304mt" path="res://assets/images/frames/Useless Swamp_Creature.png" id="1_hht54"]
 [ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_rni3u"]
+[ext_resource type="Texture2D" uid="uid://cwk1jkmbp2wxn" path="res://assets/images/cards/art/Rainbow/Creature/Mouthball.png" id="2_6hdve"]
 
 [resource]
 script = ExtResource("1_rni3u")
@@ -14,4 +15,5 @@ description = "+2 DEF for every 5 cards in your discard pile."
 landscape = "Useless Swamp"
 card_type = "Creature"
 id = 294
+image = ExtResource("2_6hdve")
 frame = ExtResource("1_hht54")

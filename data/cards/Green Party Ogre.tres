@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://dncwwdeclv2j2"]
+[gd_resource type="Resource" script_class="CardResource" format=3 uid="uid://dncwwdeclv2j2"]
 
 [ext_resource type="Texture2D" uid="uid://tbt4hmdhcclb" path="res://assets/images/frames/SandyLands_Creature.png" id="1_1thg3"]
 [ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_bkn2a"]
+[ext_resource type="Texture2D" uid="uid://0p6wrxo24dn6" path="res://assets/images/cards/art/Sandy Lands/Creature/Green Party Ogre.png" id="2_rqna2"]
 
 [resource]
 script = ExtResource("1_bkn2a")
@@ -14,4 +15,5 @@ description = "When a Creature you control leaves play, heal 1 Damage from Green
 landscape = "SandyLands"
 card_type = "Creature"
 id = 206
+image = ExtResource("2_rqna2")
 frame = ExtResource("1_1thg3")
