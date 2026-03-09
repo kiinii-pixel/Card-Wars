@@ -59,6 +59,8 @@ func _on_child_order_changed():
 		if get_child_count() > 2:
 			var max_rotation: float = 0.2
 			target_rotation = rotation_curve.sample(hand_ratio) * max_rotation
+		card.hand_rotation = target_rotation # Store the hand rotation in the card for later use when dragging	
+		
 		move(card, destination.origin, target_rotation, 0.3)
 
 func move(object : Object, destination : Vector2, target_rotation: float, time : float):

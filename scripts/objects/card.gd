@@ -5,6 +5,7 @@ class_name Card extends Control
 
 var body_ref : StaticBody2D # Reference to the Landscape you're hovering over.
 var is_inside: bool = false # true if card is inside a landscape
+var hand_rotation: float = 0.0
 @onready var drag_component : Object = $drag_component # drag component node
 @onready var floop_component : Object = $floop_component
 @onready var state_mashine: Node = $state_mashine

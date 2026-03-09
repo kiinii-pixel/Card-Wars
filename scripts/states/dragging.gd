@@ -15,6 +15,7 @@ func update(_delta : float):
 		drag_component.move(drag_component.initial_pos, 0.3) # go back
 		drag_component.body_entered.disconnect(_on_body_entered)
 		card.position += Vector2(0, 50)
+		card.rotation = card.hand_rotation
 		Transitioned.emit(self, "in_hand")
 		Global.is_dragging = false
 	if in_deck_list:

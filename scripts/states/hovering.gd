@@ -12,6 +12,7 @@ func enter():
 	drag_component.selected = true
 	card.z_index = 5
 	drag_component.scale_up(0.2)
+	card.rotation = 0
 
 
 func update(_delta : float):
@@ -20,4 +21,5 @@ func update(_delta : float):
 
 func _on_drag_component_mouse_exited() -> void:
 	if card.state_mashine.current_state is Hovering:
+		card.rotation = card.hand_rotation
 		Transitioned.emit(self, "in_hand")
