@@ -5,11 +5,11 @@
 [ext_resource type="Script" uid="uid://bkyh2ekou5rld" path="res://data/card_resource.gd" id="1_cwaex"]
 [ext_resource type="Texture2D" uid="uid://b3xeo685h6h7v" path="res://assets/images/cards/art/Rainbow/Creature/The Pig.png" id="2_27gpo"]
 [ext_resource type="Script" uid="uid://c21qau1iycqg2" path="res://scripts/effects/effect.gd" id="2_rnnix"]
-[ext_resource type="Script" uid="uid://ci4rrwurxe1bc" path="res://scripts/effects/damage_effect.gd" id="3_rnnix"]
+[ext_resource type="Script" uid="uid://cmlolj3ox2ich" path="res://scripts/effects/flip_landscape_effect.gd" id="3_rnnix"]
 
 [sub_resource type="Resource" id="Resource_lmtjd"]
 script = ExtResource("3_rnnix")
-metadata/_custom_type_script = "uid://ci4rrwurxe1bc"
+metadata/_custom_type_script = "uid://cmlolj3ox2ich"
 
 [sub_resource type="Resource" id="Resource_ylkbh"]
 script = ExtResource("1_8qs8k")
