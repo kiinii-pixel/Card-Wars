@@ -9,7 +9,7 @@ var is_inside: bool = false # true if card is inside a landscape
 @onready var floop_component : Object = $floop_component
 @onready var state_mashine: Node = $state_mashine
 
-var atk : int # dynamic values
+var atk : int
 var def : int
 var cost : int
 
@@ -119,3 +119,30 @@ func trigger_abilities(trigger_type: CardAbility.Trigger):
 		if ability.trigger == trigger_type:
 			for effect in ability.effects:
 				effect.execute(self)
+
+# Returns the landscape directly opposite to the one this card is on
+func get_opposing_landscape() -> Landscape:
+	var my_landscape = get_landscape()
+		
+	# Hierarchy: Zones -> [Landscapes or EnemyLandscapes] -> Landscape
+	var my_lane = my_landscape.get_parent() 
+	var zones = my_lane.get_parent()
+	
+	# Determine the opponent's group name
+	var opponent_group_name = "EnemyLandscapes" if my_lane.name == "Landscapes" else "Landscapes"
+	var opponent_group = zones.get_node(opponent_group_name)
+	
+	# Return the landscape at the same index (0-3)
+	return opponent_group.get_child(my_landscape.get_index())
+
+func get_landscape() -> Landscape:
+	var my_landscape = get_parent()
+	if not my_landscape is Landscape:
+		return null
+	return my_landscape
+
+func get_hand() -> Hand:
+	var my_hand = get_parent()
+	if not my_hand is Hand:
+		return null
+	return my_hand
