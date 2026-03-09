@@ -14,8 +14,8 @@ func update(_delta : float):
 	elif Input.is_action_just_released("action_key"):
 		drag_component.move(drag_component.initial_pos, 0.3) # go back
 		drag_component.body_entered.disconnect(_on_body_entered)
+		card.position += Vector2(0, 50)
 		Transitioned.emit(self, "in_hand")
-		card.get_node("SubViewportContainer").position += Vector2(0, 50)
 		Global.is_dragging = false
 	if in_deck_list:
 		if Input.is_action_just_released("action_key"):

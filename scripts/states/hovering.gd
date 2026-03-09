@@ -6,14 +6,12 @@ const SCALE_ZOOMED: Vector2 = Vector2(1.2, 1.2)
 
 
 func enter():
-	print(card.to_string() + "transitioned to hovering")
 	for child in card.get_parent().get_children():
 		if child != card && child.state_mashine.current_state is Hovering:
 			child.state_mashine.current_state.Transitioned.emit(child.state_mashine.current_state, "in_hand")
 	drag_component.selected = true
 	card.z_index = 5
 	drag_component.scale_up(0.2)
-	card.position += Vector2(0, -50)
 
 
 func update(_delta : float):
