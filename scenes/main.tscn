@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://owug2m35obl1"]
+[gd_scene format=3 uid="uid://owug2m35obl1"]
 
 [ext_resource type="Script" uid="uid://bbn0tkh12j4qf" path="res://scripts/main.gd" id="1_mh3fo"]
 [ext_resource type="PackedScene" uid="uid://b5oih1txnoxfo" path="res://scenes/objects/landscape.tscn" id="1_r6f6m"]
@@ -20,18 +20,16 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sr0rc"]
 size = Vector2(262, 262)
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o5jgd"]
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_smrcd"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wqxbo"]
 texture = ExtResource("10_63nk0")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ejnwn"]
 texture = ExtResource("9_0eq6p")
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wqxbo"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_smrcd"]
 texture = ExtResource("10_63nk0")
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_usg6i"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o5jgd"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qawrv"]
 content_margin_left = 0.0
@@ -49,23 +47,25 @@ axis_stretch_vertical = 1
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_shqf4"]
 texture = ExtResource("12_hu3hp")
 
-[node name="Game" type="Node2D"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_usg6i"]
+
+[node name="Game" type="Node2D" unique_id=1130460068]
 script = ExtResource("1_mh3fo")
 
-[node name="Interface" parent="." instance=ExtResource("3_82cvq")]
+[node name="Interface" parent="." unique_id=1652033313 instance=ExtResource("3_82cvq")]
 layer = -1
 
-[node name="Hand" parent="." node_paths=PackedStringArray("deck") instance=ExtResource("4_v11k8")]
+[node name="Hand" parent="." unique_id=1139757557 node_paths=PackedStringArray("deck") instance=ExtResource("4_v11k8")]
 unique_name_in_owner = true
 position = Vector2(965, 954)
 deck = NodePath("../Deck")
 
-[node name="Godot Icon" type="Node2D" parent="."]
+[node name="Godot Icon" type="Node2D" parent="." unique_id=1044904557]
 position = Vector2(251, 422)
 scale = Vector2(0.25, 0.25)
 metadata/_edit_group_ = true
 
-[node name="Godot Icon" type="TextureRect" parent="Godot Icon"]
+[node name="Godot Icon" type="TextureRect" parent="Godot Icon" unique_id=1290111453]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -83,18 +83,18 @@ size_flags_vertical = 4
 texture = ExtResource("7_ufmem")
 expand_mode = 1
 
-[node name="drag_component" parent="Godot Icon" instance=ExtResource("8_hg626")]
+[node name="drag_component" parent="Godot Icon" unique_id=1802110914 instance=ExtResource("8_hg626")]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Godot Icon/drag_component"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Godot Icon/drag_component" unique_id=950466435]
 shape = SubResource("RectangleShape2D_sr0rc")
 
-[node name="Buttons" type="Control" parent="."]
+[node name="Buttons" type="Control" parent="." unique_id=317143772]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="Draw Card" type="Button" parent="Buttons"]
+[node name="Draw Card" type="Button" parent="Buttons" unique_id=828175780]
 custom_minimum_size = Vector2(111, 114)
 layout_mode = 1
 anchors_preset = -1
@@ -107,15 +107,15 @@ offset_right = -1.52588e-05
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(66, 68)
-theme_override_styles/focus = SubResource("StyleBoxEmpty_o5jgd")
-theme_override_styles/hover = SubResource("StyleBoxTexture_smrcd")
-theme_override_styles/pressed = SubResource("StyleBoxTexture_ejnwn")
 theme_override_styles/normal = SubResource("StyleBoxTexture_wqxbo")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_ejnwn")
+theme_override_styles/hover = SubResource("StyleBoxTexture_smrcd")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_o5jgd")
 vertical_icon_alignment = 0
 expand_icon = true
 metadata/_edit_use_anchors_ = true
 
-[node name="Reset" type="Button" parent="Buttons"]
+[node name="Reset" type="Button" parent="Buttons" unique_id=1442963600]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 2.55
@@ -132,7 +132,7 @@ theme_override_font_sizes/font_size = 26
 text = "Reset"
 icon_alignment = 1
 
-[node name="Back" type="Button" parent="Buttons"]
+[node name="Back" type="Button" parent="Buttons" unique_id=1131220518]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 2.55
@@ -151,7 +151,7 @@ theme_override_font_sizes/font_size = 26
 text = "Back"
 icon_alignment = 1
 
-[node name="Fight" type="Button" parent="Buttons"]
+[node name="Fight" type="Button" parent="Buttons" unique_id=1864102632]
 layout_mode = 0
 offset_left = 1619.0
 offset_top = 429.0
@@ -160,73 +160,73 @@ offset_bottom = 977.0
 scale = Vector2(0.15, 0.15)
 theme_override_fonts/font = ExtResource("12_kugc0")
 theme_override_font_sizes/font_size = 191
-theme_override_styles/focus = SubResource("StyleBoxEmpty_usg6i")
-theme_override_styles/hover = SubResource("StyleBoxTexture_qawrv")
-theme_override_styles/pressed = SubResource("StyleBoxTexture_shqf4")
 theme_override_styles/normal = SubResource("StyleBoxTexture_qawrv")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_shqf4")
+theme_override_styles/hover = SubResource("StyleBoxTexture_qawrv")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_usg6i")
 text = "Fight!"
 
-[node name="Deck" parent="." instance=ExtResource("9_6xswo")]
+[node name="Deck" parent="." unique_id=200100527 instance=ExtResource("9_6xswo")]
 unique_name_in_owner = true
 position = Vector2(1710, 937)
 
-[node name="Discard" parent="." instance=ExtResource("15_b00fb")]
+[node name="Discard" parent="." unique_id=1295162013 instance=ExtResource("15_b00fb")]
 position = Vector2(1716, 673)
 
-[node name="Zones" type="Node2D" parent="."]
+[node name="Zones" type="Node2D" parent="." unique_id=106003181]
 
-[node name="Landscapes" type="Node2D" parent="Zones"]
+[node name="Landscapes" type="Node2D" parent="Zones" unique_id=24963567]
 unique_name_in_owner = true
 position = Vector2(995, 543)
 scale = Vector2(0.75, 0.75)
 metadata/_edit_group_ = true
 
-[node name="Landscape" parent="Zones/Landscapes" instance=ExtResource("1_r6f6m")]
+[node name="Landscape" parent="Zones/Landscapes" unique_id=431453039 instance=ExtResource("1_r6f6m")]
 position = Vector2(-393, 0)
 art_variant = 2
 
-[node name="Landscape2" parent="Zones/Landscapes" instance=ExtResource("1_r6f6m")]
+[node name="Landscape2" parent="Zones/Landscapes" unique_id=1981038460 instance=ExtResource("1_r6f6m")]
 position = Vector2(-131, 0)
 art_variant = 1
 
-[node name="Landscape3" parent="Zones/Landscapes" instance=ExtResource("1_r6f6m")]
+[node name="Landscape3" parent="Zones/Landscapes" unique_id=1312464390 instance=ExtResource("1_r6f6m")]
 position = Vector2(131, 0)
 
-[node name="Landscape4" parent="Zones/Landscapes" instance=ExtResource("1_r6f6m")]
+[node name="Landscape4" parent="Zones/Landscapes" unique_id=1905762056 instance=ExtResource("1_r6f6m")]
 position = Vector2(393, 0)
 art_variant = 4
 
-[node name="EnemyLandscapes" type="Node2D" parent="Zones"]
+[node name="EnemyLandscapes" type="Node2D" parent="Zones" unique_id=734383659]
 unique_name_in_owner = true
 position = Vector2(995, 222)
 scale = Vector2(0.75, 0.75)
 metadata/_edit_group_ = true
 
-[node name="Landscape" parent="Zones/EnemyLandscapes" instance=ExtResource("1_r6f6m")]
+[node name="Landscape" parent="Zones/EnemyLandscapes" unique_id=799469179 instance=ExtResource("1_r6f6m")]
 position = Vector2(-393, -40)
 art_variant = 1
 landscape_type = 1
 
-[node name="Landscape2" parent="Zones/EnemyLandscapes" instance=ExtResource("1_r6f6m")]
+[node name="Landscape2" parent="Zones/EnemyLandscapes" unique_id=667052746 instance=ExtResource("1_r6f6m")]
 position = Vector2(-131, -40)
 art_variant = 2
 landscape_type = 1
 
-[node name="Landscape3" parent="Zones/EnemyLandscapes" instance=ExtResource("1_r6f6m")]
+[node name="Landscape3" parent="Zones/EnemyLandscapes" unique_id=685862313 instance=ExtResource("1_r6f6m")]
 position = Vector2(131, -40)
 landscape_type = 1
 
-[node name="Landscape4" parent="Zones/EnemyLandscapes" instance=ExtResource("1_r6f6m")]
+[node name="Landscape4" parent="Zones/EnemyLandscapes" unique_id=1999157285 instance=ExtResource("1_r6f6m")]
 position = Vector2(393, -40)
 art_variant = 4
 landscape_type = 1
 
-[node name="card_sound" type="AudioStreamPlayer2D" parent="."]
+[node name="card_sound" type="AudioStreamPlayer2D" parent="." unique_id=390522666]
 unique_name_in_owner = true
 stream = ExtResource("12_eiseh")
 bus = &"Sound Effects"
 
-[node name="background_music" type="AudioStreamPlayer2D" parent="."]
+[node name="background_music" type="AudioStreamPlayer2D" parent="." unique_id=479192720]
 unique_name_in_owner = true
 stream = ExtResource("16_n7sm1")
 autoplay = true
