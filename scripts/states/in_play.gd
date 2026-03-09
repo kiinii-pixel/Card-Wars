@@ -15,6 +15,7 @@ func enter():
 	await drag_component.move(card.body_ref.global_position, 0.2)
 	card.position = Vector2(0, 0)
 	card.z_index = 4
+	card.trigger_abilities(CardAbility.Trigger.ENTER_PLAY)
 
 func update(_delta : float):
 	if card.get_owner() is Pile:

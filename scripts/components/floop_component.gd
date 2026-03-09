@@ -13,6 +13,7 @@ func _process(_delta):
 			#get_parent().rotation_degrees = 90
 			rotate_card(Vector2(0, 100), 90, 0.25)
 			flooped = true
+			get_parent().trigger_abilities(CardAbility.Trigger.FLOOP)
 		elif Input.is_action_just_pressed("attack"):
 			rotate_card(Vector2(0, -100), -90, 0.25)
 			attacked = true

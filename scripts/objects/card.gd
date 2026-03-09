@@ -113,3 +113,9 @@ func flip_up():
 # Flip Card face down
 func flip_down():
 	get_node("%AnimationPlayer").play("flip_down")
+
+func trigger_abilities(trigger_type: CardAbility.Trigger):
+	for ability in data.abilities:
+		if ability.trigger == trigger_type:
+			for effect in ability.effects:
+				effect.execute(self)

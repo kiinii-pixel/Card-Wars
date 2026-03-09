@@ -4,11 +4,11 @@ class_name CardResource extends Resource
 @export var atk : int
 @export var def : int
 @export var ability : String
+@export var abilities: Array[CardAbility]
 @export var cost : int
 @export var description : String
 @export var landscape : String
 @export var card_type : String
-#@export var image : String
 @export var id : int
 @export var image : CompressedTexture2D
 @export var frame : CompressedTexture2D
