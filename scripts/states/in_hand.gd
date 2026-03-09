@@ -3,9 +3,11 @@ class_name InHand extends State # Card is in Hand
 var clicked : bool
 
 func enter():
+	print(card.to_string() + "transitioned to in_hand")
 	card.drag_component.allow_drag = true
 	card.drag_component.selected = false
 	drag_component.scale_down(0.2)
+	card.position += Vector2(0, 50)
 	card.z_index = 4
 	drag_component.mouse_entered.connect(_on_drag_component_mouse_entered)
 	drag_component.mouse_exited.connect(_on_drag_component_mouse_exited)
@@ -18,7 +20,7 @@ func update(_delta : float):
 			drag_component.mouse_entered.disconnect(_on_drag_component_mouse_entered)
 			drag_component.mouse_exited.disconnect(_on_drag_component_mouse_exited)
 			Transitioned.emit(self, "hovering")
- 
+
 
 func _on_drag_component_mouse_entered() -> void:
 	if not Input.is_action_pressed("action_key"):
