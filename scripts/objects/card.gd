@@ -4,10 +4,10 @@ class_name Card extends Control
 @export var data : Resource # Contains a Card Resource with its values
 
 var body_ref : StaticBody2D # Reference to the Landscape you're hovering over.
-var is_inside = false # true if card is inside a landscape
+var is_inside: bool = false # true if card is inside a landscape
 @onready var drag_component : Object = $drag_component # drag component node
 @onready var floop_component : Object = $floop_component
-@onready var state_mashine = $state_mashine
+@onready var state_mashine: Node = $state_mashine
 
 var atk : int # dynamic values
 var def : int
@@ -34,11 +34,11 @@ func load_card():
 	%CardFrame.texture = data.frame
 	# Adjust name size
 	var max_characters : int = 12
-	var font_size = %CardName.get_theme_font_size("font_size")
+	var font_size: int = %CardName.get_theme_font_size("font_size")
 	while data.card_name.length() > max_characters: # if name is too long, scale it down
 				%CardName.add_theme_font_size_override("font_size", font_size)
 				max_characters += 1
-				font_size -= 1.75
+				font_size -= 2
 
 # Load Card Image
 func load_image():
@@ -47,15 +47,16 @@ func load_image():
 		return data.image
 	else:
 		print("No Image Texture found")
+		%CardImage.texture = null
+		return null
 
 # Reload Values (Atk, Def, Cost) and change color.
 func load_values():
 	%CostLabel.text = String.num_int64(cost)
 	if data.card_type == "Creature":
-		var atk_label = %AttackLabel
-		var def_label = %DefenseLabel
+		var atk_label: Label = %AttackLabel
+		var def_label: Label = %DefenseLabel
 
-		#region setting/adjusting the atk_label's text
 		if atk_label.text != String.num_int64(atk): # Set atk_label to atk
 			if String.num_int64(atk).length() > 1: # If atk has 2 digits
 				atk_label.add_theme_font_size_override("font_size", 58)
@@ -66,9 +67,7 @@ func load_values():
 				atk_label.add_theme_color_override("font_color", Color(1, 0, 0))
 			elif int(atk_label.text) > data.atk: # If attack is higher than default
 				atk_label.add_theme_color_override("font_color", Color(0, 1, 0))
-		#endregion
 
-		#region setting/adjusting the def_label's text
 		if def_label.text != String.num_int64(def):
 			if String.num_int64(def).length() > 1:
 				def_label.add_theme_font_size_override("font_size", 58)
@@ -79,7 +78,6 @@ func load_values():
 				def_label.add_theme_color_override("font_color", Color(1, 0, 0))
 			elif int(def_label.text) > data.def:
 				def_label.add_theme_color_override("font_color", Color(0, 1, 0))
-		#endregion
 
 	else:
 		%AttackLabel.text = ""
