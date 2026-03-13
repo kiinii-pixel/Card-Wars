@@ -32,10 +32,10 @@ Label/colors/font_color = Color(0.129412, 0.141176, 0.160784, 1)
 Label/font_sizes/font_size = 78
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4b713"]
-size = Vector2(92, 222)
+size = Vector2(171, 243)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_os2xy"]
-size = Vector2(92, 222)
+size = Vector2(173, 242)
 
 [sub_resource type="Animation" id="Animation_0kbrg"]
 length = 0.001
@@ -317,6 +317,7 @@ clip_text = true
 [node name="drag_component" parent="." unique_id=1428205689 instance=ExtResource("6_457fh")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="drag_component" unique_id=427651339]
+position = Vector2(-0.5, -0.5)
 shape = SubResource("RectangleShape2D_4b713")
 
 [node name="card_sound" type="AudioStreamPlayer2D" parent="." unique_id=1362466032]
@@ -325,6 +326,7 @@ stream = ExtResource("8_iocnt")
 [node name="floop_component" parent="." unique_id=425266844 instance=ExtResource("9_1g6dh")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="floop_component" unique_id=67648499]
+position = Vector2(-0.5, -1)
 shape = SubResource("RectangleShape2D_os2xy")
 
 [node name="state_mashine" type="Node" parent="." unique_id=76925116 node_paths=PackedStringArray("initial_state")]

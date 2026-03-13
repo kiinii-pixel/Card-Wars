@@ -3,6 +3,8 @@ class_name Dragging extends State # Dragging a Card
 var in_deck_list : bool
 
 func enter():
+	card.scale_down_image(0.2)
+	card.move_down_image()
 	Global.is_dragging = true
 	if not drag_component.body_entered.is_connected(_on_body_entered):
 		drag_component.body_entered.connect(_on_body_entered)

@@ -147,3 +147,19 @@ func get_hand() -> Hand:
 	if not my_hand is Hand:
 		return null
 	return my_hand
+
+func scale_up_image(time):
+	var tween: Tween = create_tween().set_parallel(true).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_CUBIC)
+	tween.tween_property($SubViewportContainer, "scale", Vector2(0.5, 0.5), time)
+
+func scale_down_image(time):
+	var tween: Tween = create_tween().set_parallel(true).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_CUBIC)
+	tween.tween_property($SubViewportContainer, "scale", Vector2(0.25, 0.25), time)
+
+func move_up_image(distance: float):
+	var tween: Tween = create_tween().set_parallel(true).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_CUBIC)
+	tween.tween_property($SubViewportContainer, "position", Vector2(-346.75, -490 - distance), 0.2)
+
+func move_down_image():
+	var tween: Tween = create_tween().set_parallel(true).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_CUBIC)
+	tween.tween_property($SubViewportContainer, "position", Vector2(-346.75, -490), 0.2)
