@@ -5,8 +5,6 @@
 [ext_resource type="PackedScene" uid="uid://clyo1ca2sglx8" path="res://scenes/ui/interface.tscn" id="3_82cvq"]
 [ext_resource type="Theme" uid="uid://dmwrp6aey18st" path="res://assets/themes/purple_button.tres" id="3_bno0n"]
 [ext_resource type="PackedScene" uid="uid://cqkl8l2uevwon" path="res://scenes/objects/hand.tscn" id="4_v11k8"]
-[ext_resource type="Texture2D" uid="uid://be6u36aq3sqnv" path="res://icon.svg" id="7_ufmem"]
-[ext_resource type="PackedScene" uid="uid://qga2y5wh6ftv" path="res://scenes/components/drag_component.tscn" id="8_hg626"]
 [ext_resource type="Texture2D" uid="uid://b7rsc22jon6mb" path="res://assets/images/ui/draw_card_border_pressed.png" id="9_0eq6p"]
 [ext_resource type="PackedScene" uid="uid://df3a2sawj0htj" path="res://scenes/objects/deck.tscn" id="9_6xswo"]
 [ext_resource type="Texture2D" uid="uid://v2dwr8jfb1c6" path="res://assets/images/ui/draw_card_border.png" id="10_63nk0"]
@@ -16,9 +14,6 @@
 [ext_resource type="Texture2D" uid="uid://dke7w7scdxpnl" path="res://assets/images/ui/battle_button.png" id="12_obfg2"]
 [ext_resource type="PackedScene" uid="uid://ndctswb5qjjp" path="res://scenes/objects/discard.tscn" id="15_b00fb"]
 [ext_resource type="AudioStream" uid="uid://do7v1ykj6rtdq" path="res://assets/sounds/music/Vs Finn - Adventure Time Card Wars Soundtrack.mp3" id="16_n7sm1"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_sr0rc"]
-size = Vector2(262, 262)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wqxbo"]
 texture = ExtResource("10_63nk0")
@@ -60,34 +55,6 @@ unique_name_in_owner = true
 position = Vector2(965, 954)
 deck = NodePath("../Deck")
 
-[node name="Godot Icon" type="Node2D" parent="." unique_id=1044904557]
-position = Vector2(251, 422)
-scale = Vector2(0.25, 0.25)
-metadata/_edit_group_ = true
-
-[node name="Godot Icon" type="TextureRect" parent="Godot Icon" unique_id=1290111453]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -150.0
-offset_top = -150.0
-offset_right = 150.0
-offset_bottom = 150.0
-grow_horizontal = 2
-grow_vertical = 2
-pivot_offset = Vector2(44, 44)
-size_flags_horizontal = 4
-size_flags_vertical = 4
-texture = ExtResource("7_ufmem")
-expand_mode = 1
-
-[node name="drag_component" parent="Godot Icon" unique_id=1802110914 instance=ExtResource("8_hg626")]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Godot Icon/drag_component" unique_id=950466435]
-shape = SubResource("RectangleShape2D_sr0rc")
-
 [node name="Buttons" type="Control" parent="." unique_id=317143772]
 layout_mode = 3
 anchors_preset = 0
@@ -98,10 +65,10 @@ offset_bottom = 40.0
 custom_minimum_size = Vector2(111, 114)
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 2.55
-anchor_top = 17.487
-anchor_right = 5.85
-anchor_bottom = 20.875
+anchor_left = 1.425
+anchor_top = 18.286999
+anchor_right = 5.0
+anchor_bottom = 21.675
 offset_top = -0.47998
 offset_right = -1.52588e-05
 grow_horizontal = 2
@@ -118,12 +85,14 @@ metadata/_edit_use_anchors_ = true
 [node name="Reset" type="Button" parent="Buttons" unique_id=1442963600]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 2.55
-anchor_top = 22.05
-anchor_right = 6.075
-anchor_bottom = 25.325
-offset_top = -6.10352e-05
-offset_right = -1.52588e-05
+anchor_left = 1.35
+anchor_top = 22.5
+anchor_right = 4.875
+anchor_bottom = 25.775
+offset_left = 2.0
+offset_top = 1.0
+offset_right = 1.9999847
+offset_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(71, 66)
@@ -131,18 +100,15 @@ theme = ExtResource("3_bno0n")
 theme_override_font_sizes/font_size = 26
 text = "Reset"
 icon_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="Back" type="Button" parent="Buttons" unique_id=1131220518]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 2.55
-anchor_top = 22.05
-anchor_right = 6.075
-anchor_bottom = 25.325
-offset_left = -68.0
-offset_top = -846.0
-offset_right = -68.0
-offset_bottom = -846.0
+anchor_left = 0.95
+anchor_top = 0.575
+anchor_right = 4.55
+anchor_bottom = 3.875
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(71, 66)
@@ -150,6 +116,7 @@ theme = ExtResource("3_bno0n")
 theme_override_font_sizes/font_size = 26
 text = "Back"
 icon_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="Fight" type="Button" parent="Buttons" unique_id=1864102632]
 layout_mode = 0
@@ -168,17 +135,17 @@ text = "Fight!"
 
 [node name="Deck" parent="." unique_id=200100527 instance=ExtResource("9_6xswo")]
 unique_name_in_owner = true
-position = Vector2(1710, 937)
+position = Vector2(1793, 905)
 
 [node name="Discard" parent="." unique_id=1295162013 instance=ExtResource("15_b00fb")]
-position = Vector2(1716, 673)
+position = Vector2(1592, 904)
 
 [node name="Zones" type="Node2D" parent="." unique_id=106003181]
 
 [node name="Landscapes" type="Node2D" parent="Zones" unique_id=24963567]
 unique_name_in_owner = true
-position = Vector2(995, 543)
-scale = Vector2(0.75, 0.75)
+position = Vector2(995, 556)
+scale = Vector2(0.8, 0.8)
 metadata/_edit_group_ = true
 
 [node name="Landscape" parent="Zones/Landscapes" unique_id=431453039 instance=ExtResource("1_r6f6m")]
@@ -198,8 +165,8 @@ art_variant = 4
 
 [node name="EnemyLandscapes" type="Node2D" parent="Zones" unique_id=734383659]
 unique_name_in_owner = true
-position = Vector2(995, 222)
-scale = Vector2(0.75, 0.75)
+position = Vector2(995, 285)
+scale = Vector2(0.8, 0.8)
 metadata/_edit_group_ = true
 
 [node name="Landscape" parent="Zones/EnemyLandscapes" unique_id=799469179 instance=ExtResource("1_r6f6m")]
