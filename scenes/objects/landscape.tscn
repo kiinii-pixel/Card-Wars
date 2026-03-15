@@ -39,9 +39,4 @@ centered = false
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=558910729]
 shape = SubResource("RectangleShape2D_1lp4w")
 
-[node name="Area2D" type="Area2D" parent="." unique_id=1551564282]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1796256187]
-shape = SubResource("RectangleShape2D_1lp4w")
-
 [connection signal="child_order_changed" from="." to="." method="_on_child_order_changed"]

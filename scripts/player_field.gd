@@ -7,12 +7,12 @@ var deck : Array # Empty Array that a deck can be loaded into.
 
 func _ready():
 	deck = load("res://data/decks/finn.tres").deck # Load Finn's Deck
-	%Hand.draw_multiple(5) # Draw 5 Cards to hand
+	$Hand.draw_multiple(5) # Draw 5 Cards to hand
 
 
 # When the Draw Card Button is pressed
 func _on_draw_card_pressed():
-	await %Hand.draw() # Draw a Card
+	await $Hand.draw() # Draw a Card
 	card_sound.play() # Play Card Sound
 
 

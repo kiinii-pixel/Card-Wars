@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://xfsj7ecrx0bp"]
+
+[ext_resource type="Script" uid="uid://brian5k6hharh" path="res://scripts/objects/building_zone.gd" id="1_imcgj"]
+[ext_resource type="Texture2D" uid="uid://dh1i8bho0oef6" path="res://assets/images/other/card_border.png" id="2_fk3nv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_imcgj"]
+size = Vector2(196, 264)
+
+[node name="BuildingZone" type="StaticBody2D" unique_id=319293037 groups=["droppable"]]
+script = ExtResource("1_imcgj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=736917358]
+shape = SubResource("RectangleShape2D_imcgj")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1338362871]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_fk3nv")

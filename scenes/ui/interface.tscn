@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://clyo1ca2sglx8"]
+[gd_scene format=3 uid="uid://clyo1ca2sglx8"]
 
 [ext_resource type="Texture2D" uid="uid://bjsk5ehgiwas3" path="res://assets/images/other/background.jpg" id="1_xwtwo"]
 [ext_resource type="FontFile" uid="uid://ca0g1l1k6v1sf" path="res://assets/fonts/Pendlefont Heavy.TTF" id="2_6mtkl"]
@@ -6,18 +6,18 @@
 [ext_resource type="Script" uid="uid://bhifsa0tbe5ku" path="res://scripts/quit.gd" id="3_m43to"]
 [ext_resource type="Texture2D" uid="uid://cvbxwtbtu0hvg" path="res://assets/images/ui/X2.png" id="3_ok1t5"]
 
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_t2uws"]
+texture = ExtResource("3_ok1t5")
+
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_52cgp"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rur0m"]
 texture = ExtResource("3_1lmhm")
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_t2uws"]
-texture = ExtResource("3_ok1t5")
-
-[node name="Interface" type="CanvasLayer"]
+[node name="Interface" type="CanvasLayer" unique_id=1284854115]
 metadata/_edit_use_anchors_ = true
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1154598191]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -26,7 +26,7 @@ grow_vertical = 2
 texture = ExtResource("1_xwtwo")
 metadata/_edit_use_anchors_ = true
 
-[node name="Label" type="Label" parent="."]
+[node name="Label" type="Label" parent="." unique_id=1326213987]
 visible = false
 offset_right = 200.0
 offset_bottom = 144.0
@@ -34,7 +34,7 @@ theme_override_fonts/font = ExtResource("2_6mtkl")
 theme_override_font_sizes/font_size = 80
 text = " HP: "
 
-[node name="Quit" type="Button" parent="."]
+[node name="Quit" type="Button" parent="." unique_id=49425340]
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
@@ -49,9 +49,9 @@ theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/outline_size = 25
 theme_override_fonts/font = ExtResource("2_6mtkl")
 theme_override_font_sizes/font_size = 80
-theme_override_styles/focus = SubResource("StyleBoxEmpty_52cgp")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_52cgp")
-theme_override_styles/hover = SubResource("StyleBoxTexture_rur0m")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_52cgp")
 theme_override_styles/normal = SubResource("StyleBoxTexture_t2uws")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_52cgp")
+theme_override_styles/hover = SubResource("StyleBoxTexture_rur0m")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_52cgp")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_52cgp")
 script = ExtResource("3_m43to")

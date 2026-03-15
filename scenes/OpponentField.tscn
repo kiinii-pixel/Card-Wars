@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://bngdsjjhhigd4"]
+
+[ext_resource type="PackedScene" uid="uid://b5oih1txnoxfo" path="res://scenes/objects/landscape.tscn" id="1_oqiew"]
+
+[node name="OpponentField" type="Node2D" unique_id=2034074732]
+
+[node name="EnemyLandscapes" type="Node2D" parent="." unique_id=45958743]
+unique_name_in_owner = true
+position = Vector2(960, 285)
+scale = Vector2(0.8, 0.8)
+metadata/_edit_group_ = true
+
+[node name="Landscape" parent="EnemyLandscapes" unique_id=1499622849 instance=ExtResource("1_oqiew")]
+position = Vector2(-393, -40)
+art_variant = 1
+landscape_type = 1
+
+[node name="Landscape2" parent="EnemyLandscapes" unique_id=1074852978 instance=ExtResource("1_oqiew")]
+position = Vector2(-131, -40)
+art_variant = 2
+landscape_type = 1
+
+[node name="Landscape3" parent="EnemyLandscapes" unique_id=882662864 instance=ExtResource("1_oqiew")]
+position = Vector2(131, -40)
+landscape_type = 1
+
+[node name="Landscape4" parent="EnemyLandscapes" unique_id=1183595230 instance=ExtResource("1_oqiew")]
+position = Vector2(393, -40)
+art_variant = 4
+landscape_type = 1

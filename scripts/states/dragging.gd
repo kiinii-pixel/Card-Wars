@@ -32,8 +32,8 @@ func exit():
 	pass
 
 
-func _on_body_entered(body : Node2D):
-	if body is Landscape:
+func _on_body_entered(body):
+	if body.is_in_group("droppable"):
 		remove_preview(body)
 		if body.empty:
 			card.is_inside = true # card is now inside a landcape
@@ -58,7 +58,7 @@ func create_preview():
 
 
 func remove_preview(body : Node2D):
-	for zones in body.get_parent().get_parent().get_children(): # Loop Zones Node
+	for zones in body.get_parent().get_children(): # Loop Landscapes Node
 			for landscapes in zones.get_children(): # Loop through Landscapes (Children of Landscapes and EnemyLandscapes Node)
 				if landscapes.get_child_count() >= 4: # If there's a preview or a card already
 					if landscapes.get_node_or_null("card_preview"): # If a preview exists
