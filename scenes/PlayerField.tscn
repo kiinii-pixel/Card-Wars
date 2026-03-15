@@ -14,6 +14,7 @@
 [ext_resource type="AudioStream" uid="uid://dwrf3q4nllt0q" path="res://assets/sounds/Card_Pick.wav" id="11_dcb8e"]
 [ext_resource type="AudioStream" uid="uid://do7v1ykj6rtdq" path="res://assets/sounds/music/Vs Finn - Adventure Time Card Wars Soundtrack.mp3" id="13_eaupb"]
 [ext_resource type="PackedScene" uid="uid://xfsj7ecrx0bp" path="res://scenes/objects/building_zone.tscn" id="14_1cvf3"]
+[ext_resource type="Script" uid="uid://cpkfxeyfcm7kt" path="res://scripts/turn_manager.gd" id="15_ksnjg"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_f046b"]
 texture = ExtResource("2_eaupb")
@@ -78,6 +79,7 @@ theme_override_styles/hover = SubResource("StyleBoxTexture_usaia")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_h0mdm")
 vertical_icon_alignment = 0
 expand_icon = true
+metadata/_edit_use_anchors_ = true
 
 [node name="Reset" type="Button" parent="Buttons" unique_id=2074740689]
 layout_mode = 1
@@ -115,10 +117,10 @@ icon_alignment = 1
 
 [node name="Fight" type="Button" parent="Buttons" unique_id=1539975422]
 layout_mode = 0
-offset_left = 1619.0
-offset_top = 429.0
-offset_right = 2706.0
-offset_bottom = 977.0
+offset_left = 1316.0
+offset_top = 516.0
+offset_right = 2402.6667
+offset_bottom = 1082.6665
 scale = Vector2(0.15, 0.15)
 theme_override_fonts/font = ExtResource("5_qqq6x")
 theme_override_font_sizes/font_size = 191
@@ -127,6 +129,14 @@ theme_override_styles/pressed = SubResource("StyleBoxTexture_ogic0")
 theme_override_styles/hover = SubResource("StyleBoxTexture_vyf1j")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_nt871")
 text = "Fight!"
+
+[node name="EndTurnButton" type="Button" parent="Buttons" unique_id=161053313]
+layout_mode = 0
+offset_left = 386.0
+offset_top = 497.0
+offset_right = 464.0
+offset_bottom = 528.0
+text = "End Turn"
 
 [node name="Deck" parent="." unique_id=1171357084 instance=ExtResource("8_76fhp")]
 unique_name_in_owner = true
@@ -185,7 +195,11 @@ position = Vector2(131, 0)
 [node name="BuildingZone4" parent="Zones/BuildingZones" unique_id=1926180513 instance=ExtResource("14_1cvf3")]
 position = Vector2(393, 0)
 
+[node name="TurnManager" type="Node2D" parent="." unique_id=1585961166]
+script = ExtResource("15_ksnjg")
+
 [connection signal="pressed" from="Buttons/Draw Card" to="." method="_on_draw_card_pressed"]
 [connection signal="pressed" from="Buttons/Reset" to="." method="_on_reset_pressed"]
 [connection signal="pressed" from="Buttons/Back" to="." method="_on_back_pressed"]
 [connection signal="pressed" from="Buttons/Fight" to="." method="_on_fight_pressed"]
+[connection signal="pressed" from="Buttons/EndTurnButton" to="." method="_on_end_turn_button_pressed"]

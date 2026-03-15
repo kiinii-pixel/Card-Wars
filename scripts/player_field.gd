@@ -12,8 +12,10 @@ func _ready():
 
 # When the Draw Card Button is pressed
 func _on_draw_card_pressed():
-	await $Hand.draw() # Draw a Card
-	card_sound.play() # Play Card Sound
+	if $TurnManager.can_play_card(1):
+		await $Hand.draw() # Draw a Card
+		card_sound.play() # Play Card Sound
+		$TurnManager.use_actions(1)
 
 
 # When Reset Button is pressed
@@ -60,6 +62,10 @@ func _on_fight_pressed():
 			#if enemy_landscape.get_child_count() == 4:
 			#decrease own health
 		index += 1
+
+
+func _on_end_turn_button_pressed():
+	$TurnManager.end_turn()
 
 
 func deal_damage(creature, opponent):

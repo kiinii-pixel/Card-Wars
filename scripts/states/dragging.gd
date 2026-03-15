@@ -36,9 +36,11 @@ func _on_body_entered(body):
 	if body.is_in_group("droppable"):
 		remove_preview(body)
 		if body.empty:
-			card.is_inside = true # card is now inside a landcape
-			card.body_ref = body # body_ref set to entered landscape
-			create_preview()
+			var type = card.data.card_type
+			if type == "Creature" and body is Landscape or type == "Building" and body is BuildingZone:
+				card.is_inside = true # card is now inside a landcape
+				card.body_ref = body # body_ref set to entered landscape
+				create_preview()
 	if body is DeckList:
 		in_deck_list = true
 		card.body_ref = body

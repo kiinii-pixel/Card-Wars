@@ -1,4 +1,4 @@
-extends Node2D
+class_name BuildingZone extends Node2D
 
 var empty : bool = true
 

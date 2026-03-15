@@ -1,30 +1,62 @@
 [gd_scene format=3 uid="uid://bngdsjjhhigd4"]
 
 [ext_resource type="PackedScene" uid="uid://b5oih1txnoxfo" path="res://scenes/objects/landscape.tscn" id="1_oqiew"]
+[ext_resource type="PackedScene" uid="uid://xfsj7ecrx0bp" path="res://scenes/objects/building_zone.tscn" id="2_piu7x"]
+[ext_resource type="PackedScene" uid="uid://df3a2sawj0htj" path="res://scenes/objects/deck.tscn" id="3_xiodc"]
+[ext_resource type="PackedScene" uid="uid://ndctswb5qjjp" path="res://scenes/objects/discard.tscn" id="4_ksri4"]
 
 [node name="OpponentField" type="Node2D" unique_id=2034074732]
 
-[node name="EnemyLandscapes" type="Node2D" parent="." unique_id=45958743]
+[node name="Deck" parent="." unique_id=1500952612 instance=ExtResource("3_xiodc")]
 unique_name_in_owner = true
-position = Vector2(960, 285)
-scale = Vector2(0.8, 0.8)
+position = Vector2(1700, 200)
+script = null
+
+[node name="Discard" parent="." unique_id=150216035 instance=ExtResource("4_ksri4")]
+position = Vector2(1500, 200)
+script = null
+
+[node name="Zones" type="Node2D" parent="." unique_id=908858050]
+
+[node name="Landscapes" type="Node2D" parent="Zones" unique_id=45958743]
+unique_name_in_owner = true
+position = Vector2(960, 350)
+scale = Vector2(0.6, 0.6)
 metadata/_edit_group_ = true
 
-[node name="Landscape" parent="EnemyLandscapes" unique_id=1499622849 instance=ExtResource("1_oqiew")]
+[node name="Landscape" parent="Zones/Landscapes" unique_id=1499622849 instance=ExtResource("1_oqiew")]
 position = Vector2(-393, -40)
-art_variant = 1
-landscape_type = 1
+script = null
 
-[node name="Landscape2" parent="EnemyLandscapes" unique_id=1074852978 instance=ExtResource("1_oqiew")]
+[node name="Landscape2" parent="Zones/Landscapes" unique_id=1074852978 instance=ExtResource("1_oqiew")]
 position = Vector2(-131, -40)
-art_variant = 2
-landscape_type = 1
+script = null
 
-[node name="Landscape3" parent="EnemyLandscapes" unique_id=882662864 instance=ExtResource("1_oqiew")]
+[node name="Landscape3" parent="Zones/Landscapes" unique_id=882662864 instance=ExtResource("1_oqiew")]
 position = Vector2(131, -40)
-landscape_type = 1
+script = null
 
-[node name="Landscape4" parent="EnemyLandscapes" unique_id=1183595230 instance=ExtResource("1_oqiew")]
+[node name="Landscape4" parent="Zones/Landscapes" unique_id=1183595230 instance=ExtResource("1_oqiew")]
 position = Vector2(393, -40)
-art_variant = 4
-landscape_type = 1
+script = null
+
+[node name="BuildingZones" type="Node2D" parent="Zones" unique_id=644920067]
+position = Vector2(960, 150)
+scale = Vector2(0.6, 0.6)
+metadata/_edit_group_ = true
+
+[node name="BuildingZone" parent="Zones/BuildingZones" unique_id=319293037 instance=ExtResource("2_piu7x")]
+position = Vector2(-393, 0)
+script = null
+
+[node name="BuildingZone2" parent="Zones/BuildingZones" unique_id=405686776 instance=ExtResource("2_piu7x")]
+position = Vector2(-131, 0)
+script = null
+
+[node name="BuildingZone3" parent="Zones/BuildingZones" unique_id=1878810180 instance=ExtResource("2_piu7x")]
+position = Vector2(131, 0)
+script = null
+
+[node name="BuildingZone4" parent="Zones/BuildingZones" unique_id=811040524 instance=ExtResource("2_piu7x")]
+position = Vector2(393, 0)
+script = null

@@ -1,7 +1,7 @@
 class_name Hand extends Node2D
 
 #signal card_played
-const CARD = preload("res://scenes/objects/card.tscn")
+const CARD: PackedScene = preload("res://scenes/objects/card.tscn")
 @export var deck : Deck
 
 @export var spread_curve: Curve
@@ -9,8 +9,8 @@ const CARD = preload("res://scenes/objects/card.tscn")
 @export var rotation_curve: Curve
 
 var hand: Hand = self
-var hand_width: int = 60
-const MAX_HAND_WIDTH: int = 300 #Maximum hand width
+var hand_width: int
+const MAX_HAND_WIDTH: int = 400 #Maximum hand width
 var hand_height: int = 10
 const MAX_HAND_HEIGHT: int = 100 # Maximum hand height
 
@@ -42,7 +42,7 @@ func _on_child_order_changed():
 
 			# Adjust Collision Shape Size depending on hand_ration?
 
-			hand_width = get_child_count() * 60
+			hand_width = get_child_count() * 50
 			if hand_width > MAX_HAND_WIDTH:
 				hand_width = MAX_HAND_WIDTH
 			hand_height = get_child_count() * 5
@@ -53,10 +53,11 @@ func _on_child_order_changed():
 		var destination: Transform2D = hand.global_transform #set destination to hand position
 		#change the x position of the current card, based on its index
 		destination.origin.x += spread_curve.sample(hand_ratio) * hand_width
-		destination.origin.y -= height_curve.sample(hand_ratio) * hand_height
+		if get_child_count() > 3:
+			destination.origin.y -= height_curve.sample(hand_ratio) * hand_height
 		
 		var target_rotation: float = 0.0
-		if get_child_count() > 2:
+		if get_child_count() > 3:
 			var max_rotation: float = 0.2
 			target_rotation = rotation_curve.sample(hand_ratio) * max_rotation
 		card.hand_rotation = target_rotation # Store the hand rotation in the card for later use when dragging	
