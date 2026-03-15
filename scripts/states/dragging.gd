@@ -57,9 +57,7 @@ func create_preview():
 		sprite.modulate.a = 0.5 # make transparent
 
 
-func remove_preview(body : Node2D):
-	for zones in body.get_parent().get_children(): # Loop Landscapes Node
-			for landscapes in zones.get_children(): # Loop through Landscapes (Children of Landscapes and EnemyLandscapes Node)
-				if landscapes.get_child_count() >= 4: # If there's a preview or a card already
-					if landscapes.get_node_or_null("card_preview"): # If a preview exists
-						landscapes.get_node("card_preview").queue_free() # delete preview
+func remove_preview(_body):
+	for droppable in get_tree().get_nodes_in_group("droppable"):
+		if droppable.get_node_or_null("card_preview"): # If a preview exists
+			droppable.get_node("card_preview").queue_free() # delete preview

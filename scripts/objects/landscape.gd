@@ -18,7 +18,7 @@ func load_image():
 	%LandscapeImage.texture = load(image_path)
 
 func _on_child_order_changed() -> void:
-	if get_child_count() == 3:
+	if get_child_count() >= 3:
 		empty = false
 	if get_child_count() == 2:
 		empty = true

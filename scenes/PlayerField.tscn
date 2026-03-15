@@ -50,6 +50,7 @@ script = ExtResource("1_eaupb")
 [node name="Hand" parent="." unique_id=441787985 node_paths=PackedStringArray("deck") instance=ExtResource("1_lw870")]
 unique_name_in_owner = true
 position = Vector2(965, 954)
+scale = Vector2(0.8, 0.8)
 deck = NodePath("../Deck")
 
 [node name="Buttons" type="Control" parent="." unique_id=1364094358]
@@ -134,27 +135,6 @@ position = Vector2(1793, 905)
 [node name="Discard" parent="." unique_id=953657793 instance=ExtResource("9_n51j5")]
 position = Vector2(1592, 904)
 
-[node name="Landscapes" type="Node2D" parent="." unique_id=167000845]
-unique_name_in_owner = true
-position = Vector2(960, 550)
-scale = Vector2(0.6, 0.6)
-metadata/_edit_group_ = true
-
-[node name="Landscape" parent="Landscapes" unique_id=1499622849 instance=ExtResource("10_bjobn")]
-position = Vector2(-393, 0)
-art_variant = 2
-
-[node name="Landscape2" parent="Landscapes" unique_id=1135889773 instance=ExtResource("10_bjobn")]
-position = Vector2(-131, 0)
-art_variant = 1
-
-[node name="Landscape3" parent="Landscapes" unique_id=1447561140 instance=ExtResource("10_bjobn")]
-position = Vector2(131, 0)
-
-[node name="Landscape4" parent="Landscapes" unique_id=352067067 instance=ExtResource("10_bjobn")]
-position = Vector2(393, 0)
-art_variant = 4
-
 [node name="card_sound" type="AudioStreamPlayer2D" parent="." unique_id=213110260]
 unique_name_in_owner = true
 stream = ExtResource("11_dcb8e")
@@ -165,21 +145,44 @@ unique_name_in_owner = true
 stream = ExtResource("13_eaupb")
 bus = &"Music"
 
-[node name="BuildingZones" type="Node2D" parent="." unique_id=383386552]
+[node name="Zones" type="Node2D" parent="." unique_id=375269171]
+
+[node name="Landscapes" type="Node2D" parent="Zones" unique_id=167000845]
+unique_name_in_owner = true
+position = Vector2(960, 550)
+scale = Vector2(0.6, 0.6)
+metadata/_edit_group_ = true
+
+[node name="Landscape" parent="Zones/Landscapes" unique_id=1499622849 instance=ExtResource("10_bjobn")]
+position = Vector2(-393, 0)
+art_variant = 2
+
+[node name="Landscape2" parent="Zones/Landscapes" unique_id=1135889773 instance=ExtResource("10_bjobn")]
+position = Vector2(-131, 0)
+art_variant = 1
+
+[node name="Landscape3" parent="Zones/Landscapes" unique_id=1447561140 instance=ExtResource("10_bjobn")]
+position = Vector2(131, 0)
+
+[node name="Landscape4" parent="Zones/Landscapes" unique_id=352067067 instance=ExtResource("10_bjobn")]
+position = Vector2(393, 0)
+art_variant = 4
+
+[node name="BuildingZones" type="Node2D" parent="Zones" unique_id=383386552]
 position = Vector2(960, 770)
 scale = Vector2(0.6, 0.6)
 metadata/_edit_group_ = true
 
-[node name="BuildingZone" parent="BuildingZones" unique_id=319293037 instance=ExtResource("14_1cvf3")]
+[node name="BuildingZone" parent="Zones/BuildingZones" unique_id=319293037 instance=ExtResource("14_1cvf3")]
 position = Vector2(-393, 0)
 
-[node name="BuildingZone2" parent="BuildingZones" unique_id=161594312 instance=ExtResource("14_1cvf3")]
+[node name="BuildingZone2" parent="Zones/BuildingZones" unique_id=161594312 instance=ExtResource("14_1cvf3")]
 position = Vector2(-131, 0)
 
-[node name="BuildingZone3" parent="BuildingZones" unique_id=74320280 instance=ExtResource("14_1cvf3")]
+[node name="BuildingZone3" parent="Zones/BuildingZones" unique_id=74320280 instance=ExtResource("14_1cvf3")]
 position = Vector2(131, 0)
 
-[node name="BuildingZone4" parent="BuildingZones" unique_id=1926180513 instance=ExtResource("14_1cvf3")]
+[node name="BuildingZone4" parent="Zones/BuildingZones" unique_id=1926180513 instance=ExtResource("14_1cvf3")]
 position = Vector2(393, 0)
 
 [connection signal="pressed" from="Buttons/Draw Card" to="." method="_on_draw_card_pressed"]
